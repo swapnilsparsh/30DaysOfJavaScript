@@ -1,0 +1,58 @@
+html {
+    font-size: 10px;
+    background-color: #000000;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  h3{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    text-align: center;
+  }
+
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid white;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background-color: #212121;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #bb86fc;
+    box-shadow: 0 0 1rem #bb86fc;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #bb86fc;
+  }
