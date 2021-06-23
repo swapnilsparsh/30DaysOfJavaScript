@@ -56,3 +56,30 @@ html {
     letter-spacing: .1rem;
     color: #bb86fc;
   }
+
+  footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+  }
+
+  footer a{
+    text-decoration: none;
+  }
+
+  footer a:visited{
+    color: inherit;
+  }
+
+  footer a:hover{
+    text-decoration: underline;
+  }
