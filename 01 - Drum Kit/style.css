@@ -6,8 +6,12 @@ html {
   body,html {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    overflow: hidden;
+    font-family: "sans";
+  }
+
+  @font-face {
+    src: url("Font/sans.ttf");
+    font-family: "sans";
   }
   
   h3{
@@ -62,7 +66,6 @@ html {
     text-align: center;
     color: white;
     font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     left: 0;
     right: 0;
