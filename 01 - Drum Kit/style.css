@@ -10,7 +10,7 @@ html {
   }
 
   @font-face {
-    src: url("Font/sans.ttf");
+    src: url("font/sans.ttf");
     font-family: "sans";
   }
   
