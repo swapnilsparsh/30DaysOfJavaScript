@@ -1,64 +1,100 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "sans";
-    user-select: none;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "sans";
+  user-select: none;
 }
 
 @font-face {
-    src: url("font/sans.ttf");
-    font-family: "sans";
+  src: url("font/sans.ttf");
+  font-family: "sans";
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f8f8f8;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #19172e;
 }
 
-.inputBox{
-    position: relative;
-    width: 450px;
+h2 {
+  position: absolute;
+  top: 0;
+  padding-top: 180px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.inputBox h2{
-    font-size: 28px;
-    color: #333;
+.inputBox {
+  position: relative;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
 }
 
-.inputBox input{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    border: none;
-    margin: 15px 0 20px;
-    background: transparent;
-    outline: none;
-    padding: 0 20px;
-    font-size: 24px;
-    letter-spacing: 4px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    color: #333;
-    box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
-                inset 4px 4px 10px rgba(0, 0, 0, 0.05),
-                inset -4px -4px 10px rgba(255, 255, 255, 1), 
-                4px 4px 10px rgba(0, 0, 0, 0.05);  
+.inputBox input {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: none;
+  margin: 15px 0 15px;
+  padding: 0 20px;
+  font-size: 24px;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.inputBox #btn{
-    position: relative;
-    cursor: pointer;
-    color: #fff;
-    background: #333;
-    font-size: 24px;
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 8px;
+::-webkit-input-placeholder {
+  text-align: center;
 }
 
-.inputBox #btn:active{
-    background: #9c27b0;
+#btn {
+  position: absolute;
+  cursor: pointer;
+  color: #fff;
+  background: #333;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 8px;
+  bottom: 0;
+  margin: 200px auto;
 }
+
+#btn:active {
+  background: #1e8e3e;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a:visited {
+    color: inherit;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
