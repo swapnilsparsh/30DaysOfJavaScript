@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Dynamic Form Field</title>
+</head>
+<body>
+    <h1>Dynamic Form Field</h1>
+    <div class="section">
+    <div id="survey-options">
+        <input type="text" name="survey-options[]" class="survey-options" size="50" placeholder="Name">
+        <input type="text" name="survey-options[]" class="survey-options" size="50" placeholder="Email">
+        <input type="text" name="survey-options[]" class="survey-options" size="50" placeholder="Another Field">
+    </div>
+    <div class="controls">
+        <a href="#" id="add-more-fields" class="fa fa-plus">Add More</a>
+        <a href="#" id="remove-fields" class="fa fa-minus">Remove Fields</a>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

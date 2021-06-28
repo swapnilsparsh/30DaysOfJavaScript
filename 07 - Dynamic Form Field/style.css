@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+body{
+    background-color: #f0f5ff;
+    font-family: "sans";
+    color: #fff;
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    color: #232c3d;
+}
+
+.section{
+    width: 400px;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 10px 40px 0px rgba(47, 47, 47, 1);
+}
+
+input[type="text"]{
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid lightgrey;  
+    background: none;
+    width: 274px;
+    color: black;  
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+.controls{
+    width: 294px;
+    margin: 15px auto;
+}
+
+#remove-fields{
+    float: right;
+}
+
+.controls a i.fa-minus{
+    margin-right: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
