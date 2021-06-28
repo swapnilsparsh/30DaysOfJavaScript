@@ -1,4 +1,4 @@
-var survey_options = document.getElementById('surve_options');
+var survey_options = document.getElementById('survey_options');
 var add_more_fields = document.getElementById('add_more_fields');
 var remove_fields = document.getElementById('remove_fields');
 
