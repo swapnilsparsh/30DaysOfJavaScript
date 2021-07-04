@@ -1,10 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    border: none;
-    outline: none;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+    font-family: "sans";
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
 }
 
 html,body{
@@ -15,13 +18,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #040404;
+    background: #19172e;
 }
 
+h2 {
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+
 img{
-    --size:18px;
-    width: var(--size);
-    height: var(--size);
+    size:18px;
     margin-right: 1.2rem;
 }
 
@@ -31,9 +41,24 @@ label{
 
 label input{
     font-size: 1rem;
-    color: #f9f9f9;
-    padding: 1rem 1.2rem 1rem 1.2rem ;
-    min-width: 24rem;
+    padding: 1rem ;
     border-radius: 0.2rem;
-    border:2px solid #7a7a7a56;
 }
+
+footer {
+    background-color: #19172e;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+  }
+  
+  footer a:visited {
+    color: inherit;
+  }
