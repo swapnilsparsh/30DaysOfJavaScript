@@ -6,16 +6,14 @@
 body {
   background-color: #19172e;
   font-family: "sans";
-  color: #fff;
+  color: white;
   margin: 8px auto;
+  padding-top: 100px;
 }
 
 h1 {
-  justify-content: center;
   text-align: center;
   font-size: 48px;
-  color: #232c3d;
-  color: white;
 }
 
 .section {
@@ -49,7 +47,6 @@ input[type="text"]:focus {
 }
 
 .controls {
-  color: white;
   width: 294px;
   margin: 15px auto;
 }
@@ -64,7 +61,6 @@ input[type="text"]:focus {
 }
 
 .controls a {
-  color: black;
   text-decoration: none;
 }
 
@@ -73,22 +69,12 @@ footer {
   color: white;
   font-size: 1rem;
   position: relative;
-  left: 0;
-  right: 0;
   bottom: 0;
   margin-bottom: 0;
   padding: 5px;
   line-height: 3vh;
 }
 
-footer a {
-  text-decoration: none;
-}
-
 footer a:visited {
   color: inherit;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
