@@ -14,10 +14,18 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 80vh;
 	margin: 0;
 	text-align: center;
     color: white;
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+#text{
+    font-size: 1.5rem;
 }
 
 input {
