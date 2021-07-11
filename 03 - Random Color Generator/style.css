@@ -46,7 +46,7 @@ body {
 }
 
 .box {
-  width: 20%;
+  width: 33.3%;
   height: 150px;
   display: flex;
   justify-content: center;
