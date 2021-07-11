@@ -68,7 +68,6 @@ section {
 }
 
 footer {
-    background-color: #19172e;
     text-align: center;
     color: white;
     font-size: 1rem;
@@ -76,19 +75,10 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    margin-bottom: 0;
     padding: 5px;
     line-height: 3vh;
   }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
+
   footer a:visited {
     color: inherit;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
   }
