@@ -1,80 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "sans";
-    color: black;
-  }
+  font-family: "sans";
+  color: black;
+  background-color: #19172e;
+}
 
 @font-face {
-    src: url("font/sans.ttf");
-    font-family: "sans";
+  src: url("font/sans.ttf");
+  font-family: "sans";
 }
 
-.heading{
-    padding-top: 10px;
-    justify-content: center;
-    text-align: center;
-    font-size: 2rem;
+.heading {
+  color: white;
+  padding-top: 10px;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
 }
 
-.btn{
-    background: none;
-    color: #111;
-    padding: 15px 60px;
-    font-size: 1.5rem;
-    margin: 20px auto;
-    display: block;
-    cursor: pointer;
-    border-radius: 5px;
+.btn {
+  background: #333;
+  color: white;
+  padding: 15px 60px;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
 }
 
-.btn:hover{
-    background-color: #364765;
-    color: white;
+.btn:hover {
+  background-color: #1e8e3e;
+  color: white;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.box{
-    width: 20%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    font-size: 1.5rem;
+.box {
+  width: 20%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #19172e;
+  border: 2px solid #19172e;
+  border-radius: 8px;
+  font-size: 1.5rem;
 }
 
 footer {
-    background-color: black;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0;
-    padding: 5px;
-    line-height: 3vh;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+@media (max-width: 500px) {
+  .box {
+    font-size: 0.8rem;
   }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
-  footer a:visited {
-    color: inherit;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
+}
