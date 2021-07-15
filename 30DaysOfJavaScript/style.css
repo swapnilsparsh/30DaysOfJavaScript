@@ -30,6 +30,10 @@ img {
   border-radius: 2%;
 }
 
+a{
+  color: inherit;
+}
+
 a:visited {
     color: inherit;
   }
