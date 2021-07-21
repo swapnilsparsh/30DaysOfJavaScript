@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url("font/sans.ttf");
+}
+
+body {
+  background-color: #19172e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  max-width: 100%;
+  padding-top: 80px;
+}
+
+.card {
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform 0.4s linear;
+}
+
+.card.show {
+  transform: rotateY(0deg);
+}
+
+.card .front,
+.card .back {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card .front {
+  transform: rotateY(0deg);
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card i {
+  font-size: 28px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+footer a:visited {
+  color: inherit;
+}
