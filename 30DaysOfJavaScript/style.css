@@ -51,12 +51,11 @@ a:visited {
   flex: 50%;
 }
 
-/* footer {
+footer {
   background-color: #19172e;
   text-align: center;
   color: white;
   font-size: 1rem;
-  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -67,7 +66,7 @@ a:visited {
 
 footer a:visited {
   color: inherit;
-} */
+}
 
 @media (max-width: 800px) {
   .container {
