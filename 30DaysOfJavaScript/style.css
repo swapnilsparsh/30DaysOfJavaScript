@@ -46,7 +46,6 @@ a:visited {
 }
 
 .item {
-  /* background-color: dodgerblue; */
   padding: 10px;
   flex: 50%;
 }
