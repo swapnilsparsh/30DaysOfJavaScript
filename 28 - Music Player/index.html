@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="shortcut icon" href="assets/music.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Music Player</title>
+</head>
+<body>
+  <h1>Music Player</h1>
+  <div class="player">
+    <div class="details">
+      <div class="track-art"></div>
+      <div class="track-name">Cradles</div>
+      <div class="track-artist">Sub Urban</div>
+    </div>
+    <div class="buttons">
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+  <footer>
+    <p>&#x3c; &#47; &#x3e; with ❤️ by 
+      <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+      <br> 
+      <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript
+      </a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
