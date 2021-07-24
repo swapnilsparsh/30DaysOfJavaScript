@@ -11,8 +11,8 @@ window.addEventListener('load', () => {
   let long;
   let lat;
   // Accesing Geolocation of User
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((position) => {
+  if (window.navigator.geolocation) {
+    window.navigator.geolocation.getCurrentPosition((position) => {
       // Storing Longitude and Latitude in variables
       long = position.coords.longitude;
       lat = position.coords.latitude;
