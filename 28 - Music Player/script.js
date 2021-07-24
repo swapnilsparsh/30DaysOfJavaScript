@@ -11,12 +11,12 @@ let isPlaying = false;
 let updateTimer;
 
 // Create new audio element
-let curr_track = document.createElement('audio');
+let curr_track = document.querySelector(".music");
 
 function loadTrack(track_index) {
   clearInterval(updateTimer);
   resetValues();
-  curr_track.src = "assets/cradles.mp3";
+  // curr_track.src = "assets/cradles.mp3";
   curr_track.load();
   updateTimer = setInterval(seekUpdate, 1000);
 }
