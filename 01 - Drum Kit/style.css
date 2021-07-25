@@ -19,7 +19,14 @@ html {
     font-size: 3rem;
     text-align: center;
     color: white;
-    text-align: center;
+  }
+
+  h4{
+  font-size: 2rem;
+  text-align: center;
+  top: 0;
+  padding-top: 5px;
+  color: #fff;
   }
 
   .keys {
