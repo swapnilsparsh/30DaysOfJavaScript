@@ -23,6 +23,16 @@ h1{
     padding-top: 20px;
 }
 
+.modal{
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 70px;
+  display: none;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -63,4 +73,10 @@ footer {
 
 footer a:visited {
   color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal{
+    display: block;
+  }
 }
