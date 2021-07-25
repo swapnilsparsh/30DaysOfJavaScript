@@ -49,15 +49,6 @@ h1{
   text-transform: capitalize;
 }
 
-#weather-icon {
-  background: white;
-  text-align: center;
-  color: black;
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-}
-
 footer {
   text-align: center;
   color: white;

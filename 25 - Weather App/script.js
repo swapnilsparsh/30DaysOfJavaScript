@@ -1,7 +1,6 @@
 // Openweathermap API
 const api = 'a72fb8329b1206f627c9d890bf28d9df';
 
-const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('#location');
 const tempC = document.querySelector('.c');
 const tempF = document.querySelector('.f');
@@ -28,11 +27,9 @@ window.addEventListener('load', () => {
           const place = data.name;
           const { description, icon } = data.weather[0];
 
-          const iconUrl = `http://openweathermap.org/img/wn/${icon}.png`;
           const fahrenheit = (temp * 9) / 5 + 32;
 
           // Interacting with DOM to show data
-          iconImg.src = iconUrl;
           loc.textContent = `${place}`;
           desc.textContent = `${description}`;
           tempC.textContent = `${temp.toFixed(2)} °C`;
