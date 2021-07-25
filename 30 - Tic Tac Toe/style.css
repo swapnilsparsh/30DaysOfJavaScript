@@ -44,6 +44,7 @@ td {
 }
 
 td:hover {
+  cursor: pointer;
   opacity: 0.4;
 }
 
@@ -101,12 +102,12 @@ btn {
   padding: 10px;
   margin-top: 10px;
   color: white;
-  background-color: #ef798a;
+  background-color: grey;
   cursor: pointer;
 }
 
-btn:hover {
-  background-color: #cc4c5e;
+btn:active {
+  background-color: #1e8e3e;
 }
 
 footer {
