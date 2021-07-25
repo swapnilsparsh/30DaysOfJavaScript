@@ -13,7 +13,7 @@
 body {
 	min-height: 100vh;
 	font-family: 'sans';
-	margin: 0;
+	margin: 0 auto;
   color: white;
 }
 
@@ -32,7 +32,7 @@ h3 {
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 100vh;
+	height: 100%;
 	padding: 5px;
 	z-index: 1000;
 }
