@@ -65,6 +65,19 @@ a:visited {
   flex: 50%;
 }
 
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, rgb(62, 120, 185));
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background: black;
+}
+
 footer {
   /* background-color: #19172e; */
   text-align: center;
