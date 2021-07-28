@@ -12,12 +12,22 @@
 body {
   font-family: "sans";
   color: white;
-  background: linear-gradient(
-    to left,
-    #1b6427,
-    #3a1c71
-  );
-  margin: 0 3% 0 3%;
+  background: rgb(111,18,47);
+  background: linear-gradient(332deg, rgba(111,18,47,1) 0%, rgb(34, 103, 182) 100%);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
