@@ -1,7 +1,8 @@
 <div align = "center">
 
 ## [30 Days Of JavaScript](30daysofjs.netlify.app)
-
+![30DaysOfJavaScript](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/30DaysOfJavaScript.png)
+  
 </div>  
 
 ## [Day 01 - Drum Kit](https://30daysofjs.netlify.app/01%20-%20drum%20kit/)
