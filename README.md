@@ -1,9 +1,9 @@
-<div align = "center">
 
-## [30 Days Of JavaScript](30daysofjs.netlify.app)
-![30DaysOfJavaScript](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/30DaysOfJavaScript.png)
-  
-</div>  
+# [30 Days Of JavaScript](30daysofjs.netlify.app)
+Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
+
+## View Live Demo
+<pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
 
 ## [Day 01 - Drum Kit](https://30daysofjs.netlify.app/01%20-%20drum%20kit/)
 ![Drum Kit](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/01.png)
