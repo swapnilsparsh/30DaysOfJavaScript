@@ -95,7 +95,14 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## [Day 30 - Tic Tac Toe](https://30daysofjs.netlify.app/30%20-%20Tic%20Tac%20Toe/index.html)
 ![Tic Tac Toe](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/30.png)
 
+## [Day 31 - Pop the Ballons](https://30daysofjs.netlify.app/31%20-%20pop%20the%20balloons/index.html)
+![Pop the Ballons](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/31.png)
 
+## [Day 32 - Key Code](https://30daysofjs.netlify.app/32%20-%20key%20code/index.html)
+![Key Code](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/32.png)
+
+## [Day 33 - Feedback UI](https://30daysofjs.netlify.app/33%20-%20feedback%20ui/index.html)
+![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/33.png)
 ## License
 
 This project follows the [MIT License](/LICENSE).
