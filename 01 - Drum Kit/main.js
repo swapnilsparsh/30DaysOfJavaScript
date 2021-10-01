@@ -39,7 +39,6 @@ window.addEventListener('keydown', playSound);
 
 keys.forEach((key) =>
     key.addEventListener('click', (e) => {
-        console.log(e.target.innerHTML);
         playSound(e);
     })
 );
