@@ -136,3 +136,9 @@ footer a:visited {
     width: auto;
   }
 }
+
+@media(max-width:400px){
+  .val{
+    text-align: left;
+  }
+}
