@@ -1,9 +1,6 @@
 body {
     max-height: 100vh;
-    background-image: url('assets/background1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: white;
+    background-color: #19172e;
 }
 
 #piano {
@@ -12,10 +9,13 @@ body {
     width: 70%;
     max-width: 800px;
     height: 300px;
-    background-color: #000000;
-    background-image: linear-gradient(to bottom, #000000 0%, #414141 74%);
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
     position: relative;
-    box-shadow: 4px 4px 4px rgb(48, 48, 48);
 }
 
 #keys {
@@ -85,4 +85,5 @@ body {
     font-weight: 800;
     font-size: 1.5rem;
     user-select: none;
+    color: white;
 }
