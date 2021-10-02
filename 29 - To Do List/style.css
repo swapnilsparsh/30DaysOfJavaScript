@@ -52,7 +52,7 @@ input {
   font-size: 16px;
 }
 
-.addBtn {
+.addBtn,.editBtn {
   padding: 10px;
   width: 25%;
   background: #ffd662ff;
@@ -106,6 +106,15 @@ ul li.checked::before {
   color: white;
 }
 
+.edit {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  padding: 10px 16px 12px 16px;
+  background-color: green;
+  color: white;
+}
+
 footer {
   color: white;
   position: absolute;
@@ -125,5 +134,11 @@ footer a:visited {
 @media (max-width: 600px) {
   .container {
     width: auto;
+  }
+}
+
+@media(max-width:400px){
+  .val{
+    text-align: left;
   }
 }
