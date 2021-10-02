@@ -13,7 +13,7 @@ body {
   font-family: "sans";
   color: white;
   background: rgb(111,18,47);
-  background: linear-gradient(332deg, rgba(111,18,47,1) 0%, rgb(34, 103, 182) 100%);
+  background: linear-gradient(332deg, rgba(111,18,47,1) 0%, rgb(34, 103, 182) 70%);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }
@@ -32,7 +32,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: clamp(1.5rem,3vw,2rem);
   padding: 2%;
 }
 
@@ -63,6 +63,23 @@ a:visited {
 .item {
   padding: 10px;
   flex: 50%;
+  height: 100%;
+}
+
+.item h4{
+  font-size: clamp(20px, 5vw, 25px);
+  text-decoration: none;
+  text-align: center;
+}
+
+.main{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-gap: .2em;
+  margin: auto;
+  justify-content: center;
+
 }
 
 ::-webkit-scrollbar{
@@ -79,7 +96,7 @@ a:visited {
 }
 
 footer {
-  /* background-color: #19172e; */
+  background-color: #19172e; 
   text-align: center;
   color: white;
   font-size: 1rem;
@@ -87,12 +104,14 @@ footer {
   right: 0;
   bottom: 0;
   margin-bottom: 0;
-  padding: 5px;
+  padding: 22px;
   line-height: 3vh;
+  margin-top: 30px;
 }
 
 footer a:visited {
   color: inherit;
+
 }
 
 @media (max-width: 800px) {
