@@ -15,14 +15,23 @@
   <body>
     <div class="container">
       <h2>Decimal To Binary</h2>
+      <div class="option">
+        <h3>Decimal</h3>
+        <h4>To</h4>
+        <select onchange="changeinto()" id="select">
+          <option value="Binary">Binary</option>
+          <option value="Hexadecimal">Hexadecimal</option>
+          <option value="Octal">Octal</option>
+        </select>
+      </div>
       <div class="input">
         <h4>Decimal</h4>
         <input type="number" id="input_number" />
       </div>
       <button id="Binary_convert" onclick="calculate()">Convert</button>
       <div class="input">
-        <h4>Binary</h4>
-        <input type="number" id="output_number" />
+        <h4 id="into"></h4>
+        <input type="text" id="output_number" />
       </div>
     </div>
     <footer>
