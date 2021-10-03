@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/number.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <title>Number Counter</title>
+	<meta charset = "UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "style.css">
+	<link rel = "shortcut icon" href = "assets/number.png" type = "image/x-icon">
+	<link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<title>Number Counter</title>
 </head>
 <body>
-    <h3 class="heading">Number Counter</h3>
+	<div class = "body">
+		<div class = "left">
+			<h3 class = "heading">Number Counter</h3>
+			<div class = "button">
+				<div class = "reset">Reset</div>
+			</div>
+			<div class = "container">
+				<!-- <p class="heading">Number Counter</p> -->
+				<p class = "counter" id = "counter">0</p>
+				<button class = "increase"><i class = "fas fa-plus"></i></button>
+				<button class = "decrease"><i class = "fas fa-minus"></i></button>
+			</div>
+			<div class = "button">
+				<div class = "save">Save</div>
+			</div>
+		</div>
+		<div class = "right">
+			<div class = "heading">Numbers saved:</div>
+			<div class = "number"></div>
+		</div>
+	</div>
 
-    <div class="container">
-        <!-- <p class="heading">Number Counter</p> -->
-        <p class="counter" id="counter">0</p>
-        <button class="increase"><i class="fas fa-plus"></i></button>
-        <button class="decrease"><i class="fas fa-minus"></i></button>
-    </div>
-    <footer>
-        <p>&#x3c; &#47; &#x3e; with ❤️ by 
-          <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
-          <br> 
-          <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript
-          </a>
-        </p>
-      </footer>
-    <script src="script.js"></script>
+
+	<footer>
+		<p>&#x3c; &#47; &#x3e; with ❤️ by
+			<a href = "https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+			<br>
+			<a href = "https://github.com/swapnilsparsh/30DaysOfJavaScript" target = "_blank">#30DaysOfJavaScript
+			</a>
+		</p>
+	</footer>
+	<script src = "script.js"></script>
 </body>
 </html>
