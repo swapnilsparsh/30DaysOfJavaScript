@@ -72,7 +72,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 1rem;
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     margin-bottom: 0;
     padding: 5px;
@@ -145,5 +145,25 @@ footer a:visited {
     color: white;
     margin: 10px;
     font-size:18px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 520px){
+    .body{
+        flex-direction: column;
+    }
+    body{
+        height: auto;
+    }
+    .number{
+        height: 200px;
+    }
+    .left {
+        align-items: center;
+    }
+
 }
 
