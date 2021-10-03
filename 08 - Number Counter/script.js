@@ -3,6 +3,7 @@ const increase = document.querySelector('.increase');
 const decrease = document.querySelector('.decrease');
 const reset = document.querySelector('.reset');
 const save = document.querySelector('.save');
+const deleted = document.querySelector('.deleted');
 
 let count = 0;
 increase.addEventListener('click', () => {
@@ -25,3 +26,9 @@ save.addEventListener('click', () => {
     num.innerHTML = count;
     number.appendChild(num);
 });
+
+deleted.addEventListener('click',()=>{
+    const number = document.querySelector('.number');
+    number.innerHTML='';
+
+})
