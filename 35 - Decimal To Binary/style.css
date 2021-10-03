@@ -34,6 +34,40 @@ body {
     top: 10px;
     color: white;
 }
+.option{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+.option h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.option h4{
+  color: rgba(255, 255, 255, 0.425);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 4%;
+}
+.option select{
+  outline: none;
+  border: none;
+  width: 30%;
+  height: 30px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.option select:hover{
+  background-color: rgb(253, 207, 78);
+}
+
 .container .input{
     display: flex;
     flex-direction: column;
