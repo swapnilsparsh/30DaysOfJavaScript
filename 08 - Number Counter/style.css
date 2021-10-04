@@ -153,3 +153,27 @@ footer a:visited {
     }
     
 }
+
+@media screen and (min-width:835px) {
+
+    :root {
+        --counter-container-size: 12.5rem;
+        --btn-operator-size: 3.5rem;
+        --container-width: 50%;
+    }
+
+    .num {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1.25rem;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }  
+     
+}
