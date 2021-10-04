@@ -127,3 +127,19 @@ h1 {
     height: 32px;
   }
 }
+
+footer {
+  color: pink;
+  font-size: 1rem;
+  padding: 22px;
+  line-height: 3vh;
+  margin-top: 30px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:visited {
+  color: inherit;
+}
