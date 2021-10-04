@@ -1,8 +1,8 @@
 const counter = document.getElementById('counter');
 const increase = document.querySelector('.increase');
 const decrease = document.querySelector('.decrease');
-const reset = document.querySelector('.reset');
-const save = document.querySelector('.save');
+const reset = document.querySelector('.btn-reset');
+const save = document.querySelector('.btn-save');
 
 let count = 0;
 increase.addEventListener('click', () => {
@@ -25,3 +25,5 @@ save.addEventListener('click', () => {
     num.innerHTML = count;
     number.appendChild(num);
 });
+
+
