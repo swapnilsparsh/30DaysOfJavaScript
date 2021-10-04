@@ -136,3 +136,20 @@ footer {
 footer a:visited {
     color: inherit;
 }
+
+@media screen and (min-width : 635px) {
+
+    :root {
+        --counter-container-size: 12rem;
+        --btn-operator-size: 3rem;
+    }
+
+    .num {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+    
+}
