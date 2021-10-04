@@ -35,32 +35,35 @@ h1 {
   text-transform: uppercase;
 }
 
-.slider{
-  margin:50px auto;
-  width:50%;
+.slider {
+  margin: 50px auto;
+  width: 50%;
+  position: relative;
 }
 
-.img-box img{
-  width:100%;
+.img-box img {
+  width: 100%;
 }
 
-.controls {
-  display: flex;
-  justify-content: space-between;
-  width:100%;
-}
-
-.btn{
-  border:none;
-  outline:none;
-  background:#888;
-  padding:10px 30px;
+.btn {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-top: -22px;
+  padding: 20px 15px;
   font-size: 20px;
-  color:#ddd;
   cursor: pointer;
-  margin:10px 0;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
 }
 
-.btn:hover{
-  background-color: #5c1ed5;
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
 }
