@@ -99,7 +99,7 @@ footer a:visited {
     justify-content: center;
 }
 
-.reset, .save {
+.reset, .save ,.deleted {
     cursor: pointer;
     color: white;
     padding: 20px;
