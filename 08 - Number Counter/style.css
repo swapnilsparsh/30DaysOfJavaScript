@@ -177,3 +177,20 @@ footer a:visited {
     }  
      
 }
+
+@media screen and (min-width:1152px) {
+
+    :root {
+        --counter-container-size: 14rem;
+        --btn-operator-size: 3.8rem;
+    }
+
+    .num {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+
+}
