@@ -104,8 +104,11 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## [Day 33 - Feedback UI](https://30daysofjs.netlify.app/33%20-%20feedback%20ui/index.html)
 ![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/33.png)
 
+## [Day 38 -  Snake Game](https://30daysofjs.netlify.app/32%20-%20Snake%20Game/index.html)
+![Snake Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/38.png)
+
 ## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/41%20-%20Basic-Carousel/index.html)
-![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/41.png)
+![Basic Images Carousel](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/41.png)
 ## License
 
 This project follows the [MIT License](/LICENSE).
