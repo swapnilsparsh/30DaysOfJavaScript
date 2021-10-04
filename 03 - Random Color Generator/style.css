@@ -71,8 +71,62 @@ footer a:visited {
   color: inherit;
 }
 
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.copy {
+  color: white;
+  padding: 15px 60px;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  background: #333;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 500px) {
   .box {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .item {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+  .copy {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .copy {
+    width: 100%;
+  }
+}
+
+@media (max-width: 840px) {
+  .copy {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .copy {
+    padding: 5px;
+    width: fit-content;
+    text-align: center;
+  }
+  .btn {
+    padding: 5px;
   }
 }
