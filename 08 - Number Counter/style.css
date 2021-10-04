@@ -133,9 +133,7 @@ footer {
     width: 100%;
 }
 
-footer a:visited {
-    color: inherit;
-}
+
 
 @media screen and (min-width : 635px) {
 
