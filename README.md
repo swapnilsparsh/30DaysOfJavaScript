@@ -107,8 +107,8 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## [Day 38 -  Snake Game](https://30daysofjs.netlify.app/32%20-%20Snake%20Game/index.html)
 ![Snake Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/38.png)
 
-## [Day 40 - Infinite Scroll](https://30daysofjs.netlify.app/40%20-%20infinite%20scroll/index.html)
-![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/40.png)
+## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20infinite%20scroll/index.html)
+![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/44.png)
 ## License
 
 This project follows the [MIT License](/LICENSE).
