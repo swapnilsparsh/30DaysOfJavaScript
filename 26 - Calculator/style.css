@@ -29,7 +29,7 @@ h2 {
 
 #display {
   text-align: right;
-  height: 65px;
+  height: 60px;
   padding-right: 10px;
   line-height: 80px;
   font-size: 1.5rem;
@@ -89,109 +89,3 @@ footer a:visited {
   color: inherit;
 }
 
-.bubbles {
-  position: absolute;
-  bottom: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-
-.bubbles span {
-  height: 40px;
-  width: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  animation: move 10s linear infinite;
-  position: relative;
-  overflow: hidden;
-
-}
-
-@keyframes move {
-  100% {
-      transform: translateY(-90vh);
-  }
-}
-
-.bubbles span.one {
-  animation-delay: 2.25s;
-  transform: scale(2.15);
-}
-.bubbles span.two {
-  animation-delay: 3.25s;
-  transform: scale(1.15);
-}
-.bubbles span.three {
-  animation-delay: 6s;
-  transform: scale(2.15);
-  align-items: left;
-}
-.bubbles span.four {
-  animation-delay: 7s;
-  transform: scale(0.5);
-  visibility: hidden;
-}
-.bubbles span.five {
-  animation-delay: 4s;
-  transform: scale(2.5);
-}
-.bubbles span.six {
-  animation-delay: 3s;
-  transform: scale(1.5);
-}
-.bubbles span.seven {
-  animation-delay: 2.5s;
-  transform: scale(2.15);
-}
-
-.bubbles span::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 60px;
-  width: 40%;
-  transform: skew(45deg) translateX(150px);
-  background: rgba(255, 255, 255, 0.15);
-  animation: mirror 3s linear infinite;
-  
-}
-
-@keyframes mirror {
-  100% {
-      transform: translateX(-450px);
-  }
-}
-
-.bubbles span.one:before {
-  animation-delay: 1.5s;
-  
-}
-.bubbles span.two:before {
-  animation-delay: 3.5s;
-
-}
-.bubbles span.four:before {
-  animation-delay: 2.5s;
-
-}
-.bubbles span.five:before {
-  animation-delay: 2.5s;
-
-}
-.bubbles span.three:before {
-  animation-delay: 4.5s;
-
-}
-.bubbles span.six:before {
-  animation-delay: 0.5s;
-
-}
-.bubbles span.seven:before {
-  animation-delay: 6s;
-
-}
