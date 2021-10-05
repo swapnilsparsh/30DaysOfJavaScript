@@ -31,9 +31,33 @@ window.addEventListener('load', () => {
 
           // Interacting with DOM to show data
           loc.textContent = `${place}`;
-          desc.textContent = `${description}`;
+           desc.textContent = `${description}`;
           tempC.textContent = `${temp.toFixed(2)} °C`;
-          tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
+          //  tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
+          if(desc.textContent=='clear'){
+            document.body.style.backgroundImage= "url('Clear1.jpg')";
+        }else if(desc.textContent=='clouds'){
+            document.body.style.backgroundImage= "url('Cloudy.jpg')";
+        }
+        else if(desc.textContent=='rain'){
+            document.body.style.backgroundImage= "url('rain.jpg')";
+        }
+        else if(desc.textContent=='mist'){
+          document.body.style.backgroundImage= "url('rain.jpg')";
+      }
+
+        else if(desc.textContent=='haze'){
+            document.body.style.backgroundImage= "url('Cloudy.jpg')";
+        }
+        else if(desc.textContent=='snow'){
+            document.body.style.backgroundImage= "url('snow.jpg')";
+        }
+        else if(desc.textContent=='thunderstorm'){
+            document.body.style.backgroundImage= "url('thunder.jpg')";
+        }
+      
+          
+          
         });
     });
   }
