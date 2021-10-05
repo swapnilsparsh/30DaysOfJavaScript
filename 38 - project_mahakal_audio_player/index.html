@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- 
+    <link rel="stylesheet" href="fa_custom_setup_cdn_webfont(
+        'https://use.fontawesome.com/releases/v5.10.0/css/v4-shims.css'
+      );"> -->
+      <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">01 Paawan Hai Is Desh Ki Maati.mp3</h2>
+            <h3 id="artist">Akhilesh singh</h3>
+            <div class="image_container">
+                <img src="images/image1.jpg" alt="shree-ganesh-shay||om-nmah-shivay">
+            </div>
+            <audio src="music/01 Paawan Hai Is Desh Ki Maati.mp3" ></audio>
+            <!-- controls -->
+            <din class="music_controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+
+
+            </din>
+        </div>
+    </div>
+    <script>
+        const music = document.querySelector("audio");
+        const img = document.querySelector('img');
+        const artist = document.getElementById("artist");
+        const title = document.getElementById("title");
+        const rev = document.getElementById("prev");
+        const next = document.getElementById("next");
+        
+        const songs = [{
+            name: "01 Paawan Hai Is Desh Ki Maati.mp3"
+            title: "01 Paawan Hai Is Desh Ki Maati.mp3"
+            artist: "Akhiledh singh"
+        },
+        {
+            name: "02 Maa Laga De Tilak Balidani.mp3"
+            title: "Maa Laga De Tilak Balidani.mp3"
+            artist: "Abhigyan"
+        },
+        {
+            name: "03 Hindustan-Hindustan.mp3"
+            title: "03 Hindustan-Hindustan.mp3"
+            artist: "Israr bhatt"
+        },
+        {
+            name: "04 Aao Lahrao Aao Fahrao.mp3"
+            title: "04 Aao Lahrao Aao Fahrao.mp3"
+            artist: "ashish/kajal"
+        },
+        {
+            name: "05 Ye Matra Bhoomi Mahan Hai.mp3"
+            title: "05 Ye Matra Bhoomi Mahan Hai.mp3"
+            artist: "kajal agrawal"
+        },
+        {
+            name: "06 Ye Dhwaj Nahi Ye Shaan Hai.mp3"
+            title: "06 Ye Dhwaj Nahi Ye Shaan Hai.mp3"
+            artist: "akhilesh shigh"
+        },
+        ]
+
+
+        let isPlaying = false;
+        //for play fuction
+        const playMusic = () ==>  {
+            isPlaying = true;
+            music.play();
+            play.classList('fa-play',"fa-pause");
+            img.classList.add("anime");
+        });
+
+        //for pause function
+          const pauseMusic = () ==> {
+            isPlaying = false;
+            music.pause();
+            play.classList("fa-pause","fa-play");
+            img.classList.remove("anime");
+        });
+        
+        play.addEventListener('click', () ==>{
+            // if(ifPlaying){
+            //     pauseMusic();
+            // }else{
+            //     playMusic()
+            // }
+            isPlaying ? pauseMusic() : playMusic() ;
+        });
+        //changing the music data
+        const loadSong = (songs) ==> {
+            title.textContent = songs.title;
+            title.textContent = songs.artist;
+            music.src = "music/" + songs.name + " .mp3";
+            music.src = `music/${songs.name}.mp3"`;
+            img.src = "images/" + songs.name + ".jpg";
+            
+            };
+            
+        songIndex = 0;
+        const nextSong =() ==> {
+        songIndex = (songIndex + 1)% songs.length;
+        loadSong(songs[songIndex]);
+        playMusic();
+        };
+        const prevSong =() ==> {
+        songIndex = (songIndex - 1 + song.length)% songs.length;
+        loadSong(songs[songIndex]);
+        playMusic();
+        };
+
+        next.addEventListener("click" nextSong);
+        prev.addEventListener("click",prevSong);
+    </script>
+</body>
+</html>
