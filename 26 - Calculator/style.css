@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "sans";
-  background-color: #19172e;
-  color: white;
+  background-color: #E5E5E5;
+  color: #57606f;
   user-select: none;
 }
 
@@ -16,7 +16,7 @@
 h2 {
   top: 0;
   padding-top: 20px;
-  color: white;
+  color: #E5E5E5;
   font-size: 2rem;
   text-align: center;
 }
@@ -33,7 +33,7 @@ h2 {
   line-height: 80px;
   font-size: 1.5rem;
   border-radius: 15px 15px 0 0;
-  background-color: white;
+  background-color: ##E5E5E5;
   color: black;
 }
 
@@ -43,7 +43,7 @@ h2 {
 }
 
 .button {
-  border: 0.5px solid white;
+  border: 0.5px solid #57606f;
   line-height: 80px;
   text-align: center;
   font-size: 1.5rem;
@@ -59,15 +59,15 @@ h2 {
 }
 
 #equal {
-  background-color: rgb(85, 85, 255);
+  background-color: #171532;
 }
 
 #equal:active {
-  background-color: #1e8e3e !important;
+  background-color: #b7ce36 !important;
 }
 
 .button:active {
-  background-color: #1e8e3e;
+  background-color: #d0d324;
 }
 
 footer {

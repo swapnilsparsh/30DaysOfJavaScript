@@ -16,7 +16,7 @@ buttons.map(button => {
           display.innerText = "Error"
         }
         break;
-      case 'CE':
+      case 'DEL':
         if (display.innerText) {
           display.innerText = display.innerText.slice(0, -1);
         }
