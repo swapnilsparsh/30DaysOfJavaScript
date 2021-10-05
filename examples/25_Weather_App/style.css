@@ -10,8 +10,15 @@
 }
 
 body {
-  color: white;
+  color: black;
   font-family: "sans";
+   height:100vh;
+   overflow:hidden;
+   background-image: url('Clear1.jpg');
+   background-repeat: no-repeat;
+   background-position: top-center;
+   /* font-family: Arial, Helvetica, sans-serif; */
+   background-size: cover;
 }
 
 h1{
@@ -39,7 +46,7 @@ h1{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #19172e;
+   /* background: #19172e;  */
 }
 
 .weather {
@@ -61,7 +68,7 @@ h1{
 
 footer {
   text-align: center;
-  color: white;
+  color: black;
   font-size: 1rem;
   position: absolute;
   left: 0;
