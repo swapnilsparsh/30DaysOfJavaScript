@@ -1,14 +1,17 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() >= 100) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-    $('.scrollToTop').click(function(e){
-        e.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, 500);
-        return false;
-    });
-});
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  window.addEventListener("scroll", function() {
+    if (document.documentElement.scrollTop >= 100) {
+      scroll_button.classList.remove("hidden")
+    } else {
+      scroll_button.classList.add("hidden")
+    }
+  })
+
+  scroll_button.addEventListener("click", function(event) {
+    event.preventDefault()
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  })
+
+})
