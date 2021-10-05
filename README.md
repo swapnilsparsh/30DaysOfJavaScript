@@ -110,6 +110,9 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/41%20-%20Basic-Carousel/index.html)
 ![Basic Images Carousel](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/41.png)
 
+## [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/42%20-%20Simple%20Form%20Validation/index.html)
+![Simple Form Validation](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/42.png)
+
 ## [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20Getting%20Started%20with%20APIs/index.html)
 ![Getting Started with APIs](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/43.png)
 
