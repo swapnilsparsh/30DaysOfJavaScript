@@ -104,8 +104,26 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## [Day 33 - Feedback UI](https://30daysofjs.netlify.app/33_Feedback_UI/index.html)
 ![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/33.png)
 
+## [Day 34 - Virtual Piano](https://30daysofjs.netlify.app/34_Virtual_Piano/index.html)
+![Virtual Piano](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/34.png)
+
+## [Day 35 - Decimal To Binary](https://30daysofjs.netlify.app/35_Decimal_To_Binary/index.html)
+![Decimal To Binary](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/35.png)
+
+## [Day 36 - Hangman](https://30daysofjs.netlify.app/36_Hangman/index.html)
+![Hangman](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/36.png)
+
+## [Day 37 - RPS Game](https://30daysofjs.netlify.app/37_RPS_Game/index.html)
+![RPS Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/37.png)
+
 ## [Day 38 - Snake Game](https://30daysofjs.netlify.app/38_Snake_Game/index.html)
 ![Snake Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/38.png)
+
+## [Day 39 - Age_Calculator](https://30daysofjs.netlify.app/39_Age_Calculator/index.html)
+![Age Calculator](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/39.png)
+
+## [Day 40 - Gradient Generator](https://30daysofjs.netlify.app/40_Gradient_Generator/index.html)
+![Gradient Generator](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/40.png)
 
 ## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/41_Basic_Carousel/index.html)
 ![Basic Images Carousel](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/41.png)
