@@ -142,84 +142,70 @@ function handleYearChange(event) {
 	updateDayField(value, selectedMonth);
 }
 
-/**
- * The month field's change handler function.
- *
- * @param {ChangeEvent} event
- */
-function handleMonthChange(event) {
-	event.preventDefault();
-	const { value } = event.target;
-	selectedMonth = +value;
-	updateDayField(selectedYear, value);
+
+const months = [31,28,31,30,31,30,31,31,30,31,30,31];
+
+function ageCalculate(){
+    let today = new Date();
+    let inputDate = new Date(document.getElementById("date-input").value);
+    let birthMonth,birthDate,birthYear;
+    let birthDetails = {
+        date:inputDate.getDate(),
+        month:inputDate.getMonth()+1,
+        year:inputDate.getFullYear()
+    }
+    let currentYear = today.getFullYear();
+    let currentMonth = today.getMonth()+1;
+    let currentDate = today.getDate();
+
+    leapChecker(currentYear);
+
+    if(
+        birthDetails.year > currentYear ||
+        ( birthDetails.month > currentMonth && birthDetails.year == currentYear) || 
+        (birthDetails.date > currentDate && birthDetails.month == currentMonth && birthDetails.year == currentYear)
+    ){
+        alert("Not Born Yet");
+        displayResult("-","-","-");
+        return;
+    }
+
+    birthYear = currentYear - birthDetails.year;
+
+    if(currentMonth >= birthDetails.month){
+        birthMonth = currentMonth - birthDetails.month;
+    }
+    else{
+        birthYear--;
+        birthMonth = 12 + currentMonth - birthDetails.month;
+    }
+
+    if(currentDate >= birthDetails.date){
+        birthDate = currentDate - birthDetails.date;
+    }
+    else{
+        birthMonth--;
+        let days = months[currentMonth - 2];
+        birthDate = days + currentDate - birthDetails.date;
+        if(birthMonth < 0){
+            birthMonth = 11;
+            birthYear--;
+        }
+    }
+    displayResult(birthDate,birthMonth,birthYear);
 }
 
-/**
- * The day field's change handler function.
- *
- * @param {ChangeEvent} event
- */
-function handleDayChange(event) {
-	event.preventDefault();
-	const { value } = event.target;
-	selectedDay = +value;
+function displayResult(bDate,bMonth,bYear){
+    document.getElementById("years").textContent = bYear;
+    document.getElementById("months").textContent = bMonth;
+    document.getElementById("days").textContent = bDate;
 }
 
-/**
- * Calculate the age.
- *
- * @param {ClickEvent} event
- * @returns void
- */
-function handleAgeCalculation(event) {
-	event.preventDefault();
-	const dob = moment(makeDate());
-	const current = moment(today);
-
-	if (dob.isAfter(current)) {
-		displayAge('Invalid Date of Birth! You cannot be born after today!');
-		return;
-	}
-	const diff = moment.preciseDiff(current, dob, true);
-
-	displayAge(createAgeString(diff));
-}
-
-/**
- * Create a age string from the preciseDiff object
- *
- * @param {object} diffObject
- * @returns {string}
- */
-function createAgeString(diffObject) {
-	const { years, months, days } = diffObject;
-
-	if (years === 0 && months === 0 && days === 0) {
-		return "You've just born today!";
-	}
-
-	let ageStr = 'You are';
-
-	if (years > 0) {
-		ageStr += ` <code>${years} ${years > 1 ? 'years' : 'year'}</code>`;
-	}
-
-	if (months > 0) {
-		ageStr += ` <code>${months} ${months > 1 ? 'months' : 'month'}</code>`;
-	}
-
-	if (days > 0) {
-		ageStr += ` <code>${days} ${days > 1 ? 'days' : 'day'}</code>`;
-	}
-
-	return ageStr + ' old!';
-}
-
-/**
- * Display the age message to the display.
- *
- * @param {string} message
- */
-function displayAge(message) {
-	display.innerHTML = message;
+function leapChecker(year){
+    if(year % 4 == 0 || (year % 100 == 0 && year % 400 == 0)){
+        months[1] = 29;
+    }
+    else{
+        months[1] = 28;
+    }
 }
