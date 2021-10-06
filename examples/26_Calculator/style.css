@@ -22,8 +22,9 @@ h2 {
 }
 
 .container {
-  max-width: 280px;
+  max-width: 290px;
   margin: 50px auto 0;
+  
 }
 
 #display {
@@ -32,21 +33,21 @@ h2 {
   padding-right: 10px;
   line-height: 80px;
   font-size: 1.5rem;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
   background-color: white;
   color: black;
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
 }
 
 .button {
   border: 0.5px solid white;
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
@@ -56,6 +57,7 @@ h2 {
 
 .button.right {
   border-radius: 0 0 15px 0;
+  size: 40px;
 }
 
 #equal {
@@ -69,8 +71,7 @@ h2 {
 .button:active {
   background-color: #1e8e3e;
 }
-
-footer {
+fot {
   background-color: #19172e;
   text-align: center;
   color: white;
@@ -81,8 +82,13 @@ footer {
   bottom: 0;
   padding: 5px;
   line-height: 3vh;
+  position: fixed;
+  float: center;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  
 }
 
-footer a:visited {
-  color: inherit;
-}
+
+
