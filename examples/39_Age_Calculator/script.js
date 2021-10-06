@@ -11,7 +11,7 @@ let selectedYear = today.getFullYear(),
 	selectedDay = today.getDate(),
 	daysOfMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-/** Listen the event DOMContentLoaded. */
+
 window.addEventListener('DOMContentLoaded', () => {
 	updateDaysOfMonths(today.getFullYear());
 	fillYearField();
