@@ -1,312 +1,820 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="30DaysOfJavaScript/style.css" />
-  <link rel="shortcut icon" href="30DaysOfJavaScript/assets/favicon.png" type="image/x-icon">
-
-  <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-  <script src="30DaysOfJavaScript/script.js"></script>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>30 Days Of JavaScript</title>
+  <link rel="stylesheet" href="assets/tailwind.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <script src="assets/script.js"></script>
 </head>
 <body>
-  <h1>30 Days Of JavaScript</h1>
-  <a class="scrollToTop"><span></span></a>
-  <div class="main">
+  <a id="scroll_button" class="hidden fixed w-14 h-14 z-10 right-3 bottom-3 rounded-full cursor-pointer bg-indigo-600 hover:bg-indigo-700">
+    <span class="absolute -ml-2 -mt-3 top-1/2 left-1/2 border-8 border-solid border-transparent border-b-white"></span>
+  </a>
+  <div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-gray-50 overflow-hidden">
+      <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
+        <div class="relative h-full max-w-7xl mx-auto">
+          <svg class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+            <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+          </svg>
+          <svg class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+            <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+          </svg>
+        </div>
+      </div>
 
-    <div class="item">
-      <a target="_blank" href="01 - Drum Kit/index.html">
-        <img src="30DaysOfJavaScript/assets/01.png" alt="Drum Kit" />
-        <h4>Drum Kit</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="02 - Clock/index.html">
-        <img src="30DaysOfJavaScript/assets/02.png" alt="Clock" />
-        <h4>Clock</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="03 - Random Color Generator/index.html">
-        <img src="30DaysOfJavaScript/assets/03.png" alt="Random Color Generator" />
-        <h4>Random Color Generator</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="04 - Digital Clock/index.html">
-        <img src="30DaysOfJavaScript/assets/04.png" alt="Digital Clock" />
-        <h4>Digital Clock</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="05 - Random Password Generator/index.html">
-        <img src="30DaysOfJavaScript/assets/05.png" alt="Random Password Generator" />
-        <h4>Random Password Generator</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="06 - Calendar/index.html">
-        <img src="30DaysOfJavaScript/assets/06.png" alt="Calendar" />
-        <h4>Calendar</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="07 - Dynamic Form Field/index.html">
-        <img src="30DaysOfJavaScript/assets/07.png" alt="Dynamic Form Field" />
-        <h4>Dynamic Form Field</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="08 - Number Counter/index.html">
-        <img src="30DaysOfJavaScript/assets/08.png" alt="Number Counter" />
-        <h4>Number Counter</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="09 - Dice Roll/index.html">
-        <img src="30DaysOfJavaScript/assets/09.png" alt="Dice Roll" />
-        <h4>Dice Roll</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="10 - Emoji Switcher like Discord/index.html">
-        <img src="30DaysOfJavaScript/assets/10.png" alt="Emoji Switcher" />
-        <h4>Emoji Switcher</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="11 - Color Picker/index.html">
-        <img src="30DaysOfJavaScript/assets/11.png" alt="Color Picker" />
-        <h4>Color Picker</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="12 - Custom QR Code/index.html">
-        <img src="30DaysOfJavaScript/assets/12.png" alt="Custom QR Code" />
-        <h4>Custom QR Code</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="13 - Favicon Fetcher/index.html">
-        <img src="30DaysOfJavaScript/assets/13.png" alt="Favicon Fetcher" />
-        <h4>Favicon Fetcher</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="14 - Visit Counter/index.html">
-        <img src="30DaysOfJavaScript/assets/14.png" alt="Visit Counter" />
-        <h4>Visit Counter</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="15 - Joke Generator/index.html">
-        <img src="30DaysOfJavaScript/assets/15.png" alt="Joke Generator" />
-        <h4>Joke Generator</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="16 - Countdown Timer/index.html">
-        <img src="30DaysOfJavaScript/assets/16.png" alt="Countdown Timer" />
-        <h4>Countdown Timer</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="17 - Text Speed Control/index.html">
-        <img src="30DaysOfJavaScript/assets/17.png" alt="Text Speed Control" />
-        <h4>Text Speed Control</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="18 - Stopwatch/index.html">
-        <img src="30DaysOfJavaScript/assets/18.png" alt="Stopwatch" />
-        <h4>Stopwatch</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="19 -Traffic Lights/index.html">
-        <img src="30DaysOfJavaScript/assets/19.png" alt="Traffic Lights">
-        <h4>Traffic Lights</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="20 - Levitate Board/index.html">
-        <img src="30DaysOfJavaScript/assets/20.png" alt="Levitate Board">
-        <h4>Levitate Board</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="21 - Wave Effect/index.html">
-        <img src="30DaysOfJavaScript/assets/21.png" alt="Wave Effect">
-        <h4>Wave Effect</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="22 - Zoom Effect/index.html">
-        <img src="30DaysOfJavaScript/assets/22.png" alt="Zoom Effect">
-        <h4>Zoom Effect</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="23 - Drawing Pad/index.html">
-        <img src="30DaysOfJavaScript/assets/23.png" alt="Drawing Pad">
-        <h4>Drawing Pad</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="24 - Word Counter/index.html">
-        <img src="30DaysOfJavaScript/assets/24.png" alt="Word Counter">
-        <h4>Word Counter</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="25 - Weather App/index.html">
-        <img src="30DaysOfJavaScript/assets/25.png" alt="Weather App">
-        <h4>Weather App </h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="26 - Calculator/index.html">
-        <img src="30DaysOfJavaScript/assets/26.png" alt="Calculator">
-        <h4>Calculator</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="27 - Memory Matching Game/index.html">
-        <img src="30DaysOfJavaScript/assets/27.png" alt="Memory Matching Game">
-        <h4>Memory Matching Game</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="28 - Music Player/index.html">
-        <img src="30DaysOfJavaScript/assets/28.png" alt="Music Player">
-        <h4>Music Player</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="29 - To Do List/index.html">
-        <img src="30DaysOfJavaScript/assets/29.png" alt="To Do List">
-        <h4>To Do List</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="30 - Tic Tac Toe/index.html">
-        <img src="30DaysOfJavaScript/assets/30.png" alt="Tic Tac Toe">
-        <h4>Tic Tac Toe</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="31 - Pop the Balloons/index.html">
-        <img src="30DaysOfJavaScript/assets/31.png" alt="Pop the Balloons">
-        <h4>Pop the Balloons</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="32 - Key Code/index.html">
-        <img src="30DaysOfJavaScript/assets/32.png" alt="Events Keycodes">
-        <h4>Events Keycodes</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="33 - Feedback UI/index.html">
-        <img src="30DaysOfJavaScript/assets/33.png" alt="Feedback UI">
-        <h4>Feedback UI</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="34 - Virtual Piano/index.html">
-        <img src="30DaysOfJavaScript/assets/34.png" alt="Virtual Piano">
-        <h4>Virtual Piano</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="35 - Decimal To Binary/index.html">
-        <img src="30DaysOfJavaScript/assets/35.png" alt="Decimal to Binary">
-        <h4>Decimal to Binary</h4>
-      </a>
-    </div>
-    <div class="item">
-      <a target="_blank" href="36 - Hangman/index.html">
-        <img src="30DaysOfJavaScript/assets/36.png" alt="Hangman" />
-        <h4>Hangman</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="37 - RPS Game/start.html">
-        <img src="30DaysOfJavaScript/assets/37.png" alt="Rock Paper Scissors Game" />
-        <h4>Rock Paper Scissors Game</h4>
-      </a>
-    </div>
-
-     <div class="item">
-      <a target="_blank" href="38 - Snake-Game/index.html">
-        <img src="30DaysOfJavaScript/assets/38.png" alt="Snake Game" />
-        <h4>Snake Game</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="39 - Age Calculator/index.html">
-        <img src="30DaysOfJavaScript/assets/39.png" alt="Age Calculator" />
-        <h4>Age Calculator</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="40 - Gradient Generator/index.html">
-        <img src="30DaysOfJavaScript/assets/40.png" alt="Gradient Generator" />
-        <h4>Gradient Generator</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="41 - Basic-Carousel/index.html">
-        <img src="30DaysOfJavaScript/assets/41.png" alt="Basic-Images-Carousel" />
-        <h4>Basic-Images-Carousel</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="42 - Simple Form Validation/index.html">
-        <img src="30DaysOfJavaScript/assets/42.png" alt="Simple Form Validation" />
-        <h4>Simple Form Validation</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="43 - Getting Started with APIs/index.html">
-        <img src="30DaysOfJavaScript/assets/43.png" alt="Getting Started with APIs" />
-        <h4>Getting Started with APIs</h4>
-      </a>
-    </div>
-
-    <div class="item">
-      <a target="_blank" href="44 - Infinite Scroll/index.html">
-        <img src="30DaysOfJavaScript/assets/44.png" alt="Infinite Scroll" />
-        <h4>Infinite Scroll</h4>
-      </a>
+      <div class="relative pt-6 pb-16 sm:pb-24">
+        <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+          <div class="text-center">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <span class="block xl:inline">30 Days of</span>
+              <span class="block text-indigo-600 xl:inline">JavaScript</span>
+            </h1>
+            <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+              One approach to get started with JavaScript as an entry point.
+            </p>
+          </div>
+        </main>
+      </div>
     </div>
   </div>
-  <footer>
-    <p>&#x3c; &#47; &#x3e; with ❤️ by
-      <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
-      <br>
-      <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript</a>
-    </p>
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-28">
+    <div class="absolute inset-0">
+      <div class="bg-white h-1/3 sm:h-2/3"></div>
+    </div>
+    <div class="relative max-w-full mx-auto">
+      <div class="text-center">
+        <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+          Examples collection
+        </h2>
+        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+          Feel free to play around with the implementations by going to the <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" class="text-indigo-600 hover:underline">Github repo</a>.
+        </p>
+      </div>
+      <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-5 lg:max-w-none">
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/01.png" alt="Drum Kit">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/01_Drum_Kit/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Drum Kit</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/02.png" alt="Clock">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/02_Clock/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Clock</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/03.png" alt="Random Color Generator">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/03_Random_Color_Generator/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Random Color Generator</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/04.png" alt="Digital Clock">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/04_Digital_Clock/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Digital Clock</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/05.png" alt="Random Password Generator">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/05_Random_Password_Generator/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Random Password Generator</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/06.png" alt="Calendar">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/06_Calendar/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Calendar</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/07.png" alt="Dynamic Form Field">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/07_Dynamic_Form_Field/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Dynamic Form Field</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/08.png" alt="Number Counter">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/08_Number_Counter/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Number Counter</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/09.png" alt="Dice Roll">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/09_Dice_Roll/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Dice Roll</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/10.png" alt="Emoji Switcher">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/10_Emoji_Switcher_like_Discord/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Emoji Switcher</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/11.png" alt="Color Picker">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/11_Color_Picker/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Color Picker</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/12.png" alt="Custom QR Code">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/12_Custom_QR_Code/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Custom QR Code</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/13.png" alt="Favicon Fetcher">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/13_Favicon_Fetcher/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Favicon Fetcher</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/14.png" alt="Visit Counter">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/14_Visit_Counter/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Visit Counter</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/15.png" alt="Joke Generator">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/15_Joke_Generator/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Joke Generator</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/16.png" alt="Countdown Timer">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/16_Countdown_Timer/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Countdown Timer</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/17.png" alt="Text Speed Control">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/17_Text_Speed_Control/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Text Speed Control</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/18.png" alt="Stopwatch">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/18_Stopwatch/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Stopwatch</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/19.png" alt="Traffic Lights">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/19_raffic_Lights/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Traffic Lights</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/20.png" alt="Levitate Board">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/20_Levitate_Board/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Levitate Board</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/21.png" alt="Wave Effect">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/21_Wave_Effect/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Wave Effect</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/22.png" alt="Zoom Effect">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/22_Zoom_Effect/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Zoom Effect</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/23.png" alt="Drawing Pad">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/23_Drawing_Pad/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Drawing Pad</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/24.png" alt="Word Counter">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/24_Word_Counter/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Word Counter</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/25.png" alt="Weather App">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/25_Weather_App/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Weather App</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/26.png" alt="Calculator">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/26_Calculator/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Calculator</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/27.png" alt="Memory Matching Game">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/27_Memory_Matching_Game/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Memory Matching Game</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/28.png" alt="Music Player">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/28_Music_Player/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Music Player</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/29.png" alt="To Do List">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/29_To_Do_List/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">To Do List</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/30.png" alt="Tic Tac Toe">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/30_Tic_Tac_Toe/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Tic Tac Toe</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/31.png" alt="Pop the Balloons">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/31_Pop_the_Balloons/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Pop the Balloons</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/32.png" alt="Events Keycodes">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/32_Key_Code/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Events Keycodes</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/33.png" alt="Feedback UI">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/33_Feedback_UI/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Feedback UI</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/34.png" alt="Virtual Piano">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/34_Virtual_Piano/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Virtual Piano</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/35.png" alt="Decimal to Binary">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/35_Decimal_To_Binary/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Decimal to Binary</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/36.png" alt="Hangman">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/36_Hangman/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Hangman</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/37.png" alt="Rock Paper Scissors Game">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/37_RPS_Game/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Rock Paper Scissors Game</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/38.png" alt="Snake Game">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/38_Snake_Game/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Snake Game</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/39.png" alt="Age Calculator">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/39_Age_Calculator/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Age Calculator</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/40.png" alt="Gradient Generator">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/40_Gradient_Generator/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Gradient Generator</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/41.png" alt="Basic Carousel of Images">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/41_Basic_Carousel/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Basic Carousel of Images</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/42.png" alt="Getting Started with APIs">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/42_Simple_Form_Validation/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Simple Form Validation</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/43.png" alt="Getting Started with APIs">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/43_Getting_Started_with_APIs/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Getting Started with APIs</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <div class="flex-shrink-0">
+            <img class="h-48 w-full object-cover" src="assets/images/44.png" alt="Infinite Scroll">
+          </div>
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-indigo-600">
+                <span>Exercise</span>
+              </p>
+              <a href="/examples/44_Infinite_Scroll/index.html" target="_blank" class="block mt-2 hover:underline">
+                <p class="text-xl font-semibold text-gray-900">Infinite Scroll</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <footer class="bg-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+      <div class="flex justify-center space-x-6 md:order-2">
+        <a href="#" class="text-gray-400 hover:text-gray-500">
+          <span class="sr-only">Facebook</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a href="#" class="text-gray-400 hover:text-gray-500">
+          <span class="sr-only">Instagram</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a href="#" class="text-gray-400 hover:text-gray-500">
+          <span class="sr-only">Twitter</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          </svg>
+        </a>
+
+        <a href="https://github.com/swapnilsparsh" class="text-gray-400 hover:text-gray-500">
+          <span class="sr-only">GitHub</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      <div class="mt-8 md:mt-0 md:order-1">
+        <p class="text-center text-base text-gray-400">
+          Made with ❤️  by <a href="https://swapnilsparsh.github.io" class="text-indigo-600 hover:underline">Swapnil Srivastava</a>
+        </p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
