@@ -19,6 +19,14 @@ body {
    background-position: top-center;
    /* font-family: Arial, Helvetica, sans-serif; */
    background-size: cover;
+   text-align: center;
+  
+   
+}
+.hedd{
+  font-size: 50px;
+  font-family: "sans";
+  margin-top: 3px;
 }
 
 h1{
@@ -28,6 +36,7 @@ h1{
     left: 0;
     right: 0;
     padding-top: 20px;
+    font-family: "sans";
 }
 
 .modal{
@@ -52,9 +61,9 @@ h1{
 .weather {
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin: 15px 0;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 #location {
@@ -74,7 +83,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 6px;
+  padding: 5px;
   line-height: 3vh;
 }
 
@@ -87,3 +96,99 @@ footer a:visited {
     display: block;
   }
 }
+
+.app-main {
+  width: 50vh;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.50);
+  padding: 20px;
+  text-align: center;
+
+}
+
+.app-main {
+  margin-bottom: 20px;
+
+}
+.input-box{
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.50);
+  border: none;
+  outline: none;
+  color: #582233;
+  font-size: 25px;
+  height: 50px;
+  
+  border-radius: 5px;
+  padding: 0 10px;
+  text-align: center;
+
+}
+.input-box:focus {
+  background-color: rgba(255, 255, 255, 0.50);
+}
+.weather-body{
+  display: none;
+  color: #582233;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.50);
+  height: 40vh;
+  text-align: center;
+  
+
+  
+}
+.location{
+  font-weight: bold;
+
+}
+
+.weather-status{
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+
+}
+.temp{
+  font-size: 50pt;
+  font-weight: 700;
+  margin: 20px 0;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0);
+  text-align: center;
+
+}
+.min-max, .weather{
+  font-size: 12pt;
+  font-weight: 600;
+  text-align: center;
+}
+.weather{
+  font-size: 12pt;
+  font-weight: 600;
+  justify-content: center;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  padding-top: 45px;   
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 200%;
+  font-weight: bold; 
+  font-style: italic;
+  text-align: center;
+}
+
+.fot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+  
+}
+
+
