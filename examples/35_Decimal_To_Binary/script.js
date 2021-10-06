@@ -4,10 +4,12 @@ let select = document.getElementById("select");
 var into = document.getElementById("into");
 
 
-function changeinto(){
-    into.innerHTML = select.value;
+function changeinto() {
+  into.innerHTML = select.value;
 }
 changeinto();
+
+
 function calculate() {
   let number = input.value;
   if (isNaN(number) || number == "") {
@@ -50,10 +52,12 @@ function calculate() {
       }
       output.value = char;
     }
-  } else if (select.value == "Octal") {
+  }
+  else if (select.value == "Octal") {
     if (number == 0) {
       output.value = 0;
-    } else {
+    } 
+    else {
       let r,
         t,
         i = 1,
@@ -66,6 +70,15 @@ function calculate() {
         t = parseInt(t / 8);
       }
       output.value = j;
+    }
+  }
+  else if (select.value == "Graycode decimal equivalent") {
+    if (number == 0) {
+      output.value = 0;
+    }
+    else {
+      let graycode = number ^ (number >> 1);
+      output.value = graycode;
     }
   }
 }
