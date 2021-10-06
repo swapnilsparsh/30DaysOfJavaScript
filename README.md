@@ -145,7 +145,7 @@ So, these are the simple steps to start working with **TailwindCSS** in the proj
  2. Clone this repo using `git clone git@github.com:alexventuraio/30DaysOfJavaScript.git`.
  3. Go to the root folder with `cd 30DaysOfJavaScript`.
  4. We have the minimum configuration for TailwindCSS to work properly but feel free to modify it on the config file `tailwind.config.js`.
- 5. Since, TailwindCSS has its own CLI, we are going to use it to purge the classes we are not using from Tailwind and the JIT compiler to create our final CSS file in order to have a small file size containing only the classes we are using in the HTML. So, run this command `npx tailwindcss --output assets/tailwind.css --watch` and you'll be ready to start working on the site.
+ 5. Since, TailwindCSS has its own CLI, we are going to use it to purge the classes we are not using from Tailwind and the JIT compiler to create our final CSS file in order to have a small file size containing only the classes we are using in the HTML. In the `package.json` file we have a custom command to start with, just run `yarn run dev` or `npm run dev` and you'll be ready to start working on the site.
  7. Finally, you can start a live server to serve the site or just open it up manually (`index.html`) on the browser.
 
 # Prepare for Production
@@ -153,7 +153,7 @@ We can deliver the final `tailwind.css` file to production and it will work but 
 So, we are going to minify it in order to have a smaller file size and be more appropriated for production.
 
 1. Stop any other command that you have using `ctrl + c`.
-2. Use the Tailwind CLI to minify our `assets/tailwind.css` file, so, run this command `npx tailwindcss --output assets/tailwind.css --minify`. This will go over the custom CSS file generated with the required classes for our project and prepare it for production.
+2. We have a `package.json` file with two commands that use the Tailwind CLI, one of them is to minify our `assets/tailwind.css` file, so the only thing you need to do is to run `yanr run build` or `npm run build`. This will go over the custom CSS file generated with the required classes for our project and prepare it for production.
 
 > **Note:** Running the last ***command to minify for production*** is quire important for performance reasons.
 > **Note:** You must ***run it before pushing to master*** to always have a ready-for-production version.
