@@ -8,9 +8,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   })
 
+
   scroll_button.addEventListener("click", function(event) {
     event.preventDefault()
+    setTimeout(function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
+    }, 300);
   })
+
 
 })
