@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   })
 
-
+// Adding delay
   scroll_button.addEventListener("click", function(event) {
     event.preventDefault()
     setTimeout(function() {
