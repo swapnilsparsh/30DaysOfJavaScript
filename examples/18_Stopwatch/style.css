@@ -47,6 +47,9 @@ h1{
     margin-top: 10px;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
+    max-height: 60px;
+
 }
 #lapBox h1{
     position: relative;
@@ -81,4 +84,16 @@ footer {
 
 footer a:visited {
     color: inherit;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 420px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
 }
