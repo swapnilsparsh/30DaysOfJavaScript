@@ -12,8 +12,7 @@ add_more_fields.onclick = function(){
     newField.setAttribute('placeholder', 'Another Field');
     survey_options.appendChild(newField);
     if(input_tags.length > 2){
-        document.getElementById("remove_fields").style.visibility="visible";
-        
+        document.getElementById("remove_fields").style.visibility="visible"; 
     }
 }
 
