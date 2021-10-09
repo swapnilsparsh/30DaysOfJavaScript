@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  font-family: "sans";
+  color: white;
+  background: rgb(111,18,47);
+  background: linear-gradient(332deg, rgba(111,18,47,1) 0%, rgb(34, 103, 182) 70%);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 5vh 7vw;
+  text-shadow: 1px 1px 1px rgb(223, 227, 229),   6px 6px 1px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px rgba(56, 56, 56, 0.20);
+}
+
+@media only screen and (max-width: 658px) {
+
+  h1 { 
+     font-size: 2em; 
+     padding: 32px 40px;
+  }
+
+}
+
+
+h4 {
+  padding: 2%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item {
+  flex: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 transparent,0 0 transparent,0 0 transparent,0 0 transparent, 0 2px 3px 0 rgba(0,0,0,0.15),0 1px 2px 0 rgba(0,0,0,0.06);
+  border-radius: 10px;
+  transition: transform .3s ease-in-out 0s;
+}
+
+.item:hover{
+  transform: scale3d(1.05, 1.05, 1);
+  border: 3px solid #ffffff;
+  filter: drop-shadow(10px);
+  filter: contrast(110%);  
+}
+
+.item h4{
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.main{
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-gap: 24px;
+  row-gap: 24px;
+  margin: auto;
+  justify-content: center;
+
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, rgb(62, 120, 185));
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background: black;
+}
+
+footer {
+  background-color: #19172e; 
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 22px;
+  line-height: 3vh;
+  margin-top: 30px;
+}
+
+footer a:visited {
+  color: inherit;
+
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.scrollToTop {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:#5520b6;
+  border-radius:50%;
+}
+.scrollToTop span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  border:8px solid transparent;
+  border-bottom-color:white;
+}
+.scrollToTop:hover {
+  background-color:#5836D8;
+}

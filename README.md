@@ -1,162 +1,124 @@
+
 # [30 Days Of JavaScript](30daysofjs.netlify.app)
 Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
 
 ## View Live Demo
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
 
-## [Day 01 - Drum Kit](https://30daysofjs.netlify.app/01_Drum_Kit/)
-![Drum Kit](assets/images/01.png)
+## [Day 01 - Drum Kit](https://30daysofjs.netlify.app/01%20-%20drum%20kit/)
+![Drum Kit](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/01.png)
 
-## [Day 02- Clock](https://30daysofjs.netlify.app/02_Clock/)
-![Clock](assets/images/02.png)
+## [Day 02- Clock](https://30daysofjs.netlify.app/02%20-%20clock/)
+![Clock](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/02.png)
 
-## [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/03_Random_Color_Generator/)
-![Random Color Generator](assets/images/03.png)
+## [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/03%20-%20random%20color%20generator/)
+![Random Color Generator](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/03.png)
 
-## [Day 04 - Digital Clock](https://30daysofjs.netlify.app/04_Digital_Clock/)
-![Digital Clock](assets/images/04.png)
+## [Day 04 - Digital Clock](https://30daysofjs.netlify.app/04%20-%20digital%20clock/)
+![Digital Clock](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/04.png)
 
-## [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/05_Random_Password_Generator/)
-![Random Password Generator](assets/images/05.png)
+## [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/05%20-%20random%20password%20generator/)
+![Random Password Generator](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/05.png)
 
-## [Day 06 - Calendar](https://30daysofjs.netlify.app/06_Calendar/)
-![Calendar](assets/images/06.png)
+## [Day 06 - Calendar](https://30daysofjs.netlify.app/06%20-%20calendar/)
+![Calendar](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/06.png)
 
-## [Day 07 - Dynamic Form Field](https://30daysofjs.netlify.app/07_Dynamic_Form_Field/index.html)
-![Dynamic Form Field](assets/images/07.png)
+## [Day 07 - Dynamic Form Field](https://30daysofjs.netlify.app/07%20-%20Dynamic%20Form%20Field/index.html)
+![Dynamic Form Field](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/07.png)
 
-## [Day 08 - Number Counter](https://30daysofjs.netlify.app/08_Number_Counter/index.html)
-![Number Counter](assets/images/08.png)
+## [Day 08 - Number Counter](https://30daysofjs.netlify.app/08%20-%20Number%20Counter/index.html)
+![Number Counter](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/08.png)
 
-## [Day 9 - Dice Roll](https://30daysofjs.netlify.app/09_Dice_Roll/index.html)
-![Dice Roll](assets/images/09.png)
+## [Day 9 - Dice Roll](https://30daysofjs.netlify.app/09%20-%20Dice%20Roll/index.html)
+![Dice Roll](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/09.png)
 
-## [Day 10 - Emoji Switcher](https://30daysofjs.netlify.app/10_Emoji_Switcher_like_Discord/index.html)
-![Emoji Switcher](assets/images/10.png)
+## [Day 10 - Emoji Switcher](https://30daysofjs.netlify.app/10%20-%20Emoji%20Switcher%20like%20Discord/index.html)
+![Emoji Switcher](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/10.png)
 
-## [Day 11 - Color Picker](https://30daysofjs.netlify.app/11_Color_Picker/index.html)
-![Color Picker](assets/images/11.png)
+## [Day 11 - Color Picker](https://30daysofjs.netlify.app/11%20-%20Color%20Picker/index.html)
+![Color Picker](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/11.png)
 
-## [Day 12 - Custom QR Code](https://30daysofjs.netlify.app/12_Custom_QR_Code/index.html)
-![Custom QR Code](assets/images/12.png)
+## [Day 12 - Custom QR Code](https://30daysofjs.netlify.app/12%20-%20Custom%20QR%20Code/index.html)
+![Custom QR Code](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/12.png)
 
-## [Day 13 - Favicon Fetcher](https://30daysofjs.netlify.app/13_Favicon_Fetcher/index.html)
-![Favicon Fetcher](assets/images/13.png)
+## [Day 13 - Favicon Fetcher](https://30daysofjs.netlify.app/13%20-%20Favicon%20Fetcher/index.html)
+![Favicon Fetcher](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/13.png)
 
-## [Day 14 - Visit Counter](https://30daysofjs.netlify.app/14_Visit_Counter/index.html)
-![Visit Counter](assets/images/14.png)
+## [Day 14 - Visit Counter](https://30daysofjs.netlify.app/14%20-%20Visit%20Counter/index.html)
+![Visit Counter](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/14.png)
 
-## [Day 15 - Joke Generator](https://30daysofjs.netlify.app/15_Joke_Generator/index.html)
-![Joke Generator](assets/images/15.png)
+## [Day 15 - Joke Generator](https://30daysofjs.netlify.app/15%20-%20Joke%20Generator/index.html)
+![Joke Generator](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/15.png)
 
-## [Day 16 - Countdown Timer](https://30daysofjs.netlify.app/16_Countdown_Timer/index.html)
-![Countdown Timer](assets/images/16.png)
+## [Day 16 - Countdown Timer](https://30daysofjs.netlify.app/16%20-%20Countdown%20Timer/index.html)
+![Countdown Timer](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/16.png)
 
-## [Day 17 - Text Speed Control](https://30daysofjs.netlify.app/17_Text_Speed_Control/index.html)
-![Text Speed Control](assets/images/17.png)
+## [Day 17 - Text Speed Control](https://30daysofjs.netlify.app/17%20-%20Text%20Speed%20Control/index.html)
+![Text Speed Control](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/17.png)
 
-## [Day 18 - Stopwatch](https://30daysofjs.netlify.app/18_Stopwatch/index.html)
-![Stopwatch](assets/images/18.png)
+## [Day 18 - Stopwatch](https://30daysofjs.netlify.app/18%20-%20Stopwatch/index.html)
+![Stopwatch](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/18.png)
 
-## [Day 19 - Traffic Lights](https://30daysofjs.netlify.app/19_raffic_Lights/index.html)
-![Traffic Lights](assets/images/19.png)
+## [Day 19 - Traffic Lights](https://30daysofjs.netlify.app/19%20-Traffic%20Lights/index.html)
+![Traffic Lights](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/19.png)
 
-## [Day 20 - Levitate Board](https://30daysofjs.netlify.app/20_Levitate_Board/index.html)
-![Levitate Board](assets/images/20.png)
+## [Day 20 - Levitate Board](https://30daysofjs.netlify.app/20%20-%20Levitate%20Board/index.html)
+![Levitate Board](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/20.png)
 
-## [Day 21 - Wave Effect](https://30daysofjs.netlify.app/21_Wave_Effect/index.html)
-![Wave Effect](assets/images/21.png)
+## [Day 21 - Wave Effect](https://30daysofjs.netlify.app/21%20-%20Wave%20Effect/index.html)
+![Wave Effect](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/21.png)
 
-## [Day 22 - Zoom Effect](https://30daysofjs.netlify.app/22_Zoom_Effect/index.html)
-![Zoom Effect](assets/images/22.png)
+## [Day 22 - Zoom Effect](https://30daysofjs.netlify.app/22%20-%20Zoom%20Effect/index.html)
+![Zoom Effect](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/22.png)
 
-## [Day 23 - Drawing Pad](https://30daysofjs.netlify.app/23_Drawing_Pad/index.html)
-![Drawing Pad](assets/images/23.png)
+## [Day 23 - Drawing Pad](https://30daysofjs.netlify.app/23%20-%20Drawing%20Pad/index.html)
+![Drawing Pad](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/23.png)
 
-## [Day 24 - Word Counter](https://30daysofjs.netlify.app/24_Word_Counter/index.html)
-![Word Counter](assets/images/24.png)
+## [Day 24 - Word Counter](https://30daysofjs.netlify.app/24%20-%20Word%20Counter/index.html)
+![Word Counter](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/24.png)
 
-## [Day 25 - Weather App](https://30daysofjs.netlify.app/25_Weather_App/index.html)
-![Weather App](assets/images/25.png)
+## [Day 25 - Weather App](https://30daysofjs.netlify.app/25%20-%20Weather%20App/index.html)
+![Weather App](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/25.png)
 
-## [Day 26 - Calculator](https://30daysofjs.netlify.app/26_Calculator/index.html)
-![Calculator](assets/images/26.png)
+## [Day 26 - Calculator](https://30daysofjs.netlify.app/26%20-%20Calculator/index.html)
+![Calculator](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/26.png)
 
-## [Day 27 - Memory Matching Game](https://30daysofjs.netlify.app/27_Memory_Matching_Game/index.html)
-![Memory Matching Game](assets/images/27.png)
+## [Day 27 - Memory Matching Game](https://30daysofjs.netlify.app/27%20-%20Memory%20Matching%20Game/index.html)
+![Memory Matching Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/27.png)
 
-## [Day 28 - Music Player](https://30daysofjs.netlify.app/28_Music_Player/index.html)
-![Music Player](assets/images/28.png)
+## [Day 28 - Music Player](https://30daysofjs.netlify.app/28%20-%20Music%20Player/index.html)
+![Music Player](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/28.png)
 
-## [Day 29 - To Do List](https://30daysofjs.netlify.app/29_To_Do_List/index.html)
-![To Do List](assets/images/29.png)
+## [Day 29 - To Do List](https://30daysofjs.netlify.app/29%20-%20To%20Do%20List/index.html)
+![To Do List](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/29.png)
 
-## [Day 30 - Tic Tac Toe](https://30daysofjs.netlify.app/30_Tic_Tac_Toe/index.html)
-![Tic Tac Toe](assets/images/30.png)
+## [Day 30 - Tic Tac Toe](https://30daysofjs.netlify.app/30%20-%20Tic%20Tac%20Toe/index.html)
+![Tic Tac Toe](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/30.png)
 
-## [Day 31 - Pop the Ballons](https://30daysofjs.netlify.app/31_Pop_the_Balloons/index.html)
-![Pop the Ballons](assets/images/31.png)
+## [Day 31 - Pop the Ballons](https://30daysofjs.netlify.app/31%20-%20pop%20the%20balloons/index.html)
+![Pop the Ballons](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/31.png)
 
-## [Day 32 - Key Code](https://30daysofjs.netlify.app/32_Key_Code/index.html)
-![Key Code](assets/images/32.png)
+## [Day 32 - Key Code](https://30daysofjs.netlify.app/32%20-%20key%20code/index.html)
+![Key Code](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/32.png)
 
-## [Day 33 - Feedback UI](https://30daysofjs.netlify.app/33_Feedback_UI/index.html)
-![Feedback UI](assets/images/33.png)
+## [Day 33 - Feedback UI](https://30daysofjs.netlify.app/33%20-%20feedback%20ui/index.html)
+![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/33.png)
 
-## [Day 34 - Virtual Piano](https://30daysofjs.netlify.app/34_Virtual_Piano/index.html)
-![Virtual Piano](assets/images/34.png)
+## [Day 38 -  Snake Game](https://30daysofjs.netlify.app/32%20-%20Snake%20Game/index.html)
+![Snake Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/38.png)
 
-## [Day 35 - Decimal To Binary](https://30daysofjs.netlify.app/35_Decimal_To_Binary/index.html)
-![Decimal To Binary](assets/images/35.png)
+## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/41%20-%20Basic-Carousel/index.html)
+![Basic Images Carousel](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/41.png)
 
-## [Day 36 - Hangman](https://30daysofjs.netlify.app/36_Hangman/index.html)
-![Hangman](assets/images/36.png)
+## [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/42%20-%20Simple%20Form%20Validation/index.html)
+![Simple Form Validation](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/42.png)
 
-## [Day 37 - RPS Game](https://30daysofjs.netlify.app/37_RPS_Game/index.html)
-![RPS Game](assets/images/37.png)
+## [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20Getting%20Started%20with%20APIs/index.html)
+![Getting Started with APIs](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/43.png)
 
-## [Day 38 - Snake Game](https://30daysofjs.netlify.app/38_Snake_Game/index.html)
-![Snake Game](assets/images/38.png)
+## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20infinite%20scroll/index.html)
+![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/44.png)
 
-## [Day 39 - Age_Calculator](https://30daysofjs.netlify.app/39_Age_Calculator/index.html)
-![Age Calculator](assets/images/39.png)
-
-## [Day 40 - Gradient Generator](https://30daysofjs.netlify.app/40_Gradient_Generator/index.html)
-![Gradient Generator](assets/images/40.png)
-
-## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/41_Basic_Carousel/index.html)
-![Basic Images Carousel](assets/images/41.png)
-
-## [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/42_Simple_Form_Validation/index.html)
-![Simple Form Validation](assets/images/42.png)
-
-## [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/43_Getting_Started_with_APIs/index.html)
-![Getting Started with APIs](assets/images/43.png)
-
-## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/44_Infinite_Scroll/index.html)
-![Infinite Scroll](assets/images/44.png)
-
-# How to setup for development
-
-Since we are using [TailwindCSS](https://tailwindcss.com/), there are different ways to set it up in order to start working with this tool. However, we found it easier to star with minimum configuration boiler plate to focus on the development.
-So, these are the simple steps to start working with **TailwindCSS** in the project.
-
- 1. Install [NodeJs](https://nodejs.org/en/), just go to the official site and download the package for your operative system. We recommend using the LTS version.
- 2. Clone this repo using `git clone git@github.com:alexventuraio/30DaysOfJavaScript.git`.
- 3. Go to the root folder with `cd 30DaysOfJavaScript`.
- 4. We have the minimum configuration for TailwindCSS to work properly but feel free to modify it on the config file `tailwind.config.js`.
- 5. Since, TailwindCSS has its own CLI, we are going to use it to purge the classes we are not using from Tailwind and the JIT compiler to create our final CSS file in order to have a small file size containing only the classes we are using in the HTML. In the `package.json` file we have a custom command to start with, just run `yarn run dev` or `npm run dev` and you'll be ready to start working on the site.
- 7. Finally, you can start a live server to serve the site or just open it up manually (`index.html`) on the browser.
-
-# Prepare for Production
-We can deliver the final `tailwind.css` file to production and it will work but that is not the best practice to just leave it as for development mode.
-So, we are going to minify it in order to have a smaller file size and be more appropriated for production.
-
-1. Stop any other command that you have using `ctrl + c`.
-2. We have a `package.json` file with two commands that use the Tailwind CLI, one of them is to minify our `assets/tailwind.css` file, so the only thing you need to do is to run `yanr run build` or `npm run build`. This will go over the custom CSS file generated with the required classes for our project and prepare it for production.
-
-> **Note:** Running the last ***command to minify for production*** is quire important for performance reasons.
-> **Note:** You must ***run it before pushing to master*** to always have a ready-for-production version.
 
 ## License
 
