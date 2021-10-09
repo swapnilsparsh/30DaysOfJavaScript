@@ -52,3 +52,7 @@ footer {
   footer a:visited {
     color: inherit;
   }
+
+  #value {
+	font: 800 40px system-ui;
+  }
