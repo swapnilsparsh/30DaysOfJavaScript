@@ -28,13 +28,23 @@ const isPasswordSecure = function(password) {
   const format = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/)
   return format.test(String(password))
 }
+
+//Only One space between two words will be passed
+const isValidUserName = function(username) {
+  const format = new RegExp(/^([^\s]*[A-Za-z0-9]\s{0,1})[^\s]*$/)
+  return format.test(String(username).toLowerCase())
+}
+
 const validateUsername = function() {
   let isInputValid = false
   const username = username_input.value.trim()
 
   if (isBlank(username)) {
     setError(username_input, "Username can't be blank.")
-  } else if (!isBetween(username.length)) {
+  } else if (!isValidUserName(username) ) {
+    setError(username_input, `Username Invalid`);
+  }
+  else if (!isBetween(username.length)) {
     setError(username_input, `Username must be between ${min} and ${max} characters.`);
   } else {
     setSuccess(username_input);
