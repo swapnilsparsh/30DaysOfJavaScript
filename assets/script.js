@@ -11,10 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // Adding delay
   scroll_button.addEventListener("click", function(event) {
     event.preventDefault()
-    setTimeout(function() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-    }, 800);
+    $('html, body').animate({scrollTop : 0}, 1500);
   })
-
 
 })
