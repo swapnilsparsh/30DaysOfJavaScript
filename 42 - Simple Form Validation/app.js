@@ -120,7 +120,7 @@ const debounce = function(fn, delay = 500) {
     }, delay)
   }
 }
-
+//
 const selectValidatorToRun = function(event) {
   switch (event.target.id) {
     case "username_input":
