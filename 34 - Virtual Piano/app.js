@@ -16,24 +16,33 @@ volMinus.addEventListener('click', () => {
 
 })
 const notBlack = [4, 7, 11, 14];
-var j = 1;
+var pitch = 1;
 
 for (let i = 0; i < 14; i++) {
     let whitekey = document.createElement('div');
     whitekey.classList.add('whiteKeys', 'key');
-    whitekey.classList.add(`key${j}`)
+    whitekey.classList.add(`key${pitch}`)
     whitekey.style.left = (i * 7) + '%';
     keys.appendChild(whitekey);
-    j += 1
+    if (!notBlack.includes(i + 1)) {
+        pitch += 2;
+    } else {
+        pitch += 1;
+    }
 }
+
+pitch = 2;
+
 for (let i = 1; i < 14; i++) {
     if (!notBlack.includes(i)) {
         let blackKey = document.createElement('div');
         blackKey.classList.add('blackKeys', 'key');
-        blackKey.classList.add(`key${j}`)
+        blackKey.classList.add(`key${pitch}`)
         blackKey.style.left = (i * (7) - 1.75) + '%'
         keys.appendChild(blackKey);
-        j += 1;
+        pitch += 2;
+    } else {
+        pitch += 1;
     }
 }
 
