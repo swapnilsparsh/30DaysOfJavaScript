@@ -52,12 +52,32 @@ input[type="text"]:focus {
 }
 
 #add_fields {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 10px;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;  
+  
 }
 
+
+
 #remove_fields {
+  background-color: #ee052c; /* Red */
+  border: none;
+  border-radius: 10px;
+  margin-left: 70px;
   color: white;
-  float: right;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+  
 }
 
 .controls a {
