@@ -1,7 +1,10 @@
 const container = document.getElementById('container');
+const autoWavesButton = document.getElementById('toggleWaves');
 const circlesArr = [];
 let rows = 15;
 let cols = 15;
+
+let autoWaves = false;
 
 // create circles
 for(let i=0; i<cols; i++) {
@@ -39,3 +42,17 @@ function growCircles(i, j) {
 		}
 	}
 }
+
+function makeRandomWaves() {
+	if (autoWaves) {
+		const randomCoords = [Math.floor(Math.random() * cols),Math.floor(Math.random() * cols)];
+		growCircles(randomCoords[0],randomCoords[1]);
+	}
+}
+
+setInterval(makeRandomWaves,250);
+
+autoWavesButton.addEventListener('click',()=>{
+	autoWaves = !autoWaves;
+	autoWavesButton.innerHTML = `Turn ${autoWaves ? 'off' : 'on'} Random Waves`;
+});
