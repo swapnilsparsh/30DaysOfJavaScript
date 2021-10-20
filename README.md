@@ -119,6 +119,10 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20infinite%20scroll/index.html)
 ![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/44.png)
 
+## [Day 48 - Text To Speech](https://30daysofjs.netlify.app/48%20-%20Text%20To%20Speech/index.html)
+![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/48.png)
+
+
 
 ## License
 
