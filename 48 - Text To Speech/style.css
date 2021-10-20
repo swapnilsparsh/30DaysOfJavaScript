@@ -1,0 +1,94 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background: #19172e;
+    font-size: 20px;
+    align-items: center;
+  
+  }
+  
+  #subhead{
+      color: white;
+  }
+  .main {
+    padding: 2rem;
+    width: 60rem;
+    margin: auto;
+    margin-top: 8%;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(20px);
+  }
+
+  h1 {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    padding-top: 10px;
+    font-size: 3rem;
+  }
+
+  
+  .main input,
+  .main button,
+  .main select,
+  .main textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 1px;
+    font-size: 2rem;
+  }
+  
+  textarea {
+    height: 20rem;
+  }
+  
+  input[type="select"] {
+  
+  }
+  
+  .main button {
+    background: paleturquoise;
+    width: 25%;
+    font-family: 'Pacifico';
+    font-size: 2rem;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    margin-right: 4%;
+    margin-left: 3%;
+  }
+  
+  .main button:active {
+    top: 2px;
+  }
+  
+  
+  footer {
+    text-align: center;
+    color: white;
+    font-size: 1rem !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    font-size: 15px !important;
+  }
+  
+  footer a:visited {
+    color: inherit;
+  }
