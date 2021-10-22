@@ -97,7 +97,7 @@ const appendRecieved = (message, name) => {
     Name.innerText= name;
 
     const randomColor =((1<<24)*Math.random() | 0).toString(16)
-    if(randomColor[0] === "0") randomColor = "800080";
+    if(randomColor[0] === "0")randomColor = "800080";
     const color = "#"+randomColor;
 
     messageElement.innerHTML+=`<h1 class='person' style="color: ${color};" >${name}</h1>
