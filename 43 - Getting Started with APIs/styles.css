@@ -38,10 +38,10 @@ h1 {
 }
 
 .gallery img {
-	object-fit: cover;
-	height: 200px;
-	width: 200px;
-    margin-left: 15px;
+   object-fit: cover;
+   height: 200px;
+   width: 200px;
+   margin-left: 15px;
 }
 
 .btn {
