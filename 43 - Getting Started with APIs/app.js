@@ -1,6 +1,4 @@
-
 const cat_result = document.getElementById('gallery');
-
 
 btn_generate.addEventListener("click", function() {
     allimages="";
@@ -12,7 +10,6 @@ btn_generate.addEventListener("click", function() {
      <div style="display:flex;">
      <img src=${res[i].url} alt="cat" />
      <div>
-     `
     }
     cat_result.innerHTML=allimages;
 });
