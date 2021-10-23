@@ -9,9 +9,7 @@ btn_generate.addEventListener("click", function() {
    .then((res) => {
     for(let i=0;i<5;i++){
      allimages+= `
-     <div style="display:flex;">
      <img src=${res[i].url} alt="cat" />
-     <div>
      `
     }
     cat_result.innerHTML=allimages;
