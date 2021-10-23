@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  background-color: #19172e;
+  font-family: "sans";
+  color: white;
+  margin: 8px auto;
+  padding-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.section {
+  width: 400px;
+  margin: 40px auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  background: none;
+  width: 274px;
+  color: white;
+}
+
+input[type="text"]::placeholder {
+  color: lightgray;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.controls {
+  width: 294px;
+  margin: 15px auto;
+}
+
+#add_fields {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;  
+  
+}
+
+
+
+#remove_fields {
+  background-color: #ee052c; /* Red */
+  border: none;
+  border-radius: 10px;
+  margin-left: 70px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+  
+}
+
+.controls a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}

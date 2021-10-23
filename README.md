@@ -1,3 +1,4 @@
+
 # [30 Days Of JavaScript](30daysofjs.netlify.app)
 Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
 
@@ -136,24 +137,20 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/examples/44_Infinite_Scroll/index.html)
 ![Infinite Scroll](assets/images/44.png)
 
-# How to setup for development
+## [Day 38 -  Snake Game](https://30daysofjs.netlify.app/32%20-%20Snake%20Game/index.html)
+![Snake Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/38.png)
 
-Since we are using [TailwindCSS](https://tailwindcss.com/), there are different ways to set it up in order to start working with this tool. However, we found it easier to star with minimum configuration boiler plate to focus on the development.
-So, these are the simple steps to start working with **TailwindCSS** in the project.
+## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/41%20-%20Basic-Carousel/index.html)
+![Basic Images Carousel](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/41.png)
 
- 1. Install [NodeJs](https://nodejs.org/en/), just go to the official site and download the package for your operative system. We recommend using the LTS version.
- 2. Clone this repo using `git clone git@github.com:alexventuraio/30DaysOfJavaScript.git`.
- 3. Go to the root folder with `cd 30DaysOfJavaScript`.
- 4. We have the minimum configuration for TailwindCSS to work properly but feel free to modify it on the config file `tailwind.config.js`.
- 5. Since, TailwindCSS has its own CLI, we are going to use it to purge the classes we are not using from Tailwind and the JIT compiler to create our final CSS file in order to have a small file size containing only the classes we are using in the HTML. In the `package.json` file we have a custom command to start with, just run `yarn run dev` or `npm run dev` and you'll be ready to start working on the site.
- 7. Finally, you can start a live server to serve the site or just open it up manually (`index.html`) on the browser.
+## [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/42%20-%20Simple%20Form%20Validation/index.html)
+![Simple Form Validation](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/42.png)
 
-# Prepare for Production
-We can deliver the final `tailwind.css` file to production and it will work but that is not the best practice to just leave it as for development mode.
-So, we are going to minify it in order to have a smaller file size and be more appropriated for production.
+## [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20Getting%20Started%20with%20APIs/index.html)
+![Getting Started with APIs](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/43.png)
 
-1. Stop any other command that you have using `ctrl + c`.
-2. We have a `package.json` file with two commands that use the Tailwind CLI, one of them is to minify our `assets/tailwind.css` file, so the only thing you need to do is to run `yanr run build` or `npm run build`. This will go over the custom CSS file generated with the required classes for our project and prepare it for production.
+## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20infinite%20scroll/index.html)
+![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/44.png)
 
 > **Note:** Running the last ***command to minify for production*** is quire important for performance reasons.
 > **Note:** You must ***run it before pushing to master*** to always have a ready-for-production version.
