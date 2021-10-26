@@ -7,7 +7,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
 | Example  | Image |
 |---|---|
-| [Day 01 - Drum Kit](https://30daysofjs.netlify.app/examples/01_Drum_Kit/) |![Drum Kit](assets/images/01.png)|
+| [Day 01 - Drum Kit](https://30daysofjs.netlify.app/examples/01_Drum_Kit/) | ![Drum Kit](assets/images/01.png)|
 | [Day 02- Clock](https://30daysofjs.netlify.app/examples/02_Clock/)|![Clock](assets/images/02.png)|
 | [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/examples/03_Random_Color_Generator/)|![Random Color Generator](assets/images/03.png)|
 | [Day 04 - Digital Clock](https://30daysofjs.netlify.app/examples/04_Digital_Clock/)| ![Digital Clock](assets/images/04.png)|
