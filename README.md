@@ -1,6 +1,5 @@
 # [30 Days Of JavaScript](30daysofjs.netlify.app)
 Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
-
 ## View Live Demo
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
 
@@ -52,7 +51,6 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/42%20-%20Simple%20Form%20Validation/index.html)| ![Simple Form Validation](30DaysOfJavascript/assets/42.png)|
 | [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20Getting%20Started%20with%20APIs/index.html)| ![Getting Started with APIs](30DaysOfJavascript/assets/43.png)|
 | [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20Infinite%20Scroll/index.html)| ![Infinite Scroll](30DaysOfJavascript/assets/44.png)|
-
 
 > **Note:** Running the last ***command to minify for production*** is quire important for performance reasons.
 > **Note:** You must ***run it before pushing to master*** to always have a ready-for-production version.
