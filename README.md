@@ -5,36 +5,33 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 ## View Live Demo
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
 
-## [Day 01 - Drum Kit](https://30daysofjs.netlify.app/examples/01_Drum_Kit/)
-![Drum Kit](assets/images/01.png)
+| Example  | Image |
+|---|---|
+| [Day 01 - Drum Kit](https://30daysofjs.netlify.app/examples/01_Drum_Kit/) |![Drum Kit](assets/images/01.png)|
+| [Day 02- Clock](https://30daysofjs.netlify.app/examples/02_Clock/)|![Clock](assets/images/02.png)|
+| [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/examples/03_Random_Color_Generator/)|![Random Color Generator](assets/images/03.png)|
+| [Day 04 - Digital Clock](https://30daysofjs.netlify.app/examples/04_Digital_Clock/)| ![Digital Clock](assets/images/04.png)|
+|  [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/examples/05_Random_Password_Generator/)| ![Random Password Generator](assets/images/05.png)|
+| [Day 06 - Calendar](https://30daysofjs.netlify.app/examples/06_Calendar/)|![Calendar](assets/images/06.png) |
+| [Day 07 - Dynamic Form Field](https://30daysofjs.netlify.app/examples/07_Dynamic_Form_Field/index.html)| ![Dynamic Form Field](assets/images/07.png)|
+| [Day 08 - Number Counter](https://30daysofjs.netlify.app/examples/08_Number_Counter/index.html)| ![Number Counter](assets/images/08.png)|
+| [Day 9 - Dice Roll](https://30daysofjs.netlify.app/examples/09_Dice_Roll/index.html)| ![Dice Roll](assets/images/09.png)|
+| [Day 10 - Emoji Switcher](https://30daysofjs.netlify.app/examples/10_Emoji_Switcher_like_Discord/index.html)| ![Emoji Switcher](assets/images/10.png)|
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 
-## [Day 02- Clock](https://30daysofjs.netlify.app/examples/02_Clock/)
-![Clock](assets/images/02.png)
+## 
+## 
 
-## [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/examples/03_Random_Color_Generator/)
-![Random Color Generator](assets/images/03.png)
 
-## [Day 04 - Digital Clock](https://30daysofjs.netlify.app/examples/04_Digital_Clock/)
-![Digital Clock](assets/images/04.png)
+## 
 
-## [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/examples/05_Random_Password_Generator/)
-![Random Password Generator](assets/images/05.png)
 
-## [Day 06 - Calendar](https://30daysofjs.netlify.app/examples/06_Calendar/)
-![Calendar](assets/images/06.png)
-
-## [Day 07 - Dynamic Form Field](https://30daysofjs.netlify.app/examples/07_Dynamic_Form_Field/index.html)
-![Dynamic Form Field](assets/images/07.png)
-
-## [Day 08 - Number Counter](https://30daysofjs.netlify.app/examples/08_Number_Counter/index.html)
-![Number Counter](assets/images/08.png)
-
-## [Day 9 - Dice Roll](https://30daysofjs.netlify.app/examples/09_Dice_Roll/index.html)
-![Dice Roll](assets/images/09.png)
-
-## [Day 10 - Emoji Switcher](https://30daysofjs.netlify.app/examples/10_Emoji_Switcher_like_Discord/index.html)
-![Emoji Switcher](assets/images/10.png)
-
+## 
 ## [Day 11 - Color Picker](https://30daysofjs.netlify.app/examples/11_Color_Picker/index.html)
 ![Color Picker](assets/images/11.png)
 
