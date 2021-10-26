@@ -3,6 +3,7 @@ dycalendar.draw({
     type: 'month',
     dayformat : 'full',
     monthformat: 'full',
-    highlighttargetdate: true,
+    highlighttargetdate: false,
+    highlighttoday:true,
     prevnextbutton: 'show'
 })
