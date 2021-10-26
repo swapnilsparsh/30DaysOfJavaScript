@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="assets/tic-tac-toe.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="content">
+    <table class="table_overlay">
+    <tr>
+      <td id="square_one_text" class="text"></td>
+      <td id="square_two_text" class="text"></td>
+      <td id="square_three_text" class="text"></td>
+    </tr>
+    <tr>
+       <td id="square_four_text" class="text"></td>
+       <td id="square_five_text" class="text"></td>
+       <td id="square_six_text" class="text"></td>
+    </tr>
+    <tr>
+       <td id="square_seven_text" class="text"></td>
+       <td id="square_eight_text" class="text"></td>
+       <td id="square_nine_text" class="text"></td>
+    </tr>
+  </table>
+<div class="board">
+  <table>
+    <tr>
+      <td id="square_one"></td>
+ 
+       <td id="square_two"></td>
+
+       <td id="square_three"></td>
+    </tr>
+    <tr>
+       <td id="square_four"></td>
+       <td id="square_five"></td>
+       <td id="square_six"></td>
+    </tr>
+    <tr>
+       <td id="square_seven"></td>
+       <td id="square_eight"></td>
+       <td id="square_nine"></td>
+    </tr>
+  </table> 
+</div>
+  
+
+</div>
+
+<div id="myModal" class="modal animated fadeIn">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+     <div class="modal-header">
+    <h2>Game Over</h2>
+  </div>
+    <div class="modal-body">
+    <p class="modal_text"></p>
+      <btn id="restartBtn">Play again?</btn>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&#x3c; &#47; &#x3e; with ❤️ by 
+    <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+    <br> 
+    <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript
+    </a>
+  </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
