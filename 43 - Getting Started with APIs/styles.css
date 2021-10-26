@@ -40,7 +40,7 @@ h1 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 10vw);
+    grid-template-rows: repeat(1, 10vw);
     grid-gap: 15px;
   }
   
