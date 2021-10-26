@@ -9,7 +9,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | [Day 02- Clock](https://30daysofjs.netlify.app/02%20-%20clock/)|![Clock](30DaysOfJavascript/assets/02.png)|
 | [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/03%20-%20Random%20Color%20Generator/)|![Random Color Generator](30DaysOfJavascript/assets/03.png)|
 | [Day 04 - Digital Clock](https://30daysofjs.netlify.app/04%20-%20Digital%20Clock/)| ![Digital Clock](30DaysOfJavascript/assets/04.png)|
-|  [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/05%20-%20Random%20Password%20Generator/)| ![Random Password Generator](30DaysOfJavascript/assets/05.png)|
+| [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/05%20-%20Random%20Password%20Generator/)| ![Random Password Generator](30DaysOfJavascript/assets/05.png)|
 | [Day 06 - Calendar](https://30daysofjs.netlify.app/06%20-%20Calendar/)|![Calendar](30DaysOfJavascript/assets/06.png) |
 | [Day 07 - Dynamic Form Field](https://30daysofjs.netlify.app/07%20-%20Dynamic%20Form%20Field/index.html)| ![Dynamic Form Field](30DaysOfJavascript/assets/07.png)|
 | [Day 08 - Number Counter](https://30daysofjs.netlify.app/08%20-%20Number%20Counter/index.html)| ![Number Counter](30DaysOfJavascript/assets/08.png)|
@@ -19,7 +19,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | [Day 12 - Custom QR Code](https://30daysofjs.netlify.app/12%20-%20Custom%20QR%20Code/index.html)| ![Custom QR Code](30DaysOfJavascript/assets/12.png)|
 | [Day 13 - Favicon Fetcher](https://30daysofjs.netlify.app/13%20-%20Favicon%20Fetcher/index.html)| ![Favicon Fetcher](30DaysOfJavascript/assets/13.png)|
 | [Day 14 - Visit Counter](https://30daysofjs.netlify.app/14%20-%20Visit%20Counter/index.html)| ![Visit Counter](30DaysOfJavascript/assets/14.png)|
-| ## [Day 15 - Joke Generator](https://30daysofjs.netlify.app/15%20-%20Joke%20Generator/index.html)| ![Joke Generator](30DaysOfJavascript/assets/15.png)|
+| [Day 15 - Joke Generator](https://30daysofjs.netlify.app/15%20-%20Joke%20Generator/index.html)| ![Joke Generator](30DaysOfJavascript/assets/15.png)|
 | [Day 16 - Countdown Timer](https://30daysofjs.netlify.app/16%20-%20Countdown%20Timer/index.html)| ![Countdown Timer](30DaysOfJavascript/assets/16.png)|
 | [Day 17 - Text Speed Control](https://30daysofjs.netlify.app/17%20-%20Text%20Speed%20Control/index.html)| ![Text Speed Control(30DaysOfJavascript/assets/17.png)|
 | [Day 18 - Stopwatch](https://30daysofjs.netlify.app/18%20-%20Stopwatch/index.html)| ![Stopwatch](30DaysOfJavascript/assets/18.png)|
