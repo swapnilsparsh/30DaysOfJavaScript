@@ -7,147 +7,53 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
 | Example  | Image |
 |---|---|
-| [Day 01 - Drum Kit](https://30daysofjs.netlify.app/examples/01_Drum_Kit/) | ![Drum Kit](assets/01.png)|
-| [Day 02- Clock](https://30daysofjs.netlify.app/examples/02_Clock/)|![Clock](assets/images/02.png)|
-| [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/examples/03_Random_Color_Generator/)|![Random Color Generator](assets/images/03.png)|
-| [Day 04 - Digital Clock](https://30daysofjs.netlify.app/examples/04_Digital_Clock/)| ![Digital Clock](assets/images/04.png)|
-|  [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/examples/05_Random_Password_Generator/)| ![Random Password Generator](assets/images/05.png)|
-| [Day 06 - Calendar](https://30daysofjs.netlify.app/examples/06_Calendar/)|![Calendar](assets/images/06.png) |
-| [Day 07 - Dynamic Form Field](https://30daysofjs.netlify.app/examples/07_Dynamic_Form_Field/index.html)| ![Dynamic Form Field](assets/images/07.png)|
-| [Day 08 - Number Counter](https://30daysofjs.netlify.app/examples/08_Number_Counter/index.html)| ![Number Counter](assets/images/08.png)|
-| [Day 9 - Dice Roll](https://30daysofjs.netlify.app/examples/09_Dice_Roll/index.html)| ![Dice Roll](assets/images/09.png)|
-| [Day 10 - Emoji Switcher](https://30daysofjs.netlify.app/examples/10_Emoji_Switcher_like_Discord/index.html)| ![Emoji Switcher](assets/images/10.png)|
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
+| [Day 01 - Drum Kit](https://30daysofjs.netlify.app/examples/01_Drum_Kit/) | ![Drum Kit](30DaysOfJavascript/assets/01.png)|
+| [Day 02- Clock](https://30daysofjs.netlify.app/examples/02_Clock/)|![Clock](30DaysOfJavascript/assets/02.png)|
+| [Day 03 - Random Color Generator](https://30daysofjs.netlify.app/examples/03_Random_Color_Generator/)|![Random Color Generator](30DaysOfJavascript/assets/03.png)|
+| [Day 04 - Digital Clock](https://30daysofjs.netlify.app/examples/04_Digital_Clock/)| ![Digital Clock](30DaysOfJavascript/assets/04.png)|
+|  [Day 05 - Random Password Generator](https://30daysofjs.netlify.app/examples/05_Random_Password_Generator/)| ![Random Password Generator](30DaysOfJavascript/assets/05.png)|
+| [Day 06 - Calendar](https://30daysofjs.netlify.app/examples/06_Calendar/)|![Calendar](30DaysOfJavascript/assets/06.png) |
+| [Day 07 - Dynamic Form Field](https://30daysofjs.netlify.app/examples/07_Dynamic_Form_Field/index.html)| ![Dynamic Form Field](30DaysOfJavascript/assets/07.png)|
+| [Day 08 - Number Counter](https://30daysofjs.netlify.app/examples/08_Number_Counter/index.html)| ![Number Counter](30DaysOfJavascript/assets/08.png)|
+| [Day 9 - Dice Roll](https://30daysofjs.netlify.app/examples/09_Dice_Roll/index.html)| ![Dice Roll](30DaysOfJavascript/assets/09.png)|
+| [Day 10 - Emoji Switcher](https://30daysofjs.netlify.app/examples/10_Emoji_Switcher_like_Discord/index.html)| ![Emoji Switcher](30DaysOfJavascript/assets/10.png)|
+| [Day 11 - Color Picker](https://30daysofjs.netlify.app/examples/11_Color_Picker/index.html)| ![Color Picker](30DaysOfJavascript/assets/11.png)|
+| [Day 12 - Custom QR Code](https://30daysofjs.netlify.app/examples/12_Custom_QR_Code/index.html)| ![Custom QR Code](30DaysOfJavascript/assets/12.png)|
+| [Day 13 - Favicon Fetcher](https://30daysofjs.netlify.app/examples/13_Favicon_Fetcher/index.html)| ![Favicon Fetcher](30DaysOfJavascript/assets/13.png)
+|
+| [Day 14 - Visit Counter](https://30daysofjs.netlify.app/examples/14_Visit_Counter/index.html)| ![Visit Counter](30DaysOfJavascript/assets/14.png)|
+| ## [Day 15 - Joke Generator](https://30daysofjs.netlify.app/examples/15_Joke_Generator/index.html)| ![Joke Generator](30DaysOfJavascript/assets/15.png)|
+| [Day 16 - Countdown Timer](https://30daysofjs.netlify.app/examples/16_Countdown_Timer/index.html)| ![Countdown Timer](30DaysOfJavascript/assets/16.png)
+|
+| [Day 17 - Text Speed Control](https://30daysofjs.netlify.app/examples/17_Text_Speed_Control/index.html)| ![Text Speed Control](30DaysOfJavascript/assets/17.png)|
+| [Day 18 - Stopwatch](https://30daysofjs.netlify.app/examples/18_Stopwatch/index.html)| ![Stopwatch](30DaysOfJavascript/assets/18.png)|
+| [Day 19 - Traffic Lights](https://30daysofjs.netlify.app/examples/19_raffic_Lights/index.html)| ![Traffic Lights](30DaysOfJavascript/assets/19.png)|
+| [Day 20 - Levitate Board](https://30daysofjs.netlify.app/examples/20_Levitate_Board/index.html)| ![Levitate Board](30DaysOfJavascript/assets/20.png)|
+| [Day 21 - Wave Effect](https://30daysofjs.netlify.app/examples/21_Wave_Effect/index.html)| ![Wave Effect](30DaysOfJavascript/assets/21.png)|
+| [Day 22 - Zoom Effect](https://30daysofjs.netlify.app/examples/22_Zoom_Effect/index.html)| ![Zoom Effect](30DaysOfJavascript/assets/22.png)|
+| [Day 23 - Drawing Pad](https://30daysofjs.netlify.app/examples/23_Drawing_Pad/index.html)| ![Drawing Pad](30DaysOfJavascript/assets/23.png)|
+| [Day 24 - Word Counter](https://30daysofjs.netlify.app/examples/24_Word_Counter/index.html)| ![Word Counter](30DaysOfJavascript/assets/24.png)|
+| [Day 25 - Weather App](https://30daysofjs.netlify.app/examples/25_Weather_App/index.html)| ![Weather App](30DaysOfJavascript/assets/25.png)|
+| [Day 26 - Calculator](https://30daysofjs.netlify.app/examples/26_Calculator/index.html)| ![Calculator](30DaysOfJavascript/assets/26.png)|
+| [Day 27 - Memory Matching Game](https://30daysofjs.netlify.app/examples/27_Memory_Matching_Game/index.html)| ![Memory Matching Game](30DaysOfJavascript/assets/27.png)|
+| [Day 28 - Music Player](https://30daysofjs.netlify.app/examples/28_Music_Player/index.html)| ![Music Player](30DaysOfJavascript/assets/28.png)|
+| [Day 29 - To Do List](https://30daysofjs.netlify.app/examples/29_To_Do_List/index.html)| ![To Do List](30DaysOfJavascript/assets/29.png)|
+| [Day 30 - Tic Tac Toe](https://30daysofjs.netlify.app/examples/30_Tic_Tac_Toe/index.html)| ![Tic Tac Toe](30DaysOfJavascript/assets/30.png)|
+| [Day 31 - Pop the Ballons](https://30daysofjs.netlify.app/examples/31_Pop_the_Balloons/index.html)| ![Pop the Ballons](30DaysOfJavascript/assets/31.png)|
+| [Day 32 - Key Code](https://30daysofjs.netlify.app/examples/32_Key_Code/index.html)| ![Key Code](30DaysOfJavascript/assets/32.png)|
+| [Day 33 - Feedback UI](https://30daysofjs.netlify.app/examples/33_Feedback_UI/index.html)| ![Feedback UI](30DaysOfJavascript/assets/33.png)|
+| [Day 34 - Virtual Piano](https://30daysofjs.netlify.app/examples/34_Virtual_Piano/index.html)| ![Virtual Piano](30DaysOfJavascript/assets/34.png)|
+| [Day 35 - Decimal To Binary](https://30daysofjs.netlify.app/examples/35_Decimal_To_Binary/index.html)| ![Decimal To Binary](30DaysOfJavascript/assets/35.png)|
+| [Day 36 - Hangman](https://30daysofjs.netlify.app/examples/36_Hangman/index.html)| ![Hangman](30DaysOfJavascript/assets/36.png)|
+| [Day 37 - RPS Game](https://30daysofjs.netlify.app/examples/37_RPS_Game/index.html)| ![RPS Game](30DaysOfJavascript/assets/37.png)|
+| [Day 38 - Snake Game](https://30daysofjs.netlify.app/examples/38_Snake_Game/index.html)| ![Snake Game](30DaysOfJavascript/assets/38.png)|
+| [Day 39 - Age_Calculator](https://30daysofjs.netlify.app/examples/39_Age_Calculator/index.html)| ![Age Calculator](30DaysOfJavascript/assets/39.png)|
+| [Day 40 - Gradient Generator](https://30daysofjs.netlify.app/examples/40_Gradient_Generator/index.html)| ![Gradient Generator](30DaysOfJavascript/assets/40.png)|
+| [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/examples/41_Basic_Carousel/index.html)| ![Basic Images Carousel](30DaysOfJavascript/assets/41.png)|
+| [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/examples/42_Simple_Form_Validation/index.html)| ![Simple Form Validation](30DaysOfJavascript/assets/42.png)|
+| [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/examples/43_Getting_Started_with_APIs/index.html)| ![Getting Started with APIs](30DaysOfJavascript/assets/43.png)|
+| [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/examples/44_Infinite_Scroll/index.html)| ![Infinite Scroll](30DaysOfJavascript/assets/44.png)|
 
-## 
-## 
-
-
-## 
-
-
-## 
-## [Day 11 - Color Picker](https://30daysofjs.netlify.app/examples/11_Color_Picker/index.html)
-![Color Picker](assets/images/11.png)
-
-## [Day 12 - Custom QR Code](https://30daysofjs.netlify.app/examples/12_Custom_QR_Code/index.html)
-![Custom QR Code](assets/images/12.png)
-
-## [Day 13 - Favicon Fetcher](https://30daysofjs.netlify.app/examples/13_Favicon_Fetcher/index.html)
-![Favicon Fetcher](assets/images/13.png)
-
-## [Day 14 - Visit Counter](https://30daysofjs.netlify.app/examples/14_Visit_Counter/index.html)
-![Visit Counter](assets/images/14.png)
-
-## [Day 15 - Joke Generator](https://30daysofjs.netlify.app/examples/15_Joke_Generator/index.html)
-![Joke Generator](assets/images/15.png)
-
-## [Day 16 - Countdown Timer](https://30daysofjs.netlify.app/examples/16_Countdown_Timer/index.html)
-![Countdown Timer](assets/images/16.png)
-
-## [Day 17 - Text Speed Control](https://30daysofjs.netlify.app/examples/17_Text_Speed_Control/index.html)
-![Text Speed Control](assets/images/17.png)
-
-## [Day 18 - Stopwatch](https://30daysofjs.netlify.app/examples/18_Stopwatch/index.html)
-![Stopwatch](assets/images/18.png)
-
-## [Day 19 - Traffic Lights](https://30daysofjs.netlify.app/examples/19_raffic_Lights/index.html)
-![Traffic Lights](assets/images/19.png)
-
-## [Day 20 - Levitate Board](https://30daysofjs.netlify.app/examples/20_Levitate_Board/index.html)
-![Levitate Board](assets/images/20.png)
-
-## [Day 21 - Wave Effect](https://30daysofjs.netlify.app/examples/21_Wave_Effect/index.html)
-![Wave Effect](assets/images/21.png)
-
-## [Day 22 - Zoom Effect](https://30daysofjs.netlify.app/examples/22_Zoom_Effect/index.html)
-![Zoom Effect](assets/images/22.png)
-
-## [Day 23 - Drawing Pad](https://30daysofjs.netlify.app/examples/23_Drawing_Pad/index.html)
-![Drawing Pad](assets/images/23.png)
-
-## [Day 24 - Word Counter](https://30daysofjs.netlify.app/examples/24_Word_Counter/index.html)
-![Word Counter](assets/images/24.png)
-
-## [Day 25 - Weather App](https://30daysofjs.netlify.app/examples/25_Weather_App/index.html)
-![Weather App](assets/images/25.png)
-
-## [Day 26 - Calculator](https://30daysofjs.netlify.app/examples/26_Calculator/index.html)
-![Calculator](assets/images/26.png)
-
-## [Day 27 - Memory Matching Game](https://30daysofjs.netlify.app/examples/27_Memory_Matching_Game/index.html)
-![Memory Matching Game](assets/images/27.png)
-
-## [Day 28 - Music Player](https://30daysofjs.netlify.app/examples/28_Music_Player/index.html)
-![Music Player](assets/images/28.png)
-
-## [Day 29 - To Do List](https://30daysofjs.netlify.app/examples/29_To_Do_List/index.html)
-![To Do List](assets/images/29.png)
-
-## [Day 30 - Tic Tac Toe](https://30daysofjs.netlify.app/examples/30_Tic_Tac_Toe/index.html)
-![Tic Tac Toe](assets/images/30.png)
-
-## [Day 31 - Pop the Ballons](https://30daysofjs.netlify.app/examples/31_Pop_the_Balloons/index.html)
-![Pop the Ballons](assets/images/31.png)
-
-## [Day 32 - Key Code](https://30daysofjs.netlify.app/examples/32_Key_Code/index.html)
-![Key Code](assets/images/32.png)
-
-## [Day 33 - Feedback UI](https://30daysofjs.netlify.app/examples/33_Feedback_UI/index.html)
-![Feedback UI](assets/images/33.png)
-
-## [Day 34 - Virtual Piano](https://30daysofjs.netlify.app/examples/34_Virtual_Piano/index.html)
-![Virtual Piano](assets/images/34.png)
-
-## [Day 35 - Decimal To Binary](https://30daysofjs.netlify.app/examples/35_Decimal_To_Binary/index.html)
-![Decimal To Binary](assets/images/35.png)
-
-## [Day 36 - Hangman](https://30daysofjs.netlify.app/examples/36_Hangman/index.html)
-![Hangman](assets/images/36.png)
-
-## [Day 37 - RPS Game](https://30daysofjs.netlify.app/examples/37_RPS_Game/index.html)
-![RPS Game](assets/images/37.png)
-
-## [Day 38 - Snake Game](https://30daysofjs.netlify.app/examples/38_Snake_Game/index.html)
-![Snake Game](assets/images/38.png)
-
-## [Day 39 - Age_Calculator](https://30daysofjs.netlify.app/examples/39_Age_Calculator/index.html)
-![Age Calculator](assets/images/39.png)
-
-## [Day 40 - Gradient Generator](https://30daysofjs.netlify.app/examples/40_Gradient_Generator/index.html)
-![Gradient Generator](assets/images/40.png)
-
-## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/examples/41_Basic_Carousel/index.html)
-![Basic Images Carousel](assets/images/41.png)
-
-## [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/examples/42_Simple_Form_Validation/index.html)
-![Simple Form Validation](assets/images/42.png)
-
-## [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/examples/43_Getting_Started_with_APIs/index.html)
-![Getting Started with APIs](assets/images/43.png)
-
-## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/examples/44_Infinite_Scroll/index.html)
-![Infinite Scroll](assets/images/44.png)
-
-## [Day 38 -  Snake Game](https://30daysofjs.netlify.app/32%20-%20Snake%20Game/index.html)
-![Snake Game](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/38.png)
-
-## [Day 41 - Basic Images Carousel](https://30daysofjs.netlify.app/41%20-%20Basic-Carousel/index.html)
-![Basic Images Carousel](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/41.png)
-
-## [Day 42 - Simple Form Validation](https://30daysofjs.netlify.app/42%20-%20Simple%20Form%20Validation/index.html)
-![Simple Form Validation](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/42.png)
-
-## [Day 43 - Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20Getting%20Started%20with%20APIs/index.html)
-![Getting Started with APIs](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/43.png)
-
-## [Day 44 - Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20infinite%20scroll/index.html)
-![Feedback UI](https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/30DaysOfJavaScript/assets/44.png)
 
 > **Note:** Running the last ***command to minify for production*** is quire important for performance reasons.
 > **Note:** You must ***run it before pushing to master*** to always have a ready-for-production version.
