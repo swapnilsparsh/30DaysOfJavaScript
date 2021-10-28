@@ -189,6 +189,28 @@
         //add header div to container
         container.appendChild(div);
 
+        //-------------------- Today button ----------------
+
+        //today button div
+        if (option.todaybutton === "show") {
+            div = document.createElement("div");
+            div.setAttribute("class", "dycalendar-today-btn");
+            div.setAttribute("data-option", JSON.stringify(option));
+
+            //today button
+            elem = document.createElement("span");
+            elem.setAttribute("class", "dycalendar-today-btn today-btn");
+            elem.setAttribute("data-date", option.date);
+            elem.setAttribute("data-month", option.month);
+            elem.setAttribute("data-year", option.year);
+            elem.setAttribute("data-btn", "today");
+            elem.innerHTML = "Today";
+            //add prev button span to header div
+            div.appendChild(elem);
+
+            container.appendChild(div);
+        }
+
         //-------------------------- Body ------------------
 
         //body div
@@ -406,6 +428,8 @@
                 //other variables
                 date, month, year, btn, option, dateObj;
 
+            const today = new Date();
+
             //prev-next button click
             //extra checks to make sure object exists and contains the class of interest
             if ((targetDomObject) && (targetDomObject.classList) && (targetDomObject.classList.contains("dycalendar-prev-next-btn"))) {
@@ -429,6 +453,26 @@
                         month = 0;
                     }
                 }
+
+                option.date = date;
+                option.month = month;
+                option.year = year;
+
+                drawCalendar(option);
+            }
+
+            //today button click
+            //extra checks to make sure object exists and contains the class of interest
+            if ((targetDomObject) && (targetDomObject.classList) && (targetDomObject.classList.contains("dycalendar-today-btn"))) {
+                date = parseInt(targetDomObject.getAttribute("data-date"));
+                month = parseInt(targetDomObject.getAttribute("data-month"));
+                year = parseInt(targetDomObject.getAttribute("data-year"));
+                btn = targetDomObject.getAttribute("data-btn");
+                option = JSON.parse(targetDomObject.parentElement.getAttribute("data-option"));
+
+                date = today.getDate();
+                month = today.getMonth();
+                year = today.getFullYear();
 
                 option.date = date;
                 option.month = month;

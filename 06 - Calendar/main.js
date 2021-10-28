@@ -5,5 +5,6 @@ dycalendar.draw({
     monthformat: 'full',
     highlighttargetdate: false,
     highlighttoday:true,
-    prevnextbutton: 'show'
+    prevnextbutton: 'show',
+    todaybutton: 'show'
 })
