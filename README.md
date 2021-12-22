@@ -38,11 +38,29 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 28            | [Music Player](https://30daysofjs.netlify.app/28%20-%20music%20player/) |
 | 29            | [To Do List](https://30daysofjs.netlify.app/29%20-%20to%20do%20list/) |
 | 30            | [Tic Tac Toe](https://30daysofjs.netlify.app/30%20-%20tic%20tac%20toe/) |
+
+## Extra Practice
+
+| Day           | Name          
+| ------------- |:-------------:|
 | 31            | [Pop the Ballons](https://30daysofjs.netlify.app/31%20-%20pop%20the%20balloons/) |
 | 32            | [Key Code](https://30daysofjs.netlify.app/32%20-%20key%20code/) |
 | 33            | [Feedback UI](https://30daysofjs.netlify.app/33%20-%20feedback%20ui/) |
 | 34            | [Virtual Piano](https://30daysofjs.netlify.app/34%20-%20virtual%20piano/) |
 | 35            | [Decimal To Binary](https://30daysofjs.netlify.app/35%20-%20decimal%20to%20binary/) |
+| 36            | [Hangman](https://30daysofjs.netlify.app/36%20-%20hangman/) |
+| 37            | [RPS Game](https://30daysofjs.netlify.app/37%20-%20rps%20game/start) |
+| 38            | [Snake-Game](https://30daysofjs.netlify.app/38%20-%20snake-game/) |
+| 39            | [Age Calculator](https://30daysofjs.netlify.app/39%20-%20age%20calculator/) |
+| 40            | [Gradient Generator](https://30daysofjs.netlify.app/40%20-%20gradient%20generator/) |
+| 41            | [Basic-Carousel](https://30daysofjs.netlify.app/41%20-%20basic-carousel/) |
+| 42            | [Simple Form Validation](https://30daysofjs.netlify.app/42%20-%20simple%20form%20validation/) |
+| 43            | [Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20getting%20started%20with%20apis/) |
+| 44            | [Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20infinite%20scroll/) |
+| 45            | [Chatting App](https://30daysofjs.netlify.app/45%20-%20chatting%20app/client/) |
+| 46            | [Image Slider](https://30daysofjs.netlify.app/40%20-%20gradient%20generator/) |
+| 47            | [Caesar Cipher](https://30daysofjs.netlify.app/47%20-%20caesar%20cipher/2_caesar_cipher) |
+
 
 ## Our valuable Contributor :
 
