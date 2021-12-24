@@ -11,41 +11,47 @@
 
 body {
   font-family: "sans";
-  color: white;
-  background: rgb(111,18,47);
-  background: linear-gradient(332deg, rgba(111,18,47,1) 0%, rgb(34, 103, 182) 70%);
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/* Dark Mode */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+body.dark-mode a {
+  color: #111;
+}
+body.dark-mode button {
+  background-color: #eee;
+  color: #111;
+}
+body.dark-mode h4  {
+  color: #eee;
+}
+body.dark-mode svg  {
+  fill: #fff;
+  color: #151513;
+}
+body.light-mode {
+  background-color: #eee;
+  color: #111;
+}
+body.light-mode a {
+  color: #111;
+}
+body.light-mode button {
+  background-color: #111;
+  color: #eee;
+}
+body.light-mode h4 {
+  color: #111;
+}
+body.light-mode svg {
+  fill: #151513;
+  color: #fff;
 }
 
-h1 {
-  text-align: center;
-  font-size: 3.5rem;
-  padding: 5vh 7vw;
-  text-shadow: 1px 1px 1px rgb(223, 227, 229),   6px 6px 1px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke: 1px rgba(56, 56, 56, 0.20);
-}
-
-@media only screen and (max-width: 658px) {
-
-  h1 { 
-     font-size: 2em; 
-     padding: 32px 40px;
-  }
-
-}
+/* Octocat */
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
@@ -73,6 +79,30 @@ h1 {
   }
 }
 
+.toggleButton{
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 5vh 7vw;
+}
+
+@media only screen and (max-width: 658px) {
+
+  h1 { 
+     font-size: 2em; 
+     padding: 32px 40px;
+  }
+
+}
+
 h4 {
   padding: 2%;
 }
@@ -84,7 +114,6 @@ img {
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 a:visited {
@@ -109,7 +138,7 @@ a:visited {
 
 .item:hover{
   transform: scale3d(1.05, 1.05, 1);
-  border: 3px solid #ffffff;
+  /* border: 1px solid #ffffff; */
   filter: drop-shadow(10px);
   filter: contrast(110%);  
 }
@@ -130,17 +159,8 @@ a:visited {
 
 }
 
-::-webkit-scrollbar{
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent, rgb(62, 120, 185));
-  border-radius: 12px;
-}
-
-::-webkit-scrollbar-track{
-  background: black;
+.main a{
+  text-decoration: none;
 }
 
 footer {
@@ -152,13 +172,13 @@ footer {
   right: 0;
   bottom: 0;
   margin-bottom: 0;
-  padding: 22px;
+  padding: 10px;
   line-height: 3vh;
   margin-top: 30px;
 }
 
 footer a:visited {
-  color: inherit;
+  color: white;
 
 }
 
@@ -173,8 +193,8 @@ footer a:visited {
   right:10px;
   bottom:10px;
   cursor:pointer;
-  width:50px;
-  height:50px;
+  width:40px;
+  height:40px;
   background-color:#5520b6;
   border-radius:50%;
 }

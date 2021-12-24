@@ -10,21 +10,26 @@
   <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
   <script src="30DaysOfJavaScript/script.js"></script>
 
-  <title>30 Days Of JavaScript</title>
+  <title>30 Days of JavaScript</title>
 </head>
-<body>
-  <h1>30 Days Of JavaScript</h1>
+<body id="body" class="dark-mode">
+  <!-- Heading -->
+  <h1>30 Days of JavaScript</h1>
+
+  <!-- Dark Mode Button -->
+  <button id="toggle" class="toggleButton" type="button" onclick="toggleDarkLight()">🌙</button>
+
+  <!-- Octocat svg -->
   <a
       href="https://github.com/swapnilsparsh/30DaysOfJavaScript"
       class="github-corner"
+      target="_blank"
       aria-label="View source on GitHub"
       ><svg
         width="80"
         height="80"
         viewBox="0 0 250 250"
         style="
-          fill: #fff;
-          color: #151513;
           position: absolute;
           top: 0;
           border: 0;
@@ -45,21 +50,28 @@
           class="octo-body"
         ></path></svg></a
     >
-  <a class="scrollToTop"><span></span></a>
-  <div class="main">
+  <!-- Octocat svg end -->
 
+  <!-- Scroll To Top -->
+  <a class="scrollToTop"><span></span></a>
+  <!-- Scroll to Top End -->
+
+  <!-- Main Section Start -->
+  <div class="main">
     <div class="item">
       <a target="_blank" href="01 - Drum Kit/index.html">
         <img src="30DaysOfJavaScript/assets/01.png" alt="Drum Kit" />
         <h4>Drum Kit</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="02 - Clock/index.html">
         <img src="30DaysOfJavaScript/assets/02.png" alt="Clock" />
         <h4>Clock</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="03 - Random Color Generator/index.html">
         <img src="30DaysOfJavaScript/assets/03.png" alt="Random Color Generator" />
@@ -73,12 +85,14 @@
         <h4>Digital Clock</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="05 - Random Password Generator/index.html">
         <img src="30DaysOfJavaScript/assets/05.png" alt="Random Password Generator" />
         <h4>Random Password Generator</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="06 - Calendar/index.html">
         <img src="30DaysOfJavaScript/assets/06.png" alt="Calendar" />
@@ -92,12 +106,14 @@
         <h4>Dynamic Form Field</h4>
       </a>
     </div>
+    
     <div class="item">
       <a target="_blank" href="08 - Number Counter/index.html">
         <img src="30DaysOfJavaScript/assets/08.png" alt="Number Counter" />
         <h4>Number Counter</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="09 - Dice Roll/index.html">
         <img src="30DaysOfJavaScript/assets/09.png" alt="Dice Roll" />
@@ -111,12 +127,14 @@
         <h4>Emoji Switcher</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="11 - Color Picker/index.html">
         <img src="30DaysOfJavaScript/assets/11.png" alt="Color Picker" />
         <h4>Color Picker</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="12 - Custom QR Code/index.html">
         <img src="30DaysOfJavaScript/assets/12.png" alt="Custom QR Code" />
@@ -130,12 +148,14 @@
         <h4>Favicon Fetcher</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="14 - Visit Counter/index.html">
         <img src="30DaysOfJavaScript/assets/14.png" alt="Visit Counter" />
         <h4>Visit Counter</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="15 - Joke Generator/index.html">
         <img src="30DaysOfJavaScript/assets/15.png" alt="Joke Generator" />
@@ -149,12 +169,14 @@
         <h4>Countdown Timer</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="17 - Text Speed Control/index.html">
         <img src="30DaysOfJavaScript/assets/17.png" alt="Text Speed Control" />
         <h4>Text Speed Control</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="18 - Stopwatch/index.html">
         <img src="30DaysOfJavaScript/assets/18.png" alt="Stopwatch" />
@@ -168,12 +190,14 @@
         <h4>Traffic Lights</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="20 - Levitate Board/index.html">
         <img src="30DaysOfJavaScript/assets/20.png" alt="Levitate Board">
         <h4>Levitate Board</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="21 - Wave Effect/index.html">
         <img src="30DaysOfJavaScript/assets/21.png" alt="Wave Effect">
@@ -187,12 +211,14 @@
         <h4>Zoom Effect</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="23 - Drawing Pad/index.html">
         <img src="30DaysOfJavaScript/assets/23.png" alt="Drawing Pad">
         <h4>Drawing Pad</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="24 - Word Counter/index.html">
         <img src="30DaysOfJavaScript/assets/24.png" alt="Word Counter">
@@ -206,12 +232,14 @@
         <h4>Weather App </h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="26 - Calculator/index.html">
         <img src="30DaysOfJavaScript/assets/26.png" alt="Calculator">
         <h4>Calculator</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="27 - Memory Matching Game/index.html">
         <img src="30DaysOfJavaScript/assets/27.png" alt="Memory Matching Game">
@@ -225,12 +253,14 @@
         <h4>Music Player</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="29 - To Do List/index.html">
         <img src="30DaysOfJavaScript/assets/29.png" alt="To Do List">
         <h4>To Do List</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="30 - Tic Tac Toe/index.html">
         <img src="30DaysOfJavaScript/assets/30.png" alt="Tic Tac Toe">
@@ -244,12 +274,14 @@
         <h4>Pop the Balloons</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="32 - Key Code/index.html">
-        <img src="30DaysOfJavaScript/assets/32.png" alt="Events Keycodes">
-        <h4>Events Keycodes</h4>
+        <img src="30DaysOfJavaScript/assets/32.png" alt="Events Keycode">
+        <h4>Events Keycode</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="33 - Feedback UI/index.html">
         <img src="30DaysOfJavaScript/assets/33.png" alt="Feedback UI">
@@ -263,12 +295,14 @@
         <h4>Virtual Piano</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="35 - Decimal To Binary/index.html">
         <img src="30DaysOfJavaScript/assets/35.png" alt="Decimal to Binary">
         <h4>Decimal to Binary</h4>
       </a>
     </div>
+
     <div class="item">
       <a target="_blank" href="36 - Hangman/index.html">
         <img src="30DaysOfJavaScript/assets/36.png" alt="Hangman" />
@@ -352,7 +386,11 @@
         <h4>Caesar Cipher</h4>
       </a>
     </div>
+
   </div>
+<!-- Main Section End -->
+
+<!-- Footer Start -->
   <footer>
     <p>&#x3c; &#47; &#x3e; with ❤️ by
       <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
