@@ -2,6 +2,7 @@ html {
     font-size: 10px;
     background-color: #19172e;
     overflow: hidden;
+    user-select: none;
 }
 
 body,
@@ -22,6 +23,10 @@ h3 {
     color: white;
 }
 
+span{
+    font-weight: 100;
+}
+
 h4 {
     font-size: 2rem;
     text-align: center;
@@ -32,6 +37,7 @@ h4 {
 
 .keys {
     display: flex;
+    flex-direction: row;
     flex: 1;
     min-height: 80vh;
     align-items: center;
