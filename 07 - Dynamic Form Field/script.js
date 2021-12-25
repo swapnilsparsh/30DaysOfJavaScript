@@ -11,7 +11,7 @@ add_more_fields.onclick = function(){
     newField.setAttribute('siz', 50);
     newField.setAttribute('placeholder', 'Another Field');
     survey_options.appendChild(newField);
-    if(input_tags.length > 2){
+    if(input_tags.length >= 2){
         document.getElementById("remove_fields").style.visibility="visible";
         
     }
@@ -19,11 +19,14 @@ add_more_fields.onclick = function(){
 
 remove_fields.onclick = function(){
     var input_tags = survey_options.getElementsByTagName('input');
-    if(input_tags.length > 2){
+    if(input_tags.length >= 2){
         survey_options.removeChild(input_tags[(input_tags.length)-1]);
+        if(input_tags.length < 2){
+            document.getElementById("remove_fields").style.visibility="hidden";
+        }
     }
-    else{
-        document.getElementById("remove_fields").style.visibility="hidden";
+    // else{
+    //     document.getElementById("remove_fields").style.visibility="hidden";
 
-    }
+    // }
 }
