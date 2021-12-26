@@ -95,20 +95,19 @@ button {
 
 .btn {
     display: block;
-    background: var(--primary-color);
+    background: #333333;
     padding: 1.25rem;
     margin: 2.5rem auto;
     width: fit-content;
-    box-shadow: 2px 2px 10px white;
+    border-radius: 8px;
 }
 
-.btn:hover {
-    color: aquamarine;
+.btn:active {
+    background: rgb(30, 142, 62);
 }
 
 .number {
     display: flex;
-    flex-direction: column;
     height: 100%;
     flex-wrap: wrap;
 }
@@ -145,11 +144,6 @@ footer {
     .num {
         font-size: 1.4rem;
     }
-
-    footer {
-        font-size: 1.2rem;
-    }
-    
 }
 
 @media screen and (min-width:835px) {
@@ -162,10 +156,6 @@ footer {
 
     .num {
         font-size: 1.5rem;
-    }
-
-    footer {
-        font-size: 1.25rem;
     }
 
     .content-wrapper {
@@ -186,9 +176,4 @@ footer {
     .num {
         font-size: 2rem;
     }
-
-    footer {
-        font-size: 1.5rem;
-    }
-
 }
