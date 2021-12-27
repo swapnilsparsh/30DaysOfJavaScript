@@ -1,212 +1,100 @@
 var modal = document.getElementById('myModal');
-
-
 var grid = new Array(3);
 grid[0] = new Array(3);
 grid[1] = new Array(3);
 grid[2] = new Array(3);
-var player = 1;
+var player = 0;
 var gameWon = 0;
+var numberMap = new Map();
 
-// Stackoverflow 😛:
-$("#square_one").click(function() {
-  console.log("clicked");
-  if (checkLegalMove(0, 0) == true) {
-    if (player == 1) {
-      $("#square_one_text").html("X");
-      grid[0][0] = 'X';
+//Helper function to fill Map data structure
+function fillMap()
+{
+numberMap.set('one',1);
+numberMap.set('two',2);
+numberMap.set('three',3);
+numberMap.set('four',4);
+numberMap.set('five',5);
+numberMap.set('six',6);
+numberMap.set('seven',7);
+numberMap.set('eight',8);
+numberMap.set('nine',9);
+}
+fillMap();
+
+// A utility function F(a,b) = max(a,b)
+function max(a,b){
+  if(a>b){
+    return a;
+  }
+  return b;
+}
+
+//Function that maps a number to its place in the grid
+//For example F(1) -> (0,0) , F(2) -> (0,1) , F(3) -> (0,2) , F(4) -> (1,0) , F(5) -> (1,1) , ... 
+function evaluateMapping(squareNumber){
+  if(squareNumber >= 1 && squareNumber <=3){
+    return [max(0,squareNumber - 3) , squareNumber - 1];
+  }
+  if(squareNumber >= 4 && squareNumber <=6){
+    return [max(1,squareNumber - 6) , squareNumber - 4];
+  }
+  if(squareNumber >= 7 && squareNumber <=9){
+    return [max(2,squareNumber - 9) , squareNumber - 7];
+  }
+}
+
+//Utility function that handles Click on the Square
+function handleSquareClick(squareVal){
+  let x , y , squareNumber;
+  squareNumber = numberMap.get(squareVal);
+  [x,y] = evaluateMapping(squareNumber); 
+  if (checkLegalMove(x, y) == true) {
+    if (player == 0) {
+      console.log('X turn');
+      $(`#square_${squareVal}_text`).html("X");
+      grid[x][y] = 'X';
       if (checkWin(1) == true) {
         endgame(1);
       }
-      player = 2;
     } else {
-      $("#square_one_text").html("O");
-      grid[0][0] = 'O';
+      console.log('0 turn ');
+      $(`#square_${squareVal}_text`).html("O");
+      grid[x][y] = 'O';
       if (checkWin(2) == true) {
         endgame(2);
       }
-      player = 1;
     }
+    //Switch player turns
+    player = 1 - player;
   }
-});
+}
 
-$("#square_two").click(function() {
-  if (checkLegalMove(0, 1) == true) {
-    if (player == 1) {
-      $("#square_two_text").html("X");
-      grid[0][1] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-      player = 2;
-    } else {
-      $("#square_two_text").html("O");
-      grid[0][1] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
-
-$("#square_three").click(function() {
-  if (checkLegalMove(0, 2) == true) {
-    if (player == 1) {
-      $("#square_three_text").html("X");
-      grid[0][2] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-      player = 2;
-    } else {
-      $("#square_three_text").html("O");
-      grid[0][2] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
-
-$("#square_four").click(function() {
-  if (checkLegalMove(1, 0) == true) {
-    if (player == 1) {
-      $("#square_four_text").html("X");
-      grid[1][0] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-      player = 2;
-    } else {
-      $("#square_four_text").html("O");
-      grid[1][0] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
-
-$("#square_five").click(function() {
-  if (checkLegalMove(1, 1) == true) {
-    if (player == 1) {
-      $("#square_five_text").html("X");
-      grid[1][1] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-      player = 2;
-    } else {
-      $("#square_five_text").html("O");
-      grid[1][1] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
-
-$("#square_six").click(function() {
-  if (checkLegalMove(1, 2) == true) {
-    if (player == 1) {
-      $("#square_six_text").html("X");
-      grid[1][2] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-      player = 2;
-    } else {
-      $("#square_six_text").html("O");
-      grid[1][2] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
-
-$("#square_seven").click(function() {
-  if (checkLegalMove(2, 0) == true) {
-    if (player == 1) {
-      $("#square_seven_text").html("X");
-   
-            grid[2][0] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-   player = 2;
-    } else {
-      $("#square_seven_text").html("O");
-      grid[2][0] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
-
-$("#square_eight").click(function() {
-  if (checkLegalMove(2, 1) == true) {
-    if (player == 1) {
-      $("#square_eight_text").html("X");
-      grid[2][1] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-      player = 2;
-    } else {
-      $("#square_eight_text").html("O");
-      grid[2][1] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
-
-$("#square_nine").click(function() {
-  if (checkLegalMove(2, 2) == true) {
-    if (player == 1) {
-      $("#square_nine_text").html("X");
-      grid[2][2] = 'X';
-      if (checkWin(1) == true) {
-        endgame(1);
-      }
-      player = 2;
-    } else {
-      $("#square_nine_text").html("O");
-      grid[2][2] = 'O';
-      if (checkWin(2) == true) {
-        endgame(2);
-      }
-      player = 1;
-    }
-  }
-});
+$("#square_one").click(function() { handleSquareClick("one")});
+$("#square_two").click(function() { handleSquareClick("two")});
+$("#square_three").click(function(){ handleSquareClick("three") } );
+$("#square_four").click(function(){ handleSquareClick("four")});
+$("#square_five").click(function() { handleSquareClick("five") } );
+$("#square_six").click(function() { handleSquareClick("six")});
+$("#square_seven").click(function(){ handleSquareClick("seven") } );
+$("#square_eight").click(function(){ handleSquareClick("eight")});
+$("#square_nine").click(function (){ handleSquareClick("nine")});
 
 function checkWin(playerNum) {
   //check horizontal
   for (i = 0; i < 3; i++) {
-
     if ((grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2]) &&  grid[i][0] != undefined && grid[i][1] != undefined && grid[i][2] != undefined) {
-     console.log("horizontal won");
+      console.log("horizontal won");
       return true;
     }
   }
 
   //check vertical
   for (i = 0; i < 3; i++) {
-    console.log("i is: " + i);
-    console.log("grid[" + i + "][0] is " + grid[i][0]);
-    console.log("grid[" + i + "][1] is " + grid[i][1]);
-    console.log("grid[" + i + "][2] is " + grid[i][2]);
+     console.log("i is: " + i);
+     console.log("grid[" + i + "][0] is " + grid[i][0]);
+     console.log("grid[" + i + "][1] is " + grid[i][1]);
+     console.log("grid[" + i + "][2] is " + grid[i][2]);
     if ((grid[0][i] == grid[1][i] && grid[1][i] == grid[2][i]) && grid[0][i] != undefined && grid[1][i] != undefined && grid[2][i] != undefined) {
       console.log("vertical won");
       return true;
@@ -250,13 +138,15 @@ function endgame(num) {
     $("#myModal").css("display", "block");
   }
   if (num == 1) {
-    $(".modal_text").html("Player 1 Wins!");
+    $(".modal_text").html("Player X Wins!");
     $("#myModal").css("display", "block");
   }
   if (num == 2) {
-    $(".modal_text").html("Player 2 Wins!");
+    $(".modal_text").html("Player O Wins!");
     $("#myModal").css("display", "block");
   }
+  //Blurs the background when the modal pops up
+  $("table").css("filter","blur(8px)");
 }
 
 $("#restartBtn").click(function(){
@@ -264,7 +154,7 @@ $("#restartBtn").click(function(){
     grid[0] = new Array(3);
     grid[1] = new Array(3);
     grid[2] = new Array(3);
-    player = 1;
+    player = 0;
     gameWon = 0;
     $("#square_one_text").html("");
     $("#square_two_text").html("");
@@ -276,4 +166,7 @@ $("#restartBtn").click(function(){
     $("#square_eight_text").html("");
     $("#square_nine_text").html("");
     modal.style.display = "none";
+    //remove filter property after game reset
+    $("table").css("filter","")
+
 });
