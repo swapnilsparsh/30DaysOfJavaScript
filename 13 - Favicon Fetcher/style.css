@@ -30,6 +30,14 @@ h2 {
     text-align: center;
   }
 
+h3{
+    position: absolute;
+    top: -70px;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
 img{
     size:18px;
     margin-right: 1.2rem;
