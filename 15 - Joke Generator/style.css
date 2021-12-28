@@ -20,6 +20,10 @@ body {
     color: white;
 }
 
+span{
+    font-weight: 100;
+}
+
 h2{
     position: absolute;
     text-align: center;
@@ -39,11 +43,11 @@ h2{
 }
 
 .box p {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .box button {
-    background-color: rebeccapurple;
+    background-color: #333333;
     border: 0;
     border-radius: 5px;
     color: white;
@@ -53,7 +57,7 @@ h2{
 }
 
 .box button:active {
-    transform: scale(0.97);
+    background: #1e8e3e;
 }
 
 footer {
