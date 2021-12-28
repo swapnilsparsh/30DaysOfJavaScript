@@ -22,25 +22,17 @@ numberMap.set('nine',9);
 }
 fillMap();
 
-// A utility function F(a,b) = max(a,b)
-function max(a,b){
-  if(a>b){
-    return a;
-  }
-  return b;
-}
-
 //Function that maps a number to its place in the grid
 //For example F(1) -> (0,0) , F(2) -> (0,1) , F(3) -> (0,2) , F(4) -> (1,0) , F(5) -> (1,1) , ... 
 function evaluateMapping(squareNumber){
   if(squareNumber >= 1 && squareNumber <=3){
-    return [max(0,squareNumber - 3) , squareNumber - 1];
+    return [0 , squareNumber - 1];
   }
   if(squareNumber >= 4 && squareNumber <=6){
-    return [max(1,squareNumber - 6) , squareNumber - 4];
+    return [1 , squareNumber - 4];
   }
   if(squareNumber >= 7 && squareNumber <=9){
-    return [max(2,squareNumber - 9) , squareNumber - 7];
+    return [2 , squareNumber - 7];
   }
 }
 
