@@ -71,23 +71,15 @@ h2 {
 .button:active {
   background-color: #1e8e3e;
 }
-fot {
-  background-color: #19172e;
-  text-align: center;
+
+.footer {
   color: white;
   font-size: 1rem;
-  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 5px;
-  line-height: 3vh;
   position: fixed;
-  float: center;
   text-align: center;
-  padding-left: 51px;
-  padding-right: 50px;
-  
 }
 
 
