@@ -82,8 +82,8 @@ body.light-mode svg {
 .toggleButton{
   position: absolute;
   top: 0;
-  margin: 10px;
-  padding: 5px;
+  margin: 10px 3px 3px 10px;
+  padding: 3px;
   border: none;
   border-radius: 50%;
   font-size: 30px;
@@ -98,7 +98,7 @@ h1 {
 @media only screen and (max-width: 658px) {
 
   h1 { 
-     font-size: 2em; 
+     font-size: 1.8em; 
      padding: 32px 40px;
   }
 
@@ -130,6 +130,7 @@ a:visited {
 
 .item {
   flex: 50%;
+  width: 90%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 transparent,0 0 transparent,0 0 transparent,0 0 transparent, 0 2px 3px 0 rgba(0,0,0,0.15),0 1px 2px 0 rgba(0,0,0,0.06);
@@ -156,8 +157,6 @@ a:visited {
   grid-gap: 24px;
   row-gap: 24px;
   margin: auto;
-  justify-content: center;
-
 }
 
 .main a{
