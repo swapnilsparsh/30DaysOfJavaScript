@@ -60,7 +60,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 45  |            [Chatting App](https://30daysofjs.netlify.app/45%20-%20chatting%20app/client/)             |
 | 46  |             [Image Slider](https://30daysofjs.netlify.app/40%20-%20gradient%20generator/)             |
 | 47  |       [Caesar Cipher](https://30daysofjs.netlify.app/47%20-%20caesar%20cipher/2_caesar_cipher)        |
-| 48  |            [Attendance Table](https://30daysofjs.netlify.app/48%20-%20attendance%20table/)            |
+    
 
 ## Our valuable Contributor :
 
