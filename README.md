@@ -2,6 +2,24 @@
 
 Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
 
+<hr>
+
+<div align="center">
+
+![Contributors](https://img.shields.io/github/contributors/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+  ![Forks](https://img.shields.io/github/forks/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+![License](https://img.shields.io/github/license/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+
+![](https://img.shields.io/github/issues-raw/swapnilsparsh/30DaysOfJavaScript?color=orange&style=for-the-badge)
+![](https://img.shields.io/github/issues-closed/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+![](https://img.shields.io/github/issues-pr/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+![](https://img.shields.io/github/issues-pr-closed-raw/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+  
+</div>
+
+<hr>
+
 ## View Live Demo
 
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
