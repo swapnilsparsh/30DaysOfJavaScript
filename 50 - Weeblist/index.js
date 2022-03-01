@@ -9,6 +9,7 @@ window.onload = changeNameType();
 function changeNameType() {
     nameType = nameType==="Manga"?"Anime":"Manga";
     document.getElementById('output').innerHTML = nameType;
+    document.getElementById('search-anime').innerHTML = nameType;
     document.getElementById('swap-anime').innerHTML = nameType==="Manga"?"Anime":"Manga";
 };
 
