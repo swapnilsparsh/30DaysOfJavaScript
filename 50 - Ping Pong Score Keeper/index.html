@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      .winner {
+        color: green;
+      }
+
+      .loser {
+        color: red;
+      }
+
+      .app-body{
+        background-color: #18172F;
+      }
+    </style>
+    <title>Ping Pong Score Keeper</title>
+  </head>
+  <body class="app-body">
+      <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="card">
+              <div class="card-image">
+                  <figure class="image is-2by1">
+                      <<img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                      alt="">
+                  </figure>
+              </div>
+            <header class="card-header">
+              <p class="card-header-title">Ping Pong Score Keeper</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <h1 class="title is-1" id="scoreh1"><span value="0" id="pl1Display">0</span> to
+                  <span id="pl2Display">0</span>
+                </h1>
+                  <p class="subtitle">Use the Button to keep score</p>
+                <label for="scorecount" class="label is-large is-inline">Play To</label>
+                  <div class="select is-normal is-primary is-rounded ">
+                    <select name="players" class="playerto " id="scorecount">
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                    </select>
+                  </div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <button class="buttonel button card-footer-item is-success is-outlined is-rounded" id="playerOne">Player 1</button>
+              <button class="buttonel button card-footer-item is-success is-outlined is-rounded" id="playerTwo">Player 2</button>
+              <button class="buttonel button card-footer-item is-danger is-outlined is-rounded" id="reset">Reset</button>
+              
+            </footer>
+          </div>
+        </div>
+      </div>  
+    </div>
+</section>
+    <script src="app.js"></script>
+  </body>
+</html>
