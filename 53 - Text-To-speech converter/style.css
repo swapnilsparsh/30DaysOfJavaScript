@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+
+body{
+    display: flex; 
+     align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
+    background-color: rgb(13, 8, 31);
+}
+
+.wrapper {
+    width: 440px;
+background-color: rgb(222, 223, 219);
+border-radius: 30px;
+padding: 25px 30px;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form {
+    margin: 35px 0 20px;
+}
+
+form .row{
+    display: flex;
+    flex-direction: column;
+}
+form .row label {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+form:where(textarea,select, button){
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form.row textarea{
+    resize:none;
+    height: 110px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 2px solid rgb(21, 7, 71);
+}
+
+form .row .outer{
+height: 47px;
+display: flex;
+padding: 0 10px;
+align-items: center;
+border-radius: 5px;
+border: 2px solid rgb(21, 7, 71);
+}
+
+form .row select{
+    font-size: 15px;
+}
+
+form button{
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: rgb(6, 3, 15);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+   width: 100%;
+}
