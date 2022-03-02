@@ -1,0 +1,128 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-text-size-adjust: none;
+   -ms-text-size-adjust: none;
+       text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAE6E5;
+}
+
+.heading {
+  margin: 3rem 0 5rem 0;
+}
+
+.title, .sub-title {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #12130F;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  color: #8F8073;
+}
+
+.user-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.user-input label {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.user-input input {
+  width: 80%;
+  max-width: 35rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #9b8774ad;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 3rem;
+  background-color: #5b92799d;
+  color: #12130F;
+  font-family: 'Poppins', sans-serif;
+}
+
+.qr-code {
+  border-top: 0.5rem solid #8F8073;
+  border-right: 0.5rem solid #8F8073;
+  border-bottom: 1rem solid #8F8073;
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-left: 0.5rem solid #8F8073;
+  background-color: #8F8073;
+  margin-bottom: 6rem;
+}
+
+.qr-code button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #8F8073;
+  font-family: 'Poppins', sans-serif;
+  color: #EAE6E5;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.qr-code button a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #EAE6E5;
+}
