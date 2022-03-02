@@ -1,1 +1,75 @@
+.header {
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header > div {
+    margin: 10px;
+}
+
+.cplogo{
+    width: 200px;
+}
+
+.searchBar {
+    background-color: #1c1c1e;
+    height: 50px;
+    flex: 1;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.searchIconContainer{
+    margin: 10px;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    font-size: 16px;
+}
+
+.headerItems{
+    display: flex;
+    color: #eceff8;
+}
+
+.headerItems > p{
+    margin: 10px;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+}
+
+.headerActions > div {
+    margin: 10px;
+}
+
+.themeSwitchContainer {
+    display: flex;
+    background-color: #1c1c1e;
+    border-radius: 50px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.themeSwitchContainer > img {
+    height: 25px;
+}
+
+.loginButton {
+    background: linear-gradient(to right, #0a43fc, #ff09de);
+    padding: 15px 40px;
+    border-radius: 50px;
+}

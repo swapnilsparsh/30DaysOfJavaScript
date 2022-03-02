@@ -1,0 +1,112 @@
+.main {
+    max-height: 50vh;
+}
+.mainContent {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.punkHighlight {
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.punkContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 20px;
+}
+
+.selectedPunk {
+    object-fit: contain;
+    max-width: min(30vw ,40vh);
+    max-height: 30vw;
+}
+
+.punkDetails{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.75;
+}
+
+.title {
+    font-size: 96px;
+    font-weight: 800;
+}
+
+.itemNumber {
+    color: #a1a5b0;
+    font-size: 72px;
+    align-self: center;
+
+}
+
+.balvinder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.owner {
+    display: flex;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.owner > div {
+    margin: 0 5px;
+}
+
+.ownerImageContainer {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+.ownerImageContainer > div {
+    height: 100%;
+    width: 100%;
+}
+
+.ownerDetails {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: left;
+}
+
+.ownerNameandHandle {
+    flex: 1;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.ownerHandle {
+    color: rgb(0, 238, 255);
+    font-weight: 500;
+    display: flex;
+}
+
+.ownerLink {
+    padding: 12px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    margin: 0 0 0 10px;
+}
+
+.ownerLink > div {
+    height: 100%;
+    width: 100%;
+}
