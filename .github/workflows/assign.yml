@@ -1,0 +1,16 @@
+name: Assign
+on:
+  issue_comment:
+    created:
+      body:
+        - /assign
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Auto-assign issue'
+        uses: pozil/auto-assign-issue@v1.4.0
+        with:
+          assignees: octocat,cat,dog
+          numOfAssignee: 2
