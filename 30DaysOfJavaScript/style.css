@@ -92,7 +92,7 @@ body.light-mode svg {
 h1 {
   text-align: center;
   font-size: 3.5rem;
-  padding: 5vh 7vw;
+  padding: 10vh 7vw;
 }
 
 @media only screen and (max-width: 658px) {
@@ -132,7 +132,7 @@ a:visited {
   flex: 50%;
   width: 90%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #C7CCDB;
   box-shadow: 0 0 transparent,0 0 transparent,0 0 transparent,0 0 transparent, 0 2px 3px 0 rgba(0,0,0,0.15),0 1px 2px 0 rgba(0,0,0,0.06);
   border-radius: 10px;
   transition: transform .3s ease-in-out 0s;
@@ -146,7 +146,7 @@ a:visited {
 }
 
 .item h4{
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: center;
 }
 
