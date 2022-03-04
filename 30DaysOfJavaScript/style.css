@@ -89,6 +89,14 @@ body.light-mode svg {
   font-size: 30px;
 }
 
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
 h1 {
   text-align: center;
   font-size: 3.5rem;
@@ -97,8 +105,8 @@ h1 {
 
 @media only screen and (max-width: 658px) {
 
-  h1 { 
-     font-size: 1.8em; 
+  h1 {
+     font-size: 1.8em;
      padding: 32px 40px;
   }
 
@@ -142,7 +150,7 @@ a:visited {
   transform: scale3d(1.05, 1.05, 1);
   /* border: 1px solid #ffffff; */
   filter: drop-shadow(10px);
-  filter: contrast(110%);  
+  filter: contrast(110%);
 }
 
 .item h4{
@@ -164,7 +172,7 @@ a:visited {
 }
 
 footer {
-  background-color: #19172e; 
+  background-color: #19172e;
   text-align: center;
   color: white;
   font-size: 1rem;
