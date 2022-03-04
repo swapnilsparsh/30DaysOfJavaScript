@@ -16,7 +16,7 @@ body {
 
 .container {
   width: 40%;
-  height: 500px;
+  height: auto;
   margin: 3rem auto;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
@@ -40,16 +40,19 @@ body {
 }
 
 h2 {
-  padding: 0.5rem;
+  padding: 0.3rem;
+  
 }
 
 input {
   border: solid 1px #19172e;
   border-radius: 3px;
   width: 75%;
+  height: 40px;
   padding: 10px;
   float: left;
   font-size: 16px;
+  
 }
 
 .addBtn,.editBtn {
@@ -70,6 +73,7 @@ input {
 
 ul li {
   margin: 10px;
+  
   list-style-type: none;
   cursor: pointer;
   position: relative;
@@ -117,7 +121,7 @@ ul li.checked::before {
 
 footer {
   color: white;
-  position: absolute;
+  position: relative;
   text-align: center;
   font-size: 1rem;
   left: 0;
@@ -125,6 +129,7 @@ footer {
   bottom: 0;
   padding: 5px;
   line-height: 3vh;
+    
 }
 
 footer a:visited {
