@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+  height: 100vh;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.wrap-up {
+  border: 1px solid white;
+  padding: 20px;
+  background-color: var(--blue);
+}
+
+header {
+  text-align: center;
+  color: var(--white);
+  padding-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+header h1 span {
+  font-weight: 700;
+}
+
+section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form button {
+  outline: none;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--color-sec);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 60rem;
+  background-color: #eee;
+  margin: 15% auto;
+  padding: 2rem;
+  border: 1px solid #777;
+  text-align: center;
+  animation: slide ease 0.6s;
+}
+
+.modal-content h1 {
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  margin: 5px;
+}
+
+.modal-content span {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 900;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
