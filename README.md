@@ -2,6 +2,37 @@
 
 Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
 
+<p align="center">
+   <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=GirlScript+Summer+of+Code">
+ </p>
+
+<div align="center">
+
+ ![Contributors](https://img.shields.io/github/contributors/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+   ![Forks](https://img.shields.io/github/forks/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![Stars](https://img.shields.io/github/stars/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![License](https://img.shields.io/github/license/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+
+ ![](https://img.shields.io/github/issues-raw/swapnilsparsh/30DaysOfJavaScript?color=orange&style=for-the-badge)
+ ![](https://img.shields.io/github/issues-closed/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![](https://img.shields.io/github/issues-pr/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![](https://img.shields.io/github/issues-pr-closed-raw/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+
+ </div>
+
+ ## Overview
+
+<p align="center">        Chrome Extensions are something which we use very frequently in our day-to-day life for example Grammarly, In this project similarly, I will be adding some extensions and along with it giving some ideas of extensions that can be implemented. Using extension makes life easier but what if we build an extension it makes it more exciting. So you may be on any level of learning you can always contribute to this project and build your very own extensions!                   </p>
+
+<div align="center">   <h3>     Contribution is fun! ✨    </h3>    </div>
+  
+
+ #### Tech-Stack used :
+
+  ![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+  ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
 ## View Live Demo
 
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
@@ -63,11 +94,19 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 48  |       [Attendance Table](https://30daysofjs.netlify.app/48%20-%20attendance%20table/)        |
     
 
-## Our valuable Contributor :
+## Contributors
+<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
+<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
+<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" ></a>   
 
-<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=swapnilsparsh/30DaysOfJavaScript" />
-</a>
+<br>
+
+
+Thanks to all the **people who contribute** 💜
+
+![Contributors](https://contributors-img.web.app/image?repo=swapnilsparsh/30DaysOfJavaScript)
+
+<br>
 
 ## License
 
