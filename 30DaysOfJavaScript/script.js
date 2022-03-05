@@ -21,6 +21,21 @@ function toggleDarkLight() {
   } else {
     button.innerHTML = "🌙";
   }
+
+  var trans = () => {
+    document.documentElement.classList.add("transition");
+    window.setTimeout(() => {
+      document.documentElement.classList.remove("transition");
+    }, 500);
+  };
+
   var currentClass = body.className;
-  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  // body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  if (currentClass == "dark-mode") {
+    trans();
+    body.className = "light-mode";
+  } else {
+    trans();
+    body.className = "dark-mode";
+  }
 }

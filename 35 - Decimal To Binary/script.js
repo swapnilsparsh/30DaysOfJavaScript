@@ -1,84 +1,88 @@
-let input = document.getElementById("input_number");
-let output = document.getElementById("output_number");
-let select = document.getElementById("select");
-var into = document.getElementById("into");
+function convert(){
+    let to_convert = document.getElementById("to_convert").value;
+    to_convert = parseFloat(to_convert)
+    let x = document.getElementById("x").value;
+    let y = document.getElementById("y").value;
+    
+    // Validate provided inputs
+    if(x==y || x<2 || y<2 || isNaN(to_convert)){
+        alert("HUH!? -_-");
+        return 0;
+    }
+    
+    // Organising results
+    let res;
+    if(x==10){
+        res = Con_Dec_to_Basey(to_convert, y);
+    }else if(y==10){
+        res = Conv_Basex_to_Dec(to_convert, x);
+    }else{
+        res = Conv_Basex_to_Dec(to_convert, x);
+        res = Con_Dec_to_Basey(res, y);
+    }
 
-
-function changeinto() {
-  into.innerHTML = select.value;
+    // Visualizing results
+    let final = document.getElementById("res");
+    final.value = res;
 }
-changeinto();
 
 
-function calculate() {
-  let number = input.value;
-  if (isNaN(number) || number == "") {
-    alert("given value is not a number");
-    output.value = "";
-  }
-  if (select.value == "Binary") {
-    if (number == 0) {
-      output.value = 0;
-    } else {
-      let response = "";
-      while (number > 0) {
-        response = (number % 2) + response;
-        number = Math.floor(number / 2);
-      }
-      output.value = response;
+function Con_Dec_to_Basey(to_convert, y){
+    // Converting Integral part
+    let integral_part = parseInt(to_convert);
+    let res = [];
+    while (parseInt(integral_part) != 0){
+        integral_part /= y;
+        let element = (integral_part - parseInt(integral_part)) * y;
+        res.unshift(parseInt(element));
     }
-  } else if (select.value == "Hexadecimal") {
-    if (number == 0) {
-      output.value = 0;
-    } else {
-      let hexa = [];
-      let r,
-        t,
-        i,
-        j = 0;
-      t = number;
-      while (t > 0) {
-        r = t % 16;
-        if (r < 10) {
-          hexa[j++] = 48 + r;
-        } else {
-          hexa[j++] = 55 + r;
+    
+    // Converting Decimal part
+    let decimal_part = to_convert - parseInt(to_convert);
+    let res_dec = [];
+    let percision = 10; // Special case for binary
+    while (decimal_part != 0){
+        decimal_part = (decimal_part - parseInt(decimal_part)) * y
+        // Special case for binary
+        if (res_dec.includes(parseInt(decimal_part))){
+            if(percision==0){
+                break;
+            }
+            percision -=1;
         }
-        t = parseInt(t / 16);
-      }
-      let char = "";
-      for (i = j - 1; i >= 0; i--) {
-        char += String.fromCharCode(hexa[i]);
-      }
-      output.value = char;
+        res_dec.push(parseInt(decimal_part));
     }
-  }
-  else if (select.value == "Octal") {
-    if (number == 0) {
-      output.value = 0;
-    } 
-    else {
-      let r,
-        t,
-        i = 1,
-        j = 0;
-      t = number;
-      while (t != 0) {
-        r = t % 8;
-        j += i * r;
-        i = i * 10;
-        t = parseInt(t / 8);
-      }
-      output.value = j;
+
+    let final;    
+    if (res_dec.length == 0){
+        final = res.join(" ");
+    }else{
+        final = res.join(" ") + " . " + res_dec.join(" ");
     }
-  }
-  else if (select.value == "Graycode decimal equivalent") {
-    if (number == 0) {
-      output.value = 0;
+  return final;
+}
+
+
+function Conv_Basex_to_Dec(to_convert, x){
+    let i = 0;
+    let res = 0;
+
+    let integral_part = parseInt(to_convert).toString().split("").reverse().join("");
+    for(number of integral_part){
+        let element = parseInt(number) * (x**i);
+        res += element;
+        i+=1;
     }
-    else {
-      let graycode = number ^ (number >> 1);
-      output.value = graycode;
+
+    let decimal_part = to_convert.toString().split(".")[1];
+    if(decimal_part){
+        i = -1;
+        for(decimal of decimal_part){
+            let element = parseInt(decimal) * (x**i);
+            res+= element;
+            i += -1;
+        }
     }
-  }
+
+  return res;
 }
