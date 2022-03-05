@@ -3,6 +3,21 @@
 Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
 
 ## View Live Demo
+<div align="center">
+
+ ![Contributors](https://img.shields.io/github/contributors/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+   ![Forks](https://img.shields.io/github/forks/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+ ![Stars](https://img.shields.io/github/stars/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+ ![License](https://img.shields.io/github/license/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+
+ ![](https://img.shields.io/github/issues-raw/ridsuteri/Awesome-Chrome-Extensions?color=orange&style=for-the-badge)
+ ![](https://img.shields.io/github/issues-closed/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+ ![](https://img.shields.io/github/issues-pr/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+ ![](https://img.shields.io/github/issues-pr-closed-raw/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+
+ </div>
+
+ <hr>
 
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
 
