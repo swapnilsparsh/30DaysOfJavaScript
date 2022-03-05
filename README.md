@@ -8,15 +8,15 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
 <div align="center">
 
- ![Contributors](https://img.shields.io/github/contributors/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
-   ![Forks](https://img.shields.io/github/forks/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
- ![Stars](https://img.shields.io/github/stars/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
- ![License](https://img.shields.io/github/license/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+ ![Contributors](https://img.shields.io/github/contributors/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+   ![Forks](https://img.shields.io/github/forks/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![Stars](https://img.shields.io/github/stars/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![License](https://img.shields.io/github/license/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
 
- ![](https://img.shields.io/github/issues-raw/ridsuteri/Awesome-Chrome-Extensions?color=orange&style=for-the-badge)
- ![](https://img.shields.io/github/issues-closed/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
- ![](https://img.shields.io/github/issues-pr/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
- ![](https://img.shields.io/github/issues-pr-closed-raw/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
+ ![](https://img.shields.io/github/issues-raw/swapnilsparsh/30DaysOfJavaScript?color=orange&style=for-the-badge)
+ ![](https://img.shields.io/github/issues-closed/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![](https://img.shields.io/github/issues-pr/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
+ ![](https://img.shields.io/github/issues-pr-closed-raw/swapnilsparsh/30DaysOfJavaScript?style=for-the-badge)
 
  </div>
 
@@ -97,16 +97,16 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
     
 
 ## Contributors
-<a href="https://github.com/harshita214/Chrome-Extension"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
-<a href="https://github.com/harshita214/Chrome-Extension"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
-<a href="https://github.com/harshita214/Chrome-Extension"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" ></a>   
+<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
+<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
+<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" ></a>   
 
 <br>
 
 
 Thanks to all the **people who contribute** 💜
 
-![Contributors](https://contributors-img.web.app/image?repo=harshita214/Chrome-Extension)
+![Contributors](https://contributors-img.web.app/image?repo=swapnilsparsh/30DaysOfJavaScript)
 
 <br>
 
