@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE INTREST CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+    
+</head>
+<body>
+    <div class="calculator">
+        <h2>Simple Intrest Calculator</h2>
+        <label for="amount">Principal Amount</label>
+        <input  type="number" placeholder="Enter Principle Amount" id="amount">
+        <br>
+        <label for="rate">Rate (%)</label>
+        <input type="number" placeholder="Enter Rate" id="rate">
+        <br>
+        <label for="time">Time</label>
+        <input type="number" placeholder="Enter Time" id="time">
+        <br>
+        <button onclick="answer()">TOTAL</button>
+        <p>Principal Amount: <span id="output1"></span></p>
+        <p>Total Intrest: <span id="output2"></span></p>
+        <p>Total Value: <span id="output3"></span></p>
+    </div>
+
+</body>
+</html>
