@@ -2,7 +2,10 @@
 
 Repo containing all the projects made in 30 Days while completing the <b>30 Days of JavaScript Challenge</b>.
 
-## View Live Demo
+<p align="center">
+   <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=GirlScript+Summer+of+Code">
+ </p>
+
 <div align="center">
 
  ![Contributors](https://img.shields.io/github/contributors/ridsuteri/Awesome-Chrome-Extensions?style=for-the-badge)
@@ -17,7 +20,22 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
  </div>
 
- <hr>
+ ## Overview
+
+<p align="center">        Chrome Extensions are something which we use very frequently in our day-to-day life for example Grammarly, In this project similarly, I will be adding some extensions and along with it giving some ideas of extensions that can be implemented. Using extension makes life easier but what if we build an extension it makes it more exciting. So you may be on any level of learning you can always contribute to this project and build your very own extensions!                   </p>
+
+<div align="center">   <h3>     Contribution is fun! ✨    </h3>    </div>
+  
+
+ #### Tech-Stack used :
+
+  ![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+  ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+
+## View Live Demo
+
 
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
 
