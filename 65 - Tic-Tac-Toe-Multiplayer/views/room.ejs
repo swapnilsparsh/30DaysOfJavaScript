@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Game</title>
+    <link rel="stylesheet" href="css/room.css">
+    <script src="https://unpkg.com/socket.io-client@3.1.3/dist/socket.io.min.js"></script>
+    <script>
+        const ROOM_ID = "<%=roomId %>";
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td id="1" onclick="clicked(1)">
+                <button></button>
+            </td>
+            <td id="2" onclick="clicked(2)">
+                <button></button>
+            </td>
+            <td id="3" onclick="clicked(3)">
+                <button></button>
+            </td>
+        </tr>
+        <tr>
+            <td id="4" onclick="clicked(4)">
+                <button></button>
+            </td>
+            <td id="5" onclick="clicked(5)">
+                <button></button>
+            </td>
+            <td id="6" onclick="clicked(6)">
+                <button></button>
+            </td>
+        </tr>
+        <tr>
+            <td id="7" onclick="clicked(7)">
+                <button></button>
+            </td>
+            <td id="8" onclick="clicked(8)">
+                <button></button>
+            </td>
+            <td id="9" onclick="clicked(9)">
+                <button></button>
+            </td>
+        </tr>
+    </table>
+    <div id="message"></div>
+    <input id="url" onclick="copyToClip()" readonly></input>
+    <script type="text/javascript" src="js/room.js" defer></script>
+</body>
+
+</html>

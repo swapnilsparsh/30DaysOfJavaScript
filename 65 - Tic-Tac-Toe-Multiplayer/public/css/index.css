@@ -1,0 +1,24 @@
+*{
+    text-align: center;
+}
+button {
+    width: 500px;
+    min-width: 300px;
+    max-width: 100% !important;
+    display: block;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    height: 50px;
+    border-radius: 10px;
+}
+#create-board{
+    top: 10%;
+    background-color: #00FFFF;
+}
+#join-board{
+    top: 20%;
+    background-color: #232424;
+    color: #FFF;
+}

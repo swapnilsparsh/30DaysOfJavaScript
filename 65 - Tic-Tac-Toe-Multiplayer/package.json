@@ -1,0 +1,25 @@
+{
+  "name": "tic-tac-toe-multiplayer",
+  "version": "1.0.0",
+  "description": "This is a multiplayer game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudip-mondal-2002/Tic-Tac-Toe-Multiplayer.git"
+  },
+  "author": "Sudip Mondal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudip-mondal-2002/Tic-Tac-Toe-Multiplayer/issues"
+  },
+  "homepage": "https://github.com/sudip-mondal-2002/Tic-Tac-Toe-Multiplayer#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2",
+    "uuid": "^8.3.2"
+  }
+}
