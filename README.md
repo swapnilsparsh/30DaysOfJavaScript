@@ -96,11 +96,19 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 48  |       [Attendance Table](https://30daysofjs.netlify.app/48%20-%20attendance%20table/)        |
     
 
-## Our valuable Contributor :
+## Contributors
+<a href="https://github.com/harshita214/Chrome-Extension"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
+<a href="https://github.com/harshita214/Chrome-Extension"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
+<a href="https://github.com/harshita214/Chrome-Extension"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" ></a>   
 
-<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=swapnilsparsh/30DaysOfJavaScript" />
-</a>
+<br>
+
+
+Thanks to all the **people who contribute** 💜
+
+![Contributors](https://contributors-img.web.app/image?repo=harshita214/Chrome-Extension)
+
+<br>
 
 ## License
 
