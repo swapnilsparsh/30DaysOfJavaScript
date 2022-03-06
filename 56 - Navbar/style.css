@@ -1,0 +1,286 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /* height: 10px; */
+}
+.container{
+    /* border: 1px solid red; */
+    color:white
+}
+.container div nav{
+    position: fixed;
+    width: 100%;
+    /* margin: auto; */
+    top: 0;
+    text-align: center;
+    background-color: #1d1d1f;
+    /* margin-left: ; */
+}
+ul{
+    /* margin:auto; */
+    /* padding: 5 px; */
+    /* padding-left:15% ; */
+    margin: 8px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+ul li{
+    display: inline-flex;
+    margin: 10px;
+    float: center;
+    padding: 5px;
+}
+#logo{
+    font-size: 19px;
+}
+#search
+{
+    position: relative;
+    left: 30px;
+}
+#search_item{
+    border: none;
+    border-radius: 123px;
+}
+.top-heading{
+    width: 50%;
+    text-align: center;
+    /* border: 1px solid red;  */
+    margin:auto;
+    margin-top:100px;
+}
+.top-heading #Oh-pro{
+    font-size: 48px;
+    margin-top: 10px;
+}
+.top-heading #cost{
+    margin-top: 25px;
+    font-size: 21px;
+    font-weight: 200;
+    color:#1d1d1f;
+}
+.button-buy{
+    background-color: #0071E3;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 8px 16px;
+    border-radius: 980px;
+    margin-top: 27px;
+    margin-left: 15px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+.learn{
+    text-decoration: none;
+    color: #0071E3;
+    margin: 27px;
+    font-size: 21px;
+    /* padding-left: 20px; */
+}
+#iphone-13-pro-photo{
+    position: absolute;
+    left: 349px;
+    width: 750px;
+    margin-top:80px;
+    /* margin-right: 100px; */
+    z-index: -1;
+}
+
+.fa-angle-right
+{
+    width: 10px;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+
+.down-heading
+{
+    margin-top: 490px;
+    text-align: center;
+    background-color: #122239;
+    color: white;
+    border-top:14px solid white ;
+    /* z-index: +1; */
+    width: 100%;
+    height: 94vh;
+}
+
+
+.down-heading .box
+{
+    background-color: #122239;
+    position: relative;
+    top: 63px;
+}
+
+#iheading{
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#iphone-13-cost
+{
+    margin-top: 30px;
+    font-size: 21px;
+    font-weight: 200;
+    color:white;
+}
+
+#your-power
+{
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#iphone-13-photo{
+    position: relative;
+    top: 49px;
+}
+
+#question{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 130px;
+    font-weight: bold;
+}
+
+.menu_item{
+   transform: scale(1);
+   transition: 0.5s;
+}
+
+.container div nav ul .hide_item{
+    transform: scale(0);
+    transition: 0.4s;
+    
+}
+
+li:nth-child(2).menu_item.hide_item
+{
+    transition-delay: 1.2s;
+}
+li:nth-child(3).menu_item.hide_item
+{
+    transition-delay: 1s;
+}
+li:nth-child(4).menu_item.hide_item
+{
+    transition-delay: 0.9s;
+}
+li:nth-child(5).menu_item.hide_item
+{
+    transition-delay: 0.8s;
+}
+li:nth-child(6).menu_item.hide_item
+{
+    transition-delay: 0.7s;
+}
+li:nth-child(7).menu_item.hide_item
+{
+    transition-delay: 0.6s;
+}
+li:nth-child(8).menu_item.hide_item
+{
+    transition-delay: 0.5s;
+}
+li:nth-child(9).menu_item.hide_item
+{
+    transition-delay: 0.4s;
+}
+li:nth-child(10).menu_item.hide_item
+{
+    transition-delay: 0.2s;
+}
+li:nth-child(11).menu_item.hide_item
+{
+    transition-delay: 0.2s;
+}
+
+
+li:nth-child(11).menu_item
+{
+    transition-delay: 1.2s;
+}
+li:nth-child(10).menu_item
+{
+    transition-delay: 1s;
+}
+li:nth-child(9).menu_item
+{
+    transition-delay: 0.9s;
+}
+li:nth-child(8).menu_item
+{
+    transition-delay: 0.8s;
+}
+li:nth-child(7).menu_item
+{
+    transition-delay: 0.7s;
+}
+li:nth-child(6).menu_item
+{
+    transition-delay: 0.6s;
+}
+li:nth-child(5).menu_item
+{
+    transition-delay: 0.5s;
+}
+li:nth-child(4).menu_item
+{
+    transition-delay: 0.4s;
+}
+li:nth-child(3).menu_item
+{
+    transition-delay: 0.3s;
+}
+li:nth-child(2).menu_item
+{
+    transition-delay: 0.2s;
+}
+
+.search-form
+{
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 44px;
+    opacity: 1;
+    transition: 0.5s;
+    
+}
+.search-form form input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    margin-top: 8px;
+    border: none;
+    color:#fff;
+    background: transparent;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.search_bar.inactive{
+    visibility: hidden;
+    /* transition-delay: 0s; */
+}
+
+.search_bar.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    transition-delay: 1.6s;
+
+}
+
+.img img
+{
+    width:100%;
+}
