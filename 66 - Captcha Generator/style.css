@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500&display=swap");
+:root {
+  --wrap: #5603ad;
+  --black: #000;
+  --cont: #f0fff1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  height: 100vh;
+  background: #19172e;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: 70px;
+  font-size: 2rem !important;
+}
+
+.container {
+  width: 32em;
+  background: var(--wrap);
+  padding: 4em;
+  border-radius: 1.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.56);
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+canvas {
+  width: 16.7em;
+  height: 65px;
+  border: none;
+  border: 1px solid var(--cont);
+  border-radius: 0.4em;
+  background: var(--cont);
+  color: var(--black);
+}
+button#reload-btn {
+  font-size: 27px;
+  width: 4em;
+  background: var(--black);
+  color: var(--cont);
+  outline: none;
+  border: none;
+  border-radius: 0.4em;
+  height: 65px;
+  align-items: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+button#reload-btn:hover {
+  background: var(--cont);
+  color: var(--black);
+}
+input[type="text"] {
+  font-size: 1.05em;
+  width: 100%;
+  padding: 0.8em 0.7em;
+  border: 1px solid var(--cont);
+  border-radius: 0.4em;
+  outline: none;
+  transition: 0.3s ease;
+  background: var(--cont);
+}
+input[type="text"]:focus {
+  border: 1px solid var(--black);
+  box-shadow: 0 1em 2em rgba(255, 255, 255, 0.2);
+}
+button#check-button {
+  width: 100%;
+  background: var(--black);
+  color: var(--cont);
+  outline: none;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1em;
+  border-radius: 0.4em;
+  padding: 0.8em 0;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: 0.5s ease;
+}
+button#check-button:hover {
+  background: var(--cont);
+  color: var(--black);
+}
+
+footer,
+a {
+  color: rgb(214, 214, 214);
+  font-size: 20px;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  left: 0;
+  right: 0;
+  bottom: 100;
+  margin-top: 530px;
+  line-height: 4vh;
+}

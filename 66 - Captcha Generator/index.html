@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./icon.png" type="image/png" />
-    <title>Notes Taking App</title>
+    <link rel="shortcut icon" href="icon.png" type="image/png" />
+
+    <title>Captcha Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>Notes Taking App</h1>
-    <div id="app">
-      <button class="add-note" type="button">+</button>
+    <h1>Captcha Generator</h1>
+    <div class="container">
+      <div class="wrapper">
+        <canvas id="canvas" width="200" height="70"></canvas>
+        <button id="reload-btn"><i class="fa-solid fa-rotate"></i></button>
+      </div>
+      <input type="text" id="user-input" placeholder="Enter the Captcha" />
+      <button id="check-button">CHECK</button>
     </div>
     <footer>
       <p>
