@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro Clock</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="d-flex py-5 justify-content-center align-items-center">
+            <div class="base px-2 py-2">
+                <div class="frame m-3 py-3 px-2 rounded">
+                    <div class="clock mx-2 px-3 py-4 bg-white rounded">
+                        <h1 id="countdown" class="my-5 mx-4 text-center font-weight-bold">00:00</h1>
+                    </div>
+                </div>
+                <h3 id="session" class="text-white mt-3 mb-3 text-center">Session 1</h3>
+                <div class="py-2 px-3 controller m-2">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-6 p-1">
+                            <p class="text-center;; text-white" style="font-size: 0.93rem;">Session Time</p>
+                            <h5 id="sessionTime" class="text-center text-info mb-2">5 min</h5>
+                            <div class="row mt-2">
+                                <div class="col mx-2">
+                                    <button id="sessionDecrementBtn" class="mr-1 ml-1 btn btn-dark">-</button>
+                                    <button id="sessionIncrementBtn" class="btn btn-dark">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 p-1">
+                            <p class="text-center text-white" style="font-size: 0.93rem;">Break Time</p>
+                            <h5 id="breakTime" class="text-center text-danger mb-2">5 min</h5>
+                            <div class="row mt-2">
+                                <div class="col mx-2">
+                                    <button id="breakDecrementBtn" class="ml-1 mr-1 btn btn-dark">-</button>
+                                    <button id="breakIncrementBtn" class="btn btn-dark">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-3">
+                    <div class="row  align-items-center">
+                        <div class="col-6">
+                            <button id="start" class="btn btn-dark">Start</button>
+                            <button id="pause" class="btn btn-dark d-none">Pause</button>
+                        </div>
+                        <div class="col-6">
+                            <button id="reset" class="btn btn-dark">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
