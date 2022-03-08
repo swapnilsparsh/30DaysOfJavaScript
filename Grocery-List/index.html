@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Shopping List</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="grocerylist.js"></script>
+	<link rel="stylesheet" type="text/css" href="list.css">
+</head>
+<body>
+	<h1>Shopping List</h1>
+	<form action="add" method="get">
+		<label>Add Item: </label> 
+		<input type="text" name="item">
+		<input id="addNeed" type="submit" value="Need">
+		<input id="addHave" type="submit" value="Have">
+	</form>
+	<h2> Need: </h2>
+		<ul class='list'>
+			<li><input type="checkbox" name="item"> Milk <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item"> Eggs <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item"> Kitten Food <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item"> Bacon <a href="#">&#10006;</a></li>
+		</ul>	
+	<h2> Have: </h2>
+		<ul class='list'>
+			<li><input type="checkbox" name="item" checked> Steak <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item" checked> Cream <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item" checked> Cheese <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item" checked> Apples <a href="#">&#10006;</a></li>
+		</ul>
+	
+</body>
+</html>
+

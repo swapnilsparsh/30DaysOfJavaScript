@@ -1,0 +1,70 @@
+body {
+  background-image: url('linedpaper/linedpaper.png');
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: courier, monospace;
+}
+
+form {
+  color: #2d86c2;
+  font-size: 22px;
+}
+
+input[type="text"]{
+  background-color : #f8f8f8;
+}
+
+#addNeed {
+  background-color : #f8f8f8;
+  color: #2d86c2;
+}
+
+#addHave {
+  background-color : #f8f8f8;
+  color: #3498db;
+}
+
+h1 {
+  color: #4183D7;
+  font-size: 50px;
+}
+
+h2 {
+  color: #4183D7;
+  font-size: 42px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.list {
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 500px;
+  border: 1px solid #dedede;
+}
+.list li {
+  list-style: none;
+  background-color : #f8f8f8;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+  color: #3498db;
+}
+li a {
+  float: right;
+  text-decoration: none;
+  color: red;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), /* Webkit-based browsers */
+       (min--moz-device-pixel-ratio: 2),    /* Older Firefox browsers (prior to Firefox 16) */
+       (min-resolution: 2dppx),             /* The standard way */
+       (min-resolution: 192dpi)             /* dppx fallback */
+{
+	body {
+		background-image: url('linedpaper/linedpaper_@2x.png');
+	}
+}
