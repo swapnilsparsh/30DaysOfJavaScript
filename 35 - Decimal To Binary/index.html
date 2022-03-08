@@ -16,23 +16,18 @@
     <div class="container">
       <h2>Decimal To Binary</h2>
       <div class="option">
-        <h3>Decimal</h3>
-        <h4>To</h4>
-        <select onchange="changeinto()" id="select">
-          <option value="Binary">Binary</option>
-          <option value="Hexadecimal">Hexadecimal</option>
-          <option value="Octal">Octal</option>
-          <option value="Graycode decimal equivalent">Graycode decimal equivalent</option>
-        </select>
+        <h3>Base-X:&nbsp;</h3><input type="number" class="input" style="width:5rem; border-radius: 6px;" id="x">
+        <h4>=></h4>
+        <h3>Base-Y:&nbsp;</h3><input type="number" class="input" style="width:5rem; border-radius: 6px;" id="y">
       </div>
       <div class="input">
-        <h4>Decimal</h4>
-        <input type="number" id="input_number" />
+        <h4>Number to Convert:</h4>
+        <input type="number" id="to_convert" />
       </div>
-      <button id="Binary_convert" onclick="calculate()">Convert</button>
+      <button id="Binary_convert" onclick="convert()">Convert</button>
       <div class="input">
-        <h4 id="into"></h4>
-        <input type="text" id="output_number" />
+        <h4 id="into">Result</h4>
+        <input type="text" id="res" readonly />
       </div>
     </div>
     <footer>
@@ -40,6 +35,8 @@
         &#x3c; &#47; &#x3e; with ❤️ by
         <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
         <br />
+        Enchanced by <a href="https://github.com/XZANATOL" target="_blank">XZANATOL</a>
+        <br>
         <a
           href="https://github.com/swapnilsparsh/30DaysOfJavaScript"
           target="_blank"
