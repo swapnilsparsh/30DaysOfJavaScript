@@ -1,0 +1,471 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.set__row {
+  border-bottom: 2.5px solid black !important;
+}
+
+.set__col {
+  border-right: 2.5px solid black !important;
+}
+
+.given {
+  font-weight: 800;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.emptyItem {
+  font-weight: 600;
+  color: blue;
+  background-color: #d1d8e0;
+  cursor: pointer;
+}
+
+.emptyItem.selected {
+  background-color: #45aaf2;
+  color: whitesmoke;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+html body #main__container {
+  display: none;
+  width: 60vh;
+  height: 80vh;
+  position: relative;
+}
+
+html body #main__container #header__controls {
+  height: 10vh;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body #main__container #header__controls #header__menu {
+  width: 33.3%;
+  font-family: "Poppins";
+  text-align-last: left;
+}
+
+html body #main__container #header__controls #header__menu img {
+  cursor: pointer;
+  height: 0.754rem;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
+
+html body #main__container #header__controls #header__menu img:active {
+  padding: 1px;
+}
+
+html body #main__container #header__controls #header__header {
+  width: 33.3%;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Recursive";
+}
+
+html body #main__container #header__controls #header__submit {
+  width: 33.3%;
+  text-align: right;
+  font-family: "Poppins";
+}
+
+html body #main__container #header__controls #header__submit span {
+  border: 1px solid black;
+  padding: 5px 8px;
+}
+
+html body #main__container #header__controls #header__submit span:hover {
+  background-color: #27ae60;
+  border-color: #27ae60;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+html body #main__container #header__controls #header__submit span:active {
+  padding: 4px 7px;
+}
+
+html body #main__container #dotMenu {
+  display: none;
+  min-width: 30%;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  top: 8vh;
+}
+
+html body #main__container #dotMenu > div {
+  background-color: #f1f2f6;
+  border: 1px solid #a4b0be;
+  font-family: 'Poppins';
+  font-size: 1.075rem;
+  margin-bottom: 1px;
+  text-align: center;
+  padding: 0.2rem 0;
+  cursor: pointer;
+}
+
+html body #main__container #dotMenu > div:not(:last-child):hover {
+  background-color: #a4b0be;
+  color: white;
+}
+
+html body #main__container #dotMenu > div:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+html body #main__container #dotMenu #solver {
+  position: relative;
+  padding: 0;
+}
+
+html body #main__container #dotMenu #solver span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem 0;
+}
+
+html body #main__container #dotMenu #solver span:after {
+  content: "Solver ▷";
+}
+
+html body #main__container #dotMenu #solver span:hover, html body #main__container #dotMenu #solver span:focus {
+  background-color: #a4b0be;
+  color: white;
+}
+
+html body #main__container #dotMenu #solver span:hover:after, html body #main__container #dotMenu #solver span:focus:after {
+  content: "Solver ▶";
+  color: black;
+}
+
+html body #main__container #dotMenu #solver #solverMenu {
+  display: none;
+  position: absolute;
+  left: 102%;
+  top: -1%;
+  min-width: 100%;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div {
+  background-color: #f1f2f6;
+  border: 1px solid #a4b0be;
+  font-family: 'Poppins';
+  font-size: 1.075rem;
+  margin-bottom: 1px;
+  text-align: center;
+  padding: 0.2rem 0;
+  cursor: pointer;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div:hover {
+  background-color: #a4b0be;
+  color: white;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox] + label {
+  display: block;
+  margin: 0.1rem;
+  cursor: pointer;
+  padding: 0.1rem;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox] {
+  display: none;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2rem;
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7em;
+  padding-left: 0.3rem;
+  padding-bottom: 0.6rem;
+  padding-right: 0.2rem;
+  margin-right: 0.5rem;
+  vertical-align: bottom;
+  color: transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox] + label:active:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox]:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-color: #aaa;
+}
+
+html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox]:checked:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+html body #main__container #board {
+  width: 60vh;
+  height: 60vh;
+  font-family: "Ubuntu";
+  border-top: 2.5px solid black;
+  border-left: 2.5px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
+
+html body #main__container #board .grid__item {
+  border-right: 1px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+html body #main__container #keypad {
+  width: 100%;
+  height: 6vh;
+  margin-top: 2vh;
+  font-family: "Red Rose";
+}
+
+html body #main__container #keypad .keypad__item {
+  height: 80%;
+  width: 8%;
+  margin-right: 1%;
+  margin-left: 1%;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+html body #main__container #keypad .keypad__item:hover {
+  border: 1px solid black;
+  background-color: wheat;
+  font-weight: 600;
+}
+
+html body #main__container #keypad .keypad__item:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+  outline: none;
+}
+
+html body #home {
+  display: block;
+  position: relative;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 0.25rem;
+}
+
+html body #home #header {
+  height: 30%;
+  font-size: 4rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Recursive';
+}
+
+html body #home .selection {
+  font-size: 1rem;
+  width: 80%;
+  height: 30%;
+  margin: 2rem auto 1rem auto;
+  vertical-align: middle;
+}
+
+html body #home .selection .title {
+  width: 30%;
+  font-size: 1.075rem;
+  font-weight: 600;
+}
+
+html body #home .selection .options {
+  width: 70%;
+}
+
+html body #home #selection__size .options {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body #home #selection__size .options svg:hover {
+  cursor: pointer;
+  color: #047cbd;
+}
+
+html body #home #selection__size .options span:first-child {
+  color: #0097e6;
+}
+
+html body #home #selection__level .options span {
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+
+html body #home #selection__level .options span:hover {
+  background-color: #0097e6;
+  color: white;
+}
+
+html body #home #selection__level .options span:active {
+  background-color: #0097e6;
+  color: white;
+}
+
+html body #home #selection__level .options span:last-child {
+  color: white;
+  background-color: #0097e6;
+}
+
+html body #home #start {
+  font-family: 'Raleway';
+  width: 40%;
+  font-size: 2.25rem;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid darkcyan;
+  background-color: #44bd32;
+}
+
+html body #home #start:hover {
+  background-color: #3fac2f;
+}
+
+html body #home #start:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+@media only screen and (max-width: 600px) {
+  html body {
+    height: 100vh;
+    background-size: 100vw 100vh;
+  }
+  html body #main__container {
+    width: 100vw;
+  }
+  html body #main__container #header__controls {
+    width: 100vw;
+    padding: 0 2vw;
+  }
+  html body #main__container #board {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96vw;
+    height: 100vw;
+  }
+  html body #main__container #keypad {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96vw;
+  }
+  html body #main__container #keypad .keypad__item {
+    height: 8vw;
+    width: 8vw;
+  }
+  html body #home {
+    width: 90vw;
+  }
+  html body #home .selection .options {
+    width: 100%;
+  }
+  html body #home #header #start {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.d-block {
+  display: block !important;
+}
+
+.green {
+  color: purple;
+}
+
+.solverHover {
+  background-color: #a4b0be;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

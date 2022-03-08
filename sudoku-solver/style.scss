@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.set__row {
+    border-bottom: 2.5px solid black !important;
+}
+
+.set__col {
+    border-right: 2.5px solid black !important;
+}
+
+.given {
+    font-weight: 800;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.emptyItem {
+    font-weight: 600;
+    color: blue;
+    background-color: #d1d8e0;
+    cursor: pointer;
+}
+
+.emptyItem.selected {
+    background-color: #45aaf2;
+    color: whitesmoke;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+
+    body {
+        height: 100%;
+        width: 100%;
+        background-image: url("images/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+
+        #main__container {
+            display: none;
+            width: 60vh;
+            height: 80vh;
+            position: relative;
+
+            #header__controls {
+                height: 10vh;
+                width: 100%;
+                justify-content: space-around;
+
+                #header__menu {
+                    width: 33.3%;
+                    font-family: "Poppins";
+                    text-align-last: left;
+
+                    img {
+                        cursor: pointer;
+                        height: 0.754rem;
+                        vertical-align: middle;
+                        margin-left: 0.25rem;
+                    }
+
+                    img:active {
+                        padding: 1px;
+                    }
+                }
+
+                #header__header {
+                    width: 33.3%;
+                    font-size: 2rem;
+                    text-align: center;
+                    font-family: "Recursive";
+                }
+
+                #header__submit {
+                    width: 33.3%;
+                    text-align: right;
+                    font-family: "Poppins";
+
+                    span {
+                        border: 1px solid black;
+                        padding: 5px 8px;
+                    }
+
+                    span:hover {
+                        background-color: #27ae60;
+                        border-color: #27ae60;
+                        color: white;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+
+                    span:active {
+                        padding: 4px 7px;
+                    }
+                }
+
+            }
+
+            #dotMenu {
+                display: none;
+                min-width: 30%;
+                height: 20%;
+                position: absolute;
+                left: 0;
+                top: 8vh;
+
+                &>div {
+                    background-color: #f1f2f6;
+                    border: 1px solid rgba(164, 176, 190, 1.0);
+                    font-family: 'Poppins';
+                    font-size: 1.075rem;
+                    margin-bottom: 1px;
+                    text-align: center;
+                    padding: 0.2rem 0;
+                    cursor: pointer;
+
+                    &:not(:last-child):hover {
+                        background-color: #a4b0be;
+                        color: white;
+                    }
+
+                    &:active {
+                        transform: scale(0.98);
+                    }
+                }
+
+                #solver {
+                    position: relative;
+                    padding: 0;
+
+                    span {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        padding: 0.2rem 0;
+
+                        &:after {
+                            content: "Solver ▷";
+                        }
+
+                        &:hover,
+                        &:focus {
+                            background-color: #a4b0be;
+                            color: white;
+
+                            &:after {
+                                content: "Solver ▶";
+                                color: black;
+                            }
+                        }
+                    }
+
+                    #solverMenu {
+                        display: none;
+                        position: absolute;
+                        left: 102%;
+                        top: -1%;
+                        min-width: 100%;
+
+                        div {
+                            background-color: #f1f2f6;
+                            border: 1px solid rgba(164, 176, 190, 1.0);
+                            font-family: 'Poppins';
+                            font-size: 1.075rem;
+                            margin-bottom: 1px;
+                            text-align: center;
+                            padding: 0.2rem 0;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #a4b0be;
+                                color: white;
+                            }
+
+                            // check box Start
+                            input[type=checkbox]+label {
+                                display: block;
+                                margin: 0.1rem;
+                                cursor: pointer;
+                                padding: 0.1rem;
+                            }
+
+                            input[type=checkbox] {
+                                display: none;
+                            }
+
+                            input[type=checkbox]+label:before {
+                                content: "\2714";
+                                border: 0.1em solid #000;
+                                border-radius: 0.2rem;
+                                display: inline-block;
+                                width: 0.7rem;
+                                height: 0.7em;
+                                padding-left: 0.3rem;
+                                padding-bottom: 0.6rem;
+                                padding-right: 0.2rem;
+                                margin-right: 0.5rem;
+                                vertical-align: bottom;
+                                color: transparent;
+                                transition: .2s;
+                            }
+
+                            input[type=checkbox]+label:active:before {
+                                transform: scale(0);
+                            }
+
+                            input[type=checkbox]:checked+label:before {
+                                background-color: MediumSeaGreen;
+                                border-color: MediumSeaGreen;
+                                color: #fff;
+                            }
+
+                            input[type=checkbox]:disabled+label:before {
+                                transform: scale(1);
+                                border-color: #aaa;
+                            }
+
+                            input[type=checkbox]:checked:disabled+label:before {
+                                transform: scale(1);
+                                background-color: #bfb;
+                                border-color: #bfb;
+                            }
+
+                            // check box End
+                        }
+
+                    }
+                }
+            }
+
+            #board {
+                width: 60vh;
+                height: 60vh;
+                font-family: "Ubuntu";
+                border-top: 2.5px solid black;
+                border-left: 2.5px solid black;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto;
+                grid-template-rows: auto auto auto auto auto auto auto auto auto;
+
+                .grid__item {
+                    border-right: 1px solid rgba(0, 0, 0, 0.7);
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+                }
+            }
+
+            #keypad {
+                width: 100%;
+                height: 6vh;
+                margin-top: 2vh;
+                font-family: "Red Rose";
+
+                .keypad__item {
+                    height: 80%;
+                    width: 8%;
+                    margin-right: 1%;
+                    margin-left: 1%;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    text-align: center;
+                    background-color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid black;
+                        background-color: wheat;
+                        font-weight: 600;
+                    }
+
+                    &:active {
+                        transform: scale(0.96);
+                        outline: none;
+                    }
+
+
+
+                }
+            }
+
+
+        }
+
+        #home {
+            display: block;
+            position: relative;
+            width: 60vh;
+            height: 60vh;
+            border-radius: 0.25rem;
+
+            #header {
+                height: 30%;
+                font-size: 4rem;
+                margin-top: 1rem;
+                text-align: center;
+                font-family: 'Recursive';
+            }
+
+            .selection {
+                font-size: 1rem;
+                width: 80%;
+                height: 30%;
+                margin: 2rem auto 1rem auto;
+                vertical-align: middle;
+
+                .title {
+                    width: 30%;
+                    font-size: 1.075rem;
+                    font-weight: 600;
+                }
+
+                .options {
+                    width: 70%;
+                }
+            }
+
+            #selection__size .options {
+                justify-content: space-around;
+
+                svg:hover {
+                    cursor: pointer;
+                    color: #047cbd;
+                }
+
+                //defaul selection
+                span:first-child {
+                    color: #0097e6;
+                }
+            }
+
+            #selection__level .options span {
+                border: 1px solid black;
+                padding: 0.3rem 0.5rem;
+                margin-right: 0.2rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0097e6;
+                    color: white;
+                }
+
+                &:active {
+                    background-color: #0097e6;
+                    color: white;
+                }
+
+                //default selection
+                &:last-child {
+                    color: white;
+                    background-color: #0097e6;
+                }
+            }
+
+            #start {
+                font-family: 'Raleway';
+                width: 40%;
+                font-size: 2.25rem;
+                position: absolute;
+                bottom: 10%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                cursor: pointer;
+                border: 1px solid darkcyan;
+                background-color: #44bd32;
+
+                &:hover {
+                    background-color: #3fac2f;
+                }
+
+                &:active {
+                    transform: scale(0.96);
+                }
+            }
+        }
+    }
+}
+
+
+//media queries
+@media only screen and (max-width: 600px) {
+    html {
+
+        body {
+            height: 100vh;
+            background-size: 100vw 100vh;
+
+            #main__container {
+                width: 100vw;
+
+                #header__controls {
+                    width: 100vw;
+                    padding: 0 2vw;
+                }
+
+                #board {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 96vw;
+                    height: 100vw;
+                }
+
+                #keypad {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 96vw;
+
+                    .keypad__item {
+                        height: 8vw;
+                        width: 8vw;
+                    }
+                }
+            }
+
+            #home {
+                width: 90vw;
+
+                .selection {
+
+                    .options {
+                        width: 100%;
+                    }
+                }
+
+                #header #start {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+// other helper classes
+.d-block {
+    display: block !important;
+}
+
+.green {
+    color: purple;
+}
+
+//currently not using this
+.solverHover {
+    background-color: #a4b0be;
+    color: white;
+}
