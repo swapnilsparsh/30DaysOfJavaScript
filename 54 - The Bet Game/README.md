@@ -1,1 +1,1 @@
-A fun game where you can virtually bet!
+# A fun game where you can virtually bet!
