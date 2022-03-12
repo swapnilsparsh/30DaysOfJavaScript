@@ -11,6 +11,7 @@ var startTimer = null;
 
 start.addEventListener('click', function(){
     //initialize the variable
+
     function startInterval(){
         startTimer = setInterval(function() {
             timer();
@@ -20,6 +21,7 @@ start.addEventListener('click', function(){
 })
 
 reset.addEventListener('click', function(){
+    start.innerText = 'Start';
     h.value = 0;
     m.value = 0;
     s.value = 0;

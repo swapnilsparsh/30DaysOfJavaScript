@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -13,8 +14,13 @@
     <div id="container">
         <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
         <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
-        <button id="start" class="btn">Start</button>
-        <button id="reset" class="btn">Reset</button>
+
+        <button id="start" onclick="audio.play();" class="btn btn-outline-primary">Start</button>
+        <button id="reset" onclick="audio.play();" class="btn btn-outline-primary">Reset</button>
+        <script type="text/javascript">
+            const audio= new Audio();
+            audio.src = "./audio.mp3";
+            </script>
     </div>
     <footer>
         <p>&#x3c; &#47; &#x3e; with ❤️ by 

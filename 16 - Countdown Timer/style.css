@@ -15,11 +15,24 @@ body{
     align-items: center;
     text-align: center;
     min-height: 90vh;
-    background: #19172e;
+    background: #19172e; 
+    background-image: url('img4.jpeg');
+    background-size: cover;
+   
     color: white;
 }
 
+img3.bg{
+    height: fit-content;
+    position: fixed;
+    min-height: 100%;
+    min-width: 1024px;
+    top: 0;
+    left: 0;
+}
+
 h1{
+    font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif; 
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -46,13 +59,14 @@ h1{
 
 }
 #container {
-    height: 200px;
-    width: 700px;
-    background-color: #F5E4C3;
+    height: 255px;
+    width: 500px;
+    background-color:#064663;
     margin: 0 auto;
-    border: 5px solid #88B169;
-    color: #19172e;
+    border: 5px solid #488FB1;
+    color: #accdd6;         
     display: grid;
+
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
@@ -68,30 +82,36 @@ h1{
 
 #hour-label {
     grid-area: 1 / 2 / 1 / 3;
+    padding:10px;
+    margin-left: 10px;
 }
 
 #min-label {
     grid-area: 1 / 3 / 1 / 4;
+    padding: 10px;
 }
 
 #sec-label {
     grid-area: 1 / 4 / 1 / 5;
+    padding: 10px;
 }
 
 /*times*/
 .time {
     justify-self: center;
     align-self: center;
-
+ 
     border: none;
     background-color: #ffffff00;
     font-size: 50px;
+    font-family: Brush Script MT,cursive; 
     width: 70px;
     height: 50px;
 }
 
 #hour {
     grid-area: 2 / 2 / 2 / 3;
+    margin-left: auto;
 }
 
 .semicolon {
@@ -100,6 +120,7 @@ h1{
 
     font-size: 30px;
     margin: 0;
+    margin-left: 10px;
 }
 #p1 {
     grid-area: 2 / 2 / 2 / 4;
@@ -107,6 +128,7 @@ h1{
 
 #minute {
     grid-area: 2 / 3 / 2 / 4;
+    margin-left: 20px;
 }
 
 #p2 {
@@ -114,6 +136,7 @@ h1{
 }
 
 #sec {
+
     grid-area: 2 / 4 / 2 / 5;
 }
 
@@ -123,18 +146,23 @@ h1{
     align-self: center;
     
     width: 100px;
-    height: 40px;
+    height: 50px;
 
     font-size: 30px;
     justify-self: center;
+    padding-bottom: 10px ;
+    margin-top: 10px;
 }
 
 #start {
     grid-area: 3 / 2 / 3 / 4;
+    margin-right: 50px;
+    margin-left: 20px;
 }
 
 #reset {
     grid-area: 3 / 3 / 3 / 5;
+    margin-left: 50px;
 }
 footer {
     text-align: center;
@@ -152,3 +180,5 @@ footer {
 footer a:visited {
     color: inherit;
 }
+
+
