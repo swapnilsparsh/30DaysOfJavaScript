@@ -1,0 +1,89 @@
+body {
+    max-height: 100vh;
+    background-color: #19172e;
+}
+
+#piano {
+    margin: auto;
+    margin-top: 30vh;
+    width: 70%;
+    max-width: 800px;
+    height: 300px;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    position: relative;
+}
+
+#keys {
+    width: 90%;
+    position: absolute;
+    bottom: 5px;
+    height: 60%;
+    margin: 5%;
+}
+
+.whiteKeys {
+    width: 7%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.whiteKeys:active {
+    background: linear-gradient(to bottom, rgb(248, 248, 248), rgb(238, 238, 238), grey);
+    box-shadow: 2px -2px black inset, -4px -2px black inset;
+}
+
+.whiteKeys:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.blackKeys {
+    width: 3.5%;
+    height: 50%;
+    background-color: rgb(71, 71, 71);
+    position: absolute;
+    cursor: pointer;
+}
+
+.blackKeys:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.blackKeys:active {
+    background-color: black;
+}
+
+#volumeBar {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.fa-volume-up {
+    color: yellow;
+    font-size: 36px;
+}
+
+.fa-plus {
+    color: green;
+    cursor: pointer;
+}
+
+.fa-minus {
+    color: red;
+    cursor: pointer;
+}
+
+#volume {
+    font-weight: 800;
+    font-size: 1.5rem;
+    user-select: none;
+    color: white;
+}

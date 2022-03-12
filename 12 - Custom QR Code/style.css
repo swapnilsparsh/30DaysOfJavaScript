@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans";
+  }
+
+  @font-face {
+      font-family: "sans";
+      src: url(font/sans.ttf);
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #19172e;
+  }
+  
+  h2 {
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #qr {
+    position: relative;
+  }
+  
+  #qr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    /* don't go to big. otherwise the qr code is may not readable anymore */
+    width: 36%;
+    height: 36%;
+    border-radius: 50%;
+  
+    background: url(assets/img.png)
+    no-repeat center;
+    background-size: cover;
+  }
+  
+  footer {
+    background-color: #19172e;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+  }
+  
+  footer a:visited {
+    color: inherit;
+  }

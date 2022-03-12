@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  overflow: hidden;
+  background: #19172e;
+  font-size: 40px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: 10px;
+  font-size: 2rem !important;
+}
+
+td {
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.2;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+
+.text {
+  color: white;
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+}
+
+td:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+table {
+  width: 300px;
+  height: 300px;
+}
+
+.table_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 0px;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal-header {
+  padding: 1px;
+  border-radius: 10px 10px 0 0;
+}
+
+btn {
+  position: relative;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+}
+
+btn:active {
+  background-color: #1e8e3e;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1rem !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+footer a:visited {
+  color: inherit;
+}

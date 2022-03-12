@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  font-family: "sans";
+  align-items: center;
+  background-color: #19172e;
+  color: #fff;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+h1 {
+  top: 0;
+  text-align: center;
+  padding: 2%;
+  font-size: 1.2rem;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border-radius: 3%;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}

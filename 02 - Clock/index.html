@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clock</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.png">
+
+</head>
+
+<body>
+  <h2 class="heading">
+    Clock
+  </h2>
+  <div class="clock">
+    <div class="hour">
+      <div class="hr" id="hr"></div>
+    </div>
+    <div class="min">
+      <div class="mn" id="mn"></div>
+    </div>
+    <div class="sec">
+      <div class="sc" id="sc"></div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <p>&#x3c; &#47; &#x3e; with ❤️ by
+      <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+      <br>
+      <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript
+      </a>
+    </p>
+  </footer>
+
+  <script type="text/javascript">
+    const deg = 6;
+    // getting all hands of clock from html through id
+    const hr = document.querySelector('#hr')
+    const mn = document.querySelector('#mn');
+    const sc = document.querySelector('#sc');
+
+    setInterval(() => {
+      let day = new Date();
+
+      //setting the actual seconds minutes and hour in clock
+
+      let ms = day.getMilliseconds() * deg;
+      let hh = day.getHours() * 30;
+      let mm = day.getMinutes() * deg;
+      let ss = day.getSeconds() * deg + ms / 1000;
+
+      //changing the degrees in the style as per the time
+
+      hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
+      mn.style.transform = `rotateZ(${mm}deg)`;
+      sc.style.transform = `rotateZ(${ss}deg)`;
+
+    }, 1);
+  </script>
+</body>
+
+</html>

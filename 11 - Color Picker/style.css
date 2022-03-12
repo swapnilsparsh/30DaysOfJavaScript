@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #19172e;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url("font/sans.ttf");
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  color: black;
+}
+
+.section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #f8f8ff !important;
+  border-radius: 20px;
+}
+
+#color-picker {
+  padding: 5px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  background: none;
+  width: 274px;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}

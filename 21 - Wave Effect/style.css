@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  background-color: #19172e;
+  color: white;
+  font-family: "sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 8px;
+  height: 14px;
+  width: 14px;
+  transition: transform 0.3s linear;
+}
+
+.circle.grow {
+  transform: scale(2);
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+button {
+  padding: 15px;
+  font-size: 15px;
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+button:active {
+  background: rgb(30, 142, 62);
+}

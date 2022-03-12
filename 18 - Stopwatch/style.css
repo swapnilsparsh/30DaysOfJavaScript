@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #19172e;
+    color: white;
+    font-family: "sans";
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    position: absolute;    
+    top: 0;
+    padding-top: 120px;
+    margin-bottom: 100px;
+    font-size:3rem;
+}
+
+#stopwatch{
+    font-size: 2.5rem;
+}
+
+#buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+}
+#lapBox{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    flex-flow: column;
+    padding: 10px 0;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+
+}
+#lapBox h1{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 10%;
+    border: none;
+    outline: none;
+}
+
+button:active{
+    background-color: #1e8e3e;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0;
+    margin-top: 120px;
+    padding: 5px;
+    line-height: 3vh;
+}
+
+footer a:visited {
+    color: inherit;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1080px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}

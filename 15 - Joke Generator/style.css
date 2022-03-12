@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "sans";
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url("font/sans.ttf");
+    font-family: "sans";
+  }
+  
+
+body {
+    background-color: #19172e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+
+span{
+    font-weight: 100;
+}
+
+h2{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding-top: 80px;
+    font-size: 1.8rem;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+}
+
+.box p {
+    padding: 1rem;
+}
+
+.box button {
+    background-color: #333333;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    transition: transform 0.1s linear;
+}
+
+.box button:active {
+    background: #1e8e3e;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+  }
+
+  footer a:visited {
+    color: inherit;
+  }
