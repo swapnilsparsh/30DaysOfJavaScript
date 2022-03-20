@@ -10,8 +10,8 @@ const getNextQuote = async() =>
   quote.innerHTML=""+quo;
   author.innerHTML="~ "+auth;
   source.innerHTML=""+sour;
-  tweetButton.href="https://twitter.com/intent/tweet?text="+quo+" ~ "+auth+" | "+sour;
-  whatsappButton.href="whatsapp://send?text="+quo+" ~ "+auth+" | "+sour;
+  tweet.href="https://twitter.com/intent/tweet?text="+quo+" ~ "+auth+" | "+sour;
+  whatsapp.href="whatsapp://send?text="+quo+" ~ "+auth+" | "+sour;
 }
 
 getNextQuote();
