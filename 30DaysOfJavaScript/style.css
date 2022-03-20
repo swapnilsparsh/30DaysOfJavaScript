@@ -254,3 +254,13 @@ input {
   right: 7%;
   background: transparent;
 }
+
+@media(max-width:1000px) {
+  input {
+    position: relative;
+    align-items: center;
+    margin-bottom: 3%;
+    left: 35%;
+    width: 25%
+  }
+}
