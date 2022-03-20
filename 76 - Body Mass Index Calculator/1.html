@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center mt-5">Body Mass Index Calculator</h1>
+    <div class="container d-block text-center mt-5">
+        <div class="row">
+            <div class="col">
+                <p>Body Mass Index Calculator using Metric Units</p>
+                <input class="form-control p-2 m-2" type="number" name="cm" id="cm" placeholder="Centimeters">
+                <input class="form-control p-2 m-2" type="number" name="weight" id="weight" placeholder="Kilograms">
+                <button class="btn btn-primary p-2 m-2" onclick="fun()">Compute BMI</button>
+                <input class="form-control p-2 m-2" type="text" name="bmi" id="bmi" placeholder="Your BMI is" disabled>
+                <h4></h4>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function fun()
+    {
+        var cm = document.getElementById("cm").value ;
+        cm = cm/100;
+        var w = document.getElementById("weight").value;
+        var bmi = w/(cm*cm);
+        document.getElementById("bmi").value = bmi;
+        if(bmi<18.5)
+        {
+            document.querySelector("h4").innerHTML = 'Under weight';
+        }
+        else if(bmi>=18.5 && bmi <=24.9)
+        {
+            document.querySelector("h4").innerHTML = 'Normal weight';
+        }
+        else if(bmi>=25 && bmi <= 29.9)
+        {
+            document.querySelector("h4").innerHTML = 'Overweight';
+        }
+        else if(bmi>=30)
+        {
+            document.querySelector("h4").innerHTML = 'Obesity';
+        }
+    }
+</script>
+</html>
