@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 @font-face {
@@ -247,7 +248,6 @@ footer a:visited {
 input {
   border-radius: 3rem;
   padding: 10px;
-  border-color: grey;
   width: 15%;
   position: absolute;
   top: 6.5%;
