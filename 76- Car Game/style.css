@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: rgb(118, 189, 159);
+    background-size: cover;
+
+}
+
+.road{
+    background-color: black;
+    height: 100vh;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    border-left: 5px white dashed;
+    border-right: 5px white dashed;
+
+}
+
+.lines {
+    background-color: white;
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    margin-left: 195px;
+}
+
+.car {
+    height: 90px;
+    width: 50px;
+    position: absolute;
+    background-color: blueviolet;
+    background-image: url("car.jpg");
+    background-size: contain;
+    bottom:120px;
+}
+
+.enemies {
+    height: 90px;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(223, 27, 27);
+    /* background-image: url("car.jpg"); */
+    /* background-size: contain; */
+    bottom:120px;
+}
