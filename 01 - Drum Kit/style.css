@@ -1,8 +1,12 @@
 html {
     font-size: 10px;
-    background-color: #19172e;
+    background: url("https://wallpaperaccess.com/full/1524018.jpg") bottom center ;
     overflow: hidden;
     user-select: none;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: rgb(255, 0, 0);
+
 }
 
 body,
@@ -16,11 +20,15 @@ html {
     src: url('font/sans.ttf');
     font-family: 'sans';
 }
+h1 {
+  font-size:5.5rem;
+  color: #FEFFE2;
+  font-family: "Arvo", cursive;
+  text-align: center;
+  text-shadow: 3px 0 #DA0463;
 
-h3 {
-    font-size: 3rem;
-    text-align: center;
-    color: white;
+
+
 }
 
 span{
@@ -34,39 +42,86 @@ h4 {
     padding-top: 5px;
     color: #fff;
 }
+.A {
+  background-image: url("image/tom1.png");
+}
+
+.S{
+  background-image: url("image/tom2.png");
+}
+
+.D {
+  background-image: url("image/tom1.png");
+}
+
+.F{
+  background-image: url("image/crash.png");
+}
+
+.G {
+  background-image: url("image/images.jfif");
+}
+
+.H {
+  background-image: url("image/crash.png");
+}
+
+.J  {
+  background-image: url("image/snare.png");
+}
+
+.K {
+  background-image: url("image/tomm5.jfif");
+}
+
+.L  {
+  background-image: url("image/piano.jfif");
+}
+
 
 .keys {
     display: flex;
     flex-direction: row;
-    flex: 1;
-    min-height: 80vh;
+    flex:1;
+    min-height: 70vh;
     align-items: center;
     justify-content: center;
 }
 
 .key {
-    border: 0.4rem solid white;
-    border-radius: 0.5rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem 0.5rem;
-    transition: all 0.07s ease;
-    width: 10rem;
-    text-align: center;
-    color: white;
-    background-color: #212121;
+
+  border: 10px solid: white;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  padding:1rem 0.5rem;
+  transistion: all 0.07s ease;
+  line-height: 1.5;
+  font-weight: 900;
+  color: #009DAE;
+  text-shadow: 3px 0 :#E04DB0;
+  border-radius: 30px;
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  text-align: center;
+  margin: 15px;
+  background-color: white;
 }
 
 .playing {
-    transform: scale(1.1);
+
     border-color: #bb86fc;
     box-shadow: 0 0 2rem #bb86fc;
 }
 
 kbd {
-    display: block;
-    font-size: 4rem;
+  display: block;
+    font-size: 4.3rem;
+    font-family: 'Arvo', cursive;
+    color: #0F2C67;
+text-shadow: 3px 0 #DBEDF3;
     cursor: pointer;
+
 }
 
 .sound {
@@ -74,7 +129,7 @@ kbd {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: #bb86fc;
+    color: #483434;
 }
 
 footer {
