@@ -1,0 +1,275 @@
+body{
+    box-sizing: border-box;
+    user-select: none;
+}
+header::before{
+    background: url('https://images.unsplash.com/photo-1586816001966-79b736744398?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+img{
+    width: 55px;
+    height: 55px;
+    margin: 0px 8px;
+    margin-top: 20px;
+}
+#navFoodiz{
+    margin-top: 30px;
+}
+@media (max-width: 332px){
+    .navbar{
+
+        font-size: 1.2rem;
+    }
+    #navFoodiz{
+        margin-top: 30px;
+    }
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 700px;
+}
+.basic-intro{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+#basic-intro1{
+    color: #1a1949;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.about{
+    position: absolute;
+    top: 550px;
+    color:  #d70f64;
+}
+.about>p{
+    width: 94%;
+    margin: auto;
+    font-weight: bold;
+    color: black;
+}
+.about p{
+    text-align: justify;
+}
+.introcard{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 0.1s;
+    box-sizing: border-box;
+}
+.icard:hover{
+    transform:scale(1.05);
+      box-shadow: 10px 8px 15px black;
+}
+.icard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    margin: 12px 25px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.icard-img>img{
+    width: 240px;
+    height:250px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+.icardtext{
+    font-size: 18px;
+}
+@media (max-width:296px){
+    .icardtext{
+        font-size: 20px;
+    }   
+}
+.cardmenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+.pay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: purple;
+    padding: 17px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+.paisa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+}
+#amtbtn{
+    background-color: purple;
+    border: none;
+    color: white;
+}
+.topay{
+    border-radius: 15px;
+    border: none;
+    background-color:black;
+    color: white;
+}
+.topay:hover{
+    font-size: 25px;
+    background-color: green;
+}
+.p{
+    cursor: pointer;
+}
+.m{
+    cursor: pointer;
+}
+.p:hover{
+    color: white;
+}
+.m:hover{
+    color: white;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.maincard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    transition-property: all;
+    border: 2px solid red;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.9s;
+    font-family: 'Montserrat', sans-serif;
+}
+.maincard:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 8px 12px white;
+    background-color: black;
+    color: white;
+    border : 2px solid white;
+}
+.maincard-img{
+    padding: 4px;
+    
+}
+.maincard-img>img{
+    width: 240px;
+    height:250px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+}
+.middle{
+    margin: 80px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(243, 226, 194);
+
+}
+.mcard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+}
+.mcard-img>img{
+    width: 200px;
+    height:200px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+}
+.mcardtext{
+    text-align: center;
+}
+.mcardp{
+    font-weight: bold;
+}
+.mbutton{
+    background-color: rgb(63, 63, 226); 
+    color: white; 
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    margin: 7px 0px;
+}
+.cardh4{
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.cardh4:hover{
+      font-size: 30px;
+}
+.endcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.endimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.endimg>img{
+    width: 330px;
+    height:450px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+}

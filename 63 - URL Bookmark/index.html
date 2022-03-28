@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="p-title my-5">Bookmark</h3>
+            <div class="row1">
+                <div id="r1" class="row">
+                    <div class="col-md-12 p-5 cont">
+                        <h2 class="mb-4">Bookmark your favorite websites</h2>
+                        <label for="site_name" class="pg-label mt-2">Website Name</label>
+                        <input id="site_name" class="pg-input" placeholder="Bookmark Name" type="text" name="">
+                        <p class="py-1" id="p1"></p>
+                        <label for="site_url" class="pg-label mt-2">Website URL</label>
+                        <input id="site_url" class="pg-input" placeholder="Website URL" type="text" name="">
+                        <p class="py-1" id="p2"></p>
+                        <button onclick="add()" class="cont-btn my-1">Save</button>
+                    </div>
+                </div>
+                <div class="row" id="snd-row"></div>
+            </div>
+            <p class="my-4">© 2021 Example Inc.</p>
+        </div>
+
+
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

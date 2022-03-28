@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 @font-face {
@@ -18,34 +19,51 @@ body.dark-mode {
   background-color: #111;
   color: #eee;
 }
+
 body.dark-mode a {
   color: #111;
 }
+
 body.dark-mode button {
   background-color: #eee;
   color: #111;
 }
-body.dark-mode h4  {
+
+body.dark-mode h4 {
   color: #eee;
 }
-body.dark-mode svg  {
+
+body.dark-mode svg {
   fill: #fff;
   color: #151513;
 }
+
+body.dark-mode input {
+  color: white;
+}
+
+body.light-mode input {
+  color: #111;
+}
+
 body.light-mode {
   background-color: #eee;
   color: #111;
 }
+
 body.light-mode a {
   color: #111;
 }
+
 body.light-mode button {
   background-color: #111;
   color: #eee;
 }
+
 body.light-mode h4 {
   color: #111;
 }
+
 body.light-mode svg {
   fill: #151513;
   color: #fff;
@@ -56,30 +74,36 @@ body.light-mode svg {
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
+
 @keyframes octocat-wave {
+
   0%,
   100% {
     transform: rotate(0);
   }
+
   20%,
   60% {
     transform: rotate(-25deg);
   }
+
   40%,
   80% {
     transform: rotate(10deg);
   }
 }
+
 @media (max-width: 500px) {
   .github-corner:hover .octo-arm {
     animation: none;
   }
+
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
 
-.toggleButton{
+.toggleButton {
   position: absolute;
   top: 0;
   margin: 10px 3px 3px 10px;
@@ -87,6 +111,14 @@ body.light-mode svg {
   border: none;
   border-radius: 50%;
   font-size: 30px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
 
 h1 {
@@ -97,9 +129,9 @@ h1 {
 
 @media only screen and (max-width: 658px) {
 
-  h1 { 
-     font-size: 1.8em; 
-     padding: 32px 40px;
+  h1 {
+    font-size: 1.8em;
+    padding: 32px 40px;
   }
 
 }
@@ -133,38 +165,38 @@ a:visited {
   width: 90%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 transparent,0 0 transparent,0 0 transparent,0 0 transparent, 0 2px 3px 0 rgba(0,0,0,0.15),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 2px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   transition: transform .3s ease-in-out 0s;
 }
 
-.item:hover{
+.item:hover {
   transform: scale3d(1.05, 1.05, 1);
   /* border: 1px solid #ffffff; */
   filter: drop-shadow(10px);
-  filter: contrast(110%);  
+  filter: contrast(110%);
 }
 
-.item h4{
+.item h4 {
   font-size: 1.3rem;
   text-align: center;
 }
 
-.main{
+.main {
   width: 90vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 24px;
   row-gap: 24px;
   margin: auto;
 }
 
-.main a{
+.main a {
   text-decoration: none;
 }
 
 footer {
-  background-color: #19172e; 
+  background-color: #19172e;
   text-align: center;
   color: white;
   font-size: 1rem;
@@ -189,24 +221,46 @@ footer a:visited {
 }
 
 .scrollToTop {
-  position:fixed;
-  right:10px;
-  bottom:10px;
-  cursor:pointer;
-  width:40px;
-  height:40px;
-  background-color:#5520b6;
-  border-radius:50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #5520b6;
+  border-radius: 50%;
 }
+
 .scrollToTop span {
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin-left:-8px;
-  margin-top:-12px;
-  border:8px solid transparent;
-  border-bottom-color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  border: 8px solid transparent;
+  border-bottom-color: white;
 }
+
 .scrollToTop:hover {
-  background-color:#5836D8;
+  background-color: #5836D8;
+}
+
+input {
+  border-radius: 3rem;
+  padding: 10px;
+  width: 15%;
+  position: absolute;
+  top: 6.5%;
+  right: 7%;
+  background: transparent;
+}
+
+@media(max-width:1000px) {
+  input {
+    position: relative;
+    align-items: center;
+    margin-bottom: 3%;
+    left: 35%;
+    width: 25%
+  }
 }
