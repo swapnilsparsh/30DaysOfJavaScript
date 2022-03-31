@@ -1,0 +1,75 @@
+/*  first section  */
+.fst-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container2{
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+}
+.card{
+    outline: none;
+    border: none;
+    margin: 0% !important;
+}
+img{
+    height: 20vh;
+    width: 200px !important;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.card2 img{
+    height: 50vh;
+}
+/*  start button  */
+.st-btn, .ask-btn, #yes, #no{
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid rgb(121, 189, 121);
+    font-size: 22px;
+    width: 120px;
+}
+.ask-btn{
+    width: 220px;
+
+}
+.new{
+    flex-wrap: wrap !important;
+}
+
+#guess-in, #ask-in, .guess-btn, .ask-btn{
+    display: none;
+}
+#guess-in, #ask-in{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 22px;
+    width: 350px;
+}
+#ask-fun, #guess-fun{
+    width: 100px;
+    padding: 6px;
+    border-radius: 5px;
+}
+.machine-q{
+    margin-top: 13px;
+    font-size: 22px;
+    justify-content: center;
+}
+#yes, #no{
+    display: none;
+    width: 50px;
+}
+#no{
+    background-color: rgb(156, 26, 26);
+}
+#no:hover{
+    background-color: rgb(199, 92, 92);
+}
+#yes:hover{
+    background-color: rgb(94, 156, 94);
+}

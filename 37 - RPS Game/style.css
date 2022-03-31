@@ -1,42 +1,50 @@
-body{
-    background-color: #19172e;
-    font-family: 'sans';
+body {
+  background-color: #19172e;
+  font-family: inter;
 }
 
-h2
-{
-    font-style: oblique;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 40px;
-    padding: 0%;
+h2 {
+  /* font-style: oblique; */
+  color: #fff;
+  font-family: inter;
+  text-align: center;
+  font-size: 40px;
+  padding: 0%;
 }
 
-img:hover
-{
-    box-shadow: rgb(95, 9, 26) 10px 10px 10px;
+img:hover {
+  /* box-shadow: rgb(95, 9, 26) 10px 10px 10px; */
+  border: 10px solid #929292;
 }
 
-img
-{
-    box-shadow: crimson -10px -10px 10px;
-    margin: 40px;
+img {
+  /* box-shadow: crimson -10px -10px 10px; */
+  border: 10px solid transparent;
+  margin: 40px;
+  border-radius: 50%;
+  transition: all 0.2s;
 }
 
-.container
-{
-    max-width: 700px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    display: flex;
-    border: 5px solid #fff;
-    padding: 10px;
+.container {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto 30px;
+  border: 5px solid #fff;
+  padding: 10px;
 }
-#message{
-    text-align: center;
-    font-size: 50px;
-    
-    color: #fff;
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#message {
+  text-align: center;
+  font-size: 32px;
+
+  color: #fff;
 }
