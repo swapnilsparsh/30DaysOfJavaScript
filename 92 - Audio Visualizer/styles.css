@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  margin: 0;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto auto;
+}
+
+/* h2 {
+  text-align: center;
+} */
