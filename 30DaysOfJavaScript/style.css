@@ -111,6 +111,7 @@ body.light-mode svg {
   border: none;
   border-radius: 50%;
   font-size: 30px;
+  left: 0;
 }
 
 html.transition,
