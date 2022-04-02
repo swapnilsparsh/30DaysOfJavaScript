@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: arial;
+}
+.pg-label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.p-title,p{
+    color: #AAA;
+    font-size: 30px;
+    font-weight:  bold;
+}
+p{
+    font-size: 16px;
+}
+.pg-input{
+    display: block;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    width: 80%;
+    margin:10px auto;
+}
+.pg-input:hover{
+    box-shadow: 1px 1px 5px #AAA;
+}
+.cont{
+    background-color: #EEE;
+    text-align: center;
+}
+.container{
+    color: #333;
+}
+.container .row1{
+    padding: 20px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.cont-btn{
+    background-color: #1167c4;
+    color: white;
+    border: 1px solid #1167c4;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+.cont-btn:hover{
+    box-shadow: 2px 8px 5px #999;
+    background-color: #0d4480;
+    border-color: #0d4480;
+}
+.t-r{
+    background: linear-gradient(#EEE,#FFF);
+}
+.pp-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.btn1,.btn1:visited,.btn1:active{
+    background-color: #1167c4;
+    border: 1px solid #1167c4;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.btn1:hover{
+    box-shadow: 2px 8px 5px #999;
+    text-decoration: none;
+    background-color: #0d4480;
+    border-color: #0d4480;
+    color: #fff;
+}
+.btn2{
+    background-color: #910004;
+    border: 1px solid #910004;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.btn2:hover{
+    background-color: #630306;
+    border-color: #630306;
+    box-shadow: 2px 8px 5px #999;
+}
+#p1,#p2{
+    background-color: #ffb2b2;
+    color: #6d0000;
+    width: 80%;
+    margin:10px auto;
+    border: 1px solid #6d0000;
+    border-radius: 5px;
+    display: none;
+}
+@media all and (max-width:769px)
+{
+    .col-md-3{
+        width: 30%;
+    }
+    .col-md-9{
+        width: 70%;
+    }
+}
