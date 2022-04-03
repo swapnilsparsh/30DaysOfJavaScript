@@ -9,4 +9,6 @@
     align-items: center;
 }
 
-#box p {}
+#box p {
+    font-size: 1.7vw;
+}
