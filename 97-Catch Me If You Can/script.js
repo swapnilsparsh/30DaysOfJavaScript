@@ -18,3 +18,9 @@ box.addEventListener("mouseover", function(event) {
     box.style.left = pos.x + "px";
 
 });
+
+
+function getNewPosition(boxWidth, boxHeight) {
+
+
+}
