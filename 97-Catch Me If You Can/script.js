@@ -25,7 +25,7 @@ function getNewPosition(boxWidth, boxHeight) {
     var newX = Math.floor((Math.random() * viewWidth) + 1 - boxWidth);
     var newY = Math.floor((Math.random() * viewHeight) + 1 - boxHeight);
 
-
+    // These will satisfy that box does not move go out in the top and left direction
     if (newX < 0) {
         newX = 0;
     }
