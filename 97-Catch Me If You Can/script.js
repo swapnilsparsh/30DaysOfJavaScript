@@ -21,6 +21,7 @@ box.addEventListener("mouseover", function(event) {
 
 
 function getNewPosition(boxWidth, boxHeight) {
+    // The boxWidth and boxHeight are subtracted so that they would not move out from the right and bottom direction
     var newX = Math.floor((Math.random() * viewWidth) + 1 - boxWidth);
     var newY = Math.floor((Math.random() * viewHeight) + 1 - boxHeight);
 
