@@ -24,7 +24,7 @@ It box whose size changes dynamically according to viewport size. Now when you h
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./img/161269486-aaa2271d-1fa4-4e41-9c4f-da0167a508bb.gif)
 
 
 ## ‎‍💻 Authors
