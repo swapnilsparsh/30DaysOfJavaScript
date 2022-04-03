@@ -2,10 +2,10 @@
     <img alt="" height="80" src="./img/logo_1.png">
   </a>
 </p>
-<h1 align="center"> </h1>
+<h1 align="center"> Catch Me If You Can</h1>
 
 <div align="center">
-
+Catch Me If You Can is a game made through HTML,CSS and JAVASCRIPT
 </div>
 
 <br />
@@ -19,12 +19,13 @@
 </div>
 
 ## ⚡️  Introduction
-This is a Memory Card Game
+It box whose size changes dynamically according to viewport size. Now when you hover over the box, it should change its position randomly inside the viewport.
+
 
 ## 📷 Screenshots
 
 ![ss1]()
-![ss2]()
+
 
 ## ‎‍💻 Authors
 
