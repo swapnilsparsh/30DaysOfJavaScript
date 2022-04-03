@@ -10,5 +10,11 @@ window.addEventListener("resize", function(event) {
 });
 
 box.addEventListener("mouseover", function(event) {
+    var boxAttr = box.getBoundingClientRect();
+
+    var pos = getNewPosition(boxAttr.width, boxAttr.height);
+
+    box.style.top = pos.y + "px";
+    box.style.left = pos.x + "px";
 
 });
