@@ -8,3 +8,7 @@ window.addEventListener("resize", function(event) {
     viewWidth = window.innerWidth;
     viewHeight = window.innerHeight;
 });
+
+box.addEventListener("mouseover", function(event) {
+
+});
