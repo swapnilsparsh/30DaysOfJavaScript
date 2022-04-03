@@ -3,4 +3,5 @@
     height: 10vw;
     background-color: #b916f4;
     cursor: pointer;
+    position: absolute;
 }
