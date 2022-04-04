@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background-image: url('game/bg.png');
+    background-repeat: no-repeat;
+}
+#block{
+    width: 20px;
+    height: 500px;
+    background-color: black;
+    background-image: url('game/stump.jpg');
+    position: relative;
+    left: 400px;
+    animation: block 5s infinite linear;
+
+}
+@keyframes block {
+    0%{left:400px}
+    100%{left: -50px;}
+    
+}
+#hole{
+    width: 20px;
+    height: 130px;
+    background-color: rgb(100, 88, 73);
+    background-position: inherit;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 5s infinite linear ;
+
+}
+
+#charac{
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    background-image: url('game/pic.jpg');
+    position: absolute;
+    top: 100px;
+    border-radius: 100%;
+   
+    animation: 20s;
+}
