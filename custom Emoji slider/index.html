@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular progress bar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <ul class="emojis">
+                <li class="slide-emoji"><img src="./img/3.png" alt="image1"></li>
+                <li><img src="./img/2.png" alt=""></li>
+                <li><img src="./img/1 (1).png" alt=""></li>
+                <li><img src="./img/4.png" alt=""></li>
+                <li><img src="./img/5.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="slide">
+            <div class="thumb"><span></span></div>
+            <div class="progress-bar"></div>
+            <input type="range" min="0" value="0" max="100">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
