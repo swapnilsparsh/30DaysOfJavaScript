@@ -82,11 +82,9 @@ function generateData(name, colors) {
         mouthSpread: getUnit(numFromName, 3),
         faceRotate: getUnit(numFromName, 10, 3),
         faceTranslateX: wrapperTranslateX > SIZE / 6 ?
-            wrapperTranslateX / 2 :
-            getUnit(numFromName, 8, 1),
+            wrapperTranslateX / 2 : getUnit(numFromName, 8, 1),
         faceTranslateY: wrapperTranslateY > SIZE / 6 ?
-            wrapperTranslateY / 2 :
-            getUnit(numFromName, 7, 2),
+            wrapperTranslateY / 2 : getUnit(numFromName, 7, 2),
     };
 
     return data;
@@ -175,3 +173,32 @@ const AvatarBeam = (name = "", colors, size = 128, square) => {
       </svg>
       `;
   };
+  const COLORS = ["#f97316", "#84cc16", "#22c55e", "#0ea5e9", "#f43f5e"];
+const avatarContainer = document.querySelector(".avatar-container");
+avatarContainer.innerHTML = AvatarBeam("", COLORS, 140);
+
+const inputElement = document.querySelector("#name");
+inputElement.addEventListener("keyup", (e) => {
+  avatarContainer.innerHTML = AvatarBeam(
+    e.target.value,
+    ["#f97316", "#84cc16", "#22c55e", "#0ea5e9", "#f43f5e"],
+    140,
+    false
+  );
+});
+
+const downloadBtn = document.querySelector("#download");
+downloadBtn.addEventListener("click", () => {
+  let svgData = avatarContainer.outerHTML;
+  let preface = '<?xml version="1.0" standalone="no"?>\r\n';
+  let svgBlob = new Blob([preface, svgData], {
+    type: "image/svg+xml;charset=utf-8",
+  });
+  let svgUrl = URL.createObjectURL(svgBlob);
+  let downloadLink = document.createElement("a");
+  downloadLink.href = svgUrl;
+  downloadLink.download = svgUrl.split("/")[3];
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+});
