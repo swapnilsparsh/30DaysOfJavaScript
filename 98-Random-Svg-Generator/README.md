@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="" height="80" src="">
+    <img alt="" height="80" src="./img/logo2.svg">
   </a>
 </p>
 <h1 align="center"> Random SVG Generator</h1>
@@ -18,12 +18,13 @@
 </div>
 
 ## ⚡️  Introduction
-
+Random SVG Generator is an one place destination to make your random cool svg for your profile pic or any other work.
 
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./img/Web%20capture_7-4-2022_55318_127.0.0.1.jpeg)
+![ss2](./img/Web%20capture_7-4-2022_55339_127.0.0.1.jpeg)
 
 ## Acknowledgements
 
