@@ -7,8 +7,9 @@ Input book name, author and book type to add the book. If book name is missing i
 
 ## Built with :-
 - HTML
+- CSS
+- Bootstrap 
 - JavaScript
-- Bootstrap 5
 
 ## How to use :-
 - Clone the repository
