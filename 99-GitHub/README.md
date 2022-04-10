@@ -1,5 +1,5 @@
 <p align="center">
-    <img  height="80" src="">
+    <img  height="80" src="./img/add-readme.png">
   </a>
 </p>
 <h1 align="center">GITHUB CHECKER</h1>
@@ -24,7 +24,7 @@
 
 ## 📷 Screenshots
 
-![ss1]()
-![ss2]()
+![ss1](./img/Web%20capture_10-4-2022_71211_127.0.0.1.jpeg)
+![ss2](./img/Web%20capture_10-4-2022_71120_127.0.0.1.jpeg)
 
 
