@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <nav>
-        <div class="container">
-            <h1>Word Definition</h1>
-        </div>
-    </nav>
-
-    <section class="input container">
-        <h2>Find The Definition Of The Word..</h2>
-        <div class="font__wrap">
-            <div class="input__wrap">
-                <input type="text" placeholder="Type a word" id="input">
-                <button id="search">Search</button>
+  <body>
+    <audio id="sound"></audio>
+    <div class="container">
+      <header>Word Definition</header>
+      <hr />
+      <div class="search"> 
+        <input
+          type="text"
+          placeholder="Search here..."
+          required
+          spellcheck="false"
+        />
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
+      </div>
+      <p class="info-text"></p>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p></p>
+            <span></span>
+          </div>
+          <i class="fas fa-volume-up" class="volume" onclick="playSound()"></i>
+        </li>
+        <div class="content">
+          <li class="meaning">
+            <div class="details">
+              <p>Meaning</p>
+              <span></span>
             </div>
+          </li>
         </div>
-    </section>
+      </ul>
+    </div>
 
-    <section class="data container">
-        <span class="loading">Loading...</span>
-        <p class="def"></p>
-        <div class="audio"></div>
-        <div class="not_found"></div>
-    </section>
-
-    <script src="script/app.js"></script>
-
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>
