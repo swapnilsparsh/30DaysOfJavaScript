@@ -17,24 +17,19 @@ _The Word Definition app will show the definition of the following words._
 
 **### API Reference**
 
-**_API:--_** [MERRIAM-WEBSTER'S DEVELOPER CENTER](https://dictionaryapi.com/)
+**_API:--_** [API Used](https://dictionaryapi.dev/)
 
 <hr>
 
 ## Screenshots / Gif (Optional) 📸
 
-**### _In the first image we can see that when we type correct words we can see their definition what the word means._**
+**### _In the first image we can see that when we haven't typed anything._**
+
+![img 1](https://user-images.githubusercontent.com/82721772/162623742-fa79c7a8-c4c4-40f8-9532-7b491caa4648.png)<hr>
+
+**### _In the second image we can that when we type word._**
+
+![img 2](https://user-images.githubusercontent.com/82721772/162623767-e9673c74-9724-48a0-91bf-bdb4bac597de.png)<hr>
 
 
-![img 1](https://user-images.githubusercontent.com/91611648/156534831-12d79f00-6ebb-4de6-9985-d1f8ef2578ae.png)<hr>
-
-**### _In the second image we can that when we type wrong words it suggested me the correct word._**
-
-![img 2](https://user-images.githubusercontent.com/91611648/156534983-0bda1e29-2eb6-4745-8dec-9eb56577a613.png)<hr>
-
-**### _In the third image we can  that when we type random words it gives "no result found" _**
-
-![img 3](https://user-images.githubusercontent.com/91611648/156535094-1e5d1d6e-da2c-4378-9240-68cdb18f85c1.png)
-
-
-**###By Abhinay singh_**
+**###By Sachin Mittal_**
