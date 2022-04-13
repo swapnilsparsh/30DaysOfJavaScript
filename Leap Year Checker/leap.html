@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Leap Year Checker</title>
+</head>
+<style>
+      * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+      }
+
+      form {
+            width: 400px;
+            text-align: center;
+            padding: 20px 0 0px 0;
+            border-radius: 4px;
+            box-shadow: 0 3px 4px #f1f1f1;
+            background-color: #fff;
+      }
+
+
+      body {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgba(0, 0, 255, 0.315);
+background: url(https://images.unsplash.com/photo-1514826786317-59744fe2a548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bWFjYm9vayUyMHByb3xlbnwwfHwwfHw%3D&w=1000&q=80) no-repeat center;
+background-size: cover;
+      }
+
+      .result {
+            margin-top: 20px;
+            padding: 0 5px 10px 5px;
+      }
+
+      span {
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: #000;
+      }
+
+      input {
+            padding: 10px 20px 10px 10px;
+            outline: none;
+            width:90%;
+            border: 2px solid gray;
+            font-weight: bold;
+            letter-spacing: 4px;
+            border-radius: 5px;
+            box-shadow: inset 0 3px 4px cornflowerblue;
+      }
+  .btn{
+        margin-top: 20px;
+  }
+      button {
+            padding: 13px 1rem;
+            outline: none;
+            font-weight: bold;
+            border: none;
+            background-color: cadetblue;
+            color: #fff;
+            cursor: pointer;
+            text-transform: capitalize;
+            border-radius: 5px;
+            box-shadow: inset 0 3px 4px cornflowerblue;
+      }
+      #reset{
+            background-color: crimson;
+      }
+</style>
+
+<body>
+      <form action="">
+            <input type="number" id="input" placeholder="Enter any number to chek leap or not">
+               <div class="btn">
+                  <button id="btn">check leapyear</button>
+                  <button id="reset">Reset</button>
+               </div>
+            <div class="result">
+                  <span id="result"></span>
+            </div>
+      </form>
+
+</body>
+
+<script>
+
+      const btn = document.getElementById('btn');
+      const result = document.getElementById('result');
+
+
+      btn.addEventListener('click', function (e) {
+            const input = document.getElementById('input').value;
+
+            e.preventDefault();
+
+            if(input == ''){
+                  alert("please enter a valid number");
+            }
+            else if (input % 400 == 0 && input % 100 ==0) {
+
+                  result.innerText = `The enter number ${input} is leap year`;
+
+            }
+		
+		else if ((input % 4 ==0) &&  (input % 100 != 0) ) {result.innerText = `The enter number ${input} is leap year`;}
+            else {
+
+                  result.innerText = `The enter number ${input} is not leap year`;
+            }
+
+
+      })
+
+
+</script>
+
+
+</html>
