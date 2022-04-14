@@ -1,5 +1,5 @@
 <p align="center">
-    <img  height="80" src="">
+    <img  height="80" src="./img/add-readme (1).png">
   </a>
 </p>
 <h1 align="center">DINO GAME</h1>
