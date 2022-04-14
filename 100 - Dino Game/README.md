@@ -24,5 +24,6 @@
 
 ## 📷 Screenshots
 
-![ss1]()
-![ss2]()
+![ss1](./img/Screenshot%202022-04-14%20072750.png)
+![ss2](./img/Screenshot%202022-04-14%20072804.png)
+![ss3](./img/Screenshot%202022-04-14%20072814.png)
