@@ -9,10 +9,15 @@ HTML5,CSS,Javascript
 
 ---
 ## Screenshot:
+![image](https://user-images.githubusercontent.com/77873383/163526747-211cd86b-d46e-4339-a2bf-a60ee4d721a8.png)
 
 
 ---
 
 ## Demo:
+
+
+https://user-images.githubusercontent.com/77873383/163526889-37567666-f001-4a17-9c3c-13101746cdde.mp4
+
 
 ---
