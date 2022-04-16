@@ -14,7 +14,7 @@ body:
   - type: textarea #enhancement
     attributes:
       label: Describe your enhancement/improvement
-      description: A clear and concise description of what feature you will be adding to the extension and/or the type of enhancement. Make sure your work is significant. 
+      description: A clear and concise description of what feature you will be adding to the project and/or the type of enhancement. Make sure your work is significant. 
       placeholder: Kindly elaborate.
     validations:
       required: true
@@ -27,5 +27,5 @@ body:
       
   - type: textarea #Additional Context
     attributes:
-      label: Add any other context or screenshots about the enhancement here.
+      label: Add any other context or relevant screenshots about the enhancement here.
       description: Any miscellaneous suggestions you'd like to give.
