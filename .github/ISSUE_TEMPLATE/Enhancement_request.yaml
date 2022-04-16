@@ -21,8 +21,8 @@ body:
       
   - type: textarea #NoteToReviewers
     attributes:
-      label: Anything you need to say to the reviewers
-      description: For the Reviewers
+      label: Anything you need to say to the Reviewers
+      description: For the Reviewers.
       placeholder: Type here.
       
   - type: textarea #Additional Context
