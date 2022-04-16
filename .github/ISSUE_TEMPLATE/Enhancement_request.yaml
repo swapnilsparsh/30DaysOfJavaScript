@@ -3,10 +3,10 @@ description: Request/Suggest any enhancement in features of a project you think 
 title: "Title: "
 labels: "Enhancement Request"
 body:
-  - type: textarea #extension
+  - type: textarea #JSProject
     attributes:
       label: Which pre-existing JavaScript project will you be working on?
-      description: Mention the extension and what it does.
+      description: Mention the project and what it does.
       placeholder: Type here.
     validations:
       required: true
