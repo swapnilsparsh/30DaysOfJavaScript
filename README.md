@@ -79,6 +79,10 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 <br>
 <a href="https://gssoc.girlscript.tech/"><p align="center">GirlScript Summer of Code 2022</p></a>
 
+## Contributing
+
+Before making any contribution, big or small, Contributors are advised to go through the [Contributing Guidelines](./CONTRIBUTING.md). 
+
 ## Code of Conduct
 
 To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./CODE_OF_CONDUCT.md). 
