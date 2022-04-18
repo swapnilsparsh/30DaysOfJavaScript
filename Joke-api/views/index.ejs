@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Joke API</title>
+        <style type="text/css">
+            #container{
+                display: flex;
+            }
+            #container div{
+                margin: 20px;
+            }
+            #getblock h1{
+                font-family: sans-serif;
+                font-size: 130%;
+            }
+            #getblock{
+                background-color: aquamarine;
+                border-radius: 10px;
+                margin: 10px auto;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            input[type='text']{
+                display: block;
+                width: 300px;
+                height: 40px;
+                border-radius: 10px;
+                margin: 20px auto 10px auto;
+            }
+            .up{
+                width: 100%;
+                background-color: blueviolet;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                border-radius: 10px;
+                text-align: center;
+                padding: 30px;
+               
+
+            }
+            ul{
+                margin: 20px auto;
+            }
+            .del{
+                width: 100%;
+                background-color: lightpink;
+                color: black;
+                font-family: sans-serif;
+                text-align: center;
+                font-weight: bolder;
+                border-radius: 10px;
+                padding: 30px;
+               
+
+            }
+            input::placeholder{
+                padding-left: 20px;
+            }
+            #su{
+                margin-top: 50px;
+            }
+            button{
+                display: block;
+                height: 40px;
+                width: 40%;
+                margin: 10px auto 20px auto;
+                border-radius: 5px;
+                border: 2px solid;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: blue;
+                border-color: blue;
+                color: white;
+                font-weight: bolder;
+                box-shadow: 0px 3px 6px 0px blue;
+            }
+            li{
+                display: inline-block;
+                height: 200px;
+                width: 30%;
+                background-color: midnightblue;
+                color: white;
+                text-align: center;
+                margin: 10px;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0,0,0.5);
+            }
+            
+            p,h1,h2{
+                font-family: 'Courier New', Courier, monospace!important;
+            }
+            @media (max-width:1200px) and (min-width:800px){
+            #container{
+                display: flex;
+            }
+            #container div{
+                margin: 20px;
+                width: fit-content;
+            }
+            #getblock h1{
+                font-family: sans-serif;
+                font-size: 110%;
+            }
+            #getblock{
+                background-color: aquamarine;
+                border-radius: 10px;
+                margin: 10px auto;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            input[type='text']{
+                display: block;
+                width: 150px;
+                height: 40px;
+                border-radius: 10px;
+                margin: 20px auto 10px auto;
+            }
+            .up{
+                width: 80%;
+                background-color: blueviolet;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                border-radius: 10px;
+                text-align: center;
+                padding: 30px;
+               
+
+            }
+            ul{
+                margin: 20px auto;
+            }
+            .del{
+                width: 80%;
+                background-color: lightpink;
+                color: black;
+                font-family: sans-serif;
+                text-align: center;
+                font-weight: bolder;
+                border-radius: 10px;
+                padding: 30px;
+               
+
+            }
+            input::placeholder{
+                padding-left: 20px;
+            }
+            #su{
+                margin-top: 50px;
+            }
+            button{
+                display: block;
+                height: 40px;
+                width: 70%;
+                margin: 10px auto 20px auto;
+                border-radius: 5px;
+                border: 2px solid;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: blue;
+                border-color: blue;
+                color: white;
+                font-weight: bolder;
+                box-shadow: 0px 3px 6px 0px blue;
+            }
+            li{
+                display: inline-block;
+                height: 200px;
+                width: 40%;
+                background-color: midnightblue;
+                color: white;
+                text-align: center;
+                margin: 10px;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0,0,0.5);
+            }
+            
+            p,h1,h2{
+                font-family: 'Courier New', Courier, monospace!important;
+            }
+            h1{
+                font-size: 110%;
+            }
+            }
+            @media (max-width:800px) and (min-width:400px){
+                #container{
+                display: flex;
+                flex-direction: column;
+            }
+            #container div{
+                margin: 20px;
+                width: 80%;
+            }
+            #getblock h1{
+                font-family: sans-serif;
+                font-size: 150%;
+            }
+            h1{
+                font-size: 150%;
+            }
+            input[type='text']{
+                display: block;
+                width: 80%;
+                height: 40px;
+                border-radius: 10px;
+                margin: 20px auto 10px auto;
+            }
+            button{
+                display: block;
+                height: 40px;
+                width: 50%;
+            }
+            li{
+                display: inline-block;
+                height: 200px;
+                width: 80%;
+            }
+            }
+            @media (max-width:400px){
+                #container div{
+                    width: 70%;
+                    margin: 20px;
+                }
+                li{
+                    width: 82%;
+                    display: inline-block;
+                    height: 300px;
+                    margin: 10px 0px;
+                }
+                ul{
+                    padding-left: 0px;
+                }
+                #container{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            #getblock h1{
+                font-family: sans-serif;
+                font-size: 150%;
+            }
+            h1{
+                font-size: 150%;
+            }
+            input[type='text']{
+                display: block;
+                width: 80%;
+                height: 40px;
+                border-radius: 10px;
+                margin: 20px auto 10px auto;
+            }
+            button{
+                display: block;
+                height: 40px;
+                width: 50%;
+            }
+            
+            }
+        </style>
+        
+    </head>
+    <body><div id="container">
+        <div id="getblock">
+        
+        <form action="/jokes" method="post" id="fo">
+            <h1>Submit your jokes here</h1>
+            <input type="text" name="name" placeholder="Enter your name" oninput="convert()"><br>
+            <input type="text" name="joke" placeholder="Enter a joke">
+            <button type="submit" id="su">Submit</button>
+        </form></div>
+        <div class="up">
+            <h1>Update joke </h1>
+            <input type="text" name="name" id="name" placeholder="Enter your name" oninput="convert()"><br>
+            <input type="text" name="joke" id="joke" placeholder="Update the joke"><br>
+            <button id="up">Update joke</button></div>
+            <div class="del">
+                <h1>Delete joke </h1>
+                <input type="text" name="name" id="nam" placeholder="Enter your name" oninput="convert()"><br>
+                <button id="del">Delete joke</button></div></div>
+                <h1 style="text-align: left; margin-left: 60px; font-size: 180%;">Jokes</h1>
+        <ul class="jokes">
+            <% for(var i=0;i< jokes.length; i++){ %>
+                <li>
+                    
+                        <h2>Name: <%= jokes[i].name %> </h2>
+                        <p style="text-align:left;padding-left: 30px;">Joke: <%= jokes[i].joke %> </p>
+                    
+                </li>
+
+            <% } %>
+                
+        </ul>
+        
+                
+        <script src="main.js"></script>
+    </body>
+</html>
