@@ -1,0 +1,112 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  padding: 0 10px;
+  background-image: url("bgi.jpg");
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: #AA57CC; */
+  margin-top: 200px;
+}
+::selection{
+  color: #fff;
+  background: rgb(170,87,204,0.8);
+}
+.wrapper{
+  max-width: 500px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px 25px 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+header h1{
+  font-size: 27px;
+  font-weight: 500;
+}
+header p{
+  margin-top: 5px;
+  font-size: 18px;
+  color: #474747;
+}
+.inputs{
+  margin: 20px 0 27px;
+}
+.inputs input{
+  width: 100%;
+  height: 60px;
+  outline: none;
+  padding: 0 17px;
+  font-size: 19px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  transition: 0.1s ease;
+}
+.inputs input::placeholder{
+  color: #999999;
+}
+.inputs input:focus{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.inputs input:focus::placeholder{
+  color: #bebebe;
+}
+.inputs button{
+  width: 100%;
+  height: 56px;
+  border: none;
+  opacity: 0.7;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 20px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: #AA57CC;
+  transition: opacity 0.15s ease;
+}
+.inputs button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.info-txt{
+  display: none;
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.info-txt span{
+  color: #AA57CC;
+}
+
+@media (max-width: 520px) {
+  .wrapper{
+    padding: 17px 20px 10px;
+  }
+  header h1{
+    font-size: 25px;
+  }
+  header p{
+    font-size: 16px;
+  }
+  .inputs input{
+    height: 54px;
+    font-size: 17px;
+  }
+  .inputs button{
+    height: 50px;
+    font-size: 16px;
+    margin-top: 17px;
+  }
+  .info-txt{
+    font-size: 18px;
+  }
+}
