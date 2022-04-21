@@ -62,8 +62,32 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 47  |       [Caesar Cipher](https://30daysofjs.netlify.app/47%20-%20caesar%20cipher/2_caesar_cipher)        |
 | 48  |       [Attendance Table](https://30daysofjs.netlify.app/48%20-%20attendance%20table/)        |
     
+## Open Source Programmes this repo has been a part of
+<br>
+<div align="center">
+    <img width="495" alt="hacktober" src="https://user-images.githubusercontent.com/80174214/163700751-0e40ea9c-75b5-45dd-ad75-ab30fdff0970.png">
+</div>
+<br>
+<a href="https://hacktoberfest.digitalocean.com/"><p align="center">HacktoberFest 2021</p></a>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+    <img width="495" alt="gssoc22" src="https://user-images.githubusercontent.com/80174214/163700960-9e748546-786b-4a69-8236-eaf11c08b02c.png">
+</div>
+<br>
+<a href="https://gssoc.girlscript.tech/"><p align="center">GirlScript Summer of Code 2022</p></a>
 
-## Our valuable Contributor :
+## Contributing
+
+Before making any contribution, big or small, Contributors are advised to go through the [Contributing Guidelines](./CONTRIBUTING.md). 
+
+## Code of Conduct
+
+To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./CODE_OF_CONDUCT.md). 
+
+## Our valuable Contributors
 
 <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=swapnilsparsh/30DaysOfJavaScript" />
