@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DragonUncaged Music Player</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="container">
+  <div id="particles-js"></div>
+  <div class="spotify-player">
+    <div class="music-playlist">
+      <div class="playlist-header">
+        <div class="playlist-close-btn">
+          <i class="fa fa-angle-left playlist-back-icon"></i>
+        </div>
+        <div class="playlist-center-text">
+          <p>Your Playlist</p>
+        </div>
+        <div class="playlist-menu-btn">
+          <i class="fa fa-ellipsis-v playlist-menu-icon"></i>
+        </div>
+      </div>
+      <div class="playlist"></div>
+    </div>
+    <div class="music-player">
+      <img class="bg" />
+      <div class="player-header">
+        <div class="playlist-open-btn">
+          <i class="fa fa-angle-down"></i>
+        </div>
+        <div class="library">
+          <p class="playing-from">playing from your library</p>
+          <p>Songs</p>
+        </div>
+        <div class="menu-btn">
+          <i class="fa fa-ellipsis-v menu-icon"></i>
+        </div>
+      </div>
+      <div class="player-center">
+        <div class="poster-container"></div>
+      </div>
+      <div class="player-footer">
+        <div class="music-info">
+          <div class="names">
+            <p class="music-name"></p>
+            <p class="artist-name"></p>
+          </div>
+          <div class="heart-btn">
+            <i class="fa fa-heart-o heart-icon"></i>
+          </div>
+        </div>
+        <div class="music-timebar">
+          <div class="timebar">
+            <div class="music-current-length"></div>
+            <div class="music-current-length-circle"></div>
+          </div>
+          <div class="music-time">
+            <div class="music-current-time">0:00</div>
+            <div class="music-duration-time">0:00</div>
+          </div>
+        </div>
+        <div class="music-controls">
+          <audio class="audio"></audio>
+          <div class="shuffle-btn">
+            <i class="fa fa-random shuffle-icon" title="Shuffle"></i>
+          </div>
+          <div class="main-control">
+            <i class="fa fa-step-backward back-btn"></i>
+            <i class="fa fa-play-circle play-btn"></i>
+            <i class="fa fa-step-forward forward-btn"></i>
+          </div>
+          <div class="loop-btn">
+            <i class="fa fa-repeat loop-icon" title="Repeat"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="music-info-window"></div>
+  </div>
+</div>
+
+<div class="code-with-love">
+  < <span>/</span> > with <i class="fa fa-heart"></i> by <a href="https://github.com/DragonUncaged" target="blank">DragonUncaged</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<script src="https://dankmemeryt.000webhostapp.com/wp-content/uploads/particle.js/particles.js"></script>
+<script src="https://dankmemeryt.000webhostapp.com/wp-content/uploads/particle.js/app.js"></script>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
