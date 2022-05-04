@@ -124,7 +124,7 @@ function generateQA() {
     document.getElementById("question").innerHTML = x + "x" + y;
     var correctPosition = 1 + Math.round(3 * Math.random());
     document.getElementById("box" + correctPosition).innerHTML = correctAnswer;
-    /
+
 
     //fill other boxes with wrong answers
 
