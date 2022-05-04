@@ -14,6 +14,64 @@ body {
   font-family: "sans";
 }
 
+/* Preloader */
+.preloader {
+  background: #111;;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  z-index: 9999999;
+}
+.preloader span {
+  position: absolute;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+}
+.preloader span::before,
+.preloader span::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #e47a17;
+  position: absolute;
+  animation: load 1s infinite alternate ease-in-out;
+}
+.preloader span::before {
+  top: 0;
+}
+.preloader span::after {
+  bottom: 0;
+}
+@keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+
 /* Dark Mode */
 body.dark-mode {
   background-color: #111;

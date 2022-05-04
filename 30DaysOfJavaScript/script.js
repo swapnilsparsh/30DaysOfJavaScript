@@ -1,3 +1,15 @@
+// Preloader
+var preloader = document.getElementById('loading'); 
+
+function loading(){
+   setTimeout( myfunction,1500);
+}
+
+function myfunction(){
+preloader.style.display = 'none';
+}
+
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 100) {
