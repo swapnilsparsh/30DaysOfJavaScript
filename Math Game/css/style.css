@@ -9,10 +9,20 @@ html {
 #container {
     height: 400px;
     width: 550px;
-    background-color: #9DD2EA;
+    background-color: #cbd5e1;
     margin: 100px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 0px 0px #009de4;
+    box-shadow: 0px 4px 0px 0px #ef4444;
     position: relative;
+}
+
+#score {
+    border-radius: 20px;
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 11px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 0px 4px 0px #1e293b;
 }
