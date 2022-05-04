@@ -24,7 +24,7 @@ It is Math Quiz game where you have to select the correct ans from four options
 
 ## 📷 Screenshots
 
-![ss1]()
-![ss]()
+![ss1](./img/mathss(.1).png)
+![ss2](./img/mathss(.2).png)
 
 
