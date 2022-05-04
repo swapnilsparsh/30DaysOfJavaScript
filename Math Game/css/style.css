@@ -5,3 +5,14 @@ html {
     background: -o-radial-gradient(circle, #fff, #ccc);
     background: -moz-radial-gradient(circle, #fff, #ccc);
 }
+
+#container {
+    height: 400px;
+    width: 550px;
+    background-color: #9DD2EA;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    position: relative;
+}
