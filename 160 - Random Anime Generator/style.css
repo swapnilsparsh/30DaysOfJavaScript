@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  background: linear-gradient(to right, #00afff, #00ff6c);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.main-container {
+  background-color: rgba(255, 255, 255, 0.863);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+  width: 800px;
+}
+
+.anime-container h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  letter-spacing: 0.9;
+}
+
+.anime-container h2 {
+  line-height: 30px;
+  word-spacing: 1px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.btn {
+  outline: none;
+  border-radius: 8px;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  border: 1px solid #000;
+  background-color: #305a42;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #000;
+  transition: ease-in-out;
+}
+
+.anime-box {
+  display: none;
+}
+
+.anime-box img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #00afff;
+  align-items: center;
+}
+
+.hero-name {
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.774);
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    width: 450px;
+    flex-wrap: wrap;
+  }
+}
