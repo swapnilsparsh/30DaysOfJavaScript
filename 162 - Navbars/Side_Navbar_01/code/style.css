@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  min-height: 100vh;
+  background: #11052c;
+}
+
+.side-navigation {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 280px;
+  border-radius: 15px;
+  box-sizing: initial;
+  border-left: 5px solid #ffe459;
+  background: #ffe459;
+  transition: width 0.7s;
+}
+
+.side-navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.side-navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 280px;
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 21px;
+}
+
+.side-navigation ul li.active {
+  background-color: #11052c;
+}
+
+.side-navigation ul li b:nth-child(1) {
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background: #11052c;
+  display: none;
+}
+
+.side-navigation ul li b:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98.25%;
+  height: 100%;
+  background: #ffe459;
+  border-bottom-right-radius: 20px;
+}
+
+.side-navigation ul li b:nth-child(2) {
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background: #11052c;
+  display: none;
+}
+
+.side-navigation ul li b:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98.25%;
+  height: 100%;
+  background: #ffe459;
+  border-top-right-radius: 20px;
+}
+
+.side-navigation ul li.active b:nth-child(1),
+.side-navigation ul li b:nth-child(2) {
+  display: block;
+}
+
+.side-navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #3d087b;
+}
+
+.side-navigation ul li.active a {
+  color: #ffe459;
+}
+
+.side-navigation ul li a .icons {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.side-navigation ul li a .icons ion-icon {
+  font-size: 1.5em;
+  padding-top: 13.5px;
+}
+
+.side-navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 50px;
+  line-height: 22px;
+  white-space: normal;
+  padding-top: 15px;
+}

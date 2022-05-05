@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Outside Side Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="side-navigation">
+        <ul>
+            <li class="item-list active">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+
+            <li class="item-list">
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="title">My Profile</span>
+                </a>
+            </li>
+
+            <li class="item-list">
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="title">Messages</span>
+                </a>
+            </li>
+
+            <li class="item-list">
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+
+            <li class="item-list">
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="key-outline"></ion-icon>
+                    </span>
+                    <span class="title">Password Reset</span>
+                </a>
+            </li>
+
+            <li class="item-list">
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="help-outline"></ion-icon>
+                    </span>
+                    <span class="title">FAQs</span>
+                </a>
+            </li>
+
+            <li class="item-list">
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Help</span>
+                </a>
+            </li>
+
+            <li class="item-list">
+                <a href="#">
+                    <span class="icons">
+                        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="toggle">
+        <ion-icon name="grid-outline" class="opne"></ion-icon>
+        <ion-icon name="close-circle-outline" class="close"></ion-icon>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        let menuToggle = document.querySelector('.toggle');
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active')
+        }
+
+
+
+        const list = document.querySelectorAll('.item-list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+    </script>
+</body>
+
+</html>
