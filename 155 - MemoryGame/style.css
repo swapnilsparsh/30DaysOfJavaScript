@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dde1e7;
+}
+.header {
+    margin: 20px 10px;
+}
+#title {
+    display: block;
+    position: absolute;
+    left: 3%;
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: 'Nosifer', cursive;
+}
+#stats {
+    display: block;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    font-size: 26px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px #000000;
+    perspective: 1000px;
+}
+.card {
+	height: 90px;
+	width: 70px;
+	background: #dde1e7;
+	border-radius: 5px;
+    cursor: pointer;
+	box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px #000000;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.frontface, .backface{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 90px;
+    backface-visibility: hidden;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card:active {
+   transform: scale(0.97);
+   transition: transform .2s;
+}
+.card.flip {
+    transform: rotateY(180deg);
+}
+.backface {
+    transform: rotateY(180deg);
+}
+.popup{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.popup > div {
+    width: fit-content;
+    padding: 20px;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px #000000;
+}
+.popup > div > h2{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin: 10px 50px;
+    background: #dde1e7;
+    border-radius: 30px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+                6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+                6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+                inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 900px) {
+    #title {
+        font-size: 30px;
+    }
+    .header {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #title {
+        font-size: 25px;
+    }
+    #stats {
+        font-size: 20px;
+    }
+    .card {
+        height: 80px;
+        width: 60px;
+    }
+    .frontface, .backface {
+        line-height: 80px;
+    }
+}
