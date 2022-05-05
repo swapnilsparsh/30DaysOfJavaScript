@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .title {
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    font-size: 5em;
+  }
+  .container2 {
+    gap: 0.2rem;
+    margin: 2em;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "side1 nav1 nav1 nav2 nav2"
+      "side1 main1 main2 main2 right"
+      "side2 footer1 footer2 footer2 right";
+  }
+  .item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.8s;
+    transition-timing-function: linear;
+  }
+  .item:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    cursor: pointer;
+  }
+  .side1 {
+    grid-area: side1;
+    background-image: url("Images/food1.jpg");
+  }
+  .side2 {
+    grid-area: side2;
+    background-image: url("Images/food2.jpg");
+  }
+  .nav1 {
+    grid-area: nav1;
+    background-image: url("Images/food3.jpg");
+  }
+  .nav2 {
+    grid-area: nav2;
+    background-image: url("Images/food4.jpg");
+  }
+  .main1 {
+    grid-area: main1;
+    background-image: url("Images/food5.jpg");
+  }
+  .main2 {
+    grid-area: main2;
+    background-image: url("Images/food6.jpg");
+  }
+  .right {
+    grid-area: right;
+    background-image: url("Images/food7.jpg");
+  }
+  .footer1 {
+    grid-area: footer1;
+    background-image: url("Images/food8.jpg");
+  }
+  .footer2 {
+    grid-area: footer2;
+    background-image: url("Images/food9.jpg");
+  }
+  
