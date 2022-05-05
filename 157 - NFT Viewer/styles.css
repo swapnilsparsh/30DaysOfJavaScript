@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-blue: hsl(215, 83%, 47%);
+  --cyan: hsl(208, 100%, 50%);
+
+  /* ### Neutral */
+
+  --main-bg: hsl(269, 68%, 23%);
+  --card-bg: hsla(269, 55%, 53%, 0.864);
+  --line: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--main-bg);
+  color: hsl(0, 0%, 100%, 60%);
+  padding: 1.25rem;
+}
+
+.container {
+  padding: 1.25rem;
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.container .main-image {
+  position: relative;
+  max-width: 100%;
+}
+
+.container .main-image div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container .main-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .main-image div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container h2 {
+  color: var(--white);
+  margin: 1rem 0.5rem 0.5rem 0;
+}
+
+.container h2:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+
+.container ul li:first-child {
+  color: var(--cyan);
+}
+
+.container ul li img {
+  margin-right: 0.5rem;
+}
+
+.container .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 2rem;
+}
+
+.container .avatar img {
+  width: 3.5rem;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.container .avatar p span {
+  color: var(--white);
+  font-weight: 1000;
+  
+}
+
+.container .avatar p span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 450px;
+    margin: 0 auto 1rem;
+  }
+}
+#underline {
+            text-decoration: none;
+}
