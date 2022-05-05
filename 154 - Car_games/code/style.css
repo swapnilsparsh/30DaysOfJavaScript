@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../assets/images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+/*.for_ph{
+    display: none;
+}*/
+
+.score{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    background: linear-gradient(120deg, #f5de50, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 3px #f5de50,
+                -4px -4px 5px 3px #ffffff;
+                font-family: 'Averia Libre', cursive;
+}
+.playArea{
+    width: 500px;
+    height: 100vh;
+    background: linear-gradient(120deg, #00B2A9, #ffffff);
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-left: 10px dashed gray;
+    border-right: 10px dashed gray;
+
+}
+.playArea .roadLines{
+    width: 10px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    left: 245px;
+    margin: auto;
+}
+.playArea .enemyCar{
+    width: 70px;
+    height: 100px;
+    top: 200px;
+    left: 100px;
+    background-image: url(../assets/images/enemycar.png);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: 85px 110px;
+    border-radius: 20px;
+    background-position: center;
+    position: absolute;
+    outline: none;
+    border: none;
+}
+.playArea #car{
+    width: 80px;
+    height: 100px;
+    top: 600px;
+    left: 40px;
+    background-image: url(../assets/images//my_car.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    z-index: 5;
+    outline: none;
+    border: none;
+}
+#blast{
+    width: 80px;
+    height: 100px;
+    top: 600px;
+    left: 40px;
+    background-image: url(../assets/images/blast.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    z-index: 5;
+    outline: none;
+    border: none;
+}
+.startScreen{
+    width: 550px;
+    height: 150px;
+    background: linear-gradient(130deg, #a02021, #ffffff);
+    box-shadow: 4px 4px 5px 3px #f5de50,
+                -4px -4px 5px 3px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px ;
+    position: absolute;
+    top: 35%;
+    left: 32%; 
+    font-size: 12px;
+    font-family: 'Averia Libre', cursive;
+}
+.hide{
+    display: none;
+}
+.buttons{
+    display: none;
+}
+
+/* --------------------for responsive------------------- */
+@media(max-width: 900px){
+    /*.for_ph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: 10000000000;
+        background: linear-gradient(120deg, #f57d00, #ffffff);
+        
+
+    }*/
+    /*.startScreen{
+        display: none;
+    }
+    .playArea{
+        display: none;
+    }*/
+    .score{
+        width: 150px;
+        height: 100px;
+        top: 20px;
+        left: 20px;
+        background: linear-gradient(120deg, #f5df5054, #ffffff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        font-size: 15px;
+    }
+    .playArea{
+        width: 300px;
+        height: 100vh;
+        background: linear-gradient(120deg, #00B2A9, #ffffff);
+    }
+    .startScreen{
+        width: 350px;
+        height: 100px;
+        background: linear-gradient(130deg, #a02021, #ffffff);
+        box-shadow: 4px 4px 5px 3px #f5de50,
+                    -4px -4px 5px 3px #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius:20px ;
+        position: absolute;
+        top: 50%;
+        left: 20px; 
+        font-size: 8.50px;
+        transform: translate(-50% -50%);
+        font-family: 'Averia Libre', cursive;
+    }
+    .playArea .roadLines{
+        width: 10px;
+        height: 80px;
+        background: white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .playArea .enemyCar{
+    width: 50px;
+    height: 70px;
+    top: 200px;
+    background-size: 55px 80px;
+    border-radius: 20px;
+}
+.playArea #car{
+    width: 50px;
+    height: 70px;
+    top: 600px;
+    left: 40px;
+    background-image: url(../assets/images/my_car.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    z-index: 5;
+    outline: none;
+    border: none;
+}
+.hide{
+    display: none;
+}
+
+.buttons{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 100%;
+    transform: rotate(45deg);
+    outline: none;
+    border: 2px solid white;
+}
+.buttons .up_btn{
+    width: 50%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.158);
+    border-top-left-radius:100% ;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .up_btn:hover{
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5);
+}
+.buttons .down_btn{
+    width: 50%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.158);
+    border-top-right-radius:100% ;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .down_btn:hover{
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5);
+}
+.buttons .left_btn{
+    width: 50%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.158);
+    border-bottom-left-radius:100% ;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .left_btn:hover{
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5);
+}
+.buttons .right_btn{
+    width: 50%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.158);
+    border-bottom-right-radius:100% ;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .right_btn:hover{
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5);
+}
+}
