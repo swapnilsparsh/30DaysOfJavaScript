@@ -1,13 +1,16 @@
 // Preloader
-var preloader = document.getElementById('loading'); 
+var preloader = document.getElementById('loading');
+var preloader2 = document.getElementById('loading2');  
+    
+        function loading(){
+           setTimeout( myfunction,2000);
+       }
 
-function loading(){
-   setTimeout( myfunction,1500);
-}
-
-function myfunction(){
-preloader.style.display = 'none';
-}
+       
+       function myfunction(){
+        preloader.style.display = 'none';
+        preloader2.style.display = 'none';
+       }
 
 
 $(document).ready(function () {
