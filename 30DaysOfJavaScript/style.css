@@ -14,6 +14,18 @@ body {
   font-family: "sans";
 }
 
+/* Preloader */
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #1f1e1e url('./assets/js-preloader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 99999;
+}
+
+
 /* Dark Mode */
 body.dark-mode {
   background-color: #111;
