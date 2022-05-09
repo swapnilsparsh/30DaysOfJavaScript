@@ -24,6 +24,6 @@ Keep track of income and expenses. Add and remove items and save to local storag
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./img/expenseSS.png)
 
 
