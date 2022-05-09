@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+
+.box {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+  width: 90%;
+}
+
+.color {
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 56, 100, 0.2);
+  margin: 0 8px;
+}
