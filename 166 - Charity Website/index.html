@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Charity Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        
+        <div class="ball dis-left"></div>
+        <div class="wrap">
+          <div class="book dis-left"></div>  
+        </div>
+        <div class="cap dis-left"></div>
+        <div class="bag dis-left"></div>
+        <div class="kid">
+          <div class="hair">
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+          </div>
+          <div class="head">
+            <div class="dirt left"></div>
+            <div class="dirt right"></div>
+            <div class="ears left"></div>
+            <div class="ears right"></div>
+            <div class="eyes left">
+              <div class="pupil"></div>
+            </div>
+            <div class="eyes right">
+              <div class="pupil"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+          </div>  
+          <div class="body">
+            <div class="shirt">
+              <div class="patch left"></div>
+              <div class="patch center"></div>
+              <div class="neck"></div>
+              <div class="arms left">
+                <div class="hand">
+                  <div class="toes"></div>
+                  <div class="toes"></div>
+                  <div class="toes"></div>
+                  <div class="toes"></div>
+                </div>
+              </div>
+              <div class="arms right">
+                <div class="hand">
+                  <div class="toes"></div>
+                  <div class="toes"></div>
+                  <div class="toes"></div>
+                  <div class="toes"></div>
+                </div>
+              </div>
+            </div>
+            <div class="shorts">
+              <div class="patch"></div>
+              <div class="legs left">
+                <div class="foot"></div>
+              </div>
+              <div class="legs right">
+                <div class="foot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+        <h1>WE NEED YOUR HELP</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio eos, reprehenderit distinctio commodi magnam, eius mollitia, voluptas quasi quod architecto velit. Voluptatibus ex debitis quibusdam cumque. Cumque omnis, eos?</p>
+        <div class="range-container">
+          <h4>I wanna help with: <span class="value">$0</span></h4>
+          <input type="range" min="0" max="100" step="10"/>
+        </div>
+        <a href="#infos" data-scroll id="donateBtn">Continue</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="infos">
+  <div class="container">
+  <form class="form-horizontal" role="form">
+    <fieldset>
+      <legend>Payment</legend>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-holder-name">Email Address</label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control" name="email-address" id="email-address" placeholder="Email Address">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-holder-name">Name on Card</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-number">Card Number</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="expiry-month">Expiration Date</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-xs-3">
+              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                <option>Month</option>
+                <option value="01">Jan (01)</option>
+                <option value="02">Feb (02)</option>
+                <option value="03">Mar (03)</option>
+                <option value="04">Apr (04)</option>
+                <option value="05">May (05)</option>
+                <option value="06">June (06)</option>
+                <option value="07">July (07)</option>
+                <option value="08">Aug (08)</option>
+                <option value="09">Sep (09)</option>
+                <option value="10">Oct (10)</option>
+                <option value="11">Nov (11)</option>
+                <option value="12">Dec (12)</option>
+              </select>
+            </div>
+            <div class="col-xs-3">
+              <select class="form-control" name="expiry-year">
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="cvv">Card CVV</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button type="submit" class="btn">Pay Now</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
