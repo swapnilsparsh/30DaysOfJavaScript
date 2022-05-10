@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	align-items: center;
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	justify-content: center;
+	min-height: 100vh;	
+	overflow: hidden;
+}
+
+.planet {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	min-width: 50%;
+	position: relative;
+}
+
+.planet h2 {
+	color: #ffffff;
+	font: 600 4rem 'Poppins', sans-serif;
+	margin-bottom: 40px;
+}
+
+.planet .container {
+	align-items: center;
+	-webkit-box-reflect: below 1px linear-gradient(
+																 		rgba(0, 0, 0, 0.07),
+																		rgba(0, 0, 0, 0.013)
+																	);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.planet .loader:before {
+		background-repeat: no-repeat;
+	background-size: 200px 360px;
+	border-bottom-left-radius: 200px;
+	border-top-left-radius: 200px;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 50%;
+}
+
+.planet .loader {
+	-webkit-animation: animate 4s linear infinite;
+	        animation: animate 4s linear infinite;
+	border-radius: 50%;
+	height: 400px;
+	position: relative;
+	width: 400px;
+}
+
+.planet .loader:after {
+	border-radius: 50%;
+	content: '';
+	height: 10px;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 10px;
+	z-index: 10;
+}
+
+.planet .loader span {
+	border-radius: 50%;
+	bottom: 10px;
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+
+/* Earth */
+.planet.planet-earth {
+	background-color: #182357;
+}
+
+.planet.planet-earth .loader:before {
+	background-image: linear-gradient(
+											to top,
+											rgba(0, 0, 0, 0),
+											rgba(0, 255, 249, 0.4)
+										);
+}
+
+.planet.planet-earth .loader {
+	-webkit-animation: animate 4s linear infinite;
+	        animation: animate 4s linear infinite;
+	border-radius: 50%;
+	height: 400px;
+	position: relative;
+	width: 400px;
+}
+
+.planet.planet-earth .loader:after {
+	border-radius: 50%;
+	content: '';
+	height: 10px;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 10px;
+	z-index: 10;
+}
+
+.planet.planet-earth .loader:after {
+	background-color: #00fff9;
+	box-shadow: 0 0 10px #00fff9,
+							0 0 20px #00fff9,
+							0 0 30px #00fff9,
+							0 0 40px #00fff9,
+							0 0 50px #00fff9,
+							0 0 60px #00fff9,
+							0 0 70px #00fff9,
+							0 0 80px #00fff9,
+							0 0 90px #00fff9,
+							0 0 100px #00fff9;
+}
+
+.planet.planet-earth .loader span {
+	background-color: #182357;
+}
+
+.planet.planet-earth .container .earth {
+	-webkit-animation: animated-earth 20s linear infinite;
+	        animation: animated-earth 20s linear infinite;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fearth.jpg?alt=media&token=c121750a-14ec-4a0f-8e35-e3dde8be40cc');
+	background-position-x: 0%;
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow: 0 0 20px #03a9f4 inset,
+							0 0 120px #03a9f4;
+	height: 340px;
+	position: absolute;
+	width: 340px;
+}
+
+/* Mars */
+.planet.planet-mars {
+	background-color: #190703;
+}
+
+.planet.planet-mars .loader:before {
+	background-image: linear-gradient(
+											to top,
+											rgba(0, 0, 0, 0),
+											rgba(255, 87, 34, 0.4)
+										);
+}
+
+.planet.planet-mars .loader {
+	-webkit-animation-delay: -2s;
+	        animation-delay: -2s;
+}
+
+.planet.planet-mars .loader:after {
+	background-color: #ff5722;
+	box-shadow: 0 0 10px #ff5722,
+							0 0 20px #ff5722,
+							0 0 30px #ff5722,
+							0 0 40px #ff5722,
+							0 0 50px #ff5722,
+							0 0 60px #ff5722,
+							0 0 70px #ff5722,
+							0 0 80px #ff5722,
+							0 0 90px #ff5722,
+							0 0 100px #ff5722;
+}
+
+.planet.planet-mars .loader span {
+	background-color: #190703;
+}
+
+.planet.planet-mars .container .mars {
+	-webkit-animation: animated-mars 6s linear infinite;
+	        animation: animated-mars 6s linear infinite;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fmars.jpg?alt=media&token=d5c82011-2fa5-4bc3-b729-3d61aa271b00');
+	background-position-x: 0%;
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow: 0 0 20px #ff5722 inset,
+							0 0 120px #ff5722;
+	height: 340px;
+	position: absolute;
+	width: 340px;
+}
+
+@-webkit-keyframes animate {
+	to {
+		transform: rotateZ(1turn);
+	}
+}
+
+@keyframes animate {
+	to {
+		transform: rotateZ(1turn);
+	}
+}
+
+@-webkit-keyframes animated-earth {
+	to {
+		background-position-x: 162.5%;
+	}
+}
+
+@keyframes animated-earth {
+	to {
+		background-position-x: 162.5%;
+	}
+}
+
+@-webkit-keyframes animated-mars {
+	to {
+		background-position-x: -340px;
+	}
+}
+
+@keyframes animated-mars {
+	to {
+		background-position-x: -340px;
+	}
+}
