@@ -1,0 +1,183 @@
+.page {
+  align-items: center;
+  background: radial-gradient(#000, #222);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: linear-gradient(rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.075));
+  border: 1px solid #333;
+  font: 400 12px/1em sans-serif;
+  height: 28em;
+  margin: 2em;
+  padding: 2em;
+  perspective: 75em;
+  width: 20em;
+}
+.card * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.card:nth-child(1) > .card-inner > .card-front {
+  background: linear-gradient(-8deg, #222, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://armchairmogul.files.wordpress.com/2011/07/supes.jpg) center/cover no-repeat;
+}
+.card:nth-child(2) > .card-inner > .card-front {
+  background: linear-gradient(-8deg, #222, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://imgix.ranker.com/user_node_img/42/822905/original/david-finch-writers-photo-u4?w=650&q=50&fm=pjpg&fit=crop&crop=faces) center/cover no-repeat;
+}
+.card:nth-child(3) > .card-inner > .card-front {
+  background: linear-gradient(-8deg, #222, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://www.gannett-cdn.com/-mm-/afd5ee850218d82a9800548997fd0607075a3cbe/c=23-315-2004-2965/local/-/media/USATODAY/USATODAY/2014/06/30/1404161899000-WONDER-WOMAN-36-COMICS-JY-665--65511024.JPG) center/cover no-repeat;
+}
+.card:nth-child(4) > .card-inner > .card-front {
+  background: linear-gradient(-8deg, #222, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/272820/381201/jul180644__14403.1537997529.jpg?c=2&imbypass=on) center/cover no-repeat;
+}
+.card:nth-child(5) > .card-inner > .card-front {
+  background: linear-gradient(-8deg, #222, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://i.pinimg.com/originals/a9/52/58/a9525813f9beddc4a1818d87b8d4c963.jpg) center/cover no-repeat;
+}
+.card:nth-child(6) > .card-inner > .card-front {
+  background: linear-gradient(-8deg, #222, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://i.pinimg.com/originals/a2/78/12/a2781277d54f3fd21f7194860bf708be.jpg) center/cover no-repeat;
+}
+.card:nth-child(7) > .card-inner > .card-front {
+  background: linear-gradient(-8deg, #222, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://i.pinimg.com/originals/6e/7c/48/6e7c481f7750f3f285ff3f58b87dd686.jpg) center/cover no-repeat;
+}
+.card:nth-child(1) > .card-inner > .card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://armchairmogul.files.wordpress.com/2011/07/supes.jpg) center/cover no-repeat;
+}
+.card:nth-child(2) > .card-inner > .card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://imgix.ranker.com/user_node_img/42/822905/original/david-finch-writers-photo-u4?w=650&q=50&fm=pjpg&fit=crop&crop=faces) center/cover no-repeat;
+}
+.card:nth-child(3) > .card-inner > .card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://www.gannett-cdn.com/-mm-/afd5ee850218d82a9800548997fd0607075a3cbe/c=23-315-2004-2965/local/-/media/USATODAY/USATODAY/2014/06/30/1404161899000-WONDER-WOMAN-36-COMICS-JY-665--65511024.JPG) center/cover no-repeat;
+}
+.card:nth-child(4) > .card-inner > .card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/272820/381201/jul180644__14403.1537997529.jpg?c=2&imbypass=on) center/cover no-repeat;
+}
+.card:nth-child(5) > .card-inner > .card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://i.pinimg.com/originals/a9/52/58/a9525813f9beddc4a1818d87b8d4c963.jpg) center/cover no-repeat;
+}
+.card:nth-child(6) > .card-inner > .card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://i.pinimg.com/originals/a2/78/12/a2781277d54f3fd21f7194860bf708be.jpg) center/cover no-repeat;
+}
+.card:nth-child(7) > .card-inner > .card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://i.pinimg.com/originals/6e/7c/48/6e7c481f7750f3f285ff3f58b87dd686.jpg) center/cover no-repeat;
+}
+.card-inner {
+  height: 100%;
+  max-width: 20em;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  width: 100%;
+}
+.card:hover .card-inner {
+  transform: rotateY(-180deg);
+}
+.card-front, .card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: grid;
+  height: 100%;
+  max-width: 20em;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.card-front {
+  background: linear-gradient(-8deg, #333, #000 5em, rgba(255, 0, 0, 0) 5em, rgba(255, 0, 0, 0)) no-repeat, url(https://armchairmogul.files.wordpress.com/2011/07/supes.jpg) center/cover no-repeat;
+  color: black;
+  grid-template-columns: 1fr 6.875em;
+  grid-template-rows: 1fr 3.125em;
+}
+.card-front:before {
+  border: 0.125em dotted #fff;
+  content: "";
+  height: 125%;
+  position: absolute;
+  top: -10%;
+  right: 8%;
+  width: 125%;
+}
+.card-front:after {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) center 1.5em/75% no-repeat, linear-gradient(-8deg, #003970, #0179ef 5.625em, rgba(1, 121, 239, 0) 5.625em, rgba(1, 121, 239, 0)) no-repeat;
+  content: "";
+  width: 5em;
+  height: 6.25em;
+  bottom: 0;
+  right: 0.625em;
+  position: absolute;
+}
+.card-back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/159363/NicePng_dc-comics-logo-png_832568.png) 0.75em 0.75em/20% no-repeat, linear-gradient(rgba(1, 121, 239, 0), rgba(1, 121, 239, 0) 23.25em, rgba(255, 255, 255, 0.85) 23.25em, rgba(255, 255, 255, 0.85)) no-repeat, linear-gradient(-90deg, #0179ef 5em, rgba(1, 121, 239, 0)) no-repeat, url(https://imgix.ranker.com/user_node_img/42/822905/original/david-finch-writers-photo-u4?w=650&q=50&fm=pjpg&fit=crop&crop=faces) center/cover no-repeat;
+  color: white;
+  grid-template-columns: 1fr 8em;
+  grid-template-rows: 1fr 12em 2em 5em;
+  transform: rotateY(180deg);
+}
+
+.hero-details_back {
+  background: linear-gradient(#000, #333);
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.hero-details_back p {
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1.4em;
+  padding: 0.75em;
+}
+.hero-name {
+  grid-row: 2/3;
+}
+.hero-name_front {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.hero-name_back {
+  font-size: 2em;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  padding: 0 0.25em;
+  text-align: right;
+  text-shadow: 0px 3px 1px #111;
+  text-transform: uppercase;
+}
+
+.alt-name_front {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 0.5em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.alt-details-list {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.alt-details_name, .alt-details_group {
+  font-size: 0.65em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  padding-left: 0.5em;
+  text-transform: uppercase;
+}
+.alt-details_name:before, .alt-details_group:before {
+  content: "name";
+  display: block;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1em;
+  text-transform: none;
+}
+.alt-details_name:before {
+  content: "Real Name";
+}
+.alt-details_group:before {
+  content: "Group Affiliation";
+}
