@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.scene {
+	background-attachment: fixed;
+	background-image: linear-gradient(
+											#111425,
+											#3751e0											
+										);
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.scene .moon:before {
+	background-attachment: fixed;
+	background-image: linear-gradient(
+											#111425,
+											#3751e0											
+										);
+	border-radius: 50%;
+	content: '';
+	height: 100%;
+	left: 15px;
+	position: absolute;
+	top: -15px;
+	width: 100%;
+}
+
+.scene .moon {
+	background-color: #ffffff;
+	border-radius: 50%;
+	height: 100px;
+	left: 400px;
+	position: absolute;
+	top: 100px;
+	width: 100px;
+	z-index: 1;
+}
+
+.scene .forest {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	transform: scale(1.2);
+	width: 100%;
+	z-index: 1;
+}
+
+.scene img[class^="cloud"] {
+	-webkit-animation-name: cloud;
+	        animation-name: cloud;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	transform: translateX(-100%) scale(1);
+	position: absolute;
+	z-index: 2;	
+}
+
+.scene .cloud1 {
+	-webkit-animation-duration: 50s;
+	        animation-duration: 50s;
+	left: 0;
+	max-width: 600px;
+	top: 0;
+}
+
+.scene .cloud2 {
+	-webkit-animation-duration: 35s;
+	        animation-duration: 35s;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+	left: 0;
+	max-width: 500px;
+	top: 0;
+}
+
+.scene .cloud3 {
+	-webkit-animation-duration: 80s;
+	        animation-duration: 80s;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+	left: 0;
+	max-width: 600px;
+	top: 0;
+}
+
+.scene .cloud4 {
+	-webkit-animation-duration: 70s;
+	        animation-duration: 70s;
+	-webkit-animation-delay: -20s;
+	        animation-delay: -20s;
+	left: 0;
+	max-width: 300px;
+	top: 200px;
+}
+
+.scene .cloud5 {
+	-webkit-animation-duration: 40s;
+	        animation-duration: 40s;
+	-webkit-animation-delay: -5s;
+	        animation-delay: -5s;
+	left: 0;
+	max-width: 500px;
+	top: 150px;
+}
+
+.scene .cloud6 {
+	-webkit-animation-duration: 30s;
+	        animation-duration: 30s;
+	-webkit-animation-delay: -10s;
+	        animation-delay: -10s;
+	left: 0;
+	max-width: 400px;
+	top: 75px;
+}
+
+.scene i {
+	-webkit-animation: animate linear infinite;
+	        animation: animate linear infinite;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+}
+
+@-webkit-keyframes animate {	
+	10%,
+	90% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
+@keyframes animate {	
+	10%,
+	90% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
+@-webkit-keyframes cloud {	
+	100% {
+		transform: translateX(400%) scale(1.5);
+	}
+}
+
+@keyframes cloud {	
+	100% {
+		transform: translateX(400%) scale(1.5);
+	}
+}
