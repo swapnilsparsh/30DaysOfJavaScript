@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Digital";
+  src: url("https://assets.codepen.io/127738/digital-7+%28mono%29.ttf") format("truetype");
+}
+.timer {
+  font-family: Digital, monospace;
+  font-size: min(max(14px, 7vw), 46px);
+  color: #d7213c;
+  border: 5px outset #8b8b8b;
+  background: black;
+  text-align: center;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 1.5vw;
+  left: 1.5vw;
+}
+
+.distance {
+  font-family: Digital, monospace;
+  font-size: min(max(14px, 7vw), 46px);
+  color: #d7213c;
+  border: 5px outset #8b8b8b;
+  background: black;
+  text-align: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 1.5vw;
+  left: 1.5vw;
+}
+
+.movement {
+  font-family: Digital, monospace;
+  font-size: min(max(14px, 7vw), 46px);
+  color: #d7213c;
+  border: 5px outset #8b8b8b;
+  background: black;
+  text-align: center;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 1.5vw;
+  right: 1.5vw;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(#f44336 20%,#58abc2 74%, #d7327a 20%);
+  filter: brightness(0.7);
+  transition: 0.4s ease-out;
+}
+.container.is-playing {
+  filter: brightness(1);
+}
+
+.info {
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background: white;
+  z-index: 19;
+}
+
+body {
+  margin: 0;
+}
+
+.game {
+  background: url(https://assets.codepen.io/127738/Squid_Game_Doll_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 0;
+  border-radius: 10px;
+}
+
+.webcam {
+  position: absolute;
+  top: 1.5vw;
+  right: 1.5vw;
+  width: 25%;
+}
+
+.ui {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 620px;
+  width: 90%;
+  background: black;
+  color: white;
+  z-index: 50;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 2px #00000059;
+  padding: 20px 60px;
+  max-height: 90vh;
+  overflow: auto;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: 0.3s ease-out;
+}
+.ui.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+}
+.ui svg {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  opacity: 0.15;
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+}
+.ui h1 {
+  font-size: 600;
+  font-size: 26px;
+}
+.ui .note {
+  font-size: 0.8em;
+}
+.ui p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.ui p + p {
+  margin-top: 10px;
+}
+
+.cta {
+  pointer-events: none;
+  background: white;
+  border-radius: 0;
+  border: none;
+  font: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.cta::before {
+  content: "Loading...";
+}
+.cta.is-ready {
+  pointer-events: unset;
+}
+.cta.is-ready::before {
+  content: "Start";
+}
+
+.win .cta::before,
+.dead .cta::before {
+  content: none;
+}
