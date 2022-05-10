@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	background-color: #111111;
+	font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+	background-color: #e91e63;
+	-webkit-clip-path: circle(800px at center center);
+	        clip-path: circle(800px at center center);
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.banner video {
+	height: 100%;
+	left: 0;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #111111;
+	margin-top: 200vh;
+	padding: 100px;
+	position: relative;
+}
+
+.container h2 {
+	color: #ffffff;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.container p {
+	color: #ffffff;
+	font-size: 1rem;
+}
