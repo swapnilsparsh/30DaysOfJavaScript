@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Converter</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 main">
+      <h4 class="text-center heading">Markdown Converterer</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 leftCol">
+      <p class="text-center stickLeft">Markdown</p>
+      <textarea id="textarea">
+# Heading
+=======
+
+## Sub-heading
+-----------
+ 
+### Another deeper heading
+ 
+Paragraphs 
+Words.
+
+Leave 2 spaces at the end of a line to do a  
+line break
+
+Text attributes *italic*, **bold**, 
+`monospace`, ~~strikethrough~~ .
+
+Alphabet list:
+
+  * A
+  * B
+  * C
+
+Numbered list:
+
+  1. one
+  2. two
+  3. three
+
+</textarea>
+    </div>
+    <div class="col-sm-6 rightCol">
+      <p class="text-center stickLeft">Formatted</p>
+      <div id="result"></div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://npmcdn.com/react@15.3.0/dist/react.min.js'></script>
+<script src='https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js'></script>
+<script src='https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

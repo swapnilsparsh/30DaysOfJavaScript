@@ -1,0 +1,64 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #666;
+}
+
+body {
+  background: rgb(192, 234, 229);
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.heading {
+  color: #12bee9;
+  line-height: 1.5;
+  margin: 10px;
+  font-family: "Rock Salt", cursive;
+  font-size: 30px;
+}
+
+#textarea {
+  resize: vertical;
+  width: 100%;
+  padding: 35px 15px 15px 15px;
+}
+
+#result {
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 35px 15px 15px 15px;
+}
+
+#textarea, #result {
+  background: #fff;
+  min-height: 60vh;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.container {
+  max-width: 800px;
+}
+
+.stickLeft {
+  font-size: 15px;
+  text-transform: uppercase;
+  border: solid 1px;
+  width: auto;
+  background: #fefefe;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  left: 25px;
+  color: #fff;
+  background: #037abc;
+  top: 5px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.rightCol, .leftCol {
+  position: relative;
+  margin: 20px auto;
+}
