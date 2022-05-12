@@ -24,7 +24,7 @@ Save your notes with Sticky Notes
 
 ## 📷 Screenshots
 
-![ss1]()
-![ss2]()
+![ss1](./img/stickynote.png)
+
 
 
