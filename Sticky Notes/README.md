@@ -5,7 +5,7 @@
 <h1 align="center"> Sticky Notes</h1>
 
 <div align="center">
-Save our notes with Sticky Notes
+Save your notes with Sticky Notes
 </div>
 
 <br />
@@ -20,7 +20,7 @@ Save our notes with Sticky Notes
 
 ## ⚡️  Introduction
 
-
+ Sticky Notes helps you to store text in local storage
 
 ## 📷 Screenshots
 
