@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="" height="80" src="">
+    <img alt="" height="80" src="./img/notes.png">
   </a>
 </p>
 <h1 align="center"> Sticky Notes</h1>
