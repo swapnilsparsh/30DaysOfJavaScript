@@ -30,29 +30,45 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   width: 90%;
   text-align: center;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center; 
+  flex-wrap: wrap;
+ 
 }
 
 h1 {
   color: #fff;
   margin-bottom: 20px;
 }
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 10vw);
-    grid-gap: 15px;
-  }
+#errorBox{
+  color: crimson;
+}
   
 .gallery img {
-    width: 100%;
-    height: 100%;
+    width: 18vw;
+    height: 18vh;
     object-fit: cover;
-  }
+  } 
+
+.inp-box{
+  text-transform: uppercase;
+  width: 250px;
+  height: 45px;
+  outline: none;
+  border: none;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: white;
+  transition: all 300ms ease;
+}
 .btn {
   text-transform: uppercase;
   width: 250px;
-  height: 35px;
+  height: 45px;
   outline: none;
   border: none;
   margin: 20px 0;
