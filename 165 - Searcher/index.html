@@ -2,35 +2,35 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Searcher</title>
-  <link href='https://fonts.googleapis.com/css?family=Arvo:700,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Searcher App</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<header class="container-fluid">
-  <div class="container text-center" id="searchBox">
-    <h1>Searcher</h1>
-    <div class="form col-xs-12">   
-        <input class="col-xs-9" id="searchBar" type="text" placeholder="search"/>
-        <span class="glyphicon glyphicon-search col-xs-1" data-toggle="tooltip" title="Search"></span>
-        <span class="glyphicon bar col-xs-1" id="submit"><b>|</b></span>
-        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><span class="glyphicon glyphicon-random col-xs-1"  data-toggle="tooltip" title="Random topic"></span></a>
-      </div>
+<div class='body-container'>
+  <div class='container'>
+    <div class='search-container'>
+      <input id='search-bar' type='text' placeholder='searcher' autofocus>
+      </input>
+      <i class='ion-close'></i>
     </div>
-  </div>  
-</header>
-<div id="mainBody" class="container text-center">
-  <ul id="results">
-  </ul>
+    <div class='button searchbutton'>
+      <i class='ion-search'></i>
+    </div>
+    <div class='button randombutton '>
+      <i class='ion-shuffle'>
+        </i>
+    </div>
+  </div>
 </div>
-<footer class="text-center">
-  
-</footer>
+<div class='cards'>
+</div>
+<i class='ion-load-c'/>
+</div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
