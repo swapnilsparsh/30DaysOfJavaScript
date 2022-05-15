@@ -3,19 +3,27 @@
   margin: auto;
   height: 100vh;
 }
-.container p {
-  font-size: 26px;
-  text-align: center;
-  padding: 18px;
-  font-weight: bold;
-  background-color: red;
-}
+
 button {
   width: 270px;
   height: 50px;
   background-color: black;
   color: white;
   font-size: 20px;
+  cursor: pointer;
+}
+.typeLine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container span{
+  margin: 10px;
+  font-size: larger;
+}
+.container input{
+  height: 40px;
+  padding-left: 10px;
 }
 #mydiv {
   width: 100%;
