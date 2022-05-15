@@ -1,0 +1,236 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+body {
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+
+.iphone-x {
+  position: relative;
+  margin: 40px auto;
+  width: 360px;
+  height: 780px;
+  background-image: linear-gradient(60deg, #3F436B 1%, #a1d9d6 100%);
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 11px #ccc, 0px 0px 5px 13px #fff, 0px 0px 0px 20px #ddd, 0px 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.iphone-x:before, .iphone-x:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.iphone-x:after {
+  bottom: 7px;
+  width: 140px;
+  height: 4px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+.iphone-x:before {
+  top: 0px;
+  width: 56%;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 0px 0px 40px 40px;
+}
+.iphone-x s,
+.iphone-x c,
+.iphone-x card,
+.iphone-x span,
+.iphone-x .bubbles,
+.iphone-x .taklbutton {
+  position: absolute;
+  display: block;
+  color: transparent;
+}
+.iphone-x s {
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 6px);
+  height: 8px;
+  width: 15%;
+  background-color: #101010;
+  border-radius: 8px;
+  box-shadow: inset 0px -3px 3px 0px rgba(255, 255, 255, 0.2);
+}
+.iphone-x c {
+  left: 10%;
+  top: 0px;
+  transform: translate(180px, 4px);
+  width: 12px;
+  height: 12px;
+  background-color: #101010;
+  border-radius: 12px;
+  box-shadow: inset 0px -3px 2px 0px rgba(255, 255, 255, 0.2);
+}
+.iphone-x c:after {
+  content: "";
+  position: absolute;
+  background-color: #2d4d76;
+  width: 6px;
+  height: 6px;
+  top: 2px;
+  left: 2px;
+  top: 3px;
+  left: 3px;
+  display: block;
+  border-radius: 4px;
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+}
+.iphone-x card {
+  top: 70px;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  width: 90%;
+  padding: 20px;
+  background-color: orange;
+  background-image: linear-gradient(60deg, DarkOrange 1%, orange 100%);
+  border-radius: 10px;
+  margin: 5%;
+  z-index: 100;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.iphone-x card .card-background {
+  position: absolute;
+  top: 30px;
+  left: 220px;
+  opacity: 0.2;
+  font-size: 68px;
+  color: #000;
+}
+.iphone-x card h1, .iphone-x card h3 {
+  display: flex;
+  padding: 2px;
+  margin: 0px;
+  text-align: left;
+}
+.iphone-x card h3 {
+  font-weight: 100;
+  font-size: 0.8em;
+  align-items: center;
+}
+.iphone-x card h1 {
+  display: inline-block;
+}
+.iphone-x card .min_payment {
+  display: inline;
+}
+.iphone-x card i {
+  padding: 0;
+  margin: 0;
+}
+
+/* Bubble  */
+.bubbles {
+  bottom: 90px;
+  margin: auto;
+  width: 100%;
+  z-index: 10;
+  /* speech bubble 13 */
+  /* speech bubble 14 */
+}
+.bubbles .box3 {
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: #00bfb6;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-family: arial;
+  position: relative;
+}
+.bubbles .sb13:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #00bfb6;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #00bfb6;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 0px;
+}
+.bubbles .sb14:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #00bfb6;
+  border-top: 15px solid #00bfb6;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 0px;
+}
+
+/* Speech Icon */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.taklbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 6px);
+}
+
+.speech-to-text {
+  position: relative;
+}
+.speech-to-text .border {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.speech-to-text svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0.5;
+}
+.speech-to-text:hover .border {
+  background-color: rgba(79, 192, 232, 0.2);
+}
+.speech-to-text .mic {
+  display: block;
+}
+.speech-to-text .stop {
+  display: none;
+}
+.speech-to-text.listen .mic {
+  display: none;
+}
+.speech-to-text.listen .stop {
+  display: block;
+}
+.speech-to-text.listen .border {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-color: #fff;
+  animation: spin 1s infinite linear;
+}
