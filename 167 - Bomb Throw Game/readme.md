@@ -1,5 +1,5 @@
 # Bomb Throw Game
 
-You have 10 Second to Align the distance and the angle and it will automaticall throe the bomb
+You have 10 Second to Align the distance and the angle and it will automatically throw the bomb
 
-![](./preview.mp4)
+[video](preview.mp4)
