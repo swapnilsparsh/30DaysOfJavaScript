@@ -1,77 +1,88 @@
-$(document).ready(function(){
-  var keyword = "";
-  var resultArea = $("#results");
-  var searchBar = $("#searchBar");
-  var searchButton = $(".glyphicon-search");
-  var searchUrl = "https://en.wikipedia.org/w/api.php";
-  var displayResults = function(){
-    $.ajax({
-      url: searchUrl,
-      dataType: 'jsonp',
-      data: {
-        action: 'query',
-        format: 'json',
-        generator: 'search',
-          gsrsearch: keyword,
-          gsrnamespace: 0,
-          gsrlimit: 10,
-        prop:'extracts|pageimages',
-          exchars: 200,
-          exlimit: 'max',
-          explaintext: true,
-          exintro: true,
-          piprop: 'thumbnail',
-          pilimit: 'max',
-          pithumbsize: 200
-      },
-      success: function(json){
-        var results = json.query.pages;
-        $.map(results, function(result){
-          var link = "http://en.wikipedia.org/?curid="+result.pageid;
-          var elem1 = $('<a>');
-          elem1.attr("href",link);
-          elem1.attr("target","_blank");
-          var elem2 = $('<li>');
-          elem2.append($('<h3>').text(result.title));
-          //if(result.thumbnail) elem.append($('<img>').attr('width',150).attr('src',result.thumbnail.source));
-          elem2.append($('<p>').text(result.extract));
-          elem1.append(elem2);
-          resultArea.append(elem1);
-        });
-        $("footer").append("<p>----x--------x----</p>");
-      }
-    });   
-  };
- /* 
-  searchBar.autocomplete({
-        source: function (request, response) {
-            $.ajax({
-                url: searchUrl,
-                dataType: 'jsonp',
-                data: {
-                    'action': "opensearch",
-                    'format': "json",
-                    'search': request.term
-                },
-                success: function (data) {
-                    response(data[1]);
-                }
-            });
-        }
-    });
-  */
-  searchButton.click(function(){
-    keyword = searchBar.val();
-    resultArea.empty();
-    $("footer").empty();
-    displayResults(); 
-    $("#searchBox").animate({'padding-top':"0"}, 600);
-    $(".container-fluid").animate({height:"30vh"}, 600);
-  });
-  
-  searchBar.keypress(function(e){
-      if(e.keyCode==13)
-      $(searchButton).click();
-  });
 
+var createCards= function(arr){
+  for(var i in arr){
+    $(".cards").append(
+      '<a href=\'https://en.wikipedia.org/?\
+      curid=' + arr[i].pageid+ '\' target="_blank">\
+       <div class=\'card-container\'>\
+       <div class=\'card-text\'>\
+       <span class=\'card-title\'>'+arr[i].title+'\
+       </span>'+ arr[i].extract+ '</div></div></a>'
+    )
+  }
+}
+
+//function for finding the the wikipedia content
+var findData= function(){
+  //removes keyboard on mobile
+  $("#search-bar").blur();
+  var url='https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&generator=search&exsentences=1&exintro=1&explaintext=1&gsrnamespace=0&exlimit=max&gsrwhat=text&gsrlimit=10&gsrsearch=';
+  var term;
+  var term= $("#search-bar").val();
+  if(!term=='' &&
+     !$('.cards').html==''){
+    $(".container").css("margin-top", "4em");
+    $(".cards").html("");
+    $(".ion-load-c").show();
+  }
+  
+  url+=term;
+  console.log(url);
+  
+  $.ajax( {
+    url: url,
+    dataType: 'jsonp',
+    type: 'GET',
+    headers: { 'Wikipedia-Search-Result-App': '1.0' },
+    success: function(data) {
+      $(".ion-load-c").hide();
+      if(term!='' && jQuery.isEmptyObject(data.query))
+        $(".cards").html(
+          "<div class=card-error>\
+          <div class=card-text>\
+        No results found</div></div>");
+      createCards(data.query.pages)      
+    },
+    error:function(e){
+      console.log(e);
+      $(".cards").html('Oh no! An error occured, try again');
+    } 
+    } );
+}
+
+//random button
+$(".randombutton").click(function(){
+  window.open(
+    "https://en.wikipedia.org/wiki/Special:Random"
+  );
+});
+
+//erase everything
+$(".ion-close").click(function(){
+  $("#search-bar").val("");
+  $("#search-bar").focus();
+});
+
+$(document).ready(function(){
+  $("body").on("keydown", function(e){
+    var code=e.which;
+    if(e.which!=13 && (e.which>40 || e.which<37)){
+      //bring focus back to 
+      //search on keypresses
+      $("#search-bar").focus();
+    }
+  });
+});
+
+
+
+//find data and display cards on
+//clicking button or pressing 
+//enter in the search bar
+$(".searchbutton").click(findData);
+$("#search-bar").on('keyup', function(e){
+  console.log(e.which);
+  if(e.which=='13'){
+    findData();
+  }
 });
