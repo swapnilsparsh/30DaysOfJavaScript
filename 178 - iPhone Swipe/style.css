@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	align-items: center;
+	background-color: #000000;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel {
+	height: 600px;
+	margin-top: 100px;
+	position: relative;
+	perspective: 1500px;
+}
+
+.carousel .carousel-item {
+	cursor: -webkit-grab;
+	cursor: grab;
+	width: 250px;
+}
+
+.carousel .carousel-item:active {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+.carousel .carousel-item img {
+	max-width: 235px;
+	height: 340px;
+	transform: translateY(-70px);
+}
+
+.mobile {
+	left: 50%;
+	max-width: 260px;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
