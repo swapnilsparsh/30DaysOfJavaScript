@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: rgb(0, 147, 233);
+    background: linear-gradient(160deg, rgba(0, 147, 233, 1) 0%, rgba(128, 208, 199, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topic {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.game {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgb(1, 54, 85);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
+    border: 2px solid #FFE32C;
+}
+
+.grid button {
+    background-color: rgb(153, 207, 201);
+    color: rgb(1, 54, 85);
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid rgb(1, 54, 85);
+    outline: none;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 80px;
+    height: 35px;
+    background-color: #FFE32C;
+    color: rgb(1, 54, 85);
+    outline: none;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    color: #FFE32C;
+    background-color: rgb(1, 54, 85);
+    border: 2px solid #FFE32C;
+}
+
+.footer span {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    color: #FFE32C;
+    font-weight: bold;
+    margin: auto;
+}
+
+.message {
+    color: rgb(1, 54, 85);
+    height: 80px;
+}
+
