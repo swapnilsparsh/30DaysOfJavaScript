@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cabin', sans-serif;
+  margin: 0;
+  background: #1abc9c;
+}
+
+.container {
+  max-width: 950px;
+  height: 100%;
+  transition: all 1s ease;
+  margin: 0 auto;
+  padding: 80px;
+  background: yellowgreen;
+    box-shadow: inset 0px 0px 40px 40px #1abc9c; 
+}
+
+.container h1,
+.container h4,
+.container .selectWrapper {
+    text-align: center;
+}
+.container h4 {
+  color: brown;
+}
+
+/* Custom Select Styles*/
+label.custom-select-wrapper {
+   position: relative;
+   font-size: 14px;
+   display: inline-block;
+  border: 1px solid white;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+label span {
+  padding: 20px;
+}
+.custom-select-wrapper select {
+  width: 110px;
+  padding: 8px 8px 8px 20px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  border-radius: 0;
+  margin: 0;
+  outline:none; /* remove focus ring from Webkit */
+  line-height: 1.2;
+  background: white;   
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 10px;
+}
+
+.custom-select-wrapper select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+
+.custom-select-wrapper:after {
+  content: "▾";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 8px;
+  line-height: 22px;
+  background: white;
+  color: lightgrey;
+  pointer-events:none;
+  border: 1px solid lightgrey;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.dayName {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+#checkDay {
+  display: block;
+  background: #e67e22;
+  color: white;
+  width: 240px;
+  padding: 15px;
+  text-decoration: none;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
