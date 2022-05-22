@@ -1,0 +1,1864 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+/* Mixins */
+.ginger {
+  background: linear-gradient(to right, #F3E1BF 0%, #F3E1BF 50%, #FDE3A9 51%, #FDE3A9 100%);
+  box-shadow: inset 0px -5px #d8a53b, 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lighter {
+  background: linear-gradient(to right, #eec78c 0%, #eec78c 50%, #f9f0dc 51%, #f9f0dc 100%);
+  box-shadow: inset 0px -5px #d8a53b, 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.light {
+  background: linear-gradient(to right, #d19f25 0%, #d19f25 50%, #eec78c 51%, #eec78c 100%);
+  box-shadow: inset 0px -5px #d3a31b, 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.latino {
+  background: linear-gradient(to right, #d57828 0%, #d57828 50%, #d19f24 51%, #d19f24 100%);
+  box-shadow: inset 0px -5px #d3a31b, 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark {
+  background: linear-gradient(to right, #5f3d21 0%, #5f3d21 50%, #674628 51%, #674628 100%);
+  box-shadow: inset 0px -5px #481410, 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.darker {
+  background: linear-gradient(to right, #551611 0%, #551611 50%, #98171d 51%, #98171d 100%);
+  box-shadow: inset 0px -5px #481410, 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: cornflowerblue;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 10vmin auto;
+  width: 60vmin;
+  height: 60vmin;
+  border-radius: 50%;
+  border: 15px solid white;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.person {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.neck {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 35vmin auto;
+  width: 7.5vmin;
+  height: 20vmin;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: none;
+  z-index: 0;
+}
+
+.torso {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 52vmin auto;
+  width: 30vmin;
+  height: 6.6666666667vmin;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: none;
+  z-index: 1;
+}
+
+.ears-1.earGinger {
+  background-color: #F3E1BF;
+}
+
+.ears-2.earGinger {
+  background-color: #FDE3A9;
+}
+
+.ears-1.earLighter {
+  background-color: #eec78c;
+}
+
+.ears-2.earLighter {
+  background-color: #f9f0dc;
+}
+
+.ears-1.earLight {
+  background-color: #d19f25;
+}
+
+.ears-2.earLight {
+  background-color: #eec78c;
+}
+
+.ears-1.earLatino {
+  background-color: #d57828;
+}
+
+.ears-2.earLatino {
+  background-color: #d19f24;
+}
+
+.ears-1.earDark {
+  background-color: #5f3d21;
+}
+
+.ears-2.earDark {
+  background-color: #674628;
+}
+
+.ears-1.earDarker {
+  background-color: #551611;
+}
+
+.ears-2.earDarker {
+  background-color: #98171d;
+}
+
+.face-1 {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 10vmin auto;
+  width: 30vmin;
+  height: 40vmin;
+  z-index: 1;
+}
+
+.face-1 {
+  border-radius: 30%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.face-1 .ears-1,
+.face-1 .ears-2 {
+  position: absolute;
+  top: 40%;
+  position: absolute;
+  width: 7.5vmin;
+  height: 8vmin;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.face-1 .ears-1 {
+  top: 40%;
+  left: -10%;
+}
+
+.face-1 .ears-2 {
+  top: 40%;
+  right: -10%;
+}
+
+.face-2 {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 10vmin auto;
+  width: 30vmin;
+  height: 40vmin;
+}
+
+.face-2 {
+  border-radius: 30%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+.face-2 .ears-1,
+.face-2 .ears-2 {
+  position: absolute;
+  top: 40%;
+  position: absolute;
+  width: 7.5vmin;
+  height: 8vmin;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.face-2 .ears-1 {
+  top: 40%;
+  left: -10%;
+}
+
+.face-2 .ears-2 {
+  top: 40%;
+  right: -10%;
+}
+
+.face-3 {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 10vmin auto;
+  width: 30vmin;
+  height: 40vmin;
+}
+
+.face-3 {
+  border-radius: 30%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.face-3 .ears-1,
+.face-3 .ears-2 {
+  position: absolute;
+  top: 40%;
+  position: absolute;
+  width: 7.5vmin;
+  height: 8vmin;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.face-3 .ears-1 {
+  top: 40%;
+  left: -10%;
+}
+
+.face-3 .ears-2 {
+  top: 40%;
+  right: -10%;
+}
+
+.hair-1 {
+  opacity: 0;
+}
+
+.beard-1.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-1.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-1.gray:before,
+.beard-1.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-1.gray:after,
+.beard-1.gray:after {
+  background-color: #59595b;
+}
+
+.beard-1.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-1.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-1.black:before,
+.beard-1.black:before {
+  background-color: #021728;
+}
+
+.hair-1.black:after,
+.beard-1.black:after {
+  background-color: #224156;
+}
+
+.beard-1.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-1.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-1.orange:before,
+.beard-1.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-1.orange:after,
+.beard-1.orange:after {
+  background-color: #d47727;
+}
+
+.beard-1.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-1.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-1.yellow:before,
+.beard-1.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-1.yellow:after,
+.beard-1.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-1.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-1.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-1.brown:before,
+.beard-1.brown:before {
+  background-color: #825734;
+}
+
+.hair-1.brown:after,
+.beard-1.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-2 {
+  opacity: 0;
+}
+
+.beard-2.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-2.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-2.gray:before,
+.beard-2.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-2.gray:after,
+.beard-2.gray:after {
+  background-color: #59595b;
+}
+
+.beard-2.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-2.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-2.black:before,
+.beard-2.black:before {
+  background-color: #021728;
+}
+
+.hair-2.black:after,
+.beard-2.black:after {
+  background-color: #224156;
+}
+
+.beard-2.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-2.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-2.orange:before,
+.beard-2.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-2.orange:after,
+.beard-2.orange:after {
+  background-color: #d47727;
+}
+
+.beard-2.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-2.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-2.yellow:before,
+.beard-2.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-2.yellow:after,
+.beard-2.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-2.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-2.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-2.brown:before,
+.beard-2.brown:before {
+  background-color: #825734;
+}
+
+.hair-2.brown:after,
+.beard-2.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-3 {
+  opacity: 0;
+}
+
+.beard-3.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-3.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-3.gray:before,
+.beard-3.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-3.gray:after,
+.beard-3.gray:after {
+  background-color: #59595b;
+}
+
+.beard-3.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-3.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-3.black:before,
+.beard-3.black:before {
+  background-color: #021728;
+}
+
+.hair-3.black:after,
+.beard-3.black:after {
+  background-color: #224156;
+}
+
+.beard-3.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-3.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-3.orange:before,
+.beard-3.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-3.orange:after,
+.beard-3.orange:after {
+  background-color: #d47727;
+}
+
+.beard-3.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-3.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-3.yellow:before,
+.beard-3.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-3.yellow:after,
+.beard-3.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-3.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-3.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-3.brown:before,
+.beard-3.brown:before {
+  background-color: #825734;
+}
+
+.hair-3.brown:after,
+.beard-3.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-4 {
+  opacity: 0;
+}
+
+.beard-4.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-4.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-4.gray:before,
+.beard-4.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-4.gray:after,
+.beard-4.gray:after {
+  background-color: #59595b;
+}
+
+.beard-4.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-4.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-4.black:before,
+.beard-4.black:before {
+  background-color: #021728;
+}
+
+.hair-4.black:after,
+.beard-4.black:after {
+  background-color: #224156;
+}
+
+.beard-4.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-4.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-4.orange:before,
+.beard-4.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-4.orange:after,
+.beard-4.orange:after {
+  background-color: #d47727;
+}
+
+.beard-4.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-4.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-4.yellow:before,
+.beard-4.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-4.yellow:after,
+.beard-4.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-4.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-4.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-4.brown:before,
+.beard-4.brown:before {
+  background-color: #825734;
+}
+
+.hair-4.brown:after,
+.beard-4.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-5 {
+  opacity: 0;
+}
+
+.beard-5.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-5.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-5.gray:before,
+.beard-5.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-5.gray:after,
+.beard-5.gray:after {
+  background-color: #59595b;
+}
+
+.beard-5.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-5.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-5.black:before,
+.beard-5.black:before {
+  background-color: #021728;
+}
+
+.hair-5.black:after,
+.beard-5.black:after {
+  background-color: #224156;
+}
+
+.beard-5.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-5.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-5.orange:before,
+.beard-5.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-5.orange:after,
+.beard-5.orange:after {
+  background-color: #d47727;
+}
+
+.beard-5.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-5.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-5.yellow:before,
+.beard-5.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-5.yellow:after,
+.beard-5.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-5.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-5.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-5.brown:before,
+.beard-5.brown:before {
+  background-color: #825734;
+}
+
+.hair-5.brown:after,
+.beard-5.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-6 {
+  opacity: 0;
+}
+
+.beard-6.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-6.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-6.gray:before,
+.beard-6.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-6.gray:after,
+.beard-6.gray:after {
+  background-color: #59595b;
+}
+
+.beard-6.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-6.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-6.black:before,
+.beard-6.black:before {
+  background-color: #021728;
+}
+
+.hair-6.black:after,
+.beard-6.black:after {
+  background-color: #224156;
+}
+
+.beard-6.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-6.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-6.orange:before,
+.beard-6.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-6.orange:after,
+.beard-6.orange:after {
+  background-color: #d47727;
+}
+
+.beard-6.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-6.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-6.yellow:before,
+.beard-6.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-6.yellow:after,
+.beard-6.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-6.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-6.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-6.brown:before,
+.beard-6.brown:before {
+  background-color: #825734;
+}
+
+.hair-6.brown:after,
+.beard-6.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-7 {
+  opacity: 0;
+}
+
+.beard-7.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-7.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-7.gray:before,
+.beard-7.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-7.gray:after,
+.beard-7.gray:after {
+  background-color: #59595b;
+}
+
+.beard-7.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-7.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-7.black:before,
+.beard-7.black:before {
+  background-color: #021728;
+}
+
+.hair-7.black:after,
+.beard-7.black:after {
+  background-color: #224156;
+}
+
+.beard-7.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-7.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-7.orange:before,
+.beard-7.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-7.orange:after,
+.beard-7.orange:after {
+  background-color: #d47727;
+}
+
+.beard-7.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-7.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-7.yellow:before,
+.beard-7.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-7.yellow:after,
+.beard-7.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-7.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-7.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-7.brown:before,
+.beard-7.brown:before {
+  background-color: #825734;
+}
+
+.hair-7.brown:after,
+.beard-7.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-8 {
+  opacity: 0;
+}
+
+.beard-8.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-8.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-8.gray:before,
+.beard-8.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-8.gray:after,
+.beard-8.gray:after {
+  background-color: #59595b;
+}
+
+.beard-8.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-8.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-8.black:before,
+.beard-8.black:before {
+  background-color: #021728;
+}
+
+.hair-8.black:after,
+.beard-8.black:after {
+  background-color: #224156;
+}
+
+.beard-8.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-8.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-8.orange:before,
+.beard-8.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-8.orange:after,
+.beard-8.orange:after {
+  background-color: #d47727;
+}
+
+.beard-8.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-8.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-8.yellow:before,
+.beard-8.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-8.yellow:after,
+.beard-8.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-8.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-8.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-8.brown:before,
+.beard-8.brown:before {
+  background-color: #825734;
+}
+
+.hair-8.brown:after,
+.beard-8.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-9 {
+  opacity: 0;
+}
+
+.beard-9.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-9.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-9.gray:before,
+.beard-9.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-9.gray:after,
+.beard-9.gray:after {
+  background-color: #59595b;
+}
+
+.beard-9.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-9.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-9.black:before,
+.beard-9.black:before {
+  background-color: #021728;
+}
+
+.hair-9.black:after,
+.beard-9.black:after {
+  background-color: #224156;
+}
+
+.beard-9.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-9.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-9.orange:before,
+.beard-9.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-9.orange:after,
+.beard-9.orange:after {
+  background-color: #d47727;
+}
+
+.beard-9.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-9.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-9.yellow:before,
+.beard-9.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-9.yellow:after,
+.beard-9.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-9.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-9.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-9.brown:before,
+.beard-9.brown:before {
+  background-color: #825734;
+}
+
+.hair-9.brown:after,
+.beard-9.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-10 {
+  opacity: 0;
+}
+
+.beard-10.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-10.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-10.gray:before,
+.beard-10.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-10.gray:after,
+.beard-10.gray:after {
+  background-color: #59595b;
+}
+
+.beard-10.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-10.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-10.black:before,
+.beard-10.black:before {
+  background-color: #021728;
+}
+
+.hair-10.black:after,
+.beard-10.black:after {
+  background-color: #224156;
+}
+
+.beard-10.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-10.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-10.orange:before,
+.beard-10.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-10.orange:after,
+.beard-10.orange:after {
+  background-color: #d47727;
+}
+
+.beard-10.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-10.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-10.yellow:before,
+.beard-10.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-10.yellow:after,
+.beard-10.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-10.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-10.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-10.brown:before,
+.beard-10.brown:before {
+  background-color: #825734;
+}
+
+.hair-10.brown:after,
+.beard-10.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-11 {
+  opacity: 0;
+}
+
+.beard-11.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-11.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-11.gray:before,
+.beard-11.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-11.gray:after,
+.beard-11.gray:after {
+  background-color: #59595b;
+}
+
+.beard-11.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-11.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-11.black:before,
+.beard-11.black:before {
+  background-color: #021728;
+}
+
+.hair-11.black:after,
+.beard-11.black:after {
+  background-color: #224156;
+}
+
+.beard-11.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-11.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-11.orange:before,
+.beard-11.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-11.orange:after,
+.beard-11.orange:after {
+  background-color: #d47727;
+}
+
+.beard-11.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-11.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-11.yellow:before,
+.beard-11.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-11.yellow:after,
+.beard-11.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-11.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-11.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-11.brown:before,
+.beard-11.brown:before {
+  background-color: #825734;
+}
+
+.hair-11.brown:after,
+.beard-11.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-12 {
+  opacity: 0;
+}
+
+.beard-12.gray,
+.hair-back-short.gray,
+.hair-back-medium.gray,
+.hair-back-large.gray,
+.hair-12.gray {
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+}
+
+.hair-12.gray:before,
+.beard-12.gray:before {
+  background-color: #221e1f;
+}
+
+.hair-12.gray:after,
+.beard-12.gray:after {
+  background-color: #59595b;
+}
+
+.beard-12.black,
+.hair-back-short.black,
+.hair-back-medium.black,
+.hair-back-large.black,
+.hair-12.black {
+  background: linear-gradient(to right, #021728 0%, #021728 50%, #224156 51%, #224156 100%);
+}
+
+.hair-12.black:before,
+.beard-12.black:before {
+  background-color: #021728;
+}
+
+.hair-12.black:after,
+.beard-12.black:after {
+  background-color: #224156;
+}
+
+.beard-12.orange,
+.hair-back-short.orange,
+.hair-back-medium.orange,
+.hair-back-large.orange,
+.hair-12.orange {
+  background: linear-gradient(to right, #c0381e 0%, #c0381e 50%, #d47727 51%, #d47727 100%);
+}
+
+.hair-12.orange:before,
+.beard-12.orange:before {
+  background-color: #c0381e;
+}
+
+.hair-12.orange:after,
+.beard-12.orange:after {
+  background-color: #d47727;
+}
+
+.beard-12.yellow,
+.hair-back-short.yellow,
+.hair-back-medium.yellow,
+.hair-back-large.yellow,
+.hair-12.yellow {
+  background: linear-gradient(to right, #c5912c 0%, #c5912c 50%, #d49d16 51%, #d49d16 100%);
+}
+
+.hair-12.yellow:before,
+.beard-12.yellow:before {
+  background-color: #c5912c;
+}
+
+.hair-12.yellow:after,
+.beard-12.yellow:after {
+  background-color: #d49d16;
+}
+
+.beard-12.brown,
+.hair-back-short.brown,
+.hair-back-medium.brown,
+.hair-back-large.brown,
+.hair-12.brown {
+  background: linear-gradient(to right, #825734 0%, #825734 50%, #8c6238 51%, #8c6238 100%);
+}
+
+.hair-12.brown:before,
+.beard-12.brown:before {
+  background-color: #825734;
+}
+
+.hair-12.brown:after,
+.beard-12.brown:after {
+  background-color: #8c6238;
+}
+
+.hair-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5vmin auto;
+  width: 30vmin;
+  height: calc(100% - 40vmin);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hair-1::before,
+.hair-1:after {
+  top: 45%;
+  width: 30%;
+  height: 100%;
+  border-radius: 50%/50% 50% 20% 20%;
+}
+
+.hair-1:before {
+  left: -5%;
+}
+
+.hair-1:after {
+  right: -5%;
+}
+
+.hair-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5vmin auto;
+  width: 30vmin;
+  height: calc(100% - 40vmin);
+  border-radius: 50%;
+  background: linear-gradient(to right, #221e1f 0%, #221e1f 50%, #59595b 51%, #59595b 100%);
+  z-index: 2;
+}
+
+.hair-2::before,
+.hair-2:after {
+  top: 45%;
+  width: 10%;
+  height: 100%;
+  border-radius: 50%/50% 50% 20% 20%;
+}
+
+.hair-2::before {
+  left: -3%;
+}
+
+.hair-2:after {
+  right: -3%;
+}
+
+.hair-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 7vmin auto;
+  width: 30vmin;
+  height: calc(100% - 40vmin);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hair-3::before,
+.hair-3:after {
+  top: 45%;
+  width: 5%;
+  height: 100%;
+  border-radius: 50%/50% 50% 20% 20%;
+}
+
+.hair-3::before {
+  left: -2%;
+}
+
+.hair-3:after {
+  right: -2%;
+}
+
+.hair-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5vmin auto;
+  width: 100%;
+  height: calc(100% - 40vmin);
+  border-radius: 50%;
+  z-index: 2;
+  background: transparent !important;
+}
+
+.hair-4:before,
+.hair-4:after {
+  top: 55%;
+  width: 17vmin;
+  height: 60%;
+  border-radius: 50%/50% 50% 40% 20%;
+}
+
+.hair-4:before {
+  left: 10%;
+  transform: rotate(-80deg);
+}
+
+.hair-4:after {
+  right: 10%;
+  transform: rotate(80deg);
+}
+
+.hair-5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 7vmin auto;
+  width: 30vmin;
+  height: calc(100% - 50vmin);
+  border-radius: 50%/100% 100% 50% 50%;
+  z-index: 2;
+}
+
+.hair-5:before,
+.hair-5:after {
+  top: 10%;
+  width: 20vmin;
+  height: 10vmin;
+  border-radius: 50%/50% 50% 40% 20%;
+}
+
+.hair-5:before {
+  left: -5%;
+}
+
+.hair-5:after {
+  width: 16vmin;
+  border-radius: 50%/0% 50% 50% 0%;
+  right: -3.5%;
+}
+
+.hair-6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -10vmin auto;
+  width: 30vmin;
+  height: calc(100% - 20vmin);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hair-6:before,
+.hair-6:after {
+  top: 55%;
+  width: 15%;
+  height: 50%;
+  border-radius: 50%/50% 50% 40% 20%;
+}
+
+.hair-6:before {
+  left: -5%;
+}
+
+.hair-6:after {
+  right: -3%;
+}
+
+.hair-7 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 8vmin auto;
+  width: calc(100% - 27vmin);
+  height: calc(100% - 50vmin);
+  border-radius: 50%/100% 100% 0 0;
+  z-index: 2;
+}
+
+.hair-7:before,
+.hair-7:after {
+  top: 80%;
+  width: 15%;
+  height: 90%;
+}
+
+.hair-7:before {
+  left: 35.7%;
+  border-radius: 50%/50% 0% 0% 20%;
+}
+
+.hair-7:after {
+  right: 34.6%;
+  border-radius: 50%/0% 50% 50% 0%;
+}
+
+.hair-back-short {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 6vmin auto;
+  top: 0%;
+  left: 0%;
+  width: 75%;
+  height: 60%;
+  border-radius: 50%/100% 100% 20% 20%;
+}
+
+.hair-back-medium {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 6vmin auto;
+  top: 0%;
+  left: 0%;
+  width: 65%;
+  height: 80%;
+  border-radius: 50%/100% 100% 20% 20%;
+  transform-origin: top 50%;
+  transform: rotate(10deg);
+  z-index: -1;
+}
+
+.hair-back-large {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0vmin auto;
+  top: 0%;
+  left: 0%;
+  width: 75%;
+  height: 100%;
+  border-radius: 50%/100% 100% 50% 50%;
+  transform-origin: top 50%;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+
+.hair-8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 2vmin auto;
+  width: 56%;
+  height: calc(100% - 40vmin);
+  border-radius: 50%/100% 100% 0 0;
+  z-index: 2;
+}
+
+.hair-8:before,
+.hair-8:after {
+  top: 90%;
+  width: 15%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+.hair-8:before {
+  left: -2%;
+}
+
+.hair-8:after {
+  right: -2%;
+}
+
+.hair-8 .back {
+  position: absolute;
+  width: 100%;
+  height: 50vmin;
+}
+
+.hair-9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5vmin auto;
+  width: 56%;
+  height: calc(100% - 35vmin);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hair-9:before,
+.hair-9:after {
+  top: 50%;
+  width: 10%;
+  height: 70%;
+  border-radius: 50%/50% 50% 10% 10%;
+}
+
+.hair-9:before {
+  left: -2%;
+}
+
+.hair-9:after {
+  right: -2%;
+}
+
+.hair-10 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 8vmin auto;
+  width: 50%;
+  height: calc(100% - 50vmin);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hair-10:before,
+.hair-10:after {
+  top: -5%;
+  width: 65%;
+  height: 15vmin;
+  border-radius: 50%;
+}
+
+.hair-10:before {
+  left: -10%;
+  border-bottom-left-radius: 10%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 50%;
+  transform: rotate(-15deg);
+}
+
+.hair-10:after {
+  right: -15%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.hair-11 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5vmin auto;
+  width: 30vmin;
+  height: calc(100% - 40vmin);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hair-11:before {
+  left: -5%;
+  top: 15%;
+  width: 16vmin;
+  height: 15vmin;
+  border-radius: 50%/50% 50% 50% 0;
+}
+
+.hair-11:after {
+  top: 23%;
+  right: -5%;
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%/50% 50% 30% 0;
+  transform: rotate(20deg);
+}
+
+.beard-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 32vmin auto;
+  width: 10%;
+  height: 3vmin;
+  border-radius: 50%/10% 10% 100% 100%;
+}
+
+.beard-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 32vmin auto;
+  width: 10%;
+  height: 3vmin;
+  border-radius: 50%/10% 10% 100% 100%;
+  z-index: 2;
+}
+
+.beard-2:before {
+  top: -4vmin;
+  left: -5.4vmin;
+  width: 7vmin;
+  height: 5vmin;
+  border-radius: 50%/50% 50% 50% 0;
+  z-index: 2;
+}
+
+.beard-2:after {
+  top: -4vmin;
+  right: -5.5vmin;
+  width: 7vmin;
+  height: 5vmin;
+  border-radius: 50%/50% 50% 0% 50%;
+  z-index: 2;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 80vmin auto;
+  background-color: transparent;
+  border: 5px solid white;
+  width: 60vmin;
+  height: 10vmin;
+  z-index: 999;
+  text-align: center;
+  line-height: 8vmin;
+  font-size: 2em;
+  background-color: white;
+  color: cornflowerblue;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  border-radius: 25px;
+  font-family: "Merriweather", serif;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
