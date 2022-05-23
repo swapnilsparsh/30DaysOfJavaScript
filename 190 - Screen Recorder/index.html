@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Screen Recorder</title>
+	
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg-gray-800 text-white">
+	<header class="bg-gray-900">
+		<div class="container mx-auto">
+			<div class="flex justify-center items-center py-4">
+				<h1 class="text-2xl font-bold uppercase">Screen Recorder</h1>
+			</div>
+		</div>
+	</header>
+
+	<main class="overflow-hidden">
+		<div class="container mx-auto py-8 px-4">
+			<h2 class="text-xl text-gray-500 uppercase font-light mb-4">
+				Video recorder
+			</h2>
+
+			<video src="" autplay class="video-feedback bg-black w-full h-auto mb-4"></video>
+
+			<div class="flex flex-wrap -mx-4 mb-8">
+				<button class="start-recording mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50">
+					Record Screen
+				</button>
+				<button class="stop-recording mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50" disabled>
+					Stop Recording
+				</button>
+			</div>
+
+			<div class="recorded-video-wrap hidden">
+				<h2 class="text-xl text-gray-500 uppercase font-light mb-4">
+					Recorded video
+				</h2>
+
+				<video src="" class="recorded-video bg-black w-full h-auto mb-8"></video>
+				<div class="flex flex-wrap -mx-4">
+					<a class="download-video text-center mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50" disabled>
+						Download
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="./script.js"></script>
+</body>
+</html>
