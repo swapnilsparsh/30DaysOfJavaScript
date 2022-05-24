@@ -1,0 +1,210 @@
+html, body  {
+  margin: 0;
+  padding: 0;
+
+}
+.hidden {
+  display: none;
+}
+body {
+  background-color: rgba(76 137 153 / 66%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  color: #666666;
+}
+
+p, h1, h2, h3, h4, h5, h6, caption, text, font, li, ul  {
+  color: white;
+}
+#wrap  {
+  position: relative;
+  width: 760px;
+  margin: auto;
+  overflow: hidden;
+}
+#header {
+  height: 60px;
+  width: auto;
+  background: #db6d16
+    url(VexIMG/header.png);
+}
+#navigation  {
+  width: 760px;
+  height: 35px;
+  position: absolute;
+  border-bottom: 2px solid #000000;
+  background: red;
+  padding: 0px;
+}
+#navigation .padding  {
+  padding: 2px;
+}
+#navigation .navlinks  {
+  position: absolute;
+  top: 1px; left: 0px;
+}
+#navigation .navlinks ul  {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  list-style-type: none;
+  width: 760px;
+  height: 35px;
+}
+#navigation .navlinks li {
+  position: relative;
+  top: 5px;
+  margin: 0px 5px 0px 5px;
+  list-style-type: none;
+  display: inline;
+}
+#navigation .navlinks li a  {
+  color: #000000;
+  padding: 5px 0px 9px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 0px 9px 0px;
+}
+#navigation .navlinks li a:hover  {
+  margin: 0px;
+  color: #ffffff;
+  background: red;
+  text-decoration: underline;  
+}
+#buttons  {
+  position: absolute;
+  right: 0px;
+  top: 113px;
+  bottom: 96px;
+  width: 155px;
+  border-left: 2px solid #FFA500;
+  border-right: 2px solid #FFA500;
+  font-family: Terminal, Arial, 'Times New Roman', Times, serif;
+  background: -webkit-linear-gradient(#700000, #250000);
+  background: -o-linear-gradient(#700000, #250000);
+  background: -moz-linear-gradient(#700000, #250000);
+  background: linear-gradient(#700000, #250000);
+}
+#latest  {
+  border: 1px ridge #FFA500;
+  width: 297px;
+  height: 195px;
+  background: -webkit-linear-gradient(#000000, #252525, #000000);
+  background: -o-linear-gradient(#000000, #252525, #000000);
+  background: -moz-linear-gradient(#000000, #252525, #000000);
+  background: linear-gradient(#000000, #252525, #000000);
+}
+#latest p  {
+  font-family: Times New Roman;
+}
+#static_video  {
+  float: right;
+  width: 295px;
+  height: 200px;
+  background: -webkit-linear-gradient(#000000, #252525, #000000);
+  background: -o-linear-gradient(#000000, #252525, #000000);
+  background: -moz-linear-gradient(#000000, #252525, #000000);
+  background: linear-gradient(#000000, #252525, #000000);
+  clear: left;
+}
+#body  {
+  padding-top: 60px;
+  width: 600px;
+  font-family: Arial, Verdana, Terminal;
+  font-size: 14px;
+}
+#body a  {
+  color: red;
+}
+#body a:hover  {
+  color: lime;
+
+}
+#body .secret img  {
+  width: 150px;
+  height: 100px;
+  border: 2px solid black;
+}   
+#body .game  {
+  padding: 3px 3px 10px 3px;
+}
+#body .game img  {
+  align: center;
+  float: left;
+  width: 175px;
+  height: 101px;
+  border: 2px ridge #ff0000;
+}
+#body .game caption  {
+  padding-left: 1px;
+}
+#body .space  {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 4px ridge red;
+  border-bottom: 4px ridge red;
+}
+#body .game caption  {
+  margin-top: 2px;
+  float: right;
+  font-family: Terminal, Arial, Verdana, San-Serif;
+  font-size: 12px;
+  color: #000000;
+  border-bottom: 2px dashed #e9e9e9;
+}
+#body .game a  {
+  font-family: Terminal, Arial, San-Serif, Tahoma;
+  font-size: 10px;
+  color: #c9c9c9;
+  text-decoration: none;
+}
+#body .game a:hover  {
+  font-family: Terminal, Arial, San-Serif, Tahoma;
+  font-size: 10px;
+  color: red;
+  text-decoration: underline;
+}
+#footer  {
+  clear: both;
+  width: 730px;
+  height: 60px;
+  font-family: Tahoma, Arial, Terminal, San-Serif;
+  font-size: 10px;
+  color: #c9c9c9;
+  border-top: 1px solid #efefef;
+  padding: 13px 25px;
+  line-height: 18px;
+}
+#footer li  {
+  padding: 0px 2px 0px 2px;
+  float: right;
+  display: inline;
+  text-align: left;
+  font-family: Terminal, Arial, San-Serif, Tahoma;                      
+  font-size: 10px;
+}
+#footer a  {
+  font-family: Terminal, Arial, San-Serif, Tahoma;
+  font-size: 10px;
+  color: #c9c9c9;
+  text-decoration: none;
+}
+#footer a:hover  {
+  font-family: Terminal, Arial, San-Serif, Tahoma;
+  font-size: 10px;
+  color: red;
+  text-decoration: underline;
+}
+#footer #footnav  {
+  display: inline;
+  width: 310px;
+  float: right;
+  text-align: left;
+  position: relative;
+  bottom: 65px;
+}
+
+.maintable{
+  background: #73b0c0;
+}

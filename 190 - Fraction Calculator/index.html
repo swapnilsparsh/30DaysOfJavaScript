@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fraction Calulator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <HEAD>
+
+      <script type="text/javascript">
+
+        var n1, n2, d1, d2, An, Ad, Op;
+        var neg=1;
+
+        function solve(){
+        //If all fields are numbers
+        if(!isNaN(document.calc.n1.value)&&!isNaN(document.calc.d1.value)&&!isNaN(document.calc.n2.value)&&!isNaN(document.calc.d2.value)){
+        //If no fields are blank
+        if(document.calc.n1.value!=''&&document.calc.d1.value!=''&&document.calc.n2.value!=''&&document.calc.d2.value!=''){
+        //Set variables:
+        n1=document.calc.n1.value;// Numerator 1
+        d1=document.calc.d1.value;// Numerator 2
+        n2=document.calc.n2.value;// Denominator 1
+        d2=document.calc.d2.value;// Denominator 2
+        Op=document.calc.Op.value;// Operator
+        } else {
+        //If blank field
+        alert('Please fill-in all fields!');
+        }
+        } else {
+        //If field has non-number
+        alert('Please enter only Numbers into the fields!');
+        }
+
+        //Which Operation
+        switch (Op){
+        case '+':
+        //add fractions using formula ((n1*d2)+(n2*d1)) over (d1*d2)
+        An=(n1*d2)+(n2*d1) //Answer Numerator
+        Ad=(d1*d2) //Answer Denominator
+        if(document.calc.reduce.checked==1){
+        reduce();
+        } else {
+        display();
+        }
+        break
+
+        case '-':
+        //subtract fractions using formula ((n1*d2)-(n2*d1)) over (d1*d2)
+        An=(n1*d2)-(n2*d1)//Answer Numerator
+        Ad=(d1*d2)//Answer Denominator
+        if(document.calc.reduce.checked==1){
+        reduce();
+        } else {
+        display();
+        }
+        break
+
+        case '*':
+        //multiply fractions using formula (n1*n2) over (d1*d2)
+        An=n1*n2;//Answer Numerator
+        Ad=d1*d2; //Answer Denominator
+        if(document.calc.reduce.checked==1){
+        reduce();
+        } else {
+        display();
+        }
+        break
+
+        case '/':
+        //divide fractions using formula (n1*d2) over (d1*n2)
+        An=n1*d2;//Answer Numerator
+        Ad=d1*n2;//Answer Denominator
+        if(document.calc.reduce.checked==1){
+        reduce();
+        } else {
+        display();
+        }
+        break
+        }
+        }
+
+        function reduce() {
+        neg=1; //1 if positive, -1 if negative
+        //convert to strings
+        ng=An+'';
+        dg=Ad+''
+        if(ng.indexOf('-')!=-1){  //check to see if answer is negative.
+        neg=-1
+        }
+        if(dg.indexOf('-')!=-1){
+        neg=-1
+        }
+        if(ng.indexOf('-')!=-1&&dg.indexOf('-')!=-1)  {//if both numerator and denominator are negative the answer is positive
+        neg=1
+        }
+        var factorX //highest common factor
+
+        if ( An == 0 || Ad == 0 ) {
+        factorX=1;
+        return;
+        }
+
+        An = Math.abs( An );
+        Ad = Math.abs( Ad );
+
+        var factorX = 1;
+
+        //Find common factors of Numerator and Denominator
+        for ( var x = 2; x <= Math.min( An, Ad ); x ++ ) {
+                                      var check1 = An / x;
+                                      if ( check1 == Math.round( check1 ) ) {
+                                      var check2 = Ad / x;
+                                      if ( check2 == Math.round( check2 ) ) {
+                                      factorX = x;
+                                      }
+                                      }
+                                      }
+
+                                      An=(An/factorX)*neg;  //divide by highest common factor to reduce fraction then multiply by neg to make positive or negative
+                                      Ad=Ad/factorX;  //divide by highest common factor to reduce fraction
+                                      display();
+                                      }
+
+                                      function display(){
+                                      //Display answer
+                                      document.calc.An.value = An;
+                                      document.calc.Ad.value = Ad;
+                                      }
+
+                                      // -->
+        </script>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+
+      <div id="wrap">
+        <div id="body">
+          <center>
+            <h2>Calculator</h2>
+            <p>Click On "=" to get the result.</p>
+            <hr>
+            <table width="400" height="300" align="center" border="0" cellspacing="0" cellpadding="4" style="p, input, tr: color: white;  background: -webkit-linear-gradient(#000000, #252525, #000000);
+  background: -o-linear-gradient(#000000, #252525, #000000);
+  background: -moz-linear-gradient(#000000, #252525, #000000);
+  background: linear-gradient(#000000, #252525, #000000);border:1px #000000 solid;">
+              <tr>
+                <td align="center" valign="middle" class="maintable">
+                  <h3>Fraction Calculator</h3>
+                  <form name="calc">
+                    <table width="150" height= "70" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td style="border-bottom:2px #000000 solid;">
+                          <input type="text" size="2"  name="n1" id="n1" tabindex="1">
+                        </td>
+                        <td rowspan="2" align="center" valign="middle">
+                          <select name="Op" tabindex="3">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">x</option>
+                            <option value="/">÷</option>
+                          </select>
+                        </td>
+                        <td style="border-bottom:2px #000000 solid;"><input type="text" size="2" name="n2" id="n2" tabindex="4"></td>
+                        <td rowspan="2" align="center" valign="middle"><input type="button" value=" = "onClick="solve();" tabindex="6"></td>
+                        <td style="border-bottom:2px #000000 solid;"><input type="text" size="2" name="An" id="An" readonly="1"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" size="2" name="d1" id="d1" tabindex="2"></td>
+                        <td><input type="text" size="2" name="d2" id="d2" tabindex="5"></td>
+                        <td><input type="text" size="2" name="Ad" id="Ad" readonly="1"></td>
+                      </tr>
+                    </table>
+                    <br><input type="checkbox" name="reduce" id="reduce" checked> Reduce
+                  </form>
+                </td>
+              </tr>
+            </table>
+            <hr>
+            <div id="footnav">
+              <script src="footnav.js"></script>
+            </div>
+          </div>
+        </div>
+        </body>
+      <html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
