@@ -1,0 +1,104 @@
+:root{
+    --border-color: blue;
+    --fill-color: #6ab3f8;
+}
+
+*box{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color:rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+h1{
+    margin: 10px 0 0;
+}
+
+h2{
+    margin: 10px 0;
+}
+
+.cup {
+   background-color: white;
+   border: 4px solid var(--border-color);
+   color:var(--border-color);
+   border-radius: 0 0 50px 50px;
+   height: 250px;
+   width: 140px;
+   margin: 20px 0;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.cup.cup-small{
+    height: 90px;
+    width: 45px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    transition: 0.3 ease;
+
+}
+
+.cup.cup-small.full{
+    background-color :var(--fill-color);
+    color: rgb(255, 255, 255);
+}
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+}
+
+.remained{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.remained span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    height: 0;
+    background-color: var(--fill-color);
+    transition: 0.3s ease;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 15px white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
