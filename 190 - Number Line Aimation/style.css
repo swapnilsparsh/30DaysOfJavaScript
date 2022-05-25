@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.text-lg {
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px;
+}
+
+.ground {
+  min-height: 300px;
+  z-index: 5;
+  flex: 1;
+  position: relative;
+}
+
+.road {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number-line {
+  list-style: none;
+  white-space: nowrap;
+  display: flex;
+  border-top: 4px solid #123A81;
+  padding: 0;
+  margin: 0;
+}
+.number-line li {
+  display: inline-block;
+  width: 50px;
+  color: #123A81;
+  font: Bold 20px Quicksand;
+  text-align: center;
+  position: relative;
+  padding-top: 7px;
+}
+.number-line li:after {
+  content: "";
+  width: 2px;
+  height: 7px;
+  background: #123A81;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.player {
+  width: 70px;
+  height: 130px;
+  background: #000;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR75Uwyyy5YD_jAocma0-ellDqdo-SoVjv-lHWp8eIQG35LKBKqbw") no-repeat;
+  background-position: 10px 0px;
+  position: absolute;
+  bottom: 100%;
+  left: 450px;
+  transform-origin: 37% 0;
+  z-index: 50;
+}
+
+.start-arrow, .end-arrow {
+  position: absolute;
+  height: 180px;
+  color: #2196F3;
+  width: 0;
+  bottom: 100%;
+  left: 475px;
+  border-left: 1px dashed;
+  border-right: 1px dashed;
+  border-color: #81D4FA;
+  opacity: 0;
+  transform-origin: 0 0;
+}
+.start-arrow:before, .end-arrow:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.start-arrow:after, .end-arrow:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-left-color: currentColor;
+  right: -11px;
+  top: -8px;
+}
+
+.end-arrow {
+  height: 150px;
+  color: #3949AB;
+  border-color: #9FA8DA;
+}
+
+.under-ground {
+  background: #f6efff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+
+.winding-box {
+  display: flex;
+  background: #47078b;
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #B0C0D2 100%) 0% 0% no-repeat padding-box;
+  border-radius: 36px;
+  padding: 20px;
+}
+.winding-box .wind-conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #47078b 0%, #ad45d6 100%);
+  padding: 40px;
+  border-radius: 40px 0 0 40px;
+  border: 10px solid #B0C0D2;
+}
+.winding-box .wind-control {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.spin-btn {
+  background: transparent linear-gradient(180deg, #21FF90 0%, #03B25A 100%) 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  border: none;
+  height: 75px;
+  width: 75px;
+  position: relative;
+  outline: none;
+  box-shadow: 0 10px 0 #02934A, 0 10px 2px 3px #034021;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.spin-btn:after {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-left: 30px solid #fff;
+  left: 25px;
+  bottom: 20px;
+}
+.spin-btn:active {
+  transform: translateY(5px);
+  box-shadow: 0 3px 0 #02934A, 0 5px 2px 3px #034021;
+}
+
+.wheel-holder {
+  height: 160px;
+  background: #ecaf03;
+  width: 130px;
+  text-align: center;
+  border: 20px solid #fbbc05;
+  border-radius: 10px;
+  border-style: double;
+  overflow: hidden;
+  padding: 0 1px;
+  position: relative;
+  box-shadow: 0 8px 0 #a26e09;
+}
+.wheel-holder:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.37) 18%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.24) 75%, rgba(0, 0, 0, 0.65) 100%);
+  z-index: 20;
+}
+
+.wheel {
+  font-size: 70px;
+  color: #623a00;
+  line-height: 110px;
+  background: #e3a551;
+  border: 4px solid #d8a13d;
+  font-family: arial;
+  font-weight: 700;
+  position: relative;
+  transition: 3s ease-in-out;
+  transform: translateY(-1008px);
+}
+.wheel li {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes jumping {
+  0% {
+    background-position: 10px 0px;
+  }
+  100% {
+    background-position: -275px 0px;
+  }
+}
+
+@keyframes jumping {
+  0% {
+    background-position: 10px 0px;
+  }
+  100% {
+    background-position: -275px 0px;
+  }
+}
