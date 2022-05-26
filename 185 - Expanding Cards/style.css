@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1{
+    background-image: url(https://media.istockphoto.com/photos/selection-assortment-of-healthy-balanced-food-for-heart-diet-picture-id921720226?b=1&k=20&m=921720226&s=170667a&w=0&h=JERagv5-Z00YM8GpIqgnxq-t5jbEYLp1ueEWZKDSIWs=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding: 5vh;
+
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 30px;
+    color: aliceblue;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: 1s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+
+}
+
+.panel.active{
+    flex: 3;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.4s ease-in 0.5s;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+@media (max-width:480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
