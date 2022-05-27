@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Air Quality</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat|Concert One|Prompt">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <video  autoplay muted loop id="vid">
+            <source src="back/vid.mp4" type ="video/mp4">
+        </video>
+        <div class="app-wrap">
+        <header>
+            <h1>Air Quality Index Tracker</h1>
+            <input type="text" placeholder="Enter a Location..." class="search-box" />
+        </header>
+        <div class="location">
+            <div class="city">Enter a Location</div>
+            <div class="date">Current Date</div>
+        </div>
+        <div class="coordinates">
+            <div class="lat">Lat.</div>
+            <span id="lat-value">TBD</span>
+            <div class="lon">Long.</div>
+            <span id="lon-value">TBD</span>
+        </div>
+        <div class="weather">
+            <span id="temp">TBD&deg;C</span>
+        </div>
+        <hr>
+        <div class="parameters">
+            Air Quality Standard
+           
+        </div>
+        <hr>
+        <div class="air-quality">
+        <div class="air-parameters">
+        </div>
+        <div class = "last-update">
+        </div>
+        <div class="parameters-options">
+        </div>
+
+        </div>
+   
+        </div>
+    </body>
+    
+</html>
