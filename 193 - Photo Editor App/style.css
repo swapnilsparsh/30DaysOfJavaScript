@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+}
+body{
+    background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+.wrapper{
+    width: 70vw;
+    min-height: 50vmin;
+    padding: 50px 30px;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+.editor{
+    min-height: 35vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+.editor label{
+    font-size: 2.8vmin;
+    color: #3403d5;
+    font-weight: 400;
+}
+.editor input[type="range"]{
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+}
+
+.flip-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.flip-buttons .flip-option{
+    margin-top: 10px;
+}
+.result{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.result img{
+    display: block;
+    position: relative;
+    max-width: calc(100% - 4vmin);
+    max-height: 45vmin;
+    margin: auto;
+}
+.image-container{
+    display: none;
+}
+input[type="file"]{
+    display: none;
+}
+.result label{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 220px;
+    background-color: #090221;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 5px;
+    font-size: 2.8vmin;
+    font-weight: 400;
+    cursor: pointer;
+}
+@media screen and (max-width: 620px) {
+    .wrapper{
+        width: 95vw;
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap:  10px;
+    }
+    .editor{
+        grid-row: 2;
+    }
+    .flip-buttons{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .flip-buttons .flip-option{
+        margin-top: 0;
+    }
+}
+footer p{
+    color: #1d7bcd;
+     text-align: center;
+     margin-top: 40rem;
+}
+
+footer p span{
+    color: #d22f16;
+}

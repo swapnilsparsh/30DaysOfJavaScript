@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="editor">
+            <div class="filter">
+                <label for="blur">Blur</label>
+                <input type="range" min="0" max="5" value="0" step="0.1" id="blur">
+            </div>
+            <div class="filter">
+                <label for="contrast">Contrast</label>
+                <input type="range" min="0" max="200" value="100" id="contrast">
+            </div>
+            <div class="filter">
+                <label for="hue-rotate">Hue-Rotate</label>
+                <input type="range" min="0" max="360" value="0" id="hue-rotate">
+            </div>
+            <div class="filter">
+                <label for="sepia">Sepia</label>
+                <input type="range" min="0" max="100" value="0" id="sepia">
+            </div>
+            <div class="flip-buttons">
+                <div class="flip-option">
+                    <input type="radio" name="flip" id="no-flip" checked>
+                    <label for="no-flip">No Flip</label>
+                </div>
+                <div class="flip-option">
+                    <input type="radio" name="flip" id="flip-x">
+                    <label for="flip-x">Flip Horizontal</label>
+                </div>
+                <div class="flip-option">
+                    <input type="radio" name="flip" id="flip-y">
+                    <label for="flip-y">Flip Vertical</label>
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <figure class="image-container">
+                <img id="chosen-image">
+            </figure>
+            <input type="file" id="upload-button" accept="Image/*">
+            <label for="upload-button">Choose An Image</label>
+        </div>
+    </div>
+    <footer>
+        <p>Made by <span>DragonUncaged</span></p>
+    </footer>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+</body>
+</html>
