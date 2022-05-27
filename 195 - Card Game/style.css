@@ -1,0 +1,305 @@
+
+body { 
+    margin:0px; 
+    padding:0px;
+    -webkit-user-select: none; /* Chrome, Safari, y Opera 15 */
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select: none;
+    background:rgb(0, 60, 100);
+}
+
+Tablero {
+    position:relative;
+    min-width:1240px;
+    min-height:530px;
+    height:100%;
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+Opciones {
+    display:inline-block;
+    left:0px;
+    width:60px;
+    min-height:211px;
+    color:#FFF;
+    text-shadow: 1px 1px 1px #000;
+}
+
+mMenu {
+    position:absolute;
+    z-index:10000;
+}
+mMenu > input {
+    display:none;
+}
+mMenu > input + label {
+    width:60px;
+    height:60px;
+    position:absolute;
+    z-index:10;
+    cursor:pointer;
+}
+
+
+mMenu > input + label + BotonMenu {
+    display:table;
+    position:absolute;    
+    width:60px;
+    height:60px;
+    transition:0.4s;
+    z-index:9;
+    border:1px solid #333;
+    border-radius:6px;
+    background:rgb(50, 50, 150);
+}
+
+mMenu > input + label:hover + BotonMenu {
+    background:rgb(50, 50, 250); 
+}
+
+
+mMenu > input + label + BotonMenu > IconoMenu::before,
+mMenu > input + label + BotonMenu > IconoMenu::after,
+mMenu > input + label + BotonMenu > IconoMenu {
+    content:'';
+    display:inline-block;
+    position:absolute;
+    width:20px;
+    height:2px;
+    background:#FFF;
+    transition:0.4s;
+}
+
+mMenu > input:checked + label + BotonMenu > IconoMenu {
+    width:0px;
+    left:30px;
+}
+
+mMenu > input + label + BotonMenu > IconoMenu::before { top:-7px; }
+mMenu > input + label + BotonMenu > IconoMenu::after  { top:7px;  }
+
+mMenu > input:checked + label + BotonMenu > IconoMenu::before { top:0px; left:-10px; transform:rotateZ(-45deg); }
+mMenu > input:checked + label + BotonMenu > IconoMenu::after  { top:0px; left:-10px; transform:rotateZ(45deg); }
+
+mMenu > input + label + BotonMenu > IconoMenu {
+    top:29px;
+    left:20px;
+}
+
+mMenu > input:checked + label + BotonMenu > IconoMenu {
+    transform:rotateZ(180deg);
+}
+
+mMenu > input + label + BotonMenu + VentanaMenu,  mMenu > input + label + BotonMenu + DebugIA {
+    position:absolute;
+    top:15px;
+    left:15px;
+    width:5px;
+    height:5px;
+    border:1px solid #333;
+    border-radius:4px;
+    display:inline-block;
+    transition:0.4s;
+    overflow:hidden;
+    opacity:0.3;
+}
+
+mMenu > input:checked + label + BotonMenu + VentanaMenu {
+    width:240px;
+    height:340px;
+    padding:40px 20px;
+    background:rgba(0,0,100, 0.8);
+    opacity:1;
+}
+
+VentanaMenu a       {  color:#DDD; transition:0.3s; }
+VentanaMenu a:hover {  color:yellow; }
+VentanaMenu p {
+    margin:10px;
+}
+
+VentanaMenu button {
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid #000;
+    color:#FFF;
+    background:rgb(50, 50, 150);
+    font-size:1.2rem;
+    cursor:pointer;
+    padding:10px;
+    margin:10px;
+    min-width:220px;
+    transition:0.4s;
+}
+
+VentanaMenu button:hover {
+    background:rgb(50, 50, 255); 
+}
+VentanaMenu button > span {
+    font-size:1rem;
+    color:#DDD;
+}
+
+Movimientos {
+    position:relative;
+    display:table;
+    top:100px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.5rem;
+}
+
+Baraja, Solucion, Columna, Opciones /*, Carta:after */ {
+    position:absolute;
+}
+
+Baraja, Solucion, Columna, Carta /*, Carta:after */{
+    display:inline-block;
+    width:148px;
+    min-height:211px;
+    border:1px solid rgb(50, 150, 50);
+    border-radius:4px;
+}
+
+Baraja, Solucion, Opciones {	top:20px;	}
+Columna[num='0'] { left:-1000px; top:600px; }
+
+Baraja[num='1']                         {	left:90px;	}
+Columna[num='1']                        {	left:0px;	}
+Baraja[num='2']                  	{	left:270px;	}
+Columna[num='2']                        {       left:180px;     }
+Columna[num='3']                        {	left:360px;	}
+Solucion[num='1'], Columna[num='4']	{	left:540px;     }
+Solucion[num='2'], Columna[num='5']	{	left:720px;	}
+Solucion[num='3'], Columna[num='6']	{	left:900px;	}
+Solucion[num='4'], Columna[num='7']	{	left:1080px;	}
+
+Columna { top:290px; }
+Columna Carta > Carta { top:25px; }
+/* Cartas dentro de las barajas o de las soluciones */
+Baraja Carta > Carta, Solucion Carta > Carta { top:1px; }
+Carta {
+    background-color:white;
+    margin-top:-1px;
+    margin-left:-1px;
+    border:1px solid #111;
+    position:relative;
+    left:0px;
+    background-image:url('https://cdn.rawgit.com/devildrey33/devildrey33/2ff5c5dc/Ejemplos/Solitario/Cartas.png');
+}
+
+Carta[hover], Carta[hover] Carta, Baraja[num='1']:hover {
+    box-shadow: rgb(50,250,250) 0px 0px 7px 2px;
+}
+
+Carta[ayuda1], Carta[ayuda1] Carta, Solucion[ayuda1], Baraja[ayuda1], Columna[ayuda1] {
+    box-shadow: red 0px 0px 12px 6px !important;    
+}
+Carta[ayuda2], Carta[ayuda2] Carta, Solucion[ayuda2], Baraja[ayuda2], Columna[ayuda2] {
+    box-shadow: orange 0px 0px 12px 6px !important;
+}
+
+
+Victoria, Derrota {
+    position:relative;
+    display:none;
+    padding:8px;
+    border-radius:6px;
+    color:#FFF;
+    text-shadow: 1px 1px 1px #000;
+    width:calc(100% - 28px);
+    text-align:center;
+    top:243px;
+    font-size:20px;
+    box-shadow:1px 1px 4px #333;
+}
+
+Victoria {
+    background:rgba(0, 255, 0, 0.8);
+    border:1px solid green;    
+}
+
+Derrota {
+    background:rgba(255, 0, 0, 0.8);
+    border:1px solid red;
+}
+
+
+Carta[palo='1'], Carta[palo='2']  {    color:red;    }
+Carta[palo='3'], Carta[palo='4']  {    color:black;  }
+
+Carta[valor='1'][palo='1']  { background-position: -2px    444px; }
+Carta[valor='2'][palo='1']  { background-position: -166px  444px; }
+Carta[valor='3'][palo='1']  { background-position: -331px  444px; }
+Carta[valor='4'][palo='1']  { background-position: -495px  444px; }
+Carta[valor='5'][palo='1']  { background-position: -660px  444px; }
+Carta[valor='6'][palo='1']  { background-position: -825px  444px; }
+Carta[valor='7'][palo='1']  { background-position: -989px  444px; }
+Carta[valor='8'][palo='1']  { background-position: -1154px 444px; }
+Carta[valor='9'][palo='1']  { background-position: -1318px 444px; }
+Carta[valor='10'][palo='1'] { background-position: -1483px 444px; }
+Carta[valor='11'][palo='1'] { background-position: -1647px 444px; }
+Carta[valor='12'][palo='1'] { background-position: -1811px 444px; }
+Carta[valor='0'][palo='1']  { background-position: -1976px 444px; }
+
+Carta[valor='1'][palo='2']  { background-position: -2px    -2px; }
+Carta[valor='2'][palo='2']  { background-position: -166px  -2px; }
+Carta[valor='3'][palo='2']  { background-position: -331px  -2px; }
+Carta[valor='4'][palo='2']  { background-position: -495px  -2px; }
+Carta[valor='5'][palo='2']  { background-position: -660px  -2px; }
+Carta[valor='6'][palo='2']  { background-position: -825px  -2px; }
+Carta[valor='7'][palo='2']  { background-position: -989px  -2px; }
+Carta[valor='8'][palo='2']  { background-position: -1154px -2px; }
+Carta[valor='9'][palo='2']  { background-position: -1318px -2px; }
+Carta[valor='10'][palo='2'] { background-position: -1483px -2px; }
+Carta[valor='11'][palo='2'] { background-position: -1647px -2px; }
+Carta[valor='12'][palo='2'] { background-position: -1811px -2px; }
+Carta[valor='0'][palo='2']  { background-position: -1976px -2px; }
+
+Carta[valor='1'][palo='3']  { background-position: -2px    213px; }
+Carta[valor='2'][palo='3']  { background-position: -166px  213px; }
+Carta[valor='3'][palo='3']  { background-position: -331px  213px; }
+Carta[valor='4'][palo='3']  { background-position: -495px  213px; }
+Carta[valor='5'][palo='3']  { background-position: -660px  213px; }
+Carta[valor='6'][palo='3']  { background-position: -825px  213px; }
+Carta[valor='7'][palo='3']  { background-position: -989px  213px; }
+Carta[valor='8'][palo='3']  { background-position: -1154px 213px; }
+Carta[valor='9'][palo='3']  { background-position: -1318px 213px; }
+Carta[valor='10'][palo='3'] { background-position: -1483px 213px; }
+Carta[valor='11'][palo='3'] { background-position: -1647px 213px; }
+Carta[valor='12'][palo='3'] { background-position: -1811px 213px; }
+Carta[valor='0'][palo='3']  { background-position: -1976px 213px; }
+ 
+Carta[valor='1'][palo='4']  { background-position: -2px    675px; }
+Carta[valor='2'][palo='4']  { background-position: -166px  675px; }
+Carta[valor='3'][palo='4']  { background-position: -331px  675px; }
+Carta[valor='4'][palo='4']  { background-position: -495px  675px; }
+Carta[valor='5'][palo='4']  { background-position: -660px  675px; }
+Carta[valor='6'][palo='4']  { background-position: -825px  675px; }
+Carta[valor='7'][palo='4']  { background-position: -989px  675px; }
+Carta[valor='8'][palo='4']  { background-position: -1154px 675px; }
+Carta[valor='9'][palo='4']  { background-position: -1318px 675px; }
+Carta[valor='10'][palo='4'] { background-position: -1483px 675px; }
+Carta[valor='11'][palo='4'] { background-position: -1647px 675px; }
+Carta[valor='12'][palo='4'] { background-position: -1811px 675px; }
+Carta[valor='0'][palo='4']  { background-position: -1976px 675px; }
+
+Carta[Tapada='true'] {
+    background-position:-2141px 448px !important;
+}
+
+body[debug] debugia {
+    display:table;
+}
+
+debugia {
+    border:1px solid;
+}
+
+palo[num='1'] {
+    
+}

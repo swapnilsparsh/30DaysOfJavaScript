@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>card game</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<Tablero>
+  <Opciones>  
+    <mMenu>
+      <input id='Input_Menu' type='checkbox' />
+      <label for='Input_Menu'></label>                    
+      <BotonMenu>
+        <IconoMenu></IconoMenu>
+      </BotonMenu>                    
+      <VentanaMenu>
+        <button>New game<br /><span>(N)</span></button>
+        <button>Undo<br /><span>(Control+Z)</span></button>
+        <button>Redo<br /><span>(Control+Y)</span></button>
+        <button>Help next move<br /><span>(Space)</span></button>
+        <p>Created by : DragonUncaged</a>.</p>
+        
+      </VentanaMenu>
+
+
+    </mMenu>
+    <Movimientos>0</Movimientos>
+  </Opciones>
+  <Baraja num="1"></Baraja>
+  <Baraja num="2"></Baraja>
+  <Solucion num="1"></Solucion>
+  <Solucion num="2"></Solucion>
+  <Solucion num="3"></Solucion>
+  <Solucion num="4"></Solucion>
+  <Columna num="1"></Columna>
+  <Columna num="2"></Columna>
+  <Columna num="3"></Columna>
+  <Columna num="4"></Columna>
+  <Columna num="5"></Columna>
+  <Columna num="6"></Columna>
+  <Columna num="7"></Columna>
+  <Columna num="0">
+    <Carta id='ImgDrag' tapada='false'></Carta>
+  </Columna>
+
+</Tablero>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
