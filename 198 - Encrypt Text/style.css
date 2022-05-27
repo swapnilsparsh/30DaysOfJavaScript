@@ -1,0 +1,10 @@
+body {
+  padding-top: 50px;
+  background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+#output {
+  outline: none;
+}

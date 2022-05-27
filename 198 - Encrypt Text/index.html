@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Encrypt Decrypt Text</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="row justify-content-around">
+    <div class="col-md-6">
+      <div id="encrypt-block">
+        <h3>Enter Text : </h3>
+        <textarea name="user-text" id="text-to-work" cols="40" rows="3"></textarea>
+        <br><br>
+        <div class="form-group">
+          <button class="btn btn-primary" id="encrypt-btn">Encrypt</button>
+          <button class="btn btn-primary" id="decrypt-btn">Decrypt</button>
+          <button class="btn btn-danger" id="btn-reset">Clear</button>
+        </div>
+        <h4>Encryption Steps:</h4>
+        <select name="user_step" id="encrypt-step" size="1">
+          <option>1</option>
+          <option>2</option>
+          <option selected>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6">
+        <h3>Resulted Text:</h3>
+        <textarea readonly id="output" cols="40" rows="3"></textarea>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
