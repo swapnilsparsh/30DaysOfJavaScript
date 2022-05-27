@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Page</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://schauhan.in/Examples/ecommerce_product_slider/style1.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://schauhan.in/Examples/ecommerce_product_slider/lightslider.css"
+    />
+    <script src="http://schauhan.in/Examples/ecommerce_product_slider/jquery-3.5.1.js"></script>
+    <script src="http://schauhan.in/Examples/ecommerce_product_slider/lightslider.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#autoWidth").lightSlider({
+          autoWidth: true,
+          loop: true,
+          onSliderLoad: function () {
+            $("#autoWidth").removeClass("cS-hidden");
+          },
+        });
+      });
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+      }
+      :root {
+        --color-text: #616161;
+        --color-text-btn: #ffffff;
+        --card1-gradient-color1: #f12711;
+        --card1-gradient-color2: #f5af19;
+        --card2-gradient-color1: #7f00ff;
+        --card2-gradient-color2: #e100ff;
+        --card3-gradient-color1: #3f2b96;
+        --card3-gradient-color2: #a8c0ff;
+        --card4-gradient-color1: #11998e;
+        --card4-gradient-color2: #38ef7d;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(to right, #8e9eab, #eef2f3);
+        height: 100vh;
+      }
+      .main {
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .card-wrap {
+        width: 300px;
+        height: 550px;
+        background: #fff;
+        border-radius: 20px;
+        border: 5px solid #fff;
+        overflow: hidden;
+        color: var(--color-text);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        color: lightcyan;
+      }
+      .card-wrap:hover {
+        transform: scale(1.1);
+        color: black;
+      }
+      .card-wrap:hover img {
+        opacity: 0.4;
+        /* color: black; */
+      }
+      .card-header {
+        height: 200px;
+        width: 100%;
+        background: red;
+        border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+        display: grid;
+        place-items: center;
+      }
+
+      .card-header i {
+        color: #fff;
+        font-size: 72px;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        /* color: lightcyan;line-height: 17px; */
+        z-index: 5;
+      }
+
+      .card-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .card-text {
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 20px;
+        opacity: 0;
+        font-weight: bold;
+      }
+      .card-wrap:hover .card-text {
+        opacity: 1;
+        /* color: black; */
+      }
+      .card-btn {
+        border: none;
+        border-radius: 100px;
+        padding: 5px 30px;
+        color: #fff;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+      .card-header.one {
+        background: linear-gradient(
+          to bottom left,
+          var(--card1-gradient-color1),
+          var(--card1-gradient-color2)
+        );
+      }
+      .card-header.two {
+        background: linear-gradient(
+          to bottom left,
+          var(--card2-gradient-color1),
+          var(--card2-gradient-color2)
+        );
+      }
+      .card-header.three {
+        background: linear-gradient(
+          to bottom left,
+          var(--card3-gradient-color1),
+          var(--card3-gradient-color2)
+        );
+      }
+      .card-header.four {
+        background: linear-gradient(
+          to bottom left,
+          var(--card4-gradient-color1),
+          var(--card4-gradient-color2)
+        );
+      }
+
+      .card-btn.one {
+        background: linear-gradient(
+          to left,
+          var(--card1-gradient-color1),
+          var(--card1-gradient-color2)
+        );
+      }
+      .card-btn.two {
+        background: linear-gradient(
+          to left,
+          var(--card2-gradient-color1),
+          var(--card2-gradient-color2)
+        );
+      }
+      .card-btn.three {
+        background: linear-gradient(
+          to left,
+          var(--card3-gradient-color1),
+          var(--card3-gradient-color2)
+        );
+      }
+      .card-btn.four {
+        background: linear-gradient(
+          to left,
+          var(--card4-gradient-color1),
+          var(--card4-gradient-color2)
+        );
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 10px 20px;
+
+        background-color: #c8cbd3;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      li {
+        list-style: none;
+        margin: 0px 7px;
+        color: rgb(105, 83, 28);
+        font-size: 20px;
+        position: relative;
+      }
+      .netflix {
+        color: rgb(170, 128, 21);
+        font-weight: bold;
+        font-size: 25px;
+        position: relative;
+      }
+     
+      .search {
+        color: rgb(105, 83, 28);
+        font-size: 20px;
+      }
+      input {
+        border: none;
+        border-radius: 7px;
+        padding: 5px 5px;
+        text-align: center;
+        font-size: 15px !important;
+        outline: none;
+      }
+      .line {
+        position: absolute;
+        bottom: 0;
+        width: 0%;
+        height: 1px;
+        background-color: black;
+        transition: 0.5s;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      li:hover .line {
+        width: 100%;
+      }
+      img:hover {
+        opacity: 0.4;
+      }
+      .card-btn {
+        position: absolute;
+        bottom: 10px;
+      }
+      .card-title {
+        position: absolute;
+        top: -10px;
+        color: rgb(185, 139, 23);
+        background-color: rgb(219, 218, 218);
+        width: 100%;
+        padding: 10px 10px;
+      }
+      b {
+        color: goldenrod;
+        font-size: 15px;
+      }
+      .heading {
+        text-align: center;
+        padding: 10px 10px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+        /* margin:0 auto; */
+        background-image: linear-gradient(90deg, #ff7d7d, #ce5ce8);
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 50px;
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+      }
+      .coverpage {
+        position: fixed;
+        width: 0%;
+        height: 100vh;
+        background-color: rgba(34, 46, 116, 0.596);
+        box-shadow: 1px 1px 10px black;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        z-index: -10;
+        transition: 0.5s;
+        /* background: url('https://wallpaperaccess.com/full/3968016.png'); */
+      }
+
+      .small {
+        width: 550px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.747);
+      }
+      .cov {
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .vid {
+        height: 100%;
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        display: block;
+      }
+      .backy {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0;
+      }
+      .backbutt {
+        width: 70px;
+
+        color: black;
+      }
+      .cross {
+        width: 60px;
+        position: fixed;
+        top: 15%;
+        right: 20%;
+        /* z-index: 50; */
+        z-index: -1;
+        opacity: 0;
+      }
+      .search {
+        display: flex;
+      }
+      .menus {
+        width: 35px;
+        margin-left: 10px;
+        display: none;
+        z-index: 5;
+      }
+      @media (max-width: 700px) {
+        .menu {
+          position: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(175, 219, 216, 0.836);
+          transition: 0.5s;
+          /* z-index: -1; */
+        }
+        li {
+          margin-top: 20px;
+        }
+        .menus {
+          display: block;
+        }
+        input {
+          padding: 5px 0px;
+          font-size: 13px !important;
+        }
+      }
+      .tell {
+        color: rgb(105, 83, 28);
+        text-decoration: none;
+      }
+      .txt1 {
+        width: 350px;
+        margin: 0px auto;
+        margin-top: 80px;
+        /* font-style: italic; */
+        color: rgb(58, 12, 12);
+        opacity: 1;
+        text-align: center;
+      }
+      .d {
+        color: black;
+      }
+      @media (max-width: 550px) {
+        iframe {
+          width: 350px;
+        }
+        .backy {
+          top: 85%;
+        }
+        .cross {
+          right: 5%;
+        }
+      }
+      .genrehead {
+        text-align: center;
+        padding: 10px 10px;
+        color: rgb(107, 86, 33);
+        margin-bottom: 20px;
+      }
+      .genre {
+        background-color: rgba(66, 62, 62, 0.281);
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px 0px;
+      }
+      .fil {
+        padding: 10px 20px;
+        background-color: rgb(44, 44, 141);
+        color: white;
+        color: goldenrod;
+        /* text-transform: uppercase; */
+        font-size: 23px;
+        margin: 10px 10px;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      .butss {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: center;
+      }
+      .fil:hover {
+        color: white;
+      }
+      .curractive {
+        background-color: red;
+        color: white;
+      }
+      #ttt {
+        display: none;
+      }
+
+      .conttt {
+        position: fixed;
+        top: 30%;
+        left: 0;
+        z-index: -10;
+        width: 100%;
+        height: 100vh;
+        /* background-color: aqua; */
+        /* display: none; */
+        opacity: 0;
+      }
+      .lSSlideOuter {
+        background-color: rgba(223, 207, 207, 0.664);
+        height: 374px;
+      }
+      table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+
+      table caption {
+        font-size: 1.5em;
+        margin: 0.5em 0 0.75em;
+      }
+
+      table tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: 0.35em;
+      }
+
+      table th,
+      table td {
+        padding: 0.625em;
+        text-align: center;
+      }
+
+      table th {
+        font-size: 0.85em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      @media screen and (max-width: 600px) {
+        table {
+          border: 0;
+        }
+
+        table caption {
+          font-size: 1.3em;
+        }
+
+        table thead {
+          border: none;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        }
+
+        table tr {
+          border-bottom: 3px solid #ddd;
+          display: block;
+          margin-bottom: 0.625em;
+        }
+
+        table td {
+          border-bottom: 1px solid #ddd;
+          display: block;
+          font-size: 0.8em;
+          text-align: right;
+        }
+
+        table td::before {
+          /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        table td:last-child {
+          border-bottom: 0;
+        }
+      }
+      .xsc {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        width: 100%;
+        height: 100vh;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding: 0px 50px;
+        background-color: rgba(95, 95, 114, 0.836);
+        opacity: 0;
+        z-index: -10;
+        overflow-y: scroll;
+        /* padding-top: 1500px; */
+      }
+      .criss {
+        width: 50px;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+      }
+      .newb {
+        bottom: 50px;
+        border: none;
+        border-radius: 100px;
+        padding: 5px 30px;
+        color: #fff;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        background: linear-gradient(
+          to bottom left,
+          var(--card1-gradient-color1),
+          var(--card1-gradient-color2)
+        );
+        position: absolute;
+        bottom: 50px;
+        z-index: 1;
+      }
+
+      /* general styling */
+      body {
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.25;
+      }
+      @media (max-width: 800px) {
+        .fil {
+          padding: 5px 8px;
+          background-color: rgb(44, 44, 141);
+          color: white;
+          color: goldenrod;
+          font-size: 15px;
+          margin: 10px 10px;
+          border-radius: 25 px;
+          cursor: pointer;
+        }
+        .curractive {
+        background-color: red;
+        color: white;
+      }
+      }
+      #zzz{
+        position: relative;
+      }
+      .signout{
+        position: absolute;
+        background-color: blanchedalmond;
+        background-color:#a4bee6c4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        gap: 10px;
+        top: -1200px;
+        left: -120px;
+        transition: 0.8s;
+        width: 300px;
+
+      }
+      .signs{
+        padding: 5px 8px;
+        border-radius: 10px;
+        background: linear-gradient(
+          to left,
+          var(--card2-gradient-color1),
+          var(--card2-gradient-color2)
+        );
+        color: white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+      }
+      .pro{
+        width: 35px;
+      }
+      .footer {
+        margin-top: 150px;
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu11 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="coverpage"></div>
+    <div class="backy">
+      <img class="backbutt left" src="chevron-back-outline.svg" alt="" />
+      <img class="backbutt right" src="chevron-forward-outline.svg" alt="" />
+    </div>
+    <div class="cross">
+      <img src="close-circle-outline.svg" alt="" class="cr" />
+    </div>
+    <div class="txt1">
+      <p>
+        Hey ya !! Welcome To <b class="d">Netflix Clone</b> consisting of more
+        than <b class="d">700,000 + </b>Movies . You can click on
+        <b class="d">Watch Now</b> to watch it
+      </p>
+    </div>
+    <div class="genre">
+      <h1 class="genrehead">Select Genre of Your Choice</h1>
+      <div class="butss"></div>
+    </div>
+
+    <h1 class="heading" id="ttt"></h1>
+
+    <div class="main" id="pop" style="margin-top: 80px"></div>
+    <h1 class="heading" id="r">HIGHEST RATED MOVIES</h1>
+    <div class="main" id="latest"></div>
+    <h1 class="heading" id="r2">SCIENCE FICTION MOVIES</h1>
+
+    <div class="main" id="latest1"></div>
+    <h1 class="heading" id="r3">COMEDY MOVIES</h1>
+    <div class="main" id="latest2"></div>
+
+    <nav>
+      <div class="netflix">NETFLIX</div>
+      <div class="menu">
+        <li class="mem">
+          Home
+          <div class="line"></div>
+        </li>
+        <li class="mem">
+          <a href="#r" class="tell">Rated</a>
+          <div class="line"></div>
+        </li>
+        <li class="mem">
+          <a href="#r2" class="tell">Scientific</a>
+
+          <div class="line"></div>
+        </li>
+        <li class="mem">
+          <a href="#r3" class="tell">Comedy</a>
+
+          <div class="line"></div>
+        </li>
+        <li class="mem" id="zzz">
+          <div class="signout">
+            <div class="logoprofile">
+              <img src="profile.png" alt="" class="pro">
+            </div>
+            <div class="profname">
+             <h5>
+               Name : <span id="sp1">-DragonUncaged</span>
+             </h5>
+             
+            </div>
+            <div class="profemail">
+              <h5>
+                Email : <span id="sp2">abc@netflix.com</span>
+              </h5>
+            </div>
+            <button class="signs">
+              Sign Out
+            </button>
+          </div>
+          <a href="#" class="tell" id="pp">Profile
+
+          </a>
+
+          <div class="line"></div>
+        </li>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search Movie Name"
+          class="search"
+          id="s"
+        />
+        <img src="menu-outline.svg" alt="" class="menus" />
+      </div>
+    </nav>
+    <div class="xsc">
+      <table>
+        <h1 class="heading" id="r2" style="margin: 5px 0px">CREDITS</h1>
+
+        <img src="close-circle-outline.svg" alt="" class="criss" />
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Character</th>
+            <th scope="col">Popularity</th>
+          </tr>
+        </thead>
+        <tbody class="gggg" style="overflow-y: scroll"></tbody>
+      </table>
+    </div>
+   
+        <footer class="footer">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+          <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+          </ul>
+          <ul class="menu11">
+            <!-- <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li> -->
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      
+          </ul>
+          <p>&copy;2022 Netflix Clone -DragonUncaged | All Rights Reserved</p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="moviescript.js"></script>
+    <script>
+      let s = document.getElementById('pp');
+      let ss = document.querySelector('.signout');
+      let out = document.querySelector('.signs');
+
+      let s1= 0;
+      s.addEventListener('click',()=>{
+          if (s1==0) {
+            ss.style.top='40px';
+            s1=1;
+          }
+          else{
+            ss.style.top='-1200px'
+            s1=0
+          }
+      })
+      
+      out.addEventListener('click',()=>{
+        location.href='index.html'
+      })
+    </script>
+  </body>
+</html>
