@@ -1,0 +1,148 @@
+:root {
+    --space-cadet: #6bebe7;
+    --space-cadet-dark: #0ba2a7;
+    --lavender-blue: #c4c4ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    line-height: 1.6;
+    background: var(--space-cadet-dark);
+    font-size: 1.1rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.container {
+    min-height: 100vh;
+
+}
+
+.bill-divider-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+
+}
+
+.title {
+    background: var(--space-cadet);
+    padding: 0.7rem 0rem;
+    margin-top: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.title h1 {
+    text-align: center;
+    color: #fff;
+
+}
+
+.title h4 {
+    text-align: center;
+    color: #fff;
+
+}
+
+.bill-inputs,
+.bill-output {
+    padding: 2rem 2.5rem;
+}
+
+.bill-inputs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    padding: 0.5rem 0;
+}
+
+.form-global label {
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+.form-control {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid var(--lavender-blue);
+    transition: all 0.3s ease-in-out;
+    --webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+
+}
+
+
+
+.form-control:focus {
+    outline: 0;
+    border-color: var(--space-cadet);
+
+}
+
+#calc-btn {
+    padding: 0.9rem 2.2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    display: inline-block;
+    /* align-items: center; */
+    margin-top: 1.25rem;
+    background: var(--space-cadet-dark);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    --webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#calc-btn:focus {
+    outline: 0;
+}
+
+#calc-btn:hover {
+    background: var(--space-cadet);
+}
+
+.text-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+}
+
+.text-group h2 {
+    font-weight: 500;
+    opacity: 0.8;
+
+}
+
+.text-group:nth-child(1) h2 {
+    font-weight: 500;
+}
+
+.text-group span {
+    font-weight: 500;
+}
