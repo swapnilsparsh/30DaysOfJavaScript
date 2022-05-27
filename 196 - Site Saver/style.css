@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Styling title*/
+h1 {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  margin: 0;
+  padding: 0;
+  background-color: #47b6cf;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  color: #000;
+}
+h2 {
+  color: #47b6cf;
+}
+.container {
+  width: 600px;
+  min-height: 150px;
+  background-color: #333333;
+  margin: 0 auto;
+}
+
+/*Styling form section*/
+.form {
+  width: 100%;
+  height: auto;
+  background-color: #555555;
+  padding: 40px 50px;
+  margin: 20px 0;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.input-field input[type="text"] {
+  width: 250px;
+  height: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #47b6cf;
+  padding-left: 10px;
+  color: #fff;
+}
+.input-field label {
+  color: #47b6cf;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.save_button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  width: 70px;
+  height: 25px;
+  background-color: #47b6cf;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+}
+
+/*Styling Bookmarks section*/
+.bookmarks {
+  width: 100%;
+  background-color: #555555;
+  padding: 20px;
+}
+.bookmark {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  background-color: #333333;
+}
+.bookmark span {
+  flex: 1;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+.bookmark .visit {
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #47b6cf;
+  color: #000;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.bookmark .delete {
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #f44336;
+  border-radius: 5px;
+}
