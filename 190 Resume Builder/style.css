@@ -1,0 +1,50 @@
+#getData {
+  align-items: center;
+  text-align: center;
+}
+
+#getData input {
+  width: 600px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#getData textarea {
+  width: 600px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+input[type="button"],button {
+  width: 450px;
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #5cb85c;
+  color: azure;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+input[type="button"]:hover {
+  background-color: #479147;
+}
+
+#resume {
+  width: 21.59cm;
+  height: 27.94cm;
+  border-style: solid;
+  border-width: 2px;
+  margin: auto;
+  display: none;
+}
+
+p {
+  text-align: left;
+}
+
