@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chess</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<h1>Chess</h1>
+<!-- partial:index.partial.html -->
+<div class="option-nav">
+	<div id="player-nav">
+		Player: <span id="player"></span>
+	</div>
+	<div id="undo-btn" class="btn">
+		<i class="fa fa-undo" aria-hidden="true"></i>
+		<span class="tooltiptext">UNDO</span>
+	</div>
+</div>
+<div id="board">
+	<div id="result" class="hide"></div>
+	<div id="pawn-promotion-option" class="hide">
+		 <span id="queen" class="option"></span>
+		 <span id="rook" class="option"></span>
+		 <span id="knight" class="option"></span>
+		 <span id="bishop" class="option"></span>
+	</div>
+	
+	<div id="game" ng-app="myApp" ng-controller="GameController">
+		 <div class="row" ng-repeat="y in widths">
+			  <div class="box" ng-repeat="x in widths" ng-attr-id="{{'box-' + x + '-' + y}}" piece="">
+			  </div>
+		 </div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

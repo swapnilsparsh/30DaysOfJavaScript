@@ -1,0 +1,308 @@
+html {
+  /* background-image: url("img/bg.jpg"); */
+  background-color: rgb(236, 190, 190);
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+  background-size: cover;
+}
+
+body {
+  width: 580px;
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 50px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+/*=====BOARD GAME=================*/
+
+#board {
+  width: 480px;
+  margin: 15px auto 20px auto;
+  background: #ccc;
+  border: 25px solid #fff;
+  border-radius: 10px;
+  box-shadow: inset -1px 1px 7px rgba(0, 0, 0, 0.2),
+    inset 1px -1px 7px rgba(0, 0, 0, 0.2), 1px 12px 5px rgba(0, 0, 0, 0.4),
+    4px 3px 8px rgba(0, 0, 0, 0.4), 5px 10px 10px rgba(0, 0, 0, 0.2),
+    -5px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.row {
+  clear: both;
+  overflow: hidden;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  font-size: 50px;
+  cursor: default;
+}
+
+.placed {
+  cursor: pointer;
+}
+
+.selected {
+  -moz-box-shadow: inset 0 0 10px #311b0b;
+  -webkit-box-shadow: inset 0 0 10px #311b0b;
+  box-shadow: inset 0 0 10px #311b0b;
+}
+
+.suggest {
+  -moz-filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+
+  -moz-box-shadow: inset 0 0 15px #0f0;
+  -webkit-box-shadow: inset 0 0 15px #0f0;
+  box-shadow: inset 0 0 15px #0f0;
+
+  cursor: pointer;
+}
+
+/*============================================*/
+
+#result {
+  width: 480px;
+  height: 480px;
+  line-height: 480px;
+  position: absolute;
+  background: transparent;
+  text-align: center;
+  font-size: 90px;
+  cursor: default;
+  animation: blur 1.5s ease-out infinite;
+  z-index: 10;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+
+#pawn-promotion-option {
+  width: 480px;
+  height: 480px;
+  line-height: 480px;
+  position: absolute;
+  background: transparent;
+  text-align: center;
+  font-size: 90px;
+  cursor: default;
+  z-index: 10;
+}
+
+#pawn-promotion-option .option {
+  cursor: pointer;
+}
+
+/*========================================*/
+
+.option-nav {
+  height: 20px;
+  width: 500px;
+  font-size: 30px;
+  margin: 0 auto;
+  line-height: 15px;
+}
+
+#player-nav {
+  display: inline-block;
+  cursor: default;
+  float: left;
+  width: 200px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+#player {
+  font-size: 32px;
+  color: #000;
+}
+
+#undo-btn {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  margin-left: 50px;
+  position: relative;
+}
+
+.btn .tooltiptext {
+  visibility: hidden;
+  font-family: monospace;
+  width: 100px;
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  line-height: 20px;
+  font-size: 22px;
+
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+#undo-btn .tooltiptext {
+  width: 80px;
+  margin-left: -40px;
+}
+
+.btn .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent;
+}
+
+.btn:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(190, 189, 186);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 62, 62);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+/* Responsive design */
+
+@media only screen and (max-width: 570px) {
+  html {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(img/bg-mobile.jpg); */
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  #board {
+    margin-top: 50px;
+    width: 320px;
+    border-width: 13px;
+  }
+
+  .box {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  #option {
+    width: 80px;
+  }
+
+  #option-menu {
+    width: 320px;
+    height: 320px;
+    font-size: 26px;
+  }
+
+  #back-btn {
+    margin-top: 25px;
+  }
+
+  .option-nav {
+    margin: 0 auto;
+    width: 340px;
+    font-size: 24px;
+    line-height: 10px;
+  }
+
+  #player-nav {
+    width: 30%;
+    margin-top: 25px;
+    color: #311b0b;
+  }
+
+  #player {
+    font-size: 28px;
+  }
+
+  #undo-btn {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  #option {
+    margin-left: 20px;
+  }
+
+  #pawn-promotion-option {
+    width: 320px;
+    height: 320px;
+    font-size: 60px;
+    line-height: 320px;
+  }
+
+  #result {
+    width: 320px;
+    height: 320px;
+    font-size: 60px;
+    line-height: 320px;
+  }
+}
+@media only screen and (min-width: 570px){
+    html {
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-image: url(img/bg.jpg); */
+      }
+}
