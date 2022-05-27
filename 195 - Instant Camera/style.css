@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Syne Mono", monospace;
+}
+
+html {
+  background-color: #1d2026;
+  width: 100%;
+  min-height: 100%;
+}
+
+#container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+/* Styles for Right Container. */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40%;
+  border-right: 1px dashed #ffffff;
+}
+/* Start of styles for Snap Preview and Canvas Element. */
+.preview-container {
+  width: 100%;
+  border-bottom: 1px dashed #ffffff;
+}
+
+.final-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px 20px 100px;
+}
+
+.final-preview p {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.photo {
+  width: 85%;
+  margin: 0px 0px 0px 0px;
+}
+/* End of styles for Canvas Element. */
+/* Start of styles for Clipboard. */
+.snap-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.strip-content p {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 30px 0px 0px 100px;
+  text-align: center;
+}
+
+.strip-content span {
+  color: #00866e;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.strip-container {
+  margin: 5px 0px 0px 100px;
+  width: 71%;
+  height: 320px;
+  padding: 10px;
+  background: #2d333d;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: none;
+}
+
+.strip img {
+  width: 174px;
+  border: none;
+}
+/* End of styles for Clipboard. */
+/* End of Right Container Styles. */
+/* Styles for Left Container */
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+}
+/* Start of styles for Text. */
+.text-content {
+  margin: 130px 0px 50px 100px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+/* End of styles for Text. */
+/* Start of styles for Filters, Live Preview and Take Picture Button. */
+.media-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 70%;
+  border-top: 1px dashed #ffffff;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+
+.controls {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-around;
+  background: #2d333d;
+}
+
+.custom-filter {
+  display: flex;
+  margin: 10px 40px;
+  padding: 0px 30px 0px 0px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.live-preview {
+  margin: 10px 40px;
+  text-align: center;
+  background-color: #00866e;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+  width: 300px;
+  display: inline-block;
+}
+
+button {
+  background-color: #00866e;
+  color: #ffffff;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 60px 10px 60px;
+  margin: 20px 0px;
+}
+
+button:hover {
+  color: #00866e;
+  background: #ffffff;
+  transition: ease-in 0.25s;
+  padding: 12px 62px 12px 62px;
+}
+
+.red-color:hover {
+  background-color: #ff0000;
+  transition: ease-in 0.5s;
+}
+
+.green-color:hover {
+  background-color: #00ff00;
+  transition: ease-in 0.5s;
+}
+
+.blue-color:hover {
+  background-color: #0000ff;
+  transition: ease-in 0.5s;
+}
+
+.split-color:hover {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(0, 255, 0, 1) 50%,
+    rgba(0, 0, 255, 1) 100%
+  );
+  transition: ease-in 0.5s;
+}
+
+.ghost-color:hover {
+  background-color: grey;
+  color: #ffffff;
+  transition: ease-in 0.5s;
+}
+
+.custom-color:hover {
+  background-color: white;
+  color: grey;
+  transition: 0.35s;
+}
+
+.no-color:hover {
+  background-color: #006b56;
+  transition: ease-in 0.5s;
+}
+
+label {
+  color: #ffffff;
+}
+
+.filters {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__label {
+  padding: 16px 28px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #00866e;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.radio__label:not(:last-of-type) {
+  border-right: 1px solid #006b56;
+}
+
+.radio__input:checked + .red-color {
+  background-color: #ff0000;
+}
+
+.radio__input:checked + .green-color {
+  background-color: #00ff00;
+}
+
+.radio__input:checked + .blue-color {
+  background-color: #0000ff;
+}
+
+.radio__input:checked + .split-color {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(0, 255, 0, 1) 50%,
+    rgba(0, 0, 255, 1) 100%
+  );
+}
+
+.radio__input:checked + .ghost-color {
+  background-color: grey;
+}
+
+.radio__input:checked + .custom-color {
+  background-color: #ffffff;
+  color: #00866e;
+}
+
+.radio__input:checked + .no-color {
+  background-color: #006b56;
+}
+
+.filters-container p {
+  color: #ffffff;
+  margin: 10px auto;
+  font-size: 22px;
+}
+
+.custom-filter p {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.live-preview p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 5px auto;
+}
+/* End of styles for Filters, Live Preview and Take Picture Button. */
+/* End of Left Container Styles */

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Camera !</title>
+    <link rel = "stylesheet" href = "style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <section id = "container">
+      <!-- Start of Right Container -->
+      <section class = "right-container">
+        <div class="preview-container">
+          <div class="final-preview">
+            <p>Snap Preview</p>
+            <canvas class="photo"></canvas> 
+            <!-- Image data captured from the video is added to the canvas every 16 milliseconds. -->
+          </div>  
+        </div>
+        
+        <div class = "snap-container">
+          <div class="strip-content">
+            <p>Your Snaps!: <span>Click to Download.</span></p>
+          </div>
+          
+          <div class = "strip-container">
+            <div class="strip"></div>
+          </div>
+          <!-- Pictures taken are added into the <div> element of class strip. -->
+        </div>
+      </section>
+      <!-- End of Right Container -->
+      <!-- Start of Left Container -->
+      <section class = "left-container">
+        <div class="text-content">
+          <h1>Click!</h1>
+          <h3>Live Camera with Amazing Filters</h3>
+          <p>DragonUncaged</p>
+        </div>
+
+        <section class= "media-content">
+          <!-- Filters are made by manipulating the pixels from the image taken from video. -->
+          <div class="filters-container">
+            <p>Pick any Filter!</p>
+            <div class="filters">
+              <input class="radio__input" type="radio" id="red-filter" name="filter-group">
+              <label class="radio__label red-color" for="red-filter">Red</label>
+              
+              <input class="radio__input" type="radio" id="green-filter" name="filter-group">
+              <label class="radio__label green-color" for="green-filter">Green</label>
+  
+              <input class="radio__input" type="radio" id="blue-filter" name="filter-group">
+              <label class="radio__label blue-color" for="blue-filter">Blue</label>
+  
+              <input class="radio__input" type="radio" id="split-filter" name="filter-group">
+              <label class="radio__label split-color" for="split-filter">RGB Split</label>
+  
+              <input class="radio__input" type="radio" id="ghost-filter" name="filter-group">
+              <label class="radio__label ghost-color" for="ghost-filter">Ghost</label>
+     
+              <input class="radio__input" type="radio" id="custom-filter" name="filter-group">
+              <label class="radio__label custom-color" for="custom-filter">Custom</label>
+  
+              <input class="radio__input" type="radio" id="no-filter" name="filter-group">
+              <label class="radio__label no-color" for="no-filter">Normal</label>
+            </div>
+          </div>
+
+          <div class = "controls">
+            <!-- RGB values of the Custom Filter is set through the input of type range. -->
+            <div class = "custom-filter">
+              <p>Set Custom Filter:</p>
+              <label class="red-range" for="red">Red:</label>
+              <input type="range" min=0 max=255 name="red" id="red">
+              <br>
+              <label class="green-range" for="green">Green:</label>
+              <input type="range" min=0 max=255 name="green" id="green">
+              <br>
+              <label class="blue-range" for="blue">Blue:</label>
+              <input type="range" min=0 max=255 name="blue" id="blue">
+              <br>
+              <label for="alpha">Alpha:</label>
+              <input type = "range" min = 0 max = 1 step = 0.1 name="alpha" id="alpha">
+            </div>
+          
+            <!-- Live Output from the webcam -->
+            <div class="live-preview">
+              <video class="player"></video>
+              <p>Live Preview</p>
+            </div>
+          </div>
+
+          <!-- Takes Photo -->
+          <div class="button-container">
+            <button onClick = "takePhoto()">Take Photo</button>
+          </div>
+
+        </section>
+        <!-- End of Left Container -->
+      </section>
+
+      <!-- Audio Clip -->
+      <audio class="snap" src="./media/snap.mp3"></audio>
+      <script src="scripts.js"></script>
+
+    </section>
+  </body>
+</html>
