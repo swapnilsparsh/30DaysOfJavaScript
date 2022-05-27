@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graph Plotter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type='text/javascript' src='functions.js'></script>
+  </head>
+  <body>
+    <center>
+    <h1><u><i>Graph Plot</i></u></h1>  
+    <form name='myForm' method='get' action='graph.php' onsubmit='return main()'>
+      Enter equation: <input type='text' name='str' 
+                        maxlength='80' >
+      <input type='submit' value='Plot'><br>
+    </form>
+    <br>
+    <div id='error'>
+      No equation entered
+    </div>
+    <canvas id='graphArea' width='640' height='480'>
+      Graph Area.
+    </canvas>
+    <script>
+      drawGraph();
+    </script>
+  </center>
+  <hr>
+  <center>
+    <ul class='menu'>
+    <li><a href='Instructions.html' class='link'>Instructions</a></li>&nbsp;&nbsp;&nbsp;
+    <li><a href='About.html' class='link'>About</a></li>
+    </ul>
+    <br>&copy;2022 All rights reserved
+  </center>
+  </body>
+</html>

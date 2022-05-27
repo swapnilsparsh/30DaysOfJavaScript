@@ -1,0 +1,60 @@
+h1 {
+  color : #DAA520;
+}
+body {
+  background-color : #E0FFFF;
+}
+#graphArea {
+  background-color : #90EE90;
+  border : 2px solid black;
+}
+#error {
+  color : #003300;
+}
+input[type=submit] {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #acd6ef; /* IE fallback */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+  background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+  background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+  border-radius: 30px;
+  border: 1px solid #66add6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+  cursor: pointer;
+}
+
+input[type=text] {
+  color: #777;
+  width: 290px;
+  height: 25px;
+  border: 1px solid #c7d0d2;
+  border-radius: 2px;
+  box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, -4), 0 0 0
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+li a, .button {
+  text-decoration: none;
+}
+
+li a:hover, .button:hover {
+  color:green;
+}
+
+.menu li, .button {
+  display      :inline;
+  padding      : 4px 6px;
+  border       :1px solid #777;
+  background   :#ddd;
+  color        :#d04;
+  margin-right :8px;
+  border-radius:5px;
+  -moz-box-shadow: 2px 2px 2px #888;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  box-shadow       : 2px 2px 2px #888;
+}
+ 
