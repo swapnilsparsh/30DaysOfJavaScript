@@ -13,3 +13,17 @@ kt();
 const myfunc = () =>{
   kt();
 }
+
+
+//function to share the generated meme on social networks
+function share(){
+	if (navigator.share !== undefined) {
+		navigator.share({
+			title: 'Meme Genrator',
+			text: 'meme generator',
+			url: 'u_data',
+		})
+		.then(() => console.log('Successful share'))
+		.catch((error) => console.log('Error sharing', error));
+	}
+}
