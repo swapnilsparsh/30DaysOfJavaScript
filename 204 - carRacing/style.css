@@ -1,0 +1,80 @@
+#container {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    left: 5%;
+    background-color: green;
+    overflow: hidden;
+}
+
+.dashboard {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;
+}
+
+.btnStart {
+    position: absolute;
+    top: 580px;
+    left: 300px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+    z-index: 200;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.road {
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    height: 55px;
+    top: 0;
+    left: 200px;
+    text-align: center;
+    color: white;
+    background-color: #444;
+    border-radius: 2px;
+}
+
+.road:before {
+    content: "|";
+    vertical-align: top;
+    color: white;
+    width: 1px;
+    height: 10px;
+    line-height: 30px;
+    left: 50%;
+    position: absolute;
+}
+
+.baddy {
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-image: url(car2.png);
+    background-size: cover;
+    z-index: 99;
+    text-align: center;
+}
+
+.playerCar {
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    bottom: 60px;
+    left: 250px;
+    border-radius: 5px;
+    background-image: url(car1.png);
+    background-size: cover;
+    z-index: 100;
+}
