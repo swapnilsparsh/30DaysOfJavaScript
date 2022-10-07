@@ -223,8 +223,13 @@ footer {
   margin-top: 30px;
 }
 
+footer a {
+  color: white !important;
+
+}
+
 footer a:visited {
-  color: white;
+  color: white !important;
 
 }
 
