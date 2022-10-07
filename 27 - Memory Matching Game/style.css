@@ -39,17 +39,16 @@ h3 {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  box-shadow: 1px 1px 1px rgba(1, 1, 1, .3);
+  margin: 5px;
   height: calc(28% - 10px);
   width: calc(25% - 10px);
-  margin: 5px;
   transform-style: preserve-3d;
   transform: scale(1);
   transition: transform .9s;
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, .3);
 }
 
 .card.show {
-  /*transform: rotateY(0deg);*/
   transform: rotateY(180deg);
 }
 
