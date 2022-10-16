@@ -1,11 +1,25 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans";
+}
+  
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+  
 body {
-    max-height: 100vh;
-    background-color: #19172e;
+    overflow: hidden;
+    background: #19172e;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
 }
 
 #piano {
     margin: auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     width: 70%;
     max-width: 800px;
     height: 300px;
@@ -66,6 +80,16 @@ body {
     top: 50px;
 }
 
+@media screen and (max-width: 550px) {
+    #volumeBar{
+        position: absolute;
+        top: 150px;
+    }
+    #piano{
+        width: 100%;
+    }
+}
+
 .fa-volume-up {
     color: yellow;
     font-size: 36px;
@@ -87,3 +111,15 @@ body {
     user-select: none;
     color: white;
 }
+
+footer, a{
+    color: #fff;
+  }
+
+footer{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+  
