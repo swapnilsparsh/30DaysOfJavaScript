@@ -8,24 +8,21 @@ function formatTime(time) {
   return time.toString().padStart(2, "0");
 }
 
+function isAmPm(hours) {
+  return hours >= 12 ? "PM" : "AM";
+}
+
 function clock() {
   const date = new Date();
 
-  let h = formatTime(date.getHours());
-  let m = formatTime(date.getMinutes());
-  let s = formatTime(date.getSeconds());
-  let am = "AM";
+  let h = date.getHours();
+  let m = date.getMinutes();
+  let s = date.getSeconds();
 
-  // Conver 24 hour time to 12 hour format with AM/PM Indicator
-  if (h > 12) {
-    h = h - 12;
-    am = "PM";
-  }
-
-  hour.textContent = h;
-  minute.textContent = m;
-  seconds.textContent = s;
-  ampm.textContent = am;
+  hour.textContent = formatTime(h);
+  minute.textContent = formatTime(m);
+  seconds.textContent = formatTime(s);
+  ampm.textContent = isAmPm(h);
 }
 
 setInterval(clock, 1000);
