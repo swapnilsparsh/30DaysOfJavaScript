@@ -71,7 +71,7 @@ h4 {
   border-radius: 30px;
   display: inline-block;
   width: 125px;
-
+  text-transform: uppercase;
   height: 125px;
   text-align: center;
   margin: 15px;
