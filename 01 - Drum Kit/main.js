@@ -1,6 +1,7 @@
 import keyCodes from "./data/keycodes.js";
+import { createKeyElement } from "./utils/util.js";
 
-const kbds = document.querySelectorAll("kbd");
+const keys = document.getElementById("keys");
 
 const audio = new Audio();
 
@@ -14,7 +15,7 @@ window.addEventListener("keydown", async function ({ key }) {
   }
 });
 
-kbds.forEach((kbd) => {
-  const event = new KeyboardEvent("keydown", { key: kbd.textContent });
-  kbd.addEventListener("click", () => window.dispatchEvent(event));
+keyCodes.forEach((keyCode) => {
+  const key = createKeyElement(keyCode);
+  keys.appendChild(key);
 });
