@@ -51,43 +51,6 @@ h4 {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.A {
-  background-image: url("image/tom1.png");
-}
-
-.S {
-  background-image: url("image/tom2.png");
-}
-
-.D {
-  background-image: url("image/tom1.png");
-}
-
-.F {
-  background-image: url("image/crash.png");
-}
-
-.G {
-  background-image: url("image/images.jfif");
-}
-
-.H {
-  background-image: url("image/crash.png");
-}
-
-.J {
-  background-image: url("image/snare.png");
-}
-
-.K {
-  background-image: url("image/tomm5.jfif");
-}
-
-.L {
-  background-image: url("image/piano.jfif");
-}
-
 .keys {
   display: grid;
   grid-template-columns: repeat(auto-fill, 125px);
