@@ -1,47 +1,21 @@
-const keys = Array.from(document.querySelectorAll('.key'));
+import keyCodes from "./data/keycodes.js";
+import { createKeyElement } from "./utils/util.js";
 
-const keyCode = {
-    A: 65,
-    S: 83,
-    D: 68,
-    F: 70,
-    G: 71,
-    H: 72,
-    J: 74,
-    K: 75,
-    L: 76,
-};
+const keys = document.getElementById("keys");
 
-function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
-    e.target.classList.remove('playing');
-}
+const audio = new Audio();
 
-function playSound(e) {
-    const audio = document.querySelector(
-        `audio[data-key="${e.keyCode || keyCode[e.target.innerHTML]}"]`
-    );
+window.addEventListener("keydown", async function ({ key }) {
+  const sound = keyCodes.find(
+    (keyCode) => keyCode.key.toLowerCase() === key.toLowerCase()
+  )?.sound;
+  if (sound) {
+    audio.src = `sounds/${sound}.wav`;
+    await audio.play();
+  }
+});
 
-    const key = document.querySelector(
-        `div[data-key="${e.keyCode || keyCode[e.target.innerHTML]}"]`
-    );
-
-    if (!audio) return;
-
-    key.classList.add('playing');
-    audio.currentTime = 0;
-    audio.play();
-}
-
-
-
-
-keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
-
-window.addEventListener('keydown', playSound);
-
-keys.forEach((key) =>
-    key.addEventListener('click', (e) => {
-        playSound(e);
-    })
-);
+keyCodes.forEach((keyCode) => {
+  const key = createKeyElement(keyCode);
+  keys.appendChild(key);
+});
