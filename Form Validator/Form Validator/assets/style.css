@@ -1,0 +1,30 @@
+body {
+    background: #eee;
+}
+
+form {
+    max-width: 300px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+}
+
+.success {
+    border: 2px solid green;
+}
+
+.failed {
+    border: 2px solid red;
+}
