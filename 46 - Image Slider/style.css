@@ -1,9 +1,12 @@
-*,
-*:before,
-*:after {
-  margin: 0;
+* {
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
 }
 
 html {
@@ -11,6 +14,20 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
 }
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+a {
+  color: white;
+}
+
 @media only screen and (max-width: 800px) {
   html {
     font-size: 57%;
@@ -18,9 +35,10 @@ html {
 }
 
 body {
-  background-color: #000;
+  overflow: hidden;
+  background: #19172e;
   color: #fff;
-  padding: 8rem;
+  min-height: 100vh;
 }
 @media only screen and (max-width: 1000px) {
   body {
@@ -113,12 +131,12 @@ body {
   padding: 5rem;
   padding-left: 10rem;
   z-index: 100;
-  grid-column: 1/span 1;
+  grid-column: 1 / span 1;
   grid-row: 1/-1;
 }
 @media only screen and (max-width: 650px) {
   .slider .box .details {
-    grid-row: 2/span 1;
+    grid-row: 2 / span 1;
     grid-column: 1/-1;
     text-align: center;
     padding: 2rem;
@@ -164,7 +182,8 @@ body {
 .slider .box1 .illustration .inner {
   background-color: #ff0077;
 }
-.slider .box1 .illustration .inner::after, .slider .box1 .illustration .inner::before {
+.slider .box1 .illustration .inner::after,
+.slider .box1 .illustration .inner::before {
   background-color: rgba(255, 0, 119, 0.4);
 }
 .slider .box1 button {
@@ -176,7 +195,8 @@ body {
 .slider .box2 .illustration .inner {
   background-color: #0033ff;
 }
-.slider .box2 .illustration .inner::after, .slider .box2 .illustration .inner::before {
+.slider .box2 .illustration .inner::after,
+.slider .box2 .illustration .inner::before {
   background-color: rgba(0, 51, 255, 0.4);
 }
 .slider .box2 button {
@@ -188,7 +208,8 @@ body {
 .slider .box3 .illustration .inner {
   background-color: #00ff44;
 }
-.slider .box3 .illustration .inner::after, .slider .box3 .illustration .inner::before {
+.slider .box3 .illustration .inner::after,
+.slider .box3 .illustration .inner::before {
   background-color: rgba(0, 255, 68, 0.4);
 }
 .slider .box3 button {
@@ -200,7 +221,8 @@ body {
 .slider .box4 .illustration .inner {
   background-color: #ff4e00;
 }
-.slider .box4 .illustration .inner::after, .slider .box4 .illustration .inner::before {
+.slider .box4 .illustration .inner::after,
+.slider .box4 .illustration .inner::before {
   background-color: rgba(255, 78, 0, 0.4);
 }
 .slider .box4 button {
@@ -212,7 +234,8 @@ body {
 .slider .box5 .illustration .inner {
   background-color: #8000ff;
 }
-.slider .box5 .illustration .inner::after, .slider .box5 .illustration .inner::before {
+.slider .box5 .illustration .inner::after,
+.slider .box5 .illustration .inner::before {
   background-color: rgba(128, 0, 255, 0.4);
 }
 .slider .box5 button {
@@ -225,7 +248,7 @@ body {
 }
 @media only screen and (max-width: 650px) {
   .slider .illustration {
-    grid-row: 1/span 1;
+    grid-row: 1 / span 1;
     grid-column: 1/-1;
     display: flex;
     justify-content: center;
@@ -246,7 +269,8 @@ body {
     width: 15rem;
   }
 }
-.slider .illustration div::after, .slider .illustration div::before {
+.slider .illustration div::after,
+.slider .illustration div::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -278,7 +302,7 @@ body {
 }
 @media only screen and (max-width: 650px) {
   .prev,
-.next {
+  .next {
     display: none;
   }
 }
