@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "sans";
 }
 
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
 body {
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "sans";
   font-size: 12px;
   background-color: #19172e;
   display: flex;
@@ -32,7 +36,6 @@ h1 {
   font-size: 36px;
   margin: 30px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 /* Items */
