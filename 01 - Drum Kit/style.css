@@ -1,107 +1,77 @@
-html {
-    font-size: 10px;
-    background: url("https://wallpaperaccess.com/full/1524018.jpg") bottom center ;
-    overflow: hidden;
-    user-select: none;
-    background-position: center;
-    background-attachment: fixed;
-    padding-left: rgb(255, 0, 0);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+@font-face {
+  src: url("font/sans.ttf");
+  font-family: "sans";
+}
+
+html {
+  font-size: 10px;
+  background: url("https://wallpaperaccess.com/full/1524018.jpg") bottom center;
+  overflow: hidden;
+  user-select: none;
+  background-position: center;
+  background-attachment: fixed;
+  padding-left: rgb(255, 0, 0);
 }
 
 body,
 html {
-    margin: 0;
-    padding: 0;
-    font-family: 'sans';
+  margin: 0;
+  padding: 0;
+  font-family: "sans";
 }
 
-@font-face {
-    src: url('font/sans.ttf');
-    font-family: 'sans';
-}
 h1 {
-  font-size:5.5rem;
-  color: #FEFFE2;
+  font-size: 5.5rem;
+  color: #feffe2;
   font-family: "Arvo", cursive;
   text-align: center;
-  text-shadow: 3px 0 #DA0463;
-
-
-
+  text-shadow: 3px 0 #da0463;
 }
 
-span{
-    font-weight: 100;
+span {
+  font-weight: 100;
 }
 
 h4 {
-    font-size: 2rem;
-    text-align: center;
-    top: 0;
-    padding-top: 5px;
-    color: #fff;
-}
-.A {
-  background-image: url("image/tom1.png");
+  font-size: 2rem;
+  text-align: center;
+  top: 0;
+  padding-top: 5px;
+  color: #fff;
 }
 
-.S{
-  background-image: url("image/tom2.png");
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.D {
-  background-image: url("image/tom1.png");
-}
-
-.F{
-  background-image: url("image/crash.png");
-}
-
-.G {
-  background-image: url("image/images.jfif");
-}
-
-.H {
-  background-image: url("image/crash.png");
-}
-
-.J  {
-  background-image: url("image/snare.png");
-}
-
-.K {
-  background-image: url("image/tomm5.jfif");
-}
-
-.L  {
-  background-image: url("image/piano.jfif");
-}
-
-
 .keys {
-    display: flex;
-    flex-direction: row;
-    flex:1;
-    min-height: 70vh;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 125px);
+  justify-content: center;
+  grid-gap: 10px;
 }
 
 .key {
-
-  border: 10px solid: white;
+  border: 10px solid white;
   font-size: 5rem;
-  font-family: 'Arvo', cursive;
-  padding:1rem 0.5rem;
-  transistion: all 0.07s ease;
+  font-family: "Arvo", cursive;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
   line-height: 1.5;
   font-weight: 900;
-  color: #009DAE;
-  text-shadow: 3px 0 :#E04DB0;
+  color: #009dae;
+  text-shadow: 3px 0 #e04db0;
   border-radius: 30px;
   display: inline-block;
   width: 125px;
+  text-transform: uppercase;
   height: 125px;
   text-align: center;
   margin: 15px;
@@ -109,41 +79,39 @@ h4 {
 }
 
 .playing {
-
-    border-color: #bb86fc;
-    box-shadow: 0 0 2rem #bb86fc;
+  border-color: #bb86fc;
+  box-shadow: 0 0 2rem #bb86fc;
 }
 
 kbd {
   display: block;
-    font-size: 4.3rem;
-    font-family: 'Arvo', cursive;
-    color: #0F2C67;
-text-shadow: 3px 0 #DBEDF3;
-    cursor: pointer;
-
+  font-size: 4.3rem;
+  font-family: "Arvo", cursive;
+  color: #0f2c67;
+  text-shadow: 3px 0 #dbedf3;
+  cursor: pointer;
 }
 
 .sound {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: #483434;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #483434;
 }
 
 footer {
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0;
-    padding: 5px;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
 }
 
 footer a:visited {
-    color: inherit;
+  color: inherit;
 }
