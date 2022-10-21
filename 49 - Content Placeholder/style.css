@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
+  padding: 0;
   box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
 }
 
 body {
   background-color: #ecf0f1;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: "sans";
+  background: #19172e;
   height: 100vh;
+  text-align: center;
   overflow: hidden;
   margin: 0;
+}
+
+h1, footer, a{
+  color: white;
 }
 
 img {
@@ -20,6 +28,7 @@ img {
 }
 
 .card {
+  margin: 5rem auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
