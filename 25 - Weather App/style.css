@@ -61,7 +61,7 @@ h1{
 .weather {
   display: flex;
   flex-direction: row;
-  margin: 15px 0;
+  margin: 5px 0;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -98,8 +98,9 @@ footer a:visited {
 }
 
 .app-main {
-  width: 50vh;
-  margin: 100px auto;
+  min-width: 50vh;
+  width: 50vw;
+  margin: 10px auto;
   background-color: rgba(255, 255, 255, 0.50);
   padding: 20px;
   text-align: center;
@@ -130,11 +131,11 @@ footer a:visited {
 .weather-body{
   display: none;
   color: #582233;
-  padding: 20px;
+  padding: 10px;
   line-height: 2rem;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.50);
-  height: 40vh;
+  /* height: 40vh; */
   text-align: center;
   
 
@@ -146,7 +147,7 @@ footer a:visited {
 }
 
 .weather-status{
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   text-align: center;
 
@@ -191,4 +192,6 @@ footer a:visited {
   
 }
 
-
+#myChart{
+  display: none;
+}
