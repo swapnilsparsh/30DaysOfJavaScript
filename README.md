@@ -6,6 +6,10 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
 <pre><center><a href="https://30daysofjs.netlify.app/"><b>30daysofjs.netlify.app</b></a></center></pre>
 
+<table>
+  <tr><th></th><th></th></tr>
+  <tr><td>
+
 | Day |                                                Name                                                 |
 | --- | :-------------------------------------------------------------------------------------------------: |
 | 1   |                   [Drum Kit](https://30daysofjs.netlify.app/01%20-%20drum%20kit/)                   |
@@ -16,8 +20,13 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 6   |                    [Calendar](https://30daysofjs.netlify.app/06%20-%20calendar/)                    |
 | 7   |        [Dynamic Form Field](https://30daysofjs.netlify.app/07%20-%20dynamic%20form%20field/)        |
 | 8   |             [Number Counter](https://30daysofjs.netlify.app/08%20-%20number%20counter/)             |
-| 9   |                  [Dice Roll](https://30daysofjs.netlify.app/09%20-%20dice%20roll/)                  |
+| 9   |                  [Dice Roll](https://30daysofjs.netlify.app/09%20-%20dice%20roll/)                  |    
 | 10  |    [Emoji Switcher](https://30daysofjs.netlify.app/10%20-%20emoji%20switcher%20like%20discord/)     |
+    
+ </td><td>
+    
+| Day |                                                Name                                                 |
+| --- | :-------------------------------------------------------------------------------------------------: |    
 | 11  |               [Color Picker](https://30daysofjs.netlify.app/11%20-%20color%20picker/)               |
 | 12  |            [Custom QR Code](https://30daysofjs.netlify.app/12%20-%20custom%20qr%20code/)            |
 | 13  |            [Favicon Fetcher](https://30daysofjs.netlify.app/13%20-%20favicon%20fetcher/)            |
@@ -28,6 +37,11 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 18  |                   [Stopwatch](https://30daysofjs.netlify.app/18%20-%20stopwatch/)                   |
 | 19  |              [Traffic Lights](https://30daysofjs.netlify.app/19%20-traffic%20lights/)               |
 | 20  |             [Levitate Board](https://30daysofjs.netlify.app/20%20-%20levitate%20board/)             |
+    
+ </td><td>
+    
+| Day |                                                Name                                                 |
+| --- | :-------------------------------------------------------------------------------------------------: |    
 | 21  |                [Wave Effect](https://30daysofjs.netlify.app/21%20-%20wave%20effect/)                |
 | 22  |                [Zoom Effect](https://30daysofjs.netlify.app/22%20-%20zoom%20effect/)                |
 | 23  |                [Drawing Pad](https://30daysofjs.netlify.app/23%20-%20drawing%20pad/)                |
@@ -39,7 +53,16 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 29  |                [To Do List](https://30daysofjs.netlify.app/29%20-%20to%20do%20list/)                |
 | 30  |               [Tic Tac Toe](https://30daysofjs.netlify.app/30%20-%20tic%20tac%20toe/)               |
 
+  
+</td></tr></table>
+
+
+
 ## Extra Practice
+
+<table>
+  <tr><th></th><th></th></tr>
+  <tr><td>
 
 | Day |                                                        Name                                                         |
 | --- | :-----------------------------------------------------------------------------------------------------------------: |
@@ -102,6 +125,11 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 87  |       [Body Mass Index Calculator](https://30daysofjs.netlify.app/87%20-%20Body%20Mass%20Index%20Calculator/)       |
 | 88  |                    [Ping Pong Game](https://30daysofjs.netlify.app/88%20-%20Ping%20Pong%20Game/)                    |
 | 89  |       [Projectile Motion Simulator](https://30daysofjs.netlify.app/89%20-%20Projectile%20Motion%20Simulator/)       |
+    
+ </td><td>   
+    
+| Day |                                                Name                                                                 |
+| --- | :-----------------------------------------------------------------------------------------------------------------: |    
 | 90  |                  [Guess the Number](https://30daysofjs.netlify.app/90%20-%20Guess%20the%20Number/)                  |
 | 91  |                   [CRUD Application](https://30daysofjs.netlify.app/91%20-%20CRUD%20Application/)                   |
 | 92  |                               [Casio](https://30daysofjs.netlify.app/92%20-%20Casio/)                               |
@@ -159,6 +187,11 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 145 |                      [Number Facts](https://30daysofjs.netlify.app/145%20-%20Number%20Facts/)                       |
 | 146 |                          [Quiz App](https://30daysofjs.netlify.app/146%20-%20Quiz%20App/)                           |
 | 147 |                   [Screen Recorder](https://30daysofjs.netlify.app/147%20-%20Screen%20Recorder/)                    |
+    
+ </td><td>
+    
+| Day |                                                Name                                                                 |
+| --- | :-----------------------------------------------------------------------------------------------------------------: |    
 | 148 |                       [Side NavBar](https://30daysofjs.netlify.app/148%20-%20Side%20NavBar/)                        |
 | 149 |                 [Snake Game Voice](https://30daysofjs.netlify.app/149%20-%20Snake%20Game%20Voice/)                  |
 | 150 |                [Snowy Particle Js](https://30daysofjs.netlify.app/150%20-%20Snowy%20Particle%20Js/)                 |
@@ -214,11 +247,33 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 200 |                     [Image Utility](https://30daysofjs.netlify.app/200%20-%20Image%20Utility/)                      |
 | 201 |                   [FlappyBird Game](https://30daysofjs.netlify.app/201%20-%20FlappyBird%20Game/)                    |
 | 202 |                     [TaskManagement](https://30daysofjs.netlify.app/202%20-%20TaskManagement/)                      |
-| 203 |               [N Queen Visualizer](https://30daysofjs.netlify.app/203-%20N%20Queen%20Visualizer/)                |
+| 203 |               [N Queen Visualizer](https://30daysofjs.netlify.app/203-%20N%20Queen%20Visualizer/)                   |
 | 204 |                          [Portfolio](https://30daysofjs.netlify.app/204%20-%20Portfolio/)                           |
 | 205 |               [Domain Availability](https://30daysofjs.netlify.app/205%20-%20Domain%20Availability/)                |
 
-## Contributing
+ </td></tr></table>
+ 
+## screenshots of some projects
+
+
+![screenshot 1](https://user-images.githubusercontent.com/116213566/216122228-35db2636-1cdf-46e4-93b7-2c270719fa9a.png)
+<h1></h1>
+
+![screenshot 2](https://user-images.githubusercontent.com/116213566/216122623-73275c10-b184-4da1-a781-632a07669a06.png)
+<h1></h1>
+
+
+ ![screenshot 3](https://user-images.githubusercontent.com/116213566/216122800-a40198ad-bd83-4365-afd2-f9c2a685191c.png)
+ <h1></h1>
+
+
+
+![screenshot 5](https://user-images.githubusercontent.com/116213566/216126938-2c66afd1-6750-4a11-aea7-febac3997be6.png)
+
+## Contributing!
+
+
+
 
 Before making any contribution, big or small, Contributors are advised to go through the [Contributing Guidelines](./CONTRIBUTING.md).
 
