@@ -253,22 +253,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
  </td></tr></table>
  
-## screenshots of some projects
 
-
-![screenshot 1](https://user-images.githubusercontent.com/116213566/216122228-35db2636-1cdf-46e4-93b7-2c270719fa9a.png)
-<h1></h1>
-
-![screenshot 2](https://user-images.githubusercontent.com/116213566/216122623-73275c10-b184-4da1-a781-632a07669a06.png)
-<h1></h1>
-
-
- ![screenshot 3](https://user-images.githubusercontent.com/116213566/216122800-a40198ad-bd83-4365-afd2-f9c2a685191c.png)
- <h1></h1>
-
-
-
-![screenshot 5](https://user-images.githubusercontent.com/116213566/216126938-2c66afd1-6750-4a11-aea7-febac3997be6.png)
 
 ## Contributing!
 
