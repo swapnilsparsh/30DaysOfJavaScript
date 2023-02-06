@@ -4,9 +4,10 @@ body,html {
   font-family: sans-serif;
   overflow: hidden;
   font-size: 10px;
-  background-color: #19172e;
   user-select: none;
 }
+
+
 
 h3,p{
   font-size: 3rem;

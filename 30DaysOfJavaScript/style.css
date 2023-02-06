@@ -12,6 +12,7 @@
 
 body {
   font-family: "sans";
+
 }
 
 /* Preloader */
@@ -23,67 +24,18 @@ body {
   background-position: center;
   z-index: 99999;
 }
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #111;
-  color: #eee;
+.one {  
+   background-image: url(bg2.jpg);
+   background-attachment: fixed
 }
-
-body.dark-mode a {
-  color: #111;
+.one h1{
+  color: aquamarine;
+  font-family:cursive ;
+  font-size: 80px;
+  
 }
+.one 
 
-body.dark-mode button {
-  background-color: #eee;
-  color: #111;
-}
-
-body.dark-mode h4 {
-  color: #eee;
-}
-
-body.dark-mode svg {
-  fill: #fff;
-  color: #151513;
-}
-
-body.dark-mode input {
-  color: white;
-}
-
-body.light-mode input {
-  color: #111;
-}
-
-body.light-mode {
-  background-color: #eee;
-  color: #111;
-}
-
-body.light-mode a {
-  color: #111;
-}
-
-body.light-mode button {
-  background-color: #111;
-  color: #eee;
-}
-
-body.light-mode h4 {
-  color: #111;
-}
-
-body.light-mode i {
-  color: #111;
-}
-
-body.light-mode svg {
-  fill: #151513;
-  color: #fff;
-}
-
-/* Octocat */
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
@@ -107,15 +59,6 @@ body.light-mode svg {
   }
 }
 
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
 
 .toggleButton {
   position: absolute;
@@ -154,6 +97,7 @@ h1 {
 h4 {
   padding: 2%;
   float: left;
+  font-size: x-large;
 }
 
 i{
@@ -188,7 +132,9 @@ a:visited {
   flex: 50%;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: aqua;
+  
+
   box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 2px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   transition: transform .3s ease-in-out 0s;
@@ -197,22 +143,27 @@ a:visited {
 .item:hover {
   transform: scale3d(1.05, 1.05, 1);
   /* border: 1px solid #ffffff; */
+  background-color: brown;
   filter: drop-shadow(10px);
   filter: contrast(110%);
 }
-
-.item h4 {
-  font-size: 1.3rem;
-  text-align: left;
+.item h4:hover{
+  color: plum
 }
+.item a h4{
+  color: peru;
+
+}
+
 
 .main {
   width: 90vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 24px;
   row-gap: 24px;
   margin: auto;
+  
 }
 
 .main a {
@@ -242,6 +193,7 @@ footer a:visited {
   color: white !important;
 
 }
+
 
 @media (max-width: 800px) {
   .container {
@@ -275,13 +227,18 @@ footer a:visited {
 }
 
 input {
+  background-color: lightpink;
   border-radius: 3rem;
   padding: 10px;
   width: 15%;
   position: absolute;
   top: 6.5%;
   right: 7%;
-  background: transparent;
+  
+}
+h2{
+  color: darkorange;
+  font-size: xx-large;
 }
 
 @media(max-width:1000px) {
