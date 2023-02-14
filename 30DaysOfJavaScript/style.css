@@ -123,7 +123,7 @@ body.light-mode svg {
   display: inline-block;
   position: absolute;
   top: 0;
-  margin: 10px 3px 3px 10px;
+  margin: 30px 3px 3px 10px;
   padding: 3px;
   border: none;
   border-radius: 50%;
@@ -287,7 +287,7 @@ footer a:visited {
 
 input {
   display: inline-block;
-  margin: 10px;
+  margin: 0px, 10px, 10px, 10px;
   border-radius: 25px;
   padding: 10px;
   width: 15%;
@@ -507,3 +507,12 @@ header {
     font-size: px;
   }
 }
+@media screen and (max-width: 330px) {
+  .toggleButton{
+    font-size: 20px;
+    margin: 45px 3px 3px 10px;
+  padding: 3px;
+       
+  }
+}
+
