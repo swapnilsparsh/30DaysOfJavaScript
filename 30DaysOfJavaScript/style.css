@@ -122,14 +122,14 @@ body.light-mode svg {
 .toggleButton {
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 15px;
   margin: 30px 3px 3px 10px;
   padding: 3px;
   border: none;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 45px;
   left: 0;
-  
+
 }
 
 html.transition,
@@ -389,6 +389,7 @@ header {
     font-size: 20px;
   }
 }
+
 @media (min-width: 600px) {
   h1 {
     font-size: 1.6rem;
@@ -407,16 +408,14 @@ header {
   }
 }
 
-@media only screen and (max-width: 320px) {
-  h1 {
-    text-align: left;
-  }
-  
-  #searchbar, .toggleButton {
-    display: block;
-    margin: 0 auto;
-  }
+
+#searchbar,
+.toggleButton {
+  display: block;
+  margin: 0 auto;
 }
+}
+
 @media only screen and (max-width: 320px) {
   h1 {
     font-size: 18px;
@@ -424,19 +423,19 @@ header {
   }
 }
 
-  .dark-btn {
-    padding: 4px 8px;
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-  
-  .search-container {
-    padding: 4px;
-  }
-  
-  .search-input {
-    font-size: 14px;
-  }
+.dark-btn {
+  padding: 4px 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.search-container {
+  padding: 4px;
+}
+
+.search-input {
+  font-size: 14px;
+}
 
 @media screen and (max-width: 530px) {
   h1 {
@@ -444,75 +443,110 @@ header {
     margin-top: 25px;
   }
 }
+
 @media screen and (max-width: 571px) {
   h1 {
     font-size: 20px;
     margin-top: 25px;
   }
 }
+
 @media screen and(max-width: 571px) {
-  input{
+  input {
     margin-top: 10px;
   }
 }
+
 @media screen and (max-width: 426px) {
   h1 {
     font-size: 18px;
   }
 }
+
 @media screen and (max-width: 382px) {
   h1 {
     font-size: 16px;
   }
 }
+
 @media screen and (max-width: 340px) {
   h1 {
     font-size: 15px;
   }
 }
+
 @media screen and (max-width: 302px) {
   h1 {
     font-size: 14px;
   }
 }
+
 @media screen and (max-width: 278px) {
   h1 {
     font-size: 13px;
   }
 }
+
 @media screen and (max-width: 240px) {
   h1 {
     font-size: 12px;
   }
-}@media screen and (max-width: 200px) {
+}
+
+@media screen and (max-width: 200px) {
   h1 {
     font-size: 11px;
   }
-}@media screen and (max-width: 160px) {
+}
+
+@media screen and (max-width: 160px) {
   h1 {
     font-size: 10px;
   }
-}@media screen and (max-width: 120px) {
+}
+
+@media screen and (max-width: 120px) {
   h1 {
     font-size: 9px;
   }
 }
+
 @media screen and (max-width: 80px) {
   h1 {
     font-size: 8px;
   }
 }
+
 @media screen and (max-width: 40px) {
   h1 {
     font-size: px;
   }
 }
+
 @media screen and (max-width: 330px) {
-  .toggleButton{
-    font-size: 20px;
+  .toggleButton {
     margin: 45px 3px 3px 10px;
-  padding: 3px;
-       
+    padding: 3px;
+
   }
 }
 
+@media screen and (max-width: 331px) {
+  .toggleButton {
+    top: 2px;
+    font-size: 39px;
+    margin: 45px 3px 3px 10px;
+    padding: 3px;
+
+  }
+}
+
+@media screen and (max-width: 237px) {
+  .toggleButton {
+    top: 2px;
+    font-size: 30px;
+    margin: 45px 3px 3px 10px;
+    padding: 3px;
+
+  }
+}
