@@ -124,12 +124,15 @@ body.light-mode svg {
   position: absolute;
   top: 15px;
   margin: 30px 3px 3px 10px;
-  padding: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 9px;
+  padding-right: 9px;
   border: none;
   border-radius: 50%;
   font-size: 45px;
   left: 0;
-
+  
 }
 
 html.transition,
@@ -535,8 +538,11 @@ header {
   .toggleButton {
     top: 2px;
     font-size: 39px;
-    margin: 45px 3px 3px 10px;
-    padding: 3px;
+    margin: 35px 3px 3px 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
 
   }
 }
@@ -550,3 +556,28 @@ header {
 
   }
 }
+@media screen and (max-width: 401px) {
+  .toggleButton {
+    top: 2px;
+    font-size: 45px;
+    margin: 35px 3px 3px 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+
+  }
+}
+@media screen and (max-width: 571px) {
+  .toggleButton {
+    top: 2px;
+    font-size: 45px;
+    margin: 35px 3px 3px 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+
+  }
+}
+
