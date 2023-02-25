@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+ul.pagination {  
+    display: inline-block;  
+    padding: 0;  
+    margin: 0;  
+}  
+ul.pagination li {display: inline;}  
+ul.pagination li a {  
+    color: black;  
+    float: left;  
+    padding: 8px 16px;  
+    text-decoration: none;  
+    border: 1px solid black;  
+}  
+.pagination li:first-child a {  
+    border-top-left-radius: 5px;  
+    border-bottom-left-radius: 5px;  
+}  
+.pagination li:last-child a {  
+    border-top-right-radius: 5px;  
+    border-bottom-right-radius: 5px;  
+}  
+ul.pagination li a.active {  
+    background-color: brown;  
+    color: white;  
+    border: 1px solid grey;  
+}  
+ul.pagination li a:hover:not(.active) {background-color: lightpink;}  
+</style>  
+</head>  
+<body>  
+<h2>Slider</h2>  
+<ul class="pagination">  
+  <li><a href="#">Next</a></li>  
+  <li><a href="http://127.0.0.1:5501/index.html">1</a></li>  
+  <li><a class="active" href="#">2</a></li>  
+  <li><a href="#">3</a></li>  
+  <li><a href="#">4</a></li>  
+  <li><a href="#">5</a></li>  
+  <li><a href="#">6</a></li>  
+  <li><a href="#">7</a></li>  
+  <li><a href="#">Previous</a></li>  
+</ul>  
+</body>  
+</html>  
