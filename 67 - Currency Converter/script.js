@@ -3,6 +3,14 @@ const curr_first = document.getElementById('curr-first');
 const curr_second = document.getElementById('curr-second');
 const worth_first = document.getElementById('worth-first');
 const worth_second = document.getElementById('worth-second');
+const swap_curr = document.getElementById('swap-curr');
+
+function swap() {
+  const temp = curr_first.value;
+  curr_first.value = curr_second.value;
+  curr_second.value = temp;
+  convert();
+}
 
 function convert() {
   const currency_first = curr_first.value;
@@ -19,6 +27,8 @@ function convert() {
     });
 }
 //some javascript event listeners
+swap_curr.addEventListener('click', swap);
+
 curr_first.addEventListener('change', convert);
 worth_first.addEventListener('input', convert);
 curr_second.addEventListener('change', convert);

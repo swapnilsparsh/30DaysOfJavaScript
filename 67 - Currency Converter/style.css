@@ -80,4 +80,23 @@ body {
   button:focus {
     outline: 0;
   }
-  
+
+  .swap {
+    text-align: end;
+  }
+
+  .swap button {
+    background-color:#ff99cc;
+    border: 1px solid #dedede;
+    color: white;
+  }
+
+  .swap button:active {
+    background-color: #ffc1e0;
+  }
+
+  .swap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+  }
