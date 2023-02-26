@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+@media (min-width: 40em) {
+  body {
+    display: flex;
+  }
+}
+
+.bg {
+  --h1: 100deg;
+  --h2: calc(var(--h1) + calc(180deg - 30deg));
+  --h3: calc(var(--h1) + calc(180deg + 30deg));
+  --l1: 50%;
+  --c1: hsl(var(--h1, 0), 90%, var(--l1));
+  --c2: hsl(var(--h2), 90%, var(--l, 70%));
+  --c3: hsl(var(--h3), 60%, var(--d, 40%));
+  --t: 10px;
+  --w: 100px;
+  --angle: 45deg;
+  --grad: var(--c1) var(--t) calc(var(--t) * 2),
+  	      var(--c2) calc(var(--t) * 2) calc(var(--t) * 3),
+  				var(--c3) calc(var(--t) * 3) calc(var(--t) * 4);
+  --mask: linear-gradient(90deg,#000 50%, #0000 0) 0/var(--w) 100%;
+  height: 100vh;
+  position: relative;
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+
+.bg::before,
+.bg::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(100*var(--w));
+  background: repeating-linear-gradient(var(--angle), var(--grad)) 0/var(--w) 100%;
+  transition: --angle 200ms, --t 200ms;
+}
+
+.bg::after {
+  transform: scaleX(-1);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.controls {
+  padding: 1rem;
+  background-color: white;
+  max-width: 30rem;
+  z-index: 1;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 40em) {
+  .controls {
+    display: inline-block;
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+pre {
+  max-width: 100%;
+  overflow: scroll;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.controls__group {
+  display: flex;
+  align-items: center;
+  max-width: 20rem;
+}
+.controls__group label {
+  margin-right: 1rem;
+}
+.controls__group input {
+  margin-left: auto;
+}

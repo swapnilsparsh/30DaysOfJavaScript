@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Guess Who Game</title>
+       <link rel="stylesheet" href="./css/bootstrap.min.css">
+       <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+    <body>
+        <section class="fst-section">
+            <div class="container2">
+                <div class="items">
+                    <div class="row w-100">
+                        <div class="machine-q w-100 d-flex">
+                            <p id="mach-question"></p>
+                        </div>
+                        
+                        <div class="item w-100 d-flex justify-content-center">
+                            <button onclick="playerTurn(true)" id="yes">YES</button>
+                            <button onclick="playerTurn(false)" id="no">NO</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 d-flex new justify-content-center align-items-center">
+                            <div class="item d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="col-md-12 d-flex mb-5 justify-content-center align-items-center">
+                                    <button id="start-btn" class="st-btn" onclick="begin()">Start</button>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card card2">
+                                            <div class="main-item">
+                                                <img class="w-100" src="./images/hidden.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card card2">
+                                            <div class="main-item" id="player-card">
+                                                <img class="w-100" src="./images/hidden.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex new justify-content-center align-items-center">
+                                <button id="ask-btn" class="ask-btn mr-1" onclick="ask()">Ask a question</button>
+                                <button id="guess-btn" class="ask-btn ml-1" onclick="guess()">Make a guess</button>
+                                <div class="item">
+                                    <input type="text" placeholder="Ask a question" id="ask-in">
+                                    <button id="ask-fun" onclick="playerAsk()" class="ask-btn">Ask</button>
+                                    <div class="item mt-2 d-flex justify-content-center">
+                                        <p id="q-ans"></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <input type="text" placeholder="Make a guess" id="guess-in">
+                                    <button id="guess-fun" onclick="playerGuess()" class="ask-btn">Guess</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="row1" class="row mt-1 justify-content-center"></div>
+                
+                            <div id="row2" class="row mt-2 justify-content-center"></div>
+                
+                            <div id="row3" class="row mt-2 justify-content-center"></div>
+                
+                            <div id="row4" class="row mt-2 justify-content-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="./js/jquery-3.5.1.slim.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

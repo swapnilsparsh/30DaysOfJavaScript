@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Password Checker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Password Strength Indicator</h2>
+        </div>
+
+        <div class="input-password">
+            <input onkeyup="trigger()" id="password" type="password" placeholder="Type Password.." maxlength="25">
+            <button onclick="hidePassword()" class="password-hide-btn"><box-icon color='grey' name='hide'></box-icon></button>
+            <button onclick="showPassword()" class="password-show-btn"><box-icon color='grey' name='show'></box-icon></button>
+        </div>
+
+        <div class="indication">
+            <span class="weak"></span>
+            <span class="medium"></span>
+            <span class="strong"></span>
+        </div>
+
+        <div class="indication-text">
+            <span class="indicationText"></span>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

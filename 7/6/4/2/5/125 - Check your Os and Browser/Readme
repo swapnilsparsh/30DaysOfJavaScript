@@ -1,0 +1,3 @@
+Project that will help you to know you browser and os on which you are working on.
+steps:
+1. Just load this file in the browser wait for a moment, this HTML file automatically detects your browser and os and previews it two messages as browser: and Os: this is possible just because of including js file in the HTM

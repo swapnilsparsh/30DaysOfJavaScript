@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+	outline: 0;
+}
+
+body{
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 90%;
+  width: 600px;
+}
+
+.ctn-cyphers {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px #cdcdcd inset;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+[class^="cypher-"] {
+  background-color: #080808;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px #cdcdcd inset;
+  cursor: pointer;
+  font: bold 100px sans-serif;
+  margin: 2.5%;
+  padding: 15% 0;
+  text-align: center;
+  width: 100%;
+}
+
+[class^="cypher-"] span {
+  -webkit-background-clip: text;
+  background-color: #cdcdcd;
+  color: rgba(0, 0, 0, 0);
+}
+
+[class^="cypher-"] span.active {
+  background-image: linear-gradient(
+                      to bottom,
+                    #e73e2b 40%,
+                    #fbee17 45%,
+                    #91c03a 50%,
+                    #019971 55%,
+                    #0197cf 60%,
+                    #834288 65%
+                    );
+}
+
+.result {
+  background-color: #080808;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.result p {
+  color: #cdcdcd;
+  font: normal 20px sans-serif;
+  text-shadow: 0 0 5px #000000;
+}
+
+.result p .content-result.good {
+  color: #00ff00;
+}
+
+.result p .content-result.bad {
+  color: #ff0000;
+}
+
+.result p .round {
+  font-weight: bold;
+}
+
+.reset {
+  display: none;
+  text-align: center;
+}
+
+.reset button {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  box-shadow: 0 0 0 3px #080808;
+  color: #080808;
+  cursor: pointer;
+  font: bold 20px sans-serif;
+  margin-top: 30px;
+  padding: 0.5em 2em;
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+  	margin: 5px auto;
+		max-width: 80%;
+	}
+	
+  .ctn-cyphers {
+    flex-direction: column;
+  }
+
+  [class^="cypher-"] {
+    font-size: 50px;
+    margin: 5%;
+    padding: 2.5% 0;
+    width: 80%;
+  }
+}

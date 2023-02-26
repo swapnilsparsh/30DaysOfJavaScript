@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Crud Application</title>
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="item card p-5 w-50 m-auto p-4">
+                <label for="productName">Product Name</label>
+                <input id="productName" type="text">
+                <label for="productCategory">Product Category</label>
+                <input id="productCategory" type="text">
+                <label for="productPrice">Product Price</label>
+                <input id="productPrice" type="text">
+                <label for="productDescription">Product Description</label>
+                <textarea class="form-control" id="ProductDescription" cols="30" rows="10"></textarea>
+                <button onclick="getData()" id="add" class="btn btn-info my-5">Add</button>
+                <div id="cont"></div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="w-50 m-auto">
+                <input id="searchIn" class="form-control search" onkeyup="search(this.value)" type="text" placeholder="Search...">
+            </div>
+            <table class="table text-center table-hover my-5">
+                <thead>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="demo">
+                </tbody>
+            </table>
+        </div>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

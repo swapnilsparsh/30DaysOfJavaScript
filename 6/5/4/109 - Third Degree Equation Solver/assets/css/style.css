@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #283748;
+    text-align: center;
+    color: #efefef;
+    overflow-x: hidden;
+    height: 100%;
+    /* #C48943 */
+}
+input{
+    background-color: #191a1c;
+    border-radius: 5px;
+    padding: 0 6px;
+    color: #efefef;
+    border:  none;
+    height: 26px;
+}
+input:focus, input:active{
+    border-color: #C48943;
+    outline-color: #C48943;
+}
+button{
+    box-shadow: none;
+    border:  none;
+    border-radius: 5px;
+}
+
+.box{
+    background-color: rgba(44, 69, 107, 0.5);
+    box-shadow: -10px 5px 30px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+    margin-top: 1%;
+    padding: 30px;
+}

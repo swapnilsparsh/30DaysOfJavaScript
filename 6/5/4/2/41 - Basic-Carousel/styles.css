@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  background-color: #19172e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto 10px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slider {
+  margin: 50px auto;
+  width: 50%;
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-top: -22px;
+  padding: 20px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+footer {
+  color: pink;
+  font-size: 1rem;
+  padding: 22px;
+  line-height: 3vh;
+  margin-top: 30px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:visited {
+  color: inherit;
+}

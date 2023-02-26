@@ -1,0 +1,170 @@
+
+body {
+  color: white;
+  overflow: hidden !important;
+}
+
+.mymain {
+  height: 90vh;
+  overflow: hidden !important;
+  background: url('https://images.unsplash.com/photo-1629194898512-b6b8697063ac?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover  ;
+}
+
+.myFooter {
+  height: 10vh !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+#display-image {
+  height: 600px;
+  width: 600px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: contain;
+
+  background-color: white;
+}
+
+.myprev {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 0px !important;
+}
+
+.portfolio-block {
+  padding-top: 50px !important;
+}
+
+.mysilderDiv {
+  display: flex;
+  flex-direction: row !important;
+}
+.myrange {
+  max-width: 30vw !important;
+}
+.myLabel {
+  min-width: 100px;
+  display: flex;
+  text-align: start;
+}
+
+.input {
+  width: 100%;
+  margin: 0px !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+}
+
+.myDiv{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+@media screen and (width<700px) {
+  #display-image {
+    width: 300px;
+    height: 300px;
+  }
+  .myDiv{
+    display: flex;
+    flex-direction: column;
+  }
+  .mymain {
+    height: 110vh;
+  }
+
+}
+
+input{
+  color: white !important;
+}
+
+a{
+  color: #0ea0ff  !important;
+}
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+

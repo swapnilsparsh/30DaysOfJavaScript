@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audio Visualizer</title>
+
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="track-title"> Audio Visualizer
+        <div class="player">
+            <audio src="./assets/Showreel.mp3" id="playback" crossorigin="anonymous" autoplay="on"></audio>
+            <div>
+                <button class="button" onclick="document.getElementById('playback').play()">Play</button>
+                <button class="button" onclick="document.getElementById('playback').pause()">Pause</button>
+                <button class="button" onclick="document.getElementById('playback').volume += 0.1">Vol +</button>
+                <button class="button" onclick="document.getElementById('playback').volume -= 0.1">Vol -</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="visualizer-container"></div>
+
+    <script src="audio.js"></script>
+</body>
+
+</html>

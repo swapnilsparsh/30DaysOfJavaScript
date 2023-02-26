@@ -1,0 +1,35 @@
+body{
+    background-color: #19172e;
+    color: white;
+}
+.title{
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: Impact;
+}
+p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.item{
+    background-color: rgba(100, 100, 121, 0.1);
+    padding: 50px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid white;
+    height: 70%;
+    width: 55%;
+}
+#newQuote{
+    background-color: rgba(100, 100, 121, 0.5);
+    padding: 25px 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#newQuote:hover{
+    background-color: green;
+}

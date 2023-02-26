@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ef4444;
+    margin-bottom: 2rem;
+    padding: 1rem 1.2rem;
+}
+
+header .logo i {
+    color: white;
+    font-size: 2.2rem;
+}
+
+header .name {
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.search {
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    color: #878787;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* align-items: center; */
+    /* flex-flow: wrap column; */
+    padding: 3rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.avatar {
+    border: 5px solid white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    width: 100%;
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    color: #111;
+    margin-top: 0;
+}
+
+.user-info h3 {
+    color: #777;
+    font-weight: 400;
+    font-size: .95rem;
+    margin-top: 0;
+}
+
+.user-info p {
+    color: #777;
+}
+
+.user-info ul {
+    color: #888888;
+    display: flex;
+    /* justify-content: space-between; */
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.user-info ul li {
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo-header {
+    width: 100%;
+    border-bottom: 1px solid #888888;
+    display: flex;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+.repo-num {
+    background-color: #afb8c133;
+    padding: .4rem .4rem;
+    font-size: .7rem;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.repo {
+    width: 100%;
+    display: block;
+    font-weight: 800;
+    color: blue;
+    padding: 1rem 1.2rem;
+    padding-left: 0;
+    border-bottom: 1px solid #888888;
+    font-size: 1.2rem;
+}

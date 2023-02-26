@@ -1,0 +1,104 @@
+body {
+    font-family: cursive;
+    background-color: rgb(234, 226, 216);
+  }
+
+h1{
+  margin-left: 560px;
+}
+li{
+  margin-left: 500px;
+  font-size: 20px;
+}
+h1{
+  margin-top: 50px;
+  font-size: 45px;
+  color: rgb(54, 18, 18);
+}
+p{
+  font-size: 21px;
+  color: rgb(15, 80, 80);
+  margin-bottom: 40px;
+
+}
+  
+  video {
+    margin-top: 2px;
+    border: 1px solid black;
+  }
+  
+  .button {
+    cursor: pointer;
+    display: block;
+    width: 160px;
+    border: 1px solid black;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    color: white;
+    background-color: darkgreen;
+    text-decoration: none;
+  }
+  
+  h2 {
+    margin-bottom: 4px;
+  }
+  
+  .left {
+    margin-right: 60px;
+    margin-left: 150px;
+    float: left;
+    width: 300px;
+    padding: 0px;
+  }
+  #preview{
+    background-color: white;
+    border: 2px solid rgb(198, 97, 97) ;
+  }
+  .right {
+    margin-left: 360px;
+    float: left;
+    width: 160px;
+    padding: 0px;
+  }
+  
+  .bottom {
+    clear: both;
+    padding-top: 10px;
+  }
+
+  #startButton{
+    margin-left: 40px;
+    width: 180px;
+    height: 40px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(65, 39, 7);
+  }
+
+  #startButton:hover{
+    background-color: rgb(149, 37, 14);
+  }
+
+  #stopButton{
+    margin-left: 30px;width: 180px;
+    height: 40px; padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(65, 39, 7);
+  }
+
+  #stopButton:hover{
+    background-color: rgb(149, 37, 14);
+  }
+
+  #downloadButton{
+    margin-left: -250px;
+    height: 40px; padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(65, 39, 7);
+  }
+
+  #downloadButton:hover{
+    background-color: rgb(149, 37, 14);
+  }

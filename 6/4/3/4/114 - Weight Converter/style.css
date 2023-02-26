@@ -1,0 +1,53 @@
+html{
+    height: 100%;
+}
+body{
+    background: linear-gradient(to right, #8f2d7b, #8894a2);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#output{
+    font-size: 13px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span{
+    color: red;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgb(15, 43, 72) 0px 20px 30px -10px;
+    
+}
+input{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+select{
+    outline: none;
+}
+button{
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: #270851;
+    /* background: none; */
+    cursor: pointer;
+    border-radius: 5px;
+}

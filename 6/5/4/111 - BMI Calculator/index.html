@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+ <!--Title Screen-->
+ <div class="title">
+    BMI CALCULATOR
+</div>
+<!-- BMI Calculator Box-->
+<div class="container">
+    <div class="box">
+      <input type="text" id="num1" placeholder="Enter your weight in KG" value="" class="weight">
+     <input type="text" id="num3" placeholder="Enter your height in cm" value="" class="height">
+            <input type="button" value="Calc" onclick="calc()" style="  width: 90px;
+            border-radius: 9px;
+            border: none;
+            margin-top: 2%;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            margin-left: 43%;
+            justify-content: space-around;"/>
+           <center><input type="text" id="sum" placeholder="BMI" readonly="readonly" style="border-radius: 9px; margin-top: 20px;" /></center> 
+    </div>
+    <div class="info" style="color: aliceblue;">
+        <p>Overwright is more than 25 and underweight is less then 18.5 otherwise Normal BMI </p>
+    </div>
+</div>
+    </section>
+   
+    <!-- Footer-->
+    <footer>
+<p> Made by Shivam Agarwal</p>
+<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

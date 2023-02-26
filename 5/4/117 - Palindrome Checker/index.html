@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Palindrome Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">  
+</head>
+ <body>
+  <main>
+    <p class="heading">Palindrome Checker</p>
+    <div class="container">
+        <p id="query">Enter a sentence, word or number to check if it's a palindrome: </p>
+        <br>
+        <br>
+        <input type="text" id="text" name="palindrome"><br><br>
+        <br>
+        <input type="submit" id="submit" value="Check" onclick="validatePalin()">
+        <br>
+        <button type="button" id="cls" onclick="clearScreen()">Clear Screen</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p id="result">  
+    </p>
+  </main>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+</html>

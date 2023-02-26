@@ -1,0 +1,84 @@
+.clear {
+  width: 100%;
+  clear: both;
+}
+
+
+.card {
+  float: left;
+  width: 500px;
+  height: auto;
+  margin-left: 570px;
+  margin-top: 50px;
+  background-color:#c15a23;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: cursive;
+  /* color: #000; */
+}
+h1{
+  margin-top: 50px;
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: cursive;
+  color: rgb(10, 30, 68);
+}
+
+h1:hover{
+  color: #c15a23;
+  font-size: 45px;
+}
+button {
+ 
+  margin-left: 730px;
+  padding: 20px;
+  border-radius: 30%;
+  font-family: cursive;
+  color: #d8cbc4;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(10, 30, 68);
+}
+button:hover{
+  background-color:#c15a23;
+  color: #ece6e3;
+}
+
+.headers > div {
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+
+.headers > div span {
+  font-size: 42px;
+  color: rgb(238, 226, 226);
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+
+.number {
+  padding: 20px 0;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.number span {
+  color: #000;
+  font-size: 32px;
+}
+
+.number span:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+body{
+  background-color: #d8cbc4;
+}

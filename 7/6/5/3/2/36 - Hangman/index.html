@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="assets/hangman-game.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div id="main">
+        <h1>HANGMAN</h1>
+        <p class="desc">Here's your popular word guessing game <br> Build a missing word by guessing one letter at a time. <br> After 5 incorrect guesses, the game ends and the player loses.<br> Correctly identify all the letters of the missing word to win.</p>
+        <div class="puzzle-box">
+            <div id="puzzle" class="puzzle"></div>
+            <p id="guesses"></p>
+            <button id="reset" class="button">Reset</button>
+        </div>
+    </div>
+    <script src="./scripts/request.js"></script>
+    <script src="./scripts/hangman.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

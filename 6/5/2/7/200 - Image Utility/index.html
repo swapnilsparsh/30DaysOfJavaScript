@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Image Utility</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script type="text/javascript">
+
+        function downloadimage() {
+            var container = document.getElementById("display-image"); /*specific element on page*/
+            // var container = document.getElementById("htmltoimage");; /* full page */
+            html2canvas(container, { allowTaint: true }).then(function (canvas) {
+                var link = document.createElement("a");
+                document.body.appendChild(link);
+                link.download = "html_image.jpg";
+                link.href = canvas.toDataURL();
+                link.target = '_blank';
+                link.click();
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro mymain">
+
+            <div class="about-me">
+                <h1 class="myh1 display-2 bold">Hello There,</h1>
+                <h4 class="myh4">Upload Image You wnat To Edit</h4>
+                <input type="file" id="image-input" class="btn" accept="image/jpeg, image/png, image/jpg">
+
+                <div class="myDiv">
+                    <div class="myprev my-3">
+                        <div id="display-image"></div>
+                    </div>
+
+                    <div class="input">
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Grayscale :</label>
+                            <input type="range" class="form-range myrange" id="greyscale" value="0" min="0" max="100">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Contrast :</label>
+                            <input type="range" class="form-range myrange" id="contrast" value="100" min="0" max="500">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Blur :
+                            </label>
+                            <input type="range" class="form-range myrange" id="blur" value="0" min="0" max="5">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Brightness :
+                            </label>
+                            <input type="range" class="form-range myrange" id="brightness" value="100" min="0"
+                                max="500">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Invert :
+                            </label>
+                            <input type="range" class="form-range myrange" id="invert" value="0" min="0" max="100">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Hue Rotate :
+                            </label>
+                            <input type="range" class="form-range myrange" id="hue-rotate" value="0" min="0" max="360">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Opacity :
+                            </label>
+                            <input type="range" class="form-range myrange" id="opacity" value="100" min="0" max="100">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Saturate :
+                            </label>
+                            <input type="range" class="form-range myrange" id="saturate" value="1" min="0" max="10">
+                        </div>
+                        <div class="mysilderDiv">
+                            <label for="customRange1" class="form-label mx-3 myLabel">Sepia :
+                            </label>
+                            <input type="range" class="form-range myrange" id="sepia" value="0" min="0" max="100">
+                        </div>
+                        <button onclick="reset()" class="clickbtn btn btn-primary my-4">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="page-footer website myFooter">
+        <h4 class="myh5 h4 heartbeat">Made with 💗 by <a class="mya h4" href="https://github.com/MR-DHRUV"
+                target="_blank" rel="noopener noreferrer">Dhruv</a></h4>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+        const image_input = document.querySelector("#image-input");
+
+        image_input.addEventListener("change", function () {
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+                const uploaded_image = reader.result;
+                document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+            });
+            reader.readAsDataURL(this.files[0]);
+        });
+
+
+        const greyscale = document.getElementById("greyscale");
+        const blur1 = document.getElementById("blur");
+        const contrast = document.getElementById("contrast");
+        const brightness = document.getElementById("brightness");
+        const invert = document.getElementById("invert");
+        const hue_rotate = document.getElementById("hue-rotate");
+        const opacity = document.getElementById("opacity");
+        const saturate = document.getElementById("saturate");
+        const sepia = document.getElementById("sepia");
+
+        let grey = '0%';
+        let bl = '0px';
+        let cont = '100%';
+        let bri = '100%';
+        let inv = '0%';
+        let hue = '0deg';
+        let opa = '100%';
+        let sat = '1';
+        let sep = '0%';
+
+
+        greyscale.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `grayscale(${e.target.value}%)`
+            grey = `${e.target.value}%`
+        })
+
+        blur1.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+
+            // document.getElementById('display-image').style.filter = `blur(${e.target.value}px)`
+            bl = `${e.target.value}px`
+
+        })
+
+
+        contrast.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `contrast(${e.target.value}%)`
+            cont = `${e.target.value}%`
+
+        })
+        brightness.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `brightness(${e.target.value}%)`
+            bri = `${e.target.value}%`
+
+        })
+        invert.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `invert(${e.target.value}%)`
+            inv = `${e.target.value}%`
+
+        })
+        hue_rotate.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `hue-rotate(${e.target.value}deg)`
+            hue = `${e.target.value}deg`
+
+        })
+        opacity.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `opacity(${e.target.value}%)`
+            opa = `${e.target.value}%`
+
+        })
+        saturate.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `saturate(${e.target.value})`
+            sat = `${e.target.value}`
+
+        })
+        sepia.addEventListener("input", (e) => {
+            document.getElementById('display-image').style.filter = `grayscale(${grey}) blur(${bl}) contrast(${cont}) brightness(${bri}) invert(${inv}) hue-rotate(${hue}) opacity(${opa}) saturate(${sat}) sepia(${sep})  `
+            // document.getElementById('display-image').style.filter = `sepia(${e.target.value}%)`
+            sep = `${e.target.value}%`
+
+        })
+
+        const reset = () => {
+            document.getElementById('display-image').style.filter = 'none';
+        }
+
+
+    </script>
+</body>
+
+</html>

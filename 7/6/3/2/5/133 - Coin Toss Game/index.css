@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Roboto Condensed';
+}
+
+.btn{
+    display: initial;
+    position: relative;
+    right: -708px;
+    border-radius: 25px;
+    top: -90px;
+}
+h4{
+    position: relative;
+    left: 1020px;
+    top: 80px;
+}
+#head{
+    position: relative;
+    right: -10rem;
+    bottom: 80px;
+    border: none;
+    display: none;
+}
+
+#tail{
+    position: relative;
+    right: -10rem;
+    bottom:80px;
+border: none;
+}

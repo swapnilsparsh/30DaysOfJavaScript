@@ -1,0 +1,37 @@
+
+#city{
+    background: url(cityImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height:55vh;
+}
+
+#road{
+    background: url(roadImage.jpg);
+    height: 45vh;
+    background-repeat: repeat-x;
+    background-size:  contain;
+}
+
+#car{
+    width: 350px;
+}
+
+#btn{
+    background-color: black;
+    color: aliceblue;
+    width : 120px;
+    height: 40px;
+    font-size:  25px;
+    margin-top: 30vh;
+    margin-left: 20px;
+    border-radius: 50px;
+
+}
+
+#drive{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}

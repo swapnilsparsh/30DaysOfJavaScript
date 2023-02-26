@@ -1,0 +1,22 @@
+:root {
+  --background-light-color: #57ebd7;
+  --background-dark-color: #24a88b;
+  --main-background-gradient: linear-gradient(to right, var(--background-light-color) 0%, var(--background-dark-color) 100%);
+}
+
+
+body{
+  background: var(--main-background-gradient);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#container{
+  margin-top: 10%;
+  display: inline-block;
+}
+canvas{
+  background: #cecece;
+  border: 1px solid #181818;
+}

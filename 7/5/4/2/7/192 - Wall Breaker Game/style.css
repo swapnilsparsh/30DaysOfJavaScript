@@ -1,0 +1,36 @@
+body{
+background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+
+.container {
+    height: 400px;
+    width: 80%;
+    margin-left: 5%;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 20px;
+    position: relative;
+    background-color: darkgrey;
+}
+
+.score,
+.lives {
+    font-size: 3em;
+}
+
+.brick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 91px;
+    height: 40px;
+    padding: 1px;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 40px;
+}

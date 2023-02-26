@@ -1,0 +1,959 @@
+grid {
+  display: grid;
+  grid: repeat(8, 1fr)/repeat(10, 1fr);
+  margin: 10px auto 0;
+  position: relative;
+  cursor: pointer;
+}
+
+c, w {
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+c {
+  background: radial-gradient(#f7a011 34%, #f8ce00 35% 51%, #0000 52%) 0/100% 100% no-repeat;
+  transition: 999s 999s;
+}
+
+c:hover {
+  background-size: 0 0;
+  transition: 0s;
+}
+
+@property --c1 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(1) ~ result {
+  --c1: 0;
+  --s1: paused ;
+}
+
+c:nth-of-type(1):hover ~ result {
+  --s1: running;
+}
+
+@keyframes c1 {
+  to {
+    --c1:1;
+  }
+}
+@property --c2 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(2) ~ result {
+  --c2: 0;
+  --s2: paused ;
+}
+
+c:nth-of-type(2):hover ~ result {
+  --s2: running;
+}
+
+@keyframes c2 {
+  to {
+    --c2:1;
+  }
+}
+@property --c3 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(3) ~ result {
+  --c3: 0;
+  --s3: paused ;
+}
+
+c:nth-of-type(3):hover ~ result {
+  --s3: running;
+}
+
+@keyframes c3 {
+  to {
+    --c3:1;
+  }
+}
+@property --c4 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(4) ~ result {
+  --c4: 0;
+  --s4: paused ;
+}
+
+c:nth-of-type(4):hover ~ result {
+  --s4: running;
+}
+
+@keyframes c4 {
+  to {
+    --c4:1;
+  }
+}
+@property --c5 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(5) ~ result {
+  --c5: 0;
+  --s5: paused ;
+}
+
+c:nth-of-type(5):hover ~ result {
+  --s5: running;
+}
+
+@keyframes c5 {
+  to {
+    --c5:1;
+  }
+}
+@property --c6 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(6) ~ result {
+  --c6: 0;
+  --s6: paused ;
+}
+
+c:nth-of-type(6):hover ~ result {
+  --s6: running;
+}
+
+@keyframes c6 {
+  to {
+    --c6:1;
+  }
+}
+@property --c7 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(7) ~ result {
+  --c7: 0;
+  --s7: paused ;
+}
+
+c:nth-of-type(7):hover ~ result {
+  --s7: running;
+}
+
+@keyframes c7 {
+  to {
+    --c7:1;
+  }
+}
+@property --c8 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(8) ~ result {
+  --c8: 0;
+  --s8: paused ;
+}
+
+c:nth-of-type(8):hover ~ result {
+  --s8: running;
+}
+
+@keyframes c8 {
+  to {
+    --c8:1;
+  }
+}
+@property --c9 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(9) ~ result {
+  --c9: 0;
+  --s9: paused ;
+}
+
+c:nth-of-type(9):hover ~ result {
+  --s9: running;
+}
+
+@keyframes c9 {
+  to {
+    --c9:1;
+  }
+}
+@property --c10 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(10) ~ result {
+  --c10: 0;
+  --s10: paused ;
+}
+
+c:nth-of-type(10):hover ~ result {
+  --s10: running;
+}
+
+@keyframes c10 {
+  to {
+    --c10:1;
+  }
+}
+@property --c11 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(11) ~ result {
+  --c11: 0;
+  --s11: paused ;
+}
+
+c:nth-of-type(11):hover ~ result {
+  --s11: running;
+}
+
+@keyframes c11 {
+  to {
+    --c11:1;
+  }
+}
+@property --c12 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(12) ~ result {
+  --c12: 0;
+  --s12: paused ;
+}
+
+c:nth-of-type(12):hover ~ result {
+  --s12: running;
+}
+
+@keyframes c12 {
+  to {
+    --c12:1;
+  }
+}
+@property --c13 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(13) ~ result {
+  --c13: 0;
+  --s13: paused ;
+}
+
+c:nth-of-type(13):hover ~ result {
+  --s13: running;
+}
+
+@keyframes c13 {
+  to {
+    --c13:1;
+  }
+}
+@property --c14 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(14) ~ result {
+  --c14: 0;
+  --s14: paused ;
+}
+
+c:nth-of-type(14):hover ~ result {
+  --s14: running;
+}
+
+@keyframes c14 {
+  to {
+    --c14:1;
+  }
+}
+@property --c15 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(15) ~ result {
+  --c15: 0;
+  --s15: paused ;
+}
+
+c:nth-of-type(15):hover ~ result {
+  --s15: running;
+}
+
+@keyframes c15 {
+  to {
+    --c15:1;
+  }
+}
+@property --c16 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(16) ~ result {
+  --c16: 0;
+  --s16: paused ;
+}
+
+c:nth-of-type(16):hover ~ result {
+  --s16: running;
+}
+
+@keyframes c16 {
+  to {
+    --c16:1;
+  }
+}
+@property --c17 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(17) ~ result {
+  --c17: 0;
+  --s17: paused ;
+}
+
+c:nth-of-type(17):hover ~ result {
+  --s17: running;
+}
+
+@keyframes c17 {
+  to {
+    --c17:1;
+  }
+}
+@property --c18 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(18) ~ result {
+  --c18: 0;
+  --s18: paused ;
+}
+
+c:nth-of-type(18):hover ~ result {
+  --s18: running;
+}
+
+@keyframes c18 {
+  to {
+    --c18:1;
+  }
+}
+@property --c19 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(19) ~ result {
+  --c19: 0;
+  --s19: paused ;
+}
+
+c:nth-of-type(19):hover ~ result {
+  --s19: running;
+}
+
+@keyframes c19 {
+  to {
+    --c19:1;
+  }
+}
+@property --c20 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(20) ~ result {
+  --c20: 0;
+  --s20: paused ;
+}
+
+c:nth-of-type(20):hover ~ result {
+  --s20: running;
+}
+
+@keyframes c20 {
+  to {
+    --c20:1;
+  }
+}
+@property --c21 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(21) ~ result {
+  --c21: 0;
+  --s21: paused ;
+}
+
+c:nth-of-type(21):hover ~ result {
+  --s21: running;
+}
+
+@keyframes c21 {
+  to {
+    --c21:1;
+  }
+}
+@property --c22 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(22) ~ result {
+  --c22: 0;
+  --s22: paused ;
+}
+
+c:nth-of-type(22):hover ~ result {
+  --s22: running;
+}
+
+@keyframes c22 {
+  to {
+    --c22:1;
+  }
+}
+@property --c23 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(23) ~ result {
+  --c23: 0;
+  --s23: paused ;
+}
+
+c:nth-of-type(23):hover ~ result {
+  --s23: running;
+}
+
+@keyframes c23 {
+  to {
+    --c23:1;
+  }
+}
+@property --c24 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(24) ~ result {
+  --c24: 0;
+  --s24: paused ;
+}
+
+c:nth-of-type(24):hover ~ result {
+  --s24: running;
+}
+
+@keyframes c24 {
+  to {
+    --c24:1;
+  }
+}
+@property --c25 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(25) ~ result {
+  --c25: 0;
+  --s25: paused ;
+}
+
+c:nth-of-type(25):hover ~ result {
+  --s25: running;
+}
+
+@keyframes c25 {
+  to {
+    --c25:1;
+  }
+}
+@property --c26 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(26) ~ result {
+  --c26: 0;
+  --s26: paused ;
+}
+
+c:nth-of-type(26):hover ~ result {
+  --s26: running;
+}
+
+@keyframes c26 {
+  to {
+    --c26:1;
+  }
+}
+@property --c27 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(27) ~ result {
+  --c27: 0;
+  --s27: paused ;
+}
+
+c:nth-of-type(27):hover ~ result {
+  --s27: running;
+}
+
+@keyframes c27 {
+  to {
+    --c27:1;
+  }
+}
+@property --c28 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(28) ~ result {
+  --c28: 0;
+  --s28: paused ;
+}
+
+c:nth-of-type(28):hover ~ result {
+  --s28: running;
+}
+
+@keyframes c28 {
+  to {
+    --c28:1;
+  }
+}
+@property --c29 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(29) ~ result {
+  --c29: 0;
+  --s29: paused ;
+}
+
+c:nth-of-type(29):hover ~ result {
+  --s29: running;
+}
+
+@keyframes c29 {
+  to {
+    --c29:1;
+  }
+}
+@property --c30 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(30) ~ result {
+  --c30: 0;
+  --s30: paused ;
+}
+
+c:nth-of-type(30):hover ~ result {
+  --s30: running;
+}
+
+@keyframes c30 {
+  to {
+    --c30:1;
+  }
+}
+@property --c31 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(31) ~ result {
+  --c31: 0;
+  --s31: paused ;
+}
+
+c:nth-of-type(31):hover ~ result {
+  --s31: running;
+}
+
+@keyframes c31 {
+  to {
+    --c31:1;
+  }
+}
+@property --c32 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(32) ~ result {
+  --c32: 0;
+  --s32: paused ;
+}
+
+c:nth-of-type(32):hover ~ result {
+  --s32: running;
+}
+
+@keyframes c32 {
+  to {
+    --c32:1;
+  }
+}
+@property --c33 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(33) ~ result {
+  --c33: 0;
+  --s33: paused ;
+}
+
+c:nth-of-type(33):hover ~ result {
+  --s33: running;
+}
+
+@keyframes c33 {
+  to {
+    --c33:1;
+  }
+}
+@property --c34 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(34) ~ result {
+  --c34: 0;
+  --s34: paused ;
+}
+
+c:nth-of-type(34):hover ~ result {
+  --s34: running;
+}
+
+@keyframes c34 {
+  to {
+    --c34:1;
+  }
+}
+@property --c35 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+c:nth-of-type(35) ~ result {
+  --c35: 0;
+  --s35: paused ;
+}
+
+c:nth-of-type(35):hover ~ result {
+  --s35: running;
+}
+
+@keyframes c35 {
+  to {
+    --c35:1;
+  }
+}
+result {
+  --sum:calc(0 + var(--c1) + var(--c2) + var(--c3) + var(--c4) + var(--c5) + var(--c6) + var(--c7) + var(--c8) + var(--c9) + var(--c10) + var(--c11) + var(--c12) + var(--c13) + var(--c14) + var(--c15) + var(--c16) + var(--c17) + var(--c18) + var(--c19) + var(--c20) + var(--c21) + var(--c22) + var(--c23) + var(--c24) + var(--c25) + var(--c26) + var(--c27) + var(--c28) + var(--c29) + var(--c30) + var(--c31) + var(--c32) + var(--c33) + var(--c34) + var(--c35));
+  animation: c1 var(--s1) forwards 0.01s, c2 var(--s2) forwards 0.01s, c3 var(--s3) forwards 0.01s, c4 var(--s4) forwards 0.01s, c5 var(--s5) forwards 0.01s, c6 var(--s6) forwards 0.01s, c7 var(--s7) forwards 0.01s, c8 var(--s8) forwards 0.01s, c9 var(--s9) forwards 0.01s, c10 var(--s10) forwards 0.01s, c11 var(--s11) forwards 0.01s, c12 var(--s12) forwards 0.01s, c13 var(--s13) forwards 0.01s, c14 var(--s14) forwards 0.01s, c15 var(--s15) forwards 0.01s, c16 var(--s16) forwards 0.01s, c17 var(--s17) forwards 0.01s, c18 var(--s18) forwards 0.01s, c19 var(--s19) forwards 0.01s, c20 var(--s20) forwards 0.01s, c21 var(--s21) forwards 0.01s, c22 var(--s22) forwards 0.01s, c23 var(--s23) forwards 0.01s, c24 var(--s24) forwards 0.01s, c25 var(--s25) forwards 0.01s, c26 var(--s26) forwards 0.01s, c27 var(--s27) forwards 0.01s, c28 var(--s28) forwards 0.01s, c29 var(--s29) forwards 0.01s, c30 var(--s30) forwards 0.01s, c31 var(--s31) forwards 0.01s, c32 var(--s32) forwards 0.01s, c33 var(--s33) forwards 0.01s, c34 var(--s34) forwards 0.01s, c35 var(--s35) forwards 0.01s;
+  position: absolute;
+  inset: 0 0 clamp(0%, (35 - var(--sum))*9999% ,100%) 0;
+  display: grid;
+  place-content: center;
+  font-size: 70px;
+  color: #00b300;
+  overflow: hidden;
+  background: #fff9;
+}
+
+result:before {
+  content: "Bravo!";
+}
+
+w {
+  background: linear-gradient(#a49d83 50%, #0000 0) 75% 0/2px 50% repeat-y, linear-gradient(#0000 50%, #a49d83 0) 25% 0/2px 50% repeat-y, linear-gradient(#966042 calc(100% - 2px), #a49d83 0) 0 0/100% calc(100%/4);
+}
+
+w::before {
+  content: "Game Over";
+  position: fixed;
+  inset: 0 0 100%;
+  z-index: 5695845;
+  background: #000;
+  color: red;
+  font-size: 80px;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  transition: 99999s;
+}
+
+w::after {
+  content: "Refresh the page to start a new game";
+  position: fixed;
+  inset: 0 0 100%;
+  z-index: 5695845;
+  color: #fff;
+  font-size: 30px;
+  display: grid;
+  place-content: end center;
+  overflow: hidden;
+  transition: 99999s;
+}
+
+w:hover::before,
+w:hover::after {
+  inset: 0;
+  transition: 0s;
+}
+
+@property --n {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+@property --t {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #000;
+}
+@property --r {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #000;
+}
+@property --b {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #000;
+}
+@property --l {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #000;
+}
+d {
+  width: 40px;
+  /* size */
+  display: inline-grid;
+  aspect-ratio: 0.55;
+}
+
+d:before,
+d:after {
+  content: "";
+  padding: 20%;
+  background: conic-gradient(from -45deg at 50% 45%, var(--t) 90deg, #0000 0), conic-gradient(from 45deg at 55% 50%, var(--r) 90deg, #0000 0), conic-gradient(from 135deg at 50% 55%, var(--b) 90deg, #0000 0), conic-gradient(from 225deg at 45% 50%, var(--l) 90deg, #0000 0);
+  --m: conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
+  transition: --t 0.45s, --l 0.45s, --b 0.45s, --r 0.45s;
+}
+
+d:after {
+  margin-top: -20%;
+  --t: #0000;
+}
+
+d {
+  --1:(var(--n) - 1)*(var(--n) - 1);
+  --2:(var(--n) - 2)*(var(--n) - 2);
+  --3:(var(--n) - 3)*(var(--n) - 3);
+  --4:(var(--n) - 4)*(var(--n) - 4);
+  --5:(var(--n) - 5)*(var(--n) - 5);
+  --6:(var(--n) - 6)*(var(--n) - 6);
+  --7:(var(--n) - 7)*(var(--n) - 7);
+  --8:(var(--n) - 8)*(var(--n) - 8);
+  --9:(var(--n) - 9)*(var(--n) - 9);
+}
+
+d:before {
+  --t:rgb(
+    clamp(30,var(--1)*var(--4)*999,250)
+    clamp(30,var(--1)*var(--4)*999,250)
+    30);
+  --r:rgb(
+    clamp(30,var(--5)*var(--6)*999,250)
+    clamp(30,var(--5)*var(--6)*999,250)
+    30);
+  --b:rgb(
+    clamp(30,var(--n)*var(--1)*var(--7)*999,250)
+    clamp(30,var(--n)*var(--1)*var(--7)*999,250)
+    30);
+  --l:rgb(
+    clamp(30,var(--1)*var(--2)*var(--3)*var(--7)*999,250)
+    clamp(30,var(--1)*var(--2)*var(--3)*var(--7)*999,250)
+    30);
+}
+
+d:after {
+  --r:rgb(
+    clamp(30,var(--2)*999,250)
+    clamp(30,var(--2)*999,250)
+    30);
+  --b:rgb(
+    clamp(30,var(--1)*var(--4)*var(--7)*999,250)
+    clamp(30,var(--1)*var(--4)*var(--7)*999,250)
+    30);
+  --l:rgb(
+    clamp(30,var(--1)*var(--3)*var(--4)*var(--5)*var(--7)*var(--9)*999,250)
+    clamp(30,var(--1)*var(--3)*var(--4)*var(--5)*var(--7)*var(--9)*999,250)
+    30);
+}
+
+timer d:nth-of-type(1) {
+  animation: d6 60s linear infinite;
+}
+
+timer d:nth-of-type(2) {
+  animation: d9 10s linear infinite;
+}
+
+timer d:nth-of-type(3) {
+  animation: d9 1s linear infinite;
+  grid-column: 4;
+}
+
+timer d:nth-of-type(4) {
+  animation: d9 0.1s linear infinite;
+}
+
+@keyframes d9 {
+  0%, 9.95% {
+    --n:0;
+  }
+  10%, 19.95% {
+    --n:1;
+  }
+  20%, 29.95% {
+    --n:2;
+  }
+  30%, 39.95% {
+    --n:3;
+  }
+  40%, 49.95% {
+    --n:4;
+  }
+  50%, 59.95% {
+    --n:5;
+  }
+  60%, 69.95% {
+    --n:6;
+  }
+  70%, 79.95% {
+    --n:7;
+  }
+  80%, 89.95% {
+    --n:8;
+  }
+  90%, 99.95% {
+    --n:9;
+  }
+}
+@keyframes d6 {
+  0%, 16.64% {
+    --n:0;
+  }
+  16.67%, 33.30% {
+    --n:1;
+  }
+  33.33%, 49.96% {
+    --n:2;
+  }
+  50.00%, 66.63% {
+    --n:3;
+  }
+  66.67%, 83.30% {
+    --n:4;
+  }
+  83.33%, 99.97% {
+    --n:5;
+  }
+}
+timer {
+  position: absolute;
+  display: grid;
+  top: 50%;
+  left: 100%;
+  transform: translate(20%, -50%);
+  grid-template-columns: 1fr 1fr 10px 1fr 1fr;
+  grid-gap: 10px;
+  pointer-events: none;
+  background: linear-gradient(#fafa1e 0 0) 50% 30%/10px 10px no-repeat, linear-gradient(#fafa1e 0 0) 50% 70%/10px 10px no-repeat;
+}
+
+@media (max-width: 900px) {
+  timer {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+}
+grid timer d:nth-child(n),
+grid result:hover ~ timer d:nth-child(n) {
+  animation-play-state: paused;
+}
+
+grid:hover timer d:nth-child(n) {
+  animation-play-state: running;
+}
+
+grid:hover timer {
+  filter: hue-rotate(45deg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-content: start center;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+h1, p {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+}

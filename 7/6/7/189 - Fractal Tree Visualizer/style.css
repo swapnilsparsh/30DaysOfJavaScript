@@ -1,0 +1,28 @@
+html,body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+input,button {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  margin-top: 10px;
+}
+input:before {
+  content: 'Slide to change the angle between each branch';
+  position: absolute;
+  bottom: -60px;
+  text-align: center;
+  color: "#fff";
+}
+button {
+  margin-left: 10%;
+}

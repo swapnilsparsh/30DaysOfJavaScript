@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Whatsapp Message</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .logo {
+        border-radius: 40%;
+        width: 70px;
+        margin-right: 20px;
+      }
+      .div1 {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+      .div2 {
+        display: block;
+        border: 2px solid gray;
+        border-radius: 10px;
+      }
+      .btn1 {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      form {
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1 bg-dark text-white">
+      <a href="https://www.whatsapp.com/?lang=en"
+        ><img
+          class="logo"
+          src="https://www.xda-developers.com/files/2017/04/WhatsApp.png"
+      /></a>
+      <p class="text-center font-weight-bold text-wrap">
+        WhatsApp Text Sender
+      </p>
+    </div>
+    <div class="container div2 mt-5">
+      <h3 class="text-center mt-3">
+        Send a Whatsapp message without saving mobile number.
+      </h3>
+      <form class="form m-3">
+        <input
+          type="text"
+          placeholder="Enter +91 *******"
+          value="+91"
+          autocomplete="off"
+          class="form-control m-3"
+          id="num"
+          required
+          data-toggle="tooltip"
+          data-placement="right"
+          title="Make sure you enter mobile number with country code"
+        />
+        <textarea
+          id="message"
+          class="form-control m-3"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <input
+          type="submit"
+          id="1"
+          class="form-control m-3 btn btn-success btn1"
+          value="Send"
+        />
+      </form>
+    </div>
+    <footer class="text-center text-muted m-3">
+      &copy;Chandana Samineni. All rights are reserved.
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</html>

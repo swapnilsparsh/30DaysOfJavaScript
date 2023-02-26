@@ -1,0 +1,10 @@
+.item {
+    box-shadow: 10px 10px 102px 18px rgba(0, 0, 0, 0.45);
+}
+.search{
+    font-size: 22px;
+    padding: 15px;
+}
+span{
+    background-color: yellow;
+}

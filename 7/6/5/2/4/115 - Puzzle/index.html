@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            <div id="choose" class="item w-100 h-100 d-flex justify-content-center align-items-center">
+                <label id="label">Choose an image to start</label>
+                <div id="choose-cont" class="row w-100 h-100 justify-content-around align-items-center">
+                    <div id="img1" class="col-md-4 ch-img">
+                        <img src="./images/img1/whole1.jpg" alt="">
+                    </div>
+                    <div id="img2" class="col-md-4 ch-img">
+                        <img src="./images/img2/whole1.jpg" alt="">
+                    </div>
+                    <div id="img3" class="col-md-4 ch-img">
+                        <img src="./images/img3/whole1.jpg" alt="">
+                    </div>
+                </div>
+                <button onclick="start()" id="st-btn" class="btn btn-success w-100">Start</button>
+                <p id="invalid"></p>
+            </div>
+            <div id="puzzle" class="row puzzle w-75">
+                <div class="h-puzzle d-flex justify-content-center align-items-center">
+                    <p>?</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

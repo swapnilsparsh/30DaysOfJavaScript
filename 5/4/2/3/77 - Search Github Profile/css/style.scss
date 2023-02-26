@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+body{
+    background-color: #eee;
+    background: radial-gradient(circle, rgba(147,146,146,1),0%, rgba(0,0,0,1)100%);
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    .row{
+        display: flex;
+        justify-content: center;
+        width: 850px;
+        box-shadow: 5px 42px 48px -34px rgbs(0,0,0,.75);
+        .user_info{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #bdbdbd;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 50px;
+            box-sizing: border-box;
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                object-fit: cover;
+            }
+        }
+        .repo{
+            width: 70%;
+            background-color: #fff;
+        }
+
+    }
+}
+
+.user_name{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    h3{
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+    }
+    h1{
+        font-size: 25px;
+        margin: 5px;
+    }
+}
+.follow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top:25px; 
+    .item{
+        p{
+            font-size: 14px;
+        }
+        span{
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}
+
+.repo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, rgba(147,146,146,1),0%, rgba(0,0,0,1)100%);
+    color: #fff;
+    h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .repo_details{
+        display: flex;
+        justify-content: space-between;
+        gap: 15;
+        flex-wrap: wrap;
+        .item_{
+            width: 47%;
+            border: 1px solid #424141;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            .repo_name{
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            .repo_details{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .info_{
+                    font-size: 12px;
+                    &.fork{
+                      .fa{
+                          margin-right: 5px;
+                      }  
+                    }
+                    &.size{
+                        .fa{
+                            margin-right: 5px;
+                            
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+}
+
+.input_wrapper{
+    position: relative;
+    width: 500px;
+    height:50px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.input_user{
+    width: 100%;
+    height: 100%;
+    background-color:#fff;
+    border: none;
+    padding: 5px 160px 5px 15px;
+    box-sizing: border-box;
+    &::placeholder{
+        color:#bdbdbd;
+
+    }
+    &:focus{
+        outline:none;
+    }
+}
+.btn_submit{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}

@@ -1,0 +1,406 @@
+grid {
+  display: grid;
+  grid: 300px/400px;
+  margin: 10px auto 0;
+  position: relative;
+  cursor: pointer;
+}
+grid > * {
+  grid-area:1/1;
+}
+w:nth-of-type(1) {
+  width:80%;
+  height:20px;
+  margin:0 0 auto auto;
+}
+w:nth-of-type(2) {
+  width:80%;
+  height:20px;
+  margin:auto 0 0 auto;
+}
+w:nth-of-type(3) {
+  width:20px;
+  height:100%;
+  margin-left:auto;
+}
+w:nth-of-type(4) {
+  width:20px;
+  height:40%;
+  margin:0 auto auto 15%;
+}
+w:nth-of-type(5) {
+  width:20px;
+  height:40%;
+  margin: auto auto 0 15%;
+}
+w:nth-of-type(6) {
+  width: 15%;
+  height: 20px;
+  margin: 0;
+}
+w:nth-of-type(7) {
+  width: 20%;
+  height: 20px;
+  margin: auto auto 28% 0;
+}
+w:nth-of-type(8) {
+  width: 20px;
+  height: 40%;
+  margin: 15% 0 0 0;
+}
+s {
+  aspect-ratio: 1;
+  height: calc(100% - 40px);
+  margin: auto 40px auto auto;
+  display: grid;
+  pointer-events: none;
+  border-radius: 50%;
+  clip-path: polygon(0 0,100% 100%,0 100%,100% 0);
+  animation: r 6s infinite linear;
+}
+@keyframes r {
+  to {transform:rotate(1turn)}
+}
+s:nth-of-type(2) {
+  height: calc(100% - 80px);
+  margin: auto 60px auto auto;
+  animation: r 4s infinite linear reverse;
+}
+s:nth-of-type(3) {
+  height: calc(100% - 120px);
+  margin: auto 80px auto auto;
+  animation: r 5s infinite alternate;
+}
+s:nth-of-type(4) {
+  height: calc(100% - 160px);
+  margin: auto 100px auto auto;
+  animation: r 6s infinite alternate cubic-bezier(.85,.7,.95,1.5);
+}
+s:before {
+  content: "";
+  background: grey;
+  pointer-events: initial;
+  clip-path: polygon(100% 50%, 99.35% 58.02%, 97.43% 65.83%, 94.27% 73.24%, 89.97% 80.04%, 84.64% 86.06%, 78.4% 91.15%, 71.43% 95.17%, 63.91% 98.03%, 56.03% 99.64%, 47.99% 99.96%, 40% 98.99%, 32.27% 96.75%, 25% 93.3%, 18.38% 88.73%, 12.57% 83.16%, 7.74% 76.72%, 4% 69.6%, 1.45% 61.97%, 0.16% 54.02%, 0.16% 45.98%, 1.45% 38.03%, 4% 30.4%, 7.74% 23.28%, 12.57% 16.84%, 18.38% 11.27%, 25% 6.7%, 32.27% 3.25%, 40% 1.01%, 47.99% 0.04%, 56.03% 0.36%, 63.91% 1.97%, 71.43% 4.83%, 78.4% 8.85%, 84.64% 13.94%, 89.97% 19.96%, 94.27% 26.76%, 97.43% 34.17%, 99.35% 41.98%, 100% 50%, calc(99.35% - 19.74px) calc(41.98% - -3.21px), calc(97.43% - 18.97px) calc(34.17% - -6.33px), calc(94.27% - 17.71px) calc(26.76% - -9.29px), calc(89.97% - 15.99px) calc(19.96% - -12.01px), calc(84.64% - 13.85px) calc(13.94% - -14.42px), calc(78.4% - 11.36px) calc(8.85% - -16.46px), calc(71.43% - 8.57px) calc(4.83% - -18.07px), calc(63.91% - 5.56px) calc(1.97% - -19.21px), calc(56.03% - 2.41px) calc(0.36% - -19.85px), calc(47.99% - -0.81px) calc(0.04% - -19.98px), calc(40% - -4px) calc(1.01% - -19.6px), calc(32.27% - -7.09px) calc(3.25% - -18.7px), calc(25% - -10px) calc(6.7% - -17.32px), calc(18.38% - -12.65px) calc(11.27% - -15.49px), calc(12.57% - -14.97px) calc(16.84% - -13.26px), calc(7.74% - -16.9px) calc(23.28% - -10.69px), calc(4% - -18.4px) calc(30.4% - -7.84px), calc(1.45% - -19.42px) calc(38.03% - -4.79px), calc(0.16% - -19.94px) calc(45.98% - -1.61px), calc(0.16% - -19.94px) calc(54.02% - 1.61px), calc(1.45% - -19.42px) calc(61.97% - 4.79px), calc(4% - -18.4px) calc(69.6% - 7.84px), calc(7.74% - -16.9px) calc(76.72% - 10.69px), calc(12.57% - -14.97px) calc(83.16% - 13.26px), calc(18.38% - -12.65px) calc(88.73% - 15.49px), calc(25% - -10px) calc(93.3% - 17.32px), calc(32.27% - -7.09px) calc(96.75% - 18.7px), calc(40% - -4px) calc(98.99% - 19.6px), calc(47.99% - -0.81px) calc(99.96% - 19.98px), calc(56.03% - 2.41px) calc(99.64% - 19.85px), calc(63.91% - 5.56px) calc(98.03% - 19.21px), calc(71.43% - 8.57px) calc(95.17% - 18.07px), calc(78.4% - 11.36px) calc(91.15% - 16.46px), calc(84.64% - 13.85px) calc(86.06% - 14.42px), calc(89.97% - 15.99px) calc(80.04% - 12.01px), calc(94.27% - 17.71px) calc(73.24% - 9.29px), calc(97.43% - 18.97px) calc(65.83% - 6.33px), calc(99.35% - 19.74px) calc(58.02% - 3.21px), calc(100% - 20px) calc(50% - 0px), calc(99.35% - 19.74px) calc(41.98% - -3.21px));
+}
+g {
+  width: 50px;
+  aspect-ratio: 1;
+  margin: auto;
+  transform: translate(30px);
+  background: 
+    conic-gradient(from 152deg at top,#ccf2fc 55deg,#0000 0) top/100% 30% no-repeat,
+    conic-gradient(from -36deg at bottom,#104d87 22deg, #2de8f4 0 50deg, #0095d9 0 72deg,#0000 0) bottom/100% 70% no-repeat,
+    linear-gradient(90deg,#0597de 50%,#2ed7f2 0) top/100% 30% no-repeat;
+ clip-path: polygon(0 30%,21% 0,79% 0,100% 30%,100% 100%,0 100%);
+  transition: 9999s 9999s;
+}
+result {
+  position: absolute;
+  inset: 0 0 0 100%;
+  display:grid;
+  place-content: center;
+  font-size: 70px;
+  color: #00b300;
+  overflow: hidden;
+  background: #fff9;
+  transition: 9999s 9999s;
+}
+result:before {
+  content: "Bravo!";
+}
+g:hover {
+  background-size: 0 0;
+  transition: 0s;
+}
+g:hover ~ result,
+result:hover{
+  inset: 0 0 0 0;
+  transition: 0s;
+}
+
+w {
+  background: grey;
+}
+w::before {
+  content: "Game Over";
+  position: fixed;
+  inset: 0 0 100%;
+  z-index: 5695845;
+  background: #000;
+  color: red;
+  font-size: 80px;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  transition: 99999s;
+}
+w::after {
+  content: "Refresh the page to start a new game";
+  position: fixed;
+  inset: 0 0 100%;
+  z-index: 5695845;
+  color: #fff;
+  font-size: 30px;
+  display: grid;
+  place-content: end center;
+  overflow: hidden;
+  transition: 99999s;
+}
+s:hover ~ w::before,
+s:hover ~ w::after,
+w:hover::before,
+w:hover::after{
+  inset: 0;
+  transition: 0s;
+}
+
+@property --n{
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}
+@property --t{
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+@property --r{
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+@property --b{
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+@property --l{
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+
+d {
+  width: 40px; /* size */
+  display: inline-grid;
+  aspect-ratio: .55;
+}
+d:before,
+d:after {
+  content: "";
+  padding: 20%;
+  background:
+    conic-gradient(from -45deg at 50% 45%,var(--t) 90deg,#0000 0),
+    conic-gradient(from  45deg at 55% 50%,var(--r) 90deg,#0000 0),
+    conic-gradient(from 135deg at 50% 55%,var(--b) 90deg,#0000 0),
+    conic-gradient(from 225deg at 45% 50%,var(--l) 90deg,#0000 0);
+  --m: conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  clip-path: polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%);
+  transition:--t .45s,--l .45s,--b .45s,--r .45s;
+}
+d:after {
+  margin-top: -20%;
+  --t: #0000;
+}
+d {
+  --1:(var(--n) - 1)*(var(--n) - 1);
+  --2:(var(--n) - 2)*(var(--n) - 2);
+  --3:(var(--n) - 3)*(var(--n) - 3);
+  --4:(var(--n) - 4)*(var(--n) - 4);
+  --5:(var(--n) - 5)*(var(--n) - 5);
+  --6:(var(--n) - 6)*(var(--n) - 6);
+  --7:(var(--n) - 7)*(var(--n) - 7);
+  --8:(var(--n) - 8)*(var(--n) - 8);
+  --9:(var(--n) - 9)*(var(--n) - 9);
+}
+
+d:before {
+  --t:rgb(
+    clamp(30,var(--1)*var(--4)*999,250)
+    clamp(30,var(--1)*var(--4)*999,250)
+    30);
+  --r:rgb(
+    clamp(30,var(--5)*var(--6)*999,250)
+    clamp(30,var(--5)*var(--6)*999,250)
+    30);
+  --b:rgb(
+    clamp(30,var(--n)*var(--1)*var(--7)*999,250)
+    clamp(30,var(--n)*var(--1)*var(--7)*999,250)
+    30);
+  --l:rgb(
+    clamp(30,var(--1)*var(--2)*var(--3)*var(--7)*999,250)
+    clamp(30,var(--1)*var(--2)*var(--3)*var(--7)*999,250)
+    30);
+}
+d:after {
+  --r:rgb(
+    clamp(30,var(--2)*999,250)
+    clamp(30,var(--2)*999,250)
+    30);
+  --b:rgb(
+    clamp(30,var(--1)*var(--4)*var(--7)*999,250)
+    clamp(30,var(--1)*var(--4)*var(--7)*999,250)
+    30);
+  --l:rgb(
+    clamp(30,var(--1)*var(--3)*var(--4)*var(--5)*var(--7)*var(--9)*999,250)
+    clamp(30,var(--1)*var(--3)*var(--4)*var(--5)*var(--7)*var(--9)*999,250)
+    30);
+}
+timer d:nth-of-type(1) {animation:d6 60s linear infinite}
+timer d:nth-of-type(2) {animation:d9 10s linear infinite}
+timer d:nth-of-type(3) {animation:d9  1s linear infinite;grid-column:4}
+timer d:nth-of-type(4) {animation:d9 .1s linear infinite}
+@keyframes d9 {
+  0%,
+  9.95%{--n:0}
+  10%,
+  19.95%{--n:1}
+  20%,
+  29.95%{--n:2}
+  30%,
+  39.95%{--n:3}
+  40%,
+  49.95%{--n:4}
+  50%,
+  59.95%{--n:5}
+  60%,
+  69.95%{--n:6}
+  70%,
+  79.95%{--n:7}
+  80%,
+  89.95%{--n:8}
+  90%,
+  99.95%{--n:9}
+}
+@keyframes d6 {
+  0%,
+  16.64%{--n:0}
+  16.67%,
+  33.30%{--n:1}
+  33.33%,
+  49.96%{--n:2}
+  50.00%,
+  66.63%{--n:3}
+  66.67%,
+  83.30%{--n:4}
+  83.33%,
+  99.97%{--n:5}
+}
+
+timer {
+  position: absolute;
+  display: grid;
+  top: 50%;
+  left: 100%;
+  transform: translate(20%, -50%);
+  grid-template-columns: 1fr 1fr 10px 1fr 1fr;
+  grid-gap: 10px;
+  pointer-events: none;
+  background: 
+    linear-gradient(rgb(250 250 30) 0 0) 50% 30%/10px 10px no-repeat,
+    linear-gradient(rgb(250 250 30) 0 0) 50% 70%/10px 10px no-repeat;
+}
+@media (max-width:900px) {
+  timer {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+}
+
+grid timer d:nth-child(n),
+grid result:hover ~ timer d:nth-child(n){
+  animation-play-state: paused;
+}
+grid:hover timer d:nth-child(n) {
+  animation-play-state: running;
+}
+grid:hover timer {
+  filter: hue-rotate(45deg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-content: start center;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+h1,p {
+  font-size: 2rem;
+  margin:0;
+  text-align:center;
+}
+p {
+  font-size:1.2rem;
+}
+
+@supports (-moz-appearance:none) {
+  d {
+   font-size: 65px;
+   font-weight: bold;
+   font-family: sans-serif;
+   color:rgb(250 250 30);
+  }
+  d:before {
+    padding:0;
+    -webkit-mask:none;
+    clip-path:none; 
+  }
+  d:after {
+    content: none;
+  }
+  timer d:nth-of-type(1):before {animation:d6 60s linear infinite}
+  timer d:nth-of-type(2):before {animation:d9 10s linear infinite}
+  timer d:nth-of-type(3):before {animation:d9  1s linear infinite}
+  timer d:nth-of-type(4):before {animation:d9 .1s linear infinite}
+   @keyframes d9 {
+    0%,
+    9.95%{content:'0'}
+    10%,
+    19.95%{content:'1'}
+    20%,
+    29.95%{content:'2'}
+    30%,
+    39.95%{content:'3'}
+    40%,
+    49.95%{content:'4'}
+    50%,
+    59.95%{content:'5'}
+    60%,
+    69.95%{content:'6'}
+    70%,
+    79.95%{content:'7'}
+    80%,
+    89.95%{content:'8'}
+    90%,
+    99.95%{content:'9'}
+  }
+  @keyframes d6 {
+    0%,
+    16.64%{content:'0'}
+    16.67%,
+    33.30%{content:'1'}
+    33.33%,
+    49.96%{content:'2'}
+    50.00%,
+    66.63%{content:'3'}
+    66.67%,
+    83.30%{content:'4'}
+    83.33%,
+    99.97%{content:'5'}
+  }
+  grid timer d:nth-child(n):before,
+  grid result:hover ~ timer d:nth-child(n):before{
+    animation-play-state: paused;
+  }
+  grid:hover timer d:nth-child(n):before {
+   animation-play-state: running; 
+  }
+}

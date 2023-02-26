@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url("src/bg2.jpg") no-repeat center center/cover; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* taskkBar */
+
+.taskbar{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    z-index: 110;
+}
+
+#righttaskbar{
+    position: absolute;
+    right: 0px;
+    bottom: 1px;
+    height: 40px;
+}
+
+#fileExplorer{
+    width: 32px;
+    height: 32px;
+    margin: 5px 4px;
+}
+
+/* Start Menu */
+
+#menu{
+    width: 460px;
+    border-radius: 4px;
+}
+
+.startmenu{
+    position: absolute;
+    bottom: -650px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.4s ease-in;
+    z-index: 6;
+}
+
+/* Search Menu */
+
+#searchBox{
+    width: 545px;
+    border-radius: 4px;
+}
+
+.searchmenu{
+    position: absolute;
+    bottom: -650px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.4s ease-in;
+    z-index: 6;
+}
+
+/* Widget Menu */
+
+#widgetBox{
+    height: 94.5vh;
+    border-radius: 4px;
+}
+
+.widgetmenu{
+    position: absolute;
+    left: -950px;
+    /* text-align: center; */
+    width: 100%;
+    transition: all 0.6s ease-in;
+    z-index: 6;
+}
+
+/* File Explorer */
+
+#fileManager{
+    width: 600px;
+    border-radius: 4px;
+}
+
+.filemenu{
+    position: absolute;
+    left: 0px;
+    top: -700px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    z-index: 5;
+}
+
+/* File Explorer */
+
+#store{
+    width: 800px;
+    border-radius: 4px;
+}
+
+.microsoftstore{
+    position: absolute;
+    left: 0px;
+    top: -800px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    z-index: 5;
+}
+
+/* Desktop Icon */
+
+.icon{
+    margin: 6px;
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    position: fixed;
+    font-size: 12px;
+    font-family: 'Segoe UI Semibold';
+    font-style: italic;
+}
+
+.icon img{
+    width: 40px;
+    margin: 2px;
+}
+
+#edge{
+    margin-top: 162px;
+}
+
+#recyclebin{
+    margin-top: 78px;
+}
+
+#vlc{
+    margin-top: 260px;
+}
+

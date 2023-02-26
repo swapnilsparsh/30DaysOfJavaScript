@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pattern Generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="col">
+	<div class="controls">
+		<h1>Pattern Generator</h1>
+		<h3>Options</h3>
+		<div class="controls__group">
+		<label for="#angle">Angle</label>
+			<input type="range" min="5" max="85" id="angle" data-input="range">
+		</div>
+		<div class="controls__group">
+			<label for="#thickness">Stripe thickness</label>
+			<input type="range" min="2" max="120" step="1" id="thickness" data-input="thickness" value="30">
+		</div>
+		<div class="controls__group">
+			<label for="#width">Segment width</label>
+			<input type="range" min="10" max="200" step="1" id="width" data-input="width" value="100">
+		</div>
+		<div class="controls__group">
+			<label for="#color1">Primary colour</label>
+			<input type="range" min="0" max="360" step="1" id="color1" data-input="color1" value="100">
+		</div>
+		<div class="controls__group">
+			<label for="#color1">Contrast</label>
+			<input type="range" min="50" max="90" step="1" id="contrast" data-input="contrast">
+		</div>
+
+		<h3>CSS output</h3>
+		<div class="css" data-output></div>
+	</div>
+</div>
+
+<div class="bg" data-bg></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.19/lodash.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

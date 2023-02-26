@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(207, 207, 207);
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    width: 40%;
+}
+
+.title h2{
+    color: #001c79;
+}
+
+.input-password{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+    position: relative;
+}
+
+.input-password input {
+    padding: 10px;
+    width: 50%;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+.input-password input:focus {
+    border-color: #b3b3b3;
+    outline: none;
+    box-shadow: inset 0 0 2px #001c79;
+}
+
+.password-show-btn, .password-hide-btn {
+    background: transparent;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(158, 158, 158);
+    position: absolute;
+    right: 24%;
+    top: 6%;
+    display: none;
+}
+
+.indication-text{
+    margin: 12px 5px 5px 5px;
+}
+.indication {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 52%;
+    margin: auto;
+}
+.indication span {
+    width: 100%;
+    height: 6px;
+    background-color: lightgrey;
+    margin: 0px 5px;
+    border-radius: 20px;
+}
+
+span{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,212 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0E0A2F;
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.ball1,.ball2{
+    position: absolute;
+    height: 23em;
+    width: 23em;
+    border-radius: 50%;
+}
+.ball2{
+    top: 100%;
+    transform: translateY(-100%);
+    left: 60%;
+    /* background: linear-gradient(#EB6A7F,#16B1DA); */
+    /* background: linear-gradient(to right, #f55828, #24fe41); */
+    background: linear-gradient(to right, #00f260 , #0575e6);
+}
+@keyframes moveit {
+    from{
+        transform: rotate(90deg);
+
+    }
+    to{
+        top: 100%;
+        transform: translateY(-100%);
+    }
+}
+.selectiong{
+    position: absolute;
+}
+.ball1{
+    top: 0%;
+    left:13%;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    animation-name: moveit;
+    animation-duration:1.4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.ball2{
+    animation-name: movi;
+    animation-duration:1.4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes movi{
+from{
+
+}
+to{
+    top: 0%;
+    transform:rotate(90deg);
+}
+}
+.block{
+    position: relative;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* /* background-color: rgba(10, 10, 10, 0.164); * */
+    background-color: rgba(141, 140, 140, 0.158); /* Black w/opacity/see-through */
+    border-radius: 10px;
+    height: 18em;
+    width: 28em;
+}
+.what{
+    margin-top: .5em;
+    font-size: 1.81em;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.chargerblock{
+    position: relative;
+    width:10em;
+    margin-top: 2em;
+    height: 4em;
+    /* background-color: #49E12E; */
+    border: solid white 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.percent{
+    background-color: #49E12E;
+    width: 0%;
+    height: 4em;
+    animation-name: fullcharge;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes fullcharge{
+    from{
+
+    }
+    to{
+        width: 10em;
+        /* width: 160px; */
+    }
+}
+
+.chargeshowG{
+    background-color: #49E12E;
+    width: 100%;
+    height: 4em;
+    }
+
+.chargeshowR{
+    background-color: #FE4042;
+    width: 100%;
+    height: 4em;   
+}
+.full{
+    background-color: #49E12E;
+}
+.coveringit{
+    position: relative;
+}
+.sideone{
+    position: absolute;
+    top: 55%;
+    left: 99%;
+    height: 1.2em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: .5em;
+    background-color: white;
+}
+.batteryIndicator{
+    margin-top: .5em;
+    font-size: 2.25em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+@media(max-width:1112px)
+{
+    body{
+        font-size: 14px;
+    }
+}
+@media(max-width:971px)
+{
+    body{
+        font-size: 12px;
+    }
+}
+@media(max-width:833px)
+{
+    body{
+        font-size: 10px;
+    }
+}
+@media(max-width:695px)
+{
+    body{
+        font-size: 8px;
+    }
+}
+@media(max-width:557px)
+{
+    .ball1{
+        left: 15%;
+    }
+    .ball2{
+        left: 55%;
+    }
+}
+
+@media(max-width:492px)
+{
+    body{
+        font-size: 7px;
+    }
+    .ball1{
+        left: 15%;
+    }
+    .ball2{
+        left: 55%;
+    }
+}
+@media(max-width:412px)
+{
+    body{
+        font-size: 6px;
+    }
+}
+
+@media(max-width:362px)
+{
+    .ball1{
+        left: 8%;
+        animation-duration: 2s;
+    }
+    .ball2{
+        left: 58%;
+        animation-duration: 2s;
+    }
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(./images/word_definition.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ::selection {
+    color: #fff;
+    background: #4d59fb;
+  }
+  .container {
+    width: 420px;
+    border-radius: 7px;
+    background: #fff;
+    padding: 25px 28px 45px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  }
+  .container header {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .container .search {
+    position: relative;
+    margin: 35px 0 18px;
+  }
+  .search input {
+    height: 53px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 42px;
+    border: 1px solid #999;
+  }
+  .search input:focus {
+    padding: 0 41px;
+    border: 2px solid #4d59fb;
+  }
+  .search input::placeholder {
+    color: #b8b8b8;
+  }
+  .search :where(i, span) {
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+  }
+  .search i {
+    left: 18px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+  .search input:focus ~ i {
+    color: #4d59fb;
+  }
+  .search span {
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+  }
+  .search input:valid ~ span {
+    display: block;
+  }
+  .container .info-text {
+    font-size: 13px;
+    color: #9a9a9a;
+    margin: -3px 0 -10px;
+  }
+  .container.active .info-text {
+    display: none;
+  }
+  .info-text span {
+    font-weight: 500;
+  }
+  .container ul {
+    height: 0;
+    opacity: 0;
+    padding-right: 1px;
+    overflow-y: hidden;
+    transition: all 0.2s ease;
+  }
+  .container.active ul {
+    opacity: 1;
+    height: 130px;
+  }
+  .container ul li {
+    display: flex;
+    list-style: none;
+    margin-bottom: 14px;
+    align-items: center;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #d9d9d9;
+    justify-content: space-between;
+  }
+  
+  ul .word p {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  ul .word span {
+    font-size: 12px;
+    color: #989898;
+  }
+  ul .word i {
+    color: #999;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  ul .content {
+    max-height: 215px;
+    overflow-y: auto;
+  }
+  ul .content::-webkit-scrollbar {
+    width: 0px;
+  }
+  .content li .details {
+    padding-left: 10px;
+    border-left: 3px solid #4d59fb;
+  }
+  .content li p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .content li span {
+    font-size: 15px;
+    color: #7e7e7e;
+  }
+  
+  @media screen and (max-width: 480px){
+    .container{
+      width: 350px;
+    }
+  }

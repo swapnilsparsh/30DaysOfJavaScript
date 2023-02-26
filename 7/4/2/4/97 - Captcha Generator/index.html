@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Custom Captcha Generator</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="assets/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<div class="cover">
+			<header>CAPTCHA GENERATOR</header>
+			<div class="captcha-box">
+				<div class="captcha-img">
+					<img src="assets/bg6.png" alt="Captch Background" />
+					<span class="captcha"></span>
+				</div>
+				<button class="reload">
+					<i class="fas fa-redo-alt"></i>
+				</button>
+			</div>
+			<form action="#" class="input-text">
+				<input
+					type="text"
+					placeholder="Enter captcha"
+					maxlength="6"
+					spellcheck="false"
+					required
+				/>
+				<button class="verify">Check</button>
+			</form>
+			<div class="result"></div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

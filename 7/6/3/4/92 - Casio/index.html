@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<link rel="stylesheet" href="mystyle.css">
+		<style>
+         @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        </style>
+        <style>
+         @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+         </style>
+         <style>
+          @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+         </style> 
+		
+		<title>Virtual Piano Player</title>
+	</head>
+	<body>
+		<div id="d1">
+		<h1 id="heading1">CASIO</h1>
+		<br>
+		<div id="bg1" class="d-block px-4 pb-1">
+			<img id="i1" src="Music_Note/f1.jpg">
+			<div id="l1">
+				<button id="w1" class="whitebg" onclick="myfunc(new Audio('Music_Note/C.wav'),this.id,'a')">q</button>
+				<button id="b1" class="blackbg " onclick="myfunc(new Audio('Music_Note/C_Drum.wav'),this.id,'b')">1</button>
+				<button id="w2" class="whitebg" onclick="myfunc(new Audio('Music_Note/D.wav'),this.id,'a')">w</button>
+				<button id="b2" class="blackbg" onclick="myfunc(new Audio('Music_Note/D_Drum.wav'),this.id,'b')">2</button>
+				<button id="w3" class="whitebg" onclick="myfunc(new Audio('Music_Note/E.wav'),this.id,'a')">e</button>
+				<button id="w4" class="whitebg" onclick="myfunc(new Audio('Music_Note/F.wav'),this.id,'a')">r</button>
+				<button id="b3" class="blackbg" onclick="myfunc(new Audio('Music_Note/F_Drum.wav'),this.id,'b')">3</button>
+				<button id="w5" class="whitebg" onclick="myfunc(new Audio('Music_Note/G.wav'),this.id,'a')">t</button>
+				<button id="b4" class="blackbg" onclick="myfunc(new Audio('Music_Note/G_Drum.wav'),this.id,'b')">4</button>
+				<button id="w6" class="whitebg" onclick="myfunc(new Audio('Music_Note/A.wav'),this.id,'a')">y</button>
+				<button id="b5" class="blackbg" onclick="myfunc(new Audio('Music_Note/Bb_Drum.wav'),this.id,'b')">5</button>
+				<button id="w7" class="whitebg" onclick="myfunc(new Audio('Music_Note/B.wav'),this.id,'a')">u</button>
+				<button id="w8" class="whitebg" onclick="myfunc(new Audio('Music_Note/C1.wav'),this.id,'a')">i</button>
+				<button id="b6" class="blackbg" onclick="myfunc(new Audio('Music_Note/C1_Drum.wav'),this.id,'b')">6</button>
+				<button id="w9" class="whitebg" onclick="myfunc(new Audio('Music_Note/D1.wav'),this.id,'a')">o</button>
+				<button id="b7" class="blackbg" onclick="myfunc(new Audio('Music_Note/D1_Drum.wav'),this.id,'b')">7</button>
+				<button id="w0" class="whitebg" onclick="myfunc(new Audio('Music_Note/E1.wav'),this.id,'a')">p</button>
+				<button id="w10" class="whitebg" onclick="myfunc(new Audio('Music_Note/C_s1.wav'),this.id,'a')">a</button>
+				<button id="b8" class="blackbg" onclick="myfunc(new Audio('Music_Note/A_Drum.wav'),this.id,'b')">8</button>
+				<button id="w11" class="whitebg" onclick="myfunc(new Audio('Music_Note/D_s1.wav'),this.id,'a')">s</button>
+				<button id="b9" class="blackbg" onclick="myfunc(new Audio('Music_Note/Dq_Drum.wav'),this.id,'b')">9</button>
+				<button id="w12" class="whitebg" onclick="myfunc(new Audio('Music_Note/F1.wav'),this.id,'a')">d</button>
+				<button id="b0" class="blackbg" onclick="myfunc(new Audio('Music_Note/E1_Drum.wav'),this.id,'b')">0</button>
+				<button id="w13" class="whitebg" onclick="myfunc(new Audio('Music_Note/G_s.wav'),this.id,'a')">f</button>
+			</div>
+		</div>
+		<br><br><br><br>
+		<div class="container text-center mt-4 mb-0">
+			<h5>#Made In India</h5>
+			<h5>Made With &#128154; By Harshit Shukla</h5>
+		</div>
+		</div>
+		<script src="myscript.js"></script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.game {
+/* width: 3000px;
+height: 1000px; */
+width: 600px;
+height: 200px;
+border: 2px solid black;
+margin: auto;
+}
+#dino{
+width: 50px;
+height: 50px;
+background-image: url(trex.png);
+background-size:50px 50px;
+background-repeat: no-repeat;
+position: relative;
+top:150px;
+}
+.jump{
+    animation: jump 0.3s  linear; 
+
+}
+@keyframes jump{
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+
+#cactus{
+width: 20px;
+height: 40px;
+background-image: url(cactus.png);
+background-size:20px 40px;
+background-repeat: no-repeat;
+position: relative;
+top:110px ;
+left:580px ;
+animation: block 2s linear infinite ;    
+}
+@keyframes block{
+    0%{
+        left:580px ;
+    }
+    100%{
+        left: -20px;
+    }
+}
+#txt{
+    display: block;
+    margin:auto ;
+    margin-top: 100px;
+    padding: 15px 15px;
+    font-size: 20px;
+   display: none;
+}
+#btn{
+    display: block;
+    margin:auto ;
+    margin-top: 20px;
+    padding: 2px 5px;
+    font-size: 20px;
+   cursor: pointer;
+   display: none;
+}
+#dis{
+    display: block;
+    margin:auto ;
+    margin-top: 100px;
+    padding: 25px 125px;
+    font-size: 90px;
+    text-align: center;
+}

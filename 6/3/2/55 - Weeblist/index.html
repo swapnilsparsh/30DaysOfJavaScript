@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeebList</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <h1>The&nbsp;<strong id="output"></strong>&nbsp;List</h1>
+        <form class="search-box" method="dialog" onsubmit="searchWeeb()">
+            <input 
+                type="search" 
+                class="search-field" 
+                id="search"
+                placeholder="Search for an manga..."
+                required />
+            <button type="button" class="search-button" onclick="searchWeeb()">
+                Search <a id="search-anime"></a>
+            </button>
+        </form>
+        <p class="search-hint" onclick="changeNameType()">Click enter to swap to <a id="swap-anime"></a></p>
+        <script src="index.js"></script>
+    </div>
+    <div class="main">
+    </div>
+    
+</body>
+</html>

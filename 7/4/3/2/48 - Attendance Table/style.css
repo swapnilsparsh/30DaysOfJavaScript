@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+
+.mee{
+    position: absolute;
+    top: 20px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #19172e;
+  color: #fff;
+  text-align: left;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:hover {
+  background-color: #fff;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:nth-last-of-type {
+  border-bottom: 2px solid #19172e;
+}
+
+.check {
+  font-size: 20px;
+  text-align: center;
+}
+
+.check .present {
+  color: green;
+  cursor: pointer;
+}
+
+.check .absent {
+  color: red;
+  cursor: pointer;
+}
+
+footer,
+a {
+  color: #19172e;
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

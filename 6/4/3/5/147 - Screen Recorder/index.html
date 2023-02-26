@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder💻</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>Screen Recorder💻</h1>   
+<p>  <ul><li>Click on 'START' button to start Recording ..</li>
+<li> Click on 'STOP' button to Stop Recording ..</li>
+<!-- <li>Click on 'START' button to start Recording ..</li> -->
+<li> Click on 'Download' button to start Downloading ..</li>
+</ul>  
+ 
+
+ </p>
+ <br>
+ <div class="left">
+   <div id="startButton" class="button">
+     Start
+   </div>
+   <h2>Preview</h2>
+   <video id="preview" width="400" height="300" autoplay muted></video>
+ </div>
+ <div class="right">
+   <div id="stopButton" class="button">
+     Stop
+   </div>
+   <h2>Recording</h2>
+   <video id="recording" width="400" height="300" controls></video>
+   <a id="downloadButton" class="button">
+     Download
+   </a>
+ </div>
+ <div class="bottom">
+   <pre id="log"></pre>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>

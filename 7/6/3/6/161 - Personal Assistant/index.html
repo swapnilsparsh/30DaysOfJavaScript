@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Personal Assistant</title>
+  <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.5.0/css/all.css'>
+<link rel='stylesheet' href='https://assets.codepen.io/2940219/tacosontitan-1.1.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="primary-content" class="centered-pen">
+	<h1 class="display-3">Hello there!</h1>
+	<p class="lead">Meet Your Personal Assistant, your new personal assistant with an outstanding personality!</p>
+	<div class="personal-assistant">
+		<div id="felix" class="felix" onclick="activateFelix();">
+			<div class="eyes">
+				<div class="eye left"></div>
+				<div class="eye right"></div>
+			</div>
+		</div>
+		<div class="platform"></div>
+		<ul class="command-list">
+			<li><i class="far fa-clouds" onclick="getWeather();"></i></li>
+			<li><i class="far fa-clock" onclick="getTime();"></i></li>
+			<li><i class="far fa-calendar-alt" onclick="getDate();"></i></li>
+			<li><i class="far fa-grin-squint-tears" onclick="tellJoke();"></i></li>
+			<li><i class="far fa-search" onclick="searchGoogle();"></i></li>
+			<li><i class="far fa-lightbulb-on" onclick="showInspiration();"></i></li>
+			<p class="hey-felix lead"></p>
+		</ul>
+	</div>
+	<div id="response-frame" class="response-frame">
+		<p id="response-message" class="lead"></p>
+		<i class="fas fa-times" onclick="closeResponse();"></i>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://assets.codepen.io/2940219/tacosontitan-1.1.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

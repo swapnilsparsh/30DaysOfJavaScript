@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  overflow: hidden;
+  background: #19172e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+footer, a {
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: 10px;
+}
+
+.wrapper{
+  width: 40%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.blue {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#balloon-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#balloon-gallery div{
+  height: 90px;
+  width: 90px;
+  font-size: 40px;
+  border-radius: 100%;
+  margin: 2.5px 5 px 2.5px 0px;
+}
+
+#balloon-gallery div:nth-child(1n){
+  background: #4285F4;
+  color: #4285F4;
+}
+
+#balloon-gallery div:nth-child(2n){
+  background:#DB4437;
+  color:#DB4437;
+}
+
+#balloon-gallery div:nth-child(3n){
+  background:#F4B400;
+  color:#F4B400;
+}
+
+#balloon-gallery div:nth-child(4n){
+  background:#0F9D58;
+  color:#0F9D58;
+}
+
+#yay-no-balloons {
+  display: none;
+  color: #4285F4;
+  font-size:100px;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #balloon-gallery div{
+    width: 50px;
+    height: 50px;
+  }
+  #yay-no-balloons{
+    font-size: 30px;
+  }
+}

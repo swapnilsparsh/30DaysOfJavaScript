@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+}
+
+canvas {
+  background: #f10505a5;
+  display: block;
+}
+
+.btn-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

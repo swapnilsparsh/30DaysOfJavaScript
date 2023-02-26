@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,400,700');
+
+.phone-container {
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  border-radius: 20px;
+  
+  font-weight: 100;
+  font-family: 'Heebo', sans-serif;
+}
+
+.phone-container .phone-screen {
+  width: 190px;
+  height: 390px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  
+}
+
+.clock {
+    position: absolute;
+    font-size: 9px;
+    color: #333;
+    
+    top: 4px;
+    left: 15px;
+    font-weight: bold;
+}
+
+.status-bar {
+      position: absolute;
+    font-size: 9px;
+    color: #333;
+    
+    top: 4px;
+    right: 5px;
+  z-index: 21;
+}
+
+.is-locked .status-bar {
+  color: #fff;
+}
+
+.is-locked .status-bar:after {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 70%;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+  opacity: 0.3;
+  transform: translateX(-50%);
+}
+
+.status-bar .fa-signal {
+  font-size: 8px;
+}
+
+.status-bar .fa-wifi {
+  font-size: 8px;
+}
+
+.status-bar .fa-battery-half {
+  font-size: 10px;
+}
+
+.phone-screen-notch {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 21;
+}
+
+.notch-speeker {
+  width: 30px;
+  height: 2px;
+  background-color: #464646;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: -1px -1px 0px 0px #5c5b5b inset;
+}
+
+.notch-camera {
+    width: 3px;
+  border-radius: 50%;
+  height: 3px;
+  background-color: #765654;
+  position: absolute;
+  bottom: 5px;
+  right: 25px;
+  box-shadow: -1px -1px 0px 0px #c38d8d inset;
+}
+
+.button {
+  background-color: inherit;
+  width: 2px;
+  position: absolute;
+}
+
+.button.power {
+  height: 50px;
+  right: -2px;
+  top: 80px;
+}
+
+.button.mute,
+.button.volume.up,
+.button.volume.down {
+  left: -2px;
+}
+
+.button.power:hover,
+.button.mute:hover,
+.button.volume.up:hover,
+.button.volume.down:hover {
+  cursor: pointer;
+}
+
+.button.mute {
+   height: 15px;
+  top: 40px;
+}
+
+.button.mute:hover {
+  cursor: pointer;
+}
+
+.button.volume.up {
+  height: 25px;
+  top: 70px;
+}
+
+.button.volume.down {
+  height: 25px;
+  top: 100px;
+}
+
+.phone-footer {
+  border: 1px solid #f3f3f3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.phone-footer-button {
+  width: 100px;
+  background-color: #000;
+  height: 3px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px; 
+}
+
+.is-locked .phone-footer-button {
+  z-index: 21;
+  background-color: #fff;
+}
+
+.keyboard {
+  position: absolute;
+  top: 100px;
+  left: calc(50% + 5px);
+  width: 150px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 21;
+}
+
+.is-locked .keyboard {
+  z-index: 19;
+}
+
+.keyboard .key {
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    flex: 0 0 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  line-height: 35px;
+  font-size: 20px;
+  color: #333;
+  
+}
+
+.keyboard .key:hover {
+  cursor: pointer;
+}
+
+.keyboard .key:last-child {
+  justify-self: center;
+}
+
+.keyboard .key.asterisk {
+  font-size: 30px;
+    line-height: 53px;
+  
+}
+
+.keyboard .key.cardinal {
+  font-size: 14px;
+    line-height: 40px;
+  font-weight: bold;
+}
+
+.callButton {
+      border-radius: 50%;
+    flex: 0 0 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;  
+  color: #fff;
+    background-color: #4cda64;
+    color: #fff;
+    font-size: 17px;
+    line-height: 40px;
+}
+
+.dialer {
+  width: 150px;
+  top: 40px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #333;
+  
+  text-align: center;
+  line-height: 20px;
+}
+
+.lock-screen {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  transition: all 300ms ease;
+  pointer-events: none;
+}
+
+.is-locked .lock-screen {
+  opacity: 1;
+  
+  background-image: url("https://i.pinimg.com/564x/3f/82/79/3f8279f6e76d777f94ac7abc0f720f07.jpg");
+  background-size: cover;
+}
+
+.lock-time {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.lock-time .lock-icon {
+  
+}
+
+.lock-time .time {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.lock-time .date {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.overlay {
+  width: 100px;
+  height: 100px;
+  z-index: 50;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fbfbfa;
+  border-radius: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1000ms ease;
+  pointer-events: none;
+}
+
+.show-mute-overlay .overlay.mute {
+  opacity: 1;
+}
+
+.mute-content,
+.sound-content {
+  display: none;
+}
+
+.phone-container.is-muted .mute-content {
+  display: block;
+}
+
+.phone-container:not(.is-muted) .sound-content {
+  display: block;
+}
+
+.overlay .title {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.overlay .icon {
+  line-height: 60px;
+  font-size: 35px;
+}
+
+.overlay .subtitle {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.overlay .sound-bar {
+    height: 9px;
+    background-color: #333;
+    width: 81px;
+    margin-left: 10px;
+  text-align: left;
+}
+
+.overlay .sound-bar .bar {
+  height: 7px;
+  width: 7px;
+  background-color: #fff;
+  float: left;
+  margin-top: 1px;
+  margin-left: 1px
+}

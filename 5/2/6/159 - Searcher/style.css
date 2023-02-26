@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+
+body{
+  background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+  font-family: "Open Sans";
+}
+.container {
+  display: block;
+  width: 36em;
+  height: 3.2em;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 15.5em;
+}
+
+#search-bar {
+  z-index: 4;
+  display: block;
+  color: #DDD;
+  height: 1.5em;
+  font-size: 1.5em;
+  border: none;
+  position: absolute;
+  /* background: #031927; */
+  background: #afc6d4;
+  width: 12.5em;
+  left: 0.1em;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#search-bar:focus {
+  outline: none;
+}
+
+.search-container {
+  z-index: 2;
+  content: "";
+  display: block;
+  height: 3em;
+  width: 24.5em;
+  border-radius: 2em;
+  border-color: #5dd0d6;
+  border-style: solid;
+  border-width: 4px;
+  background: #afc6d4;
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.ion-close {
+  position: absolute;
+  right: 0.8em;
+  top: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.ion-close:hover {
+  -moz-transform: translateY(-50%) scale(0.9);
+  -o-transform: translateY(-50%) scale(0.9);
+  -ms-transform: translateY(-50%) scale(0.9);
+  -webkit-transform: translateY(-50%) scale(0.9);
+  transform: translateY(-50%) scale(0.9);
+}
+
+.button {
+  display: block;
+  z-index: 4;
+  height: 1.2em;
+  width: 1.2em;
+  border-style: solid;
+  border-color: #5dd0d6;
+  border-radius: 50%;
+  border-width: 0.2em;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.button:hover {
+  -moz-transform: translateY(-50%) scale(1.1);
+  -o-transform: translateY(-50%) scale(1.1);
+  -ms-transform: translateY(-50%) scale(1.1);
+  -webkit-transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%) scale(1.1);
+  background: #0e7397;
+}
+
+.searchbutton {
+  right: 2em;
+  font-size: 3em;
+}
+
+.randombutton {
+  right: 0.3em;
+  font-size: 3em;
+}
+
+.ion-shuffle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ion-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.body-container {
+  width: 80%;
+  display: block;
+  z-index: 1;
+  margin: auto;
+  position: relative;
+}
+
+.cards {
+  display: block;
+  position: relative;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  min-width: 36em;
+  max-width: 60em;
+}
+
+.card-container {
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -ms--transition: all 0.1s ease-in;
+  cursor: pointer;
+  display: block;
+  /* background: #031927; */
+  background: #afc6d4;
+  margin-top: 0.8em;
+  color: white;
+  width: 100%;
+}
+.card-container:hover {
+  background: #010D15;
+  -moz-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.card-text {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1.4em;
+  font-size: 1em;
+}
+.card-text .card-title {
+  border-bottom-style: solid;
+  border-width: 0.1em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  display: block;
+  font-size: 1.8em;
+  /* color: #FB8B24; */
+  color: #0e7397;
+}
+
+.card-error {
+  display: block;
+  background: #031927;
+  margin-top: 0.8em;
+  font-size: 1.2em;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+a:hover {
+  color: none;
+}
+a:active {
+  color: none;
+}
+a:link {
+  color: none;
+}
+a:active {
+  color: none;
+}
+
+.ion-load-c {
+  font-size: 4em;
+  position: absolute;
+  display: none;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 0.2em;
+  animation: rotate 1s ease-in infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -moz-transform: translateX(-50%) rotate(0deg);
+    -o-transform: translateX(-50%) rotate(0deg);
+    -ms-transform: translateX(-50%) rotate(0deg);
+    -webkit-transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -moz-transform: translateX(-50%) rotate(360deg);
+    -o-transform: translateX(-50%) rotate(360deg);
+    -ms-transform: translateX(-50%) rotate(360deg);
+    -webkit-transform: translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

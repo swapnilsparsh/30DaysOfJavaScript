@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Cubic Equation Calculator</title>
+        <script src="./scripts/app.js"></script>
+        <script src="./scripts/bootstrap.bundle.js"></script>
+    </head>
+    
+    <body class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="box">
+                <div>
+                    <input id="x3" placeholder="a" style="width:70px">
+                    <label>X<sup>3</sup> + </label>
+                    <input id="x2" placeholder="b" style="width:70px">
+                    <label>X<sup>2</sup> + </label>
+                    <input id="x1" placeholder="c" style="width:70px">
+                    <label>X + </label>
+                    <input id="x0" placeholder="d" style="width:70px">
+                    <label> = 0</label>
+                </div>
+
+                <br>
+                <button onclick="solve()" style="width: 40%">Solve</button>
+
+                <h2 style="margin-top: 5%; text-decoration: underline;">Result</h2>
+                <div>
+                    <label>X<sub>1</sub> = </label>
+                    <input readonly id="x" style="width: 200px; color: #ffb45a; margin-top: 2px;" value="0">
+                    <br>
+                    <label>Y<sub>2</sub> = </label>
+                    <input readonly id="y" style="width: 200px; color: #ffb45a; margin-top: 2px" value="0">
+                    <br>
+                    <label>Z<sub>3</sub> = </label>
+                    <input readonly id="z" style="width: 200px; color: #ffb45a; margin-top: 2px" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </body>
+</html>

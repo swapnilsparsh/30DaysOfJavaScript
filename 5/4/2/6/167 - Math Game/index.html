@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Math Game</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div ng-app="app">
+	<form ng-controller="GameCtrl" name="mathGameForm" class="game" ng-submit="checkAnswer()">
+		<h1 class="text-center">!! Math Game !!</h1>
+		<p ng-show="playingGame() || noGame()">See how many math problems you can answer correctly in one minute!</p>
+		<p ng-class="{'alert-success': timer < 20, 'alert-warning': timer >= 20 && timer < 40, 'alert-danger': timer >= 40 && timer < 60 }" ng-show="playingGame()" class="alert h4 timer" role="alert">{{timer}}</p>	
+		<p class="form-group" ng-class="{'has-error': isIncorrect(), 'has-success': isAnswer() }" ng-show="playingGame()">
+			<label class="control-label center-block text-center h2">{{variables.x}} {{symbol}} {{variables.y}}</label>
+			<input type="text" class="form-control" ng-model="answer" placeholder="Answer" />
+		</p>
+		<p class="h3" ng-show="endGame()">
+			Time is up!</p>
+		<p ng-show="endGame()">
+			You answered {{correct}} out of {{correct+wrong}} correctly with an accuracy rating of {{accuracy() | number }}%
+		</p>
+		<div class="progress" ng-show="playingGame() || endGame()">
+  		<div class="progress-bar" ng-class="{'progress-bar-success': accuracy() >= 75, 'progress-bar-warning': accuracy() >= 50 && accuracy() < 75, 'progress-bar-danger': accuracy() < 50}" role="progressbar" aria-valuenow="accuracy()" aria-valuemin="0" aria-valuemax="100" style="width: {{accuracy()}}%">
+    <span>{{correct}} / {{wrong+correct}}</span>
+  </div>
+</div>
+			<p class="text-center" ng-show="noGame() || endGame()">
+			 <button type="button" ng-click="startGame()" class="btn btn-primary btn-lg"><span ng-show="noGame()">Start</span><span ng-show="endGame()">New</span> Game</button>
+		</p>
+	</form>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

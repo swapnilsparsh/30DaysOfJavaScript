@@ -1,0 +1,16 @@
+body {
+    background: #EAC289;
+    font-family: Consolas;
+}
+
+.base {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-top: auto !important;
+}
+
+.controller {
+    border-top: 2px dotted gray;
+    border-bottom: 2px dotted gray;
+}

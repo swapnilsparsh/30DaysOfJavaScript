@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projectile Motion</title>
+    
+    <style>
+        .btns, .inputs {
+            margin: 20px;
+        }
+
+        input[type="number"] {
+            border-radius: 10px;
+            border: 2px solid #aaa;
+            padding: 5px;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        button {
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 20px;
+            color: #fff;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #launch {
+            background-color: deepskyblue;
+        }
+
+        #reset {
+            background-color: crimson;
+        }
+
+        .control {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .board {
+            position: relative;
+            margin: 20px;
+            height: 450px;
+        }
+
+        .board::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            transform: translateY(50%);
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+
+        .board::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: black;
+            z-index: -1;
+        }
+
+        .x {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateX(200%) translateY(50%);
+        }
+
+        .y {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-50%) translateY(-100%);
+        }
+
+        .y::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 0.6em;
+            height: 0.6em;
+            border-right: 0.2em solid black;
+            border-top: 0.2em solid black;
+            transform: rotate(-45deg);
+            left: -1px;
+            bottom: -14px;
+        }
+
+        .x::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 0.6em;
+            height: 0.6em;
+            border-right: 0.2em solid black;
+            border-top: 0.2em solid black;
+            transform: rotate(45deg);
+            left: -23px;
+            bottom: 3px;
+        }
+
+        #projectile {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: darkred;
+            left: 0;
+            bottom: 0;
+            transform: translate(-50%, 50%);
+            border-radius: 50%;
+        }
+
+        .path {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .yDist {
+            position: absolute;
+            transform: translate(-50%, -110%);
+            background-color: black;
+            color: white;
+            padding: 5px;
+            font-size: 1.1em;
+        }
+
+        .yDist::before {
+            content: "";
+            position: absolute;
+            border: 10px solid black;
+            border-color: black transparent transparent transparent;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 100%);
+        }
+
+        .xDist {
+            position: absolute;
+            transform: translate(75%, 50%);
+            background-color: black;
+            color: white;
+            padding: 5px;
+            font-size: 1.1em;
+        }
+
+        .xDist::before {
+            content: "";
+            position: absolute;
+            border: 10px solid black;
+            border-color: transparent black transparent transparent;
+            left: 0;
+            bottom: 50%;
+            transform: translate(-100%, calc(-1px + 50%));
+        }
+    </style>
+
+</head>
+<body>
+    <div class="control">
+        <div class="inputs">
+            <input type="number" name="velocity" id="velocity" placeholder="Initial Velocity">
+            <input type="number" name="angle" id="angle" placeholder="Angle">
+        </div>
+        <div class="btns">
+            <button id="launch">Launch</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <div class="board">
+        <span class="x">X</span>
+        <span class="y">Y</span>
+        <div id="projectile"></div>
+    </div>
+
+    <script>
+        
+        class Projectile {
+            element;
+            x;
+            y;
+            g;
+            horizontalRange;
+            maxHeight;
+            actualHorizontalRange;
+
+
+            constructor(element, x, y) {
+                this.element = element;
+                this.x = x;
+                this.y = y;
+            }
+
+            moveHorizontal(speed) {
+                let intervalHorizontal = setInterval(() => {
+                    if(this.x >= this.horizontalRange) {
+                        if(this.y > 0)
+                            this.horizontalRange *= 2;
+                        else{
+
+                            clearInterval(intervalHorizontal);
+
+                            let xDist = document.createElement('div');
+                            let text = document.createTextNode(this.actualHorizontalRange);
+                            xDist.appendChild(text);
+                            xDist.classList.add('xDist');
+                            xDist.style.left = this.x + 'px';
+                            xDist.style.bottom = this.y + 'px';
+                            this.element.parentElement.appendChild(xDist);
+                        }
+                    }
+
+                    if(this.x%25 === 0){
+                        let path = document.createElement('div');
+                        path.classList.add('path');
+                        path.style.left = this.x + 'px';
+                        path.style.bottom = this.y + 'px';
+                        this.element.parentElement.appendChild(path);
+                    }
+
+                    this.x++;
+                    this.element.style.left = this.x + 'px';
+                }, 500/speed);
+            }
+
+            moveVertical(velocity) {
+
+                let interval = () => new Promise(resolve => {
+                    let intervalUp = () => {
+
+                        // velocity -= this.g * 1/velocity;
+                        velocity = Math.sqrt(velocity*velocity - 2*this.g);
+                        
+                        let oneInterval = setTimeout(intervalUp, 500/velocity);
+                        
+                        if(this.y >= this.maxHeight && isNaN(velocity)){
+                            clearTimeout(oneInterval);
+
+                            let yDist = document.createElement('div');
+                            let text = document.createTextNode(this.maxHeight);
+                            yDist.appendChild(text);
+                            yDist.classList.add('yDist');
+                            yDist.style.left = this.x + 'px';
+                            yDist.style.bottom = this.y + 'px';
+                            this.element.parentElement.appendChild(yDist);
+                            
+                            resolve();
+                        }
+                        this.y++;
+                        this.element.style.bottom = this.y + 'px';
+                    }
+
+                    setTimeout(intervalUp, 500/velocity);
+                });
+
+                interval().then(() => {
+                    let intervalDown = () => {
+
+                        // velocity += this.g * 1/velocity;
+                        velocity = Math.sqrt(velocity*velocity + 2*this.g);
+
+                        let oneInterval = setTimeout(intervalDown, 500/velocity);
+
+                        if(this.y <= 0){
+                            clearTimeout(oneInterval);
+                            
+                            this.horizontalRange = this.x;
+                        }
+                        this.y--;
+                        this.element.style.bottom = this.y + 'px';
+                    }
+                    velocity = 0;
+                    // setTimeout(intervalDown, 0);
+                    intervalDown();
+                });
+            }
+        }
+        
+        let initVelocity = document.getElementById('velocity');
+        let angle = document.getElementById('angle');
+
+        let launch = document.getElementById('launch');
+        let reset = document.getElementById('reset');
+
+        let projectileObj = new Projectile(
+            document.getElementById('projectile'),
+            0,
+            0
+        );
+        
+        launch.onclick = () => {
+            let initVelocityValue = parseInt(initVelocity.value);
+            let angleValue = parseInt(angle.value);
+            
+            if(
+                !isNaN(initVelocityValue) &&
+                !isNaN(angleValue) &&
+                initVelocityValue > 0 &&
+                angleValue > 0 &&
+                angleValue <= 90 &&
+                !projectileObj.x &&
+                !projectileObj.y
+            ) {
+                projectileObj.g = 9.81;
+
+                let vx = initVelocityValue * Math.cos(Math.PI * angleValue/180);
+                let vy0 = initVelocityValue * Math.sin(Math.PI * angleValue/180);
+                let maxHeight = Math.round((vy0 * vy0) / (2 * projectileObj.g));
+                let horizontalRange = Math.round(vx * (2 * vy0 / projectileObj.g));
+
+                projectileObj.maxHeight = maxHeight;
+                projectileObj.horizontalRange = horizontalRange;
+                projectileObj.actualHorizontalRange = horizontalRange;
+                
+                if(Math.floor(vx) > 0) projectileObj.moveHorizontal(vx);
+                projectileObj.moveVertical(vy0);
+            }
+        }
+
+        window.onload = () => {
+            initVelocity.value = '';
+            angle.value = '';
+        }
+
+        reset.onclick = () => {
+            initVelocity.value = '';
+            angle.value = '';
+            projectileObj.x = 0;
+            projectileObj.y = 0;
+            projectileObj.element.style.left = '0px';
+            projectileObj.element.style.bottom = '0px';
+
+            let elements = document.getElementsByClassName('path');
+            while(elements.length > 0){
+                elements[0].parentNode.removeChild(elements[0]);
+            }
+            let yDist = document.getElementsByClassName('yDist');
+            yDist[0].parentNode.removeChild(yDist[0]);
+            let xDist = document.getElementsByClassName('xDist');
+            xDist[0].parentNode.removeChild(xDist[0]);
+        }
+
+    </script>
+</body>
+</html>

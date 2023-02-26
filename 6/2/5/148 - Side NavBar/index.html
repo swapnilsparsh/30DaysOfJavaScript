@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="30DaysOfJavaScript/style.css" />
+  <link rel="shortcut icon" href="30DaysOfJavaScript/assets/favicon.png" type="image/x-icon">
+
+  
+  
+
+  <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="30DaysOfJavaScript/script.js"></script>
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/69fecb4176.js" crossorigin="anonymous"></script>
+
+
+  <title>30 Days of JavaScript</title>
+</head>
+
+<body id="body" class="dark-mode">
+
+  <!-- Heading -->
+  <div class="firstDiv">
+  <h1>30 Days of JavaScript</h1>
+  <input id="searchbar" onkeyup="search_project()" type="text" name="search" placeholder='Search projects.....' />
+  
+  <!-- adding side NavBar toggle button-->
+  <a target="_self" class="menu-toggle toggleButton1" onclick="openSideNav()">
+    <i class="fa fa-bars" aria-hidden="true" style="color: white;"></i>
+  </a>
+
+  <!-- Dark Mode Button -->
+  <button id="toggle" class="toggleButton" type="button" onclick="toggleDarkLight()">🌙</button>
+</div>
+
+  <!-- adding side NavBar -->
+  <div id="30daysSidenavbar" class="sidenavbar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()" style="color: white;">&times;</a>
+    <a href="#" style="color: rgb(228, 225, 225); font-weight: 520; font-size: 30px; padding-bottom: 30px; padding-top: 10px;">Our Projects</a>
+    <div class="index">
+      <a target="_blank" href="01 - Drum Kit/" style="color: white;">Drum Kit</a>
+      <a target="_blank" href="02 - Clock/index.html" style="color: white;">Clock</a>
+      <a target="_blank" href="03 - Random Color Generator/" style="color: white;">Random Color Generator</a>
+      <a target="_blank" href="04 - Digital Clock/" style="color: white;">Digital Clock</a>
+      <a target="_blank" href="05 - Random Password Generator/" style="color: white;">Random Password Generator</a>
+      <a target="_blank" href="06 - Calendar/" style="color: white;">Calendar</a>
+      <a target="_blank" href="07 - Dynamic Form Field/" style="color: white;">Dynamic Form Field</a>
+      <a target="_blank" href="08 - Number Counter/" style="color: white;">Number Counter</a>
+      <a target="_blank" href="09 - Dice Roll/" style="color: white;">Dice Roll</a>
+      <a target="_blank" href="10 - Emoji Switcher like Discord/" style="color: white;">Emoji Switcher</a>
+      <a target="_blank" href="11 - Color Picker/" style="color: white;">Color Picker</a>
+      <a target="_blank" href="12 - Custom QR Code/" style="color: white;">Custom QR Code</a>
+      <a target="_blank" href="13 - Favicon Fetcher/" style="color: white;">Favicon Fetcher</a>
+      <a target="_blank" href="14 - Visit Counter/" style="color: white;">Visit Counter</a>
+      <a target="_blank" href="15 - Joke Generator/" style="color: white;">Joke Generator</a>
+      <a target="_blank" href="16 - Countdown Timer/" style="color: white;">Countdown Timer</a>
+      <a target="_blank" href="17 - Text Speed Control/" style="color: white;">Text Speed Control</a>
+      <a target="_blank" href="18 - Stopwatch/" style="color: white;">Stopwatch</a>
+      <a target="_blank" href="19 -Traffic Lights/" style="color: white;">Traffic Lights</a>
+      <a target="_blank" href="20 - Levitate Board/" style="color: white;">Levitate Board</a>
+      <a target="_blank" href="21 - Wave Effect/" style="color: white;">Wave Effect</a>
+      <a target="_blank" href="22 - Zoom Effect/" style="color: white;">Zoom Effect</a>
+      <a target="_blank" href="23 - Drawing Pad/" style="color: white;">Drawing Pad</a>
+      <a target="_blank" href="24 - Word Counter/" style="color: white;">Word Counter</a>
+      <a target="_blank" href="25 - Weather App/" style="color: white;">Weather App</a>
+      <a target="_blank" href="26 - Calculator/" style="color: white;">Calculator</a>
+      <a target="_blank" href="27 - Memory Matching Game/" style="color: white;">Memory Matching Game</a>
+      <a target="_blank" href="28 - Music Player/" style="color: white;">Music Player</a>
+      <a target="_blank" href="29 - To Do List/" style="color: white;">To Do List</a>
+      <a target="_blank" href="30 - Tic Tac Toe/" style="color: white;">Tic Tac Toe</a>
+      <a target="_blank" href="31 - Pop the Balloons/" style="color: white;">Pop The Balloons</a>
+      <a target="_blank" href="32 - Key Code/" style="color: white;">Events Keycode</a>
+      <a target="_blank" href="33 - Feedback UI/" style="color: white;">Feedback UI</a>
+      <a target="_blank" href="34 - Virtual Piano/" style="color: white;">Virtual Piano</a>
+      <a target="_blank" href="35 - Decimal To Binary/" style="color: white;">Decimal to Binary</a>
+      <a target="_blank" href="36 - Hangman/" style="color: white;">Hangman</a>
+      <a target="_blank" href="37 - RPS Game/" style="color: white;">Rock Paper Scissors</a>
+      <a target="_blank" href="38 - Snake-Game/" style="color: white;">Snack Game</a>
+      <a target="_blank" href="39 - Age Calculator/" style="color: white;">Age Calculator</a>
+      <a target="_blank" href="40 - Gradient Generator/" style="color: white;">Gradient Generator</a>
+      <a target="_blank" href="41 - Basic-Carousel/" style="color: white;">Basic-Image-Carousel</a>
+      <a target="_blank" href="42 - Simple Form Validation/" style="color: white;">Simple Form Validation</a>
+      <a target="_blank" href="43 - Getting Started with APIs/" style="color: white;">Getting Started With APIs</a>
+      <a target="_blank" href="44 - Infinite Scroll/" style="color: white;">Infinite Scroll</a>
+      <a target="_blank" href="45 - Chatting App/" style="color: white;">Chatting App</a>
+      <a target="_blank" href="46 - Image Slider/" style="color: white;">Image Slider</a>
+      <a target="_blank" href="47 - Caesar Cipher/" style="color: white;">Caesar Cipher</a>
+      <a target="_blank" href="48 - Attendance Table/" style="color: white;">Attendace Table</a>
+      <a target="_blank" href="49 - Content Placeholder/" style="color: white;">Content Placeholder</a>
+      <a target="_blank" href="50 - Country Detail/" style="color: white;">Country Detail</a>
+      <a target="_blank" href="51 - Notes Maker/" style="color: white;">Notes Maker</a>
+      <a target="_blank" href="52 - Temperature Convertor/" style="color: white;">Temperature Convertor</a>
+      <a target="_blank" href="53 - Notes Taking App/" style="color: white;">Notes Taking App</a>
+      <a target="_blank" href="54 - Project Idea Generator/" style="color: white;">Project Idea Generator</a>
+      <a target="_blank" href="55 - Weeblist/" style="color: white;">Weeblist</a>
+      <a target="_blank" href="56 - Jokes Chrome Extension/" style="color: white;">Jokes Chrome Extension</a>
+      <a target="_blank" href="57 - Quiz App/" style="color: white;">quix App</a>
+      <a target="_blank" href="58 - Simon Game/" style="color: white;">Simon Game</a>
+      <a target="_blank" href="59 - Color Choosing Game/" style="color: white;">Color Choosing Game</a>
+      <a target="_blank" href="60 - News Website/" style="color: white;">News Website</a>
+      <a target="_blank" href="61 - Greeting Card/" style="color: white;">Greeting Card</a>
+      <a target="_blank" href="62 - IP Address Tracker/" style="color: white;">IP Address Tracker</a>
+      <a target="_blank" href="63 - URL Bookmark/" style="color: white;">URL Bookmark</a>
+      <a target="_blank" href="64 - Photo Editor/" style="color: white;">Photo Editor</a>
+      <a target="_blank" href="65 - Postmaster Clone/" style="color: white;">Postmaster Clone</a>
+      <a target="_blank" href="66 - Text to Speech Converter/" style="color: white;">Text to Speech Converter</a>
+      <a target="_blank" href="67 - Currency Converter/" style="color: white;">Currency Converter</a>
+      <a target="_blank" href="68 - Movie TV Series Quote Generator/" style="color: white;">Movie TV Series Qoute Generator</a>
+      <a target="_blank" href="69 - Food Delivery Site/" style="color: white;">Food Delivery Site</a>
+      <a target="_blank" href="70 - Transpose Matrix Calculator/" style="color: white;">Transpose Matric Calculator</a>
+      <a target="_blank" href="71 - Background Color Changer/ " style="color: white;">Background Color Changer</a>
+      <a target="_blank" href="72 - Typing Platform/" style="color: white;">Typing Platform</a>
+      <a target="_blank" href="73 - Casino Slot Machine Game/" style="color: white;">Casino Slot Machine Game</a>
+      <a target="_blank" href="74 - Random Anime Profile/" style="color: white;">Randome Anime Profile</a>
+      <a target="_blank" href="75 - Movie Search App/" style="color: white;">Movie Search App</a>
+      <a target="_blank" href="76- FlappyBird Game/" style="color: white;">Car Game </a>
+      <a target="_blank" href="77 - Search Github Profile/" style="color: white;">Search Github Profile</a>
+      <a target="_blank" href="78 - Dictionary App/" style="color: white;">Dictionary App</a>
+      <a target="_blank" href="79 - The Bet Game/" style="color: white;">Bet Game</a>
+      <a target="_blank" href="80 - Meditation App/" style="color: white;">Meditation App</a>
+      <a target="_blank" href="81 - Flipbook/" style="color: white;">Flip Book</a>
+      <a target="_blank" href="82 - Falling Ball Game/" style="color: white;">Falling Ball Game</a>
+      <a target="_blank" href="83 - Guess Who Game/" style="color: white;">Guess Who Game</a>
+      <a target="_blank" href="84 - Tetris Game/" style="color: white;">Teetris Game</a>
+      <a target="_blank" href="85 - Menu Filter/" style="color: white;">Menu Filter</a>
+      <a target="_blank" href="86 - Weight Conversion Tool/" style="color: white;">Weight Conversion Toll</a>
+      <!-- <a target="_blank" href="87 - Body Mass Index Calculator/" style="color: white;"></a> -->
+      <a target="_blank" href="88 - Ping Pong Game/" style="color: white;">Ping Pong Game</a>
+      <a target="_blank" href="91 - CRUD Application/" style="color: white;">CRUD Application</a>
+      <a target="_blank" href="96 - Pomodoro Clock/"" style="color: white;">Pomodoro Clock</a>
+      <a target="_blank" href="97 - Captcha Generator/" style="color: white;">Captcha Generator</a>
+      <a target="_blank" href="98 - Loan Calculator/" style="color: white;">Loan Calculator</a>
+      <a target="_blank" href="99 - BlackJack Game/" style="color: white;">BlackJack Game</a>
+      <a target="_blank" href="100 - Quote of The Day/" style="color: white;">Qoute Of The Day</a>
+      <a target="_blank" href="101 - Audio Visualizer/" style="color: white;">Audio Visualizer</a>
+      <a target="_blank" href="102 - Minesweeper Game/" style="color: white;">Minesweeper Game</a>
+      <a target="_blank" href="103 - Word_Definition/" style="color: white;">Word_Definition</a>
+      <a target="_blank" href="104 - Catch Me If You Can/" style="color: white;">Caltch Me If You Can</a>
+      <a target="_blank" href="105 - Speech Recognitation/" style="color: white;">Speech Recognization </a>
+      <a target="_blank" href="106 - Student Grade Calculator/" style="color: white;">Student Grade Calculator</a>
+      <a target="_blank" href="107 - Sudoku Game/" style="color: white;">Sudoku Game</a>
+    <br><br>
+
+    </div>
+  </div>
+
+  
+
+  <!-- Octocat svg -->
+
+  <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" class="github-corner" target="_blank"
+    aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="
+          position: fixed;
+          top: 0;
+          border: 0;
+          right: 0;
+        " aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+  <!-- Octocat svg end -->
+
+  
+
+  <!-- Main Section Start -->
+
+
+  <div class="main" id="mainContainer">
+
+
+    <!-- Scroll To Top -->
+  <a class="scrollToTop"><span></span></a>
+  <!-- Scroll to Top End -->
+
+
+    <div class="item">
+      <a target="_blank" href="01 - Drum Kit/index.html">
+        <img src="30DaysOfJavaScript/assets/01.png" alt="Drum Kit" />
+        <h4>Drum Kit</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="02 - Clock/index.html">
+        <img src="30DaysOfJavaScript/assets/02.png" alt="Clock" />
+        <h4>Clock</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="03 - Random Color Generator/index.html">
+        <img src="30DaysOfJavaScript/assets/03.png" alt="Random Color Generator" />
+        <h4>Random Color Generator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="04 - Digital Clock/index.html">
+        <img src="30DaysOfJavaScript/assets/04.png" alt="Digital Clock" />
+        <h4>Digital Clock</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="05 - Random Password Generator/index.html">
+        <img src="30DaysOfJavaScript/assets/05.png" alt="Random Password Generator" />
+        <h4>Random Password Generator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="06 - Calendar/index.html">
+        <img src="30DaysOfJavaScript/assets/06.png" alt="Calendar" />
+        <h4>Calendar</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="07 - Dynamic Form Field/index.html">
+        <img src="30DaysOfJavaScript/assets/07.png" alt="Dynamic Form Field" />
+        <h4>Dynamic Form Field</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="08 - Number Counter/index.html">
+        <img src="30DaysOfJavaScript/assets/08.png" alt="Number Counter" />
+        <h4>Number Counter</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="09 - Dice Roll/index.html">
+        <img src="30DaysOfJavaScript/assets/09.png" alt="Dice Roll" />
+        <h4>Dice Roll</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="10 - Emoji Switcher like Discord/index.html">
+        <img src="30DaysOfJavaScript/assets/10.png" alt="Emoji Switcher" />
+        <h4>Emoji Switcher</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="11 - Color Picker/index.html">
+        <img src="30DaysOfJavaScript/assets/11.png" alt="Color Picker" />
+        <h4>Color Picker</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="12 - Custom QR Code/index.html">
+        <img src="30DaysOfJavaScript/assets/12.png" alt="Custom QR Code" />
+        <h4>Custom QR Code</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="13 - Favicon Fetcher/index.html">
+        <img src="30DaysOfJavaScript/assets/13.png" alt="Favicon Fetcher" />
+        <h4>Favicon Fetcher</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="14 - Visit Counter/index.html">
+        <img src="30DaysOfJavaScript/assets/14.png" alt="Visit Counter" />
+        <h4>Visit Counter</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="15 - Joke Generator/index.html">
+        <img src="30DaysOfJavaScript/assets/15.png" alt="Joke Generator" />
+        <h4>Joke Generator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="16 - Countdown Timer/index.html">
+        <img src="30DaysOfJavaScript/assets/16.png" alt="Countdown Timer" />
+        <h4>Countdown Timer</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="17 - Text Speed Control/index.html">
+        <img src="30DaysOfJavaScript/assets/17.png" alt="Text Speed Control" />
+        <h4>Text Speed Control</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="18 - Stopwatch/index.html">
+        <img src="30DaysOfJavaScript/assets/18.png" alt="Stopwatch" />
+        <h4>Stopwatch</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="19 -Traffic Lights/index.html">
+        <img src="30DaysOfJavaScript/assets/19.png" alt="Traffic Lights">
+        <h4>Traffic Lights</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="20 - Levitate Board/index.html">
+        <img src="30DaysOfJavaScript/assets/20.png" alt="Levitate Board">
+        <h4>Levitate Board</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="21 - Wave Effect/index.html">
+        <img src="30DaysOfJavaScript/assets/21.png" alt="Wave Effect">
+        <h4>Wave Effect</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="22 - Zoom Effect/index.html">
+        <img src="30DaysOfJavaScript/assets/22.png" alt="Zoom Effect">
+        <h4>Zoom Effect</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="23 - Drawing Pad/index.html">
+        <img src="30DaysOfJavaScript/assets/23.png" alt="Drawing Pad">
+        <h4>Drawing Pad</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="24 - Word Counter/index.html">
+        <img src="30DaysOfJavaScript/assets/24.png" alt="Word Counter">
+        <h4>Word Counter</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="25 - Weather App/index.html">
+        <img src="30DaysOfJavaScript/assets/25.png" alt="Weather App">
+        <h4>Weather App </h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="26 - Calculator/index.html">
+        <img src="30DaysOfJavaScript/assets/26.png" alt="Calculator">
+        <h4>Calculator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="27 - Memory Matching Game/index.html">
+        <img src="30DaysOfJavaScript/assets/27.png" alt="Memory Matching Game">
+        <h4>Memory Matching Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="28 - Music Player/index.html">
+        <img src="30DaysOfJavaScript/assets/28.png" alt="Music Player">
+        <h4>Music Player</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="29 - To Do List/index.html">
+        <img src="30DaysOfJavaScript/assets/29.png" alt="To Do List">
+        <h4>To Do List</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="30 - Tic Tac Toe/index.html">
+        <img src="30DaysOfJavaScript/assets/30.png" alt="Tic Tac Toe">
+        <h4>Tic Tac Toe</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="31 - Pop the Balloons/index.html">
+        <img src="30DaysOfJavaScript/assets/31.png" alt="Pop the Balloons">
+        <h4>Pop the Balloons</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="32 - Key Code/index.html">
+        <img src="30DaysOfJavaScript/assets/32.png" alt="Events Keycode">
+        <h4>Events Keycode</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="33 - Feedback UI/index.html">
+        <img src="30DaysOfJavaScript/assets/33.png" alt="Feedback UI">
+        <h4>Feedback UI</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="34 - Virtual Piano/index.html">
+        <img src="30DaysOfJavaScript/assets/34.png" alt="Virtual Piano">
+        <h4>Virtual Piano</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="35 - Decimal To Binary/index.html">
+        <img src="30DaysOfJavaScript/assets/35.png" alt="Decimal to Binary">
+        <h4>Decimal to Binary</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="36 - Hangman/index.html">
+        <img src="30DaysOfJavaScript/assets/36.png" alt="Hangman" />
+        <h4>Hangman</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="37 - RPS Game/start.html">
+        <img src="30DaysOfJavaScript/assets/37.png" alt="Rock Paper Scissors Game" />
+        <h4>Rock Paper Scissors</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="38 - Snake-Game/index.html">
+        <img src="30DaysOfJavaScript/assets/38.png" alt="Snake Game" />
+        <h4>Snake Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="39 - Age Calculator/index.html">
+        <img src="30DaysOfJavaScript/assets/39.png" alt="Age Calculator" />
+        <h4>Age Calculator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="40 - Gradient Generator/index.html">
+        <img src="30DaysOfJavaScript/assets/40.png" alt="Gradient Generator" />
+        <h4>Gradient Generator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="41 - Basic-Carousel/index.html">
+        <img src="30DaysOfJavaScript/assets/41.png" alt="Basic-Images-Carousel" />
+        <h4>Basic-Images-Carousel</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="42 - Simple Form Validation/index.html">
+        <img src="30DaysOfJavaScript/assets/42.png" alt="Simple Form Validation" />
+        <h4>Simple Form Validation</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="43 - Getting Started with APIs/index.html">
+        <img src="30DaysOfJavaScript/assets/43.png" alt="Getting Started with APIs" />
+        <h4>Getting Started with APIs</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="44 - Infinite Scroll/index.html">
+        <img src="30DaysOfJavaScript/assets/44.png" alt="Infinite Scroll" />
+        <h4>Infinite Scroll</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="45 - Chatting App/client/index.html">
+        <img src="30DaysOfJavaScript/assets/45.png" alt="Chatting App" />
+        <h4>Chatting App</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="46 - Image Slider/index.html">
+        <img src="30DaysOfJavaScript/assets/46.png" alt="Image Slider" />
+        <h4>Image Slider</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="47 - Caesar Cipher/2_caesar_cipher.html">
+        <img src="30DaysOfJavaScript/assets/47.png" alt="Caesar Cipher" />
+        <h4>Caesar Cipher</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="48 - Attendance Table\index.html">
+        <img src="30DaysOfJavaScript/assets/48.png" alt="Attendance Table" />
+        <h4>Attendance Table</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="49 - Content Placeholder/index.html">
+        <img src="30DaysOfJavaScript/assets/49.png" alt="Content Placeholder" />
+        <h4>Content Placeholder</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="50 - Country Detail\index.html">
+        <img src="30DaysOfJavaScript/assets/50.png" alt="Country Detail" />
+        <h4>Country Detail</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="51 - Notes Maker/index.html">
+        <img src="30DaysOfJavaScript/assets/51.png" alt="Notes Maker" />
+        <h4>Notes Maker</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="52 - Temperature Convertor/index.html">
+        <img src="30DaysOfJavaScript/assets/52.png" alt="Temperature Convertor" />
+        <h4>Temperature Convertor</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="53 - Notes Taking App/index.html">
+        <img src="30DaysOfJavaScript/assets/53.png" alt="Notes Taking App" />
+        <h4>Notes Taking App</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="54 - Project Idea Generator\index.html">
+        <img src="30DaysOfJavaScript/assets/54.png" alt="Project Idea Generator" />
+        <h4>Project Idea Generator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="55 - Weeblist\index.html">
+        <img src="30DaysOfJavaScript/assets/55.png" alt="Weeblist" />
+        <h4>Weeblist</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="56 - Jokes Chrome Extension\popup.html">
+        <img src="30DaysOfJavaScript/assets/56.png" alt="Jokes Chrome Extension" />
+        <h4>Jokes Chrome Extension</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="57 - Quiz App/index.html">
+        <img src="30DaysOfJavaScript/assets/57.png" alt="Quiz App" />
+        <h4>Quiz app</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="58 - Simon Game/index.html">
+        <img src="30DaysOfJavaScript/assets/58.png" alt="Simon Game" />
+        <h4>Simon Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="59 - Color Choosing Game/index.html">
+        <img src="30DaysOfJavaScript/assets/59.png" alt="Color Choosing Game" />
+        <h4>Color Choosing Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="60 - News Website\index.html">
+        <img src="30DaysOfJavaScript/assets/60.png" alt="News Website" />
+        <h4>News Website</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="61 - Greeting Card/index.html">
+        <img src="30DaysOfJavaScript/assets/61.png" alt="Greeting Card" />
+        <h4>Greeting Card</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="62 - IP Address Tracker/index.html">
+        <img src="30DaysOfJavaScript/assets/62.png" alt="IP Address Tracker" />
+        <h4>IP Address Tracker</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="63 - URL Bookmark/index.html">
+        <img src="30DaysOfJavaScript/assets/63.png" alt="URL Bookmark" />
+        <h4>URL Bookmark</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="64 - Photo Editor/index.html">
+        <img src="30DaysOfJavaScript/assets/64.png" alt="Photo Editor" />
+        <h4>Photo Editor</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="65 - Postmaster Clone\index.html">
+        <img src="30DaysOfJavaScript/assets/65.png" alt="Postmaster Clone" />
+        <h4>Postmaster Clone</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="66 - Text to Speech Converter/index.html">
+        <img src="30DaysOfJavaScript/assets/66.png" alt="Text to Speech Converter" />
+        <h4>Text to Speech Converter</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="67 - Currency Converter/index.html">
+        <img src="30DaysOfJavaScript/assets/67.png" alt="Currency Converter" />
+        <h4>Currency Converter</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="68 - Movie TV Series Quote Generator/index.html">
+        <img src="30DaysOfJavaScript/assets/68.png" alt="Movie TV Series Quote Generator" />
+        <h4>Movie TV Series Quote Generator</h4>
+    </div>
+    <div class="item">
+      <a target="_blank" href="69 - Food Delivery Site/index.html">
+        <img src="30DaysOfJavaScript/assets/69.png" alt="Food Delivery Site" />
+        <h4>Food Delivery Site</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="70 - Transpose Matrix Calculator/index.html">
+        <img src="30DaysOfJavaScript/assets/70.png" alt="Transpose Matrix Calculator" />
+        <h4>Transpose Matrix Calculator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="71 - Background Color Changer/index.html">
+        <img src="30DaysOfJavaScript/assets/71.png" alt="Background Color Changer" />
+        <h4>Background Color Changer</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="72 - Typing Platform/index.html">
+        <img src="30DaysOfJavaScript/assets/72.png" alt="Typing Platform" />
+        <h4>Typing Platform</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="73 - Casino Slot Machine Game/index.html">
+        <img src="30DaysOfJavaScript/assets/73.png" alt="Casino Slot Machine Game" />
+        <h4>Casino Slot Machine Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="74 - Random Anime Profile/index.html">
+        <img src="30DaysOfJavaScript/assets/74.png" alt="Random Anime Profile" />
+        <h4>Random Anime Profile</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="75 - Movie Search App/index.html">
+        <img src="30DaysOfJavaScript/assets/75.png" alt="Movie Search App" />
+        <h4>Movie Search App</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="76 - Car Game/index.html">
+        <img src="30DaysOfJavaScript/assets/76.png" alt="Car Game" />
+        <h4>Car Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="77 - Search Github Profile/index.html">
+        <img src="30DaysOfJavaScript/assets/77.png" alt="Search Github Profile" />
+        <h4>Search Github Profile</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="78 - Dictionary App/index.html">
+        <img src="30DaysOfJavaScript/assets/79.png" alt="Dictionary App" />
+        <h4>Dictionary App</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="79 - The Bet Game/game.html">
+        <img src="30DaysOfJavaScript/assets/79.png" alt="The Bet Game" />
+        <h4>The Bet Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="80 - Meditation App/index.html">
+        <img src="30DaysOfJavaScript/assets/80.png" alt="Meditation App" />
+        <h4>Meditation App</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="81 - Flipbook/index.html">
+        <img src="30DaysOfJavaScript/assets/81.png" alt="Flipbook" />
+        <h4>Flipbook</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="82 - Falling Ball Game/index.html">
+        <img src="30DaysOfJavaScript/assets/82.png" alt="Falling Ball Game" />
+        <h4>Falling Ball Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="83 - Guess Who Game/index.html">
+        <img src="30DaysOfJavaScript/assets/83.png" alt="Guess Who Game" />
+        <h4>Guess Who Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="84 - Tetris Game/index.html">
+        <img src="30DaysOfJavaScript/assets/84.png" alt="Tetris Game" />
+        <h4>Tetris Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="85 - Menu Filter/index.html">
+        <img src="30DaysOfJavaScript/assets/85.png" alt="Menu Filter" />
+        <h4>Menu Filter</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="86 - Weight Conversion Tool/index.html">
+        <img src="30DaysOfJavaScript/assets/86.png" alt="Weight Conversion Tool" />
+        <h4>Weight Conversion Tool</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="88 - Ping Pong Game/index.html">
+        <img src="30DaysOfJavaScript/assets/88.png" alt="Ping Pong Game" />
+        <h4>Ping Pong Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="91 - CRUD Application/index.html">
+        <img src="30DaysOfJavaScript/assets/91.png" alt="CRUD Application" />
+        <h4>CRUD Application</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="96 - Pomodoro Clock/index.html">
+        <img src="30DaysOfJavaScript/assets/96.png" alt="Pomodoro Clock" />
+        <h4>Pomodoro Clock</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="97 - Captcha Generator/index.html">
+        <img src="30DaysOfJavaScript/assets/97.png" alt="Captcha Generator" />
+        <h4>Captcha Generator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="98 - Loan Calculator/index.html">
+        <img src="30DaysOfJavaScript/assets/98.png" alt="Loan Calculator" />
+        <h4>Loan Calculator</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="99 - BlackJack Game/index.html">
+        <img src="30DaysOfJavaScript/assets/99.png" alt="BlackJack Game" />
+        <h4>BlackJack Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="100 - Quote of The Day/index.html">
+        <img src="30DaysOfJavaScript/assets/100.png" alt="Quote of The Day" />
+        <h4>Quote of The Day</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="101 - Audio Visualizer/index.html">
+        <img src="30DaysOfJavaScript/assets/101.png" alt="Audio Visualizer" />
+        <h4>Audio Visualizer</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="102 - Minesweeper Game/index.html">
+        <img src="30DaysOfJavaScript/assets/102.png" alt="Minesweeper Game" />
+        <h4>Minesweeper Game</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="103 - Word_Definition/index.html">
+        <img src="30DaysOfJavaScript/assets/103.png" alt="Word_Definition" />
+        <h4>Word_Definition</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="104 - Catch Me If You Can/index.html">
+        <img src="30DaysOfJavaScript/assets/104.png" alt="Catch Me If You Can" />
+        <h4>Catch Me If You Can</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="105 - Speech Recognitation/index.html">
+        <img src="30DaysOfJavaScript/assets/105.png" alt="Speech Recognitation" />
+        <h4>Speech Recognitation</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="106 - Student Grade Calculator/index.html">
+        <img src="30DaysOfJavaScript/assets/106.png" alt="Student Grade Calculator/" />
+        <h4>Student Grade Calculator/</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a target="_blank" href="107 - Sudoku Game/index.html">
+        <img src="30DaysOfJavaScript/assets/107.png" alt="Sudoku Game" />
+        <h4>Sudoku Game</h4>
+      </a>
+    </div>
+  </div>
+  <!-- Main Section End -->
+
+  <!-- Footer Start -->
+  <footer>
+    <p>&#x3c; &#47; &#x3e; with ❤️ by
+      <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+      <br>
+      <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript</a>
+    </p>
+  </footer>
+
+
+
+  <script src="./30DaysOfJavaScript/script.js"></script>
+</body>
+
+</html>

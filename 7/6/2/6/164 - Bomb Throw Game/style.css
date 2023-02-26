@@ -1,0 +1,340 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.game-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.game-container {
+  flex: 1;
+  background: url("https://bhckids.org/wp-content/uploads/2015/04/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  z-index: 500;
+}
+.game-container:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  border-left: 2px dashed #555;
+}
+
+.game-col {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  max-width: 600px;
+}
+
+.computer-col {
+  transform: rotateY(180deg);
+  max-width: 600px;
+}
+.computer-col .cannon {
+  transition: 1s ease-in;
+}
+.computer-col .cannon .pipe {
+  transition: 1s ease-in;
+}
+.computer-col .cannon .wheel {
+  transition: 1s ease-in;
+}
+
+.cannon {
+  position: relative;
+  z-index: 100;
+  transform: translateX(5cm);
+}
+.cannon:before {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  height: 200px;
+  border-right: 1px dashed #fff;
+  left: 131px;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.cannon .pipe {
+  width: 160px;
+  height: 40px;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #333 1%, #333 35%, #222 36%, #222 36%, #222 41%, #333 41%, #333 100%);
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  transform-origin: right center;
+}
+.cannon .pipe:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 50px;
+  background: #222;
+  border: 2px solid #333;
+  border-radius: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cannon .pipe:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: linear-gradient(to right, #333 1%, #333 35%, #222 36%, #222 36%, #222 41%, #333 41%, #333 100%);
+  border-radius: 50% 50px 50px 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+}
+.cannon .wheel {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: #222;
+  border: 10px solid currentColor;
+  border-radius: 50%;
+  bottom: 0;
+  right: -21px;
+  background: linear-gradient(to bottom, #752f16 93%, #1c0701 94%);
+  background-size: 100% 10px;
+}
+.cannon .wheel:after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  background: #111;
+  height: 35px;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.level {
+  width: 60vw;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.ball:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+.cm .ball:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  width: 300px;
+  height: 250px;
+  background: url(https://www.onlygfx.com/wp-content/uploads/2017/06/comic-boom-explosion-2-1.png) no-repeat;
+  background-size: 100% auto;
+  z-index: -1;
+  opacity: 0;
+}
+
+.fire {
+  -webkit-animation: fire 0.3s ease-in-out;
+          animation: fire 0.3s ease-in-out;
+}
+
+.defended .fire .ball:before {
+  transition: 0.2s 0.3s linear;
+  opacity: 1;
+}
+
+.wheel-handle {
+  position: absolute;
+  background: #fff url("https://cdn.onlinewebfonts.com/svg/img_520243.png") no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  left: 111px;
+  top: 19px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: w-resize;
+  opacity: 0.8;
+}
+
+.level-handle {
+  position: absolute;
+  background: #6200EA;
+  width: 40px;
+  height: 40px;
+  left: 140%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 54;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+  border: 2px solid #fff;
+}
+.level-handle:after, .level-handle:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  top: -27px;
+}
+.level-handle:after {
+  border: 10px solid transparent;
+  border-top-color: #fff;
+  top: 44px;
+}
+.level-handle:active, .level-handle:focus {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.level-monitor {
+  position: absolute;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  left: 130%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%) rotateY(180deg);
+  z-index: 54;
+  color: #333;
+  text-align: center;
+  line-height: 36px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 2px dashed #777;
+}
+
+.countdown {
+  position: fixed;
+  z-index: 5000;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #00897B;
+  font-size: 30px;
+  font-family: arial;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #00897B;
+}
+
+.road {
+  background: #E9B7A4;
+  height: 100px;
+  position: relative;
+}
+
+.scale {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  transform: translateX(-50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.scale-point {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.scale-point.mirror {
+  flex-direction: row-reverse;
+}
+.scale-point li {
+  width: 1cm;
+  position: relative;
+  padding-top: 20px;
+}
+.scale-point li .unit {
+  display: inline-block;
+  position: relative;
+  transform: translateX(-50%);
+}
+.scale-point li:before, .scale-point li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 17px;
+  background: #000;
+  transform: translateX(-50%);
+}
+.scale-point li:after {
+  left: 50%;
+  height: 12px;
+  color: #555;
+  box-shadow: 0.1cm 0, 0.2cm 0, 0.3cm 0, 0.4cm 0, -0.1cm 0, -0.2cm 0, -0.3cm 0, -0.4cm 0, 0.1cm 0, 0.2cm 0, 0.3cm 0, 0 2px #000;
+}
+
+@-webkit-keyframes fire {
+  50% {
+    left: 5px;
+  }
+}
+
+@keyframes fire {
+  50% {
+    left: 5px;
+  }
+}

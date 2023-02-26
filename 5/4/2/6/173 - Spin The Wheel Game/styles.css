@@ -1,0 +1,57 @@
+#app {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+body{
+background-image: linear-gradient(to right, rgb(53, 6, 81),rgb(158, 10, 10));
+}
+h1{
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 48px;
+  font-family: cursive;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 172px;
+  top: -20px;
+  z-index: 2;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.blur {
+  animation: blur 10s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+  80% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}

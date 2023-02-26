@@ -1,0 +1,78 @@
+
+html{
+    font-family: cursive;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container > * {
+  margin: 8px;
+}
+body{
+    background-image: linear-gradient(to right, rgb(101, 12, 12),rgb(41, 7, 175));
+}
+
+button {
+  max-width: 300px;
+}
+
+h1{
+    display: flex;
+    color: rgb(197, 211, 223);
+    justify-content: center;
+    box-shadow: 2px 2px 2px solid gray;
+padding-top: 70px;
+font-size: 60px;
+
+}
+
+#start{
+    margin-left: 600px;
+    margin-top: 60px;
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid rgb(54, 14, 14);
+    background-color: rgb(98, 190, 28);
+    border-radius: 20px;
+   color: rgb(17, 48, 9);
+   font-weight: bold;
+   box-shadow: 3px 3px 3px gray;
+}
+#stop{
+    margin-left: 880px;
+    margin-top: -67px;
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid rgb(54, 14, 14);
+    background-color: red;
+    border-radius: 20px;
+   color: rgb(211, 221, 230);
+   font-weight: bold;
+   box-shadow: 3px 3px 3px gray;
+}
+#start:hover{
+    cursor:pointer;
+    background-color: rgb(15, 209, 19);
+    box-shadow: 3px 3px 3px solid green;
+}
+#stop:hover{
+    cursor: pointer;
+    background-color: rgb(190, 45, 45);
+}
+
+h3{
+ padding-left: 690px;
+ font-size: 32px;
+ padding-top: 35px;
+ color: aliceblue;
+}
+
+#player{
+    padding-left: 590px;
+    padding-top: 25px;
+    width: 500px;
+   
+}

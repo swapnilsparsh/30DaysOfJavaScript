@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  max-width: 100%;
+  background: #111;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  min-height: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.game-wrap {
+  position: relative;
+  padding: 20px 0 0;
+}
+
+canvas {
+  position: relative;
+  max-width: 100%;
+  border: 2px solid black;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  color: #ccc;
+  text-align: center;
+  padding: 0 20px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+code {
+  background: #222;
+  background: linear-gradient(#222, #000);
+  line-height: 1.3em;
+  display: inline-block;
+  border-radius: 3px;
+  font-family: monospace;
+  padding: 1px 5px;
+  margin: 0 2px;
+}
+
+a {
+  color: skyblue;
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:hover {
+  color: #b3e0f2;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+.title span:nth-child(1) {
+  color: #bf8040;
+}
+.title span:nth-child(2) {
+  color: #bfbf40;
+}
+.title span:nth-child(3) {
+  color: #80bf40;
+}
+.title span:nth-child(4) {
+  color: #40bf40;
+}
+.title span:nth-child(5) {
+  color: #40bf80;
+}
+.title span:nth-child(6) {
+  color: #40bfbf;
+}
+.title span:nth-child(7) {
+  color: #4080bf;
+}
+.title span:nth-child(8) {
+  color: #4040bf;
+}
+.title span:nth-child(9) {
+  color: #8040bf;
+}
+.title span:nth-child(10) {
+  color: #bf40bf;
+}
+.title span:nth-child(11) {
+  color: #bf4080;
+}

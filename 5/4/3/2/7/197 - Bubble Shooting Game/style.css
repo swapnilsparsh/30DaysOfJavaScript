@@ -1,0 +1,19 @@
+body{
+    /* background-color: gray; */
+    background-image: linear-gradient(to right, rgb(184, 208, 217),rgb(247, 122, 122));
+}
+
+div{
+    border-radius: 30px;
+}
+#viewport{
+ height: 628px;
+ width: 628px;
+ /* margin-left: 30%; */
+ padding-top: 100px;
+ border-radius: 50px;
+ border: 3px blue;
+ box-shadow: 10px 10px 10px 0 blue;
+}
+
+

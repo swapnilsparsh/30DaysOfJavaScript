@@ -1,0 +1,18 @@
+body{
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+
+.game {
+  margin: 3em auto;
+  padding: 0 10px;
+  max-width: 400px;
+}
+
+.timer {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Color Game</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="modal">
+	<p id="round-level"></p>
+	<button type="button" id="btn-start" class="btn-start">
+		Press To Play
+	</button>
+</div>
+
+<div class="container-colors">			
+	<div>
+		<div class="colors red" data-sound="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></div>
+		<div class="colors green" data-sound="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></div>
+	</div>
+
+	<div>
+		<div class="colors blue" data-sound="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></div>
+		<div class="colors yellow" data-sound="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></div>
+	</div>
+
+	<div id="round" class="circle">
+		0
+	</div>
+</div>
+
+<p id="result">
+	Starting...
+</p>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

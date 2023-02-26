@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <div class="blue-div">
+        <div class="heading">IP Address Tracker</div>
+
+        <div class="search">
+          <div id="input-box">
+            <input
+              type="text"
+              placeholder=" Search for any IP address or domain"
+              id="input-value"
+            />
+            <input
+              type="button"
+              value=">"
+              onclick="fetchData(document.getElementById('input-value').value)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="display">
+        <div>
+          <p class="ip">IP ADDRESS</p>
+          <p id="dyn-ip" class="dyn-data"></p>
+        </div>
+        <div>
+          <p class="loc">LOCATION</p>
+          <p id="dyn-loc" class="dyn-data"></p>
+        </div>
+        <div>
+          <p class="tzone">TIMEZONE</p>
+          <p id="dyn-tzone" class="dyn-data"></p>
+        </div>
+        <div>
+          <p class="isp">ISP</p>
+          <p id="dyn-isp" class="dyn-data"></p>
+        </div>
+      </div>
+
+      <div id="map"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

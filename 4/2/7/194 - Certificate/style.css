@@ -1,0 +1,86 @@
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    text-align: center;
+    
+}
+
+.logo{
+    margin-top: 25px;
+}
+.blue-head{
+    font-size: 800;
+    color: rgb(70, 135, 219);
+    margin-top: 0;
+}
+
+.cert{
+    /* align-item: center; */
+    /* margin-left: 33%; */
+    margin-top: 50px
+}
+
+main{
+    text-align: center;
+    
+}
+
+#name{
+    border:none;
+    border-bottom: 2px solid grey;
+    padding: 0 20px;
+    text-align: center;
+    /* height: 30px; */
+    margin-top: 1rem;
+    outline: none;
+}
+
+.btn{
+    margin-top:25px;
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight:bold;
+    border:none;
+    font-size:18px;
+}
+.btn:hover{
+    cursor: pointer;
+    background: rgb(4, 99, 4);
+}
+
+.certTemp{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+}
+.temp{
+    padding: 1rem;
+    width: 200px;
+}
+
+.selectmenu{
+    align-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:761px){
+    
+    .certTemp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .blue-head{
+        align-items: center;
+        padding: 0 1;
+        text-align: center;
+        font-size: 29.6px;
+    }
+
+}

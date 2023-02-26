@@ -1,0 +1,115 @@
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  overflow: hidden;
+}
+
+/* Custom controls */
+.button {
+  height: 8vw;
+  width: 20vw;
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 2vw;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:focus {
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 12px 50px;
+  }
+}
+.background {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/background.png");
+  background-position: center center;
+  background-size: cover;
+  filter: blur(4px);
+
+}
+
+.track-title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 25vh;
+  right: 0;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-family: Calibri;
+  font-size: 10vh;
+  
+
+}
+
+.player{
+  padding: 10px;
+}
+
+.visualizer-container {
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.visualizer-container__bar {
+
+  display: inline-block;
+  background-color: #FF9A8B;
+background-image: linear-gradient(12deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+  margin: 0 2px;
+  width: 25px;
+
+}

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+	outline: 0;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-color: #62d2ee;
+}
+
+.container {
+  height: 300px;
+  margin: 50px auto;
+  position: relative;
+  max-width: 90%;
+  width: 300px;
+}
+
+.parcial {
+  color: #ffffff;
+  display: none;
+  font-size: 150px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px 10px #0c0c0c;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 1;
+}
+
+[class$="-circle"] {
+  align-items: center;
+  -webkit-animation: 1s turn infinite;
+          animation: 1s turn infinite;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  box-shadow: 0 0 0 3px #cdcdcd inset,
+              0 0 3px #0c0c0c;
+  justify-content: center;
+  position: relative;
+}
+
+.fourth-circle {
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  background-color: #505050;
+  box-shadow: 0 0 0 3px #cdcdcd inset,
+              0 0 5px 5px #0c0c0c;
+  height: 100%;
+  width: 100%;
+}
+
+.third-circle {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  background-color: #5797fb;
+  height: 80%;
+  width: 80%;
+}
+
+.second-circle {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  background-color: #fd6b6b;
+  height: 60%;
+  width: 60%;
+}
+
+.first-circle {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  background-color: #fdfe5a;
+  height: 40%;
+  width: 40%;
+}
+
+[class$="-circle"] span {
+  border-radius: 50%;
+  height: 15px;
+  left: 50%;
+  position: absolute;
+  top: 1em;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  z-index: 1;
+}
+
+.fourth-circle span:nth-child(1),
+.third-circle span:nth-child(1) {
+  background-color: #ffffff;
+}
+
+.second-circle span:nth-child(1),
+.first-circle span:nth-child(1) {
+  background-color: #0c0c0c;
+}
+
+.points {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #505050;
+  color: #00928a;
+  font: normal 25px 'Shrikhand', cursive;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px auto;
+  text-align: center;
+  width: 200px;
+}
+
+@-webkit-keyframes turn {
+  to {
+    transform: rotateZ(1turn);
+  }
+}
+
+@keyframes turn {
+  to {
+    transform: rotateZ(1turn);
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .container {
+    height: 250px;
+    width: 250px;
+  }
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <form id="getData">
+      <h1>Enter your Details :</h1>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Your Name"
+      /><br /><br />
+      <input
+        type="text"
+        id="jobProfile"
+        placeholder="Enter Your Job Profile"
+      /><br /><br />
+      <textarea
+        id="experience"
+        cols="30"
+        rows="7"
+        placeholder="Enter Your Experience"
+      ></textarea
+      ><br /><br />
+      <textarea
+        id="projects"
+        cols="30"
+        rows="7"
+        placeholder="Enter Your Projects"
+      ></textarea
+      ><br /><br />
+      <textarea
+        id="edu"
+        cols="30"
+        rows="7"
+        placeholder="Enter Your Qualifications"
+      ></textarea
+      ><br /><br />
+      <textarea
+        id="skill"
+        cols="30"
+        rows="7"
+        placeholder="Enter Your Skills"
+      ></textarea
+      ><br /><br />
+      <input
+        type="tel"
+        id="contact"
+        placeholder="Enter Your Contact Number"
+      /><br /><br />
+      <input type="email" placeholder="Enter Your Email Id" id="mail"/><br /><br />
+    </form>
+    <div id="resume"></div><br>
+
+    <input type="button" value="Preview" onclick="toggle()" id="generate" />
+    <div id="print-btn"></div>
+<button id="submit" style="display: none;">Download PDF File</button>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time</title>
+</head>
+<style>
+    body{
+        background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+    }
+    #cont{
+        border-width: 5px;
+        width: 100%;
+        height:100%;
+        color:darkslateblue;
+    }
+    #fig{
+        background-color:brown;
+        border-width:10px;
+        width:100px;
+        height: 126px;
+    }
+</style>
+<body>
+    <h1>Reaction Time Test!</h1>
+    <p>Click on the boxes and circles as quickly as you can!</p>
+    <h3>Your time:<span id ="tTaken"></span></h3>
+    <div style="clear:both"></div>
+    <div id="cont">
+        <div id="fig"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

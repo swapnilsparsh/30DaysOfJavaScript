@@ -1,0 +1,151 @@
+/* default styling for the document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* setting the  fonts and background in the main body */
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  background-color: #112d32;
+  color: aliceblue;
+}
+/* for the nabvar */
+.navbar {
+  background: #254e58;
+}
+
+nav:hover {
+  box-shadow: 0px 1.4px 18px 0px #7ba8a857;
+  transition: 0.3s;
+}
+/* some styling for the container */
+.container {
+  padding: 2rem;
+}
+
+.container-fluid a {
+  color: #88bdbc;
+  font-weight: 600;
+}
+
+.container-fluid a:hover {
+  color: #a0a0a0;
+  transition: all 0.2s;
+}
+
+input[type="text"],#requestJsonBox textarea{
+    background: transparent;
+    color: #fff;
+}
+/* for the radio buttons */
+.form-check-input:checked {
+    background-color: #254e58;
+    border: 2px solid #f7ea38;
+    box-shadow:none ;
+}
+
+.form-control{
+    border: 2px solid #88bdbc;
+}
+/* focussing on clicks */
+.form-control:focus{
+    transition: all .3s;
+    box-shadow: none;
+    color: #ffff;
+    border: 2px solid #f7ea38;
+    background: inherit;
+}
+#heading, label, legend, input[type="text"], btn, #json-box, #response-box {
+  font-weight: 600;
+}
+
+#prismPre {
+  max-height: 600px;
+  border-radius: 12px;
+}
+/* used prism js and css which can display the code in the form of well formatted theme */
+pre[class*="language-"] {
+    background: transparent;
+    border: 1px solid #254e58;
+}
+
+/* adding a styling for the scroll */
+#prismPre::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;  
+}
+
+#prismPre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#prismPre::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+#response-box, #response-box span {
+  font-family: "Roboto Mono", "Fira Code", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.deleteBtn, #addBtn, #submit-btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#submit-btn ,.deleteBtn,#addBtn {
+  border: 2px solid #f7ea38;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  padding: 5px 20px;
+  font-weight: 600;
+}
+
+#submit-btn:hover,#addBtn:hover,.deleteBtn:hover {
+  background-color: #f7ea38;
+  color: black;
+}
+
+label {
+  cursor: pointer;
+}
+
+.alert-danger{
+    background-color: rgb(247, 72, 72);
+    border: none;
+    color: aliceblue;
+}
+
+footer {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 5px;
+  font-weight: 600;
+}
+
+footer a {
+  color: #f7ea38;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #bdb452;
+  border-bottom: 1px solid;
+  transition: all 0.25s;
+}
+
+
+/* some respomsiveness */
+@media  screen and (max-width: 410px) {
+    .container{
+        padding: 1rem;
+    }
+    .container h2{
+        font-size: 2rem;
+    }
+}

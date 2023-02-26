@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+html {
+box-sizing: border-box;
+font-size: 10px;
+
+background-image: url("https://media.istockphoto.com/vectors/green-grass-lawn-with-clouds-and-sun-on-blue-sky-vector-id491628342?k=20&m=491628342&s=612x612&w=0&h=9Epm2f9lguyZl1kz_04700xEjFkxDd8haRouWBXIdBs=")
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+body {
+padding: 0;
+margin: 0;
+font-family: 'Shadows Into Light', cursive;
+}
+.start{
+text-align: center;
+}
+h1 {
+text-align: center;
+font-size: 5rem;
+margin-bottom: 0;
+}
+.score {
+color: rgb(104, 94, 114);
+margin-top: 0%;
+}
+.game {
+width: 800px;
+height: 400px;
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto;
+}
+.hole {
+flex: 1 0 33.33%;
+overflow: hidden;
+position: relative;
+}
+.hole:after {
+display: block;
+background: url(dirt.svg) bottom center no-repeat;
+background-size: contain;
+content: '';
+width: 100%;
+height:70px;
+position: absolute;
+z-index: 2;
+bottom: -30px;
+}
+.mole {
+background: url('mole.svg') bottom center no-repeat;
+background-size: 50%;
+position: absolute;
+top: 100%;
+width: 100%;
+height: 100%;
+transition:all 0.4s ease;
+}
+.hole.up .mole {
+top: 0;
+}
+button{
+background: rgba(190, 19, 124, 0.2);
+border: red;
+font-size: 3rem;
+cursor: pointer;
+}

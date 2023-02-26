@@ -1,0 +1,40 @@
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(4, 230, 4);
+}
+
+#area{
+    border: 10px solid rgb(107, 28, 28);
+    display: block;
+    margin:auto;
+    height: 8vh;
+    width: 80%;
+}
+
+#play-container{
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#play{
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    font-family:cursive;
+    background-color:greenyellow;
+    border: 4px solid green;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+    color: brown;
+}
+#play:hover{
+    transform: scale(1.3);
+}

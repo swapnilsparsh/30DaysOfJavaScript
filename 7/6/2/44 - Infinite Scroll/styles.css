@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+body {
+  color: #fff;
+  font-family: "sans";
+  font-size: 12px;
+  background-color: #19172e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto 10px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 30px;
+  text-align: center;
+}
+
+/* Items */
+.item {
+  border: 1px solid;
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+  border-radius: 4px;
+  display: grid;
+  font-size: 25px;
+  place-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 80px;
+}
+
+.char-img {
+  width: 125px;
+  border-radius: 50%;
+  margin: 30px;
+}
+
+.char-id {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 30px 0 10px;
+}
+
+.char-species {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* loader */
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+}
+
+.loader.show {
+  opacity: 1;
+}
+
+.loader div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #f4f4f4;
+  animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.loader div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+
+.loader div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+
+.loader div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes loader {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+footer {
+  color: pink;
+  font-size: 1rem;
+  padding: 22px;
+  line-height: 3vh;
+  margin-top: 30px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:visited {
+  color: inherit;
+}
