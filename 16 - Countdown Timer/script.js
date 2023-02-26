@@ -9,15 +9,28 @@ var s = document.getElementById("sec");
 //store a reference to the startTimer variable
 var startTimer = null;
 
-start.addEventListener('click', function(){
-    //initialize the variable
-    function startInterval(){
-        startTimer = setInterval(function() {
-            timer();
-        }, 1000);
+//  start.addEventListener('click', function(){
+//      //initialize the variable
+//      function startInterval(){
+//          startTimer = setInterval(function() {
+//              timer();
+//          }, 1000);
+//      }
+//      startInterval();
+//  })
+function checkTotalTime() {
+    const totalSeconds = h.value * 3600 + m.value * 60 + s.value * 1;
+    if (totalSeconds > 0) {
+      start.disabled = false;
+    } else {
+      start.disabled = true;
     }
-    startInterval();
-})
+  }
+
+  h.addEventListener('input', checkTotalTime);
+  m.addEventListener('input', checkTotalTime);
+  s.addEventListener('input', checkTotalTime);
+
 
 reset.addEventListener('click', function(){
     h.value = 0;
@@ -43,6 +56,8 @@ function timer(){
     }
     return;
 }
+
+
 
 //stop the function after pressing the reset button, 
 //so the time wont go down when selecting a new time after pressing reset
