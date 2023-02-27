@@ -35,4 +35,23 @@ function addColor () {
         e.innerHTML = newColor;
     });
 }
+const colorContainer = document.querySelector('#color-container');
+const toast = document.querySelector('#toast');
+
+colorContainer.addEventListener('click', () => {
+  // Get the color code
+  const colorCode = colorContainer.style.backgroundColor;
+
+  // Copy the color code to the clipboard
+  navigator.clipboard.writeText(colorCode);
+
+  // Show the toast message
+  toast.textContent = `Color Copied: ${colorCode}`;
+  toast.style.display = 'block';
+
+  // Hide the toast message after 2 seconds
+  setTimeout(() => {
+    toast.style.display = 'none';
+  }, 2000);
+});
 

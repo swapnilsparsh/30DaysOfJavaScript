@@ -100,7 +100,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 62  |                [IP Address Tracker](https://30daysofjs.netlify.app/62%20-%20IP%20Address%20Tracker/)                |
 | 63  |                       [URL Bookmark](https://30daysofjs.netlify.app/63%20-%20URL%20Bookmark/)                       |
 | 64  |                       [Photo Editor](https://30daysofjs.netlify.app/64%20-%20Photo%20Editor/)                       |
-| 65  |                   [Postmaster Clone](https://30daysofjs.netlify.app/65%20-%20Postmaster%20Clone/)                   |
+| 65  |                   [Postmaster Clone](https://30daysofjs.https://github.com/swapnilsparsh/30DaysOfJavaScriptnetlify.app/65%20-%20Postmaster%20Clone/)                   |
 | 66  |         [Text to Speech Converter](https://30daysofjs.netlify.app/66%20-%20Text%20to%20Speech%20Converter/)         |
 | 67  |                 [Currency Converter](https://30daysofjs.netlify.app/67%20-%20Currency%20Converter/)                 |
 | 68  | [Movie TV Series Quote Generator](https://30daysofjs.netlify.app/68%20-%20Movie%20TV%20Series%20Quote%20Generator/) |
@@ -252,12 +252,16 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 205 |               [Domain Availability](https://30daysofjs.netlify.app/205%20-%20Domain%20Availability/)                |
 
  </td></tr></table>
+ https://github.com/swapnilsparsh/30DaysOfJavaScript
  
+ ---
 
+## Reach out our Complete Blog of Project
+    	🔗 https://codeshivam28.hashnode.dev/30-days-of-javascript
+    	
+---
 
 ## Contributing!
-
-
 
 
 Before making any contribution, big or small, Contributors are advised to go through the [Contributing Guidelines](./CONTRIBUTING.md).

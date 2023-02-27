@@ -35,15 +35,8 @@ body {
   border: none;
 }
 
-.btn:hover {
-  background-color: #1e8e3e;
-  color: white;
-}
-
-.item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+font-size: 1.5rem;
+margin: 20px auto;
 }
 
 .copy {
@@ -81,9 +74,8 @@ footer {
   color: white;
   font-size: 1rem;
   bottom: 0;
-  margin-bottom: 0;
-  padding: 5px;
-  line-height: 3vh;
+  font-size: 1.5rem;
+  margin: 20px auto;
 }
 
 footer a:visited {
@@ -98,9 +90,10 @@ footer a:visited {
 
 @media (max-width: 500px) {
   .box {
-    font-size: 0.8rem;
-  }
-}
+    font-size: 1.5rem
+    font-size: 1.5rem;
+    margin: 20px auto;;
+    margin: 20px auto;
 
 @media (max-width: 450px) {
   .item {
@@ -118,6 +111,8 @@ footer a:visited {
   }
 }
 
+font-size: 1.5rem;
+margin: 20px auto;
 
 @media (max-width: 300px) {
   .copy {
@@ -129,3 +124,24 @@ footer a:visited {
     padding: 5px;
   }
 }
+
+#color-container {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#toast {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+
