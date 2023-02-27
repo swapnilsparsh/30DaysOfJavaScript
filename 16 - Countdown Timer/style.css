@@ -152,3 +152,7 @@ footer {
 footer a:visited {
     color: inherit;
 }
+
+#centered-text {
+    text-align: center;
+  }

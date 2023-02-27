@@ -18,18 +18,40 @@ var startTimer = null;
 //      }
 //      startInterval();
 //  })
-function checkTotalTime() {
-    const totalSeconds = h.value * 3600 + m.value * 60 + s.value * 1;
-    if (totalSeconds > 0) {
+// function checkTotalTime() {
+//     const totalSeconds = h.value * 3600 + m.value * 60 + s.value * 1;
+//     if (totalSeconds > 0) {
+//       start.disabled = false;
+//     } else {
+//       start.disabled = true;
+//     }
+//   }
+
+//   h.addEventListener('input', checkTotalTime);
+//   m.addEventListener('input', checkTotalTime);
+//   s.addEventListener('input', checkTotalTime);
+
+start.disabled = true;
+
+[h, m, s].forEach(input => {
+  input.addEventListener('input', () => {
+    if (h.value > 0 || m.value > 0 || s.value > 0) {
       start.disabled = false;
     } else {
       start.disabled = true;
     }
-  }
+  });
+});
 
-  h.addEventListener('input', checkTotalTime);
-  m.addEventListener('input', checkTotalTime);
-  s.addEventListener('input', checkTotalTime);
+start.addEventListener('click', function(){
+    //initialize the variable
+    function startInterval(){
+        startTimer = setInterval(function() {
+            timer();
+        }, 1000);
+    }
+    startInterval();
+})
 
 
 reset.addEventListener('click', function(){
