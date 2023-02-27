@@ -34,7 +34,8 @@ function moveEnemies(playercar) {
         othercarb = item.getBoundingClientRect();
         if (! ((playercarb.bottom < othercarb.top) || (playercarb.top > othercarb.bottom) || (playercarb.left > othercarb.right) || (playercarb.right < othercarb.left)) )
         {
-            alert("Game over , Refresh to play again");
+            alert("Press OK to play again");
+            location.reload()
             player.start = false;
         }
         if (item.y >= 630) {
@@ -123,5 +124,10 @@ function init() {
         roadArea.appendChild(enemies);
     }
 }
+ 
+function myFunction() {
+    document.querySelector('.button-container-div').style.display = "none";
+    document.querySelector('.container').style.visibility = "visible";
+    init();
+}
 
-init();

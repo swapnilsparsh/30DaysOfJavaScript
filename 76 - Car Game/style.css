@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(118, 189, 159);
 }
 
 .container{
     background-color: rgb(118, 189, 159);
     background-size: cover;
+    visibility: hidden;
 
 }
 
@@ -29,21 +31,39 @@
 }
 
 .car {
-    height: 90px;
-    width: 50px;
+    height: 75px;
+    width: 41px;
     position: absolute;
-    background-color: blueviolet;
-    background-image: url("car.jpg");
-    background-size: contain;
+    background-color: rgb(0, 0, 0);
+    background-image: url("car2.png");
+    background-size: cover;
     bottom:120px;
+    background-position-x: center;
 }
 
 .enemies {
     height: 90px;
-    width: 50px;
+    width: 41px;
     position: absolute;
-    background-color: rgb(223, 27, 27);
-    /* background-image: url("car.jpg"); */
-    /* background-size: contain; */
-    bottom:120px;
+    background-color: rgb(0, 0, 0);
+    background-image: url("enemycar2.png");
+    -webkit-transform: scaleY(-1);
+    background-size: cover;
+    bottom: 120px;
+    background-position-x: center;
+}
+
+.button-container-div {           
+    height: 100vh;
+    display: flex;
+}
+
+.btn {
+    background-color: crimson;
+    color: #fff;
+    border: 1px solid;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    margin: auto;
 }
