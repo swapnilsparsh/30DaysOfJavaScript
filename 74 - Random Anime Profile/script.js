@@ -17,12 +17,16 @@ getBTN.addEventListener("click", async function () {
   saveBTN.style.display = "inline-block";
   animeBox.style.display = "block";
   await new Promise((resolve) => setTimeout(resolve, 500));
-  animeLoader.style.display = "none";
+  // animeLoader.style.display = "none";
   } 
   catch (error) {
     console.log(error);
-    animeLoader.style.display = "none";
+    // animeLoader.style.display = "none";
   }
+});
+
+anime.addEventListener("load", function() {
+  animeLoader.style.display = "none";
 });
 
 
