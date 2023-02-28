@@ -10,32 +10,24 @@
   } */
 body {
     overflow: hidden;
+
 }
 
 .container {
     background-color: rgb(118, 189, 159);
     background-size: cover;
     min-height: 99%;
-
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -50px;
-    /* visibility: hidden; */
-
 }
 
 .road {
     background-color: black;
-    height: 100vh;
+    height: 93vh;
     width: 400px;
     margin: auto;
     position: relative;
     border-left: 5px white dashed;
     border-right: 5px white dashed;
     z-index: 1;
-    /* display: flex; */
-    /* border-collapse: collapse;
-    display: table; */
 }
 
 .lines {
@@ -73,7 +65,6 @@ body {
 }
 
 .btn {
-
     background-color: crimson;
     color: #fff;
     border: 1px solid;
@@ -86,6 +77,7 @@ body {
 
 .push {
     height: 50px;
-    top: 100%;
-    transform: translateY(1515%);
+    width: 401px;
+    transform: translateX(107%);
+    border: 5px solid crimson;
 }

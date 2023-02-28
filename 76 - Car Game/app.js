@@ -35,13 +35,14 @@ function moveEnemies(playercar) {
         othercarb = item.getBoundingClientRect();
         if (!((playercarb.bottom < othercarb.top) || (playercarb.top > othercarb.bottom) || (playercarb.left > othercarb.right) || (playercarb.right < othercarb.left))) {
             // alert("Press OK to play again");
-            alert("The Score is " + (score) + "\n Press OK to play again");
+            alert("The Final Score is " + (score) + "\n Press OK to play again");
             location.reload()
             player.start = false;
         }
         if (item.y >= 815) {
             // Player will earn score when the car will pass enemy car
             score = score + 1;
+            startBtn.innerHTML = "Score: " + score;
             item.y = -300;
             item.style.left = Math.floor(Math.random() * 350) + 'px';
         }
@@ -129,9 +130,10 @@ function init() {
 }
 
 function startgame() {
-    startBtn.innerHTML = "Use Arrow keys to Navigate";
-    startBtn.style.opacity = 0.65;
+    document.querySelector(".push").style.border = "5px solid rgb(86,50,57)";
+    startBtn.style.backgroundColor = "rgb(86,50,57)";
     startBtn.style.cursor = "not-allowed";
+    startBtn.innerHTML = "Use Arrow keys to Navigate";
     init();
 }
 
