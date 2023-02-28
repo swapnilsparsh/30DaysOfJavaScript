@@ -2,7 +2,8 @@
 const roadArea = document.querySelector('.road');
 let player = { step: 5 };
 let keys = { ArrowUp: false, ArrowDown: false, ArrowRight: false, ArrowLeft: false }
-
+let score = 0;
+const startBtn = document.querySelector(".btn")
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp);
 
@@ -17,7 +18,7 @@ function keyUp(event) {
 function moveLines() {
     let lines = document.querySelectorAll('.lines');
     lines.forEach(item => {
-        if (item.y >= 630) {
+        if (item.y >= 700) {
             item.y = item.y - 750;
         }
         item.y = item.y + player.step;
@@ -32,13 +33,15 @@ function moveEnemies(playercar) {
 
     vehicles.forEach(item => {
         othercarb = item.getBoundingClientRect();
-        if (! ((playercarb.bottom < othercarb.top) || (playercarb.top > othercarb.bottom) || (playercarb.left > othercarb.right) || (playercarb.right < othercarb.left)) )
-        {
-            alert("Press OK to play again");
+        if (!((playercarb.bottom < othercarb.top) || (playercarb.top > othercarb.bottom) || (playercarb.left > othercarb.right) || (playercarb.right < othercarb.left))) {
+            // alert("Press OK to play again");
+            alert("The Score is " + (score) + "\n Press OK to play again");
             location.reload()
             player.start = false;
         }
-        if (item.y >= 630) {
+        if (item.y >= 815) {
+            // Player will earn score when the car will pass enemy car
+            score = score + 1;
             item.y = -300;
             item.style.left = Math.floor(Math.random() * 350) + 'px';
         }
@@ -124,10 +127,11 @@ function init() {
         roadArea.appendChild(enemies);
     }
 }
- 
-function myFunction() {
-    document.querySelector('.button-container-div').style.display = "none";
-    document.querySelector('.container').style.visibility = "visible";
+
+function startgame() {
+    startBtn.innerHTML = "Use Arrow keys to Navigate";
+    startBtn.style.opacity = 0.65;
+    startBtn.style.cursor = "not-allowed";
     init();
 }
 
