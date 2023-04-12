@@ -4,21 +4,25 @@
     font-family:Quicksand;
 }
 #body{
+    
     /* background-image: linear-gradient(45deg,rgb(66,95,6),rgb(97,177,196));
     background-image: linear-gradient(45deg,red, black); */
-    user-select: none;
+    
 }
 #title{
     color: white;
     padding: 3px;
     margin: 10px;
+    user-select: none;
 }
 i{
     color: white;
+    user-select: none;
     
 }
 #add{
     transition: all 0.2s ease;
+    user-select: none;
    
 }
 #add:hover{
@@ -32,7 +36,7 @@ i{
     flex-direction:row;
     justify-content: center;
     align-content: center;
-   
+    user-select: none;
     align-items: center;
     align-self: center;
     justify-self: center;
@@ -40,7 +44,7 @@ i{
 } 
 #box{
    
-    
+    user-select: none;
     width: 70%;
     display:flex;
     border-radius: 27px;
@@ -90,7 +94,7 @@ i{
     word-wrap: break-word;
     overflow:auto;
     font-size: 1.5rem;
-   
+    user-select:text;
 }
 #ok{
     width: 50%;
@@ -98,14 +102,17 @@ i{
     border-radius: 7px;
     padding: 10px;
     color:white;
+    border:none;
     background-image: linear-gradient(45deg,white,black,black);
     transition: all 0.3s ease;
+    user-select: none;
 }
 #ok:hover{
     letter-spacing: 2px;
     color: rgb(199, 199, 199);
 }
 #ok, #theta{
+    user-select: none;
     display: inline-block;
 }
 #ok:active{
@@ -126,7 +133,7 @@ i{
     width: 100%;
     display: flex;
     flex-direction: row;
-   
+    user-select: none;
     justify-content:space-around;
     align-items: center;
     
@@ -139,18 +146,20 @@ i{
     border-radius: 7px;
     border-top-right-radius: 7px;
     display: flex;
+    user-select: none;
 }
 #code-ic2{
     width: 30px;
     position: absolute;
     margin: 40px 5px 5px 5px;
     height: 30px;
+    user-select: none;
     border-radius: 7px;
     display: none;
     
 }
 #code-ic1,#code-ic2{
-    
+    border:none;
     flex-direction: column;
     color: white;
     background-color: black;

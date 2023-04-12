@@ -39,13 +39,13 @@ document.getElementById("ok").onclick=()=>{
         document.getElementById("display").style.backgroundImage=`linear-gradient(${theta}deg,rgb(${r1},${g1},${b1}),rgb(${r2},${g2},${b2}))`;
         document.getElementById("txt").innerHTML=`background-image: linear-gradient(${theta}deg,rgb(${r1},${g1},${b1}),rgb(${r2},${g2},${b2}));`;
     }
+    document.getElementById("code-ic2").onclick=()=>{
+        let code=document.getElementById("txt").innerHTML;
+        navigator.clipboard.writeText(code);
+        document.getElementById("txt").innerHTML="Code is copied to the clipboard!";
+        document.getElementById("code-ic2").style.display="none";
+        document.getElementById("txt").style.paddingTop="100px";
+    }
 }
 
 //copying the gradient code to the clipboard
-document.getElementById("code-ic2").onclick=()=>{
-    let code=document.getElementById("txt").innerHTML;
-    navigator.clipboard.writeText(code);
-    document.getElementById("txt").innerHTML="Code is copied to the clipboard!";
-    document.getElementById("code-ic2").style.display="none";
-    document.getElementById("txt").style.paddingTop="100px";
-}
