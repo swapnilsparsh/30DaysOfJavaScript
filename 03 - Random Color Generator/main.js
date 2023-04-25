@@ -10,6 +10,8 @@ for (let i = 1; i <= 9; i++) {
     box.addEventListener('click', () => {
         console.log(box.innerHTML);
         navigator.clipboard.writeText(box.innerHTML);
+        console.log("copied");
+        toastr.success('Now you can use it!', 'Copied to clipboard', {timeOut: 3000});
     });
 }
 
