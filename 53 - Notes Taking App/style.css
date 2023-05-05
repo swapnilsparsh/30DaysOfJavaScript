@@ -44,7 +44,24 @@ h1 {
   outline: none;
   background: var(--card);
 }
-
+#delete-note{
+  height: 200px;
+  border: none;
+  outline: none;
+  background: rgb(255, 0, 0,  0.35);
+  border-radius: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+img{
+  height:70px;
+  width:60px;
+}
+/* #delete-note:hover{
+  background:rgba(255, 0, 0, 0.623);
+} */
 .add-note {
   height: 200px;
   border: none;
@@ -66,7 +83,7 @@ h1 {
   color: rgb(214, 214, 214);
 }
 
-footer,
+
 a {
   color: rgb(214, 214, 214);
   font-size: 20px;

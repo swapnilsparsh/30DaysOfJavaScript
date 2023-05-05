@@ -1,12 +1,34 @@
 const notesContainer = document.getElementById("app");
 const addNoteButton = notesContainer.querySelector(".add-note");
-
+const deleteNoteButton = notesContainer.querySelector("#delete-note")
+let delete_element = false;
 getNotes().forEach(note => {
     const noteElement = createNoteElement(note.id, note.content);
-    notesContainer.insertBefore(noteElement, addNoteButton);
+    notesContainer.insertBefore(noteElement, deleteNoteButton);
 });
 
-addNoteButton.addEventListener("click", () => addNote());
+addNoteButton.addEventListener("click", () =>{ 
+    if(delete_element){
+        deleteNoteButton.innerHTML='Delete';
+        document.getElementById("delete-note").style.background=' rgba(255, 0, 0, 0.35) ';
+        
+        delete_element=false;
+    }
+    addNote()});
+deleteNoteButton.addEventListener("click",() => {
+    if(!delete_element){
+    deleteNoteButton.innerHTML= '<img src="reshot-icon-delete-KL8MB62NXD.png" alt="delete">';
+    document.getElementById("delete-note").style.background=' rgba(255, 0, 0, 0.693) ';
+        delete_element=true;
+
+}
+else{
+    deleteNoteButton.innerHTML='Delete';
+    document.getElementById("delete-note").style.background=' rgba(255, 0, 0, 0.35) ';
+    
+    delete_element=false;
+}
+});
 
 function getNotes(){
     return JSON.parse(localStorage.getItem("note-ap") || "[]");
@@ -26,13 +48,21 @@ function createNoteElement(id, content){
     element.addEventListener("change", () => {
         updateNote(id, element.value);
     });
+    
+     element.addEventListener("click", () => {
+         if(delete_element){
+            deleteNote(id,element);
+         }
+     });
 
-    element.addEventListener("dblclick", () => {
-        const noteDelete = confirm("Want to Delete the note?")
-        if (noteDelete) {
-            deleteNote(id, element);
-        }
-    });
+     //Removed the double click method of deleting
+
+    // element.addEventListener("dblclick", () => {
+    //     const noteDelete = confirm("Want to Delete the note?")
+    //     if (noteDelete) {
+    //         deleteNote(id, element);
+    //     }
+    // });
 
     return element;
 }
@@ -45,7 +75,7 @@ function addNote(){
     };
 
     const noteElement = createNoteElement(noteObj.id, noteObj.content);
-    notesContainer.insertBefore(noteElement, addNoteButton);
+    notesContainer.insertBefore(noteElement, deleteNoteButton);
 
 
     notes.push(noteObj);
@@ -66,4 +96,6 @@ function deleteNote(id, element) {
     saveNotes(notes);
     notesContainer.removeChild(element);
 }
+
+
 
