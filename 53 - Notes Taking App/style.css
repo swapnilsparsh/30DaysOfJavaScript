@@ -30,9 +30,12 @@ h1 {
 }
 
 .note {
+  position: relative;
   height: 200px;
+  width:200px;
   box-sizing: border-box;
   padding: 17px;
+  padding-bottom: 43px;
   border-radius: 15px;
   resize: none;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
@@ -43,25 +46,36 @@ h1 {
   border: none;
   outline: none;
   background: var(--card);
+  
 }
-#delete-note{
+
+.note-container{
+  display: inline-block;
+  position: relative;
   height: 200px;
-  border: none;
-  outline: none;
-  background: rgb(255, 0, 0,  0.35);
-  border-radius: 15px;
-  font-size: 40px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+  flex-direction: column;
+}
+.Delete_Button{
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  width: 33px;
+  margin-top: 0px;
+  z-index: 100;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 8px;
+  background: rgb(157 17 17 / 56%);
+  opacity: 0.5;
+}
+.Delete_Button:hover{
+  opacity: 1;
 }
 img{
-  height:70px;
-  width:60px;
+  height:20px;
+  width:17px;
 }
-/* #delete-note:hover{
-  background:rgba(255, 0, 0, 0.623);
-} */
+
 .add-note {
   height: 200px;
   border: none;
