@@ -30,7 +30,7 @@ h2 {
   background: #19172e;
 }
 
-#img {
+#img1,#img2 {
   width: 150px;
   height: 150px;
 }
@@ -50,21 +50,3 @@ h2 {
 #btn:active {
   background: #1e8e3e;
 }
-
-footer {
-  text-align: center;
-  color: white;
-  font-size: 1rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin-bottom: 0;
-  padding: 5px;
-  line-height: 3vh;
-}
-
-footer a:visited {
-  color: inherit;
-}
-

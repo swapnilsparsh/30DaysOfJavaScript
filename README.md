@@ -266,23 +266,7 @@ Before making any contribution, big or small, Contributors are advised to go thr
 
 To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
-## Our valuable Contributors
-
-<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=swapnilsparsh/30DaysOfJavaScript" />
+<a href="https://github.com/splusb" target="_blank">
 </a>
-
-## License
-
-This project follows the [MIT License](/LICENSE).
-
-#### Made with ♥ by <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://swapnilsparsh.github.io/)
-
-<a href="https://github.com/swapnilsparsh" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.linkedin.com/in/swapnil-srivastava-sparsh/" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+<a href="https://www.linkedin.com/in/subharthi-bhunia-877490236/" target="_blank">
 </a>
