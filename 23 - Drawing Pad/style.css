@@ -96,9 +96,6 @@ footer a:visited {
 .sidebar .radio {
 	display: flex;
 	align-items: center;
-}
-
-.sidebar .radio {
 	margin-left: -15px;
 }
 
