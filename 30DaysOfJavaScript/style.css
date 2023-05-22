@@ -417,7 +417,7 @@ header {
   display: block;
   margin: 0 auto;
 }
-}
+
 
 @media only screen and (max-width: 320px) {
   h1 {
@@ -579,5 +579,24 @@ header {
     padding-right: 9px;
 
   }
+}
+
+.pagination button:not(:first-child):not(:last-child) {
+  width: 40px;
+}
+.pagination button:first-child,
+.pagination button:last-child {
+  height: 30px;
+  width: 100px;
+}
+.pagination > button:hover {
+  background-color: rgb(83, 99, 83);
+}
+.pagination > button{
+  border-radius: 10px;
+}
+.pagination button.active {
+  background-color: green;
+  color: white;
 }
 
