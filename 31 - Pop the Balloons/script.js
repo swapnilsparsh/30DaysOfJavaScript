@@ -3,20 +3,14 @@ let popped = 0;
 document.addEventListener('mouseover', function (e) {
 
   if (e.target.className === "balloon") {
-
+    
     e.target.style.backgroundColor = "#19172e";
     e.target.textContent = "🎈";
+    e.target.classList.add('popped')
     popped++;
-    removeEvent(e);
-    checkAllPopped();
+    checkAllPopped();    
   }
 });
-
-function removeEvent(e) {
-  e.target.removeEventListener('mouseover', function () {
-
-  })
-};
 
 function checkAllPopped() {
   if (popped === 10) {
