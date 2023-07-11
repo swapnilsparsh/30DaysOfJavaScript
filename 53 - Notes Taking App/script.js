@@ -82,4 +82,3 @@ function deleteNote(id, element) {
 }
 
 
-
