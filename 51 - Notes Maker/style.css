@@ -149,7 +149,7 @@ input:focus, textarea:focus{
     align-self: center;
     padding: 7px 8px;
     border: none; /* Remove borders */
-    color: #f3aa4c; /* White text */
+    color: #71b3fb; /* White text */
     font-size: 18px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     outline: none;
