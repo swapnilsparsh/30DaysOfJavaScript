@@ -104,6 +104,8 @@ a {
 }
 
 footer {
+  position: sticky;
+  background: var(--bg);
     text-align: center;
     color: white;
     font-size: 1.25rem;
@@ -113,8 +115,5 @@ footer {
     margin-bottom: 0;
     padding: 10px;
     line-height: 4vh;
-    position: fixed;
-    position: sticky;
-    background: var(--bg);
-    
+
 }
