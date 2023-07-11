@@ -113,4 +113,6 @@ footer {
     margin-bottom: 0;
     padding: 10px;
     line-height: 4vh;
+    position: sticky;
+    background: var(--bg);
 }
