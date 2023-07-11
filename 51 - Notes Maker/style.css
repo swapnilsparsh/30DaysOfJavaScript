@@ -1,14 +1,23 @@
 body{
     margin: 0;
     font-family: 'Shadows Into Light', cursive;
-    background-color: rgb(255, 240, 212);
+    /* background-color: rgb(168, 99, 207); */
+    /* background: linear-gradient(135deg, #153677, #4e085f); */
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    /* background: linear-gradient(135deg, #cf9aff, #95c0ff); */
+    
+
+
 }
+
 
 #nav{
     display: flex;
     height: 60px;
     padding: 0 40px;
-    background-color: #f3aa4c;
+    /* background-color: #ab72f2; */
+    background: linear-gradient(135deg, #6189d8, #e387a8);
+
 }
 
 #logo{
@@ -35,6 +44,7 @@ h1{
     /* position: fixed; */
     /* height: 10px; */
     /* background-color: white; */
+    /* background: red; */
 }
 
 #inputBox{
@@ -44,14 +54,17 @@ h1{
 }
 
 input, textarea{
-    width: 250px;
-    padding: 10px;
+    width: 350px;
+    padding: 15px;
+    margin: 2px;
     display: flex;
     font-family: 'Shadows Into Semi Light', cursive;
     border:none;
     border-bottom: 2px solid rgb(240, 240, 240);
     transition: border-bottom 0.4s ease-in-out;
     outline:none;
+    font-size: large;
+
 }
 
 ::placeholder{
@@ -66,10 +79,11 @@ textarea{
     resize:none;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    
 }
 
 input:focus, textarea:focus{
-    border-bottom: 2px solid #f3aa4c;
+    border-bottom: 2px solid #81a9f4;
     
 }
 
@@ -86,12 +100,12 @@ input:focus, textarea:focus{
     color: white;
     border: none;
     margin: auto 5%;
-    background-color: #f3aa4c;
+    background-color: #145584;
     align-self:flex-end;
 }
 
 #add:hover{
-    background-color: #d49542;
+    background-color: #589fe6;
     cursor: pointer;
 }
 
