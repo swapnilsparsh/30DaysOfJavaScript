@@ -3,7 +3,14 @@
   padding: 0%;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "sans";
 }
+/* -----------Font Change----------------- */
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
 .main_div {
   width: 100vw;
   height: 100vh;
@@ -96,6 +103,41 @@ img {
 .anime {
   animation: rotatePlayer 3s linear 3s;
 }
+
+/* -------------Volume---------------- */
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #83a9ff;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2.5px solid #3774ff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.volume_slider:hover {
+  opacity: 1.0;
+}
+.volume_slider {
+  margin-top: 15px ;
+  width: 60%;
+}
+ .fa{
+  width: 15px;
+  color: #fff;
+  padding: 10px;
+}
+
 @keyframes rotatePlayer {
   from {
     transform: rotate(0deg);

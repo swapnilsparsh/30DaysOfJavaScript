@@ -64,3 +64,10 @@ const prevsong = () => {
 }
 next.addEventListener('click', nextsong);
 previous.addEventListener('click', prevsong);
+
+//volume control
+let volume_slider = document.querySelector('.volume_slider');
+
+function setVolume(){
+    audio.volume = volume_slider.value / 100;
+}
