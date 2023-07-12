@@ -7,10 +7,11 @@
 
 .background_image{
  /* passwordvalidator */
-    background-image: url("../Images/pexels-nataliya-vaitkevich-6942085.jpg");
+    /* background-image: url("../Images/pexels-nataliya-vaitkevich-6942085.jpg"); */
 
-    background-image: url("../Images/background-fitness-bmi.jpg");
+    /* background-image: url("../Images/background-fitness-bmi.jpg"); */
  /* main */
+ background: linear-gradient(135deg, #4203a9, #90bafc);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height:100vh;
