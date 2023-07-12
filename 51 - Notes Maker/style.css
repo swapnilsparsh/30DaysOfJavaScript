@@ -1,14 +1,14 @@
 body{
     margin: 0;
     font-family: 'Shadows Into Light', cursive;
-    background-color: rgb(255, 240, 212);
+    background: linear-gradient(135deg, #4203a9, #90bafc);
 }
 
 #nav{
     display: flex;
     height: 60px;
     padding: 0 40px;
-    background-color: #f3aa4c;
+    background: linear-gradient(135deg, #6189d8, #e387a8);
 }
 
 #logo{
@@ -44,8 +44,9 @@ h1{
 }
 
 input, textarea{
-    width: 250px;
-    padding: 10px;
+    width: 350px;
+    padding: 15px;
+    margin: 2px;
     display: flex;
     font-family: 'Shadows Into Semi Light', cursive;
     border:none;
@@ -69,7 +70,7 @@ textarea{
 }
 
 input:focus, textarea:focus{
-    border-bottom: 2px solid #f3aa4c;
+    border-bottom: 2px solid #2a3fb7;
     
 }
 
@@ -86,12 +87,12 @@ input:focus, textarea:focus{
     color: white;
     border: none;
     margin: auto 5%;
-    background-color: #f3aa4c;
+    background-color: #1e5ca7;
     align-self:flex-end;
 }
 
 #add:hover{
-    background-color: #d49542;
+    background-color: #331fca;
     cursor: pointer;
 }
 
@@ -142,7 +143,7 @@ input:focus, textarea:focus{
     align-self: center;
     padding: 7px 8px;
     border: none; /* Remove borders */
-    color: #f3aa4c; /* White text */
+    color: #2e19b5; /* White text */
     font-size: 18px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     outline: none;
@@ -154,7 +155,7 @@ input:focus, textarea:focus{
   
   /* Darker background on mouse-over */
   .btn:hover {
-    color: #d49542;
+    color: #473f84;
     background-color: #ebebeb;
   }
 
