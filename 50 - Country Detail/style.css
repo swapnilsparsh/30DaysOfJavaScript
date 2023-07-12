@@ -4,8 +4,8 @@
 .main{
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
+    /* margin: 0; */
 }
-
     
 h1{
     text-align:center;
@@ -30,4 +30,20 @@ a:visited{
 a{
     font-weight: bolder;
     color: aliceblue;
+}
+
+footer {
+    text-align: center;
+    /* color: white; */
+    font-size: 1.25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 520px;
+    margin-bottom: 0;
+    padding: 10px;
+    line-height: 4vh;
+    background-color:#25274D;
+    position: fixed;
+    position: sticky;
 }
