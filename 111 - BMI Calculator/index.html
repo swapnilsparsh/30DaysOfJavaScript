@@ -4,41 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <!--CSS Stylesheet-->
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+   
 </head>
 <body>
-    <section>
- <!--Title Screen-->
- <div class="title">
-    BMI CALCULATOR
-</div>
-<!-- BMI Calculator Box-->
-<div class="container">
-    <div class="box">
-      <input type="text" id="num1" placeholder="Enter your weight in KG" value="" class="weight">
-     <input type="text" id="num3" placeholder="Enter your height in cm" value="" class="height">
-            <input type="button" value="Calc" onclick="calc()" style="  width: 90px;
-            border-radius: 9px;
-            border: none;
-            margin-top: 2%;
-            font-family: 'Roboto Mono', monospace;
-            display: flex;
-            margin-left: 43%;
-            justify-content: space-around;"/>
-           <center><input type="text" id="sum" placeholder="BMI" readonly="readonly" style="border-radius: 9px; margin-top: 20px;" /></center> 
+    <div class="background_image">
+     <div class="overlay_effect">
+       <div class="Container">
+        <h2>BMI Calculator <hr></h2>
+        <div class="box">
+           <!--Weight Input Field-->
+         <div id="weight_field">
+            <label>Weight(In Kg):</label><input id="weight" class="weight_class" type="text" placeholder="Enter Your weight"/>
+         </div>
+         <!--Height Input field-->
+         <div class="height-section">
+            <div id="height_field">
+               <label>Height(In Feet):</label><input id="height_feet" class="height_class" type="text" placeholder="Feet"/>
+            </div>
+            <div id="height_field">
+               <label>Enter Inch:</label><input id="height_inch" class="height_class" type="text" placeholder="Inch"/>
+            </div>
+         </div>
+         <div class="button_container">
+            <!--calculate button-->
+            <button class="calculate_btn">Calculate</button>
+            <!--reset button-->
+            <button class="reset_btn">Reset</button>
+         </div>
+         <div class="results">
+            <!--Calculated BMI Value is displayed here-->
+            <div class="BMI_Value"></div>
+            <!--for calculated BMI Value appropriate BMI Result is shown here-->
+            <div class="BMI_Result"></div>
+         </div>
+        </div>
+        </div>
+      <!--footer section-->
+      <div class="new-addition">
+         <table>
+            <thead>
+               <tr>
+                  <th> Body Mass Classification</th>
+                  <th>Body Mass Index(BMI)</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Underweight</td>
+                  <td>
+                    <18.5 </td>
+               </tr>
+               <tr>
+                  <td>Noraml</td>
+                  <td>18.5 to 24.9</td>
+               </tr>
+               <tr>
+                  <td>Overweight</td>
+                  <td>25 to 29.9</td>
+               </tr>
+               <tr>
+                  <td>Obese(I)</td>
+                  <td>30 to 34.9</td>
+               </tr>
+               <tr>
+                  <td>Obese(II)</td>
+                  <td>35 to 39.9</td>
+               </tr>
+               <tr>
+                  <td>Obese(III)</td>
+                  <td>>=40</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      
+      </div>
     </div>
-    <div class="info" style="color: aliceblue;">
-        <p>Overwright is more than 25 and underweight is less then 18.5 otherwise Normal BMI </p>
-    </div>
-</div>
-    </section>
-   
-    <!-- Footer-->
-    <footer>
-<p> Made by Shivam Agarwal</p>
-<a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript</a>
-    </footer>
+
+    <!--Javscript file-->
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,162 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Roboto+Mono&family=Rubik+Glitch&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:  "Montserrat", Sans-serif;
+}
 
-footer{
-position: absolute;
-    bottom: 0;
-    background-color: #100d0d;
-    text-align: center;
+.background_image{
+ /* passwordvalidator */
+    background-image: url("../Images/pexels-nataliya-vaitkevich-6942085.jpg");
+
+    background-image: url("../Images/background-fitness-bmi.jpg");
+ /* main */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:100vh;
+    max-width: 100%;
+}
+.overlay_effect{
+    background-color: rgba(0, 0, 0, 0.415);
+    padding:10px;
+    height:100vh;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto 200px;
+    align-items: center;
+    justify-items: center;
+    gap:1em;
+}
+.Container{
+    position: relative;
+    padding: 0.5em;
+    bottom: -10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto;
+    justify-items: center;
+    width: 35%;
+    height: 78%;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+.Container h2{
+    height:fit-content;
+    font-size: 30px;
     color: white;
-    font-size: 1.25rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0;
-    padding: 10px;
-    line-height: 1vh;
-    display: block;
 }
-.weight{
-    width: 190px;
-    border-radius: 9px;
-    border: none;
-    margin-top: 14%;
-    margin-left: 43%;
-    justify-content: space-around;
-display: flex;
-font-family: 'Roboto Mono', monospace;
-padding-right: 42px;
-padding-top: 10px;
+.box{
+    margin-top: 15px;
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap:1em;
 }
-.height{
-    width: 190px;
-    border-radius: 9px;
-    border: none;
-    margin-top: 2%;
-    font-family: 'Roboto Mono', monospace;
+
+.height-section{
     display: flex;
-    margin-left: 43%;
-    justify-content: space-around;
-    padding-right: 42px;
-padding-top: 10px;
-    }
-    .button{
-        width: 90px;
-        border-radius: 9px;
-        border: none;
-        margin-top: 2%;
-        font-family: 'Roboto Mono', monospace;
-        display: flex;
-        margin-left: 43%;
-        justify-content: space-around;
-        }
-    .sumo{
-        width: 490px;
-        border-radius: 7px;
-        border: none;
-        color: aliceblue;
-        margin-top: 4%;
-        font-family: 'Roboto Mono', monospace;
-        display: flex;
-        margin-left: 28.2%;
-        justify-content: space-around;
-        }
-.age{
-    width: 190px;
-    margin-top: 2%;
-    border-radius: 9px;
-    font-family: 'Roboto Mono', monospace;
-    margin-left: 43%;
-    justify-content: space-around;
-    border: none;
-    padding-right: 42px;
-padding-top: 10px;
-        display: flex;
-        }
-body{
-    background-color: #19172e;
-    font-family: 'Roboto Mono', monospace;
 }
 
-.title{
-color: ghostwhite;
-text-align: center;
-font-size: 40px;
+#height_field{
+    margin: 10px 10px;
+}
+
+#weight_field{
+    margin: 0px 10px;
+}
+label{
+    font-size:20px;
+    color: white;
+}
+input{
+    width:100%;
+    margin-top:5px;
+    border: 1px solid #1e293b;
+    border-radius: 4px;
+    padding: 6px 6px;
+}
+.button_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+button {
+  background-color: #fff;
+  border: 1 solid #e2e8f0;
+  border-radius: 1.5rem;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 20px;
+  margin-top: 5px;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+.results{
+    color: white;
+}
+
+.new-addition {
+    background-color: cornsilk;
+    width: 20%;
+    height: auto;
+    border: black 3px;
+    margin: 5px;
+    padding: 25px;
+    position: relative;
+    top: -20px;
+    border-radius: 4px;
+    word-spacing: 12px;
+
+}
+
+.new-addition h3 {
+    text-align: center;
+    color: black;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
 }
 
 
-@media screen and (max-width:300px) {
-
-    .weight{
-        width: 190px;
-        border-radius: 9px;
-        border: none;
-        margin-top: 54%;
-        margin-bottom: 30px;
-        margin-left: 23%;
-        justify-content: space-around;
-    display: flex;
-    font-family: 'Roboto Mono', monospace;
-    padding-right: 42px;
-    padding-top: 10px;
-    }
-    .height{
-        width: 190px;
-        border-radius: 9px;
-        border: none;
-        margin-top: 2%;
-        margin-bottom: 30px;
-        font-family: 'Roboto Mono', monospace;
-        display: flex;
-        margin-left: 23%;
-        justify-content: space-around;
-        padding-right: 42px;
-    padding-top: 10px;
-        }
-        footer{
-            position: absolute;
-                bottom: 0;
-                background-color: #100d0d;
-                text-align: center;
-                color: white;
-                font-size: 1.25rem;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                margin-bottom: 0;
-                padding: 10px;
-                line-height: 3.2vh;
-                display: block;
-            }
-
-    
+@media (min-width: 768px) {
+  .button {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
 }
-@media screen and (max-width:440px) {
-
-    .weight{
-        width: 190px;
-        border-radius: 9px;
-        border: none;
-        margin-top: 54%;
-        margin-bottom: 30px;
-        margin-left: 23%;
-        justify-content: space-around;
-    display: flex;
-    font-family: 'Roboto Mono', monospace;
-    padding-right: 42px;
-    padding-top: 10px;
+.BMI_Value,.BMI_Result{
+    font-size: 22px;
+    text-align: center;
+}
+.footer{
+    font-size: 22px;
+    color:white;
+}
+/*mediaquery*/
+@media all and (max-width:900px){
+    .Container{
+        width:50%;
     }
-    .height{
-        width: 190px;
-        border-radius: 9px;
-        border: none;
-        margin-top: 2%;
-        margin-bottom: 30px;
-        font-family: 'Roboto Mono', monospace;
-        display: flex;
-        margin-left: 23%;
-        justify-content: space-around;
-        padding-right: 42px;
-    padding-top: 10px;
-        }
-    
+}
+@media all and (max-width:680px){
+    .Container{
+        width:70%;
+    }
+  
+}
+@media all and (max-width:450px){
+    .Container{
+        width:90%;
+    }
+   
+}
+@media all and (max-width:280px){
+    .Container{
+        width:100%;
+    }
 }
