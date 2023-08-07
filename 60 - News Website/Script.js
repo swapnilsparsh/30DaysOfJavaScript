@@ -28,33 +28,31 @@ function headere() {
 	
 	fetchHeadlines();
 };
-sear.addEventListener("click",function(){
-	
-	fetchQueryNews();
-});
-
-bus.addEventListener("click",function(){
-	nh.innerHTML="<h1>Business</h1>";
-	fetchBusinessNews();
-
-});
-tech.addEventListener("click",function(){
-	nh.innerHTML="<h1>Technology</h1>";
-	fetchTechnologyNews();
-});
-gen.addEventListener("click",function(){
-	nh.innerHTML="<h1>General</h1>";
+gen.addEventListener("click", function () {
+	nh.innerHTML = "<h1>General</h1>";
 	fetchGeneralNews();
-});
-spo.addEventListener("click",function(){
-	nh.innerHTML="<h1>Sport</h1>";
+  });
+  
+  bus.addEventListener("click", function () {
+	nh.innerHTML = "<h1>Business</h1>";
+	fetchBusinessNews();
+  });
+  
+  tech.addEventListener("click", function () {
+	nh.innerHTML = "<h1>Technology</h1>";
+	fetchTechnologyNews();
+  });
+  
+  spo.addEventListener("click", function () {
+	nh.innerHTML = "<h1>Sports</h1>";
 	fetchSportsNews();
-});
-en.addEventListener("click",function(){
-	nh.innerHTML="<h1>Entertainment</h1>";
+  });
+  
+  en.addEventListener("click", function () {
+	nh.innerHTML = "<h1>Entertainment</h1>";
 	fetchEntertainNews();
-});
-
+  });
+  
 const fetchGeneralNews = async () => {
 	const response = await fetch(HEADLINES_NEWS);
 
@@ -180,3 +178,12 @@ function displayNews() {
 		k++;
 	});
 }
+
+function sefunc() {
+	// Clear the existing news content
+	ert.innerHTML = "";
+  
+	// Fetch and display search results
+	fetchQueryNews();
+  }
+  
