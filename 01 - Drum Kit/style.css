@@ -8,6 +8,13 @@ body,html {
   user-select: none;
 }
 
+
+.whole{
+  margin-bottom:50px;
+  display: flex;
+  flex-direction: column;
+}
+
 h3,p{
   font-size: 3rem;
   text-align: center;
@@ -18,7 +25,7 @@ h3,p{
 .keys {
   display: flex;
   flex: 1;
-  min-height: 80vh;
+  min-height:40vh;
   align-items: center;
   justify-content: center;
 }
@@ -66,4 +73,15 @@ footer{
 
 a{
   color: #fff;
+}
+
+.rfooter{
+  position: absolute;
+  bottom:50px;
+  left:35%;
+}
+
+.rfooter a{
+  color: blue;
+  text-align: center;
 }
