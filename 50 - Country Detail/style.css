@@ -31,3 +31,12 @@ a{
     font-weight: bolder;
     color: aliceblue;
 }
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #25274D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
