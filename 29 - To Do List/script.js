@@ -118,5 +118,3 @@ function formatDate(date) {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString(undefined, options);
 }
-
-// Add this code inside your `newElement` function, after creating the `t` variable.
