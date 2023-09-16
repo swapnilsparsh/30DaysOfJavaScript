@@ -30,7 +30,9 @@ a:visited{
 a{
     font-weight: bolder;
     color: aliceblue;
+
 }
+/* added thhis protion to fixed this */
 .footer {
     position: fixed;
     bottom: 0;
