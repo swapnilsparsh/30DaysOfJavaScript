@@ -10,7 +10,7 @@ const quizData = [
     {
         question: "Who is the President of US?",
         a: "Florin Pop",
-        b: "Donald Trump",
+        b: "Joe Biden",
         c: "Ivan Saldano",
         d: "Mihai Andrei",
         correct: "b",
@@ -91,7 +91,7 @@ submitBtn.addEventListener("click", () => {
             loadQuiz();
         } else {
             quiz.innerHTML = `
-                <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+                <h2>You answered ${score}/${quizData.length} questions correctly.</h2>
                 
                 <button onclick="location.reload()">Reload</button>
             `;
