@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('background-pattern.png'); /* Add your background pattern image */
+  }
+  
+  #app {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  #app:hover {
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    color: #3498db;
+  }
+  
+  input {
+    margin-top: 20px;
+    padding: 12px;
+    width: calc(100% - 24px);
+    border: 1px solid #3498db;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 14px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .thumbnail {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
