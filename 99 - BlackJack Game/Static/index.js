@@ -59,7 +59,7 @@ function randomCard() {
 }
 
 function showCard(card, activePlayer) {
-  if (activePlayer["score"] <= 30) {
+  if (activePlayer["score"] <= 21) {
     let cardImage = document.createElement("img");
     cardImage.src = `static/Images/${card}.png`;
     document.querySelector(activePlayer["div"]).appendChild(cardImage);
@@ -100,7 +100,7 @@ function blackjackDeal() {
 }
 function updateScore(card, activePlayer) {
   if (card === "A") {
-    if (activePlayer["score"] + blackjackGame["cardsMap"][card][1] <= 30) {
+    if (activePlayer["score"] + blackjackGame["cardsMap"][card][1] <= 21) {
       activePlayer["score"] += blackjackGame["cardsMap"][card][1];
     } else {
       activePlayer["score"] += blackjackGame["cardsMap"][card][0];
@@ -110,7 +110,7 @@ function updateScore(card, activePlayer) {
   }
 }
 function showScore(activePlayer) {
-  if (activePlayer["score"] > 30) {
+  if (activePlayer["score"] > 21) {
     document.querySelector(activePlayer["scoreSpan"]).textContent = "BUST!";
     document.querySelector(activePlayer["scoreSpan"]).style.color = "red";
   } else {
@@ -138,8 +138,8 @@ async function dealerlogic() {
 function computeWinner() {
   let winner;
 
-  if (YOU["score"] <= 30) {
-    if (YOU["score"] > DEALER["score"] || DEALER["score"] > 30) {
+  if (YOU["score"] <= 21) {
+    if (YOU["score"] > DEALER["score"] || DEALER["score"] > 21) {
       blackjackGame["wins"]++;
       winner = YOU;
     } else if (YOU["score"] < DEALER["score"]) {
@@ -148,10 +148,10 @@ function computeWinner() {
     } else if (YOU["score"] === DEALER["score"]) {
       blackjackGame["draws"]++;
     }
-  } else if (YOU["score"] > 30 && DEALER["socre"] <= 30) {
+  } else if (YOU["score"] > 21 && DEALER["socre"] <= 21) {
     blackjackGame["losses"]++;
     winner = DEALER;
-  } else if (YOU["score"] > 30 && DEALER["score"] > 30) {
+  } else if (YOU["score"] > 21 && DEALER["score"] > 21) {
     blackjackGame["draws"]++;
   }
 
