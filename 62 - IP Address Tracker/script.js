@@ -11,7 +11,7 @@ let lng;
 
 const fetchData = (val = "") => {
   fetch(
-    `https://geo.ipify.org/api/v2/country,city?apiKey=at_dxe2UUX2g4ZnJF713lp8H70FEtjLt&ipAddress=${val}`
+    `https://geo.ipify.org/api/v2/country,city?apiKey=at_WErCCnwkXvtb9z6TpOjrLTReYowLi&ipAddress=${val}`
   )
     .then((res) => res.json())
     .then((data) => {
