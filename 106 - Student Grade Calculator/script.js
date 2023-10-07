@@ -8,9 +8,9 @@ function calculate(){
 document.getElementById("demo").innerHTML= `Your Total marks is = ${sum}`;
 const percentage= (sum/400)*100;
 
-document.getElementById("demo1").innerHTML= `Your  Perenatge marks is = ${percentage}%`;
+document.getElementById("demo1").innerHTML= `Your Marks Percentage is = ${percentage}%`;
 
-if(percentage>=100){
+if(percentage>=90){
     document.getElementById("demo2").innerHTML= `Your Grade is A++ 😎`;
 }
 else if(percentage>=80){
@@ -23,7 +23,7 @@ else if(percentage>=40){
     document.getElementById("demo2").innerHTML= `Your Grade is B 😑`;
 }
 else{
-    document.getElementById("demo2").innerHTML= `You are Fail !! 😡👿`;
+    document.getElementById("demo2").innerHTML= `You have failed !! 😡👿`;
 }
 }
 
