@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#132043;
+    
+    
+}
+
+#container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+    padding: 4rem ;
+    height: 100vh;
+    
+}
+.left{
+    width: 35%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    color: white;
+    /* background: linear-gradient(to right, blueviolet, rgb(158, 69, 241)); */
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 25px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 3rem;
+    backdrop-filter: blur(3px);
+
+    
+}
+.head{
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+}
+.head_2{
+    font-size: 1.3rem;
+}
+p{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+.right{
+    width: 35%;
+    height: 100%;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 25px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgb(255, 255, 255,0.1);
+    padding: 1rem auto;
+    backdrop-filter: blur(3px);
+    
+}
+.inputs{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+}
+input{
+    margin-top: 0.5rem;
+    width: 15rem;
+    height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+   
+}
+.des{
+    text-align: left;
+    margin-top: -1rem;
+    color: white;
+}
+._result{
+     display: flex;
+     flex-direction: column;
+    height: 40%;
+    align-items: center;
+}
+.btn{
+    /* background-color: blueviolet; */
+    color: white;
+    padding: .7rem 2rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    
+
+}
+.btn:hover{
+    background-color: rgba(154, 64, 238, 0.945);
+    color: white;
+    box-shadow: blueviolet 5px 5px 15px;
+}
+.result{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.result_2{
+    font-size: 1.2rem;
+    margin-top: -1rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    #container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        width: 80%;
+        margin-bottom: 1.8rem;
+        margin-right: 0;
+    }
+    .right{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:768px){
+    #container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.8rem;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:640px){
+    #container{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        
+    }
+    .left{
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 1.8rem;
+        padding: 1rem;
+    }
+    .right{
+        width: 80%;
+        padding: 3rem 2rem;
+    }
+    label{
+        font-size: 1.3rem;
+
+    }
+    .btn{
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+    }
+   p{
+    font-size: 0.7rem;
+   }
+
+}
