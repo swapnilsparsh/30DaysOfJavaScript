@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-semibold mb-4">Weather App</h1>
+        <input type="text" id="locationInput" class="border rounded p-2 mr-2" placeholder="Enter location. . .">
+        <button id="fetchWeather" class="button bg-blue-500 text-white p-2 rounded">
+            Get Weather
+        </button>
+        <div id="weatherInfo" class="mt-4"></div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
