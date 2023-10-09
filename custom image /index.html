@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Image Generator</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="imageCanvas" width="400" height="400"></canvas>
+    <button id="generateButton">Generate Image</button>
+
+    <script>
+        // Get a reference to the canvas and its context
+        const canvas = document.getElementById('imageCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Get a reference to the button for generating the image
+        const generateButton = document.getElementById('generateButton');
+
+        // Function to generate a custom image
+        function generateImage() {
+            // Clear the canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Set the background color
+            ctx.fillStyle = 'lightblue';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw a red rectangle
+            ctx.fillStyle = 'red';
+            ctx.fillRect(50, 50, 100, 100);
+
+            // Draw a blue circle
+            ctx.beginPath();
+            ctx.arc(250, 150, 50, 0, Math.PI * 2);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        // Add an event listener to the button to generate the image
+        generateButton.addEventListener('click', generateImage);
+
+        // Initial image generation
+        generateImage();
+    </script>
+</body>
+</html>
