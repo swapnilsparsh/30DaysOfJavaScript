@@ -57,7 +57,7 @@ function holdingCurrentScore() {
   document.getElementById(
     `mainScore${activePlayer.playerrStatusNo}`
   ).innerHTML = activePlayer.mainScore;
-  if (activePlayer.mainScore >= 10) {
+  if (activePlayer.mainScore >= 100) {
     activePlayer.status = "win";
     document.getElementsByClassName("winnerBoard")[0].style.display = "flex";
     document.getElementsByClassName("winnerBoard")[0].innerHTML =
