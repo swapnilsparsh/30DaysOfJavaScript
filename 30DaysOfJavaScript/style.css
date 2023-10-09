@@ -25,7 +25,12 @@ body {
   background-position: center;
   z-index: 99999;
 }
-
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /* Dark Mode */
 body.dark-mode {
   background-color: black;
@@ -121,12 +126,14 @@ body.light-mode svg {
 .toggleButton {
   display: inline-block;
   position: absolute;
-  top: 15px;
-  margin: 30px 3px 3px 10px;
-  padding-top: 3px;
+  top: 0;
+  /* margin: 30px 3px 3px 10px; */
+  margin: 20px 3px 3px 10px;
+  /* padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 9px;
-  padding-right: 9px;
+  padding-right: 9px; */
+  padding: 3px;
   border: none;
   border-radius: 50%;
   font-size: 45px;
@@ -189,7 +196,7 @@ a:visited {
 
 .item {
   flex: 50%;
-  width: 100%;
+  width: 90%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent,
@@ -216,17 +223,24 @@ a:visited {
 }
 
 .main {
-  padding: 20px;
-  width: 90vw;
+  /* padding: 20px;
+  width: 90vw; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 24px;
   row-gap: 24px;
   margin: auto;
+  justify-items: center;
 }
 
 .main a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+  }
 }
 
 footer {
@@ -284,13 +298,14 @@ footer a:visited {
 
 input {
   display: inline-block;
-  margin: 0px, 10px, 10px, 10px;
+  /* margin: 0px, 10px, 10px, 10px; */
   border-radius: 25px;
   padding: 10px;
-  width: 15%;
-  position: absolute;
-  top: 6.5%;
-  right: 7%;
+  width: 50%;
+  margin-bottom: 3%;
+  /* position: absolute; */
+  /* top: 6.5%; */
+  /* right: 7%; */
   background: transparent;
   border: 1px solid white;
 }
@@ -310,7 +325,7 @@ header {
   }
 }
 
-@media (max-width: 599px) {
+/* @media (max-width: 599px) {
   header {
     text-align: left;
   }
@@ -374,7 +389,7 @@ header {
   .item {
     width: 150px;
   }
-}
+} */
 
 @media (max-width: 102) {
   .size {
@@ -405,7 +420,6 @@ header {
   display: block;
   margin: 0 auto;
 }
-
 @media only screen and (max-width: 320px) {
   h1 {
     font-size: 18px;
@@ -430,14 +444,14 @@ header {
 @media screen and (max-width: 530px) {
   h1 {
     font-size: 20px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
   }
 }
 
 @media screen and (max-width: 571px) {
   h1 {
     font-size: 20px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
   }
 }
 
@@ -513,53 +527,24 @@ header {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 571px) {
   .toggleButton {
-    margin: 45px 3px 3px 10px;
-    padding: 3px;
-  }
-}
-
-@media screen and (max-width: 331px) {
-  .toggleButton {
-    top: 2px;
-    font-size: 39px;
-    margin: 35px 3px 3px 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
-@media screen and (max-width: 237px) {
-  .toggleButton {
-    top: 2px;
-    font-size: 30px;
-    margin: 45px 3px 3px 10px;
-    padding: 3px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 401px) {
   .toggleButton {
-    top: 2px;
-    font-size: 45px;
-    margin: 35px 3px 3px 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 9px;
-    padding-right: 9px;
+    font-size: 30px;
   }
 }
-@media screen and (max-width: 571px) {
+@media screen and (max-width: 301px) {
   .toggleButton {
-    top: 2px;
-    font-size: 45px;
-    margin: 35px 3px 3px 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 9px;
-    padding-right: 9px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 241px) {
+  .toggleButton {
+    font-size: 18px;
   }
 }
 
@@ -587,7 +572,7 @@ header {
   color: white;
   font: bold;
 }
-.pagination button.active {
-  background-color: white;
-  color: black;
+.pagination > button:focus {
+  background-color: black;
+  color: white;
 }
