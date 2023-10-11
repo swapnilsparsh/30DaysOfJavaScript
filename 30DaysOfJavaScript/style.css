@@ -25,7 +25,7 @@ body {
   background-position: center;
   z-index: 99999;
 }
-.top{
+.top {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +97,6 @@ body.light-mode svg {
 }
 
 @keyframes octocat-wave {
-
   0%,
   100% {
     transform: rotate(0);
@@ -139,7 +138,6 @@ body.light-mode svg {
   border-radius: 50%;
   font-size: 45px;
   left: 0;
-  
 }
 
 html.transition,
@@ -157,12 +155,10 @@ h1 {
 }
 
 @media only screen and (max-width: 658px) {
-
   h1 {
     font-size: 1.6em;
     padding: 32px 40px;
   }
-
 }
 
 h4 {
@@ -203,14 +199,14 @@ a:visited {
   width: 90%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 2px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent,
+    0 2px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-  transition: transform .3s ease-in-out 0s;
+  transition: transform 0.3s ease-in-out 0s;
 }
 
 .item {
   border-radius: 10px;
-
 }
 
 .item:hover {
@@ -218,7 +214,7 @@ a:visited {
   /* border: 1px solid #ffffff; */
   filter: drop-shadow(10px);
   filter: contrast(110%);
-  background-color: #684756
+  background-color: #684756;
 }
 
 .item h4 {
@@ -242,7 +238,7 @@ a:visited {
 }
 
 @media only screen and (max-width: 400px) {
-  .main{
+  .main {
     grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
   }
 }
@@ -263,12 +259,10 @@ footer {
 
 footer a {
   color: white !important;
-
 }
 
 footer a:visited {
   color: white !important;
-
 }
 
 @media (max-width: 800px) {
@@ -299,7 +293,7 @@ footer a:visited {
 }
 
 .scrollToTop:hover {
-  background-color: #5836D8;
+  background-color: #5836d8;
 }
 
 input {
@@ -313,7 +307,7 @@ input {
   /* top: 6.5%; */
   /* right: 7%; */
   background: transparent;
-  border: 1px solid white
+  border: 1px solid white;
 }
 
 header {
@@ -354,7 +348,6 @@ header {
 
   .item {
     width: 350px;
-
   }
 }
 
@@ -365,7 +358,6 @@ header {
 
   .item {
     width: 300px;
-
   }
 }
 
@@ -376,7 +368,6 @@ header {
 
   .item {
     width: 250px;
-
   }
 }
 
@@ -387,7 +378,6 @@ header {
 
   .item {
     width: 200px;
-
   }
 }
 
@@ -398,7 +388,6 @@ header {
 
   .item {
     width: 150px;
-
   }
 } */
 
@@ -426,6 +415,11 @@ header {
   }
 }
 
+#searchbar,
+.toggleButton {
+  display: block;
+  margin: 0 auto;
+}
 @media only screen and (max-width: 320px) {
   h1 {
     font-size: 18px;
@@ -559,17 +553,28 @@ header {
 }
 .pagination button:first-child,
 .pagination button:last-child {
-  height: 30px;
+  height: 40px;
   width: 100px;
+  padding: 6px 10px;
 }
 .pagination > button:hover {
-  background-color: rgb(83, 99, 83);
-}
-.pagination > button{
-  border-radius: 10px;
-}
-.pagination button.active {
-  background-color: green;
+  background-color: rgb(96, 130, 182);
   color: white;
+  /* background-color: rgb(83, 99, 83); */
 }
 
+.pagination > button {
+  border-radius: 20px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  margin-inline: 5px;
+  margin-bottom: 4px;
+  color: white;
+  font: bold;
+}
+
+.pagination button.active {
+  background-color: black;
+  color: white;
+}
