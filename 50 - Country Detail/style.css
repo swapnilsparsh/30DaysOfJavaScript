@@ -36,7 +36,7 @@ a{
 footer {
     background-color: #1c0930;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -52,6 +52,3 @@ footer {
     text-decoration: underline;
   }
  
-  .fa-brands{
-    margin: 0px 20px;
-  }
