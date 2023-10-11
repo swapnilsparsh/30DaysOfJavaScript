@@ -61,6 +61,8 @@ p{
     box-shadow: 0 8px 25px 0 rgba( 31, 38, 135, 0.37 );
     background: rgb(255, 255, 255,0.1);
     padding: 1rem auto;
+    display: flex;
+    flex-direction: column;
     backdrop-filter: blur(3px);
     
 }
@@ -174,7 +176,7 @@ input{
         padding: 3rem 2rem;
     }
     label{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
 
     }
     .btn{
@@ -185,4 +187,35 @@ input{
     font-size: 0.7rem;
    }
 
+}
+@media screen and (max-width:300px){
+    #container{
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+    .head{
+        font-size: 1rem;
+        padding-bottom: 0;
+    }
+    .head_2{
+        font-size: 1px;
+    }
+    .left{
+        padding: 12px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .left p {
+        font-size: 10px;
+    }
+    .right{
+        width: 100%;
+    }
+    label{
+        font-size: 1rem;
+    }
+    input{
+        width: 10rem;
+    }
 }
