@@ -1,0 +1,69 @@
+<!-- 16) Write the javascript, html and CSS code for the below given design: this web page shows the client side clock 
+and it will update its time on each second.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment_16</title>
+  </head>
+  <style>
+    body {
+      background: url(./As16_Time.jpg);
+      background-size: 100%;
+    }
+    div {
+      margin-left: 10%;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 30px;
+      width: 30%;
+
+      text-align: center;
+    }
+    #Time {
+      background: url(./As16_Time.jpg);
+      color: #14ed29;
+      font-weight: bolder;
+
+      font-size: 54px;
+    }
+  </style>
+  <body onload="startclock()">
+    <div id="Time"></div>
+
+    <script>
+      function startclock() {
+        let time = new Date();
+        let hours = time.getHours();
+        let mintues = time.getMinutes();
+        let seconds = time.getSeconds();
+        let AmOrPm = " ";
+        if (hours >= 12) {
+          AmOrPm = " P. M.";
+        } else {
+          AmOrPm = " A. M.";
+        }
+        if (hours >= 13) {
+          hours -= 12;
+        }
+        if (seconds < 10) {
+          seconds = "0" + seconds;
+        }
+        if (mintues < 10) {
+          mintues = "0" + mintues;
+        }
+
+        document.getElementById("Time").innerHTML =
+          "Current Time is <br>" +
+          hours +
+          ":" +
+          mintues +
+          ":" +
+          seconds +
+          ":" +
+          " " +
+          AmOrPm;
+        setTimeout(startclock, 1000);
+      }
+    </script>
+  </body>
+</html>
