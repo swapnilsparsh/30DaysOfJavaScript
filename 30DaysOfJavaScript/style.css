@@ -562,6 +562,7 @@ header {
   color: white;
   /* background-color: rgb(83, 99, 83); */
 }
+
 .pagination > button {
   border-radius: 20px;
   padding: 12px;
@@ -572,7 +573,8 @@ header {
   color: white;
   font: bold;
 }
-.pagination > button:focus {
+
+.pagination button.active {
   background-color: black;
   color: white;
 }
