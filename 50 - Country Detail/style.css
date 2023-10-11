@@ -31,3 +31,27 @@ a{
     font-weight: bolder;
     color: aliceblue;
 }
+
+/* footer */
+footer {
+    background-color: #1c0930;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+ 
+  .fa-brands{
+    margin: 0px 20px;
+  }
