@@ -42,11 +42,11 @@ h1 {
   font-family: monospace;
   font-size: 18px;
   color: var(--bg);
-  font-weight: 800;
+  font-weight: 700;
   border: none;
   outline: none;
   background: var(--card);
-  
+  overflow-y: scroll;
 }
 
 .note-container{
@@ -116,4 +116,33 @@ footer {
     position: fixed;
     position: sticky;
     background: var(--bg);
+}
+.btn{
+  position: absolute;
+  bottom: 9px;
+  left: 50px;
+  font-size: 20px;
+  width: 30px;
+  color: white;
+  margin-top: 0px;
+  z-index: 100;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0);
+}
+.underlineBtn{
+  left: 85px;
+}
+.italicBtn{
+  left: 120px;
+}
+.bold{
+  font-weight: 1000;
+}
+.italic{
+  font-style: italic;
+}
+.underline{
+  text-decoration: underline;
 }
