@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     </head>
+      <style>
+          #pump{
+              position:relative;
+              
+          }
+          #water_contener{
+              position:relative;
+              margin:20rem 0 0 6rem;
+          }
+          #nav{
+              position:absolute;
+              display:block;
+              height:100%;
+              width:0;
+              overflow-x:scroll;
+              overflow-y:scroll;
+             
+              background-color:lightblue;
+              z-index:1;
+              transition:1s;
+              padding:2rem 0 0 0rem;
+              
+              
+          }
+          #nav canvas{
+              position:relative;
+              margin:0.5rem 0 0 2rem;
+          }
+          
+          #main_setup{
+              position:absolute;
+              margin:10rem 0 0 0;
+              height:30rem;
+              width:100%;
+              border:1px solid;
+          }
+          #pump_droper{
+              position:relative;
+              margin:-3.4rem 0 0 2.8rem;
+             
+              height:70px;
+              width:50px;
+              
+          }
+          #water_braker_connecter_droper{
+              position:relative;
+              margin:-8.8rem 0 0 2.6rem;
+              padding:0 0 0 0.8rem;
+              
+              height:70px;
+              width:50px;
+          }
+          #measure_water_droper{
+              position:relative;
+              margin:-9.6rem 0 0 2.6rem;
+              
+              display:block;
+              
+              height:80px;
+              width:60px;
+          }
+          #measure_to_tank_droper{
+              position:relative;
+              margin:-9rem 0 0 2.6rem;
+              padding:0 0 0 1rem;
+            
+              height:60px;
+              width:100px;
+          }
+          #tank_droper{
+              position:relative;
+              margin:-11.5rem 0 0 2.6rem;
+             
+              height:120px;
+              width:60px;
+              
+          }
+          #tank_jar_connecter_droper{
+              position:relative;
+              margin:-9rem 0 0 5rem;
+              
+             
+              height:20px;
+              width:200px;
+          }
+          #bicker_droper{
+              position:relative;
+              margin:0.5rem 0 0 15rem;
+              
+              height:80px;
+              width:60px;
+          }
+          #meater_droper{
+              position:relative;
+              margin:1rem 0 0 16rem;
+             
+              height:100px;
+              width:150px;
+          }
+          #massage{
+              position:absolute;
+              margin:5rem 0 0 10rem;
+          }
+          #compleat{
+              position:absolute;
+              margin:4rem 0 0 0rem;
+              width:2rem;
+          }
+         
+      </style>
+      
+          
+          
+          
+    
+      
+
+    <title>My Project</title>
+ 
+  <body>
+      
+      <button id='nav_button' onclick=" document.getElementById('nav').style.width='40%'">Element</button>
+      
+      <h3 id='massage'></h3>
+      <input id='compleat' value='0'>
+      <div id='nav'>
+          
+          <canvas id="tank" width="60" height="120" draggable="true" ondragstart="drag(event) "></canvas>
+          <canvas id="pump" width="50" height="70"draggable="true" ondragstart="drag(event)" ></canvas>
+      
+          <canvas id="tank_jar_connecter" width="200" height="20"draggable="true" ondragstart="drag(event)" ></canvas>
+      
+      
+          <canvas id="water_braker_connecter" width="40" height="70"draggable="true" ondragstart="drag(event)" ></canvas>
+      
+      
+          <canvas id="measure_water" width="40" height="80"draggable="true" ondragstart="drag(event)" ></canvas>
+      
+      
+          <canvas id="measure_to_tank" width="100" height="60"draggable="true" ondragstart="drag(event)"></canvas>
+     
+          <canvas id="bicker" width="60" height="80"draggable="true" ondragstart="drag(event)"  ></canvas>
+     
+          <canvas id="meater" width="200" height="150"draggable="true" ondragstart="drag(event)" ></canvas>
+              
+          
+      </div>
+      
+      <div id='main_setup'>
+      
+      
+          <canvas id="water_contener" width="300" height="150" style=""></canvas>
+          <div id='pump_droper' ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+          <div id='water_braker_connecter_droper'ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+          <div id='measure_water_droper'ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+          <div id='measure_to_tank_droper' ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div id='tank_droper'ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+          <div id='tank_jar_connecter_droper' ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div id='bicker_droper' ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div id='meater_droper' ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         
+      </div>
+      
+      
+      <script>
+          
+          
+          
+          
+          
+          function drop(ev){
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              var id=ev.target.id;
+            
+              
+              
+              const canvas=['tank','pump','meater','bicker', 'tank_jar_connecter','water_braker_connecter','measure_water','measure_to_tank'];
+              const div=['tank_droper','pump_droper' , 'meater_droper','bicker_droper','tank_jar_connecter_droper','water_braker_connecter_droper','measure_water_droper','measure_to_tank_droper'];
+              var compleat=document.getElementById("compleat").value;
+              //key=canva,value=position id
+              function index_canva(can){
+                 for (var i=0;i<9;i++){
+                     if(can[i]==data){
+                         return i;
+                     }
+                     
+                 }
+              }
+              
+              var index_c=index_canva (canvas);
+              
+              if (id==div[index_c]){
+                  document.getElementById("compleat").value=Number(compleat)+1;
+                  
+                
+              }else{
+                  document.getElementById('massage').innerHTML='Wrong Position';
+                  document.getElementById('massage').style.color="red";
+                  
+                  console.log(index_c);
+              }
+                  
+              
+              
+              if (Number(compleat)=='7'){
+                  document.getElementById('massage').innerHTML='Exellent';
+                  document.getElementById('massage').style.color="blue";
+              }
+              
+              
+            
+              
+              
+              
+                       
+              
+  ev.target.appendChild(document.getElementById(data));
+              
+          }
+          
+          
+          function allowDrop(ev) {
+  
+              ev.preventDefault();
+
+          }
+          function drag(ev){
+              document.getElementById("nav").style.width='0%';
+              document.getElementById('massage').innerHTML='...';
+                  
+              
+              ev.dataTransfer.setData("text",ev.target.id);
+          }
+          var meater=document.getElementById("meater");
+
+         var ctx = meater.getContext("2d");
+
+         ctx.beginPath();
+          
+         ctx.arc(140,120,8,0,2*Math.PI);
+         
+          
+         ctx.rect(110,50,60,20);
+         //ctx.arc(140,100,6,0,2*Math.PI);
+         //ctx.arc(120,100,6,0,2*Math.PI);
+         ctx.rect(100,40,80,100);
+         ctx.rect(30,40,15,80);
+         ctx.rect(30,120,15,20);
+          
+   
+         ctx.moveTo(40,40);
+         ctx.lineTo(40, 20);
+         ctx.lineTo(150, 20);
+         ctx.lineTo(150, 40);
+         ctx.stroke();
+          
+          
+          
+          
+          var bicker=document.getElementById("bicker");
+
+         var ctx = bicker.getContext("2d");
+
+         ctx.beginPath();
+         ctx.moveTo(0,0);
+         ctx.lineTo(4, 6);
+         ctx.lineTo(4, 80);
+         ctx.lineTo(56, 80);
+         ctx.lineTo(56, 6);
+         ctx.lineTo(60, 0);
+         ctx.stroke();
+          
+          
+          
+          var m_to_tank=document.getElementById("measure_to_tank");
+
+         var ctx = m_to_tank.getContext("2d");
+
+         ctx.beginPath();
+         ctx.rect(0,0,15,60);
+         ctx.rect(30,25,40,10);
+         ctx.moveTo(0,20);
+         ctx.lineTo(15, 25);
+         ctx.lineTo(15, 35);
+         ctx.lineTo(0, 40);
+          
+         ctx.moveTo(15,30);
+         ctx.lineTo(30, 30);
+          
+         ctx.moveTo(70,30);
+         ctx.lineTo(90, 30);
+         ctx.lineTo(90, 20);
+         ctx.lineTo(90, 40);
+         ctx.stroke();
+          
+          
+          var m_water=document.getElementById("measure_water");
+
+         var ctx = m_water.getContext("2d");
+
+         ctx.beginPath();
+         ctx.moveTo(0,0);
+         ctx.lineTo(40, 0);
+         ctx.lineTo(27, 80);
+         ctx.lineTo(13, 80);
+         ctx.lineTo(0, 0);
+          
+         ctx.stroke();
+          
+          
+          var w_break=document.getElementById("water_contener");
+
+         var ctx = w_break.getContext("2d");
+
+         ctx.beginPath();
+         
+         //ctx.rect(150,30,150,100);
+         //ctx.rect(0,45,15,25);
+         ctx.moveTo(160,20);
+         ctx.lineTo(162, 22);
+         ctx.lineTo(162, 36);
+         ctx.lineTo(100, 36);
+         ctx.lineTo(100, 150);
+         ctx.lineTo(300, 150);
+         ctx.lineTo(300, 36);
+         ctx.lineTo(240, 36);
+         ctx.lineTo(240, 22);
+         ctx.lineTo(242, 20);
+          
+         ctx.moveTo(100,135);
+         ctx.lineTo(70, 135);
+         ctx.lineTo(50, 150);
+         ctx.lineTo(0, 150);
+          
+         ctx.moveTo(100,150);
+         ctx.lineTo(70, 150);
+         ctx.lineTo(50, 135);
+         ctx.lineTo(0, 135);
+          
+         ctx.moveTo(60,142);
+         ctx.lineTo(60, 120);
+         ctx.lineTo(50, 120);
+         ctx.lineTo(75, 120);
+          
+         ctx.stroke();
+          
+          
+          
+         var w_break=document.getElementById("water_braker_connecter");
+
+         var ctx = w_break.getContext("2d");
+
+         ctx.beginPath();
+         
+         ctx.rect(0,0,15,25);
+         ctx.rect(0,45,15,25);
+         ctx.moveTo(0,45);
+         ctx.lineTo(15, 25);
+         ctx.lineTo(0, 25);
+         ctx.lineTo(15, 45);
+          
+         
+         ctx.lineTo(8, 36);
+         ctx.lineTo(30, 36);
+         ctx.lineTo(30, 20);
+         ctx.lineTo(30, 55);
+         ctx.stroke();
+          
+          
+         var t_to_j=document.getElementById("tank_jar_connecter");
+
+         var ctx = t_to_j.getContext("2d");
+
+         ctx.beginPath();
+         
+         ctx.rect(0,0,200,30);
+         ctx.rect(8,8,180,30);
+         ctx.stroke();
+          
+          
+          
+          
+         var pump =document.getElementById("pump");
+
+         var ctx = pump.getContext("2d");
+
+         ctx.beginPath();
+         //ctx.rect(80,20,20,30)
+         ctx.arc(30,40,8,0,2*Math.PI);
+         ctx.moveTo(10,40);
+         ctx.lineTo(10, 0);
+         ctx.lineTo(24, 0);
+          ctx.arc(30,40,20,1.4*Math.PI,1*Math.PI);
+          
+         //ctx.fillStyle='lightyellow';
+         
+          
+
+         ctx.stroke();
+         var tank =document.getElementById("tank");
+
+         var ctx = tank.getContext("2d");
+          
+         ctx.beginPath();
+         ctx.rect(0,0,60,120)
+         ctx.stroke();
+          
+      </script>
+     
+ 
+  </body>
+    
+    
+</html>

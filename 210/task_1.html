@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     </head>
+      <style>
+          #input_no{             
+              width:2rem;
+             
+          }
+          #output_no{
+              
+              padding:0 0 0 0rem;
+              margin:0 0 0 2rem;
+              width:2rem;
+              position:static;
+          }
+          .drop_down {
+              margin :6rem 0 0 0rem ;
+              display:inline-block;
+              z-index:2;
+              width:100%;
+              
+
+          }
+          .drop_down_item{
+              background-color:lightgray;
+              margin:6px 0 0 0;
+              border:1px solid;
+              padding:0 0 0 2rem;
+              width:100%;
+              height:0rem;
+              display:block;
+              overflow:hidden;
+              transition:  4s;
+           
+              
+          }
+          .drop_down_item a{
+              
+              display:block;
+              
+          }
+          .drop_down_item a:hover{
+              height:2rem;
+              background-color:gray;
+          }
+          .button{
+              background-color:lightblue;
+          }
+          .table{
+              position:absolute;
+              
+              margin:6rem 0 0 8rem;
+              background-color:lightyellow;
+          }
+              
+              
+      </style>
+      
+          
+          
+          
+          
+    
+      
+
+    <title>task_1</title>
+ 
+  <body>
+      <div class='drop_down'>
+          <button onclick='drop_down()' class='button'>Dropdown</button>
+         <div class='drop_down_item' id='drop_down'>
+             
+          <a onclick="document.getElementById('try_button').value='square';
+            drop_up();">Square</a><br/>
+          <a onclick="document.getElementById('try_button').value='qube';
+            drop_up();"  >Qube</a><br/>
+          <a  onclick=" document.getElementById('try_button').value='square_root';
+            drop_up(); " >Square root</a><br/>
+          <a  onclick="document.getElementById('try_button').value='sin';
+            drop_up(); " >sin() </a><br/>
+          <a  onclick="document.getElementById('try_button').value='cos';
+            drop_up(); "  >cos()</a><br/>
+          <a  onclick="document.getElementById('try_button').value='tan';
+            drop_up(); " >tan()</a><br/>
+          <a  onclick="document.getElementById('try_button').value='log';
+            drop_up(); "  >log()</a><br/>
+          </div>
+      </div>
+      
+      
+      
+      <table class='table'>
+          <tr>
+              <td style='margin:0 0 0 0;'>Enter no.</td>
+              <td class='output' style='margin:0 0 0 3rem;padding:0 0 0 1rem;' >Output</td>
+          </tr>
+          <tr>
+              <td><input id='input_no'></td>
+              <td><input id='output_no'></td>
+              <td><input type='button'id='try_button' onclick='main()' value='try'></td>
+          </tr>
+          
+          
+      </table>
+     
+ 
+  </body>
+    <script>
+        
+        
+        
+        function drop_up(){
+            document.getElementById('drop_down').style.height='0rem';
+            
+        }
+        
+        function drop_down(){
+            document.getElementById('drop_down').style.height='18rem';
+        }
+        
+        function main(){
+            const value=document.getElementById('try_button').value;
+            const input=document.getElementById('input_no').value;
+                const out=document.getElementById('output_no').value;
+            
+            const obj=new main_class(input,out);
+            
+            if (value=='square'){
+               
+                document.getElementById('output_no').value=obj.square();
+            }
+            else if(value=='qube'){
+                document.getElementById('output_no').value=obj.qube();
+            }
+            else if(value=='square_root'){
+                document.getElementById('output_no').value=obj.square_root();
+            }
+            else if(value=='sin'){
+                document.getElementById('output_no').value=obj.sin();
+            }
+            else if(value=='cos'){
+                document.getElementById('output_no').value=obj.cos();
+            }
+            else if(value=='tan'){
+                document.getElementById('output_no').value=obj.tan();
+            }
+            else if(value=='log'){
+                document.getElementById('output_no').value=obj.log();
+            }
+            else{
+                document.write('retry');
+            }
+        }
+        
+        
+        class main_class{
+            constructor(input,output){
+                this.input=input;
+                this.output=output;
+                
+            }
+            
+            
+           square(){
+              
+               return this.input*this.input;
+                  
+               
+           } 
+            
+            
+            
+            qube(){
+               
+                   
+                   return this.input*this.input*this.input;
+               
+               
+           }
+            
+            square_root(){
+               
+                   
+                   return Math.sqrt(this.input);
+               
+               
+           }
+            sin(){
+                return Math.sin(this.input   );
+            }
+            cos(){
+                return Math.cos(this.input     );
+                
+            }
+            tan(){
+                return Math.tan(this.input     );
+            }
+            log(){
+                return Math.log(this.input     );
+            }
+            
+            
+            
+        }
+        
+        
+        
+    </script>
+</html>

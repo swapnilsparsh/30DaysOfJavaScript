@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     </head>
+      <style>
+          .whole_setup{
+              width:100%;
+              height:100%;
+              border:1px solid;
+              display:block;
+              position:absolute;
+                  
+          }
+          .tank_1{
+              margin:6rem 0 0 4rem;
+              height:10rem;
+              width:8rem;
+              border:1px solid;
+              position:relative;   
+              
+          }
+            .tank_2{
+                margin:6rem 0 0 4rem;
+              height:10rem;
+              width:8rem;
+              border:1px solid;
+                position:relative; 
+                bottom:0px;
+          }
+          #fluid_1{
+              position:absolute;
+              background-color:lightblue;
+              height:1rem;
+              width:100%;
+              transition:  3s;
+              bottom:0px;
+          }
+          #fluid_2{
+              position:absolute;
+              background-color:lightblue;
+              height:2rem;
+              width:100%;
+              bottom:0px;
+              transition:  3s;
+          }
+          .tank_1_connecter{
+              position:absolute;
+              height:1rem;
+              width:1rem;
+              border:2px solid;
+              margin:-10rem 0 0 12rem;
+          }
+          .tank_2_connecter{
+              position:absolute;
+              height:1rem;
+              width:1rem;
+              border:2px solid;
+              margin:-5rem 0 0 12rem;
+          }
+          #slide_2{
+              width:15rem;
+          }
+          #bulb{
+              position:absolute;
+              border:2px solid;
+              width:1.5rem;
+              height:1.5rem;
+              border-radius:2rem;
+              margin:-0.8rem 0 0 22rem;
+          }
+          #slide_1{
+              position:absolute;
+              width:15rem;
+              transform: rotate 90;
+          }
+          
+      </style>
+      
+          
+          
+          
+    
+      
+
+    <title>My Project</title>
+ 
+  <body>
+       <div class='whole_setup' >
+           <div>
+          
+               <div class='tank_1'>
+                   <p>Tank 1</p>
+              
+                   <div id='fluid_1'></div>
+          
+               </div>
+               <div >
+          
+              
+                   <div class='tank_1_connecter'><p>9/10</p>
+                   </div>
+                   <hr/  style='position:absolute;width:6rem;margin:-9.5rem 0 0 13rem;height:1px;background-color:black;'>
+                   <hr/  style='position:absolute;width:0rem;margin:-9.5rem 0 0 19rem;height:12rem;background-color:black;'>
+                   <hr/  style='position:absolute;width:3rem;margin:2.5rem 0 0 19rem;height:0rem;background-color:black;'>
+                   
+                   
+               </div>
+               <input id='slide_1' type="range" min="1" max="100" value="2">
+           
+           
+           <p>Value: <span id="demo_1"></span>
+           </p>
+
+               <spam id='bulb'></spam>
+          
+               <div class='tank_2'>
+                   
+                   <p>Tank 2</p>
+              
+                   <div id='fluid_2'></div>
+          
+               </div>
+           
+               <div class='tank_2_connecter'><p>5/10</p>
+                   </div>
+                   <hr/  style='position:absolute;width:6rem;margin:-4.5rem 0 0 13rem;height:1px;background-color:black;'>
+               <hr/  style='position:absolute;width:0rem;margin:-14.5rem 0 0 19rem;height:10rem;background-color:black;'>
+               <hr/  style='position:absolute;width:3rem;margin:-14.5rem 0 0 19rem;height:0rem;background-color:black;'>
+                   
+              
+               
+           
+           </div>
+           
+           <input id='slide_2' type="range" min="1" max="100" value="2">
+           
+           
+           <p>Value: <span id="demo_2"></span>
+           </p>
+
+      
+     
+      
+      </div>
+      <script>
+         // const main =main();
+          var bulb=document.getElementById('bulb');
+              
+          var fluid_1=document.getElementById("fluid_1");
+          
+                  
+          var fluid_2=document.getElementById("fluid_2");
+         
+         
+                  
+          var slider_2=document.getElementById('slide_2');
+          
+                  
+          var output_2=document.getElementById("demo_2");
+          
+                  
+          var slider_1=document.getElementById('slide_1');
+          
+                  
+          var output_1=document.getElementById("demo_1");
+          
+          
+          
+          const main={
+              
+          
+          
+     
+              main_fun_2:function(slider,output,fluid_1,fluid_2,bulb){
+                  slider.oninput=function()
+                  {
+                      output.innerHTML=this.value;
+                      if(this.value/10<='5'){
+                          fluid_2.style.height=this.value/10+'rem';
+                          if (this.value/10>='5'){
+                              bulb.style.backgroundColor='red';
+                              fluid_1.style.height='10rem';
+                      
+                          }
+                 
+                      }
+                  }
+              },
+              main_fun_1:function(slider,output,fluid_1,fluid_2,bulb){
+                  slider.oninput=function()
+                  {
+                      output.innerHTML=this.value;
+                      if(this.value/10<='9'){
+                          fluid_1.style.height=this.value/10+'rem';
+                          if (this.value/10>='9'){
+                              bulb.style.backgroundColor='red';
+                              fluid_2.style.height='10rem';
+                      
+                          }
+                          
+                 
+                      }
+                  }
+              },
+          }
+          
+          console.log(main.main_fun_2(slider_2,output_2,fluid_1,fluid_2,bulb));
+          
+          console.log(main.main_fun_1(slider_1,output_1,fluid_1,fluid_2,bulb));
+          
+          
+          
+          
+          
+              
+          
+          
+          
+          
+
+          
+
+          
+      </script>
+ 
+  </body>
+</html>
