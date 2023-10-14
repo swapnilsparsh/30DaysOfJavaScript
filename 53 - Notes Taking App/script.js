@@ -23,13 +23,19 @@ function createContainer(){
     return elementdiv;
 }
 function createNoteElement(id, content){
-    const element = document.createElement("textarea");
+    const element = document.createElement("div");
     element.classList.add("note");
     element.value = content;
-    element.placeholder = "Empty Note";
+    element.textContent = "Empty Note";
+    element.setAttribute("contenteditable","true")
 
     element.addEventListener("change", () => {
         updateNote(id, element.value);
+    });
+    element.addEventListener('click', (e)=>{
+        if(element.textContent == "Empty Note"){
+            element.textContent = '';
+        }
     });
     
      
@@ -49,6 +55,33 @@ function createDeleteButton(id,element){
     })
     return elementDelete;
 }
+function createTextDecorationButtons(id,element){
+    const boldBtn = document.createElement("button");
+    boldBtn.classList.add("btn");
+    boldBtn.classList.add("boldBtn");
+    boldBtn.textContent = "B";
+
+    const underlineBtn = document.createElement("button");
+    underlineBtn.classList.add("btn");
+    underlineBtn.classList.add("underlineBtn");
+    underlineBtn.textContent = "U";
+
+    const italicBtn = document.createElement("button");
+    italicBtn.classList.add("btn");
+    italicBtn.classList.add("italicBtn");
+    italicBtn.textContent = "I";
+
+    boldBtn.addEventListener("click", () => {
+        bold();
+    })
+    underlineBtn.addEventListener("click", () => {
+        underline();
+    })
+    italicBtn.addEventListener("click", () => {
+        italic();
+    })
+    return [boldBtn, underlineBtn, italicBtn];
+}
 function addNote(){
     const notes = getNotes();
     const noteObj = {
@@ -61,6 +94,10 @@ function addNote(){
     note_conatiner.appendChild(noteElement);
     const deleteButton = createDeleteButton(noteObj.id,note_conatiner);
     note_conatiner.appendChild(deleteButton);
+    const decorateTextButtons = createTextDecorationButtons(noteObj.id,note_conatiner);
+    decorateTextButtons.forEach(e=>{
+        note_conatiner.appendChild(e)
+    });
 
     notes.push(noteObj);
     saveNotes(notes);
@@ -80,6 +117,56 @@ function deleteNote(id, element) {
     saveNotes(notes);
     notesContainer.removeChild(element);
 }
-
-
-
+function bold(){
+    var span = document.createElement("div");
+    span.classList.add("bold");
+    
+    if (window.getSelection) {
+        var text = window.getSelection();
+        if (text.rangeCount) {
+            var range = text.getRangeAt(0).cloneRange();
+            range.surroundContents(span);
+            text.removeAllRanges();
+            text.addRange(range);
+        }
+    }
+}
+function underline(){
+    var span = document.createElement("div");
+    span.classList.add("underline");
+    
+    if (window.getSelection) {
+        var text = window.getSelection();
+        if (text.rangeCount) {
+            var range = text.getRangeAt(0).cloneRange();
+            range.surroundContents(span);
+            text.removeAllRanges();
+            text.addRange(range);
+        }
+    }
+}
+function italic(){
+    var span = document.createElement("div");
+    span.classList.add("italic");
+    
+    if (window.getSelection) {
+        var text = window.getSelection();
+        if (text.rangeCount) {
+            var range = text.getRangeAt(0).cloneRange();
+            range.surroundContents(span);
+            text.removeAllRanges();
+            text.addRange(range);
+        }
+    }
+}
+document.addEventListener('keydown', (e)=>{
+    if(e.key == "b" && e.altKey){
+        bold();
+    }
+    else if(e.key == "u" && e.altKey){
+        underline();
+    }
+    else if(e.key == "i" && e.altKey){
+        italic();
+    }
+})
