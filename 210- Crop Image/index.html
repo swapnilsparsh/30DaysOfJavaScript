@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Crop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="input-group">
+  <input type="text" id="imageUrl" placeholder="Enter image URL">
+  <button id="loadImageButton">Load Image</button>
+</div>
+
+<div id="cropDimensions">
+  <span>Crop Dimensions:</span>
+  <input type="number" id="cropWidth" placeholder="Width">
+  <input type="number" id="cropHeight" placeholder="Height">
+</div>
+
+<div id="canvasContainer">
+  <canvas id="canvas" width="600" height="400"></canvas>
+</div>
+
+<div class="action-buttons">
+  <button id="cropButton">Crop Image</button>
+  <button id="resetButton">Reset Canvas</button>
+  <button id="downloadButton">Download Cropped Image</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
