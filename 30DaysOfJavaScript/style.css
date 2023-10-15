@@ -420,6 +420,16 @@ header {
   display: block;
   margin: 0 auto;
 }
+#searchbar {
+  margin: 14px 0px;
+  background-color: rgba(38, 35, 35, 0.526);
+  color: white;
+}
+
+#searchbar::placeholder {
+  color: rgba(255, 255, 255, 0.684);
+}
+
 @media only screen and (max-width: 320px) {
   h1 {
     font-size: 18px;
