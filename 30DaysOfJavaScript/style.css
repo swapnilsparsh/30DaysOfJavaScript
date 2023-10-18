@@ -280,6 +280,7 @@ footer a:visited {
   height: 40px;
   background-color: #5520b6;
   border-radius: 50%;
+  z-index: 100;
 }
 
 .scrollToTop span {
