@@ -86,7 +86,7 @@ function movedown(){
 }
  var timer = setInterval(movedown, 1000)
 
- //stoping the shapes
+ //stopping the shapes
 
  function stop(){
      if(currentshape.some(index => squares[currentposition + index + width].classList.contains('freeze'))){
