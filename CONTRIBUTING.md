@@ -21,47 +21,34 @@ in case you are stuck:
 
 Below you will find the process and workflow used to review and merge your changes.
 
-### Step 0 : Find an issue
-
-- Take a look at the Existing Issues or create your **own** Issues!
-- Wait for the Issue to be assigned to you after which you can start working on it.
-- Note : Every change in this project should/must have an associated issue.
-
+### Step 1. Find an Issue
+- Check our [Existing Issues](#) or create a new one if you have an idea.
+- Wait for the issue to be assigned to you before you start working.
+- Every change must have an associated issue:
 ![Issue](https://user-images.githubusercontent.com/73248007/135501033-ac37f22d-cd96-4326-bf0b-7d0ed070b697.png)
 
 
-### Step 1 : Fork the Project
-
-- Fork this Repository. This will create a Local Copy of this Repository on your Github Profile.
-Keep a reference to the original project in `upstream` remote.  
-
-```bash
-git clone https://github.com/<your-username>/<repo-name>  
-cd <repo-name>  
-git remote add upstream https://github.com/<upstream-owner>/<repo-name>  
-```  
+### Step 2. Fork the Project
+- Fork the repository. This creates your local copy.
+- Keep a reference to the original project (upstream).
+- If you've already forked, update your copy before working:
 ![Fork](https://user-images.githubusercontent.com/73248007/135501084-3643da44-118d-4f7a-a8c7-05cef93296b7.png)
 
-
-
-- If you have already forked the project, update your copy before working.
-
 ```bash
-git remote update
-git checkout <branch-name>
-git rebase upstream/<branch-name>
-```  
+git clone https://github.com/<your-username>/<repo-name>
+cd <repo-name>
+git remote add upstream https://github.com/<upstream-owner>/<repo-name>
+```
 
-### Step 2 : Branch
-
-Create a new branch. Use its name to identify the issue your addressing.
-
+### Step 3. Create a Branch
+- Create a new branch with a name that relates to the issue you're addressing.
+- Work in this branch:
 ```bash
-# It will create a new branch with name Branch_Name and switch to that branch 
+# To create a branch with name branch_name
 git checkout -b branch_name
 ```
 
-### Step 3 : Work on the issue assigned
+### Step 4 : Work on the issue assigned
 
 - Work on the issue(s) assigned to you.
 - Add all the files/folders needed.
@@ -74,18 +61,19 @@ git add .
 git add <some files>
 ```
 
-### Step 4 : Commit
+### Step 5 : Commit
 
-- To commit give a descriptive message for the convenience of reviewer by:
+- Provide a clear commit message.
+- Each pull request (PR) should have only one commit; multiple commits should be squashed:
 
 ```bash
 # This message get associated with all files you have changed  
-git commit -m "message"  
+git commit -m "Your descriptive message" 
 ```
 
 - **NOTE**: A PR should have only one commit. Multiple commits should be squashed.
 
-### Step 5 : Work Remotely
+### Step 6 : Work Remotely
 
 - Now you are ready to your work to the remote repository.
 - When your work is ready and complies with the project conventions, upload your changes to your fork:
@@ -99,13 +87,14 @@ git push -u origin Branch_Name
 ![Branch](https://user-images.githubusercontent.com/73248007/135501103-b446d342-70b3-451e-895e-52345eb7cb0e.png)
 
 
-### Step 6 : Pull Request
+### Step 7 : Create a Pull Request
 
-- Go to your repository in browser and click on compare and pull requests.
-Then add a title and description to your pull request that explains your contribution.  
+- Go to your repository on the web.
+- Click on "Compare and Pull Requests."
+- Add a title and description that explains your contribution.
+- Your PR will be reviewed and merged by the moderators.
+- That's it! Your contribution is on its way. Thanks for helping improve our project! 🚀  
 
 ![PR](https://user-images.githubusercontent.com/73248007/135501122-6d3bde84-5a50-4baf-8be7-80a4e9f9d51a.png)
 
 - Yay, Your Pull Request has been submitted and will be reviewed by the moderators and merged.
-    
-
