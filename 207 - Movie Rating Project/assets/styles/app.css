@@ -177,6 +177,10 @@ input:focus {
   flex: 1;
   border-radius: 10px 0 0 10px;
   overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .movie-element__image img {
