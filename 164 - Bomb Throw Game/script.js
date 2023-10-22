@@ -35,7 +35,7 @@ setInterval( ()=> {
   cmCan.css({
     transform: 'translateX(' + cmCanX + 'cm)'
   });
-  // computer Cannon wheel rotaion on move
+  // computer Cannon wheel rotation on move
   $('.cm .wheel').css({
     transform: 'rotate(' + ( cmCanX ) + 'deg)'
   })
