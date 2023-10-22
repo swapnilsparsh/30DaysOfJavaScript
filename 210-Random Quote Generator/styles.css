@@ -1,0 +1,60 @@
+/* Apply basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the quote container */
+#quote-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Style the quote text */
+#quote-text {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Style the "Generate Quote" button */
+#new-quote-button {
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+#new-quote-button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles (customize as desired) */
+/* You can add more styles for the body, buttons, etc. */
+
+/* Center the button horizontally */
+#new-quote-button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Center the quote text */
+#quote-text {
+  text-align: center;
+}
+
+/* Add space below the button */
+#new-quote-button {
+  margin-bottom: 20px;
+}
