@@ -9,11 +9,14 @@ const line = document.querySelector("#line");
 const rect = document.querySelector("#rect");
 const circle = document.querySelector("#circle");
 
+let dataURL;
+
 function setup() {
     // create a canvas which is full width and height
   	createCanvas(window.innerWidth, window.innerHeight);
     // Add a white background to the canvas
   	background(255);
+	dataURL = canvas.toDataURL();
 }
 
 function draw() {
@@ -59,6 +62,7 @@ clear.addEventListener('click', () => {
 	paths.splice(0);
     // Clear the background
 	background(255);
+	dataURL = canvas.toDataURL();
 });
 
 
@@ -67,6 +71,7 @@ window.onload = () => {
 	var ctx = c.getContext("2d");
 	let x1,y1,x2,y2,x3,y3;
 	let gradient;
+	let isDown = false;
 	const color2 = document.querySelector("#color2");
 
 	document.querySelector("#gradient").addEventListener('click', () => {
@@ -81,8 +86,24 @@ window.onload = () => {
 	document.querySelector("#defaultCanvas0").addEventListener("mousedown", (e) => {
 		x1 = e.clientX;
 		y1 = e.clientY - 42;
+		isDown = true
+	});
+	document.querySelector("#defaultCanvas0").addEventListener("mousemove", (e) => {
+		if(isDown){
+			const image = new Image();
+			image.src = dataURL;
+			image.addEventListener("load", () => {
+				ctx.drawImage(image, 0, 0, window.innerWidth, window.innerHeight);
+			});
+			drawing(e);
+		}
 	});
 	document.querySelector("#defaultCanvas0").addEventListener("mouseup", (e) => {
+		isDown = false;
+		drawing(e);
+		dataURL = canvas.toDataURL();
+	});
+	function drawing(e){
 		if(line.checked){
 			x2 = e.clientX;
 			y2 = e.clientY - 42;
@@ -139,5 +160,5 @@ window.onload = () => {
 			}
 			ctx.fill();
 		}
-	});
+	}
 }
