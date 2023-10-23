@@ -110,7 +110,7 @@ var has3d,
 		return {x: x, y: y};
 	},
 
-	// Returns the traslate value
+	// Returns the translate value
 
 	translate = function(x, y, use3d) {
 		return (has3d && use3d) ? ' translate3d(' + x + 'px,' + y + 'px, 0px) ' : ' translate(' + x + 'px, ' + y + 'px) ';

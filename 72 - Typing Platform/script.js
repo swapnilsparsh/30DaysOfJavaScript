@@ -101,7 +101,7 @@ function endingit()
     clearInterval(stopfun);
     timerdis.classList.add('hidden');
     count=0;
-    // timming=30;
+    // timing=30;
     SectionElement.innerHTML='';
     html=`<div class="done">Accuracy ${(100-(error/lenght*100)).toFixed(2)}%</div>`
     SectionElement.insertAdjacentHTML('beforeend',html);
