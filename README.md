@@ -35,7 +35,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 16  |            [Countdown Timer](https://30daysofjs.netlify.app/16%20-%20countdown%20timer/)            |
 | 17  |        [Text Speed Control](https://30daysofjs.netlify.app/17%20-%20text%20speed%20control/)        |
 | 18  |                   [Stopwatch](https://30daysofjs.netlify.app/18%20-%20stopwatch/)                   |
-| 19  |              [Traffic Lights](https://30daysofjs.netlify.app/19%20-traffic%20lights/)               |
+| 19  |              [Traffic Lights](https://30daysofjs.netlify.app/19%20-%20traffic%20lights/)               |
 | 20  |             [Levitate Board](https://30daysofjs.netlify.app/20%20-%20levitate%20board/)             |
     
  </td><td>
