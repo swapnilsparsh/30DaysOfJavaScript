@@ -26,31 +26,46 @@ $(document).ready(function () {
 
 });
 
-function toggleDarkLight() {
-  var body = document.getElementById("body");
-  var button = document.getElementById("toggle");
-  if (button.innerHTML == "🌙") {
+
+function checkTheme(){
+  console.log("Checking theme")
+  const body = document.querySelector('body');
+  const button = document.getElementById("toggle");
+
+  const themeLocalStorage = localStorage.getItem("theme");
+  console.log('Valor em themeLocalStorage:', themeLocalStorage);
+
+  if (themeLocalStorage) {
+    console.log(`diferente de null`)
+    body.className = themeLocalStorage 
+  }
+
+  if(themeLocalStorage == "light-mode") {
     button.innerHTML = "☀️";
   } else {
     button.innerHTML = "🌙";
   }
 
-  var trans = () => {
-    document.documentElement.classList.add("transition");
-    window.setTimeout(() => {
-      document.documentElement.classList.remove("transition");
-    }, 500);
-  };
+}
+document.addEventListener('DOMContentLoaded', checkTheme)
 
-  var currentClass = body.className;
-  // body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-  if (currentClass == "dark-mode") {
-    trans();
+function toggleDarkLight(){
+  const body = document.querySelector('body');
+
+  const button = document.getElementById("toggle");
+
+  console.log(body.classList)
+  if(body.classList.contains("dark-mode")){
     body.className = "light-mode";
+    button.innerHTML = "☀️";
+    localStorage.setItem("theme", "light-mode" );
   } else {
-    trans();
-    body.className = "dark-mode";
+    body.className = "dark-mode"
+    button.innerHTML = "🌙";
+    localStorage.setItem("theme", "dark-mode" );
+    
   }
+
 }
 
 let currentPage = 1;
