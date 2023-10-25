@@ -1,31 +1,33 @@
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  overflow: hidden;
+  font-family: 'sans';
   font-size: 10px;
-  background-color: #19172e;
+  background: #19172e;
   user-select: none;
 }
 
-
-.whole{
-  margin-bottom:50px;
-  display: flex;
-  flex-direction: column;
+@font-face {
+  src: url('font/sans.ttf');
+  font-family: 'sans';
 }
 
-h3,p{
-  font-size: 3rem;
+h1 {
+  font-size: 5.5rem;
+  color: #FEFFE2;
+  font-family: "Arvo", cursive;
   text-align: center;
-  color: white;
-  text-align: center;
+}
+
+span {
+  font-weight: 100;
 }
 
 .keys {
   display: flex;
   flex: 1;
-  min-height:40vh;
+  min-height: 40vh;
   align-items: center;
   justify-content: center;
 }
@@ -62,26 +64,22 @@ kbd {
   color: #bb86fc;
 }
 
-kbd{
+kbd {
   cursor: pointer;
 }
 
-footer{
+footer {
   text-align: center;
-  color: #fff;
-}
-
-a{
-  color: #fff;
-}
-
-.rfooter{
+  color: white;
+  font-size: 1.5rem;
   position: absolute;
-  bottom:50px;
-  left:35%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
 }
 
-.rfooter a{
-  color: blue;
-  text-align: center;
+footer a:visited {
+  color: inherit;
 }

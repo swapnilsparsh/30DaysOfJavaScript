@@ -27,6 +27,9 @@ h1{
     top: 0;
     padding-top: 120px;
 }
+h2{
+    margin-bottom: 20px;
+}
 
 #start-button{
     position: absolute;

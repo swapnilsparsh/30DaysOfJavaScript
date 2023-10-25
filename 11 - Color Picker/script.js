@@ -73,10 +73,13 @@ colorPicker.addEventListener('input', ()=>{
 
 function hex(){
     navigator.clipboard.writeText(document.getElementById("hex-value").innerHTML);
+    toastr.success('Now you can use it!', 'Copied to clipboard', { timeOut: 3000 });
 }
 function rgb(){
     navigator.clipboard.writeText(document.getElementById("rgb-value").innerHTML);
+    toastr.success('Now you can use it!', 'Copied to clipboard', { timeOut: 3000 });
 }
 function hsl(){
     navigator.clipboard.writeText(document.getElementById("hsl-value").innerHTML);
+    toastr.success('Now you can use it!', 'Copied to clipboard', { timeOut: 3000 });
 }
