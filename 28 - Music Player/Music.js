@@ -50,7 +50,7 @@ const loadsong = (songs) => {
     audio.src = "Music/" + songs.name + ".mp3";
     img.src = "images/" + songs.name + ".jpg";
 }
-songindex = 0;
+songindex = 1;
 const nextsong = () => {
     songindex = (songindex + 1) % songs.length;
     loadsong(songs[songindex]);
@@ -68,6 +68,6 @@ previous.addEventListener('click', prevsong);
 //volume control
 let volume_slider = document.querySelector('.volume_slider');
 
-function setVolume(){
+function setVolume() {
     audio.volume = volume_slider.value / 100;
 }

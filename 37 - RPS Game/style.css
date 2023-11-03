@@ -43,21 +43,22 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 100px auto 30px;
+  margin: 30px auto 30px;
   padding: 10px;
 }
+
 @media screen and (max-width: 600px) {
-  .container{
-    flex-direction: column;
+  img {
+    margin: -5px;
   }
 }
 
-
-footer, a{
+footer,
+a {
   color: #fff;
 }
 
-footer{
+footer {
   text-align: center;
   position: absolute;
   bottom: 0;

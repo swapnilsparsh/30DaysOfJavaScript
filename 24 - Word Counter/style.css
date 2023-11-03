@@ -46,7 +46,7 @@ textarea:focus {
 }
 
 .output.row {
-  padding: 80px;
+  padding-top: 80px;
   font-size: 1.3rem;
 }
 

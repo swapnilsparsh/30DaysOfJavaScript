@@ -60,4 +60,6 @@ for (let i = 0; i < cardslength; i++) {
   cards.push(card);
 
   container.appendChild(card);
+
+  console.log("Cards", card)
 }

@@ -1,47 +1,43 @@
-'use strict'
-
- //We are accessing input elements as global variables by ID
-
-const isBlank = function(value) {
+const isBlank = function (value) {
   return (value.trim() === "" ? true : false)
 }
-const isBetween = function(length, min = 5, max = 25) {
+const isBetween = function (length, min = 5, max = 25) {
   return length < min || length > max ? false : true
 }
-const setError = function(input, message) {
+const setError = function (input, message) {
   const parentElement = input.parentElement
   parentElement.classList.remove("success")
   parentElement.classList.add("error")
   parentElement.querySelector("small").textContent = message
 }
-const setSuccess = function(input) {
+const setSuccess = function (input) {
   const parentElement = input.parentElement
   parentElement.classList.remove("error")
   parentElement.classList.add("success")
   parentElement.querySelector("small").textContent = ""
 }
-const isValidEmail = function(email) {
+const isValidEmail = function (email) {
   const format = new RegExp(/^(([^<>() [\]\\.,;:\s@"]+(\.[^<>() [\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
   return format.test(String(email).toLowerCase())
 }
-const isPasswordSecure = function(password) {
+const isPasswordSecure = function (password) {
   const format = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/)
   return format.test(String(password))
 }
 
 //Only One space between two words will be passed
-const isValidUserName = function(username) {
+const isValidUserName = function (username) {
   const format = new RegExp(/^([^\s]*[A-Za-z0-9]\s{0,1})[^\s]*$/)
   return format.test(String(username).toLowerCase())
 }
 
-const validateUsername = function() {
+const validateUsername = function () {
   let isInputValid = false
   const username = username_input.value.trim()
 
   if (isBlank(username)) {
     setError(username_input, "Username can't be blank.")
-  } else if (!isValidUserName(username) ) {
+  } else if (!isValidUserName(username)) {
     setError(username_input, `Username Invalid`);
   }
   else if (!isBetween(username.length)) {
@@ -54,7 +50,7 @@ const validateUsername = function() {
   return isInputValid;
 }
 
-const validateEmail = function() {
+const validateEmail = function () {
   let isInputValid = false
   const email = email_input.value.trim()
 
@@ -70,7 +66,7 @@ const validateEmail = function() {
   return isInputValid;
 }
 
-const validatePassword = function() {
+const validatePassword = function () {
   let isInputValid = false
 
   const password = password_input.value.trim()
@@ -90,7 +86,7 @@ const validatePassword = function() {
   return isInputValid
 }
 
-const validateConfirmPassword = function() {
+const validateConfirmPassword = function () {
   let isInputValid = false
   const confirmPassword = confirm_password_input.value.trim()
   const password = password_input.value.trim()
@@ -107,9 +103,9 @@ const validateConfirmPassword = function() {
   return isInputValid
 };
 
-const debounce = function(fn, delay = 500) {
+const debounce = function (fn, delay = 500) {
   let timeoutId;
-  return function(...args) {
+  return function (...args) {
     // cancel the previous timer
     if (timeoutId) {
       clearTimeout(timeoutId)
@@ -121,7 +117,7 @@ const debounce = function(fn, delay = 500) {
   }
 }
 //
-const selectValidatorToRun = function(event) {
+const selectValidatorToRun = function (event) {
   switch (event.target.id) {
     case "username_input":
       validateUsername()
@@ -138,13 +134,13 @@ const selectValidatorToRun = function(event) {
   }
 }
 
-signup_form.addEventListener("submit", function(event) {
+signup_form.addEventListener("submit", function (event) {
   event.preventDefault()
 
   const a = validateUsername(), b = validateEmail(), c = validatePassword(), d = validateConfirmPassword()
 
   if (a && b && c && d)
-    alert("All good! Sending to the server...")
+    alert("All good!")
 });
 
 signup_form.addEventListener("input", debounce(selectValidatorToRun))

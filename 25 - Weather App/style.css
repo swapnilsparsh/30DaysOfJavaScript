@@ -12,34 +12,33 @@
 body {
   color: black;
   font-family: "sans";
-   height:100vh;
-   overflow:hidden;
-   background-image: url('Clear1.jpg');
-   background-repeat: no-repeat;
-   background-position: top-center;
-   /* font-family: Arial, Helvetica, sans-serif; */
-   background-size: cover;
-   text-align: center;
-  
-   
+  height: 100vh;
+  /* overflow: hidden; */
+  background-image: url('Clear1.jpg');
+  background-repeat: no-repeat;
+  background-position: top-center;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background-size: cover;
+  text-align: center;
 }
-.hedd{
+
+.hedd {
   font-size: 50px;
   font-family: "sans";
   margin-top: 3px;
 }
 
-h1{
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-top: 20px;
-    font-family: "sans";
+h1 {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  font-family: "sans";
 }
 
-.modal{
+.modal {
   position: absolute;
   text-align: center;
   top: 0;
@@ -55,7 +54,7 @@ h1{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-   /* background: #19172e;  */
+  /* background: #19172e;  */
 }
 
 .weather {
@@ -70,16 +69,18 @@ h1{
   font-size: 3rem;
   font-weight: 800;
 }
+
 .desc {
   font-size: 1.25rem;
   text-transform: capitalize;
 }
 
 footer {
+  background-color: #19172e;
   text-align: center;
-  color: black;
+  color: white;
   font-size: 1rem;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -92,13 +93,13 @@ footer a:visited {
 }
 
 @media only screen and (max-width: 768px) {
-  .modal{
+  .modal {
     display: block;
   }
 }
 
 .app-main {
-  min-width: 50vh;
+  min-width: 30vh;
   width: 50vw;
   margin: 10px auto;
   background-color: rgba(255, 255, 255, 0.50);
@@ -111,87 +112,78 @@ footer a:visited {
   margin-bottom: 20px;
 
 }
-.input-box{
+
+.input-box {
   width: 100%;
-  background-color:rgba(255, 255, 255, 0.50);
+  background-color: rgba(255, 255, 255, 0.50);
   border: none;
   outline: none;
   color: #582233;
   font-size: 25px;
   height: 50px;
-  
+
   border-radius: 5px;
   padding: 0 10px;
   text-align: center;
 
 }
+
 .input-box:focus {
   background-color: rgba(255, 255, 255, 0.50);
 }
-.weather-body{
+
+.weather-body {
   display: none;
   color: #582233;
   padding: 10px;
   line-height: 2rem;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.50);
-  /* height: 40vh; */
   text-align: center;
-  
-
-  
 }
-.location{
+
+.location {
   font-weight: bold;
-
 }
 
-.weather-status{
+.weather-status {
   padding: 10px;
   align-items: center;
   text-align: center;
-
 }
-.temp{
+
+.temp {
   font-size: 50pt;
   font-weight: 700;
   margin: 20px 0;
   text-shadow: 2px 4px rgba(0, 0, 0, 0);
   text-align: center;
-
 }
-.min-max, .weather{
+
+.min-max,
+.weather {
   font-size: 12pt;
   font-weight: 600;
   text-align: center;
 }
-.weather{
+
+.weather {
   font-size: 12pt;
   font-weight: 600;
   justify-content: center;
 }
+
 .heading {
   width: 100%;
   text-align: center;
-  padding-top: 45px;   
+  padding-top: 45px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 200%;
-  font-weight: bold; 
+  font-weight: bold;
   font-style: italic;
   text-align: center;
 }
 
-.fot {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  
-  
-}
-
-#myChart{
+#myChart {
   display: none;
 }

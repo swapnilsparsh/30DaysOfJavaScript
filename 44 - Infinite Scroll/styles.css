@@ -10,6 +10,7 @@
   font-family: "sans";
   src: url(font/sans.ttf);
 }
+
 body {
   color: #fff;
   font-family: "sans";
@@ -132,7 +133,6 @@ h1 {
 }
 
 footer {
-  color: pink;
   font-size: 1rem;
   padding: 22px;
   line-height: 3vh;

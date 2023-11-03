@@ -1,10 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "sans";
 }
+
 /* -----------Font Change----------------- */
 @font-face {
   font-family: "sans";
@@ -18,8 +19,9 @@
   display: grid;
   place-items: center;
 }
+
 .music_container {
-  width: 29rem;
+  width: 25rem;
   height: 55rem;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgb(0 0 0 / 10%);
@@ -28,6 +30,7 @@
   padding: 2rem;
   text-align: center;
 }
+
 .music_container #title {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -38,6 +41,7 @@
   font-weight: 500;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
 }
+
 .music_container #artist {
   color: #fff;
   text-transform: capitalize;
@@ -46,14 +50,17 @@
   margin-bottom: 4rem;
   font-weight: 300;
 }
+
 audio {
   display: none;
 }
+
 .img_container {
-  width: 25rem;
-  height: 25rem;
+  width: 21rem;
+  height: 21rem;
   margin: auto;
 }
+
 img {
   width: 100%;
   height: 100%;
@@ -61,6 +68,7 @@ img {
   object-fit: cover;
   box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
+
 .music_controls .fa-solid {
   width: 5rem;
   height: 5rem;
@@ -73,14 +81,16 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .music_controls {
-  width: 25rem;
+  width: 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   margin-top: 5rem;
 }
+
 .music_controls .main-button {
   width: 5rem;
   height: 5rem;
@@ -92,14 +102,18 @@ img {
   justify-content: center;
   align-items: center;
 }
-#Previous:hover,#Next:hover {
+
+#Previous:hover,
+#Next:hover {
   background-color: white;
   color: black;
 }
+
 .music_controls .main-button:hover {
   background-color: white;
   color: black;
 }
+
 .anime {
   animation: rotatePlayer 3s linear 3s;
 }
@@ -114,6 +128,7 @@ img {
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
+
 .volume_slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -125,14 +140,17 @@ img {
   cursor: pointer;
   border-radius: 100%;
 }
+
 .volume_slider:hover {
   opacity: 1.0;
 }
+
 .volume_slider {
-  margin-top: 15px ;
+  margin-top: 15px;
   width: 60%;
 }
- .fa{
+
+.fa {
   width: 15px;
   color: #fff;
   padding: 10px;
@@ -142,6 +160,7 @@ img {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +7,13 @@ body {
     overflow: hidden;
     background: #19172e;
     font-size: 40px;
-  }
+    font-family: "sans";
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
 
 .main {
     background: #614385;
@@ -29,6 +34,7 @@ body {
     height: 365px;
     padding-top: 8px;
 }
+
 h1 {
     color: #fff;
     text-align: center;
@@ -38,7 +44,13 @@ h1 {
     top: 30px;
     padding-top: 10px;
     font-size: 2rem !important;
-  }
+}
+
+h5 {
+    color: #fff;
+    margin-top: 2rem;
+    text-align: center;
+}
 
 #board {
     background-color: #260e44;
@@ -51,7 +63,7 @@ h1 {
     grid-template-columns: repeat(18, 1fr);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     margin-left: 18px;
-    margin-top:5px;
+    margin-top: 5px;
 
 }
 
@@ -101,8 +113,8 @@ footer {
     bottom: 0;
     margin-bottom: 0;
     padding: 5px;
-  }
-  
-  footer a:visited {
+}
+
+footer a:visited {
     color: inherit;
-  }
+}
