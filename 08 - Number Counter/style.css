@@ -84,13 +84,19 @@ button {
 }
 
 .increase {
-    bottom: 10%;
     right: -15%;
 }
 
 .decrease {
-    bottom: -15%;
-    right: 10%;
+    right: 85%;
+}
+
+.reset {
+  bottom: 85%;
+}
+
+.save {
+  top: 85%;
 }
 
 .btn {
@@ -131,8 +137,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-
 
 @media screen and (min-width : 635px) {
 
