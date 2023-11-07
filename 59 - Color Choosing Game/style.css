@@ -59,7 +59,7 @@
 	width: 100%;
 }
 #play{
-	display: inline-block;
+	display: none;
 	width: 120px;
 	height: 40px;
 	color: white;
