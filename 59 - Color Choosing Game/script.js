@@ -27,8 +27,10 @@ function startGame(mode = currMode) {
     case "easy": {
       row1.style.visibility = "visible";
       row2.style.visibility = "hidden";
-      for (let i = 0; i < 3; i++)
+      for (let i = 0; i < 3; i++) {
         onElem[i].style.visibility = "visible";
+        onElem[i + 3].style.visibility = "hidden";
+      }
       break;
     };
     case "hard": {
