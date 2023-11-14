@@ -54,10 +54,10 @@ function fetchUser(){
             alert("user not found");
             return false;
         }else{
-            user_img.innerHTML = `<img src="${data.avatar_url}">`;
-            userName.innerHTML = data.login;
-            followers_.innerHTML = data.followers;
-            follow_.innerHTML = data.following;
+            user_img.innerHTML = `<img src="${data.avatar_url}" onclick="window.open('https://www.github.com/${data.login}')">`;
+            userName.innerHTML = `<span onclick="window.open('https:///www.github.com/${data.login}')">${data.login}</span>`;
+            followers_.innerHTML = `<span onclick="window.open('https://www.github.com/${data.login}?tab=followers')">${data.followers}</span>`
+            follow_.innerHTML = `<span onclick="window.open('https://www.github.com/${data.login}?tab=following')">${data.following}</span>`
 
         }
     })
@@ -103,7 +103,7 @@ function fetchUser(){
                     console.log(item);
                     return(
                         `
-                        <div class="item_">
+                        <div class="item_" onclick="window.open('https://www.github.com/${userName.innerText}/${item.name}')">
                         <div class="repo_name">${item.name}</div>
                         <div class="repo_details_">
                             <div class="info_star">
