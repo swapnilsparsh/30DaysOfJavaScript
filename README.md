@@ -20,9 +20,9 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 6   |                    [Calendar](https://30daysofjs.netlify.app/06%20-%20calendar/)                    |
 | 7   |        [Dynamic Form Field](https://30daysofjs.netlify.app/07%20-%20dynamic%20form%20field/)        |
 | 8   |             [Number Counter](https://30daysofjs.netlify.app/08%20-%20number%20counter/)             |
-| 9   |                  [Dice Roll](https://30daysofjs.netlify.app/09%20-%20dice%20roll/)                  |    
+| 9   |                  [Dice Roll](https://30daysofjs.netlify.app/09%20-%20dice%20roll/)                  |
 | 10  |    [Emoji Switcher](https://30daysofjs.netlify.app/10%20-%20emoji%20switcher%20like%20discord/)     |
-    
+
  </td><td>
     
 | Day |                                                Name                                                 |
@@ -53,10 +53,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 29  |                [To Do List](https://30daysofjs.netlify.app/29%20-%20to%20do%20list/)                |
 | 30  |               [Tic Tac Toe](https://30daysofjs.netlify.app/30%20-%20tic%20tac%20toe/)               |
 
-  
 </td></tr></table>
-
-
 
 ## Extra Practice
 
@@ -68,7 +65,6 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | --- | :-----------------------------------------------------------------------------------------------------------------: |
 | 31  |                  [Pop the Ballons](https://30daysofjs.netlify.app/31%20-%20pop%20the%20balloons/)                   |
 | 32  |                           [Key Code](https://30daysofjs.netlify.app/32%20-%20key%20code/)                           |
-| 33  |                        [Feedback UI](https://30daysofjs.netlify.app/33%20-%20feedback%20ui/)                        |
 | 34  |                      [Virtual Piano](https://30daysofjs.netlify.app/34%20-%20virtual%20piano/)                      |
 | 35  |                 [Decimal To Binary](https://30daysofjs.netlify.app/35%20-%20decimal%20to%20binary/)                 |
 | 36  |                             [Hangman](https://30daysofjs.netlify.app/36%20-%20hangman/)                             |
@@ -76,20 +72,12 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 38  |                          [Snake-Game](https://30daysofjs.netlify.app/38%20-%20snake-game/)                          |
 | 39  |                     [Age Calculator](https://30daysofjs.netlify.app/39%20-%20age%20calculator/)                     |
 | 40  |                 [Gradient Generator](https://30daysofjs.netlify.app/40%20-%20gradient%20generator/)                 |
-| 41  |                      [Basic-Carousel](https://30daysofjs.netlify.app/41%20-%20basic-carousel/)                      |
 | 42  |            [Simple Form Validation](https://30daysofjs.netlify.app/42%20-%20simple%20form%20validation/)            |
 | 43  |        [Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20getting%20started%20with%20apis/)        |
 | 44  |                    [Infinite Scroll](https://30daysofjs.netlify.app/44%20-%20infinite%20scroll/)                    |
-| 45  |                   [Chatting App](https://30daysofjs.netlify.app/45%20-%20chatting%20app/client/)                    |
-| 46  |                    [Image Slider](https://30daysofjs.netlify.app/40%20-%20gradient%20generator/)                    |
 | 47  |              [Caesar Cipher](https://30daysofjs.netlify.app/47%20-%20caesar%20cipher/2_caesar_cipher)               |
-| 48  |                   [Attendance Table](https://30daysofjs.netlify.app/48%20-%20attendance%20table/)                   |
-| 49  |                [Content Placeholder](https://30daysofjs.netlify.app/49%20-%20Content%20Placeholder/)                |
-| 50  |                     [Country Detail](https://30daysofjs.netlify.app/50%20-%20Country%20Detail/)                     |
-| 51  |                        [Notes Maker](https://30daysofjs.netlify.app/51%20-%20Notes%20Maker/)                        |
 | 52  |              [Temperature Convertor](https://30daysofjs.netlify.app/52%20-%20Temperature%20Convertor/)              |
 | 53  |                  [Notes Taking App](https://30daysofjs.netlify.app/53%20-%20Notes%20Taking%20App/)                  |
-| 54  |            [Project Idea Generator](https://30daysofjs.netlify.app/54%20-%20Project%20Idea%20Generator/)            |
 | 55  |                            [Weeblist](https://30daysofjs.netlify.app/55%20-%20Weeblist/)                            |
 | 56  |            [Jokes Chrome Extension](https://30daysofjs.netlify.app/56%20-%20Jokes%20Chrome%20Extension/)            |
 | 57  |                           [Quiz App](https://30daysofjs.netlify.app/57%20-%20Quiz%20App/)                           |
@@ -125,7 +113,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 87  |       [Body Mass Index Calculator](https://30daysofjs.netlify.app/87%20-%20Body%20Mass%20Index%20Calculator/)       |
 | 88  |                    [Ping Pong Game](https://30daysofjs.netlify.app/88%20-%20Ping%20Pong%20Game/)                    |
 | 89  |       [Projectile Motion Simulator](https://30daysofjs.netlify.app/89%20-%20Projectile%20Motion%20Simulator/)       |
-    
+
  </td><td>   
     
 | Day |                                                Name                                                                 |
@@ -252,13 +240,9 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 205 |               [Domain Availability](https://30daysofjs.netlify.app/205%20-%20Domain%20Availability/)                |
 
  </td></tr></table>
- 
 
 
 ## Contributing!
-
-
-
 
 Before making any contribution, big or small, Contributors are advised to go through the [Contributing Guidelines](./CONTRIBUTING.md).
 
