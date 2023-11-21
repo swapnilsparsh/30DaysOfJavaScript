@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    background-color: #9BBEC8;
+    background-size: cover;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: start;
+    padding: 5rem 0px;
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+
+/* upper section heading */
+.heading {
+    width: 100%;
+    text-align: center;
+    margin: 7px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #0C356A;
+    font-family: cursive;
+}
+
+/* lower section */
+.lowerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    color: #0C356A;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.inputField {
+    border-radius: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border: 2px solid white;
+    width: 20%;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    padding: 5px 18px;
+
+}
+
+.inputField:focus {
+    background-color: #176B87;
+    color: white;
+    border: 2px solid skyblue;
+}
+
+.submitButton {
+    border: 2px solid #0174BE;
+    padding: 5px 18px;
+    background-color: #0C356A;
+    border-radius: 1.4rem;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    border: 2px solid #0C356A;
+    background-color: #0174BE;
+}
+
+
+/* generated text section */
+.text-wrapper {
+    background-color: #F1EFEF;
+    /* display: none; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    width: 80%;
+    padding: 10px 18px;
+    border-radius: 1.4rem;
+    font-weight: bold;
+    overflow-y: hidden;
+
+}
+
+
+.copy-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.copy {
+    color: #7C81AD;
+
+}
+
+.copy:hover {
+    color: #4B527E;
+}
+
+@media  screen and (max-width: 768px) {
+    body {
+        padding: 1rem 0; /* Adjusted padding for smaller screens */
+    }
+
+    .wrapper{
+        width: 100%;
+        padding: 2px 8px;
+    }
+    .inputField{
+        width: 50%;
+    }
+    .label {
+       
+        font-size: 1.2rem;
+        width: 50%;
+    }
+    .text-wrapper{
+        width: 90%;
+    }
+    
+   
+}
