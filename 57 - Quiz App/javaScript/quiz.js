@@ -23,15 +23,15 @@ let checkAnswer = (answerGiven, rightAnswer, options) => {
             id(answerGiven).style.color = "#fff";
 
         }
-        
+
         options.map(option => {
             if (option === b64_to_utf8(rightAnswer)) {
-                try{
+                try {
 
                     id(option).style.background = "#32CD32";
                     id(option).style.color = "#fff";
                 }
-                catch(err){
+                catch (err) {
                     console.log(err);
                 }
             }
@@ -54,11 +54,11 @@ let renderQuestion = (questionDetail) => {
         RadioButton.setAttribute("type", "radio");
         RadioButton.setAttribute("name", "answer");
         RadioButton.setAttribute("value", option);
-        RadioButton.setAttribute("class","form-check-input");
+        RadioButton.setAttribute("class", "form-check-input");
 
         let Label = document.createElement("label");
         Label.innerHTML = option;
-        Label.setAttribute("class","form-check-label");
+        Label.setAttribute("class", "form-check-label");
 
         Div.appendChild(RadioButton);
         Div.appendChild(Label);
@@ -90,13 +90,13 @@ let displayInitialData = (quizChosen) => {
         if (remainingtimeForQuiz === 0) {
 
             if (questionNumber < quizChosen.data.length) {
-                
+
                 let answerGiven = queryselector("input[name='answer']:checked");
                 if (answerGiven) {
                     answerGiven = answerGiven.value;
                 }
                 checkAnswer(answerGiven, quizChosen.data[questionNumber].answer, quizChosen.data[questionNumber].options);
-                
+
             }
 
             console.log(questionAnswersGiven);
@@ -118,10 +118,10 @@ let displayInitialData = (quizChosen) => {
             if (answerGiven) {
                 answerGiven = answerGiven.value;
             }
-            if(questionNumber<quizChosen.data.length-1){
+            if (questionNumber < quizChosen.data.length - 1) {
                 remainingTimeForQuestion = quizChosen.timePerQuestion;
             }
-            
+
             checkAnswer(answerGiven, quizChosen.data[questionNumber].answer, quizChosen.data[questionNumber].options);
             classes("submit")[0].classList.add("disabled");
             classes("next")[0].classList.remove("disabled");
@@ -137,7 +137,7 @@ let displayInitialData = (quizChosen) => {
     }
 
     classes("start-quiz")[0].addEventListener("click", () => {
-        
+
         renderQuestion(quizChosen.data[questionNumber]);
         id("rules-box").style.display = "none";
         id("question-box").style.display = "block";
@@ -186,7 +186,7 @@ let displayInitialData = (quizChosen) => {
 
         classes("submit")[0].classList.add("disabled");
         classes("next")[0].classList.remove("disabled");
-        
+
     });
 }
 

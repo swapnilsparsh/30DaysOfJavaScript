@@ -44,7 +44,7 @@ body {
     width: 41px;
     position: absolute;
     background-color: rgb(0, 0, 0);
-    background-image: url("car2.png");
+    background-image: url("assets/car.png");
     background-size: cover;
     bottom: 120px;
     background-position-x: center;
@@ -56,7 +56,7 @@ body {
     width: 41px;
     position: absolute;
     background-color: rgb(0, 0, 0);
-    background-image: url("enemycar2.png");
+    background-image: url("assets/enemycar.png");
     -webkit-transform: scaleY(-1);
     background-size: cover;
     bottom: 120px;
@@ -78,6 +78,6 @@ body {
 .push {
     height: 50px;
     width: 401px;
-    transform: translateX(107%);
+    margin: auto;
     border: 5px solid crimson;
 }

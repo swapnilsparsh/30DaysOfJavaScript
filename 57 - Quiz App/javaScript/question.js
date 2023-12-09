@@ -1,5 +1,5 @@
 let quizOne = {
-    "title": "General quizzes for testing purposes - part 1",
+    "title": "General Quiz - Part 1",
     "data": [
         {
             "id": "af0153c2-9860-48f2-bfd2-641111d59214",
@@ -61,7 +61,7 @@ let quizOne = {
 }
 
 let quizTwo = {
-    "title": "General quizzes for testing purposes - part 2",
+    "title": "General Quiz - Part 2",
     "data": [
         {
             "id": "af0153c2-9860-48f2-bfd2-641111d59214",
@@ -123,7 +123,7 @@ let quizTwo = {
 }
 
 let quizThree = {
-    "title": "General quizzes for testing purposes - part 3",
+    "title": "General Quiz - Part 3",
     "data": [
         {
             "id": "af0153c2-9860-48f2-bfd2-641111d59214",

@@ -45,7 +45,7 @@ loop(function (frames) {
   removeLetters(frames);
 });
 
-function createLetters () {
+function createLetters() {
   if (Math.random() < letter.probability) {
     const x = Math.random() < 0.5 ? 0 : canvas.width;
     const y = Math.random() * canvas.height;
@@ -63,7 +63,7 @@ function createLetters () {
   }
 }
 
-function removeLetters (frames) {
+function removeLetters(frames) {
   for (const l of letters) {
     if (isIntersectingRectangleWithCircle({ x: l.x, y: l.y - letter.height }, letter.width, letter.height, center, center.radius)) {
       if (--lives === 0) {
@@ -81,7 +81,7 @@ function removeLetters (frames) {
   }
 }
 
-function type (i, l) {
+function type(i, l) {
   letters.splice(i, 1);
   score++;
   createParticles(l.x, l.y);
@@ -96,7 +96,7 @@ window.changeCase = function () {
   }
 };
 
-function keyDownHandler (e) {
+function keyDownHandler(e) {
   if (animation !== undefined && e.keyCode >= 65 && e.keyCode <= 90) {
     for (let i = letters.length - 1; i >= 0; i--) {
       const l = letters[i];
@@ -123,7 +123,7 @@ function keyDownHandler (e) {
   }
 }
 
-function keyUpHandler (e) {
+function keyUpHandler(e) {
   if (e.keyCode === 27) {
     if (animation === undefined) {
       animation = window.requestAnimationFrame(gameLoop);
@@ -134,7 +134,7 @@ function keyUpHandler (e) {
   }
 }
 
-function resizeHandler () {
+function resizeHandler() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   center.x = canvas.width / 2;

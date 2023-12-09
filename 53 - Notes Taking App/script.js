@@ -10,52 +10,52 @@ getNotes().forEach(note => {
 addNoteButton.addEventListener("click", () => addNote());
 
 
-function getNotes(){
+function getNotes() {
     return JSON.parse(localStorage.getItem("note-ap") || "[]");
 }
 
-function saveNotes(notes){
+function saveNotes(notes) {
     localStorage.setItem("note-ap", JSON.stringify(notes));
 }
-function createContainer(){
+function createContainer() {
     const elementdiv = document.createElement("div");
     elementdiv.classList.add("note-container");
     return elementdiv;
 }
-function createNoteElement(id, content){
+function createNoteElement(id, content) {
     const element = document.createElement("div");
     element.classList.add("note");
     element.value = content;
     element.textContent = "Empty Note";
-    element.setAttribute("contenteditable","true")
+    element.setAttribute("contenteditable", "true")
 
     element.addEventListener("change", () => {
         updateNote(id, element.value);
     });
-    element.addEventListener('click', (e)=>{
-        if(element.textContent == "Empty Note"){
+    element.addEventListener('click', (e) => {
+        if (element.textContent == "Empty Note") {
             element.textContent = '';
         }
     });
-    
-     
+
+
 
     return element;
 }
-function createDeleteButton(id,element){
+function createDeleteButton(id, element) {
     const elementDelete = document.createElement("button");
     elementDelete.classList.add("Delete_Button");
     const image = document.createElement("img");
-    image.setAttribute("src", "reshot-icon-delete-KL8MB62NXD.png");
-    image.setAttribute("alt","Delete");
+    image.setAttribute("src", "assets/deleteIcon.png");
+    image.setAttribute("alt", "Delete");
 
     elementDelete.appendChild(image);
     elementDelete.addEventListener("click", () => {
-        deleteNote(id,element);
+        deleteNote(id, element);
     })
     return elementDelete;
 }
-function createTextDecorationButtons(id,element){
+function createTextDecorationButtons(id, element) {
     const boldBtn = document.createElement("button");
     boldBtn.classList.add("btn");
     boldBtn.classList.add("boldBtn");
@@ -82,20 +82,20 @@ function createTextDecorationButtons(id,element){
     })
     return [boldBtn, underlineBtn, italicBtn];
 }
-function addNote(){
+function addNote() {
     const notes = getNotes();
     const noteObj = {
-        id: Math.floor(Math.random()*100000),
+        id: Math.floor(Math.random() * 100000),
         content: ""
     };
-    let note_conatiner= createContainer();
-    notesContainer.insertBefore(note_conatiner,addNoteButton);
+    let note_conatiner = createContainer();
+    notesContainer.insertBefore(note_conatiner, addNoteButton);
     const noteElement = createNoteElement(noteObj.id, noteObj.content);
     note_conatiner.appendChild(noteElement);
-    const deleteButton = createDeleteButton(noteObj.id,note_conatiner);
+    const deleteButton = createDeleteButton(noteObj.id, note_conatiner);
     note_conatiner.appendChild(deleteButton);
-    const decorateTextButtons = createTextDecorationButtons(noteObj.id,note_conatiner);
-    decorateTextButtons.forEach(e=>{
+    const decorateTextButtons = createTextDecorationButtons(noteObj.id, note_conatiner);
+    decorateTextButtons.forEach(e => {
         note_conatiner.appendChild(e)
     });
 
@@ -105,7 +105,7 @@ function addNote(){
 
 function updateNote(id, newContent) {
     const notes = getNotes();
-    const target = notes.filter(note=>note.id == id)[0];
+    const target = notes.filter(note => note.id == id)[0];
 
     target.content = newContent;
     saveNotes(notes);
@@ -117,10 +117,10 @@ function deleteNote(id, element) {
     saveNotes(notes);
     notesContainer.removeChild(element);
 }
-function bold(){
+function bold() {
     var span = document.createElement("div");
     span.classList.add("bold");
-    
+
     if (window.getSelection) {
         var text = window.getSelection();
         if (text.rangeCount) {
@@ -131,10 +131,10 @@ function bold(){
         }
     }
 }
-function underline(){
+function underline() {
     var span = document.createElement("div");
     span.classList.add("underline");
-    
+
     if (window.getSelection) {
         var text = window.getSelection();
         if (text.rangeCount) {
@@ -145,10 +145,10 @@ function underline(){
         }
     }
 }
-function italic(){
+function italic() {
     var span = document.createElement("div");
     span.classList.add("italic");
-    
+
     if (window.getSelection) {
         var text = window.getSelection();
         if (text.rangeCount) {
@@ -159,14 +159,14 @@ function italic(){
         }
     }
 }
-document.addEventListener('keydown', (e)=>{
-    if(e.key == "b" && e.altKey){
+document.addEventListener('keydown', (e) => {
+    if (e.key == "b" && e.altKey) {
         bold();
     }
-    else if(e.key == "u" && e.altKey){
+    else if (e.key == "u" && e.altKey) {
         underline();
     }
-    else if(e.key == "i" && e.altKey){
+    else if (e.key == "i" && e.altKey) {
         italic();
     }
 })

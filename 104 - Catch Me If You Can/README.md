@@ -18,18 +18,14 @@ Catch Me If You Can is a game made through HTML,CSS and JAVASCRIPT
   </a>
 </div>
 
-## ⚡️  Introduction
+## ⚡️ Introduction
+
 It box whose size changes dynamically according to viewport size. Now when you hover over the box, it should change its position randomly inside the viewport.
-
-
-## 📷 Screenshots
-
-![ss1](./img/161269486-aaa2271d-1fa4-4e41-9c4f-da0167a508bb.gif)
-
 
 ## ‎‍💻 Authors
 
 - [@iamrahulmahato](https://www.github.com/iamrahulmahato)
+
 ## ⭐️ Show your support
 
 Give a star if this project helped you
