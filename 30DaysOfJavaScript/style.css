@@ -25,12 +25,14 @@ body {
   background-position: center;
   z-index: 99999;
 }
+
 .top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 /* Dark Mode */
 body.dark-mode {
   background-color: black;
@@ -97,6 +99,7 @@ body.light-mode svg {
 }
 
 @keyframes octocat-wave {
+
   0%,
   100% {
     transform: rotate(0);
@@ -126,7 +129,8 @@ body.light-mode svg {
 .toggleButton {
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 20px;
+  left: 20px;
   /* margin: 30px 3px 3px 10px; */
   margin: 20px 3px 3px 10px;
   /* padding-top: 3px;
@@ -137,7 +141,6 @@ body.light-mode svg {
   border: none;
   border-radius: 50%;
   font-size: 45px;
-  left: 0;
 }
 
 html.transition,
@@ -421,6 +424,7 @@ header {
   display: block;
   margin: 0 auto;
 }
+
 #searchbar {
   margin: 14px 0px;
   background-color: rgba(38, 35, 35, 0.526);
@@ -543,16 +547,19 @@ header {
     font-size: 40px;
   }
 }
+
 @media screen and (max-width: 401px) {
   .toggleButton {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 301px) {
   .toggleButton {
     font-size: 25px;
   }
 }
+
 @media screen and (max-width: 241px) {
   .toggleButton {
     font-size: 18px;
@@ -562,19 +569,21 @@ header {
 .pagination button:not(:first-child):not(:last-child) {
   width: 40px;
 }
+
 .pagination button:first-child,
 .pagination button:last-child {
   height: 40px;
   width: 100px;
   padding: 6px 10px;
 }
-.pagination > button:hover {
+
+.pagination>button:hover {
   background-color: rgb(96, 130, 182);
   color: white;
   /* background-color: rgb(83, 99, 83); */
 }
 
-.pagination > button {
+.pagination>button {
   border-radius: 20px;
   padding: 12px;
   outline: none;
