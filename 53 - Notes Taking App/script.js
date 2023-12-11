@@ -3,8 +3,7 @@ const addNoteButton = notesContainer.querySelector(".add-note");
 
 let delete_element = false;
 getNotes().forEach(note => {
-    const noteElement = createNoteElement(note.id, note.content);
-    notesContainer.insertBefore(noteElement, addNoteButton);
+    createNote(note.id, note.content)
 });
 
 addNoteButton.addEventListener("click", () => addNote());
@@ -26,11 +25,11 @@ function createNoteElement(id, content) {
     const element = document.createElement("div");
     element.classList.add("note");
     element.value = content;
-    element.textContent = "Empty Note";
+    element.textContent = content ? content : "Empty Note";
     element.setAttribute("contenteditable", "true")
 
-    element.addEventListener("change", () => {
-        updateNote(id, element.value);
+    element.addEventListener("keydown", () => {
+        updateNote(id, element.textContent);
     });
     element.addEventListener('click', (e) => {
         if (element.textContent == "Empty Note") {
@@ -82,22 +81,25 @@ function createTextDecorationButtons(id, element) {
     })
     return [boldBtn, underlineBtn, italicBtn];
 }
+function createNote(id, content){
+    let note_container = createContainer();
+    notesContainer.insertBefore(note_container, addNoteButton);
+    const noteElement = createNoteElement(id, content);
+    note_container.appendChild(noteElement);
+    const deleteButton = createDeleteButton(id, note_container);
+    note_container.appendChild(deleteButton);
+    const decorateTextButtons = createTextDecorationButtons(id, note_container);
+    decorateTextButtons.forEach(e => {
+        note_container.appendChild(e)
+    });
+}
 function addNote() {
     const notes = getNotes();
     const noteObj = {
         id: Math.floor(Math.random() * 100000),
         content: ""
     };
-    let note_conatiner = createContainer();
-    notesContainer.insertBefore(note_conatiner, addNoteButton);
-    const noteElement = createNoteElement(noteObj.id, noteObj.content);
-    note_conatiner.appendChild(noteElement);
-    const deleteButton = createDeleteButton(noteObj.id, note_conatiner);
-    note_conatiner.appendChild(deleteButton);
-    const decorateTextButtons = createTextDecorationButtons(noteObj.id, note_conatiner);
-    decorateTextButtons.forEach(e => {
-        note_conatiner.appendChild(e)
-    });
+    createNote(noteObj.id, noteObj.content)
 
     notes.push(noteObj);
     saveNotes(notes);
