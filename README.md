@@ -167,10 +167,6 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
  </td><td>   
  </td></tr></table>
- 
-## Contributing!
-
-Before making any contribution, big or small, Contributors are advised to go through the [Contributing Guidelines](./CONTRIBUTING.md).
 
 ## Code of Conduct
 
