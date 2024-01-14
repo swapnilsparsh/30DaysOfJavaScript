@@ -1,16 +1,15 @@
 // Preloader
-var preloader = document.getElementById('loading');
+var preloader = document.getElementById("loading");
 
 function loading() {
   setTimeout(myfunction, 2000);
 }
 function myfunction() {
-  preloader.style.display = 'none';
+  preloader.style.display = "none";
 }
 
-
 $(document).ready(function () {
-  renderProjects()
+  renderProjects();
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 100) {
       $(".scrollToTop").fadeIn();
@@ -23,71 +22,82 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 500);
     return false;
   });
-
 });
 
-
-function checkTheme(){
-  console.log("Checking theme")
-  const body = document.querySelector('body');
+function checkTheme() {
+  console.log("Checking theme");
+  const body = document.querySelector("body");
   const button = document.getElementById("toggle");
 
   const themeLocalStorage = localStorage.getItem("theme");
-  console.log('Valor em themeLocalStorage:', themeLocalStorage);
+  console.log("Valor em themeLocalStorage:", themeLocalStorage);
 
   if (themeLocalStorage) {
-    console.log(`diferente de null`)
-    body.className = themeLocalStorage 
+    console.log(`diferente de null`);
+    body.className = themeLocalStorage;
   }
 
-  if(themeLocalStorage == "light-mode") {
+  if (themeLocalStorage == "light-mode") {
     button.innerHTML = "☀️";
   } else {
     button.innerHTML = "🌙";
   }
-
 }
-document.addEventListener('DOMContentLoaded', checkTheme)
+document.addEventListener("DOMContentLoaded", checkTheme);
 
-function toggleDarkLight(){
-  const body = document.querySelector('body');
+function toggleDarkLight() {
+  const body = document.querySelector("body");
 
   const button = document.getElementById("toggle");
 
-  console.log(body.classList)
-  if(body.classList.contains("dark-mode")){
+  console.log(body.classList);
+  if (body.classList.contains("dark-mode")) {
     body.className = "light-mode";
     button.innerHTML = "☀️";
-    localStorage.setItem("theme", "light-mode" );
+    localStorage.setItem("theme", "light-mode");
   } else {
-    body.className = "dark-mode"
+    body.className = "dark-mode";
     button.innerHTML = "🌙";
-    localStorage.setItem("theme", "dark-mode" );
-    
+    localStorage.setItem("theme", "dark-mode");
   }
-
 }
 
 let currentPage = 1;
 
-var x = document.getElementsByClassName('item');
+var x = document.getElementsByClassName("item");
 
 function search_project() {
-  let input = document.getElementById('searchbar').value.toLowerCase();
-  
-  for (let i = 0; i < x.length; i++) {
-    const projectName = x[i].querySelector("h4").innerHTML.toLowerCase();
+  let input = document.getElementById("searchbar").value.toLowerCase();
+  let projectsContainer = document.getElementById("projectsContainer");
+  let projects = document.getElementsByClassName("item");
+  let found = false;
+
+  for (let i = 0; i < projects.length; i++) {
+    const projectName = projects[i].querySelector("h4").innerHTML.toLowerCase();
 
     if (!projectName.includes(input)) {
-      x[i].style.display = "none";
+      projects[i].style.display = "none";
     } else {
-      x[i].style.display = "list-item";
+      projects[i].style.display = "list-item";
+      found = true;
     }
+  }
+
+  let existingMessage = document.getElementById("noProjectMessage");
+  if (existingMessage) {
+    existingMessage.remove();
+  }
+
+  if (!found) {
+    let noProjectMessage = document.createElement("h1");
+    noProjectMessage.id = "noProjectMessage";
+    noProjectMessage.innerHTML = "No project found";
+    projectsContainer.appendChild(noProjectMessage);
   }
 }
 
 function renderProjects() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
   const projectsPerPage = 30;
   const startIndex = (currentPage - 1) * projectsPerPage;
   const endIndex = startIndex + projectsPerPage;
@@ -130,7 +140,6 @@ function goToPreviousPage() {
     updateActiveButton();
   }
 }
-
 
 function updateActiveButton() {
   const buttons = document.querySelectorAll(".pagination button");
