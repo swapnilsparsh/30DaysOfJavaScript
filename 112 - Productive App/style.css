@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  background: linear-gradient(to left, lightblue, lightgreen);
+  font-family: "Courier New", Courier, monospace;
+  /* border: 1px solid black; */
+}
+#hader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  color: rgb(148, 117, 216);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 35px;
+}
+
+.info-text {
+  text-align: center;
+  color: rgb(148, 117, 216);
+  font-size: 18px;
+}
+#theme{
+  padding: 8px;
+  border-radius: 6px;
+  background-color: rgba(148, 117, 216, 0.193);
+}
+#theme:hover{
+  color: white;
+  cursor: pointer;
+  background:linear-gradient(to left,#101010,black);
+}
+#main-container{
+  display: flex;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+  width: 75%;
+  border-right: 4px solid black;
+}
+
+.note {
+  padding: 17px;
+  border-radius: 15px;
+  resize: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  height: 200px;
+  color: rgb(148, 117, 216);
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+.note::placeholder {
+  color: gray;
+  opacity: 30%;
+}
+
+.note:hover,
+.note:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+}
+
+.btn{
+    height: 200px;
+    border-color: rgba(255, 255, 255, 0.37);
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 15px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.55);
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 300ms ease;
+}
+
+ /* stop watch
+#main-todoTimer{
+  border: 1px solid black;
+} */
+#noteinfo{
+  /* border: 1px solid green; */
+  margin-left: 5%;
+  color: rgb(148, 117, 216);
+  margin-bottom: 2%;
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px red;
+  color: rgb(148, 117, 216);
+  width: 600px;
+  text-align: center;
+  margin: 30px auto;
+  /* border: 1px solid blue; */
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid blue; */
+}
+
+button {
+  background-color: rgb(148, 117, 216);;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: rgb(134, 108, 189);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+@media (max-width: 800px) {
+  #timer {
+    font-size: 4rem;
+    width: 350px;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* to do list css */
+#main-todo{
+  margin: 8px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  /* position: absolute; */
+  top: 32%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+  /* width: 400px; */
+  background-color:rgb(148, 117, 216);
+  color: white;
+  border-radius: 10px;
+}
+
+.input{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.input::placeholder{
+  color: lightgray;
+}
+
+.list{
+  padding: 0;
+  margin: 0;
+}
+
+.list li{
+  list-style-type: none;
+  padding: 8px;
+  font-family: cursive;
+  border-top: 1px solid;
+  border-color: darkgray;
+  position: relative;
+}
+
+.list li .fa-trash{
+  color: rgb(245, 29, 29);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.list li .fa-check-square{
+  color: rgb(51, 240, 51);
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list li.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square{
+  color: darkgray;
+}
