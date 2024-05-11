@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Previewer</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  
+  textarea {
+    width: 45%;
+    height: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #preview {
+    width: 45%;
+    height: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <textarea id="markdown-input" placeholder="Enter Markdown here..."></textarea>
+    <div id="preview"></div>
+  </div>
+  
+  
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const markdownInput = document.getElementById('markdown-input');
+      const preview = document.getElementById('preview');
+
+     
+      function renderMarkdown(markdown) {
+  const lines = markdown.split('\n'); 
+  let html = ''; 
+  lines.forEach(line => {
+    const match = line.match(/^#+\s*(.*)$/);
+    if (match) {
+      const level = match[0].split('#').length - 1;
+      const text = match[1].trim(); 
+      
+      html += `<h${level}>${text}</h${level}>`;
+    }
+  });
+
+  return html;
+}
+
+
+      
+
+function updatePreview()
+{
+    preview.innerHTML = renderMarkdown(markdownInput.value);
+}
+      markdownInput.addEventListener('input', updatePreview);
+    });
+  </script>
+</body>
+</html>
