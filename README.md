@@ -164,6 +164,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 109 |                     [Number Facts](https://30daysofjs.netlify.app/145%20-%20Number%20Facts/)                     |
 | 110 |          [Pixel to em Converter](https://30daysofjs.netlify.app/110%20-%20Pixel%20to%20em%20Converter/)          |
 | 111 |          [Luminosity Particle Js](https://30daysofjs.netlify.app/141%20-%20Luminosity%20Particle%20Js/)          |
+| 112 |          [Maze Game](https://30daysofjs.netlify.app/112%20-%20Maze%20Game/)                                      |
 
  </td><td>   
  </td></tr></table>
