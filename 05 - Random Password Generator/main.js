@@ -13,20 +13,31 @@ const words = ['seat', 'pen', 'broad', 'vapor', 'ocean',
     'poem', 'depth', 'press', 'crowd', 'herd', 'drink', 'worry',
     'dried', 'dig', 'new', 'rest', 'play', 'win', 'strong'];
 
-function getPassword () {
-
-    const chars = '0123456789!@#$%&';
-    const clength = chars.length;
-    let password = '';
-
-    while (password.length < 20) {
-        password = password.concat(randomWord(chars.length));
-        password = password.concat(chars[randomNumber(clength)]);
+    function getPassword() {
+        let length = document.getElementById('length').value;
+        if (length === '') {
+            length = 8; // Setting default length to 8
+        }
+        
+        const includeLowercase = document.getElementById('includeLowercase').checked;
+        const includeUppercase = document.getElementById('includeUppercase').checked;
+        const includeSymbols = document.getElementById('includeSymbols').checked;
+        const includeNumbers = document.getElementById('includeNumbers').checked;
+    
+        let chars = '';
+        if (includeLowercase) chars += 'abcdefghijklmnopqrstuvwxyz';
+        if (includeUppercase) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        if (includeSymbols) chars += '!@#$%&';
+        if (includeNumbers) chars += '0123456789';
+    
+        let password = '';
+        for (let i = 0; i < length; i++) {
+            password += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+    
+        document.getElementById('password').value = password;
     }
-    password = password.substring(0, 16);
-
-    document.getElementById('password').value = password;
-}
+    
 
 function randomNumber (l) {
     return Math.floor(Math.random() * l);
