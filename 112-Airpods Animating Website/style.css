@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Hanken+Grotesk&family=Montserrat&family=Patua+One&family=Pixelify+Sans&family=Roboto&family=Roboto+Slab:wght@400;500&family=Slabo+27px&family=Young+Serif&display=swap');
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+#main{
+    width: 100%;
+    margin-left: 50px;
+    box-sizing: border-box;
+
+    
+}
+#navbar{
+    margin-top: 3vh;
+   font-size: 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-content: space-around;
+    /* border: 2px solid red; */
+    font-family: roboto,sans-serif;
+    margin-right: 100px;
+    padding: 2vh;
+    position: relative;
+    
+}
+
+#navbar a{
+    color: black;
+}
+#navbar #right{
+    display: flex;
+
+}
+#navbar #right a{
+    gap: 50px;
+   display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+ 
+}
+#navbar #right .ri-arrow-down-s-line{
+    visibility: hidden;
+    display: none;
+}
+
+#navbar #right span{
+    background-color: rgb(28, 149, 224);
+    color: white;
+    padding: 15px;
+    border-radius: 135px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+#navbar #left a {
+    padding-left: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 20px;
+}
+#left{
+    flex: 1 1 200px;
+}
+#landingpage img{
+    width: 15vh;
+    padding: 2vh;
+    margin-top: -20px;
+   /*  border: 1px solid red; */
+   opacity: 10;
+    
+   
+    
+}       
+#landingpage #image{
+    margin: 8vh;
+    padding: 4vh;
+}
+
+#landingpage{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-right: 12.5vh;
+    
+    
+}
+
+#landingpage .heading h2{
+    font-size: 8vw;
+    margin-bottom: 10px;
+    margin-top: -140px;
+   text-align: center;
+    /* border: 1px solid red; */
+    transform: translateY(130px);
+    opacity:0 ;
+    top: 0;
+    font-weight: 10;
+    margin-bottom: 1px;
+   /*  border: 1px solid red; */
+    
+
+    
+    
+}
+ .firstimg{
+   
+    transform: translateY(10px);
+    
+}
+
+
+.secondimg{
+    
+    transform: translateY(10px);
+   
+} 
+#landingpage p{
+   max-width: 300px;
+   text-align: left;
+   font-size: 18px;
+   opacity: 0;
+   margin-top: 0px;
+   transform: translateY(130px);
+  /*  border: 1px solid red; */
+}
+ #scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    flex-direction: column;
+
+}
+#scroll h4{
+    /* border: 1px solid red; */
+    margin-bottom:  20px;
+}
+#scroll img{
+    margin-top: 0;
+    /* border: 1px solid red; */
+    height: 30px;
+}
+
+#secondpage img{
+    width: 35vh;
+    
+}
+
+#secondpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+#secondpage #leftsecond{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#secondpage #leftsecond #part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#secondpage{
+    padding-top:50px ;
+    margin-bottom: 90px;
+}
+
+#secondpage #leftsecond .digit {
+    font-size: 80px;
+    font-weight: 100;
+}
+
+#secondpage #leftsecond .specification h3  {
+    display: flex;
+    padding: 2px;
+    gap: 10px;
+    margin: 1px;
+    
+}
+#secondpage #leftsecond .specification h3 span {
+    padding-top: 26px;
+    gap: 10px;
+    font-size: 50px;
+    font-weight: 50;
+ 
+}
+
+#secondpage #leftsecond .specification p{
+    text-align: center;
+    padding: 2px;
+    font-size: 18px;
+    text-align: center;
+    margin: 1px;
+}
+
+#secondpage #leftsecond #part2 h3{
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid red; */
+    padding-left: 0;
+}
+
+#secondpage #leftsecond #part2 h3 span {
+    padding-top:26px ;
+    gap: 20px;
+    font-size: 50px;
+    font-weight: 50;
+    /* border: 1px solid red; */
+    
+ 
+}
+
+#secondpage #leftsecond #part2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1px;
+    padding: 1px;
+}
+
+#secondpage #leftsecond #part2 p{
+  /*   border : 1px solid red; */
+    padding: 3px ;
+    margin: 1px ;
+    max-width: fit-content;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+/* Responsive styles for small screens */
+
+@media (max-width :768px) {
+    
+    #navbar #right .ri-arrow-down-s-line{
+        visibility: visible;
+        display: inline-block;
+        padding-top: 25px;
+        opacity: 0;
+    }
+
+    #landingpage{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    #navbar #right .hide{
+        display: none;
+        align-items: end;
+    }
+
+    #navbar #right span {
+        margin-top: 2px;
+    }
+
+    #navbar #left {
+       margin-left: -40px;
+      
+    }
+
+    #navbar #right {
+        margin-right: -10px;
+       
+    }
+    
+  
+
+    #landingpage .heading h2{
+       font-size: 8vw;
+       text-align: center;
+       padding-left: 5vw;
+       margin-top: 1px;
+       opacity: 0;
+       padding: 10px 15px;
+      /*  border: 1px solid blue; */
+    
+       
+       
+    }
+    #landingpage  p{
+        padding: 15px;
+        /* border: 1px solid red; */
+        margin: 0px;
+        max-width: fit-content;
+        text-align: center;
+        font-size: 15px;
+        opacity: 0;
+        
+        margin-top: -50px;
+    
+    }
+
+    #landingpage img{
+       /* border: 1px solid red; */
+       margin-top:60px;
+       width: 17vw;
+       height: 35vh;
+       gap: 0px;
+    }
+
+   
+    #landingpage {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        padding-bottom: 0;
+    }
+    #scroll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.8;
+        text-align: center;
+        font-size: 20px;
+        /* border: 1px solid red; */
+        margin-top: -70px;
+        flex-direction: column;
+        font-size: 15px;
+          
+    }
+    #scroll h4{
+        padding: 4px 10px;
+        margin-left: -80px;
+    }
+
+    #scroll img {
+          margin-left: -80px;
+    }
+
+
+    #secondpage #leftsecond #part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #secondpage{
+        padding-top:50px ;
+        margin-bottom: 10px;
+    }
+    #secondpage img{
+        width: 35vw;
+        
+    }
+    #secondpage #leftsecond .digit {
+        font-size: 8vw;
+        font-weight: 100;
+    }
+    
+    #secondpage #leftsecond .specification h3  {
+        display: flex;
+        padding: 2px;
+        gap: 10px;
+        margin: 1px;
+        
+    }
+    #secondpage #leftsecond .specification h3 span {
+        padding-top: 20px;
+        gap: 10px;
+        font-size: 5vw;
+        font-weight: 50;
+     
+    }
+    
+    #secondpage #leftsecond .specification p{
+        text-align: center;
+        padding: 2px;
+        font-size: 15px;
+        text-align: center;
+        margin: 1px;
+    }
+    
+    #secondpage #leftsecond #part2 h3{
+        display: flex;
+        gap: 10px;
+        /* border: 1px solid red; */
+        padding-left: 0;
+    }
+    
+    #secondpage #leftsecond #part2 h3 span {
+        padding-top:10px ;
+        gap: 20px;
+        font-size: 5;
+        font-weight: 4;
+        /* border: 1px solid red; */
+        
+     
+    }
+    
+    #secondpage #leftsecond #part2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 1px;
+    }
+    
+    #secondpage #leftsecond #part2 p{
+       /*  border : 1px solid red; */
+        padding: 3px ;
+        margin: 1px ;
+        max-width: fit-content;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+}
+
+
