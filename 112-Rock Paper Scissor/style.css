@@ -81,3 +81,10 @@ img{
   margin-top:20px;
   
 }
+footer{
+  background-color: #38040E;
+  
+  /* height: 5rem; */
+  text-align: center;
+  /* line-height: 5rem; */
+}
