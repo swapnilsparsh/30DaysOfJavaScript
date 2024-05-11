@@ -10,19 +10,27 @@
     <title>Random Password Generator</title>
 </head>
 <body>
+  <div class="container">
     <h2>Random Password Generator</h2>
     <div class="inputBox">
         <input type="text" name="" placeholder="Create Password" id="password" readonly="">
+        <input type="number" id="length" min="8" max="32" value="16" placeholder="Enter Number of Characters">
+        <label><input type="checkbox" id="includeLowercase" checked> Lowercase(a-z)</label>
+        <label><input type="checkbox" id="includeUppercase" checked> Uppercase(A-Z)</label>
+        <label><input type="checkbox" id="includeSymbols" checked> Symbols(@-*)</label>
+        <label><input type="checkbox" id="includeNumbers" checked> Numbers(0-9)</label>
+        
     </div>
-    <div id="btn" onclick="getPassword();" >Generate Password</div>
+    <div id="btn" onclick="getPassword();">Generate Password</div>
+  </div>
 
     <footer>
         <p>&#x3c; &#47; &#x3e; with ❤️ by 
-          <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+          <a href="https://swapnilsparsh.github.io/" class="name"><u>Swapnil Srivastava</u></a>
           <br> 
-          <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript
+          <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank" class="ProjectName">#30DaysOfJavaScript
           </a>
         </p>
-      </footer>
+    </footer>
 </body>
 </html>
