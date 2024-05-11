@@ -1,0 +1,83 @@
+*{
+  margin:0;
+  padding:0;
+  background-color: #E6E8E6;
+}
+h1{
+  background-color: #38040E;
+  color:white;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+}
+.choice{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choice:hover{
+  opacity: 0.5;
+  cursor: pointer;
+  background-color: #F0F3F5;
+  border-color: #7B2D26;
+  border-style: solid;
+}
+
+/*eah individual img will get its own height and width*/
+img{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: #D7C9AA;
+}
+.choices{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap:3rem;
+  margin-top: 2rem;
+}
+.score-board{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+  margin-top:2rem;
+  column-gap: 5rem;
+  font-size:2rem;
+}
+#user-score,#comp-score{
+  font-size:4rem;
+}
+#msg{
+  background-color:#7B2D26;
+  color: white;
+  font-size: 2rem;
+  display: inline;/*since we need the line only for the text*//*inline tha*/
+  text-align: center;
+  padding: .8rem;
+  border-radius: 10px;
+}
+.msg-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.reset-score{
+  height:40px;
+  width: 100px;
+  color:white;
+  font-size:1rem;
+  background-color: #38040E;
+  border-radius: 20px;
+  border-style:none;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: 10px;;
+  margin-top:20px;
+  
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rock-Paper-Scissors</h1>
+  <div class="choices">
+    <div class="choice" id="rock">
+      <img src="images/rock.png">
+    </div>
+    <div class="choice" id="paper">
+      <img src="images/paper.png">
+    </div>
+    <div class="choice" id="scissor">
+      <img src="images/scissor.png">
+    </div>
+  </div>
+  <div class="score-board">
+    <div class="score">
+      <p id="user-score">0</p><!--since this  will change therefore given an id-->
+      <p>You</p>
+    </div>
+    <div class="score">
+      <p id="comp-score">0</p>
+      <p>Computer</p>
+    </div>
+  </div>
+  <div class="msg-container">
+    <p id="msg">play your move!</p>
+  </div>
+  <button class="reset-score">reset game</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
