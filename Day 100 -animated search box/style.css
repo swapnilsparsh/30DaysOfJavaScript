@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #664aff;
+}
+::selection{
+    color: #fff;
+    background: #664aff;
+}
+.search-box {
+  position: relative;
+  height: 60px;
+  width: 60;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box.active {
+  width: 350px;
+}
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  background: #fff;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.search-box input.active {
+  opacity: 1;
+}
+.search-box input::placeholder {
+  color:#a6a6a6
+}
+.search-box .search-btn {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 0px;
+  transform: translateY(-50%);
+  color: #664aff;
+  background: #fff;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box .search-btn.active {
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #664aff;
+    line-height: 50px;
+    font-size: 20px;
+    transform: translateY(-50%) rotate(360deg);
+}
+.search-box .cancel-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  /* opacity: 0; */
+  transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box .cancel-btn.active{
+    right: -40px;
+    /* color: #fff; */
+    transform: translateY(-50%) rotate(360deg);
+}
+.search-box .search-data{
+    text-align: center;
+    padding-top: 7px;
+    color: #fff;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.search-box .search-data.active{
+    display: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Search Box</title>
+    <script
+      src="https://kit.fontawesome.com/fced4b9343.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search-box">
+      <input type="text" placeholder="Type to search.." />
+      <div class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="cancel-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="search-data"></div>
+    </div>
+    <script>
+        const searchBtn = document.querySelector(".search-btn");
+        const cancelhBtn = document.querySelector(".cancel-btn");
+        const searchBox = document.querySelector(".search-box");
+        const searchInput = document.querySelector("input");
+        const searchData = document.querySelector(".search-data");
+        
+        searchBtn.onclick = () =>{
+            searchBox.classList.add("active");
+            searchInput.classList.add("active");
+            searchBtn.classList.add("active");
+            cancelhBtn.classList.add("active");
+            if(searchInput.value != ""){
+                let values = searchInput.value;
+                searchData.classList.remove("active");
+                searchData.innerHTML = ` You just typed ${values}`
+            }else{
+                searchData.innerHTML="";
+            }
+        }
+        cancelhBtn.onclick = () =>{
+            searchBox.classList.remove("active");
+            searchInput.classList.remove("active");
+            searchBtn.classList.remove("active");
+            cancelhBtn.classList.remove("active");
+            searchData.classList.add("active");
+            searchInput.value="";
+        }
+    </script>
+  </body>
+</html>
