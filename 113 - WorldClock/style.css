@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Orbitron:wght@800&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+    overflow:hidden;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:80%;
+}
+.container h2{
+    font-size: 3rem;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#localelist{
+    width:100%;
+    font-size: 1rem;
+    padding: 10px 20px;
+    outline: none;
+    border:none;
+    box-shadow: rgba(0,0,0,0.16) 0px 3px 6px, rgba(0,0,0,0.23) 0px 3px 6px;
+    background: rgba(88,88,21);
+    color:white;
+}
+
+#localelist option{
+    font-size: 1rem;
+    background: white;
+    color: black;
+}
+.show-date{
+    font-size:3rem;
+    font-weight: bold;
+    letter-spacing: 0.7rem;
+    font-family: 'Orbitron', sans-serif;
+}
