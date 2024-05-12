@@ -1,189 +1,106 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "sans";
-  src: url(font/sans.ttf);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-  color: black;
-  font-family: "sans";
-  height: 100vh;
-  /* overflow: hidden; */
-  background-image: url('Clear1.jpg');
-  background-repeat: no-repeat;
-  background-position: top-center;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  background-size: cover;
-  text-align: center;
+    background-color: rgb(39, 38, 38);
 }
 
-.hedd {
-  font-size: 50px;
-  font-family: "sans";
-  margin-top: 3px;
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #30cdfd, #0e063a);
+    color: #fff;
+    margin: 100px auto;
+    border-radius: 30px;
+    padding: 40px 35px;
+    text-align: center;
 }
 
-h1 {
-  position: absolute;
-  text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-top: 20px;
-  font-family: "sans";
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.modal {
-  position: absolute;
-  text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-top: 70px;
-  display: none;
+.search input {
+    border: 0;
+    outline: 0;
+    color: #555;
+    padding: 10px 25px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* background: #19172e;  */
+.search button {
+    border: 0;
+    outline: 0;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-.weather {
-  display: flex;
-  flex-direction: row;
-  margin: 5px 0;
-  font-size: 1.5rem;
-  text-align: center;
+.search button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
-#location {
-  font-size: 3rem;
-  font-weight: 800;
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
 }
 
-.desc {
-  font-size: 1.25rem;
-  text-transform: capitalize;
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
 }
 
-footer {
-  background-color: #19172e;
-  text-align: center;
-  color: white;
-  font-size: 1rem;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 5px;
-  line-height: 3vh;
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
 }
 
-footer a:visited {
-  color: inherit;
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-  .modal {
-    display: block;
-  }
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
 
-.app-main {
-  min-width: 30vh;
-  width: 50vw;
-  margin: 10px auto;
-  background-color: rgba(255, 255, 255, 0.50);
-  padding: 20px;
-  text-align: center;
-
+.col img {
+    width: 40px;
+    margin-right: 10px;
 }
 
-.app-main {
-  margin-bottom: 20px;
-
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
 }
 
-.input-box {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.50);
-  border: none;
-  outline: none;
-  color: #582233;
-  font-size: 25px;
-  height: 50px;
-
-  border-radius: 5px;
-  padding: 0 10px;
-  text-align: center;
-
+.weather, .error {
+    display: none;
 }
 
-.input-box:focus {
-  background-color: rgba(255, 255, 255, 0.50);
-}
-
-.weather-body {
-  display: none;
-  color: #582233;
-  padding: 10px;
-  line-height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.50);
-  text-align: center;
-}
-
-.location {
-  font-weight: bold;
-}
-
-.weather-status {
-  padding: 10px;
-  align-items: center;
-  text-align: center;
-}
-
-.temp {
-  font-size: 50pt;
-  font-weight: 700;
-  margin: 20px 0;
-  text-shadow: 2px 4px rgba(0, 0, 0, 0);
-  text-align: center;
-}
-
-.min-max,
-.weather {
-  font-size: 12pt;
-  font-weight: 600;
-  text-align: center;
-}
-
-.weather {
-  font-size: 12pt;
-  font-weight: 600;
-  justify-content: center;
-}
-
-.heading {
-  width: 100%;
-  text-align: center;
-  padding-top: 45px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 200%;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-}
-
-#myChart {
-  display: none;
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px; /* Adjusted from font-feature-settings */
+    margin-top: 10px;
 }

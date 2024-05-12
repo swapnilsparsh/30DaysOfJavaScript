@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/weather.png" type="image/x-icon">
+    <title>weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <title>Weather App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Weather-1024.png" />
 </head>
-
 <body>
-    <div class="hedd"> Weather App</div>
-    <div class="app-main">
-        <div class="input">
-            <input type="text" id="input-box" class="input-box " placeholder="Enter City Name" autocomplete="off">
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name " spellcheck="false">
+            <button><img src="/images for weather app/R.png" alt=""></button>
         </div>
-
-        <a>
-            _____________
-        </a>
-        <div class="weather-body">
-            <div class="location">
-                <div class="city" id="city">Enter Correct Country/City Name</div>
-                <div class="date" id="date"></div>
-            </div>
-            <div class="weather-status">
-                <div class="temp" id="temp"></div>
-                <div class="min-max" id="min-max"></div>
-                <div class="weather" id="weather"></div>
-                <div class="img" id="img"></div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <img src="/images for weather app/rain.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">Kolkata</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="/images for weather app/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/images for weather app/wind.png" alt="">
+                    <div>
+                        <p class="wind">15km/h</p>
+                        <p>wind speed</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="myChart" style="width:100%; height:250px"></div>
     </div>
-    <footer>
-        <p>&#x3c; &#47; &#x3e; with ❤️ by
-            <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
-            <br>
-            <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript</a>
-        </p>
-    </footer>
-    <script src="script.js"></script>
+    <script src="java.js"></script>
 </body>
-
 </html>
