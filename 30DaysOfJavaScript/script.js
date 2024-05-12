@@ -23,7 +23,7 @@ $(document).ready(function () {
     return false;
   });
 });
-
+let currentPage = 1;
 function checkTheme() {
   console.log("Checking theme");
   const body = document.querySelector("body");
@@ -62,7 +62,7 @@ function toggleDarkLight() {
   }
 }
 
-let currentPage = 1;
+
 
 var x = document.getElementsByClassName("item");
 
@@ -134,6 +134,7 @@ function goToNextPage() {
 }
 
 function goToPreviousPage() {
+  console.log(currentPage)
   if (currentPage > 1) {
     currentPage--;
     renderProjects();
@@ -151,3 +152,26 @@ function updateActiveButton() {
     }
   });
 }
+
+function togglePaginationButtonsVisibility() {
+  const prevButton = document.querySelector('.prev_btn');
+  const nextButton = document.querySelector('.next_btn');
+  
+  if (currentPage === 1) {
+    
+    console.log("start")
+    prevButton.style.display = 'none';
+  } else {
+    prevButton.style.display = 'inline-block';
+  }
+  
+  if (currentPage === 4) {
+
+    nextButton.style.display = 'none';
+    console.log("end")
+  } else {
+    nextButton.style.display = 'inline-block';
+  }
+}
+
+setInterval(togglePaginationButtonsVisibility, 300);
