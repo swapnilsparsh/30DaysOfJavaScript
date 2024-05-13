@@ -71,10 +71,12 @@ let renderQuestion = (questionDetail) => {
 // displaying initial data
 let displayInitialData = (quizChosen) => {
     id("quiz-title").innerHTML = quizChosen.title;
-    let date = new Date(quizChosen.createdAt);
-    date = new Date(date.getTime());
-
-    id("created-at").innerHTML = date;
+    let updateCreatedAt = () => {
+        let currentDate = new Date();
+        id("created-at").innerHTML = currentDate;
+    };
+    updateCreatedAt();
+    setInterval(updateCreatedAt, 999);
     id("quiz-time").innerHTML = `1. Max time to solve quiz is ${quizChosen.totalTime} sec`;
     id("drop-down-quiz-time").innerHTML = `1. Max time to solve quiz is ${quizChosen.totalTime} sec`;
     id("question-time").innerHTML = `2. Max time to solve one question is ${quizChosen.timePerQuestion} sec`;
