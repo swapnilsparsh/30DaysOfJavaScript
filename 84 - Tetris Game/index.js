@@ -212,3 +212,17 @@ function addScore() {
         }
     }
 }
+
+// for game over
+function gameOver() {
+    if (currentshape.some(index => squares[currentposition + index].classList.contains('freeze'))) {
+        score.innerHTML = "Game Over";
+        clearInterval(timer);
+        const restart = confirm("Game Over! Do you want to restart?");
+        if (restart) {
+            window.location.reload();
+        } else {
+            score.innerHTML = "Thanks for playing!";
+        }
+    }
+}
