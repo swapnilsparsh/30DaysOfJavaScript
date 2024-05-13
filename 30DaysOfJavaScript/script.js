@@ -132,15 +132,6 @@ function goToNextPage() {
     updateActiveButton();
   }
 }
-
-function goToPreviousPage() {
-  if (currentPage > 1) {
-    currentPage--;
-    renderProjects();
-    updateActiveButton();
-  }
-}
-
 function updateActiveButton() {
   const buttons = document.querySelectorAll(".pagination button");
   buttons.forEach((button) => {
@@ -151,3 +142,12 @@ function updateActiveButton() {
     }
   });
 }
+function goToPreviousPage() {
+  if (currentPage > 1) {
+    currentPage--;
+    renderProjects();
+    updateActiveButton();
+  }
+}
+
+

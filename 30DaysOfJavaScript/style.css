@@ -595,6 +595,6 @@ header {
 }
 
 .pagination button.active {
-  background-color: black;
+  background-color: rgb(113, 77, 196);
   color: white;
 }
