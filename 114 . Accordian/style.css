@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); 
+*{ 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	
+} 
+body{ 
+	min-height: 100vh; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	background: #0D1717; 
+	font-family: 'Poppins', sans-serif; 
+} 
+.accordion{ 
+	max-width: 33rem; 
+	width: 100%; 
+	background: #897171; 
+	margin:0 1rem; 
+	padding: 1rem; 
+	border-radius: 0.5rem; 
+	box-shadow: 20px 20px 500px rgba(252, 8, 8, 0.2); 
+} 
+.accordion .accordion-content{ 
+	margin:10px 0; 
+	border-radius: 5px; 
+	background-color: #d7bbbb; 
+	border-color: #011222; 
+	overflow: hidden; 
+} 
+
+.accordion-content.is-open{ 
+	padding-bottom: 10px; 
+} 
+.accordion-content header{ 
+	display:flex; 
+	min-height: 50px; 
+	padding: 0 15px; 
+	cursor: pointer; 
+	align-items: center; 
+	justify-content: space-between; 
+	transition:all 0.2s linear; 
+} 
+.accordion-content.is-open header{ 
+	min-height: 35px; 
+} 
+.accordion-content-title{ 
+	font-size: 1rem; 
+	font-weight: 600; 
+	color: #101720; 
+} 
+.accordion-content-description{ 
+	height:0; 
+	font-size: 13px; 
+	color: #101720; 
+	font-weight: 400; 
+	padding: 0 15px; 
+  font-weight: 550;
+}
+
+.name {
+  text-decoration: none;
+  color: white;
+}
+
+.ProjectName {
+  color: white;
+  text-decoration: none;
+}
