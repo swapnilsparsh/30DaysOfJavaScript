@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <!-- Adding Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Adding custom font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        .font-cursive {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+    ul {
+        padding-left: 370px;
+    }
+    body {
+            background-image: url('background.jpg'); /* Add your image file name and path */
+            padding-top: 170px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+ 
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Adding header bar -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+          <div class="flex mx-auto flex-wrap mb-20">
+            <a id="new-quote" href="#" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider rounded-t">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>New Quote
+            </a> 
+
+            <a id="todays-quote-tab" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>Today's Quote
+            </a>
+            <a id="yesterdays-quote-tab" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+              </svg>Yesterday's Quote
+            </a>
+            <a id="about-tab" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>About
+            </a>
+          </div>
+          
+          <div class="flex flex-col text-center w-full" id="quote-container">
+            <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 text-gray-900 font-cursive" id="quote-heading">Quote Of The Day</h1>  
+
+
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="quote"></p>
+          </div>
+
+          <div id="about" class="hidden">
+            <p
+
+ class="lg:w-2/3 mx-auto leading-relaxed text-base alignment-centre"><ul>
+    <li>This is a quotes webpage.</li>
+    <li> New quotes are generated every day.</li>
+    <li> You can view the quotes displayed the day prior to the current day using the "Yesterday's Quote" Tab.</li>
+    <li> "Today's Quote" helps to view the quote shown at the current day. "New Quote" helps generate new quotes. </li>
+ <br>
+ <br>
+
+<li>Made with ❤️ by Swasti Mishra</li></ul></p>
+          </div>
+        </div>
+      </section>
+
+    <!-- Adding script -->
+    <script>
+        // Function to fetch a new quote
+        function getQuote() {
+            fetch("https://api.quotable.io/random")
+                .then(response => response.json())
+                .then(data => {
+                    localStorage.setItem("todaysQuote", JSON.stringify(data));
+                    displayQuote();
+                })
+                .catch(error => {
+                    console.error("Error fetching quote:", error);
+                });
+        }
+
+        // Function to display quote
+        function displayQuote() {
+            const quoteElement = document.getElementById("quote");
+            const todaysQuote = JSON.parse(localStorage.getItem("todaysQuote"));
+            const yesterdaysQuote = JSON.parse(localStorage.getItem("yesterdaysQuote"));
+
+            if (todaysQuote) {
+                quoteElement.innerHTML = `"${todaysQuote.content}" - ${todaysQuote.author}`;
+            } else {
+                quoteElement.innerHTML = "Failed to fetch quote. Please try again later.";
+            }
+
+            if (yesterdaysQuote) {
+                document.getElementById("yesterdays-quote").innerHTML = `"${yesterdaysQuote.content}" - ${yesterdaysQuote.author}`;
+            }
+        }
+
+        // Function to fetch a new quote when the page loads
+        function init() {
+            const lastFetchedDate = localStorage.getItem("lastFetchedDate");
+            const today = new Date().toLocaleDateString();
+
+            if (lastFetchedDate === today) {
+                displayQuote();
+            } else {
+                const todaysQuote = JSON.parse(localStorage.getItem("todaysQuote"));
+                localStorage.setItem("yesterdaysQuote", JSON.stringify(todaysQuote));
+                getQuote();
+                localStorage.setItem("lastFetchedDate", today);
+            }
+        }
+
+        // Call init function when the page loads
+        init();
+
+        // Add event listener to fetch new quote when "New Quote" is clicked
+        document.getElementById("new-quote").addEventListener("click", function (event) {
+            event.preventDefault();
+            getQuote();
+            document.getElementById("new-quote").classList.add("bg-indigo-500", "text-white");
+            document.getElementById("todays-quote-tab").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("about").classList.add("hidden");
+            document.getElementById("quote-container").classList.remove("hidden");
+            document.getElementById("quote-heading").classList.remove("hidden");
+        });
+
+        // Add event listener to change color of "Today's Quote" tab when clicked
+        document.getElementById("todays-quote-tab").addEventListener("click", function (event) {
+            event.preventDefault();
+            displayQuote();
+            document.getElementById("todays-quote-tab").classList.add("bg-indigo-500", "text-white");
+            document.getElementById("yesterdays-quote-tab").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("new-quote").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("about").classList.add("hidden");
+            document.getElementById("quote-container").classList.remove("hidden");
+            document.getElementById("quote-heading").classList.remove("hidden");
+        });
+
+        // Add event listener to change color of "Yesterday's Quote" tab when clicked
+        document.getElementById("yesterdays-quote-tab").addEventListener("click", function (event) {
+            event.preventDefault();
+            const yesterdaysQuote = JSON.parse(localStorage.getItem("yesterdaysQuote"));
+            const quoteElement = document.getElementById("quote");
+
+            if (yesterdaysQuote) {
+                quoteElement.innerHTML = `"${yesterdaysQuote.content}" - ${yesterdaysQuote.author}`;
+            } else {
+                quoteElement.innerHTML = "No quote available for yesterday.";
+            }
+
+            document.getElementById("yesterdays-quote-tab").classList.add("bg-indigo-500", "text-white");
+            document.getElementById("todays-quote-tab").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("new-quote").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("about").classList.add("hidden");
+            document.getElementById("quote-container").classList.remove("hidden");
+            document.getElementById("quote-heading").classList.remove("hidden");
+        });
+
+        // Add event listener to change color of "About" tab when clicked
+        document.getElementById("about-tab").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("about").classList.remove("hidden");
+            document.getElementById("todays-quote-tab").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("yesterdays-quote-tab").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("new-quote").classList.remove("bg-indigo-500", "text-white");
+            document.getElementById("quote-container").classList.add("hidden");
+            document.getElementById("quote-heading").classList.add("hidden");
+        });
+    </script>
+</body>
+</html>
+```
