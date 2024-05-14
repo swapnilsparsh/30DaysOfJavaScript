@@ -73,7 +73,7 @@ removeIcon.addEventListener('click', () => {
 });
 
 document.querySelector(".fa-volume-up").addEventListener("click",()=>{
-    var text = document.getElementById("word").value;
+    var text = document.querySelector("#voice_word").textContent;
     var utterance = new SpeechSynthesisUtterance(text);
     window.speechSynthesis.speak(utterance);
 })
