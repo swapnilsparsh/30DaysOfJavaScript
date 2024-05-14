@@ -39,6 +39,12 @@ searchInputBox.addEventListener('keypress' , async (event) => {
     }
 });
 
+const searchButton = document.getElementById('button');
+searchButton.addEventListener("click",()=>{
+    getWeatherReport(searchInputBox.value);
+    document.querySelector('.weather-body').style.display = "block";
+})
+
 async function getWeatherReport(city){
     try {
         const response = await fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`);
@@ -90,6 +96,21 @@ function showWeatherImage(WeatherType) {
     }
 }
 
+var imag = document.createElement("img");
+imag.src = "icons8-humidity-64.png";
+var src = document.getElementById("himg");
+src.appendChild(imag);
+
+var imag = document.createElement("img");
+imag.src = "icons8-wind-64.png";
+var src = document.getElementById("wimg");
+src.appendChild(imag);
+
+var imag = document.createElement("img");
+imag.src = "gauge (1).png";
+var src = document.getElementById("pimg");
+src.appendChild(imag);
+
 function showWeatherReport(weather){
     let city = document.getElementById('city');
     city.innerText = `${weather.name},${weather.sys.country}`;
@@ -103,6 +124,15 @@ function showWeatherReport(weather){
     let WeatherType = document.getElementById('weather');
     WeatherType.innerText = `${weather.weather[0].main}`;
 
+    let humidity = document.getElementById('humidity');
+    humidity.innerText = `${weather.main.humidity}%`;
+
+    let wind = document.getElementById('wind');
+    wind.innerText = `${weather.wind.speed} kmph`;
+
+    let press = document.getElementById('pressure');
+    press.innerText = `${weather.main.pressure} bar`;
+    
     let date = document.getElementById('date');
     let todayDate = new Date();
     //console.log(todayDate);
