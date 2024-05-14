@@ -71,3 +71,9 @@ removeIcon.addEventListener('click', () => {
     infoText.style.color = '#9a9a9a';
     infoText.innerHTML= "Type a word and press enter";
 });
+
+document.querySelector(".fa-volume-up").addEventListener("click",()=>{
+    var text = document.getElementById("word").value;
+    var utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+})
