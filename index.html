@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="30DaysOfJavaScript/style.css" />
   <link rel="shortcut icon" href="30DaysOfJavaScript/assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -17,15 +21,15 @@
       flex-direction: column;
       min-height: 100vh;
     }
-  
+
     footer {
       margin-top: 15px;
-      background-color:#19172D;
+      background-color: #19172D;
       padding: 10px;
       text-align: center;
     }
   </style>
-  
+
 
   <script src="30DaysOfJavaScript/script.js"></script>
   <title>30 Days of JavaScript</title>
@@ -52,7 +56,32 @@
   <!-- Heading -->
   <div class="top">
     <h1>30 Days of JavaScript</h1>
-    <input id="searchbar" onkeyup="search_project()" type="text" name="search" placeholder='Search projects.....' />
+
+
+    <div class="search-container">
+      <input id="searchbar" onkeyup="search_project()" type="text" name="search" placeholder='Search projects.....' />
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+    </div>
+    <style>
+      .search-container {
+        display: flex;
+        /* Use flexbox for easy alignment */
+        align-items: center;
+        /* Center items vertically */
+      }
+
+      #searchbar {
+        width: 800px;
+        /* Adjust the width as needed */
+      }
+
+      .search-container i {
+        margin-left: 5px;
+        /* Add some space between the icon and the input */
+      }
+    </style>
+
     <!-- Dark Mode Button -->
     <button id="toggle" class="toggleButton" type="button" onclick="toggleDarkLight()">🌙</button>
   </div>
@@ -1130,10 +1159,11 @@
     </div>
 
     <div class="item">
-      <img src="https://freepngimg.com/thumb/android/91765-minesweeper-star-microsoft-symmetry-classic-free-hq-image.png" alt="Minesweeper">
+      <img
+        src="https://freepngimg.com/thumb/android/91765-minesweeper-star-microsoft-symmetry-classic-free-hq-image.png"
+        alt="Minesweeper">
       <h4>Minesweeper</h4>
-      <a target="_blank"
-        href="https://github.com/swapnilsparsh/30DaysOfJavaScript/tree/master/113%20-%20Minesweeper">
+      <a target="_blank" href="https://github.com/swapnilsparsh/30DaysOfJavaScript/tree/master/113%20-%20Minesweeper">
         <i class="fa-brands fa-square-github"></i>
         <a target="_blank" href="113 - Minesweeper/index.html"><i class="fa-solid fa-link"></i> </a>
       </a>
