@@ -156,9 +156,7 @@ function updateActiveButton() {
 function togglePaginationButtonsVisibility() {
   const prevButton = document.querySelector('.prev_btn');
   const nextButton = document.querySelector('.next_btn');
-  
-  if (currentPage === 1) {
-    
+  if (currentPage === 1) {    
     console.log("start")
     prevButton.style.display = 'none';
   } else {
