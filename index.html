@@ -24,6 +24,28 @@
       padding: 10px;
       text-align: center;
     }
+    #suggestion-list {
+      display: none;
+      background-color: #423d7a;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: -1;
+      width:48%;
+      position: relative;
+      border-radius: 15px;
+      bottom: 20px;
+      color: white;
+    }
+  
+    #suggestion-list li {
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    #suggestion-list li:hover {
+      background-color: #f5f5f5;
+      color: #423d7a;
+    }
   </style>
   
 
@@ -52,7 +74,9 @@
   <!-- Heading -->
   <div class="top">
     <h1>30 Days of JavaScript</h1>
-    <input id="searchbar" onkeyup="search_project()" type="text" name="search" placeholder='Search projects.....' />
+    <input id="searchbar" onkeyup="search_project() "  type="text" name="search" placeholder='Search projects.....' />
+    <ul id="suggestion-list">
+    </ul>
     <!-- Dark Mode Button -->
     <button id="toggle" class="toggleButton" type="button" onclick="toggleDarkLight()">🌙</button>
   </div>
