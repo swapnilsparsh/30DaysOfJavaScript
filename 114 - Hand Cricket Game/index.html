@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket Champ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <first id="landing">
+            <div class="cont">
+                <div class="photo">
+                    <img src="./Logo.png" alt="Logo" width = 200px height = 200px>
+                </div>
+                <div class="title">
+                    <h1>Hand Cricket Champ</h1>
+                    <p>
+                        Welcome to Hand Cricket Champ, where every flick counts towards your victory! Play against the computer and test your skills in this thrilling game of strategy and precision. Aim for the highest scores with each flick of your finger. Experience the excitement of cricket at your fingertips in Finger Flick Cricket - where every flick counts, every score matters, and every match gives you the chance to challenge yourself to beat the computer and claim the title of Finger Flick Cricket champion!
+                    </p>
+                </div>
+        
+                <div id="Btn">
+                    <button type="button" id="btn-1" class="btn" onclick="tossStart()"> Play </button>
+                    <button type="button" id="btn-2" class="btn" onclick="document.getElementById('Instructions').style.display='flex'; document.getElementById('landing').style.display='none';"> Instructions! </button>
+                </div>
+    
+            </div>
+    </first>
+
+    <section id="Instructions">
+        <div class="inst-container">
+            
+                <div class="heading">How to Play Hand Cricket</div>
+                <div class="sub-heading">Objective:</div>
+                <div class="instruction">Score more runs than the computer or dismiss the computer player.</div>
+                
+                <div class="sub-heading">Player:</div>
+                <div class="instruction">You will play against the computer.</div>
+                
+                <div class="sub-heading">Instructions:</div>
+                <div class="instruction">1. Batting:</div>
+                <div class="instruction">Choose a number between 1 and 6.</div>
+                <div class="instruction">The computer will also choose a number between 1 and 6.</div>
+                <div class="instruction">If your numbers match, you're out. Otherwise, your runs are added to your total score.</div>
+                <div class="instruction">There is no limit to the number of balls (guesses) per inning.</div>
+                
+                <div class="instruction">2. Bowling (Computer's turn):</div>
+                <div class="instruction">The computer tries to guess your chosen number.</div>
+                <div class="instruction">If the computer guesses correctly, you're out. Otherwise, your runs are added to your total score.</div>
+                
+                <div class="instruction">3. Switch Roles:</div>
+                <div class="instruction">After each inning (when you get out or score runs), the computer bats and you bowl.</div>
+                
+                <div class="instruction">4. Scoring:</div>
+                <div class="instruction">Runs are based on the numbers chosen by you and the computer.</div>
+                <div class="instruction">If you're out, no runs are scored for that inning.</div>
+                
+                <div class="instruction">5. Winner:</div>
+                <div class="instruction">The player with the highest total score wins.</div>
+
+                <div ><button class="btn" onclick="document.getElementById('Instructions').style.display='none'; document.getElementById('landing').style.display='flex';">↩️</button></div>
+            
+        </div>
+    </section>
+
+    <toss id="toss">
+        <div class="coin-container">
+
+            <div class="coin" id="coin"><h1 id="res">H</h1></div>
+            <div>
+              <button class="btn" onclick="flipCoin('Heads')">Heads</button>
+              <button class="btn"  onclick="flipCoin('Tails')">Tails</button>
+            </div>
+        </div>
+    </toss>
+
+    <section id="toss-res">
+        <div class="toss-res-cont">
+            <div id="toss-res-text">
+                <h1>Congratulations!</h1>
+                <h2>You Won the Toss</h2>
+            </div>
+            <div id="toss-choice-cont">
+                <h3>What would you like to do?</h3>
+                <button class="btn" onclick="gameStart(2)">Bat First</button>
+                <button class="btn" onclick="gameStart(3)">Bowl First</button>
+            </div>
+        </div>
+    </section>
+
+    <game id="game">
+        <div class="game-cont">
+            <div class="score-cont">
+                <span class="ply score">
+                    <h1>Player</h1>
+                    <h2 id="Scr-P">0</h2>
+                </span>
+                <span class="comp score">
+                    <h1>Computer</h1>
+                    <h2 id="Scr-C">0</h2>
+                </span>
+            </div>
+
+            <div class="graphic-cont">
+                <span class="image ply-i">
+                    <img src="./images/fistL.png" alt="">
+                </span>
+                <span class="status" id="status">
+                    Let's <br> Start
+                </span>
+                <span class="image comp-i">
+                    <img src="./images/fistR.png" alt="">
+                </span>
+            </div>
+
+            <div class="choice-cont">
+                <button class="choice" id="run_1">1</button>
+                <button class="choice" id="run_2">2</button>
+                <button class="choice" id="run_3">3</button>
+                <button class="choice" id="run_4">4</button>
+                <button class="choice" id="run_5">5</button>
+                <button class="choice" id="run_6">6</button>
+            </div>
+        </div>
+    </game>
+
+    <outcome id="results">
+        <div class="out-cont">
+            <div class="photo">
+                <img src="./Logo.png" alt="Logo" width = 200px height = 200px>
+            </div>
+            <div id="out-title">
+                <h1>🎊 Congratulations! 🎊</h1>
+                <h2> You Won!!</h2>
+            </div>
+        </div>
+    </outcome>
+
+<script src="./script.js"></script>
+</body>
+</html>
