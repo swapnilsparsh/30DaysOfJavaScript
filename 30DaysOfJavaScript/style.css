@@ -225,6 +225,26 @@ a:visited {
   text-align: left;
 }
 
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #1c1c1c 58%);
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  color: #fff;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.item:hover .overlay{
+  transform: translateY(0);
+}
+
 .main {
   /* padding: 20px;
   width: 90vw; */
