@@ -23,6 +23,7 @@ let songs = [
     },
 ];
 let isplaying = false;
+
 let playmusic = () => {
     isplaying = true;
     audio.play();
@@ -50,7 +51,9 @@ const loadsong = (songs) => {
     audio.src = "Music/" + songs.name + ".mp3";
     img.src = "images/" + songs.name + ".jpg";
 }
-songindex = 1;
+
+let songindex = 1;
+
 const nextsong = () => {
     songindex = (songindex + 1) % songs.length;
     loadsong(songs[songindex]);
@@ -62,12 +65,35 @@ const prevsong = () => {
     loadsong(songs[songindex]);
     playmusic();
 }
+
 next.addEventListener('click', nextsong);
 previous.addEventListener('click', prevsong);
 
-//volume control
+// Volume control
 let volume_slider = document.querySelector('.volume_slider');
 
 function setVolume() {
     audio.volume = volume_slider.value / 100;
 }
+
+// Progress control
+let progress_slider = document.querySelector('.progress_slider');
+
+function setProgress() {
+    audio.currentTime = audio.duration * (progress_slider.value / 100);
+}
+
+// Update progress slider as the audio plays
+audio.addEventListener('timeupdate', () => {
+    let progress = (audio.currentTime / audio.duration) * 100;
+    progress_slider.value = progress;
+
+    // Update progress slider's background to fill up as the song plays
+    let fillWidth = (audio.currentTime / audio.duration) * 100;
+    progress_slider.style.background = `linear-gradient(to right, #4CAF50 0%, #4CAF50 ${fillWidth}%, #ddd ${fillWidth}%, #ddd 100%)`;
+});
+
+// Update the audio time as the progress slider changes
+progress_slider.addEventListener('input', () => {
+    setProgress();
+});
