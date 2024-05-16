@@ -24,7 +24,7 @@ h2 {
 .container {
   max-width: 290px;
   margin: 50px auto 0;
-  
+
 }
 
 #display {
@@ -36,6 +36,11 @@ h2 {
   border-radius: 20px 20px 0 0;
   background-color: white;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  overflow: hidden;
 }
 
 .buttons {
@@ -81,6 +86,3 @@ h2 {
   position: fixed;
   text-align: center;
 }
-
-
-
