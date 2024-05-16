@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #5af3f5ac, rgba(65, 127, 220, 0.801));
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #ffffff;
+    padding: 5em 3em;
+    border-radius: 0.8em;
+}
+
+.num-of-tries-left {
+    text-align: right;
+    margin-bottom: 2em;
+}
+
+.num-of-chances-left span {
+    font-weight: 600;
+}
+
+.container {
+    font-size: 1.87em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#letter-container {
+    margin: 2em 0 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.letters {
+    width: 2em;
+    height: 2em;
+    font-size: 20px;
+    background-color: #cad496;
+    border: 2px solid #8254fd;
+    border-radius: 3em;
+    color: #080a0c;
+    cursor: pointer;
+}
+
+#userInputSection {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.controls-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(#705da8, #aaa0c5);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+#start {
+    background-color: #ffffffb0;
+    font-size: 1.4em;
+    padding: 0.8em 2em;
+    border-radius: 3em;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#start:hover {
+    background-color: rgb(137, 230, 119);
+    border: 2px solid rgba(121, 40, 235, 0.829);
+}
+
+.hide {
+    display: none;
+}
+
+.used {
+    background-color: #f5f5f5;
+    border-color: #9e9ea6;
+    color: #9e9ea6;
+}
