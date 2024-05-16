@@ -143,8 +143,8 @@ const rand = () => Math.floor(Math.random() * CONSTANT.GRID_SIZE);
 
 const removeCells = (grid, level) => {
     let res = [...grid];
-    let attemps = level;
-    while (attemps > 0) {
+    let attempts = level;
+    while (attempts > 0) {
         let row = rand();
         let col = rand();
         while (res[row][col] === 0) {
@@ -152,7 +152,7 @@ const removeCells = (grid, level) => {
             col = rand();
         }
         res[row][col] = CONSTANT.UNASSIGNED;
-        attemps--;
+        attempts--;
     }
     return res;
 }

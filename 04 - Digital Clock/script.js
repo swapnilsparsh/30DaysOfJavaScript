@@ -3,7 +3,7 @@ const minute = document.getElementById("minute");
 const seconds = document.getElementById("seconds");
 const ampm = document.getElementById("ampm");
 
-// Add 0 to the begining of number if less than 10
+// Add 0 to the beginning of number if less than 10
 function formatTime(time) {
   return time.toString().padStart(2, "0");
 }
