@@ -25,24 +25,31 @@
       text-align: center;
     }
     #suggestion-list {
+      padding-top: 36px;
       display: none;
       background-color: #423d7a;
       max-height: 200px;
       overflow-y: auto;
-      z-index: -1;
-      width:48%;
+      z-index: 1;
+      width:50%;
       position: relative;
       border-radius: 15px;
-      bottom: 20px;
       color: white;
+      bottom: 50px;
+    scrollbar-width: none; 
     }
-  
-    #suggestion-list li {
+    #suggestion-list::-webkit-scrollbar {
+      display: none; 
+  }
+    #suggestion-list a {
       padding: 10px;
       cursor: pointer;
+      display: block;
+      color: #fcfcfc;
+      text-decoration: none;
     }
   
-    #suggestion-list li:hover {
+    #suggestion-list a:hover {
       background-color: #f5f5f5;
       color: #423d7a;
     }
@@ -97,6 +104,7 @@
 
   <!-- Scroll To Top -->
   <a class="scrollToTop"><span></span></a>
+
   <!-- Scroll to Top End -->
   <!-- <i class="fa-brands fa-square-github"></i> -->
   <!-- Main Section Start -->

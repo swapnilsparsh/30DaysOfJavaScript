@@ -423,11 +423,12 @@ header {
 .toggleButton {
   display: block;
   margin: 0 auto;
+  z-index: 2;
 }
 
 #searchbar {
   margin: 14px 0px;
-  background-color: rgba(38, 35, 35, 0.9);
+  background-color: rgb(15, 13, 38);
   color: white;
 }
 
@@ -597,4 +598,7 @@ header {
 .pagination button.active {
   background-color: black;
   color: white;
+}
+.game_page {
+  cursor: pointer;
 }
