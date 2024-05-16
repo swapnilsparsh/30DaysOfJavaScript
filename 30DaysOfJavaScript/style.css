@@ -238,13 +238,13 @@ a:visited {
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  transition: transform 0.9s ease-in-out 0s;
+  /* transition: transform 0.9s ease-in-out 0s; */
   color: #fff;
   padding: 10px;
   border-radius: 10px;
 }
 
-.description h3, p{
+.description p{
   margin: 5px 10px 5px 10px;
 }
 
