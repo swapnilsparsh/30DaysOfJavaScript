@@ -15,7 +15,7 @@ function loremIpsum(size) {
     const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula odio non risus finibus feugiat.
     Donec bibendum, sapien eget volutpat dapibus, urna velit malesuada tortor, et fermentum arcu velit non dui.
     Vestibulum condimentum, justo sed rhoncus laoreet, nunc tellus viverra nulla, nec eleifend purus velit non justo.
-    Proin sit amet venenatis velit, eu various nunc. Integer eget ligula eu metus elementum sodales.
+    Proin sit amet venenatis velit, eu varius nunc. Integer eget ligula eu metus elementum sodales.
     Sed efficitur, mi a rhoncus vehicula, odio orci malesuada elit, at fermentum justo nulla et urna.
     Cras auctor, elit at lacinia eleifend, metus ex condimentum purus, ut lacinia tortor lectus id ipsum.
     Nunc viverra sit amet justo in lacinia. Vestibulum scelerisque, orci id cursus placerat, purus purus bibendum urna, at scelerisque quam libero sed arcu.
