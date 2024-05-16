@@ -201,7 +201,7 @@ a:visited {
   flex: 50%;
   width: 90%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(23, 22, 22, 0.4);
   box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent,
     0 2px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 10px;
@@ -225,27 +225,31 @@ a:visited {
   text-align: left;
 }
 
-.overlay{
+.description{
   width: 100%;
   height: inherit;
   top: 0;
   left: 0;
-  /* margin-top: 120px; */
-  background: linear-gradient(transparent, #1c1c1c 58%);
+  background: linear-gradient(transparent, #0e0c0c 60%);
+  display: none;
   position: absolute;
-  display: flex;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  transition:  0.6s;
+  transition: transform 0.9s ease-in-out 0s;
   color: #fff;
   padding: 10px;
+  border-radius: 10px;
 }
 
-.item:hover .overlay{
-  /* transform: translateY(0); */
+.description h3, p{
+  margin: 5px 10px 5px 10px;
+}
+
+.item:hover .description{
+  display: flex;
   opacity: 1;
 }
 
