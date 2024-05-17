@@ -31,16 +31,23 @@
       max-height: 200px;
       overflow-y: auto;
       z-index: 1;
-      width:50%;
+      width:49.4%;
       position: relative;
-      border-radius: 15px;
+      border-radius: 12px;
       color: white;
       bottom: 50px;
-    scrollbar-width: none; 
     }
     #suggestion-list::-webkit-scrollbar {
-      display: none; 
+      width: 8px; 
   }
+  #suggestion-list::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+}
+
+#suggestion-list::-webkit-scrollbar-thumb {
+    background-color: #6d69c3; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+}
     #suggestion-list a {
       padding: 10px;
       cursor: pointer;
