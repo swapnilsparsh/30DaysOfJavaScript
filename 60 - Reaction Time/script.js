@@ -11,19 +11,19 @@ function randcolor(){
 function figure(marg){
     document.getElementById("fig").style.margin = ""+marg+"px";
 }
-function shape(siz){
+function shape(size){
     start = new Date().getTime();
 
     var choice = Math.floor((Math.random()*2)+1);
     if(choice==1){
-        document.getElementById("fig").style.width = ""+siz+"px";
-        document.getElementById("fig").style.height = ""+siz+"px";
+        document.getElementById("fig").style.width = ""+size+"px";
+        document.getElementById("fig").style.height = ""+size+"px";
         document.getElementById("fig").style.borderRadius = "50%";
 
     }
     if(choice==2){
-        document.getElementById("fig").style.width = ""+siz+"px";
-        document.getElementById("fig").style.height = ""+siz+"px";
+        document.getElementById("fig").style.width = ""+size+"px";
+        document.getElementById("fig").style.height = ""+size+"px";
         document.getElementById("fig").style.borderRadius = "0";
     }
 }
@@ -34,8 +34,8 @@ function shape(siz){
         var timeTaken = (end-start)/1000;
         document.getElementById("tTaken").innerHTML = timeTaken;
         var marg = Math.floor((Math.random()*600)+50);
-        var siz = Math.floor((Math.random()*100)+50);
-        figure(marg,siz);
-        shape(siz);
+        var size = Math.floor((Math.random()*100)+50);
+        figure(marg,size);
+        shape(size);
         randcolor();
     }

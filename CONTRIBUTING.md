@@ -40,7 +40,7 @@ in case you are stuck:
 2. Make sure you have added the proper description for the functionality of the code
 3. I have commented my code, particularly in hard-to-understand areas.
 4. Add screenshot it help in review.
-5. Submit your PR by giving the necesarry information in PR template and hang tight we will review it really soon 🚀
+5. Submit your PR by giving the necessary information in PR template and hang tight we will review it really soon 🚀
 
 <br>
 

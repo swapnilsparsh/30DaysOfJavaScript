@@ -7,7 +7,7 @@ const customJson = document.getElementById("jsonRadio"); //radio button of json
 const customParams = document.getElementById("customRadio"); //radio button of custom parameters
 const finalResponse = document.getElementById("response-box");
 const JsonBox = document.getElementById("json-box");
-//when the user clicks on custom paramters then hide the json request  box
+//when the user clicks on custom parameters then hide the json request  box
 const requestJsonBox = document.getElementById("requestJsonBox");
 const responseJsonBox = document.getElementById("responseJsonBox");
 const parametersBox = document.getElementById("parameter-box");
