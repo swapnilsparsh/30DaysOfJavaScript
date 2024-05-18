@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">World Clock</h1>
+    <div class="dropdown-container">
+      <label id="zonelabel" for="timeZoneSelect" >Select Your Country : </label>
+      <select id="timeZoneSelect">
+        <option name="Asia/Kolkata" value="0" selected>India</option>
+        <option name="America/New_York" value="1">New York</option>
+        <option name="America/Los_Angeles" value="2">Los Angeles</option>
+        <option name="Europe/London" value="3">London</option>
+        <option name="Europe/Berlin" value="4">Berlin</option>
+        <option name="Asia/Tokyo" value="5">Tokyo</option>
+        <option name="Asia/Dubai" value="6">Dubai</option>
+        <option name="Australia/Sydney" value="7">Sydney</option>
+        <option name="Africa/Cairo" value="8">Cairo</option>
+        <option name="Asia/Shanghai" value="9">Shanghai</option>
+        <option name="America/Chicago" value="10">Chicago</option>
+        <option name="America/Toronto" value="11">Toronto</option>
+        <option name="Europe/Paris" value="12">Paris</option>
+        <option name="Africa/Johannesburg" value="13">Johannesburg</option>
+        <option name="Asia/Hong_Kong" value="14">Hong Kong</option>
+        <option name="America/Mexico_City" value="15">Mexico City</option>
+        <option name="Asia/Singapore" value="16">Singapore</option>
+        <option name="America/Sao_Paulo" value="17">Sao Paulo</option>
+        <option name="Europe/Moscow" value="18">Moscow</option>
+        <option name="America/Buenos_Aires" value="19">Buenos Aires</option>
+        <option name="Asia/Jerusalem" value="20">Jerusalem</option>
+        <option name="Pacific/Auckland" value="21">Auckland</option>
+        <option name="Pacific/Honolulu" value="22">Honolulu</option>
+        <option name="Asia/Seoul" value="23">Seoul</option>
+        <option name="Asia/Bangkok" value="24">Bangkok</option>
+        <option name="America/Phoenix" value="25">Phoenix</option>
+        <option name="America/Denver" value="26">Denver</option>
+        <option name="Africa/Nairobi" value="27">Nairobi</option>
+        <option name="Asia/Riyadh" value="28">Riyadh</option>
+        <option name="Europe/Stockholm" value="29">Stockholm</option>
+        <option name="Asia/Kuwait" value="30">Kuwait</option>
+        <option name="America/Anchorage" value="31">Anchorage</option>
+        <option name="Europe/Istanbul" value="32">Istanbul</option>
+        <option name="Asia/Kuala_Lumpur" value="33">Kuala Lumpur</option>
+        <option name="Asia/Taipei" value="34">Taipei</option>
+        <option name="Australia/Perth" value="35">Perth</option>
+        <option name="America/Vancouver" value="36">Vancouver</option>
+        <option name="Asia/Manila" value="37">Manila</option>
+        <option name="Europe/Amsterdam" value="38">Amsterdam</option>
+        <option name="America/Lima" value="39">Lima</option>
+        <option name="Asia/Dhaka" value="40">Dhaka</option>
+        <option name="America/Bogota" value="41">Bogota</option>
+        <option name="America/Montreal" value="42">Montreal</option>
+        <option name="Asia/Baghdad" value="43">Baghdad</option>
+      </select>
+    </div>
+    <div class="container">
+      <div class="clock">
+        <div class="needle hr" style="--h: 60px; --clr: red"><span></span></div>
+        <div class="needle mn" style="--h: 80px; --clr: blue">
+          <span></span>
+        </div>
+        <div class="needle ss" style="--h: 100px; --clr: rgb(142, 5, 69)">
+          <span></span>
+        </div>
+        <ul>
+          <li style="--i: 1"><span>1</span></li>
+          <li style="--i: 2"><span>2</span></li>
+          <li style="--i: 3"><span>3</span></li>
+          <li style="--i: 4"><span>4</span></li>
+          <li style="--i: 5"><span>5</span></li>
+          <li style="--i: 6"><span>6</span></li>
+          <li style="--i: 7"><span>7</span></li>
+          <li style="--i: 8"><span>8</span></li>
+          <li style="--i: 9"><span>9</span></li>
+          <li style="--i: 10"><span>10</span></li>
+          <li style="--i: 11"><span>11</span></li>
+          <li style="--i: 12"><span>12</span></li>
+        </ul>
+      </div>
+      <div class="digital"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

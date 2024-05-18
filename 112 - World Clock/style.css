@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-image: url(bg.avif);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#zonelabel {
+  font-size: 28px;
+  color: antiquewhite;
+  margin: 20px;
+}
+
+#timeZoneSelect {
+  height: 30px;
+  width: 150px;
+  font-size: 16px;
+  border: 2px solid aqua;
+  border-radius: 12px;
+  text-align: center;
+  max-height: calc(5 * 1.2em + 2 * 0.5em); 
+  overflow-y: scroll;
+}
+
+#timeZoneSelect option {
+  font-size: 16px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  background-color: rgba(146, 220, 204, 0.929);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.7), 0px 0px 20px rgba(0, 0, 0, 0.65);
+  color: rgba(12, 6, 63, 1);
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.clock ul li {
+  position: absolute;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 6px;
+  list-style: none;
+}
+
+.clock ul li span {
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+}
+
+.clock::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  position: absolute;
+}
+
+.needle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 10ms ease-in-out;
+}
+
+.needle span {
+  width: 5px;
+  height: var(--h);
+  background-color: var(--clr);
+  position: absolute;
+  border-radius: 5px;
+}
+
+.digital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  height: 100px;
+  width: 200px;
+  border: 2px white solid;
+  border-radius: 20px;
+  background-color: rgba(146, 220, 204, 0.929);
+  box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.7), 0px 0px 20px rgba(0, 0, 0, 0.65);
+  color: rgba(12, 6, 63, 1);
+}
+
+.digital p {
+  font-size: 25px;
+  font-weight: bolder;
+}
