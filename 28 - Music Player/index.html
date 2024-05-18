@@ -21,6 +21,11 @@
             </div>
             <audio src="Music/Sugar.mp3" controls></audio>
 
+            <!-- -----Progress Control------ -->
+            <div class="slider_container">
+                <input type="range" min="0" max="100" value="0" class="progress_slider" onchange="setProgress()">
+            </div>
+
             <!---Controls-->
             <div class="music_controls">
                 <i class="fa-solid fa-backward" id="Previous" title="Previous"></i>
@@ -34,7 +39,6 @@
                 <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
                 <i class="fa fa-volume-up"></i>
             </div>
-
         </div>
     </div>
     <script src="Music.js"></script>

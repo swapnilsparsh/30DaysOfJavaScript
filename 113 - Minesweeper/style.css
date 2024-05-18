@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#board {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(10, 30px);
+  border: 1px solid #ccc;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  user-select: none;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
+.mine {
+  background-color: #f00;
+  color: #fff;
+}
+
+#resetButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: #fff;
+}

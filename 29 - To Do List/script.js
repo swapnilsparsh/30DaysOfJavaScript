@@ -85,12 +85,12 @@ li.appendChild(dateElement);
 }
 
 //Edit the list whenever the pencil icon is clicked
-function editList (divison) {
+function editList (division) {
     var editButtons = document.getElementsByClassName('editBtn');
     for (let i = 0; i < editButtons.length; i++) {
         editButtons[i].style.display = 'none';
     }
-    var item = divison.parentElement.parentElement.firstElementChild;
+    var item = division.parentElement.parentElement.firstElementChild;
     console.log(item);
     var inputDivision = document.getElementById('myInput');
     inputDivision.value = item.innerHTML;

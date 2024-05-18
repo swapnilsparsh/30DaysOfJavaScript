@@ -5,7 +5,7 @@ canvas.height = window.innerHeight;
 
 //particle array to store randomised particle
 let particleArray;
-//get mouse cursor postion
+//get mouse cursor position
 let mouse = {
     x: null,
     y: null,
@@ -37,7 +37,7 @@ class Particle {
         ctx.fillStyle = '#F64C72';
         ctx.fill();
     }
-    //check particle position, check mouse positon, move the particle, draw the particle
+    //check particle position, check mouse position, move the particle, draw the particle
     update() {
         //if particle position is beyond the screen edge, reverse it
         if(this.x > canvas.width || this.x < 0) {
@@ -48,7 +48,7 @@ class Particle {
             this.directionY = -this.directionY;
         }
 
-        // check if currect mouse position overlaps with current mouse position, i.e, collision detection
+        // check if correct mouse position overlaps with current mouse position, i.e, collision detection
         let opacityvalue = 1;
         let dx = mouse.x - this.x;
         let dy = mouse.y - this.y;

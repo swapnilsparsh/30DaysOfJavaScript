@@ -110,7 +110,7 @@ function init() {
     playercar.setAttribute('class', 'car');
     roadArea.appendChild(playercar);
 
-    //we're setting our player's dimensinos same as our car's so we're using playercar dimensions 
+    //we're setting our player's dimensions same as our car's so we're using playercar dimensions 
     player.x = playercar.offsetLeft;
     player.y = playercar.offsetTop;
 

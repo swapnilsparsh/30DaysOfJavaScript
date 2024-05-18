@@ -88,7 +88,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .music_controls .main-button {
@@ -116,6 +116,38 @@ img {
 
 .anime {
   animation: rotatePlayer 3s linear 3s;
+}
+
+/* Music.css */
+
+/* Styles for the progress slider */
+.progress_slider {
+  width: 100%;
+  height: 10px;
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #4CAF50 0%, #4CAF50 0%, #ddd 0%, #ddd 100%);
+  border-radius: 5px;
+  outline: none;
+  margin-top: 3rem;
+  transition: background 0.1s ease;
+}
+
+.progress_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.progress_slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 /* -------------Volume---------------- */
@@ -146,7 +178,7 @@ img {
 }
 
 .volume_slider {
-  margin-top: 15px;
+  margin-top: 20px;
   width: 60%;
 }
 

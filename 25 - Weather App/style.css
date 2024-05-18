@@ -12,7 +12,7 @@
 body {
   color: black;
   font-family: "sans";
-  height: 100vh;
+  height: 700px;
   /* overflow: hidden; */
   background-image: url('Clear1.jpg');
   background-repeat: no-repeat;
@@ -109,10 +109,23 @@ footer a:visited {
 }
 
 .app-main {
+  margin-top: 25px;
   margin-bottom: 20px;
 
 }
 
+.input{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+button{
+    border-radius: 50%;
+    border: solid grey 2px;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
 .input-box {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.50);
@@ -121,7 +134,6 @@ footer a:visited {
   color: #582233;
   font-size: 25px;
   height: 50px;
-
   border-radius: 5px;
   padding: 0 10px;
   text-align: center;
@@ -186,4 +198,61 @@ footer a:visited {
 
 #myChart {
   display: none;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+.space{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 1rem;
+  border: 3px solid black;
+  border-radius: 5px 5px;
+  width:15rem ;
+}
+
+#himg,#wimg,#pimg,#humidity,#pressure,#wind{
+  padding: 5px 5px;
+}
+
+@media screen and (max-width:1130px) {
+  .info{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 2rem;
+
+  }
+  .space{
+    font-size: 1rem;
+    gap: 0.5px;
+    /* display: block; */
+  }
+  body{
+    height: 1000px;
+  }
+  .app-main{
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width:600px){
+  .space{
+    width: 8rem;
+  }
+  body{
+    height: 1100px;
+  }
+  .input{
+    flex-direction: column;
+    row-gap:8px;
+    align-items: center;
+  }
 }
