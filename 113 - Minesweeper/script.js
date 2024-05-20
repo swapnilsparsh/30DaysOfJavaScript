@@ -25,15 +25,19 @@ function generateMines() {
 
 function handleCellClick(event) {
   const clickedIndex = parseInt(event.target.getAttribute("data-index"));
-  if (mines.includes(clickedIndex)) {
-    revealMines();
-    alert("Game Over! You hit a mine.");
-  } else {
-    revealCell(clickedIndex);
-    points++;
-    updatePoints();
-    if (revealedCells === boardSize * boardSize - totalMines) {
-      alert("Congratulations! You won!");
+  const cell = document.querySelector(`.cell[data-index="${clickedIndex}"]`);
+
+  if (!cell.classList.contains("revealed")) {
+    if (mines.includes(clickedIndex)) {
+      revealMines();
+      alert("Game Over! You hit a mine.");
+    } else {
+      revealCell(clickedIndex);
+      points++;
+      updatePoints();
+      if (revealedCells === boardSize * boardSize - totalMines) {
+        alert("Congratulations! You won!");
+      }
     }
   }
 }
