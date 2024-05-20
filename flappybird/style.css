@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #70c5ce;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+}
+
+#gameCanvas {
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#startScreen {
+    display: block;
+}
