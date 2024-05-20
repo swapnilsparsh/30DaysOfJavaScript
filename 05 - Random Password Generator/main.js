@@ -40,7 +40,10 @@ const words = ['seat', 'pen', 'broad', 'vapor', 'ocean',
     
 
 function randomNumber (l) {
-    return Math.floor(Math.random() * l);
+    let y = Math.floor(Math.random() * l);
+
+    let z = Math.floor(Math.random() * y);
+    return y;
 }
 
 function randomWord () {
