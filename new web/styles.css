@@ -1,0 +1,115 @@
+/* Style for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+body {
+  background-image: url(backg.jpeg);
+  background-attachment:fixed;
+
+}
+
+
+
+/* Style for each card */
+.card {
+  background-color: #fff; /* White background */
+
+  overflow: hidden;
+  /* text-align: center; */
+  transition: transform 0.3s ease;
+  height: 200px; /* Fixed height */
+
+  /* border-color: black;
+  border: solid; */
+  border-bottom-left-radius: 7px; /* Rounded corners */
+  border-bottom-right-radius: 7px; /* Rounded corners */
+border-top:solid  ;
+  border-top-color: black;
+
+}
+.card1{
+  margin: 10px;
+  border-radius: 7px; /* Rounded corners */
+  height: 250px; /* Fixed height */
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  transition: transform 0.3s ease;
+}
+.maincard{
+  border-radius: 7px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-color: black;
+  border: solid;
+  background:whitesmoke
+
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+}
+.maincard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px 0 rgba(243, 0, 0, 0.881); /* More pronounced shadow on hover */
+}
+/* .card1:hover {
+  transform: scale(1.20);
+
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+/* } */
+/* Image styling inside the card */
+.card1 img {
+  width: 100%;
+  height:  100%;
+  object-fit: fill;
+  border-radius: 7px; /* Rounded corners */
+}
+
+/* Main title styling */
+#main-title {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  position:relative;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4{
+  font-size:38px;
+}
+
+/* Card title styling */
+.card h4 {
+  margin: 10px;
+}
+
+/* Styling for links section in the card */
+.card-links {
+  padding: 10px;
+  background-color: #f8f8f8; /* Light grey background for the link section */
+}
+
+/* Link styling */
+button:hover{
+ scale: (1.5);
+}
+p{
+  font-size: large;
+}
+.card a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333; /* Dark grey text color */
+}
+
+.card a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
