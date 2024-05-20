@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             resultElement.style.color = 'green';
             currentScore += 10;
             userScoreVal.textContent = currentScore;
+            nextCountry();
         } else {
             resultElement.textContent = `Wrong! The correct answer is ${countries[currentCountryIndex].name}.`;
             resultElement.style.color = 'red';
