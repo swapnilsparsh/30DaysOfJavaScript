@@ -12,6 +12,12 @@ const keyCode = {
   L: 76,
 };
 
+document.addEventListener('keyup',()=>{
+  keys.forEach((key)=>{
+    key.classList.remove('playing');
+  })
+})
+
 function removeTransition(e) {
   if (e.propertyName !== 'transform') return;
   e.target.classList.remove('playing');
