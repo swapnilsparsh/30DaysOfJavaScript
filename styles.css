@@ -10,8 +10,20 @@ body {
   background-attachment:fixed;
 
 }
+/* buttons.css */
+.button {
+  margin: 10px;
+  border-color: black;
+  border-radius: 7px;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+  background-color: white;
+}
 
-
+p{
+  margin: 10px;
+}
 
 /* Style for each card */
 .card {
@@ -50,14 +62,14 @@ border-top:solid  ;
 
 }
 
-.card:hover {
+/* .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* More pronounced shadow on hover */
-}
-.maincard:hover {
+/* } */ 
+/* .maincard:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px 0 rgba(243, 0, 0, 0.881); /* More pronounced shadow on hover */
-}
+/* } */ 
 /* .card1:hover {
   transform: scale(1.20);
 
