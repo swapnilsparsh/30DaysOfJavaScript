@@ -148,19 +148,6 @@
         div.setAttribute("class", "dycalendar-header");
         div.setAttribute("data-option", JSON.stringify(option));
 
-        //prev button
-        if (option.prevnextbutton === "show") {
-            elem = document.createElement("span");
-            elem.setAttribute("class", "dycalendar-prev-next-btn prev-btn");
-            elem.setAttribute("data-date", option.date);
-            elem.setAttribute("data-month", option.month);
-            elem.setAttribute("data-year", option.year);
-            elem.setAttribute("data-btn", "prev");
-            elem.innerHTML = "&lt;";
-            //add prev button span to header div
-            div.appendChild(elem);
-        }
-
         //month span
         elem = document.createElement("span");
         elem.setAttribute("class", "dycalendar-span-month-year");

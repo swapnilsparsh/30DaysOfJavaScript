@@ -50,3 +50,8 @@ function randomWord () {
     const number = randomNumber(words.length);
     return words[number];
 }
+
+function randomWord222 () {
+    const number = randomNumber(words.length);
+    return words[number];
+}
