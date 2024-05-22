@@ -74,6 +74,10 @@ body {
   border: 2px solid #19172e;
   border-radius: 8px;
   font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.box:hover{
+  transform: scale(0.9);
 }
 
 footer {
