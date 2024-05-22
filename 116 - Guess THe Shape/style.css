@@ -1,0 +1,120 @@
+/* Default settings */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    background-color: salmon;
+}
+
+/* Syling the scoreboard */
+#score {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding: 1%;
+    color: azure;
+    font-size: larger;
+    transition: all 0.5;
+}
+
+#lifes {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 1%;
+    color: azure;
+    font-size: larger;
+    transition: all 0.5;
+}
+
+/* Styling of the heading */
+h1 {
+    margin-top: 1%;
+    font-size: 3rem;
+    text-shadow: 4px 4px 4px #352e43;
+    color: #a67ffa;
+    transition: all 0.5s;
+}
+
+h2 {
+    margin-top: 1%;
+    color: #75f99f;
+    text-shadow: 3px 3px 3px #233d2b;
+}
+
+a {
+    color: #75f99f;
+    transition: all 0.5s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 6%;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Styling the game board */
+.container {
+    background-color: #4ef4fc;
+    padding: 2%;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 16px 2px rgb(233, 75, 58);
+    display: flex;
+    flex-direction: row;
+}
+
+#myCanvas {
+    width: 55vh;
+    border: none;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+#options {
+    width: 50vh;
+    border: none;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(40px, 1fr));
+    align-items: center;
+}
+
+button {
+    margin-left: 30px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 1rem;
+    background-color: #a67ffa;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #151515;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 3px 3px 10px #000000;
+}
