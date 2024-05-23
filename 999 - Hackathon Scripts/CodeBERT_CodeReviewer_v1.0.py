@@ -422,6 +422,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     user = args.user
+    # user = args.user
     repository = args.repository
     pullRequestId = args.pullRequestId
     githubToken = args.githubToken
