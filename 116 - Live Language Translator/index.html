@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Language Translator</title>
+
+    <!-- box icon link  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style sheet link  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- heading  -->
+    <h1>Live Language Translator</h1>
+
+    <!-- language selection area  -->
+    <div class="lang_select">
+      <select></select>
+      <span class="bx bx-transfer"></span>
+      <select></select>
+    </div>
+
+    <!-- translation area  -->
+    <div class="translation_area">
+      <!-- text input area  -->
+      <div class="input_box">
+        <textarea
+          id="inputText"
+          placeholder="Enter text to translate here"
+          maxlength="499"
+        ></textarea>
+        <div class="icons">
+          <span class="bx bx-volume-full inputSpeech"></span>
+          <span class="input_length">0/499</span>
+        </div>
+      </div>
+
+      <!-- translated text area  -->
+      <div class="translate_box">
+        <textarea
+          id="translatedText"
+          placeholder="Translated text appears here"
+          disabled
+        ></textarea>
+        <div class="icons">
+          <span class="bx bx-volume-full outputSpeech"></span>
+          <span class="bx bx-copy"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <h3>*Instructions*</h3>
+      <ul>
+        <li>
+          Use the transfer/exchange button
+          <span class="bx bx-transfer"></span> to swap both languages
+        </li>
+      </ul>
+    </div>
+    <!-- script link -->
+    <script src="language.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
