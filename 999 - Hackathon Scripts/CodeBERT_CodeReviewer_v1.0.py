@@ -303,7 +303,7 @@ class FileDiffs(object):
         diff_array = diff_string.split("\n")
         self.file_name = diff_array[0]
         print("self.file_name : " + self.file_name)
-        if("a/" in self.file_name and "b/" in self.file_name):
+        if(self.file_name and "a/" in self.file_name and "b/" in self.file_name):
             self.file_path = self.file_name.split("a/", 1)[1].rsplit("b/", 1)[0].rstrip()
             #self.file_path = self.file_path.split(" ")[0]
             self.diffs = list()
@@ -356,8 +356,11 @@ def review_pr(user, repository, pull_number, githubToken):
     files_diffs = list()
     for file in code_diff.split("diff --git"):
         if len(file) > 0:
-            fd = FileDiffs(file)
-            files_diffs.append(fd)
+            file_name = file.split("\n")[0]
+            isValidFileName =file_name  and "a/" in file_name and "b/" in s file_name
+            if(isValidFileName):
+                fd = FileDiffs(file)
+                files_diffs.append(fd)
     # Generate comments for each diff
     output = ""
     for fd in files_diffs:
