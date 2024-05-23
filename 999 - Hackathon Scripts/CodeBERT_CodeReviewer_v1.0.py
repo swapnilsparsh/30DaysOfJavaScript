@@ -357,7 +357,7 @@ def review_pr(user, repository, pull_number, githubToken):
     for file in code_diff.split("diff --git"):
         if len(file) > 0:
             file_name = file.split("\n")[0]
-            isValidFileName =file_name  and "a/" in file_name and "b/" in s file_name
+            isValidFileName =file_name  and "a/" in file_name and "b/" in file_name:
             if(isValidFileName):
                 fd = FileDiffs(file)
                 files_diffs.append(fd)
