@@ -1,0 +1,70 @@
+/* span {
+    display: block;
+  } */
+  /* .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  } */
+  .button {
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+#grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  #red {
+    background: red;
+  }
+  #magenta {
+    background: magenta;
+  }
+  #pink {
+    background: pink;
+  }
+  #royalblue {
+    background: royalblue;
+  }
+  #rosybrown {
+    background: rosybrown;
+  }
+  #lawngreen {
+    background: lawngreen;
+  }
+  #silver {
+    background: silver;
+  }
+  #bisque {
+    background: bisque;
+  }
+  #rebeccapurple {
+    background: rebeccapurple;
+  }
+  #mediumspringgreen {
+    background: mediumspringgreen;
+  }
+
+
+  .h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-size: large;
+    font-weight: 800;
+  }
+  .colors{
+    padding-left: 30px;
+  }
