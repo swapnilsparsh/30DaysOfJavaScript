@@ -422,6 +422,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     user = args.user
+    #  user = args.user
     repository = args.repository
     pullRequestId = args.pullRequestId
     githubToken = args.githubToken
@@ -429,6 +430,7 @@ if __name__ == "__main__":
     print("repository:"+repository)
     print("pullRequestId:"+pullRequestId)
     print("githubToken:"+githubToken)
+        # print("githubToken:"+githubToken)
     ## post_github_comments("I think this should be `z = Math.random() * l`", repository, user, githubToken, 1, "05 - Random Password Generator/main.js", code_diff)
     comments = review_pr(user,repository, pullRequestId, githubToken)
     if("Comment:" not in comments):
