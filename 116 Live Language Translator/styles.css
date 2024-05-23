@@ -1,0 +1,143 @@
+/* global selector  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 128, 128, 0.7);
+}
+
+/* body selector  */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: teal;
+}
+
+/* heading selectors  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: whitesmoke;
+  font-family: "Merriweather", serif;
+  letter-spacing: 0.25rem;
+  padding: 20px;
+  text-align: center;
+}
+
+/* dropdown selector section*/
+.lang_select {
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+}
+
+.lang_select select {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* translation area selector section */
+.translation_area {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Playfair Display", serif;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* selecting div with class that contains the substring 'box' */
+div[class*="box"] {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* textarea selector  */
+textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: large;
+  outline: none;
+  resize: none;
+}
+
+/* box icon container selector  */
+.icons {
+  display: inline-flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+/* box icon selector  section*/
+.bx {
+  cursor: pointer;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+
+.bx:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input_box .icons {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* instructions selector section  */
+.instructions {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+.instructions h3 {
+  text-align: left;
+}
+.instructions ul {
+  list-style: none;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
