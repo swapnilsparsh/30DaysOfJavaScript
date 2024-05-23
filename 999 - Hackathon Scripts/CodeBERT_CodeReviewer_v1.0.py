@@ -4,6 +4,7 @@ from torch.nn import CrossEntropyLoss
 from transformers import AutoTokenizer, T5ForConditionalGeneration, AutoModelForSeq2SeqLM, T5Config
 import torch
 import re
+import argparse
 
 def post_github_general_comment(input_string, repo, user, token, pr_id):
     # Define the GitHub API endpoint for the PR comments
