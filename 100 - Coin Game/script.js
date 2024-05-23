@@ -157,6 +157,26 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
+function generateTeste() {
+  const minimumGap = 30;
+  const maximumGap = 150;
+
+  // X coordinate of the right edge of the furthest tree
+  const lastTree = trees[trees.length - 1];
+  let furthestX = lastTree ? lastTree.x : 0;
+
+  const x =
+    furthestX +
+    minimumGap +
+    Math.floor(Math.random() * (maximumGap - minimumGap));
+
+  const treeColors = ["#6D8821", "#8FAC34", "#98B333"];
+  const color = treeColors[Math.floor(Math.random() * 3)];
+
+  trees.push({ x, color });
+}
+
+
 window.addEventListener("mousedown", function (event) {
   if (phase == "waiting") {
     lastTimestamp = undefined;
@@ -294,9 +314,9 @@ function thePlatformTheStickHits() {
   if (
     platformTheStickHits &&
     platformTheStickHits.x + platformTheStickHits.w / 2 - perfectAreaSize / 2 <
-      stickFarX &&
+    stickFarX &&
     stickFarX <
-      platformTheStickHits.x + platformTheStickHits.w / 2 + perfectAreaSize / 2
+    platformTheStickHits.x + platformTheStickHits.w / 2 + perfectAreaSize / 2
   )
     return [platformTheStickHits, true];
 
@@ -502,7 +522,7 @@ function getHillY(windowX, baseHeight, amplitude, stretch) {
   const sineBaseY = window.innerHeight - baseHeight;
   return (
     Math.sinus((sceneOffset * backgroundSpeedMultiplier + windowX) * stretch) *
-      amplitude +
+    amplitude +
     sineBaseY
   );
 }
