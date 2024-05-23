@@ -1,4 +1,5 @@
 /* Style for the grid container */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -6,11 +7,15 @@
   padding: 20px;
 }
 body {
-  background-image: url(backg.jpeg);
+ 
   background-attachment:fixed;
+  background-color: whitesmoke;
 
 }
 /* buttons.css */
+.p1{
+  font-size: x-large;
+}
 .button {
   margin: 10px;
   border-color: black;
@@ -23,6 +28,67 @@ body {
 
 p{
   margin: 10px;
+}
+#searchbar,
+.toggleButton {
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#searchbar {
+  margin: 14px 0px;
+  background-color: rgb(15, 13, 38);
+  color: white;
+}
+
+
+
+footer {
+  background-color: whitesmoke;
+  text-align: center;
+  color:black;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  line-height: 3vh;
+  margin-top: 30px;
+  
+}
+.p{
+  font-size: x-large;
+}
+
+footer a {
+  color: black !important;
+  font-size: x-large;
+  
+}
+
+footer a:visited {
+  color:black!important;
+}
+
+
+#searchbar::placeholder {
+  color: rgba(255, 255, 255, 0.684);
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container {
+  padding: 4px;
+}
+
+.search-input {
+  font-size: 14px;
 }
 
 /* Style for each card */
@@ -88,7 +154,7 @@ border-top:solid  ;
 #main-title {
   text-align: center;
   font-size: 48px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-family: 'Arial', sans-serif;
   color: black;
   position:relative;
