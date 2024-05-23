@@ -15,8 +15,9 @@ function initial() {
   value1.classList.remove("value");
   value2.classList.remove("value");
   value3.classList.remove("value");
-  btnStart.disabled = false
-  inpSpeed.disabled = false
+
+  btnStart.style.display="block";
+  btnStop.style.display="none";
 }
 
 function getRandomValue() {
@@ -72,7 +73,9 @@ function startclick() {
 
   myoutput.textContent = "Hey! You are ON 😎🔥";
   
-  btnStart.disabled = true
+  // btnStart.disabled = true
+  btnStart.style.display="none";
+  btnStop.style.display="block";
   inpSpeed.disabled = true
 }
 
