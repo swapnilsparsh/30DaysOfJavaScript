@@ -302,15 +302,16 @@ class FileDiffs(object):
     def __init__(self, diff_string):
         diff_array = diff_string.split("\n")
         self.file_name = diff_array[0]
-        #print(diff_array)
-        self.file_path = self.file_name.split("a/", 1)[1].rsplit("b/", 1)[0].rstrip()
-        #self.file_path = self.file_path.split(" ")[0]
-        self.diffs = list()
-        for line in diff_array[4:]:
-            if line.startswith("@@"):
-                self.diffs.append(str())
-            if(self.diffs):
-                self.diffs[-1] += "\n" + line
+        print("self.file_name : " + self.file_name)
+        if("a/" in self.file_name and "b/" in self.file_name):
+            self.file_path = self.file_name.split("a/", 1)[1].rsplit("b/", 1)[0].rstrip()
+            #self.file_path = self.file_path.split(" ")[0]
+            self.diffs = list()
+            for line in diff_array[4:]:
+                if line.startswith("@@"):
+                    self.diffs.append(str())
+                if(self.diffs):
+                    self.diffs[-1] += "\n" + line
 
 def getFileUrl(pr_files,file_name):
     raw_url = ""
@@ -360,6 +361,8 @@ def review_pr(user, repository, pull_number, githubToken):
     # Generate comments for each diff
     output = ""
     for fd in files_diffs:
+        print(" fs : ")
+        print(fd)
         output += F"File:{fd.file_path}\n"
         #file_url = getFileUrl(pr_files, fd.file_path)
         if(fd.file_path):
