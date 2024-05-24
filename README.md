@@ -167,7 +167,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 112 |          [Maze Game](https://30daysofjs.netlify.app/112%20-%20Maze%20Game/)                                      |
 | 113 |          [Minesweeper](https://30daysofjs.netlify.app/113%20-%20minesweeper/)     
 | 114 |          [Movie Guessing Game]()                            
-
+| 116 |          [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                                |
  </td><td>   
  </td></tr></table>
 
