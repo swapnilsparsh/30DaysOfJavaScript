@@ -1,4 +1,5 @@
 // Create a "close" button and append it to each list item
+
 var myNodelist = document.getElementsByTagName('LI');
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -110,6 +111,7 @@ document.getElementById('myInput').addEventListener('keyup', function(event) {
     }
 });
 document.getElementById('myInput').value = '';
+
 
 
 
