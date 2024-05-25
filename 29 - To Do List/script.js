@@ -77,11 +77,7 @@ function newElement () {
             div.style.display = 'none';
         };
     }
-var currentDate = new Date();
-var formattedDate = formatDate(currentDate);
-var dateElement = document.createElement('span');
-dateElement.textContent = formattedDate;
-li.appendChild(dateElement);
+
 }
 
 //Edit the list whenever the pencil icon is clicked
@@ -114,9 +110,7 @@ document.getElementById('myInput').addEventListener('keyup', function(event) {
     }
 });
 document.getElementById('myInput').value = '';
-function formatDate(date) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString(undefined, options);
-}
+
+
 
 // Add this code inside your `newElement` function, after creating the `t` variable.
