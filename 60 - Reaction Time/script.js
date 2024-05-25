@@ -1,41 +1,44 @@
-var start = new Date().getTime();
-//function to change color of shapes
-function randcolor(){
-    var colorArray = '0123456789ABCDEF';
-    var hash  ='#';
-    for(var i =0;i<6;i++){
-        hash+=colorArray[Math.floor(Math.random()*16)];
+const fig = document.getElementById("fig");
+const timeTaken = document.getElementById("timeTaken");
+let start = new Date().getTime();
+
+// Function to change color of the figure
+const figureColor = () => {
+    const colorArray = '0123456789ABCDEF';
+    let hash = '#';
+    for (let i = 0; i < 6; i++) {
+        hash += colorArray[Math.floor(Math.random() * 16)];
     }
-    document.getElementById("fig").style.backgroundColor = hash;
+    fig.style.backgroundColor = hash;
 }
-function figure(marg){
-    document.getElementById("fig").style.margin = ""+marg+"px";
+
+// Function to change the figure position
+const figurePosition = (top, left) => {
+    fig.style.top = `${top}%`;
+    fig.style.left = `${left}%`;
+    fig.style.transform = `translate(-50%, -50%)`;
 }
-function shape(size){
+
+// Function to change the figure shape
+const figureShape = (size) => {
     start = new Date().getTime();
 
-    var choice = Math.floor((Math.random()*2)+1);
-    if(choice==1){
-        document.getElementById("fig").style.width = ""+size+"px";
-        document.getElementById("fig").style.height = ""+size+"px";
-        document.getElementById("fig").style.borderRadius = "50%";
-
-    }
-    if(choice==2){
-        document.getElementById("fig").style.width = ""+size+"px";
-        document.getElementById("fig").style.height = ""+size+"px";
-        document.getElementById("fig").style.borderRadius = "0";
-    }
+    const choice = Math.floor(Math.random() * 2);
+    fig.style.width = `${size}px`;
+    fig.style.height = `${size}px`;
+    fig.style.borderRadius = choice == 0 ? "50%" : "0";
 }
 
+// Event listener to change the figure properties once it is clicked
+fig.addEventListener("click", () => {
+    const end = new Date().getTime();
+    timeTaken.innerHTML = (end - start) / 1000;
 
-    document.getElementById("fig").onclick = function(){
-        var end = new Date().getTime();
-        var timeTaken = (end-start)/1000;
-        document.getElementById("tTaken").innerHTML = timeTaken;
-        var marg = Math.floor((Math.random()*600)+50);
-        var size = Math.floor((Math.random()*100)+50);
-        figure(marg,size);
-        shape(size);
-        randcolor();
-    }
+    const top = Math.floor(Math.random() * 100);
+    const left = Math.floor(Math.random() * 100);
+    const size = Math.floor(Math.random() * 100) + 50;
+
+    figurePosition(top, left);
+    figureShape(size);
+    figureColor();
+});
