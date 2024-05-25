@@ -1,10 +1,12 @@
+const btnClick = document.querySelector('#cal-btn');
+btnClick.addEventListener('click', fun);
 function fun()
     {
         var cm = document.getElementById("cm").value ;
         cm = cm/100;
         var w = document.getElementById("weight").value;
-        var bmi = w/(cm*cm);
-        document.getElementById("bmi").value = bmi;
+        var bmi = (w/(cm*cm)).toFixed(2);
+        document.getElementById("bmi").textContent  = bmi;
         if(bmi<18.5)
         {
             document.querySelector("h4").innerHTML = 'Under weight';

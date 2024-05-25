@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000e6;
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+
+.cal-header {
+    margin: 0 0 2rem 0;
+}
+
+.container {
+    border-radius: 40px;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.bmi-info {
+    margin: 0 auto;
+}
+
+.cal-header h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+#weight,
+#cm {
+    display: inline-block;
+    width: 270px;
+    padding: 3% 3%;
+    margin: 25px 0;
+}
+
+input[type="number"] {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #99cccc;
+    color: white;
+}
+
+#cal-btn {
+    color: white;
+    margin: 1rem 0;
+    background-color: #66ccff;
+    padding: 2% 4%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+#cal-btn:hover {
+    background-color: #00cccc;
+}
+
+#bmi {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.result {
+    margin: 20px 10px;
+    background-color: #ff9966;
+    border-radius: 5px;
+    padding: 2% 3%;
+}
