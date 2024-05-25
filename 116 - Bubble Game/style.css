@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gochi hand;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a1a1a1;
+    background-image: url(https://imgs.search.brave.com/HdwJ0S2VgC8V2r7TgMLKaoVKpFmEI8VqrGt3uR3PeCo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/aGFuZC1kcmF3bi1h/YnN0cmFjdC1vcmdh/bmljLXNoYXBlcy1i/YWNrZ3JvdW5kXzIz/LTIxNDg0MjA2NDQu/anBnP3NpemU9NjI2/JmV4dD1qcGc);
+background-repeat: repeat;
+background-position: top;
+}
+.container{
+    /* background-color: rgb(127, 124, 171); */
+    height:90%;
+    width:85%;
+    border-radius: 14px;
+    overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ border: 3px solid black;
+}
+.chead{
+    height: 100px;
+    width: 100%;
+    background-color: #8EB1C7;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25%;
+    border-bottom: 3px solid black;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.cbody{
+    height: calc(100% - 100px);
+    width: 100%;
+    background-color: white;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.ending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ending h2{
+    font-size: 30px;
+    border: 2px solid;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: #FCD36C;
+}
+
+.box{
+    height: 40px;
+    width: 40px;
+    background-image: url(https://i.pinimg.com/564x/03/81/b6/0381b6e357118ecd81ee4f0348b0f8f7.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 27px;
+font-family:gochi hand;
+border-left: 2px solid black;
+padding: 0 20px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    overflow:hidden ;
+    padding-left: 8px;
+    background-color: #FF694C;
+
+}
+.bubble{
+   background-color: #FCD36C;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      margin: 0;
+      font-size: 23px;
+      /* margin: 5px; */
+}
+.bubble:hover{
+    background-color: #ecb529;
+    cursor: pointer;
+}
+@media (max-width:666px){
+    .chead{
+        height: 80px;
+        padding: 0 10%;
+    }
+    .cbody{
+        height: calc(100% - 80px);
+    padding-top:15px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .main{
+        background-image: url(https://imgs.search.brave.com/HdwJ0S2VgC8V2r7TgMLKaoVKpFmEI8VqrGt3uR3PeCo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/aGFuZC1kcmF3bi1h/YnN0cmFjdC1vcmdh/bmljLXNoYXBlcy1i/YWNrZ3JvdW5kXzIz/LTIxNDg0MjA2NDQu/anBnP3NpemU9NjI2/JmV4dD1qcGc);
+
+        background-position: center;
+        background-size: contain;
+    }
+    .elem{
+        height: 30px;
+        font-size: 15px;
+        width: 90px;
+      display: flex;
+      justify-content: space-between;
+      /* padding: 0 4px; */
+      gap: 0;
+      position: relative;
+    }
+    .elem h2{
+        font-size: 18px;
+        width: 80%;
+    }
+    .elem .box{
+        font-size: 20px;
+        /* width: 80px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+    }
+    .bubble{
+        height: 35px;
+        width: 35px;
+        font-size: 16px;
+        
+    }
+    .ending{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ending h1{
+font-size: 24px;
+    }
+   
+}
