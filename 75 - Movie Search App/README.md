@@ -1,6 +1,6 @@
 # Movie Search App
 
-A simple and elegant Movie Search App built with HTML, CSS, and JavaScript that fetches movie information from the TMDB API.
+A simple and elegant Movie Search App built with HTML, CSS, and JavaScript that fetches movie information from the OMDB API.
 
 ## Table of Contents
 
@@ -18,14 +18,13 @@ A simple and elegant Movie Search App built with HTML, CSS, and JavaScript that 
 
 ## Overview
 
-The Movie Search App allows users to search for movies and view popular, editor's picks, and recommended movies. The app fetches data from the TMDB API and displays it in a user-friendly interface.
+The Movie Search App allows users to search for movies and view popular, editor's picks, and recommended movies. The app fetches data from the OMDB API and displays it in a user-friendly interface.
 
 ## Features
 
 - Search for movies by name
 - View popular movies
 - Explore editor's picks
-- See recommended movies based on a selected movie
 - Responsive design
 - Skeleton loading screens for better user experience
 
@@ -37,7 +36,7 @@ The Movie Search App allows users to search for movies and view popular, editor'
 
 ## APIs Used
 
-- [TMDB API](https://www.themoviedb.org/documentation/api)
+- [OMDB API](http://www.omdbapi.com/)
 
 ## Installation
 
@@ -56,24 +55,21 @@ The Movie Search App allows users to search for movies and view popular, editor'
 1. Open the app in your web browser.
 2. Use the search bar to type the name of the movie you want to search for.
 3. Press the search button or hit enter to see the search results.
-4. Explore the popular movies, editor's picks, and recommendations.
+4. Explore the popular movies and editor's picks.
 
 ## JavaScript Functions Structure
 
 The JavaScript code in this project is organized into several functions to handle different parts of the application. Here's a brief overview:
 
 - **elementFromHtml(html)**: A utility function to create a DOM element from an HTML string.
-- **popularMovies(data)**: Filters and sorts movies by rating and popularity to display popular movies.
-- **getMovies(url)**: Fetches movies from the TMDB API using the provided URL and handles the data to show editor's picks and popular movies.
-- **getRecommendationsForMovie(movieId)**: Fetches recommended movies based on the provided movie ID.
+- **getMovies(url)**: Fetches movies from the OMDB API using the provided URL and handles the data to show editor's picks and search results.
 - **showMovies(sectionName, data)**: Displays the movies in the specified section of the page using the data fetched from the API.
-- **getColor(vote)**: Returns the color of the rating based on its value.
 - **Event Listeners**:
   - **searchBtn.addEventListener("click", ...)**: Handles the search button click event to fetch and display search results.
+  - **closePopup.addEventListener("click", ...)**: Closes the popup when the close button is clicked.
+  - **logo.addEventListener("click", ...)**: Resets the search and displays the initial state of the page when the logo is clicked.
   - **window.addEventListener('scroll', ...)**: Shows or hides the scroll-up button based on the user's scroll position.
   - **scrollUp.addEventListener("click", ...)**: Scrolls the page to the top when the scroll-up button is clicked.
-  - **closePopup.addEventListener('click', ...)**: Closes the popup when the close button is clicked.
-  - **logo.addEventListener("click", ...)**: Resets the search and displays the initial state of the page when the logo is clicked.
 
 ## Screenshots
 
@@ -97,6 +93,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 Surojit Mondal - [My LinkedIn](https://www.linkedin.com/in/surojitmondal) - [My Email](mailto:surojitmondalit@gmail.com)
-
 
 ---
