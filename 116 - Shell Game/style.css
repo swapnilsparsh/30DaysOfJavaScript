@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #e43535;
+    background-color: #fbf9f9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -13,11 +13,11 @@ body {
     justify-content: space-around;
     margin: 20px;
     padding: 10px;
-    
 }
-.game-container h3{
+.game-container h3 {
     text-align: center;
     margin-top: 35px;
+    font-size: 10px;
 }
 
 .bowl {
@@ -25,26 +25,37 @@ body {
     height: 100px;
     background-color: rgb(201, 207, 32);
     border-radius: 50%;
-    border: 2px solid black;
-    display: table-column;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: relative;
-    justify-content: space-between;
+    background: transparent;
+    transition: transform 0.5s;
+}
+.bowl img {
+    width: 100px;
+    height: 60px;
+    margin-top: -30px;
+}
+.bowl img:hover{
+    transform: scale(1.1);
+    transition: .1s;
 }
 
 .ball {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: red;
     border-radius: 50%;
-    display: none;
-    justify-content: space-between;
+    border: 2px solid black;
     position: absolute;
-    
+    top: 60px; 
+    left: calc(50% - 15px); 
+    transition: all 0.5s;
 }
-.bowl:hover{
+
+.bowl:hover {
     transform: scale(1.1);
     transition: .1s;
 }
@@ -59,11 +70,11 @@ button {
     font-size: 1em;
     cursor: pointer;
     margin-top: 20px;
-    border-radius:20px ;
+    border-radius: 20px;
     border: solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-button:hover{
+button:hover {
     background-color: rgb(59, 236, 14);
     transform: scale(1.1);
     transition: .1s;
