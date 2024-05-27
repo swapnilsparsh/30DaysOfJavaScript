@@ -55,7 +55,7 @@ function resetBoard(rodName) {
     ball.style.left = (windowWidth - ball.offsetWidth) / 2 + 'px';
 
 
-    // Lossing player gets the ball
+    // Losing player gets the ball
     if (rodName === rod2Name) {
         ball.style.top = (rod1.offsetTop + rod1.offsetHeight) + 'px';
         ballSpeedY = 2;

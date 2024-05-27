@@ -1,0 +1,155 @@
+/* Importing the Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19172e;
+}
+
+.container{
+    /* border: 2px solid wheat; */
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 3px 3px 1px darkolivegreen;
+}
+
+.container > h2{
+    font-family: "Lilita One", sans-serif;
+    font-size: 3.6rem;
+    color: #19172e;
+    margin: 14px;
+}
+
+#guess{
+    padding: 8px 16px;
+    border: 2px solid darkolivegreen;
+    border-radius: 18px;
+    width: 50%;
+    margin: 10px;
+}
+
+#submitGuess{
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    background-color: darkolivegreen;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px  darkkhaki;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 8px;
+}
+
+#submitGuess:hover{
+    box-shadow: 0px 0px 0px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#result{
+    color: green;
+    font-family:"Lilita one", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+#nextBtn{
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #19172e;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    outline: none;
+    border: 2px solid #19172e;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+#nextBtn:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+
+#country-flag{
+    width: 250px;
+    border-radius: 4px;
+    border: 2px solid #19172e;
+}
+
+#empty-error{
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.scoreElement{
+    padding: 10px;
+}
+
+#score-guide{
+    color: gray;
+}
+
+#user-score{
+    color: #19172e;
+    font-family: "Lilita one";
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 75%;
+    }
+    
+    .container > h2{
+        font-size: 2rem;
+    }
+
+    #country-flag{
+        width: 150px;
+    }
+
+    #guess{
+        width: 75%;
+    }
+  }
+
+  
+footer {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+  
+  footer a:visited {
+    color: inherit;
+  }

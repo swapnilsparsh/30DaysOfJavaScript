@@ -8,6 +8,10 @@ var started = false;
 
 var level = 0;
 
+var highScore=0;
+
+var h2=document.querySelector("h2");
+
 $(document).keypress(function(){
     if(started === false){
         $("#level-title").text("Level " + level);
@@ -31,6 +35,7 @@ function checkAnswer(currentLevel){
 
      if (userClickedPattern.length === gamePattern.length){
         setTimeout(function () {
+            highScore=Math.max(highScore,level);
             nextSequence();
           }, 1000);
     }
@@ -42,7 +47,8 @@ function checkAnswer(currentLevel){
         setTimeout(function(){
             $("body").removeClass("game-over");
         }, 200);
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text(`Game Over, Your score is ${Math.max(0,level-1)}. Press Any Key to Restart`);
+        h2.innerText=`HighScore : ${highScore}`;
         startOver();
     }
 
