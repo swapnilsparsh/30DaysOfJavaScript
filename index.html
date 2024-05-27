@@ -30,11 +30,14 @@
   </style>
 </head>
 <body>
-  <!-- ... other body elements ... -->
-  <h1 id="main-title">30 Days of JavaScript</h1>
-  <div class="search-container">
+  <button id="darkModeToggle" class="dark-mode-toggle">
+    <span id="darkModeIcon">🌙</span>
+</button>
+  <div class="header">
+    <h1 id="main-title">30 Days of JavaScript</h1>
     <input type="text" class="search-input" placeholder="Search..." onkeyup="filterCards()">
-  </div>
+</div>
+
   <!-- Main Section Start -->
   <div class="grid-container" id="projectsContainer">
     <!-- Card for Drum Kit -->
@@ -1385,8 +1388,14 @@
       <br>
       <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript</a>
     </p>
+    <div class="pagination">
+      <button id="prevPage" class="page-btn">Previous</button>
+      <span id="pageNumbers"></span>
+      <button id="nextPage" class="page-btn">Next</button>
+    </div>
   </footer>
   <!-- ... footer ends ... -->
+  <button id="backToTopBtn" class="back-to-top-btn">&uarr;</button>
   <script src="app.js"></script>
   <script>
     function filterCards() {
