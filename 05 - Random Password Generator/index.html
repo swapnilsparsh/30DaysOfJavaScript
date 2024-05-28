@@ -14,15 +14,84 @@
     <h2>Random Password Generator</h2>
     <div class="inputBox">
         <input type="text" name="" placeholder="Create Password" id="password" readonly="">
-        <input type="number" id="length" min="8" max="32" value="16" placeholder="Enter Number of Characters">
+        <input type="number" id="length" min="8" max="32" value="" placeholder="Enter Number of Characters">
         <label><input type="checkbox" id="includeLowercase" checked> Lowercase(a-z)</label>
         <label><input type="checkbox" id="includeUppercase" checked> Uppercase(A-Z)</label>
         <label><input type="checkbox" id="includeSymbols" checked> Symbols(@-*)</label>
         <label><input type="checkbox" id="includeNumbers" checked> Numbers(0-9)</label>
         
+      
+
     </div>
-    <div id="btn" onclick="getPassword();">Generate Password</div>
-  </div>
+    <!-- <div id="btn" class="custom-button" onclick="getPassword();">Generate Password</div> -->
+  
+
+   
+    <button class="custom-button"  >
+      Generate 
+    </button>
+
+
+<div id="customAlertBox" class="custom-alert">
+    <div class="custom-alert-content">
+        <span class="close">&times;</span>
+        <p id="alertMessage"></p>
+    </div>
+</div>
+
+<script>
+  let alertBox =
+      document.getElementById("customAlertBox");
+  let alert_Message_container =
+      document.getElementById("alertMessage");
+  let custom_button =
+      document.querySelector(".custom-button");
+  let close_img =
+      document.querySelector(".close");
+  let body =
+      document.querySelector("body");
+
+  custom_button.addEventListener
+      ('click', function () {
+        let length = document.getElementById('length').value;
+        if (length === '') {
+          document.getElementById('password').value = " ";
+          alert_Message_container.innerHTML =
+             "please enter the no.of characters" 
+          // alertBox.style.display = "block";
+            
+            // window.alert("enter num.of digits");
+          
+            //  length = 8; // Setting default length to 8
+        }
+        else{
+          const includeLowercase = document.getElementById('includeLowercase').checked;
+        const includeUppercase = document.getElementById('includeUppercase').checked;
+        const includeSymbols = document.getElementById('includeSymbols').checked;
+        const includeNumbers = document.getElementById('includeNumbers').checked;
+    
+        let chars = '';
+        if (includeLowercase) chars += 'abcdefghijklmnopqrstuvwxyz';
+        if (includeUppercase) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        if (includeSymbols) chars += '!@#$%&';
+        if (includeNumbers) chars += '0123456789';
+    
+        let password = '';
+        for (let i = 0; i < length; i++) {
+            password += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+    
+        document.getElementById('password').value = password;
+        }
+          
+      });
+
+  close_img.addEventListener
+      ('click', function () {
+          alertBox.style.display = "none";
+      });
+
+</script>
 
     <footer>
         <p>&#x3c; &#47; &#x3e; with ❤️ by 
@@ -32,5 +101,8 @@
           </a>
         </p>
     </footer>
+
+
+
 </body>
 </html>

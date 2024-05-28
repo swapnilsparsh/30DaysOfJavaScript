@@ -71,10 +71,10 @@ h2 {
   vertical-align: middle;
 }
 
-#btn {
+.custom-button{
   cursor: pointer;
   color: #fff;
-  background: #333;
+  background: #329a4f;
   font-size: 1rem;
   padding: 10px 20px;
   border-radius: 5px;
@@ -83,8 +83,10 @@ h2 {
   margin-top: 20px;
 }
 
-#btn:hover {
-  background: #1e8e3e;
+.custom-button:hover {
+  background: #dfece3;
+  box-shadow: #fff;
+  color: rgb(72, 50, 23);
 }
 
 footer {
@@ -112,4 +114,5 @@ footer a:visited {
   color: white;
   text-decoration: none;
 }
+
 
