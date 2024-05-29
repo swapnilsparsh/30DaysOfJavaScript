@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .game-container {
+    margin: 50px auto;
+    max-width: 1100px;
+    padding: 20px;
+    /* Removed background-color */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #aadbea, #849597); /* Gradient from light gray to slightly darker gray */
+  }
+  
+  body {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #000000, #2a2b2b); /* Gradient from dark blue to light blue */
+  }
+  
+
+
+
+#scoreboard-container {
+    background-color: rgb(105, 84, 10); 
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bubble {
+    background-color: #e8f1a0;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+}
+
+#target-container {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+  
+  #scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .box {
+    display: inline-block;
+    padding: 5px 10px; 
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(255, 255, 255); 
+    margin-right: 5px; 
+    background-color: #074173; 
+  }
+  
+  .value-box {
+    display: inline-block;
+    padding: 5px 10px; 
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(255, 255, 255); 
+    margin-right: 5px; 
+    background-color: red; 
+    
+    
+  }
+  
+
+  
+  
+  #bubble-container {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr); 
+    grid-template-rows: repeat(8, 1fr); 
+    gap: 5px;
+    width: 1060px; 
+    height: 455px;
+    background-color: #A7FFEB;
+    border: 1px solid #01796b;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .bubble {
+    background-color: #5DEBD7;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    width: 50px; 
+    height: 50px; 
+  }
+  
+  #target-container {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  
