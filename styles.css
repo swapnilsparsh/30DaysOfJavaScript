@@ -76,9 +76,10 @@ body {
 
 .grid-container {
   display: grid;
+  margin-bottom: auto;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .pagination {
@@ -285,7 +286,7 @@ footer a:visited {
 }
 
 h4 {
-  font-size: 38px;
+  font-size: 30px;
 }
 
 /* Card title styling */
