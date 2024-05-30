@@ -204,7 +204,7 @@ function win_condition(){
     const bar1 = document.getElementById("bar-1");
     const bar2 = document.getElementById("bar-2");
     const bar3 = document.getElementById("bar-3");
-    if(bar1.childNodes.length == 0 && bar2.childNodes.length == 0 && bar3.childNodes.length == no_of_plates){
+    if((bar1.childNodes.length == 0 && bar2.childNodes.length == 0 && bar3.childNodes.length == no_of_plates) || (bar1.childNodes.length == 0 && bar2.childNodes.length == no_of_plates && bar3.childNodes.length == 0)){
         alert("Game Finished!! You did it.");
         undostate.disabled = true;
         redostate.disabled = true;
