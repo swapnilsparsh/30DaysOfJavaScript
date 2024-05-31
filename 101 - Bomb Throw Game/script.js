@@ -56,7 +56,7 @@ setInterval( ()=> {
     fireAudio.play(); // sound effect for fire
     allPipe.addClass('fire'); // Cannon pipe Animation
     
-    // Check User Cannon and Computer cannon are same postion and angle
+    // Check User Cannon and Computer cannon are same position and angle
     if( validAngle && validX ){  
       $('.game-container').addClass('defended');
       canBall.animate({

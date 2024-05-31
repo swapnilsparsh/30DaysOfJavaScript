@@ -3,7 +3,7 @@ about their accuracy of typing. I just tried to implement (monkeytype) and made 
 that is fonkeytype
 
 To open project. 
-To open project one should view this project while it is hosted as I haved faked backend using json
+To open project one should view this project while it is hosted as I have faked backend using json
 So please view this project in Hosted form
 You'll get the hosted link below
 

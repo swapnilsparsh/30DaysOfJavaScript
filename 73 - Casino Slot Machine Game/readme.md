@@ -30,7 +30,7 @@ ___
 ```
 
 > In 2nd Div We have 3 elements:
-            <br> 1. **Controller which take input from 1 to 10 , decides the spped of changes of emogies**
+            <br> 1. **Controller which take input from 1 to 10 , decides the speed of changes of emogies**
             <br> 2. **START button**
             <br> 3. **STOP button**
 ```html

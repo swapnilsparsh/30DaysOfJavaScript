@@ -26,7 +26,7 @@ input.addEventListener('keyup', function() {
     wordCount.innerHTML = 0;
   }
 
-  // sentence count	using ./!/? as sentense separators
+  // sentence count	using ./!/? as sentence separators
   if (words) {
     var sentences = input.value.split(/[.|!|?]+/g);
     console.log(sentences);

@@ -52,7 +52,6 @@ list.addEventListener('click', function (ev) {
 // Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement('li');
-    var division = document.createElement('div');
     var inputValue = document.getElementById('myInput').value;
     var inputTime = document.getElementById('time').value;
     var t = document.createTextNode(inputValue);

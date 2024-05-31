@@ -79,7 +79,7 @@
             tr.appendChild(td);
         }
 
-        //remaing td of dates for the 2nd row
+        //remaining td of dates for the 2nd row
         count = 1;
         while (c <= 6) {
             td = document.createElement("td");
