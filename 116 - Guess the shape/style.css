@@ -1,0 +1,121 @@
+/* Default settings */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+}
+
+h2 a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    background-color: #4ef4fc;
+    padding: 2%;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 16px 2px rgb(233, 75, 58);
+    transition: all 0.5s;
+}
+
+canvas {
+    border: none;
+    border-radius: 2rem;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+#options {
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 2rem;
+    transition: all 0.5s;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 1rem;
+    background-color: #a67ffa;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #151515;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 3px 3px 10px #000000;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    top: 1rem;
+    color: azure;
+}
+
+#score, #lifes {
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 6%;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    #options {
+        grid-template-columns: 1fr;
+    }
+}
