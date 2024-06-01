@@ -111,7 +111,7 @@ function search_project() {
     { name: "Hangman", url: "./34 - Hangman/index.html" },
     { name: "Simple Form Validation", url: "./35 - Simple Form Validation/index.html" },
     { name: "Lorem Ipsum Generator", url: "./36 - Lorem Ipsum Generator/index.html" },
-    { name: "RPS (Rock, Paper, Scissors) Game", url: "./37 - RPS (Rock, Paper, Scissors) Game/index.html" },
+    { name: "RPS (Rock, Paper, Scissors) Game", url: "./37 - RPS Game/index.html" },
     { name: "Snake Game", url: "./38 - Snake Game/index.html" },
     { name: "Age Calculator", url: "./39 - Age Calculator/index.html" },
     { name: "Gradient Generator", url: "./40 - Gradient Generator/index.html" },
