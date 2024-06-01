@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shell Game</h1>
+    <h5>Find the ball</h5>
+    <div class="game-container">
+        <div class="bowl" id="bowl1" onclick="checkBowl(1)"><h3>Bowl1 <img src="bowl.png" alt="bowl"></h3></div>
+        <div class="bowl" id="bowl2" onclick="checkBowl(2)"><h3>Bowl2 <img src="bowl.png" alt="bowl"></h3></div>
+        <div class="bowl" id="bowl3" onclick="checkBowl(3)"><h3>Bowl3 <img src="bowl.png" alt="bowl"></h3></div>
+    </div>
+    <div class="ball" id="ball"></div>
+    <button onclick="shuffle()">Shuffle</button>
+    <button id="playAgain" onclick="playAgain()" style="display:none;">Play Again</button>
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
