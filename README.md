@@ -170,7 +170,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 116 |          [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                                |
 | 117 |          [Guess_the_shape]()  |
 </td><td>   
- </td></tr></table>
+</td></tr></table>
 
 ## Code of Conduct
 
