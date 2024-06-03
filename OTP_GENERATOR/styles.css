@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#otp {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+label {
+    margin-right: 20px;
+}
+
+button#toggleMode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #333;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.mode-toggle .fa-sun,
+.mode-toggle .fa-moon {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.container.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+#otp.dark-mode {
+    background: #333;
+    color: #e0e0e0;
+}
+
+button.dark-mode {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+button#toggleMode.dark-mode {
+    color: #e0e0e0;
+}

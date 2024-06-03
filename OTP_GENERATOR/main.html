@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button id="toggleMode" class="mode-toggle">
+        <span id="modeIcon" class="fas fa-sun"></span>
+    </button>
+    <div class="container">
+        <h1>OTP Generator</h1>
+        <div class="otp-container">
+            <input type="text" id="otp" readonly>
+            <button id="generateOtp">Generate OTP</button>
+        </div>
+        <div class="options">
+            <label>
+                <input type="radio" name="otpType" value="numeric" checked>
+                Numeric
+            </label>
+            <label>
+                <input type="radio" name="otpType" value="alphanumeric">
+                Alphanumeric
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
