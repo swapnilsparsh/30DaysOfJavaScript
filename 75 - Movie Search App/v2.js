@@ -1,5 +1,5 @@
 const API_KEY = "apikey=5a58dd7";
-const BASE_URL = "http://www.omdbapi.com";
+const BASE_URL = "//www.omdbapi.com";
 
 const logo = document.querySelector("#logo");
 const search = document.querySelector("#search");
