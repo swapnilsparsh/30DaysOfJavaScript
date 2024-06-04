@@ -77,6 +77,7 @@ window.onload = function () {
     showLives.innerHTML = "You have " + lives + " lives";
     if (lives < 1) {
       showLives.innerHTML = "Game Over";
+      myButtons.innerHTML="<B style='font-size:30px;'>YOU LOST !! GAME OVER !!<br>BETTER LUCK NEXT TIME<B>"
     }
     for (var i = 0; i < geusses.length; i++) {
       if (counter + space === geusses.length) {
@@ -224,6 +225,8 @@ window.onload = function () {
    // Reset
 
   document.getElementById('reset').onclick = function() {
+    myButtons.innerHTML="";
+    myButtons.appendChild(letters);
     correct.parentNode.removeChild(correct);
     letters.parentNode.removeChild(letters);
     showClue.innerHTML = "";
