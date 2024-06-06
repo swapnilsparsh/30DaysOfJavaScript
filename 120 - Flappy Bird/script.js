@@ -180,3 +180,34 @@ function play() {
     }
     requestAnimationFrame(create_pipe);
 }
+
+// Function to handle game over
+function endGame() {
+    game_state = 'End';
+    message.style.left = '28vw';
+    message.classList.add('messageStyle');
+    sound_die.play();
+    resetGame();
+}
+
+// Function to reset the game
+function resetGame() {
+    document.removeEventListener('keydown', flyHandler);
+    document.removeEventListener('keyup', resetHandler);
+    document.removeEventListener('mousedown', flyHandler);
+    document.removeEventListener('mouseup', resetHandler);
+    bird.style.top = '40vh';
+    bird_dy = 0;
+    score_val.innerHTML = '0';
+    message.innerHTML = 'Game Over<br> Press Any Key to Restart';
+    img.style.display = 'none';
+    game_state = 'Start';
+}
+
+// Modify the mousedown event listener to prevent default behavior when the game is over
+document.addEventListener('mousedown', (e) => {
+    if (e.button === 0 && game_state === 'End') {
+        e.preventDefault(); // Prevent default behavior
+        startGame();
+    }
+});
