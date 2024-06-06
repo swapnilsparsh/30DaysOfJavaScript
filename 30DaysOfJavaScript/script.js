@@ -188,8 +188,8 @@ function search_project() {
       { name: "Luminosity Particle Js", url: "./111 - Luminosity Particle Js/index.html" },
       { name: "Maze Game", url: "./112 - Maze Game/index.html" },
       { name: "Minesweeper", url: "./113 - Minesweeper/index.html" },
-      { name: "Guess the Country", url: "./115 - Guess The Country/index.html"}
-  
+      { name: "Guess the Country", url: "./115 - Guess The Country/index.html"},
+      { name: "Flappy Bird", url: "./120 - Flappy Bird/index.html"}
 ];
 
   // Filter suggestions based on input
