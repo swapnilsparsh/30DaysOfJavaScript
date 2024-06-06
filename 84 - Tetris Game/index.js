@@ -187,8 +187,15 @@ startbtn.addEventListener("click", pause)
 
 function gameOver() {
     if (currentshape.some(index => squares[currentposition + index].classList.contains('freeze'))) {
-        score.innerHTML = "Game Over"
-        clearInterval(timer)
+        score.innerHTML = "Game Over";
+        clearInterval(timer);
+        pause();
+        window.removeEventListener("keydown", control);
+        leftbtn.style.pointerEvents = "none";
+        rightbtn.style.pointerEvents = "none";
+        downbtn.style.pointerEvents = "none";
+        rotatebtn.style.pointerEvents = "none";
+        startbtn.style.pointerEvents = "none";
     }
 }
 
