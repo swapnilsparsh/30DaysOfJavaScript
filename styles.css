@@ -1,0 +1,323 @@
+/* styles.css */
+body {
+  transition: background-color 0.3s, color 0.3s;
+  background-attachment: fixed;
+  background-color: whitesmoke;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .maincard {
+  background-color: #333333;
+  color: #ffffff;
+  
+}
+.dark-mode .card, .dark-mode .card1 {
+  background-color: #333333;
+  color: #ffffff;
+}
+.dark-mode .search-container{
+  background-color: #121212;
+}
+.dark-mode #main-title {
+  color: white;
+}
+.dark-mode .card h4, .dark-mode .card p, .dark-mode .card a {
+  color: #ffffff;
+}
+
+.dark-mode .card a:hover {
+  color: #d0d0d0;
+}
+
+.dark-mode footer {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode footer a {
+  color: #ffffff !important;
+}
+
+
+.dark-mode .page-btn, .dark-mode .page-number {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.dark-mode .page-number.current {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-toggle:hover {
+  background-color: #eeeeee;
+}
+
+.grid-container {
+  display: grid;
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: auto;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-btn, .page-number {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.page-btn {
+  border-radius: 50px;
+}
+
+.page-number.current {
+  background-color: #000;
+  color: #fff;
+}
+
+.page-btn:disabled, .page-number.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.page-number:hover:not(.current) {
+  background-color: #d0d0d0;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top-btn:hover {
+  background-color: #3700b3;
+}
+
+/* Other styles */
+body {
+  background-attachment: fixed;
+  background-color: whitesmoke;
+}
+
+.p1 {
+  font-size: x-large;
+}
+
+.button {
+  margin: 10px;
+  border-color: black;
+  border-radius: 7px;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+  background-color: white;
+}
+
+p {
+  margin: 10px;
+}
+
+#searchbar,
+.toggleButton {
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#searchbar {
+  margin: 14px 0px;
+  background-color: rgb(15, 13, 38);
+  color: white;
+}
+
+footer {
+  background-color: #19172e;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  line-height: 3vh;
+  margin-top: 30px;
+}
+
+footer a {
+  color: white !important;
+}
+
+footer a:visited {
+  color: white !important;
+}
+
+#searchbar::placeholder {
+  color: rgba(255, 255, 255, 0.684);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .search-container {
+  margin: auto;
+} */
+
+.search-input {
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  text-align: center;
+  position: relative;
+}
+.search-input {
+  width: 300px; /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+/* #darkModeToggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+} */
+#main-title {
+  margin-top: 20px;
+}
+/* Style for each card */
+.card {
+  background-color: #fff; /* White background */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 200px; /* Fixed height */
+  border-bottom-left-radius: 7px; /* Rounded corners */
+  border-bottom-right-radius: 7px; /* Rounded corners */
+  border-top: solid;
+  border-top-color: black;
+}
+
+.card1 {
+  margin: 10px;
+  border-radius: 7px; /* Rounded corners */
+  height: 250px; /* Fixed height */
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.maincard {
+  border-radius: 7px; /* Rounded corners */
+  /* margin-left: 7px;
+  margin-right: 7px; */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-color: black;
+  border: solid;
+  background: whitesmoke;
+}
+
+/* Image styling inside the card */
+.card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 7px; /* Rounded corners */
+}
+
+/* Main title styling */
+#main-title {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  position: relative;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+/* Card title styling */
+.card h4 {
+  margin: 10px;
+}
+
+/* Styling for links section in the card */
+.card-links {
+  padding: 10px;
+  background-color: #f8f8f8; /* Light grey background for the link section */
+}
+
+/* Link styling */
+button:hover {
+  scale: (1.5);
+}
+
+p {
+  font-size: large;
+}
+
+.card a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333; /* Dark grey text color */
+}
+
+
