@@ -189,6 +189,7 @@ function search_project() {
       { name: "Maze Game", url: "./112 - Maze Game/index.html" },
       { name: "Minesweeper", url: "./113 - Minesweeper/index.html" },
       { name: "Guess the Country", url: "./115 - Guess The Country/index.html"}
+      { name: "Candy Crush", url: "./119 - candy-crush/index.html"}
   
 ];
 
