@@ -1,0 +1,46 @@
+  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="index.js" charset="utf-8"></script>
+    <style>
+      /* Style the reset button */
+      button {
+          background-color: #4CAF50; /* Green background */
+          border: none; /* Remove borders */
+          color: white; /* White text */
+          padding: 15px 32px; /* Some padding */
+          text-align: center; /* Center the text */
+          text-decoration: none; /* Remove underline */
+          display: inline-block; /* Make the button inline-block */
+          font-size: 16px; /* Increase font size */
+          margin: 4px 2px; /* Add some margin */
+          cursor: pointer; /* Add a pointer cursor on hover */
+          border-radius: 12px; /* Rounded corners */
+          transition: background-color 0.3s; /* Add transition for background color */
+      }
+
+      /* Change background color on hover */
+      button:hover {
+          background-color: #45a049;
+      }
+  </style>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Doodle Jump</title>
+  </head>
+  <body>
+
+    <div class="grid">
+    </div>
+<!-- Add Reset Button -->
+<button onclick="resetGame()">Reset</button>
+        
+<script>
+    // Function to reload the window
+    function resetGame() {
+        window.location.reload();
+    }
+</script>
+  </body>
+</html>
