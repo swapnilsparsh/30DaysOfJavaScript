@@ -1,6 +1,6 @@
-// Variable Bank
-let move_speed = 3; // change moving speed of bird
-gravity = 0.5; // Change gravity
+//Variable Bank
+let move_speed = 3; // Change moving speed of bird
+let gravity = 0.5; // Change gravity
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
 let sound_point = new Audio('sounds/point.mp3');
@@ -16,20 +16,37 @@ sound_die.addEventListener('error', (e) => {
 
 // Getting bird element properties
 let bird_props = bird.getBoundingClientRect();
-
-// This method returns DOMRect => top, right, bottom, left, x, y, width, and height
 let background = document.querySelector('.background').getBoundingClientRect();
-
 let score_val = document.querySelector('.score_val');
 let message = document.querySelector('.message');
 let score_title = document.querySelector('.score_title');
 
-// Start Screen 
+// Start Screen
 let game_state = 'Start';
 img.style.display = 'none';
 message.classList.add('messageStyle');
 
-// Play Screen
+function fly() {
+    img.src = 'assets/Bird-2.png';
+    bird_dy = -7.6;
+}
+
+function resetImage() {
+    img.src = 'assets/Bird.png';
+}
+
+function flyHandler(e) {
+    if (game_state === 'Play') {
+        fly();
+    }
+}
+
+function resetHandler(e) {
+    if (game_state === 'Play') {
+        resetImage();
+    }
+}
+
 function startGame() {
     if (game_state !== 'Play') {
         document.querySelectorAll('.pipe_sprite').forEach((e) => {
@@ -47,16 +64,22 @@ function startGame() {
     }
 }
 
-document.addEventListener('keydown', startGame);
-document.addEventListener('mousedown', (e) => {
-    if (e.button === 0) {
+document.addEventListener('keydown', (e) => {
+    if (game_state === 'Start' || game_state === 'End') {
         startGame();
     }
 });
+document.addEventListener('mousedown', (e) => {
+    if (e.button === 0) {
+        if (game_state === 'Start' || game_state === 'End') {
+            startGame();
+        }
+    }
+});
 
-// Create Play - Ending the game and scoring points
 function play() {
-    let bird_dy = 0;
+    bird_dy = 0;
+    bird_props = bird.getBoundingClientRect();
 
     function move() {
         if (game_state !== 'Play') return;
@@ -75,11 +98,7 @@ function play() {
                     bird_props.top < pipe_sprite_props.top + pipe_sprite_props.height &&
                     bird_props.top + bird_props.height > pipe_sprite_props.top
                 ) {
-                    game_state = 'End';
-                    message.innerHTML = 'Game Over'.fontcolor('red') + '<br> Press Any Key to Restart';
-                    message.classList.add('messageStyle');
-                    img.style.display = 'none';
-                    sound_die.play();
+                    endGame();
                     return;
                 } else {
                     if (
@@ -105,37 +124,8 @@ function play() {
         if (game_state !== 'Play') return;
         bird_dy += gravity;
 
-        function fly() {
-            img.src = 'assets/Bird-2.png';
-            bird_dy = -7.6;
-        }
-
-        function resetImage() {
-            img.src = 'assets/Bird.png';
-        }
-
-        let flyHandler = (e) => {
-            if (game_state === 'Play') {
-                fly();
-            }
-        };
-
-        let resetHandler = (e) => {
-            if (game_state === 'Play') {
-                resetImage();
-            }
-        };
-
-        document.addEventListener('keydown', flyHandler);
-        document.addEventListener('keyup', resetHandler);
-        document.addEventListener('mousedown', flyHandler);
-        document.addEventListener('mouseup', resetHandler);
-
         if (bird_props.top <= 0 || bird_props.bottom >= background.bottom) {
-            game_state = 'End';
-            message.style.left = '28vw';
-            message.classList.add('messageStyle');
-            window.location.reload();
+            endGame();
             return;
         }
         bird.style.top = bird_props.top + bird_dy + 'px';
@@ -181,33 +171,41 @@ function play() {
     requestAnimationFrame(create_pipe);
 }
 
-// Function to handle game over
 function endGame() {
     game_state = 'End';
-    message.style.left = '28vw';
+    message.innerHTML = 'Game Over'.fontcolor('red') + '<br> Press Any Key to Restart';
     message.classList.add('messageStyle');
+    img.style.display = 'none';
     sound_die.play();
     resetGame();
 }
 
-// Function to reset the game
 function resetGame() {
-    document.removeEventListener('keydown', flyHandler);
-    document.removeEventListener('keyup', resetHandler);
-    document.removeEventListener('mousedown', flyHandler);
-    document.removeEventListener('mouseup', resetHandler);
+    document.querySelectorAll('.pipe_sprite').forEach((e) => e.remove());
     bird.style.top = '40vh';
     bird_dy = 0;
     score_val.innerHTML = '0';
-    message.innerHTML = 'Game Over<br> Press Any Key to Restart';
     img.style.display = 'none';
     game_state = 'Start';
+
+    document.addEventListener('keydown', flyHandler);
+    document.addEventListener('keyup', resetHandler);
+    document.addEventListener('mousedown', flyHandler);
+    document.addEventListener('mouseup', resetHandler);
 }
 
-// Modify the mousedown event listener to prevent default behavior when the game is over
+document.addEventListener('keydown', flyHandler);
+document.addEventListener('keyup', resetHandler);
+document.addEventListener('mousedown', flyHandler);
+document.addEventListener('mouseup', resetHandler);
+
+document.addEventListener('keydown', (e) => {
+    if (game_state === 'End') {
+        startGame();
+    }
+});
 document.addEventListener('mousedown', (e) => {
     if (e.button === 0 && game_state === 'End') {
-        e.preventDefault(); // Prevent default behavior
         startGame();
     }
 });
