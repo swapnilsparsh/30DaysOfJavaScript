@@ -1,4 +1,4 @@
-//Variable Bank
+// Variable Bank
 let move_speed = 3; // Change moving speed of bird
 let gravity = 0.5; // Change gravity
 let bird = document.querySelector('.bird');
@@ -63,19 +63,6 @@ function startGame() {
         create_pipe();
     }
 }
-
-document.addEventListener('keydown', (e) => {
-    if (game_state === 'Start' || game_state === 'End') {
-        startGame();
-    }
-});
-document.addEventListener('mousedown', (e) => {
-    if (e.button === 0) {
-        if (game_state === 'Start' || game_state === 'End') {
-            startGame();
-        }
-    }
-});
 
 function play() {
     bird_dy = 0;
@@ -177,35 +164,35 @@ function endGame() {
     message.classList.add('messageStyle');
     img.style.display = 'none';
     sound_die.play();
-    resetGame();
 }
 
 function resetGame() {
     document.querySelectorAll('.pipe_sprite').forEach((e) => e.remove());
     bird.style.top = '40vh';
     bird_dy = 0;
-    score_val.innerHTML = '0';
     img.style.display = 'none';
     game_state = 'Start';
-
-    document.addEventListener('keydown', flyHandler);
-    document.addEventListener('keyup', resetHandler);
-    document.addEventListener('mousedown', flyHandler);
-    document.addEventListener('mouseup', resetHandler);
 }
 
-document.addEventListener('keydown', flyHandler);
-document.addEventListener('keyup', resetHandler);
-document.addEventListener('mousedown', flyHandler);
-document.addEventListener('mouseup', resetHandler);
-
 document.addEventListener('keydown', (e) => {
-    if (game_state === 'End') {
+    if (game_state === 'Start' || game_state === 'End') {
+        resetGame();
         startGame();
     }
+    if (game_state === 'Play') {
+        flyHandler(e);
+    }
 });
+document.addEventListener('keyup', resetHandler);
 document.addEventListener('mousedown', (e) => {
-    if (e.button === 0 && game_state === 'End') {
-        startGame();
+    if (e.button === 0) {
+        if (game_state === 'Start' || game_state === 'End') {
+            resetGame();
+            startGame();
+        }
+        if (game_state === 'Play') {
+            flyHandler(e);
+        }
     }
 });
+document.addEventListener('mouseup', resetHandler);
