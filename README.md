@@ -169,6 +169,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 114 |          [Movie Guessing Game]()                            
 | 116 |          [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                                |
 | 117 |        |  [Guess_the_shape](https://30daysofjs.netlify.app/112%20-%20Guess%20thee%20shape%20Game/) | 
+| 118 |           [Taash_Game](https://30daysofjs.netlify.app/112%20-%20Taash%20Game/) |
  </td><td>   
  </td></tr></table>
 
