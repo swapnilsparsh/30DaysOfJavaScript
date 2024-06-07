@@ -251,7 +251,7 @@ form {
   bottom: 0;
   background-color: #fff;
   padding: 1rem;
-  height: 80%;
+  height: 25%;
   transform: translateY(101%);
   transition: transform 0.3s ease-in-out;
 }

@@ -92,7 +92,7 @@ const showMovies = (sectionName, data) => {
         </div>
         <div class="overview">
             <h3>Overview</h3>
-            <p><a href="https://www.imdb.com/title/${imdbID}" target="_blank">IMDB Page</a></p>
+            <p><a href="https://www.imdb.com/title/${imdbID}" target="_blank">IMDB Page <i class="fa-solid fa-arrow-up-right-from-square" style="color: gray;"></i></a></p>
         </div>
     `;
         sectionName.appendChild(movieEl);
