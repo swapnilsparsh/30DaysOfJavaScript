@@ -3,6 +3,10 @@ function fun()
         var cm = document.getElementById("cm").value ;
         cm = cm/100;
         var w = document.getElementById("weight").value;
+        if (isNaN(cm) || cm <= 0 || isNaN(w) || w <= 0) {
+            alert("Please enter valid positive values for height (cm) and weight (kg).");
+            return;
+        }
         var bmi = w/(cm*cm);
         document.getElementById("bmi").value = bmi;
         if(bmi<18.5)
