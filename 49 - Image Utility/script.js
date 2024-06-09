@@ -61,7 +61,7 @@ function activateOnImageLoad() {
             displayImage.style.maxWidth = '';
             displayImageContainer.style.overflow = 'auto';
             displayImageContainer.style.justifyContent = 'flex-start';
-            displayImageContainer.style.alignItems = 'center';
+            displayImageContainer.style.alignItems = 'flex-start';
         }
         minMaxBtnIcon.classList.toggle('fa-expand');
         minMaxBtnIcon.classList.toggle('fa-compress');
@@ -92,7 +92,6 @@ function reset() {
     displayImage.style.cursor = 'move';
     displayImage.style.borderRadius = 0;
     borderRadiusInput.value = borderRadiusInput.defaultValue;
-    displayImageContainer.style.border = '4px dotted lightgrey';
     allInputs.forEach((input) => {
         input.value = input.defaultValue;
     });
@@ -103,6 +102,7 @@ resetBtn.addEventListener("click", reset);
 resetBtn.addEventListener("dblclick", () => {
     imageInput.value = '';
     displayImage.src = '';
+    displayImageContainer.style.border = '4px dashed lightgrey';
     displayImageContainer.style.background = "transparent url('./images/img-placeholder.png') center / 25% no-repeat";
 });
 
@@ -189,4 +189,12 @@ downloadBtn.addEventListener('click', () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+});
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        document.querySelector("#preloader").style.transform = "translate(0, -105vh)";
+        console.log("loaded");
+    }, 2500);
 });
