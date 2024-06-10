@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100dvh;
+    background-color: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #18355f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    background: #fff;
+    color: black;
+}
+
+.display{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+form{
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+form input{
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    margin: 5px 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size:20px;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border: 0;
+    margin: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    background: transparent;
+}
