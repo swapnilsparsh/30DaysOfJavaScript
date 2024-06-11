@@ -3,16 +3,6 @@ let move_speed = 3; // Change moving speed of bird
 let gravity = 0.5; // Change gravity
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
-let sound_point = new Audio('sounds/point.mp3');
-let sound_die = new Audio('sounds/die.mp3');
-
-// Error handling for audio loading
-sound_point.addEventListener('error', (e) => {
-    console.error('Error loading point sound:', e);
-});
-sound_die.addEventListener('error', (e) => {
-    console.error('Error loading die sound:', e);
-});
 
 // Getting bird element properties
 let bird_props = bird.getBoundingClientRect();
@@ -27,23 +17,13 @@ img.style.display = 'none';
 message.classList.add('messageStyle');
 
 function fly() {
-    img.src = 'assets/Bird-2.png';
-    bird_dy = -7.6;
-}
-
-function resetImage() {
     img.src = 'assets/Bird.png';
+    bird_dy = -7.6;
 }
 
 function flyHandler(e) {
     if (game_state === 'Play') {
         fly();
-    }
-}
-
-function resetHandler(e) {
-    if (game_state === 'Play') {
-        resetImage();
     }
 }
 
@@ -94,9 +74,6 @@ function play() {
                         element.increase_score === '1'
                     ) {
                         score_val.innerHTML = parseInt(score_val.innerHTML) + 1;
-                        sound_point.play().catch((e) => {
-                            console.error('Error playing point sound:', e);
-                        });
                         element.increase_score = '0';
                     }
                     element.style.left = pipe_sprite_props.left - move_speed + 'px';
@@ -162,8 +139,7 @@ function endGame() {
     game_state = 'End';
     message.innerHTML = 'Game Over'.fontcolor('red') + '<br> Press Any Key to Restart';
     message.classList.add('messageStyle');
-    img.style.display = 'none';
-    sound_die.play();
+    img.style.display = 'none'
 }
 
 function resetGame() {
@@ -183,7 +159,6 @@ document.addEventListener('keydown', (e) => {
         flyHandler(e);
     }
 });
-document.addEventListener('keyup', resetHandler);
 document.addEventListener('mousedown', (e) => {
     if (e.button === 0) {
         if (game_state === 'Start' || game_state === 'End') {
@@ -195,4 +170,3 @@ document.addEventListener('mousedown', (e) => {
         }
     }
 });
-document.addEventListener('mouseup', resetHandler);
