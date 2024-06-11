@@ -168,7 +168,9 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 113 |          [Minesweeper](https://30daysofjs.netlify.app/113%20-%20minesweeper/)     
 | 114 |          [Movie Guessing Game]()                            
 | 116 |          [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                                |
-| 117 |        |  [Guess_the_shape](https://30daysofjs.netlify.app/112%20-%20Guess%20thee%20shape%20Game/) | 
+| 117 |          [Guess_the_shape](https://30daysofjs.netlify.app/112%20-%20Guess%20thee%20shape%20Game/)                | 
+| 118 |          [3D Distance Calculator](https://30daysofjs.netlify.app/118%20-%203D%20Distance%20Calculator/)          |
+| 119 |           [Taash_Game](https://30daysofjs.netlify.app/112%20-%20Taash%20Game/) |
  </td><td>   
  </td></tr></table>
 

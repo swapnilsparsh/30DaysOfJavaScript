@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>3D Distance Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calc">
+            <div class="display">
+                <span>|AB| = </span>
+            </div>
+            <form action="">
+                <div class="point">
+                    <h3>Point A (x, y, z)</h3>
+                    <label for="X-1">X = </label>
+                    <input type="number" name="X-1" id="x1" value="0">
+                    <br>
+                    <label for="Y-1">Y = </label>
+                    <input type="number" name="Y-1" id="y1" value="0">
+                    <br>
+                    <label for="Z-1">Z = </label>
+                    <input type="number" name="Z-1" id="z1" value="0">
+                </div>
+                <div class="point">
+                    <h3>Point B (x, y, z)</h3>
+                    <label for="X-2">X = </label>
+                    <input type="number" name="X-2" id="x2" value="0">
+                    <br>
+                    <label for="Y-2">Y = </label>
+                    <input type="number" name="Y-2" id="y2" value="0">
+                    <br>
+                    <label for="Z-2">Z = </label>
+                    <input type="number" name="Z-2" id="z2" value="0">
+                </div>
+            </form>
+    
+            <div>
+                <button type="button" onclick="calculate()">
+                    <h3>Get Distance</h3>
+                </button>
+            </div>
+        </div>
+        <p>Developed by <a href="https://github.com/MrPC7" target="_blank">Pranshu</a></p>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
