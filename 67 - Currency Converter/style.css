@@ -99,26 +99,11 @@ h1 {
     margin: 0;
     margin-top: 5px;
   }
-
-  .select-container {
-    margin: 0px;
-  }
-
-  .select-container img {
-    margin-right: 8px;
-    width: 60px;
-  }
-
-  .swap {
-    padding: 8px;
-    font-size: 14px;
-  }
-
   .currency {
     padding-left: 12px;
     font-size: medium;
     height: 40px;
-    width: 150px;
+    width: 200px;
   }
 
   #msgg {
@@ -126,23 +111,24 @@ h1 {
     margin-bottom: 5px;
   }
 
-  @media (max-width:390px) {
-    .select-container select {
-      font-size: medium;
+  @media (max-width:490px) {
+    .container{
+      width: 300px;
+      display: block;
+      justify-content: start;
+      align-items: center;
     }
-
-    .select-container img {
-      margin-right: 8px;
-      width: 40px;
+    .dropdown{
+      display: block;
     }
 
     .swap {
-      padding: 5px;
-      font-size: 10px;
+      align-self: center;
+      margin: 20px 125px;
     }
 
     .currency {
-      width: 100px;
+      width: 90%;
     }
   }
 }
