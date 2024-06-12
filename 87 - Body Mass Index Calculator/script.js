@@ -8,21 +8,27 @@ inputs.forEach(input => {
     } else {
       event.target.setAttribute('data-value', value);
     }
+    document.getElementById("bmi").disabled = false;
+    document.querySelector("h4").innerHTML = ''; 
   });
 });
 
 function fun()
     {
        var cm = document.getElementById("cm").value ;
-        cm = cm/100;
-        var w = document.getElementById("weight").value;
-        var bmi = w/(cm*cm);
-        document.getElementById("bmi").value = bmi;
-        if(isNaN(bmi)){
-            document.querySelector("h4").innerHTML='Please input valid height and weight';
-        }
+       cm = cm/100;
+       var w = document.getElementById("weight").value;
 
-        else if(bmi<18.5)
+       if (isNaN(cm) || cm <= 0 || isNaN(w) || w <= 0) {
+        document.querySelector("h4").innerHTML = 'Please input valid height and weight';
+        document.getElementById("bmi").value = '';
+        document.getElementById("bmi").disabled = true;
+        return;
+       }
+        var bmi = w/(cm*cm);
+        document.getElementById("bmi").value= `${bmi.toFixed(2)} kg/m²`;
+        
+        if(bmi<18.5)
         {
             document.querySelector("h4").innerHTML = 'Under weight';
         }
