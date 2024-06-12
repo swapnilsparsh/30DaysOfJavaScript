@@ -142,4 +142,10 @@ body {
         width: 90%;
         display: inline-block;
     }
+    .score-container{
+       width: 30%;
+    }
+    .best-container{
+       width: 30%;
+    }
 }
