@@ -153,14 +153,61 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreDisplay.textContent = score;
         if (score > best) {
             best = score;
-            bestDisplay.textContent = "Best score = "+best;
+            bestDisplay.textContent = best;
         }
     });
+    
+    // Variables to store touch positions
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+    
+    // Function to handle swipe detection
+    function handleSwipe() {
+        const diffX = touchEndX - touchStartX;
+        const diffY = touchEndY - touchStartY;
+        
+        if (Math.abs(diffX) > Math.abs(diffY)) {
+            // Horizontal swipe
+            if (diffX > 0) {
+                moveTiles('right');
+            } else {
+                moveTiles('left');
+            }
+        } else {
+            // Vertical swipe
+            if (diffY > 0) {
+                moveTiles('down');
+            } else {
+                moveTiles('up');
+            }
+        }
+        scoreDisplay.textContent = score;
+        if (score > best) {
+            best = score;
+            bestDisplay.textContent = best;
+        }
+    }
+    
+    // Event listeners for touch events
+    document.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    });
+    
+    document.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        handleSwipe();
+    });
+    
 
     // Start a new game
     newGameButton.addEventListener('click', () => {
         score = 0;
         scoreDisplay.textContent = "Current score = "+score;
+        bestDisplay.textContent = "Best score = "+best;
         createBoard();
     });
 

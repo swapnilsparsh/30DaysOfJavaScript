@@ -138,4 +138,8 @@ body {
         height: 70px;
         width: 70px;
     }
+    .game-explanation{
+        width: 90%;
+        display: inline-block;
+    }
 }
