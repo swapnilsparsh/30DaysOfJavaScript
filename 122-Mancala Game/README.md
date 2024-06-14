@@ -24,7 +24,5 @@
 
 ## **Screenshots 📸**
 
-<br>
-
-![image]()
+![image](https://github.com/swapnilsparsh/30DaysOfJavaScript/assets/97523900/fe94b0c0-2875-4317-a449-ee9cedce2720)
 
