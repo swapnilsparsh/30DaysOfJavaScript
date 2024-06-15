@@ -90,13 +90,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   window.addEventListener("scroll", toggleBackToTopBtn);
+
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const darkModeIcon = document.getElementById('darkModeIcon');
+
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    darkModeIcon.textContent = "☀️";
+  } else {
+    darkModeIcon.textContent = "🌙";
+  }
+
   // Event listener for dark mode toggle
   darkModeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     if (document.body.classList.contains("dark-mode")) {
       darkModeIcon.textContent = "☀️";
+      localStorage.setItem('darkMode', 'enabled');
     } else {
       darkModeIcon.textContent = "🌙";
+      localStorage.setItem('darkMode', 'disabled');
     }
   });
   // Initial display of projects
