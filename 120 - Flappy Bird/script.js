@@ -99,7 +99,7 @@ function play() {
     requestAnimationFrame(apply_gravity);
 
     let pipe_separation = 0;
-    let pipe_gap = 35; // Change gap between pipes
+    let pipe_gap = 40; // Change gap between pipes
     let initial_pipe_delay = 0; // Change delay before the first pipe appears
 
     function create_pipe() {
@@ -111,7 +111,7 @@ function play() {
             return;
         }
 
-        if (pipe_separation > 80) {
+        if (pipe_separation > 110) {
             pipe_separation = 0;
 
             let pipe_posi = Math.floor(Math.random() * 43) + 8;
