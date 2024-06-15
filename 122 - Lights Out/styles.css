@@ -58,8 +58,7 @@ h1{
     font-family: 'Press Start 2P', cursive;
     color: white;
     text-align: center;
-    /* animation: lightOnOff 2s infinite; */
-    text-shadow: 0 0 10px yellow;
+    animation: lightOnOff 2s infinite;
 }
 
 @keyframes lightOnOff {
