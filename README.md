@@ -171,7 +171,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 117 |          [Guess_the_shape](https://30daysofjs.netlify.app/112%20-%20Guess%20thee%20shape%20Game/)                | 
 | 118 |          [3D Distance Calculator](https://30daysofjs.netlify.app/118%20-%203D%20Distance%20Calculator/)          |
 | 119 |           [Taash_Game](https://30daysofjs.netlify.app/112%20-%20Taash%20Game/) |
-| 120 |          [Flappy Bird]() 
+| 124 |          [Flappy Bird](https://30daysofjs.netlify.app/124%20-%20flappy%20bird/) 
  </td><td>   
  </td></tr></table>
 
