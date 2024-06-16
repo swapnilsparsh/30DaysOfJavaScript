@@ -6,13 +6,14 @@
 }
 
 .background{
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     background: url('assets/background-img.png') no-repeat center center fixed;
-    -webkit-background-size : cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    z-index: -1;
 }
 
 .bird{
@@ -90,5 +91,28 @@
 
     .pipe_sprite{
         width: 14vw;
+    }
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 600px) {
+
+    .bird {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        z-index: 10;
+    }
+
+    .message {
+        font-size: 1.2em;
+    }
+
+    .score {
+        font-size: 4vh;
+    }
+
+    .pipe_sprite {
+        width: 15vw;
     }
 }

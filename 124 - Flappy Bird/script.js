@@ -34,6 +34,7 @@ function startGame() {
         });
         img.style.display = 'block';
         bird.style.top = '40vh';
+        bird.style.left = '10vw';
         game_state = 'Play';
         message.innerHTML = '';
         score_title.innerHTML = 'Score : ';
@@ -145,7 +146,9 @@ function endGame() {
 function resetGame() {
     document.querySelectorAll('.pipe_sprite').forEach((e) => e.remove());
     bird.style.top = '40vh';
+    bird.style.left = '10vw';
     bird_dy = 0;
+    img.style.display = 'block';
     img.style.display = 'none';
     game_state = 'Start';
 }
@@ -159,6 +162,7 @@ document.addEventListener('keydown', (e) => {
         flyHandler(e);
     }
 });
+
 document.addEventListener('mousedown', (e) => {
     if (e.button === 0) {
         if (game_state === 'Start' || game_state === 'End') {
@@ -170,3 +174,39 @@ document.addEventListener('mousedown', (e) => {
         }
     }
 });
+
+document.addEventListener('touchstart', (e) => {
+    if (game_state === 'Start' || game_state === 'End') {
+        resetGame();
+        startGame();
+    }
+    if (game_state === 'Play') {
+        flyHandler(e);
+    }
+});
+
+document.addEventListener('touchend', (e) => {
+  });
+  
+  document.addEventListener('orientationchange', () => {
+  });
+
+let lastTouchEnd = 0;
+document.addEventListener('touchend', (e) => {
+    let now = new Date().getTime();
+    if (now - lastTouchEnd <= 300) {
+        e.preventDefault();
+    }
+    lastTouchEnd = now;
+}, false);
+
+function adjustPipeGap() {
+    if (window.innerWidth <= 600) { // Mobile view
+        pipe_gap = 8; // Decrease gap between pipes for mobile
+    } else {
+        pipe_gap = 40; // Default gap for larger screens
+    }
+}
+
+window.addEventListener('load', adjustPipeGap);
+window.addEventListener('resize', adjustPipeGap);
