@@ -18,6 +18,7 @@ h1 {
   color: #FEFFE2;
   font-family: "Arvo", cursive;
   text-align: center;
+  margin-bottom: 0;
 }
 
 span {
@@ -28,7 +29,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  min-height: 40vh;
+  align-content: center;
   align-items: center;
   justify-content: center;
 }
@@ -40,7 +41,7 @@ span {
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;
-  width: 100px;
+  width: 78pt;
   text-align: center;
   color: white;
   background-color: #212121;
@@ -73,14 +74,17 @@ footer {
   text-align: center;
   color: white;
   font-size: 1.5rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin-bottom: 0;
   padding: 5px;
 }
 
 footer a:visited {
   color: inherit;
+}
+
+#container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
