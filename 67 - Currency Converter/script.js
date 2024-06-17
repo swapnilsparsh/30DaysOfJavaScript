@@ -1,66 +1,61 @@
-const BASE_URL ="https://v6.exchangerate-api.com/v6/16947c81da979880bacde4f5/latest";
-
-const dropdowns = document.querySelectorAll(".dropdown select");
-const fromCurr = document.querySelector("#fromselect");
-const toCurr = document.querySelector("#toselect");
-const msg = document.querySelector("#msgg");
-const swap_curr = document.querySelector(".swap");
-
-let amount = document.querySelector("#frominput");
-let displayamt = document.querySelector("#toinput");
-
-for (let select of dropdowns) {
-  for (currCode in countryList) {
-    let newOption = document.createElement("option");
-    newOption.innerText = currCode;
-    newOption.value = currCode;
-    if (select.name === "from" && currCode === "USD") {
-      newOption.selected = "selected";
-    } else if (select.name === "to" && currCode === "INR") {
-      newOption.selected = "selected";
-    }
-    select.append(newOption);
-  }
-
-  select.addEventListener("change", (evt) => {
-    updateFlag(evt.target);
-  });
-}
+const exchange_rate = document.getElementById('exchange-rate');
+const curr_first = document.getElementById('curr-first');
+const curr_second = document.getElementById('curr-second');
+const worth_first = document.getElementById('worth-first');
+const worth_second = document.getElementById('worth-second');
+const swap_curr = document.getElementById('swap-curr');
 
 function swap() {
-  const temp = fromCurr.value;
-  fromCurr.value = toCurr.value;
-  toCurr.value = temp;
-  updateFlag(fromCurr);
-  updateFlag(toCurr);
+  const temp = curr_first.value;
+  curr_first.value = curr_second.value;
+  curr_second.value = temp;
   convert();
 }
 
-const convert = async () => {
-  const URL = `${BASE_URL}/${fromCurr.value}`;
-  let response = await fetch(URL);
-  let data = await response.json();
-  let rate = data.conversion_rates[toCurr.value];
-  displayamt.value = (amount.value * rate).toFixed(4);
-  msg.innerText = `1 ${fromCurr.value} = ${rate} ${toCurr.value}`;
-};
+function convert() {
+  const currency_first = curr_first.value;
+  const currency_second = curr_second.value;
+//using API for conversion of currency units
+  fetch(`https://v6.exchangerate-api.com/v6/16947c81da979880bacde4f5/latest/${currency_first}`)
+    .then((res) => res.json())
+    .then((data) => {
+      
+      const rate = data.conversion_rates[currency_second];
+      exchange_rate.innerText = `1 ${currency_first} = ${rate} ${currency_second}`;
 
-const updateFlag = (element) => {
-  let currCode = element.value;
-  let countryCode = countryList[currCode];
-  let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
-  let img = element.parentElement.querySelector("img");
-  img.src = newSrc;
-};
+      worth_second.value = (worth_first.value * rate).toFixed(5);
+    });
+}
+//some javascript event listeners
+swap_curr.addEventListener('click', swap);
+
+curr_first.addEventListener('change', convert);
+worth_first.addEventListener('input', convert);
+curr_second.addEventListener('change', convert);
+worth_second.addEventListener('input', convert);
+convert();
 
 
-swap_curr.addEventListener("click", swap);
-amount.addEventListener("input", convert);
-fromCurr.addEventListener("change", convert);
-displayamt.addEventListener("input", convert);
-toCurr.addEventListener("change", convert);
 
 
-window.addEventListener("load", () => {
-  convert();
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
