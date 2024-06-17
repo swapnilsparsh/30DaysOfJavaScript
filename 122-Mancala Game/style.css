@@ -1,0 +1,86 @@
+body {
+  font-family: "Verdana", sans-serif;
+  font-size: 20pt;
+  color: #2C3E50;
+  text-align: center;
+  background-color: #68c7df;
+}
+
+h1 {
+  font-size: 50pt;
+  color: #d6dbdd;
+}
+
+div {
+  display: block;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  border: 2px solid #7F8C8D;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.playerTwo button {
+  float: right;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  background-color: #BDC3C7;
+  border: 2px solid #7F8C8D;
+  border-radius: 50px;
+  margin: 5px;
+  font-size: 20pt;
+  color: #2C3E50;
+  box-shadow: 2px 2px 20px 5px #7F8C8D inset;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #3498DB;
+  box-shadow: 2px 2px 20px 5px #2980B9 inset;
+  color: #FFFFFF;
+}
+
+button.pit0 {
+  width: 100px;
+  height: 210px;
+  float: right;
+  background-color: #E74C3C;
+  color: #FFFFFF;
+}
+
+button.pit7 {
+  width: 100px;
+  height: 210px;
+  float: left;
+  background-color: #E74C3C;
+  color: #FFFFFF;
+}
+
+.info {
+  width: 880px;
+  height: 100px;
+  margin: 20px auto;
+  line-height: 100px;
+  text-align: center;
+  border: 2px dotted #2980B9;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  color: #2C3E50;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.rotated button {
+  transform: rotate(180deg);
+}
