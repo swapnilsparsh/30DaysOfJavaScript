@@ -166,11 +166,11 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 111 |          [Luminosity Particle Js](https://30daysofjs.netlify.app/141%20-%20Luminosity%20Particle%20Js/)          |
 | 112 |                        [Maze Game](https://30daysofjs.netlify.app/112%20-%20Maze%20Game/)                        |
 | 113 |                       [Minesweeper](https://30daysofjs.netlify.app/113%20-%20minesweeper/)                       |
-| 114 |                                             [Movie Guessing Game]()                                              |
+| 114 |                       [Movie Guessing Game](https://30daysofjs.netlify.app/114%20-%20Movie%20-%20Guessing%20Game/)                                              |
 | 116 |                     [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                     |
 | 124 |                        [2048 Game](https://30daysofjs.netlify.app/124%20-%202048%20Game/)                        |
-| 125 |                        [Arcade Game](https://30daysofjs.netlify.app/124%20-%Arcade48%20Game/)                      |
-
+| 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20Flappy%20-%20Bird%20Game/)                         |
+| 126 |                        [Arcade Game](https://30daysofjs.netlify.app/124%20-%Arcade48%20Game/)  
  </td><td>   
  </td></tr></table>
 
