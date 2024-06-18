@@ -169,6 +169,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 114 |                                             [Movie Guessing Game]()                                              |
 | 116 |                     [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                     |
 | 124 |                        [2048 Game](https://30daysofjs.netlify.app/124%20-%202048%20Game/)                        |
+| 125 |                        [Arcade Game](https://30daysofjs.netlify.app/124%20-%Arcade48%20Game/)                      |
 
  </td><td>   
  </td></tr></table>
