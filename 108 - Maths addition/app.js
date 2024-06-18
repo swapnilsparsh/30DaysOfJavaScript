@@ -20,8 +20,13 @@ button.addEventListener('click', function () {
 
     let guess = document.getElementById('guess').value;
     guess = Number(guess);
+    if(guess==" ")
+        {
+alert("please enter the value")
+        }
+    
     //check answer
-    if (guess === total) {
+    else if(guess === total) {
         alert('Correct');
         window.location.reload()
     } else {
