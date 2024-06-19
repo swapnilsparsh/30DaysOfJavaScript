@@ -190,7 +190,8 @@ function search_project() {
       { name: "Minesweeper", url: "./113 - Minesweeper/index.html" },
       { name: "Guess the Country", url: "./115 - Guess The Country/index.html"},
       { name: "2048 Game", url: "./124 - 2048 Game/index.html"},
-      { name: "Flappy Bird Game", url: "./125 - Flappy Bird/index.html"}
+      { name: "Flappy Bird Game", url: "./125 - Flappy Bird/index.html"},
+      { name: "Largest EigenValue and EigenVector Calculator", url: "./128 - Eigen Value and Vector Calculator/index.html"}
 ];
 
   // Filter suggestions based on input
