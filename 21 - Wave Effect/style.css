@@ -72,3 +72,24 @@ button {
 button:active {
   background: rgb(30, 142, 62);
 }
+@media only screen and (max-width: 500px) {
+  .container{
+    width: 400px;
+  }
+  .circle{
+    margin:6px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body{
+    height:auto;
+    margin-top: 30px;
+  }
+  .container{
+    width:95%;
+    margin-top: 5px;
+  }
+  .circle{
+    margin:5px;
+  }
+}
