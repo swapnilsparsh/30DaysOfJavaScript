@@ -1,0 +1,92 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: rgb(29,29,124);
+  background: linear-gradient(90deg, rgba(29,29,124,0.9641106442577031) 30%, rgba(0,23,28,1) 90%);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #473434;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+  position: absolute;
+  top: 85px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #0056b3;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#matrix-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+#matrix-input {
+  margin-top: 20px;
+}
+
+#results {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#results p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.value{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+@media screen and (max-width: 530px) {
+  .container {
+    width: 70%;
+  }
+}

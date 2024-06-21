@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eigenvalue and Eigenvector Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Largest Eigen Value and Eigen Vector Calculator</h2>
+      <form id="matrix-form">
+        <label for="dimension">Enter matrix dimension (N x N):</label>
+        <input type="number" id="dimension" min="2" max="10" value="2" />
+        <button type="button" onclick="generateMatrixInput()">
+          Generate Matrix Input
+        </button>
+      </form>
+      <div id="matrix-input"></div>
+      <button id="calculate" style="display: none" onclick="calculateEigen()">
+        Calculate
+      </button>
+      <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
