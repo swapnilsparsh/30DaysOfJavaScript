@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Ball Game</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .game-container {
+            text-align: center;
+        }
+
+        .game-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0095DD;
+        }
+
+        canvas {
+            background-color: #333;
+            border: 1px solid #000;
+        }
+
+        .controls {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        #playAgainBtn {
+            display: none;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0095DD;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-title">Catch the Ball</div>
+        <canvas id="gameCanvas"></canvas>
+        <button id="playAgainBtn">Play Again</button>
+    </div>
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        let paddleWidth;
+        let paddleHeight;
+        let ballRadius;
+        let paddleX;
+        let ballX;
+        let ballY;
+        let ballDX = 2;
+        let ballDY = 2;
+        let score = 0;
+        let rightPressed = false;
+        let leftPressed = false;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth * 0.8;
+            canvas.height = window.innerHeight * 0.6;
+            paddleWidth = canvas.width * 0.1;
+            paddleHeight = canvas.height * 0.03;
+            ballRadius = canvas.width * 0.02;
+            paddleX = (canvas.width - paddleWidth) / 2;
+            ballX = canvas.width / 2;
+            ballY = ballRadius;
+        }
+
+        resizeCanvas();
+
+        document.addEventListener('keydown', keyDownHandler);
+        document.addEventListener('keyup', keyUpHandler);
+        canvas.addEventListener('mousemove', mouseMoveHandler);
+        window.addEventListener('resize', resizeCanvas);
+        document.getElementById('playAgainBtn').addEventListener('click', resetGame);
+
+        canvas.addEventListener('touchstart', (e) => {
+            const touchX = e.touches[0].clientX - canvas.offsetLeft;
+            if (touchX > paddleX + paddleWidth / 2) {
+                rightPressed = true;
+            } else {
+                leftPressed = true;
+            }
+        });
+
+        canvas.addEventListener('touchend', () => {
+            rightPressed = false;
+            leftPressed = false;
+        });
+
+        function keyDownHandler(e) {
+            if (e.key === 'Right' || e.key === 'ArrowRight') {
+                rightPressed = true;
+            } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
+                leftPressed = true;
+            }
+        }
+
+        function keyUpHandler(e) {
+            if (e.key === 'Right' || e.key === 'ArrowRight') {
+                rightPressed = false;
+            } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
+                leftPressed = false;
+            }
+        }
+
+        function mouseMoveHandler(e) {
+            const relativeX = e.clientX - canvas.offsetLeft;
+            if (relativeX > 0 && relativeX < canvas.width) {
+                paddleX = relativeX - paddleWidth / 2;
+            }
+        }
+
+        function drawPaddle() {
+            ctx.beginPath();
+            ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+            ctx.fillStyle = '#0095DD';
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawBall() {
+            ctx.beginPath();
+            ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
+            ctx.fillStyle = '#0095DD';
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawScore() {
+            ctx.font = '16px Arial';
+            ctx.fillStyle = '#0095DD';
+            ctx.fillText('Score: ' + score, 8, 20);
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawPaddle();
+            drawBall();
+            drawScore();
+
+            if (rightPressed && paddleX < canvas.width - paddleWidth) {
+                paddleX += 7;
+            } else if (leftPressed && paddleX > 0) {
+                paddleX -= 7;
+            }
+
+            ballX += ballDX;
+            ballY += ballDY;
+
+            if (ballX + ballDX > canvas.width - ballRadius || ballX + ballDX < ballRadius) {
+                ballDX = -ballDX;
+            }
+
+            if (ballY + ballDY < ballRadius) {
+                ballDY = -ballDY;
+            } else if (ballY + ballDY > canvas.height - ballRadius) {
+                if (ballX > paddleX && ballX < paddleX + paddleWidth) {
+                    ballDY = -ballDY;
+                    score++;
+                } else {
+                    endGame();
+                    return;
+                }
+            }
+
+            requestAnimationFrame(draw);
+        }
+
+        function endGame() {
+            alert('Game Over! Your score is: ' + score);
+            document.getElementById('playAgainBtn').style.display = 'inline-block';
+        }
+
+        function resetGame() {
+            score = 0;
+            ballDX = 2;
+            ballDY = 2;
+            resizeCanvas();
+            document.getElementById('playAgainBtn').style.display = 'none';
+            draw();
+        }
+
+        draw();
+    </script>
+</body>
+</html>
