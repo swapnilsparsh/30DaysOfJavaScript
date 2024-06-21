@@ -64,35 +64,36 @@
     <script>
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth * 0.8;
-        canvas.height = window.innerHeight * 0.6;
-
-        const paddleWidth = 100;
-        const paddleHeight = 10;
-        const ballRadius = 10;
-
-        let paddleX = (canvas.width - paddleWidth) / 2;
-        let rightPressed = false;
-        let leftPressed = false;
-
-        let ballX = canvas.width / 2;
-        let ballY = ballRadius;
+        let paddleWidth;
+        let paddleHeight;
+        let ballRadius;
+        let paddleX;
+        let ballX;
+        let ballY;
         let ballDX = 2;
         let ballDY = 2;
         let score = 0;
+        let rightPressed = false;
+        let leftPressed = false;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth * 0.8;
+            canvas.height = window.innerHeight * 0.6;
+            paddleWidth = canvas.width * 0.1;
+            paddleHeight = canvas.height * 0.03;
+            ballRadius = canvas.width * 0.02;
+            paddleX = (canvas.width - paddleWidth) / 2;
+            ballX = canvas.width / 2;
+            ballY = ballRadius;
+        }
+
+        resizeCanvas();
 
         document.addEventListener('keydown', keyDownHandler);
         document.addEventListener('keyup', keyUpHandler);
         canvas.addEventListener('mousemove', mouseMoveHandler);
+        window.addEventListener('resize', resizeCanvas);
         document.getElementById('playAgainBtn').addEventListener('click', resetGame);
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth * 0.8;
-            canvas.height = window.innerHeight * 0.6;
-            paddleX = (canvas.width - paddleWidth) / 2;
-            ballX = canvas.width / 2;
-            ballY = ballRadius;
-        });
 
         canvas.addEventListener('touchstart', (e) => {
             const touchX = e.touches[0].clientX - canvas.offsetLeft;
@@ -194,10 +195,9 @@
 
         function resetGame() {
             score = 0;
-            ballX = canvas.width / 2;
-            ballY = ballRadius;
             ballDX = 2;
             ballDY = 2;
+            resizeCanvas();
             document.getElementById('playAgainBtn').style.display = 'none';
             draw();
         }
