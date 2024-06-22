@@ -172,7 +172,7 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20flappy%20bird/)                        |
 | 126 |                                [Arcade Game](https://30daysofjs.netlify.app/124%20-%Arcade48%20Game/)                                |
 | 128 | [Largest EigenValue and EigenVector Calculator](https://30daysofjs.netlify.app/128%20-%20Eigen%20Value%20and%20Vector%20Calculator/) |
-| 131 | [Othello Game]() |
+| 131 | [Othello Game](https://30daysofjs.netlify.app/131%20-%20Othello%20Game/) |
 
  </td><td>   
  </td></tr></table>
