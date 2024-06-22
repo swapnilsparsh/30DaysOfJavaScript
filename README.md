@@ -169,9 +169,10 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 114 |                     [Movie Guessing Game](https://30daysofjs.netlify.app/114%20-%20Movie%20-%20Guessing%20Game/)                     |
 | 116 |                               [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                               |
 | 124 |                                  [2048 Game](https://30daysofjs.netlify.app/124%20-%202048%20Game/)                                  |
-| 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20Flappy%20-%20Bird%20Game/)                        |
+| 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20flappy%20bird/)                        |
 | 126 |                                [Arcade Game](https://30daysofjs.netlify.app/124%20-%Arcade48%20Game/)                                |
 | 128 | [Largest EigenValue and EigenVector Calculator](https://30daysofjs.netlify.app/128%20-%20Eigen%20Value%20and%20Vector%20Calculator/) |
+| 131 | [Othello Game]() |
 
  </td><td>   
  </td></tr></table>
