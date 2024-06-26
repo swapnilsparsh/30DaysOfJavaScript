@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: 100px;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 250px;
+    height: 80px;
+}
+
+.btns,
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.velocity-values p {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    border-radius: 10px;
+    border: 2px solid #aaa;
+    max-width: 180px;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.05em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#launch {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+#launch:disabled {
+    background-color: lightblue;
+    cursor: not-allowed;
+}
+
+#reset {
+    background-color: crimson;
+}
+
+main {
+    position: relative;
+    margin: 20px;
+    height: max(450px, 75vh);
+    width: calc(100% - 40px);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+main::before {
+    position: absolute;
+    content: "▲";
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    transform: translate(-60%, -75%);
+    z-index: 10;
+}
+
+main::after {
+    position: absolute;
+    content: "►";
+    font-size: 20px;
+    bottom: 0;
+    right: 0;
+    transform: translate(75%, 60%);
+    z-index: 10;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        position: static;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .controls {
+        width: 100%;
+        padding: 10px 5px;
+        background-color: whitesmoke;
+    }
+
+    #logo {
+        width: 200px;
+        height: 60px;
+    }
+
+    .btns,
+    .inputs {
+        gap: 10px;
+    }
+
+    input[type="text"] {
+        max-width: 150px;
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+
+.board-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    direction: rtl;
+    background-color: white;
+}
+
+.board-wrapper::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: whitesmoke;
+}
+
+.board-wrapper::-webkit-scrollbar-thumb {
+    background-color: lightgrey;
+}
+
+.board-wrapper::-webkit-scrollbar-thumb:hover {
+    cursor: grabbing;
+    background-color: grey;
+}
+
+.board {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#projectile {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: darkred;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.path {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.yDist {
+    position: absolute;
+    transform: translate(-50%, -75%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.yDist::before {
+    content: "";
+    position: absolute;
+    border: 10px solid black;
+    border-color: black transparent transparent transparent;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+}
+
+.xDist {
+    position: absolute;
+    transform: translate(50%, 0);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.xDist::before {
+    content: "";
+    position: absolute;
+    border: 10px solid black;
+    border-color: transparent black transparent transparent;
+    left: 0;
+    bottom: 50%;
+    transform: translate(-100%, calc(-1px + 50%));
+}
+
+footer {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
