@@ -1,10 +1,10 @@
-body,
+/* body,
 html {
   margin: 0;
   padding: 0;
   font-family: 'sans';
   font-size: 10px;
-  background: #19172e;
+  background: #fdfdfa;
   user-select: none;
 }
 
@@ -15,7 +15,7 @@ html {
 
 h1 {
   font-size: 5.5rem;
-  color: #FEFFE2;
+  color: #f3443b;
   font-family: "Arvo", cursive;
   text-align: center;
   margin-bottom: 0;
@@ -35,7 +35,7 @@ span {
 }
 
 .key {
-  border: .4rem solid white;
+  border: .4rem solid rgb(249, 233, 2);
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -43,14 +43,105 @@ span {
   transition: all .07s ease;
   width: 78pt;
   text-align: center;
+  color: #fe787c;;
+  background-color: rgb(249, 233, 2);
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #fc8686;
+  box-shadow: 0 0 1rem #fc8686;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #fe787c;
+}
+
+kbd {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
   color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+#container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'sans';
+  font-size: 10px;
+  background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460, #53354a, #903749, #e84545);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  user-select: none;
+}
+
+@font-face {
+  src: url('font/sans.ttf');
+  font-family: 'sans';
+}
+
+h1 {
+  font-size: 5.5rem;
+  color: #957efb; /* White title color */
+  font-family: "Arvo", cursive;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+span {
+  font-weight: 100;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid #ce8cfe; /* Light grey border */
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 78pt;
+  text-align: center;
+  color: rgb(136, 117, 242);
   background-color: #212121;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #bb86fc;
-  box-shadow: 0 0 1rem #bb86fc;
+  border-color: #868efc;
+  box-shadow: 0 0 1rem #8886fc;
 }
 
 kbd {
@@ -82,9 +173,22 @@ footer a:visited {
   color: inherit;
 }
 
-#container{
+#container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
