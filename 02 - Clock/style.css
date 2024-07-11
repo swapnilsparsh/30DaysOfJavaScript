@@ -8,10 +8,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   background: #19172e;
   font-family: "sans";
-
+  transition:  0.5s;
 }
 
 @font-face {
@@ -38,6 +39,12 @@ body {
   align-items: center;
   background: url(assets/clock.png);
   background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.clock:hover {
+  transform: scale(1.05);
 }
 
 .clock:before {
@@ -48,12 +55,14 @@ body {
   background: #fff;
   border-radius: 50%;
   z-index: 10000;
+  box-shadow: 0 0 15px #fff;
 }
 
 .clock .hour,
 .clock .min,
 .clock .sec {
   position: absolute;
+  transition: all 0.5s ease-in-out;
 }
 
 .clock .hour,
@@ -79,7 +88,6 @@ body {
 .sc {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   position: absolute;
   border-radius: 50%;
 }
@@ -92,6 +100,7 @@ body {
   background: #bb86fc;
   z-index: 10;
   border-radius: 6px 6px 0 0;
+  box-shadow: 0 0 10px #bb86fc;
 }
 
 .mn:before {
@@ -102,6 +111,7 @@ body {
   background: #fff;
   z-index: 11;
   border-radius: 6px 6px 0 0;
+  box-shadow: 0 0 10px #fff;
 }
 
 .sc:before {
@@ -112,6 +122,7 @@ body {
   background: #70efde;
   z-index: 12;
   border-radius: 6px 6px 0 0;
+  box-shadow: 0 0 10px #70efde;
 }
 
 footer {
@@ -127,4 +138,88 @@ footer {
 
 footer a:visited {
   color: inherit;
+}
+
+button#theme-toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #1b1919;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button#theme-toggle:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+button#theme-toggle:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .clock {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .clock .hour,
+  .hr {
+    width: 120px;
+    height: 120px;
+  }
+
+  .clock .min,
+  .mn {
+    width: 140px;
+    height: 140px;
+  }
+
+  .clock .sec,
+  .sc {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Theme Toggle */
+body.light-theme {
+  background: #8f8df9;
+}
+
+body.light-theme .clock:before {
+  background: #000;
+  box-shadow: 0 0 15px #000;
+}
+
+body.light-theme .hr:before {
+  background: #6200ea;
+  box-shadow: 0 0 10px #6200ea;
+}
+
+body.light-theme .mn:before {
+  background: #000;
+  box-shadow: 0 0 10px #000;
+}
+
+body.light-theme .sc:before {
+  background: #03dac6;
+  box-shadow: 0 0 10px #03dac6;
+}
+
+body.light-theme .heading,
+body.light-theme footer {
+  color: #000;
+}
+
+body.light-theme button#theme-toggle {
+  background-color: #bb86fc;
+}
+
+body.light-theme button#theme-toggle:hover {
+  background-color: #3700b3;
 }
