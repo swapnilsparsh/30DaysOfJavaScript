@@ -1,13 +1,13 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "sans";
+  font-family: "sans-serif";
   user-select: none;
 }
 
 @font-face {
   src: url("font/sans.ttf");
-  font-family: "sans";
+  font-family: "sans-serif";
 }
 
 .container {
@@ -50,12 +50,12 @@ h2 {
   color: white;
   outline: none;
 }
+
 .inputBox input[type="number"]::-webkit-inner-spin-button,
 .inputBox input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
-
 
 .inputBox label {
   color: white;
@@ -112,4 +112,5 @@ footer a:visited {
   color: white;
   text-decoration: none;
 }
+
 
