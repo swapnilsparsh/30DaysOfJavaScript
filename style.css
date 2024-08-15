@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'Sans';
+  src: url('./public/font/sans.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 57px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Sans', sans-serif;
+  font-size: 16px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+nav section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .left-side {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+nav .left-side strong {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav .brand {
+  height: 40px;
+  width: 40px;
+}
+
+nav .brand img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .project-nav-link {
+  border-color: transparent;
+  text-decoration: underline;
+  padding: 6px 20px;
+}
+
+nav .github-link {
+  padding: 6px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+section.hero {
+  padding-top: 60px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero .hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero .hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.hero .hero-left h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero .hero-left p {
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+}
+
+.btn {
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+  display: inline-flex;
+  padding: 8px 24px;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.92rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover,
+.btn.active {
+  background-color: #000;
+  color: #fff;
+  text-decoration: underline;
+  border-color: #000;
+}
+
+#projects {
+  margin-bottom: 30px;
+}
+
+#projects .projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+#projects .projects-title h2 {
+  border-bottom: 2px solid black;
+  width: 205px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.project-list-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  border: 1px solid black;
+  border-radius: 6px;
+  display: grid;
+  grid-template-rows: 280px 1fr 40px;
+  overflow: hidden;
+}
+
+.project-detail {
+  padding: 15px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-img-cont {
+  width: 100%;
+  height: 280px;
+  padding: 15px;
+  background: rgb(241, 241, 241);
+  border-bottom: 1px solid black;
+}
+
+.project-img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-img-cont img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.project-content h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.project-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.project-card .links {
+  padding: 0 15px 15px 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.project-card .links a {
+  padding: 5px 18px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
+
+footer span {
+  color: #666;
+  font-size: 14px;
+}
+
+footer span a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0 20px;
+  }
+
+  .hero {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 1150px) {
+  section {
+    padding: 0 20px;
+  }
+
+  .hero {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .project-nav-link {
+    display: none;
+  }
+}
