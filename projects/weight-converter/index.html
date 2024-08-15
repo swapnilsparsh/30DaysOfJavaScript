@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Weight Converter</h1>
+    <div class="wrapper">
+        <p>Enter value in grams...</p>
+        <input type="text" id="grams"><br><span id="error"></span>
+
+        <p>
+            Convert to
+            <select id="type">
+                <option value="Pounds">Pounds</option>
+                <option value="Kilograms">Kilograms</option>
+                <option value="Ounces">Ounces</option>
+                <option value="Stones">Stones</option>
+            </select>
+        </p>
+
+        <button id="btn">Convert</button>
+        <p id="output"></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Search App</title>
+
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+
+  <!-- Stylesheets & Custom Scripts -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/266833c2f6.js" crossorigin="anonymous" defer></script>
+  <!-- <script src="./v1.js" defer></script> -->
+  <script src="./v2.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h3 id="logo">Movie Search App</h3>
+    <form>
+      <input type="text" placeholder="Search" id="search" />
+      <button id="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </header>
+
+
+  <main>
+    <!-- <h1 class="heading" id="popular-movies-heading">Popular Movies <i class="fa-solid fa-rocket"></i></h1>
+    <section class="layout-wrapper" id="popular-movies-section">
+      <div class="condensed" id="popular"></div>
+    </section> -->
+
+    <h1 class="heading" id="editors-pick-movies-heading">Search Your Favorite Movies <i
+        class="fa-solid fa-wand-magic-sparkles"></i>
+    </h1>
+    <section class="layout-wrapper">
+      <div id="editors-pick">
+        <img src="./images/search.png" alt="Search Your Favorite Movies" width="300" height="300">
+      </div>
+    </section>
+
+    <!-- <h1 class="heading" id="recommended-movies-heading">Recommended <i class="fa-solid fa-gifts"></i></h1>
+    <section class="layout-wrapper">
+      <div id="recommendations"></div>
+    </section> -->
+
+  </main>
+
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup">&times;</span>
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <p>Due to some issue, the API data cannot be fetched. Try:</p>
+      <ul>
+        <li>Refreshing the page.</li>
+        <li>Restarting the internet.</li>
+        <li>Or, turn on the VPN connection.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer>
+    <div id="scroll-up"><i class="fa-solid fa-circle-up"></i></div>
+    <h4>Made with 💖 by Surojit <a href="https://mondalsurojit.github.io/Surojit/" target="_blank"><i
+          class="fa-solid fa-link"></i></a></h4>
+  </footer>
+</body>
+
+</html>

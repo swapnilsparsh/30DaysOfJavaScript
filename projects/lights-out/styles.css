@@ -1,0 +1,85 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+
+#grid {
+    display: grid;
+    gap: 5px;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.light.on {
+    box-shadow: 0 0 20px 10px yellow;
+}
+
+.light.off {
+    background-color: black;
+    box-shadow: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+    animation: lightOnOff 2s infinite;
+}
+
+@keyframes lightOnOff {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 10px yellow;
+    }
+    25% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 10px yellow;
+    }
+    100% {
+        opacity: 0;
+        text-shadow: none;
+    }
+}

@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  padding-top: 150px;
+  width: 310px;
+  margin: 0 auto;
+  background-color: #19172e;
+  color: white;
+}
+
+h3 {
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+textarea:hover {
+  border-color: #c0c0c0;
+}
+
+textarea:focus {
+  border-color: #4d90fe;
+}
+
+.output.row {
+  padding-top: 80px;
+  font-size: 1.3rem;
+}
+
+.output.row div {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}

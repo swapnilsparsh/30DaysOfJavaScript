@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assests/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Gradient Generator</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" />
+</head>
+
+<body id="body">
+  <div class="container">
+    <h1>Gradient Generator</h1>
+    <div class="selectcolrs">
+      <input type="color" name="color-one" id="color_one" value="#eb4034" />
+      <input type="color" name="color-two" id="color_two" value="#349beb" />
+    </div>
+    <div class="buttons">
+      <button onclick="setdirection('to top',this)" class="active">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <button onclick="setdirection('to bottom',this)">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button onclick="setdirection('to left',this)">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button onclick="setdirection('to right',this)">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+      <button onclick="setdirection('to top right',this)">
+        <i class="fas fa-arrow-up" style="transform: rotate(45deg)"></i>
+      </button>
+      <button onclick="setdirection('to bottom left',this)">
+        <i class="fas fa-arrow-down" style="transform: rotate(45deg)"></i>
+      </button>
+      <button onclick="setdirection('to top left',this)">
+        <i class="fas fa-arrow-left" style="transform: rotate(45deg)"></i>
+      </button>
+      <button onclick="setdirection('to bottom right',this)">
+        <i class="fas fa-arrow-right" style="transform: rotate(45deg)"></i>
+      </button>
+    </div>
+    <div class="submit" onclick="generate()">
+      <button id="submit">Generate</button>
+    </div>
+    <div class="output">
+      <textarea name="" id="code" rows="2"></textarea>
+      <button id="copy" onclick="copy(event)">Copy</button>
+    </div>
+  </div>
+  <footer>
+    <p>
+      &#x3c; &#47; &#x3e; with ❤️ by
+      <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+      <br />
+      <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

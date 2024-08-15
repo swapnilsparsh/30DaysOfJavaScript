@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "sans";
+  user-select: none;
+}
+
+@font-face {
+  src: url("font/sans.ttf");
+  font-family: "sans";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #19172e;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  padding: 20px;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="number"],
+.inputBox input[type="checkbox"] {
+  width: calc(100% - 20px); 
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+.inputBox input[type="number"]::-webkit-inner-spin-button,
+.inputBox input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+.inputBox label {
+  color: white;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px; 
+}
+
+.inputBox input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
+
+#btn {
+  cursor: pointer;
+  color: #fff;
+  background: #333;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#btn:hover {
+  background: #1e8e3e;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  position: fixed; 
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+.name {
+  text-decoration: none;
+  color: white;
+}
+
+.ProjectName {
+  color: white;
+  text-decoration: none;
+}
+

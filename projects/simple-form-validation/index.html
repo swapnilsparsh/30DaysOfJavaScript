@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form Validation</title>
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="signup_form" class="form">
+      <h1>Simple Form Validation</h1>
+
+      <div class="form-field">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username_input" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email_input" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password_input" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" name="confirm-password" id="confirm_password_input" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <input type="submit" value="Sign Up" class="submit-btn">
+      </div>
+    </form>
+  </div>
+  <footer>
+    <p>
+      By <a target="_blank" href="https://github.com/alexventuraio">Alex Ventura</a>
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

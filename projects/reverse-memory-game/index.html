@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Reverse Memory Game</h1>
+        <div id="controls">
+            <label for="grid-size">Select Grid Size:</label>
+            <select id="grid-size">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+                <option value="6">6x6</option>
+            </select>
+            <button id="start-button">Start Game</button>
+        </div>
+        <div id="grid-container">
+            <!-- Grid squares will be dynamically generated here -->
+        </div>
+        <p id="status"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

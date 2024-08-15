@@ -1,0 +1,130 @@
+.head{
+	background-color: lightgoldenrodyellow;
+	height: 255px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	border-bottom: 30px solid orange;
+}
+.head h2{
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	margin-top: 40px;
+}
+.head h1{
+	font-family: sans-serif;
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+}
+#result{
+	width: 100%;
+	text-align: center;
+	font-size: 110%;
+	font-family: sans-serif;
+	font-weight: 600;
+}
+#gap{
+	height: 190px;
+}
+#hi button{
+	display: inline-block;
+	padding: 10px;
+	width: 80px;
+	background: none;
+	margin: 10px 50px 10px 50px;
+	height: 40px;
+	border: 2px solid indianred;
+	border-radius: 5px;
+	float: right; 
+	cursor: pointer!important;
+}
+#hi{
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+}
+#hi button:hover{
+	background-color: indianred;
+	color: white;
+	box-shadow: 0px 3px 8px indianred;
+	font-weight: 600;
+}
+#bt{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+#play{
+	display: none;
+	width: 120px;
+	height: 40px;
+	color: white;
+	background-color: green;
+	font-weight: 600;
+	font-family: sans-serif;
+	border-radius: 5px;
+	border: 5px solid green;
+	cursor: pointer;
+	position: relative;
+	top: 50px;
+	
+}
+#play:hover{
+	background-color: darkblue;
+	border: 5px solid darkblue;
+	box-shadow: 0px 3px 8px 0px darkblue;
+}
+.row1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 80px;
+}
+.row2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.row1 div,.row2 div{
+	height: 100px;
+	width: 100px;
+	margin: 0px 20px 5px 20px;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+/*
+#a{
+	background-color: rgb(211, 41, 89);
+}
+#b{
+	background-color: rgb(61, 241, 189);
+}
+#c{
+	background-color: rgb(190, 98, 9);
+}
+#d{
+	background-color: rgb(1, 141, 109);
+}
+#e{
+	background-color: rgb(111, 141, 9);
+}
+#f{
+	background-color: rgb(11, 1, 199);
+}*/
+body{
+	background-color: black;
+}
+@media (max-width: 400px){
+	.row1 div,.row2 div{
+	height: 80px;
+	width: 80px;
+	margin: 0px 5px 5px 5px;
+}
+}

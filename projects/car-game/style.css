@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(118, 189, 159);
+}
+
+/* html, body {
+    height: 100%;
+    margin: 0;
+  } */
+body {
+    overflow: hidden;
+
+}
+
+.container {
+    background-color: rgb(118, 189, 159);
+    background-size: cover;
+    min-height: 99%;
+}
+
+.road {
+    background-color: black;
+    height: 93vh;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    border-left: 5px white dashed;
+    border-right: 5px white dashed;
+    z-index: 1;
+}
+
+.lines {
+    background-color: white;
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    margin-left: 195px;
+    z-index: -1;
+}
+
+.car {
+    height: 75px;
+    width: 41px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    background-image: url("assets/car.png");
+    background-size: cover;
+    bottom: 120px;
+    background-position-x: center;
+    z-index: -1;
+}
+
+.enemies {
+    height: 90px;
+    width: 41px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    background-image: url("assets/enemycar.png");
+    -webkit-transform: scaleY(-1);
+    background-size: cover;
+    bottom: 120px;
+    background-position-x: center;
+    z-index: -1;
+}
+
+.btn {
+    background-color: crimson;
+    color: #fff;
+    border: 1px solid;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    margin: auto;
+}
+
+.push {
+    height: 50px;
+    width: 401px;
+    margin: auto;
+    border: 5px solid crimson;
+}

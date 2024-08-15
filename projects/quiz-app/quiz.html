@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div>
+                <h3 id="quiz-title"></h3>
+                <p id="created-at"></p>
+            </div>
+            <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-light dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Rules
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li class="dropdown-item" id="drop-down-quiz-time"></li>
+                <li class="dropdown-item" id="drop-down-question-time"></li>
+            </ul>
+        </nav>
+        <div class="container-box">
+            <div class="box" id="rules-box">
+                <h3>Rules:</h3>
+                <p id="quiz-time"></p>
+                <p id="question-time"></p>
+                <button class="start-quiz btn btn-success">Start Quiz</button>
+            </div>
+
+            <div class="box" id="question-box">
+                <div class="display-time-box">
+                    <p class="display-time">Time Left for quiz: </p>
+                    <p class="display-time" id="quiz-time-left"></p>
+                    <br>
+                    <p class="display-time">Time left for question: </p>
+                    <p class="display-time" id="question-time-left"></p>
+                </div>
+
+                <h3 id="question"></h3>
+                <div id="radio-options">
+
+                </div>
+                <button class="submit btn btn-success">Submit</button>
+                <button class="next btn btn btn-primary disabled">Next</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="javaScript/question.js"></script>
+    <script src="javaScript/quiz.js"></script>
+</body>
+
+</html>

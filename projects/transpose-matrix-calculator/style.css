@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#body{
+    background-color: rgb(17 1 32);
+}
+.container{
+    position: relative;
+}
+h1{
+    margin:3vw;
+    color: white;
+    text-align: center;
+}
+.matrixClass{
+    color: wheat;
+   position: absolute;
+   left:39vw;
+   top:8vw;
+}
+input[type="text"]{
+    width:4vw;
+    background-color: antiquewhite;
+    transition: background-color,0.3s,linear;
+    text-align: center;
+}
+table{
+    border:2px solid white;
+    background-color: black;
+    padding: 2vw 2vw;
+    margin: 2vw 3vw;
+}
+#button{
+    color: wheat;
+    position: absolute;
+    top: 22vw;
+    left: 48.5vw;
+    cursor: pointer;
+    background-color: rgb(25, 76, 214);
+    border: 2px solid purple;
+    border-radius: 8px;
+    width: 5vw;
+    height: 3vw;
+    font-size: 17px;
+    font-family: 'Gideon Roman', cursive;
+    font-family: 'PT Serif', serif;
+    
+}
+#button:hover{
+    color:black;
+    background-color: rgb(231, 224, 221);
+}
+
+.fontstyle{
+    color: white;
+    position:absolute;
+    top: 27vw;
+    left: -16vw;
+    font-size: 24px;
+    font-family: 'Gideon Roman', cursive;
+    font-family: 'PT Serif', serif;
+}
+.ansTableClass{
+    color: wheat;
+    position: absolute;
+    top:32vw;
+    left: 41.5vw;
+    text-align: center;
+}
+.ansTableClass td{
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+@media  (min-width:1024px) and (max-width:1300px) {
+    #button{
+        top: 25vw;
+        width: 5vw;
+        height: 3vw;
+        font-size: 17px;
+    }
+    
+}
+@media  (min-width:700px) and (max-width:1024px) {
+    #button{
+        top: 29vw;
+        width: 7vw;
+        height: 4vw;
+        left: 47vw;
+        font-size: 17px;
+    }
+    .matrixClass {
+        position: absolute;
+        left: 35vw;
+        top: 8vw;
+    }
+    .ansTableClass{
+        top: 43vw;
+        left: 39vw;
+        width: 19%;
+    }
+    .fontstyle{
+        font-size: 22px;
+    }
+    input[type="text"]{
+        width:6vw;
+    }
+  
+}
+@media  (min-width:500px) and (max-width:700px) {
+    #button{
+        top: 43vw;
+        width: 9vw;
+        height: 5vw;
+        font-size: 17px;
+        left: 45vw;
+    }
+    .matrixClass{
+        left:29vw;
+        top:16vw;
+    }
+    .ansTableClass{
+        top: 65vw;
+        left: 33vw;
+        width: 29%;
+    }
+    .fontstyle{
+        font-size: 22px;
+        top: 38vw;
+        left: -23vw;
+    }
+    input[type="text"]{
+        width:9vw;
+    }
+   
+}
+@media  (min-width:300px) and (max-width:500px) {
+    #button{
+        top: 69vw;
+    width: 13vw;
+    height: 8vw;
+    font-size: 17px;
+    left: 44vw;
+    }
+    .matrixClass{
+        left:25.5vw;
+        top:29vw;
+    }
+    .ansTableClass{
+            top: 91vw;
+            left: 33vw;
+            width: 34%;
+    }
+    .fontstyle{
+        font-size: 19px;
+        top: 50vw;
+        left: -22vw;
+    }
+    input[type="text"]{
+        width:12vw;
+    }
+  
+}
+@media  (max-width:300px) {
+    #button{
+        top: 73vw;
+    width: 15vw;
+    height: 10vw;
+    font-size: 17px;
+    left: 44vw;
+    }
+    .matrixClass{
+        left:26vw;
+        top:30vw;
+    }
+    .ansTableClass{
+        top: 100vw;
+        left: 35vw;
+    }
+    .fontstyle{
+        font-size: 17px;
+        top: 56vw;
+        left: -22vw;
+    }
+    input[type="text"]{
+        width:11vw;
+    }
+   
+}

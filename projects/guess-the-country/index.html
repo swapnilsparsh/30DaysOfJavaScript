@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Country using Flag</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>Guess the Country</h2>
+
+        <div class="countryImg">
+            <img id="country-flag" alt="countryFlag" src="">
+        </div>
+
+        <input type="text" placeholder="Enter Country name" id="guess">
+        <button id="submitGuess">Submit Guess</button>
+        <p id="result">Hurray! Thats Correct!</p>
+        <p id="empty-error"></p>
+        <button id="nextBtn">Next</button>
+
+        <div class="scoreElement">
+            <h5 id="score-guide">Correct guess = 10 points</h5>
+            <h4 id="user-score">Your Score: <span id="user-score-val"></span></h4>
+        </div>
+    </div>
+
+    <footer>
+        <p>&#x3c; &#47; &#x3e; with ❤️ by
+          <a href="https://github.com/AtharvKasar04" target="_blank">Atharv Kasar</a>
+          <br>
+          <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript
+          </a>
+        </p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

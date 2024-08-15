@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time</title>
+
+    <link rel="shortcut icon" href="favicon.png" sizes="16x16" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+
+        * {
+            box-sizing: border-box;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            color: purple;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            overflow: hidden;
+        }
+
+        body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            padding: 20px 5vw 0 5vw;
+            background-color: #fff;
+            background-size: 8px 8px, 8px 8px;
+            background-position: center, center;
+            background-image: linear-gradient(#ebf4f9 1px, transparent 1px), linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+            border: 6px solid purple;
+        }
+
+        body h1 {
+            margin-bottom: 5px;
+            font-size: 2.2rem;
+
+        }
+
+        body p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        body h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        #timeTaken {
+            color: red;
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            background-color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 10px;
+            overflow: hidden;
+            border: 5px double black;
+        }
+
+        #fig {
+            position: absolute;
+            width: 100px;
+            height: 126px;
+            background-color: brown;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        footer {
+            position: absolute;
+            left: 50%;
+            bottom: calc((100% - (70vh + 120px)) / 2);
+            transform: translate(-50%, 50%);
+            width: 100%;
+        }
+    </style>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Reaction Time Test!</h1>
+    <p>Click the boxes & circles as quickly as you can!</p>
+    <h3>Your time: <span id="timeTaken"></span></h3>
+
+    <div id="container">
+        <div id="fig"></div>
+    </div>
+
+    <footer>Made with 💖 by Surojit
+        <a href="https://mondalsurojit.github.io/Surojit/">🔗</a>
+    </footer>
+</body>
+
+</html>

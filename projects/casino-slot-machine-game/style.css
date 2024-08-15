@@ -1,0 +1,96 @@
+:root{
+    --speed: 5;
+    /* define variable like this using -- */
+}
+.machine{
+    background-color: peru;
+    border: dashed brown 3px;
+    height: 300px;
+    width: 900px;
+    margin: 50px;
+    z-index: 5;
+    display: flex;
+}
+
+#inpSpeed{
+    font-size: 30pt;
+    margin-left: 30px;
+    width: 95px;
+    margin: 25px;
+    text-align: center;
+    color: rgb(6, 6, 29);
+    background-color: blanchedalmond;
+   
+}
+
+.slot{
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    overflow: hidden;
+    z-index: 1;
+    background-color: beige;
+    border: solid rgb(3, 11, 49) 3px;
+    text-align: center;
+    font-size: 90pt;
+    line-height: 250px;
+
+   
+}
+.slot > .value{
+    z-index: 3;
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s/ var(--speed));
+}
+
+@keyframes slotspin{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+} 
+
+.controllers{
+    background-color: rgb(124, 143, 72);
+    border: solid rgb(79, 79, 83) 8px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    width: 900px;
+    margin:30px;
+}
+
+#btnStop{
+    font-size: 30pt;
+    margin:50px;
+    background-color: rgb(141, 15, 40);
+
+}
+
+#btnStart{
+    font-size: 30pt;
+    margin:50px;
+    background-image: radial-gradient(rgb(44, 158, 167));
+    background-color: rgb(129, 182, 184);
+}
+
+.output{
+
+    background-color:rgb(0, 0, 0);
+    border: solid rgb(90, 87, 87) 8px;
+    display: flex;
+    font-size: 30pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:2pt;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    width: 900px;
+    margin-top:10px;
+    margin-left:30px;
+    color: rgb(255, 255, 255);
+}

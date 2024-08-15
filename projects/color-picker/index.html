@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/color-picker.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <title>Color Picker</title>
+</head>
+
+<body>
+
+  <div class="section">
+    <h1>Color Picker</h1>
+    <input type="color" id="color-picker">
+    <div class="color-codes">
+      <p><label for="hex-value"> Hex: </label><button class="button-28" id="hex-value"
+          onclick="hex()">#06020F</button><br></p>
+      <p><label for="rgb-value"> RGB: </label><button class="button-28" id="rgb-value"
+          onclick="rgb()">rgb(6,2,15)</button><br></p>
+      <p><label for="hsl-value"> HSL: </label><button class="button-28" id="hsl-value"
+          onclick="hsl()">hsl(258,76%,3%)</button></p>
+      <p>CLick on required code to <br> COPY TO CLIPBOARD</p>
+    </div>
+    <footer>
+      <p>&#x3c; &#47; &#x3e; with ❤️ by
+        <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+        <br>
+        <a href="https://github.com/swapnilsparsh/30DaysOfJavaScript" target="_blank">#30DaysOfJavaScript
+        </a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

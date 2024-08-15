@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #19172e;
+    --counter-container-size: 9.375rem;
+    --container-width: 100%;
+    --btn-operator-size: 2.5rem;
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "sans";
+}
+
+body {
+    background: var(--primary-color);
+    color: white;
+    position: relative;
+    min-height: 95vh;
+    padding-bottom: 5rem;
+}
+
+a {
+    color: white;
+}
+
+button {
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: max-content;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-counter,
+.number-saved {
+    width: var(--container-width);
+}
+
+.counter-container {
+    width: var(--counter-container-size);
+    height: var(--counter-container-size);
+    margin: 1rem auto;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.counter {
+    font-size: 4rem;
+}
+
+.btn-operator {
+    width: var(--btn-operator-size);
+    height: var(--btn-operator-size);
+    position: absolute;
+    font-size: 1.2em;
+    background: white;
+    color: rgb(34, 34, 34);
+    border-radius: 3.125rem;
+}
+
+.increase {
+    bottom: 10%;
+    right: -15%;
+}
+
+.decrease {
+    bottom: -15%;
+    right: 10%;
+}
+
+.btn {
+    display: block;
+    background: #333333;
+    padding: 1.25rem;
+    margin: 2.5rem auto;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.btn:active {
+    background: rgb(30, 142, 62);
+}
+
+.number {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.num {
+    color: white;
+    margin: 0.625rem;
+    font-size: 1.125rem;
+    align-self: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.313rem;
+    line-height: 3vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width : 635px) {
+
+    :root {
+        --counter-container-size: 12rem;
+        --btn-operator-size: 3rem;
+    }
+
+    .num {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:835px) {
+
+    :root {
+        --counter-container-size: 12.5rem;
+        --btn-operator-size: 3.5rem;
+        --container-width: 50%;
+    }
+
+    .num {
+        font-size: 1.5rem;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }  
+     
+}
+
+@media screen and (min-width:1152px) {
+
+    :root {
+        --counter-container-size: 14rem;
+        --btn-operator-size: 3.8rem;
+    }
+
+    .num {
+        font-size: 2rem;
+    }
+}

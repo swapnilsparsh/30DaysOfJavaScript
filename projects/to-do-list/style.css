@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  background-color: #19172e;
+}
+
+.container {
+  width: 40%;
+  height: 500px;
+  margin: 3rem auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+/* Style the header */
+.header {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  padding: 0.5rem;
+}
+
+input {
+  border: solid 1px #19172e;
+  border-radius: 3px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn,.editBtn {
+  padding: 10px;
+  width: 25%;
+  background: #ffd662ff;
+  color: black;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.addBtn:hover {
+  background-color: #1e8e3e;
+}
+
+ul li {
+  margin: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+ul li.checked {
+  background-color: #1e8e3e;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 16px 12px 16px;
+  background-color: #f44336;
+  border-radius: 3px;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+
+.close:hover{
+    background-color: #cc382e;
+}
+
+.edit {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px 12px 16px;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+  transition: 0.1s ease-in-out;
+}
+
+.edit:hover{
+    background-color: rgb(0, 111, 0);
+}
+
+footer {
+  color: white;
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media(max-width:400px){
+  .val{
+    text-align: left;
+  }
+}
+#myUL {
+  /* increases these changes in it.. */
+    max-height: 300px; 
+    overflow-y: auto;
+  }

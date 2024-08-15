@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+body {
+    background-color: #19172e;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+h2.heading {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container .row {
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    -webkit-box-shadow: 5px 42px 48px -32px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 42px 48px -34px rgba(0, 0, 0, 0.75);
+}
+
+.container .row .user_info {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #bdbdbd;
+    border-top-left-radius: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.container .row .user_info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+.container .row .repo {
+    width: 70%;
+    background-color: #fff;
+}
+
+.user_name {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user_name h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.user_name h1 {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.follow {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.follow .item p {
+    font-size: 14px;
+}
+
+.follow .item span {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.repo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #939292 0%, #19172e 100%);
+    color: #fff;
+}
+
+.repo h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.repo .repo_details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    gap: 15;
+    flex-wrap: wrap;
+}
+
+.repo .repo_details .item_ {
+    width: 47%;
+    border: 1px solid #424141;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.repo .repo_details .item_ .repo_name {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.repo .repo_details .item_ .repo_details_ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo .repo_details .item_ .repo_details_ .info_ {
+    font-size: 12px;
+}
+
+.repo .repo_details .item_ .repo_details_ .info_.fork .fa {
+    margin-right: 5px;
+}
+
+.repo .repo_details .item_ .repo_details_ .info_.size .fa {
+    margin-right: 5px;
+}
+
+.input_wrapper {
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.input_wrapper .input_user {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 5px 160px 5px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.input_wrapper .input_user::-webkit-input-placeholder {
+    color: #bdbdbd;
+}
+
+.input_wrapper .input_user:-ms-input-placeholder {
+    color: #bdbdbd;
+}
+
+.input_wrapper .input_user::-ms-input-placeholder {
+    color: #bdbdbd;
+}
+
+.input_wrapper .input_user::placeholder {
+    color: #bdbdbd;
+}
+
+.input_wrapper .input_user:focus {
+    outline: none;
+}
+
+.input_wrapper .btn_submit {
+    width: 150px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer .p {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer .gssoc {
+    margin-top: 5px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Image Utility</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <p>Loading...</p>
+    </div>
+    <header>
+        <h1>Upload image you want to edit</h1>
+        <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+        <img src="./images/ld-mode.svg" alt="ld-mode" id="ld-mode">
+    </header>
+
+    <main>
+        <section id="image-section">
+            <div><img src="" alt="" id="display-image"></div>
+            <button><i class="fa-solid fa-expand"></i></button>
+            <!-- <button><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            <button><i class="fa-solid fa-magnifying-glass-minus"></i></button> -->
+        </section>
+
+        <section id="controls-section">
+            <div id="controls-container">
+                <div>
+                    <label>Grayscale :</label>
+                    <input type="range" class="filters-input" id="grayscale" value="0" min="0" max="100"
+                        data-sizing="%">
+                </div>
+                <div>
+                    <label>Contrast :</label>
+                    <input type="range" class="filters-input" id="contrast" value="100" min="0" max="500"
+                        data-sizing="%">
+                </div>
+                <div>
+                    <label>Blur :</label>
+                    <input type="range" class="filters-input" id="blur" value="0" min="0" max="5" data-sizing="px">
+                </div>
+                <div>
+                    <label>Brightness :</label>
+                    <input type="range" class="filters-input" id="brightness" value="100" min="0" max="500"
+                        data-sizing="%">
+                </div>
+                <div>
+                    <label>Invert :</label>
+                    <input type="range" class="filters-input" id="invert" value="0" min="0" max="100" data-sizing="%">
+                </div>
+                <div>
+                    <label>Hue Rotate :</label>
+                    <input type="range" class="filters-input" id="hue-rotate" value="0" min="0" max="360"
+                        data-sizing="deg">
+                </div>
+                <div>
+                    <label>Opacity :</label>
+                    <input type="range" class="filters-input" id="opacity" value="100" min="0" max="100"
+                        data-sizing="%">
+                </div>
+                <div>
+                    <label>Saturate :</label>
+                    <input type="range" class="filters-input" id="saturate" value="1" min="0" max="10" data-sizing="">
+                </div>
+                <div>
+                    <label>Sepia :</label>
+                    <input type="range" class="filters-input" id="sepia" value="0" min="0" max="100" data-sizing="%">
+                </div>
+                <div>
+                    <label>
+                        Border Radius : &nbsp; Px &nbsp;<label class="toggle"><input type="checkbox">
+                            <div></div>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%
+                    </label>
+                    <input type="range" id="border-radius" value="0" min="0" max="250" data-sizing="px">
+                </div>
+            </div>
+            <div id="btn-container">
+                <button id="reset-btn">Reset <i class="fa-solid fa-rotate-left"></i></button>
+                <button id="download-now-btn">Download <i class="fa-solid fa-download"></i></button>
+            </div>
+        </section>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="close-btn">&times;</span>
+                <p id="popup-content-heading">Looks Great, Right!!</p>
+                <hr>
+                <div id="img-container"></div>
+                <hr>
+                <div id="share-btns">
+                    <i class="fa-solid fa-download" title="Download" id="download-btn"></i>
+                    <i class="fa-solid fa-share-nodes" title="Share" id="share-btn"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Made with 💗 by
+            <a href="https://mondalsurojit.github.io/Surojit/" target="_blank" rel="noopener noreferrer">Surojit</a>
+        </h4>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/266833c2f6.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

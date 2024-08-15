@@ -1,0 +1,90 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'sans';
+  font-size: 10px;
+  background: #19172e;
+  user-select: none;
+}
+
+@font-face {
+  src: url('font/sans.ttf');
+  font-family: 'sans';
+}
+
+h1 {
+  font-size: 5.5rem;
+  color: #FEFFE2;
+  font-family: "Arvo", cursive;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+span {
+  font-weight: 100;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid white;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 78pt;
+  text-align: center;
+  color: white;
+  background-color: #212121;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #bb86fc;
+  box-shadow: 0 0 1rem #bb86fc;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #bb86fc;
+}
+
+kbd {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+#container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

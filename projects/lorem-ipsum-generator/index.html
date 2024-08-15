@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum generator</title>
+    <link rel="shortcut icon" href="../30DaysOfJavaScript/assets/favicon.png" type="image/x-icon">
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- upper heading -->
+      <h1 class="heading">Generate Your Own Lorem Ipsum</h1>
+
+      <!-- lower section -->
+      <div class="lowerSection">
+        <!-- label & input box -->
+        <form id="form">
+          <label class="label" for="input">Sentence : </label>
+          <input class="inputField" type="text" name="input" id="input" />
+          <input class="submitButton" type="submit" value="Generate" />
+        </form>
+
+        <!-- generated text wrapper -->
+        <div class="text-wrapper">
+          <span class="copy-container"
+            ><i
+              class="copy fa-solid fa-copy"
+            ></i
+          ></span>
+
+          <!-- text content -->
+          <div class="text-section"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

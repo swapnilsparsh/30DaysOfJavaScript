@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+body { 
+	font-family: "sans";
+	background: #19172e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	margin: 0;
+	text-align: center;
+    color: white;
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+#text{
+    font-size: 1.5rem;
+}
+
+input {
+    text-align: center;
+	width: 50px;
+    outline: none;
+}
+
+footer {
+    background-color: #19172e;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+}
+  
+  footer a:visited {
+    color: inherit;
+}

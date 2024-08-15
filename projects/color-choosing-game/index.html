@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Color game</title>
+</head>
+
+<body>
+  <div class="head">
+    <h1>RGB GAME</h1>
+    <h2 id="status">Click below to start the game</h2>
+    <p id="result"></p>
+
+  </div>
+  <div id="gap"></div>
+  <div id="hi"><button class="hi">Easy</button>
+    <button class="hi">Hard</button>
+  </div>
+  <div id="bt">
+    <button id="play" onclick='startGame()'>Get colors</button>
+  </div>
+  <div class="row1 row">
+    <div data-index="0" class="on"></div>
+    <div data-index="1" class="on"></div>
+    <div data-index="2" class="on"></div>
+  </div>
+  <div class="row2 row">
+    <div data-index="3" class="on"></div>
+    <div data-index="4" class="on"></div>
+    <div data-index="5" class="on"></div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

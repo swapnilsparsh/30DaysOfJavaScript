@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Music.css">
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">SUGAR & BROWNIES</h2>
+            <h3 id="artist">Dharia</h3>
+            <div class="img_container">
+                <img src="images/Sugar.jpg" alt="">
+            </div>
+            <audio src="Music/Sugar.mp3" controls></audio>
+
+            <!-- -----Progress Control------ -->
+            <div class="slider_container">
+                <input type="range" min="0" max="100" value="0" class="progress_slider" onchange="setProgress()">
+            </div>
+
+            <!---Controls-->
+            <div class="music_controls">
+                <i class="fa-solid fa-backward" id="Previous" title="Previous"></i>
+                <i class="fa-solid fa-play main-button" id="Play" title="Play"></i>
+                <i class="fa-solid fa-forward" id="Next" title="Next"></i>
+            </div>
+
+            <!-- -----Volume Control------ -->
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+    <script src="Music.js"></script>
+</body>
+
+</html>

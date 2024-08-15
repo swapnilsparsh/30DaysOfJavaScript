@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 20px auto;
+
+}
+
+h3 {
+    border: none;
+    color: white;
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+}
+
+#start-btn {
+    /* background-color: black;*/
+    /*height: 40px;
+   width:40px;*/
+    margin-top: 10px;
+    height: 52px;
+
+    border: none;
+    cursor: pointer;
+}
+
+#start-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.938);
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+    /*background-color: antiquewhite;*/
+    color: gray;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 10px;
+
+
+}
+
+.button-container {
+    width: 200px;
+    margin: 10px auto;
+    /*background-color: antiquewhite;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    /* background-color:antiquewhite;*/
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 2px 2px;
+    /* margin-bottom: 1px;*/
+    justify-content: center;
+    /* margin-top:5px;*/
+
+}
+
+.btn img {
+    width: 35px;
+    height: 30px;
+    background-color: antiquewhite;
+}
+
+img {
+    border-radius: 30px;
+    border-color: red;
+}
+
+footer {
+    width: fit-content;
+    margin: auto;
+}
+
+footer span {
+    color: rgb(255, 72, 0);
+}

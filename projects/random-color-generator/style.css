@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "sans";
+  color: black;
+  background-color: #19172e;
+}
+
+@font-face {
+  src: url("font/sans.ttf");
+  font-family: "sans";
+}
+
+.heading {
+  color: white;
+  padding-top: 10px;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.btn {
+  background: #333;
+  color: white;
+  padding: 15px 60px;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #1e8e3e;
+  color: white;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.copy {
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  background: #333;
+  cursor: not-allowed ;
+  border-radius: 5px;
+  border: none;
+  user-select: none;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 33.3%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #19172e;
+  border: 2px solid #19172e;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .box {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .item {
+    flex-direction: column;
+  }
+  .copy {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .copy {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .copy {
+    padding: 5px;
+    width: fit-content;
+    text-align: center;
+  }
+  .btn {
+    padding: 5px;
+  }
+}

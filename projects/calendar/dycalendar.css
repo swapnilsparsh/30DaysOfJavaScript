@@ -1,0 +1,96 @@
+.dycalendar-container {
+    display: inline-block;
+    border : 1px solid #eee;
+}
+
+.dycalendar-container.round-edge {
+    border-radius: 5%;
+    -o-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+}
+
+
+
+/*================================== DAY CALENDAR ========================*/
+/*
+ * day calendar style
+ *-------------------------------------------------*/
+.dycalendar-day-container {
+    padding : 10px;
+    text-align : center;
+    font-family : Arial;
+}
+
+.dycalendar-day-container div{
+    padding : 0;
+    margin-bottom : 10px;
+}
+
+.dycalendar-day-container .dycalendar-span-day {
+    font-size : 110%;
+}
+
+.dycalendar-day-container .dycalendar-span-date {
+    font-size : 250%;
+}
+
+.dycalendar-day-container .dycalendar-span-month-year {
+    font-size : 90%
+}
+
+/*================================== DAY CALENDAR ENDS HERE ===============*/
+
+
+
+/*================================== MONTH CALENDAR DEFAULT ========================*/
+
+/*
+ * month calendar style
+ *-------------------------------------------------*/
+.dycalendar-month-container {
+    padding : 10px;
+    text-align : center;
+    font-family : Arial;
+}
+
+.dycalendar-month-container div{
+    padding : 0;
+    margin-bottom : -10px;
+}
+
+.dycalendar-month-container .dycalendar-header {
+    position : relative;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn {
+    position : absolute;
+    top : 0;
+    cursor : pointer;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn {
+    left : 0;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn {
+    right : 0;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year {
+    margin : 5px;
+    cursor : pointer;
+}
+
+.dycalendar-month-container .dycalendar-body table tr td {
+    padding : 5px;
+}
+
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date {
+    background-color: #111;
+    color : #fff;
+    border-radius: 2px;
+}
+
+/*================================== MONTH CALENDAR ENS HERE ===============*/

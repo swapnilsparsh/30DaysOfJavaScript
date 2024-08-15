@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "sans";
+}
+
+/* -----------Font Change----------------- */
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+.main_div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #19172e;
+  display: grid;
+  place-items: center;
+}
+
+.music_container {
+  width: 25rem;
+  height: 55rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 25px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  text-align: center;
+}
+
+.music_container #title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+  color: #fff;
+  margin: 2rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.music_container #artist {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+
+audio {
+  display: none;
+}
+
+.img_container {
+  width: 21rem;
+  height: 21rem;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.music_controls .fa-solid {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #111;
+  color: #f6f6f6;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music_controls {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.music_controls .main-button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #111;
+  color: #f6f6f6;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Previous:hover,
+#Next:hover {
+  background-color: white;
+  color: black;
+}
+
+.music_controls .main-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.anime {
+  animation: rotatePlayer 3s linear 3s;
+}
+
+/* Music.css */
+
+/* Styles for the progress slider */
+.progress_slider {
+  width: 100%;
+  height: 10px;
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #4CAF50 0%, #4CAF50 0%, #ddd 0%, #ddd 100%);
+  border-radius: 5px;
+  outline: none;
+  margin-top: 3rem;
+  transition: background 0.1s ease;
+}
+
+.progress_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.progress_slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* -------------Volume---------------- */
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #83a9ff;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2.5px solid #3774ff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.volume_slider:hover {
+  opacity: 1.0;
+}
+
+.volume_slider {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.fa {
+  width: 15px;
+  color: #fff;
+  padding: 10px;
+}
+
+@keyframes rotatePlayer {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

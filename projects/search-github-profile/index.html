@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/github_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="heading">Search Github Profile</h2>
+    <div class="container"><!--1. Main Section container-->
+        <div class="input_wrapper"><!--1.1To contain search box and button-->
+            <input type="text" placeholder="Enter github username" class="input_user">
+            <div class="btn_submit">Search User</div>
+        </div>
+        <div class="row"><!--1.2 Show Search User Template(Main box) -->
+            <div class="user_info"><!--2.1 left column-->
+
+                <div class="user_img"><!--3.1 Pic, Name, Followers, Following-->
+                    <img src="images/github_logo.png">
+                </div>
+
+                <div class="user_name">
+                    <h3>Login Name</h3>
+                    <h1>UserName</h1>
+                </div>
+
+                <div class="follow">
+
+                    <div class="item followers_">
+                        <p>Followers</p>
+                        <span>-</span>
+                    </div>
+                    <div class="item follow_">
+                        <p>Follow</p>
+                        <span>-</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="repo"><!--2.2 right column-->
+                <h1>Repos</h1>
+                <div class="repo_details"><!--3.2 Display Repos of user-->
+                    <!--item_ will be repeating if it will be more than one-->
+                    <div class="item_">
+                        <div class="repo_name">Repo name</div>
+
+                        <div class="repo_details_">
+                            <div class="info_star">
+                                <i class="fa fa-star-o"></i>-
+                            </div>
+                            <div class="info_fork">
+                                <p><i class="fa fa-code-fork"></i>-</p>
+                            </div>
+                            <div class="info_size">
+                                <p><i class="fa fa-file"></i>-kb</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Made with ❤️ by
+            <a href="https://github.com/praniti111" style="color:white" target="_blank">Praniti Parmar</a>
+        </p>
+        <div class="gssoc">
+            <p>GSSoC22 Contribution</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

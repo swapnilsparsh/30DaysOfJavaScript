@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: "sans";
+  user-select:none; /*for the user not to pull the card with the mouse*/
+}
+
+@font-face {
+  font-family: "sans";
+  src: url("font/sans.ttf");
+}
+
+body {
+  background-color: #19172e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+  height: 540px;
+  margin: auto;
+  perspective: 1000px;
+  max-width: 100%;
+  padding-top: 80px;
+  align-items: center;
+}
+
+.card {
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
+  height: calc(28% - 10px);
+  width: calc(25% - 10px);
+  transform-style: preserve-3d;
+  transform: scale(1);
+  transition: transform .9s;
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, .3);
+}
+
+.card.show {
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden; /* a property that strips the back of the element */
+}
+
+.card .front {
+  transform: rotateY(180deg);
+  background: #ffffff;
+}
+
+.card .back {
+  background: #a1a0a0;
+}
+
+.card i {
+  font-size: 60px;   
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+footer a:visited {
+  color: inherit;
+}

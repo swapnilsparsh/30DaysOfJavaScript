@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans";
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #19172e;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+h3{
+    position: absolute;
+    top: -70px;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+img{
+    size:18px;
+    margin-right: 1.2rem;
+}
+
+label{
+    position: relative;
+}
+
+label input{
+    font-size: 1rem;
+    padding: 1rem ;
+    border-radius: 0.2rem;
+}
+
+footer {
+    background-color: #19172e;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+  }
+  
+  footer a:visited {
+    color: inherit;
+  }
