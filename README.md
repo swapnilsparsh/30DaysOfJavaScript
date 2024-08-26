@@ -12,46 +12,46 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
 | Day |                                                Name                                                 |
 | --- | :-------------------------------------------------------------------------------------------------: |
-| 1   |                   [Drum Kit](https://30daysofjs.netlify.app/01%20-%20drum%20kit/)                   |
-| 2   |                       [Clock](https://30daysofjs.netlify.app/02%20-%20clock/)                       |
-| 3   |    [Random Color Generator](https://30daysofjs.netlify.app/03%20-%20random%20color%20generator/)    |
-| 4   |              [Digital Clock](https://30daysofjs.netlify.app/04%20-%20digital%20clock/)              |
-| 5   | [Random Password Generator](https://30daysofjs.netlify.app/05%20-%20random%20password%20generator/) |
-| 6   |                    [Calendar](https://30daysofjs.netlify.app/06%20-%20calendar/)                    |
-| 7   |        [Dynamic Form Field](https://30daysofjs.netlify.app/07%20-%20dynamic%20form%20field/)        |
-| 8   |             [Number Counter](https://30daysofjs.netlify.app/08%20-%20number%20counter/)             |
-| 9   |                  [Dice Roll](https://30daysofjs.netlify.app/09%20-%20dice%20roll/)                  |
-| 10  |    [Emoji Switcher](https://30daysofjs.netlify.app/10%20-%20emoji%20switcher%20like%20discord/)     |
+| 1   |                   [Drum Kit](https://30daysofjs.netlify.app/projects/drum-kit/)                     |
+| 2   |                       [Clock](https://30daysofjs.netlify.app/projects/clock/)                       |
+| 3   |    [Random Color Generator](https://30daysofjs.netlify.app/projects/random-color-generator/)        |
+| 4   |              [Digital Clock](https://30daysofjs.netlify.app/projects/digital-clock/)                |
+| 5   | [Random Password Generator](https://30daysofjs.netlify.app/projects/random-password-generator/)     |
+| 6   |                    [Calendar](https://30daysofjs.netlify.app/projects/calendar/)                    |
+| 7   |        [Dynamic Form Field](https://30daysofjs.netlify.app/projects/dynamic-form-field/)            |
+| 8   |             [Number Counter](https://30daysofjs.netlify.app/projects/number-counter/)               |
+| 9   |                  [Dice Roll](https://30daysofjs.netlify.app/projects/dice-roll/)                   |
+| 10  |    [Emoji Switcher](https://30daysofjs.netlify.app/projects/emoji-switcher-like-discord/)           |
 
  </td><td>
     
 | Day |                                                Name                                                 |
-| --- | :-------------------------------------------------------------------------------------------------: |    
-| 11  |               [Color Picker](https://30daysofjs.netlify.app/11%20-%20color%20picker/)               |
-| 12  |            [Custom QR Code](https://30daysofjs.netlify.app/12%20-%20custom%20qr%20code/)            |
-| 13  |            [Favicon Fetcher](https://30daysofjs.netlify.app/13%20-%20favicon%20fetcher/)            |
-| 14  |              [Visit Counter](https://30daysofjs.netlify.app/14%20-%20visit%20counter/)              |
-| 15  |             [Joke Generator](https://30daysofjs.netlify.app/15%20-%20joke%20generator/)             |
-| 16  |            [Countdown Timer](https://30daysofjs.netlify.app/16%20-%20countdown%20timer/)            |
-| 17  |        [Text Speed Control](https://30daysofjs.netlify.app/17%20-%20text%20speed%20control/)        |
-| 18  |                   [Stopwatch](https://30daysofjs.netlify.app/18%20-%20stopwatch/)                   |
-| 19  |              [Traffic Lights](https://30daysofjs.netlify.app/19%20-%20traffic%20lights/)               |
-| 20  |             [Levitate Board](https://30daysofjs.netlify.app/20%20-%20levitate%20board/)             |
+| --- | :-------------------------------------------------------------------------------------------------: |
+| 11  |               [Color Picker](https://30daysofjs.netlify.app/projects/color-picker/)                 |
+| 12  |            [Custom QR Code](https://30daysofjs.netlify.app/projects/custom-qr-code/)               |
+| 13  |            [Favicon Fetcher](https://30daysofjs.netlify.app/projects/favicon-fetcher/)             |
+| 14  |              [Visit Counter](https://30daysofjs.netlify.app/projects/visit-counter/)               |
+| 15  |             [Joke Generator](https://30daysofjs.netlify.app/projects/joke-generator/)              |
+| 16  |            [Countdown Timer](https://30daysofjs.netlify.app/projects/countdown-timer/)             |
+| 17  |        [Text Speed Control](https://30daysofjs.netlify.app/projects/text-speed-control/)           |
+| 18  |                   [Stopwatch](https://30daysofjs.netlify.app/projects/stopwatch/)                  |
+| 19  |              [Traffic Lights](https://30daysofjs.netlify.app/projects/traffic-lights/)             |
+| 20  |             [Levitate Board](https://30daysofjs.netlify.app/projects/levitate-board/)              |
     
  </td><td>
     
 | Day |                                                Name                                                 |
-| --- | :-------------------------------------------------------------------------------------------------: |    
-| 21  |                [Wave Effect](https://30daysofjs.netlify.app/21%20-%20wave%20effect/)                |
-| 22  |                [Zoom Effect](https://30daysofjs.netlify.app/22%20-%20zoom%20effect/)                |
-| 23  |                [Drawing Pad](https://30daysofjs.netlify.app/23%20-%20drawing%20pad/)                |
-| 24  |               [Word Counter](https://30daysofjs.netlify.app/24%20-%20word%20counter/)               |
-| 25  |                [Weather App](https://30daysofjs.netlify.app/25%20-%20weather%20app/)                |
-| 26  |                  [Calculator](https://30daysofjs.netlify.app/26%20-%20calculator/)                  |
-| 27  |      [Memory Matching Game](https://30daysofjs.netlify.app/27%20-%20memory%20matching%20game/)      |
-| 28  |               [Music Player](https://30daysofjs.netlify.app/28%20-%20music%20player/)               |
-| 29  |                [To Do List](https://30daysofjs.netlify.app/29%20-%20to%20do%20list/)                |
-| 30  |               [Tic Tac Toe](https://30daysofjs.netlify.app/30%20-%20tic%20tac%20toe/)               |
+| --- | :-------------------------------------------------------------------------------------------------: |
+| 21  |                [Wave Effect](https://30daysofjs.netlify.app/projects/wave-effect/)                  |
+| 22  |                [Zoom Effect](https://30daysofjs.netlify.app/projects/zoom-effect/)                  |
+| 23  |                [Drawing Pad](https://30daysofjs.netlify.app/projects/drawing-pad/)                  |
+| 24  |               [Word Counter](https://30daysofjs.netlify.app/projects/word-counter/)                 |
+| 25  |                [Weather App](https://30daysofjs.netlify.app/projects/weather-app/)                  |
+| 26  |                  [Calculator](https://30daysofjs.netlify.app/projects/calculator/)                  |
+| 27  |      [Memory Matching Game](https://30daysofjs.netlify.app/projects/memory-matching-game/)          |
+| 28  |               [Music Player](https://30daysofjs.netlify.app/projects/music-player/)                 |
+| 29  |                [To Do List](https://30daysofjs.netlify.app/projects/to-do-list/)                    |
+| 30  |               [Tic Tac Toe](https://30daysofjs.netlify.app/projects/tic-tac-toe/)                   |
 
 </td></tr></table>
 
@@ -63,76 +63,76 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
 | Day |                                                 Name                                                  |
 | --- | :---------------------------------------------------------------------------------------------------: |
-| 31  |           [Pop the Ballons](https://30daysofjs.netlify.app/31%20-%20pop%20the%20balloons/)            |
-| 32  |                    [Key Code](https://30daysofjs.netlify.app/32%20-%20key%20code/)                    |
-| 33  |          [Decimal To Binary](https://30daysofjs.netlify.app/33%20-%20decimal%20to%20binary/)          |
-| 34  |                      [Hangman](https://30daysofjs.netlify.app/34%20-%20hangman/)                      |
-| 35  |     [Simple Form Validation](https://30daysofjs.netlify.app/35%20-%20simple%20form%20validation/)     |
-| 36  |      [Lorem Ipsum Generator](https://30daysofjs.netlify.app/36%20-%20Lorem%20Ipsum%20Generator)       |
-| 37  |                 [RPS Game](https://30daysofjs.netlify.app/37%20-%20rps%20game/start)                  |
-| 38  |                   [Snake-Game](https://30daysofjs.netlify.app/38%20-%20snake-game/)                   |
-| 39  |              [Age Calculator](https://30daysofjs.netlify.app/39%20-%20age%20calculator/)              |
-| 40  |          [Gradient Generator](https://30daysofjs.netlify.app/40%20-%20gradient%20generator/)          |
-| 41  |          [Sorting visualizer](https://30daysofjs.netlify.app/41%20-%20Sorting%20visualizer)           |
-| 42  |              [PixSort Studio](https://30daysofjs.netlify.app/42%20-%20PixSort%20Studio)               |
-| 43  | [Getting Started with APIs](https://30daysofjs.netlify.app/43%20-%20getting%20started%20with%20apis/) |
-| 44  |                [Block Runner](https://30daysofjs.netlify.app/44%20-%20Block%20Runner/)                |
-| 45  |                   [Dice Game](https://30daysofjs.netlify.app/45%20-%20Dice%20Game/)                   |
-| 46  |          [Palindrome Checker](https://30daysofjs.netlify.app/46%20-%20Palindrome%20Checker/)          |
-| 47  |               [Caesar Cipher](https://30daysofjs.netlify.app/47%20-%20Caesar%20Cipher)                |
-| 48  |           [Weight Converter](https://30daysofjs.netlify.app/114%20-%20Weight%20Converter/)            |
-| 49  |              [Image Utility](https://30daysofjs.netlify.app/200%20-%20Image%20Utility/)               |
-| 50  |           [Guess the Number](https://30daysofjs.netlify.app/90%20-%20Guess%20the%20Number/)           |
+| 31  |           [Pop the Balloons](https://30daysofjs.netlify.app/projects/pop-the-balloons/)               |
+| 32  |                    [Key Code](https://30daysofjs.netlify.app/projects/key-code/)                      |
+| 33  |          [Decimal To Binary](https://30daysofjs.netlify.app/projects/decimal-to-binary/)              |
+| 34  |                      [Hangman](https://30daysofjs.netlify.app/projects/hangman/)                      |
+| 35  |     [Simple Form Validation](https://30daysofjs.netlify.app/projects/simple-form-validation/)         |
+| 36  |      [Lorem Ipsum Generator](https://30daysofjs.netlify.app/projects/lorem-ipsum-generator/)          |
+| 37  |                 [RPS Game](https://30daysofjs.netlify.app/projects/rps-game/start/)                   |
+| 38  |                   [Snake Game](https://30daysofjs.netlify.app/projects/snake-game/)                   |
+| 39  |              [Age Calculator](https://30daysofjs.netlify.app/projects/age-calculator/)                |
+| 40  |          [Gradient Generator](https://30daysofjs.netlify.app/projects/gradient-generator/)            |
+| 41  |          [Sorting Visualizer](https://30daysofjs.netlify.app/projects/sorting-visualizer/)            |
+| 42  |              [PixSort Studio](https://30daysofjs.netlify.app/projects/pixsort-studio/)                |
+| 43  | [Getting Started with APIs](https://30daysofjs.netlify.app/projects/getting-started-with-apis/)       |
+| 44  |                [Block Runner](https://30daysofjs.netlify.app/projects/block-runner/)                  |
+| 45  |                   [Dice Game](https://30daysofjs.netlify.app/projects/dice-game/)                     |
+| 46  |          [Palindrome Checker](https://30daysofjs.netlify.app/projects/palindrome-checker/)            |
+| 47  |               [Caesar Cipher](https://30daysofjs.netlify.app/projects/caesar-cipher/)                 |
+| 48  |           [Weight Converter](https://30daysofjs.netlify.app/projects/weight-converter/)               |
+| 49  |              [Image Utility](https://30daysofjs.netlify.app/projects/image-utility/)                  |
+| 50  |           [Guess the Number](https://30daysofjs.netlify.app/projects/guess-the-number/)               |
 
 </td><td>
 
 | Day |                                                        Name                                                         |
 | --- | :-----------------------------------------------------------------------------------------------------------------: |
-| 51  |                      [Balloon Game](https://30daysofjs.netlify.app/198%20-%20Balloon%20Game/)                       |
-| 52  |              [Temperature Convertor](https://30daysofjs.netlify.app/52%20-%20Temperature%20Convertor/)              |
-| 53  |                  [Notes Taking App](https://30daysofjs.netlify.app/53%20-%20Notes%20Taking%20App/)                  |
-| 54  |                 [N Queen Visualizer](https://30daysofjs.netlify.app/203-%20N%20Queen%20Visualizer/)                 |
-| 55  |             [Bubble Shooting Game](https://30daysofjs.netlify.app/197%20-%20Bubble%20Shooting%20Game/)              |
-| 56  |                  [Stick Hero Game](https://30daysofjs.netlify.app/195%20-%20Stick%20Hero%20Game/)                   |
-| 57  |                           [Quiz App](https://30daysofjs.netlify.app/57%20-%20Quiz%20App/)                           |
-| 58  |                         [Simon Game](https://30daysofjs.netlify.app/58%20-%20Simon%20Game/)                         |
-| 59  |               [Color Choosing Game](https://30daysofjs.netlify.app/59%20-%20Color%20Choosing%20Game/)               |
-| 60  |                     [Reaction Time](https://30daysofjs.netlify.app/193%20-%20Reaction%20Time/)                      |
-| 61  |                [Wall Breaker Game](https://30daysofjs.netlify.app/192%20-%20Wall%20Breaker%20Game/)                 |
-| 62  |                 [Dot Connect Game](https://30daysofjs.netlify.app/191%20-%20Dot%20Connect%20Game/)                  |
-| 63  |               [Insect_Catching_Game](https://30daysofjs.netlify.app/185%20-%20Insect_Catching_Game/)                |
-| 64  |        [Particle Effect Animation](https://30daysofjs.netlify.app/113%20-%20Particle%20Effect%20Animation/)         |
-| 65  |                   [Postmaster Clone](https://30daysofjs.netlify.app/65%20-%20Postmaster%20Clone/)                   |
-| 66  |         [Text to Speech Converter](https://30daysofjs.netlify.app/66%20-%20Text%20to%20Speech%20Converter/)         |
-| 67  |                 [Currency Converter](https://30daysofjs.netlify.app/67%20-%20Currency%20Converter/)                 |
-| 68  | [Movie TV Series Quote Generator](https://30daysofjs.netlify.app/68%20-%20Movie%20TV%20Series%20Quote%20Generator/) |
-| 69  |                 [Pattern Generator](https://30daysofjs.netlify.app/184%20-%20Pattern%20Generator/)                  |
-| 70  |       [Transpose Matrix Calculator](https://30daysofjs.netlify.app/70%20-%20Transpose%20Matrix%20Calculator/)       |
+| 51  |                      [Balloon Game](https://30daysofjs.netlify.app/projects/balloon-game/)                          |
+| 52  |              [Temperature Converter](https://30daysofjs.netlify.app/projects/temperature-converter/)               |
+| 53  |                  [Notes Taking App](https://30daysofjs.netlify.app/projects/notes-taking-app/)                      |
+| 54  |                 [N Queen Visualizer](https://30daysofjs.netlify.app/projects/n-queen-visualizer/)                   |
+| 55  |             [Bubble Shooting Game](https://30daysofjs.netlify.app/projects/bubble-shooting-game/)                   |
+| 56  |                  [Stick Hero Game](https://30daysofjs.netlify.app/projects/stick-hero-game/)                        |
+| 57  |                           [Quiz App](https://30daysofjs.netlify.app/projects/quiz-app/)                             |
+| 58  |                         [Simon Game](https://30daysofjs.netlify.app/projects/simon-game/)                           |
+| 59  |               [Color Choosing Game](https://30daysofjs.netlify.app/projects/color-choosing-game/)                   |
+| 60  |                     [Reaction Time](https://30daysofjs.netlify.app/projects/reaction-time/)                         |
+| 61  |                [Wall Breaker Game](https://30daysofjs.netlify.app/projects/wall-breaker-game/)                      |
+| 62  |                 [Dot Connect Game](https://30daysofjs.netlify.app/projects/dot-connect-game/)                       |
+| 63  |               [Insect Catching Game](https://30daysofjs.netlify.app/projects/insect-catching-game/)                 |
+| 64  |        [Particle Effect Animation](https://30daysofjs.netlify.app/projects/particle-effect-animation/)              |
+| 65  |                   [Postmaster Clone](https://30daysofjs.netlify.app/projects/postmaster-clone/)                     |
+| 66  |         [Text to Speech Converter](https://30daysofjs.netlify.app/projects/text-to-speech-converter/)               |
+| 67  |                 [Currency Converter](https://30daysofjs.netlify.app/projects/currency-converter/)                   |
+| 68  | [Movie TV Series Quote Generator](https://30daysofjs.netlify.app/projects/movie-tv-series-quote-generator/)         |
+| 69  |                 [Pattern Generator](https://30daysofjs.netlify.app/projects/pattern-generator/)                     |
+| 70  |       [Transpose Matrix Calculator](https://30daysofjs.netlify.app/projects/transpose-matrix-calculator/)           |
 
 </td><td>
 
 | Day |                                                  Name                                                   |
 | --- | :-----------------------------------------------------------------------------------------------------: |
-| 71  |         [Steal Diamond Game](https://30daysofjs.netlify.app/183%20-%20Steal%20Diamond%20Game/)          |
-| 72  |              [Typing Platform](https://30daysofjs.netlify.app/72%20-%20Typing%20Platform/)              |
-| 73  |   [Casino Slot Machine Game](https://30daysofjs.netlify.app/73%20-%20Casino%20Slot%20Machine%20Game/)   |
-| 74  |                  [Color Game](https://30daysofjs.netlify.app/182%20-%20Color%20Game/)                   |
-| 75  |            [Movie Search App](https://30daysofjs.netlify.app/75%20-%20Movie%20Search%20App/)            |
-| 76  |                     [Car Game](https://30daysofjs.netlify.app/76%20-%20Car%20Game/)                     |
-| 77  |       [Search Github Profile](https://30daysofjs.netlify.app/77%20-%20Search%20Github%20Profile/)       |
-| 78  |               [Dictionary App](https://30daysofjs.netlify.app/78%20-%20Dictionary%20App/)               |
-| 79  |                [Three Number](https://30daysofjs.netlify.app/181%20-%20Three%20Number/)                 |
-| 80  |                       [Sudoku](https://30daysofjs.netlify.app/180%20-%20Sudoku/)                        |
-| 81  |                [Hangman Game](https://30daysofjs.netlify.app/177%20-%20Hangman%20Game/)                 |
-| 82  |           [Falling Ball Game](https://30daysofjs.netlify.app/82%20-%20Falling%20Ball%20Game/)           |
-| 83  |            [Dot Target Game](https://30daysofjs.netlify.app/176%20-%20Dot%20Target%20Game/)             |
-| 84  |                  [Tetris Game](https://30daysofjs.netlify.app/84%20-%20Tetris%20Game/)                  |
-| 85  |                [Sticky Notes](https://30daysofjs.netlify.app/174%20-%20Sticky%20Notes/)                 |
-| 86  |       [Spin The Wheel Game](https://30daysofjs.netlify.app/173%20-%20Spin%20The%20Wheel%20Game/)        |
-| 87  | [Body Mass Index Calculator](https://30daysofjs.netlify.app/87%20-%20Body%20Mass%20Index%20Calculator/) |
-| 88  |              [Ping Pong Game](https://30daysofjs.netlify.app/88%20-%20Ping%20Pong%20Game/)              |
-| 89  | [Projectile Motion Simulator](https://30daysofjs.netlify.app/89%20-%20Projectile%20Motion%20Simulator/) |
-| 90  |                  [Atari Game](https://30daysofjs.netlify.app/135%20-%20Atari%20Game/)                   |
+| 71  |         [Steal Diamond Game](https://30daysofjs.netlify.app/projects/steal-diamond-game/)               |
+| 72  |              [Typing Platform](https://30daysofjs.netlify.app/projects/typing-platform/)                |
+| 73  |   [Casino Slot Machine Game](https://30daysofjs.netlify.app/projects/casino-slot-machine-game/)         |
+| 74  |                  [Color Game](https://30daysofjs.netlify.app/projects/color-game/)                      |
+| 75  |            [Movie Search App](https://30daysofjs.netlify.app/projects/movie-search-app/)                |
+| 76  |                     [Car Game](https://30daysofjs.netlify.app/projects/car-game/)                       |
+| 77  |       [Search Github Profile](https://30daysofjs.netlify.app/projects/search-github-profile/)           |
+| 78  |               [Dictionary App](https://30daysofjs.netlify.app/projects/dictionary-app/)                 |
+| 79  |                [Three Number](https://30daysofjs.netlify.app/projects/three-number/)                    |
+| 80  |                       [Sudoku](https://30daysofjs.netlify.app/projects/sudoku/)                        |
+| 81  |                [Hangman Game](https://30daysofjs.netlify.app/projects/hangman-game/)                    |
+| 82  |           [Falling Ball Game](https://30daysofjs.netlify.app/projects/falling-ball-game/)               |
+| 83  |            [Dot Target Game](https://30daysofjs.netlify.app/projects/dot-target-game/)                 |
+| 84  |                  [Tetris Game](https://30daysofjs.netlify.app/projects/tetris-game/)                   |
+| 85  |                [Sticky Notes](https://30daysofjs.netlify.app/projects/sticky-notes/)                   |
+| 86  |       [Spin The Wheel Game](https://30daysofjs.netlify.app/projects/spin-the-wheel-game/)              |
+| 87  | [Body Mass Index Calculator](https://30daysofjs.netlify.app/projects/body-mass-index-calculator/)      |
+| 88  |              [Ping Pong Game](https://30daysofjs.netlify.app/projects/ping-pong-game/)                 |
+| 89  | [Projectile Motion Simulator](https://30daysofjs.netlify.app/projects/projectile-motion-simulator/)    |
+| 90  |                  [Atari Game](https://30daysofjs.netlify.app/projects/atari-game/)                     |
 
  </td><td>   
  </td></tr></table>
@@ -160,18 +160,17 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 105 |           [Word For Alphabet Speak Aloud](https://30daysofjs.netlify.app/154%20-%20Word%20For%20Alphabet%20Speak%20Aloud/)           |
 | 106 |                         [Snowy Particle Js](https://30daysofjs.netlify.app/150%20-%20Snowy%20Particle%20Js/)                         |
 | 107 |                                 [Stack Game](https://30daysofjs.netlify.app/134%20-%20Stack%20Game/)                                 |
-| 108 |                             [Maths addition](https://30daysofjs.netlify.app/108%20-%20Maths%20addition/)                             |
+| 108 |                             [Maths Addition](https://30daysofjs.netlify.app/108%20-%20Maths%20Addition/)                             |
 | 109 |                               [Number Facts](https://30daysofjs.netlify.app/145%20-%20Number%20Facts/)                               |
 | 110 |                    [Pixel to em Converter](https://30daysofjs.netlify.app/110%20-%20Pixel%20to%20em%20Converter/)                    |
 | 111 |                    [Luminosity Particle Js](https://30daysofjs.netlify.app/141%20-%20Luminosity%20Particle%20Js/)                    |
 | 112 |                                  [Maze Game](https://30daysofjs.netlify.app/112%20-%20Maze%20Game/)                                  |
-| 113 |                                 [Minesweeper](https://30daysofjs.netlify.app/113%20-%20minesweeper/)                                 |
-| 114 |                     [Movie Guessing Game](https://30daysofjs.netlify.app/114%20-%20Movie%20-%20Guessing%20Game/)                     |
-| 116 |                               [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20-%20Game/)                               |
+| 113 |                                 [Minesweeper](https://30daysofjs.netlify.app/113%20-%20Minesweeper/)                                 |
+| 114 |                     [Movie Guessing Game](https://30daysofjs.netlify.app/114%20-%20Movie%20Guessing%20Game/)                         |
+| 116 |                               [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20Game/)                                   |
 | 124 |                                  [2048 Game](https://30daysofjs.netlify.app/124%20-%202048%20Game/)                                  |
-| 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20Flappy%20-%20Bird%20Game/)                        |
-| 126 |                                [Arcade Game](https://30daysofjs.netlify.app/124%20-%Arcade48%20Game/)                                |
-| 128 | [Largest EigenValue and EigenVector Calculator](https://30daysofjs.netlify.app/128%20-%20Eigen%20Value%20and%20Vector%20Calculator/) |
+| 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20Flappy%20Bird%20Game/)                            |
+| 126 |                                [Arcade Game](https://30daysofjs.netlify.app/124%20-%20Arcade%20Game/)                                |
 
  </td><td>   
  </td></tr></table>
