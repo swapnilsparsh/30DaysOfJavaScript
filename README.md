@@ -168,6 +168,9 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 113 |                                 [Minesweeper](https://30daysofjs.netlify.app/113%20-%20Minesweeper/)                                 |
 | 114 |                     [Movie Guessing Game](https://30daysofjs.netlify.app/114%20-%20Movie%20Guessing%20Game/)                         |
 | 116 |                               [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20Game/)                                   |
+| 117 |                   [Guess the Shape](https://30daysofjs.netlify.app/projects/guess-the-shape/)                   |
+| 118 |                   [Match 3 Game](https://30daysofjs.netlify.app/projects/match-3-game/)                   |
+| 119 |                   [Guess the Country](https://30daysofjs.netlify.app/projects/guess-the-country/)                   |
 | 124 |                                  [2048 Game](https://30daysofjs.netlify.app/124%20-%202048%20Game/)                                  |
 | 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20Flappy%20Bird%20Game/)                            |
 | 126 |                                [Arcade Game](https://30daysofjs.netlify.app/124%20-%20Arcade%20Game/)                                |
