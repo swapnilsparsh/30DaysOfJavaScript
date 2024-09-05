@@ -143,37 +143,37 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 
 | Day |                                                                 Name                                                                 |
 | --- | :----------------------------------------------------------------------------------------------------------------------------------: |
-| 91  |                        [Multiply Math Game](https://30daysofjs.netlify.app/167%20-%20Multiply%20Math%20Game/)                        |
-| 92  |                                       [Casio](https://30daysofjs.netlify.app/92%20-%20Casio/)                                        |
-| 93  |                                       [Typer](https://30daysofjs.netlify.app/93%20-%20Typer/)                                        |
-| 94  |                                 [Word Guess](https://30daysofjs.netlify.app/168%20-%20Word%20Guess/)                                 |
-| 95  |                        [Whack a Mole Game](https://30daysofjs.netlify.app/95%20-%20Whack%20a%20Mole%20Game/)                         |
-| 96  |                             [Pomodoro Clock](https://30daysofjs.netlify.app/96%20-%20Pomodoro%20Clock/)                              |
-| 97  |                          [Captcha Generator](https://30daysofjs.netlify.app/97%20-%20Captcha%20Generator/)                           |
-| 98  |                                  [Math Game](https://30daysofjs.netlify.app/172%20-%20Math%20Game/)                                  |
-| 99  |                             [BlackJack Game](https://30daysofjs.netlify.app/99%20-%20BlackJack%20Game/)                              |
-| 100 |                                  [Coin Game](https://30daysofjs.netlify.app/166%20-%20Coin%20Game/)                                  |
-| 101 |                           [Bomb Throw Game](https://30daysofjs.netlify.app/164%20-%20Bomb%20Throw%20Game/)                           |
-| 102 |                           [Minesweeper Game](https://30daysofjs.netlify.app/102%20-%20Minesweeper%20Game/)                           |
-| 103 |                          [Retro Mario Game](https://30daysofjs.netlify.app/162%20-%20Retro%20Mario%20Game/)                          |
-| 104 |                     [Catch Me If You Can](https://30daysofjs.netlify.app/104%20-%20Catch%20Me%20If%20You%20Can/)                     |
-| 105 |           [Word For Alphabet Speak Aloud](https://30daysofjs.netlify.app/154%20-%20Word%20For%20Alphabet%20Speak%20Aloud/)           |
-| 106 |                         [Snowy Particle Js](https://30daysofjs.netlify.app/150%20-%20Snowy%20Particle%20Js/)                         |
-| 107 |                                 [Stack Game](https://30daysofjs.netlify.app/134%20-%20Stack%20Game/)                                 |
-| 108 |                             [Maths Addition](https://30daysofjs.netlify.app/108%20-%20Maths%20Addition/)                             |
-| 109 |                               [Number Facts](https://30daysofjs.netlify.app/145%20-%20Number%20Facts/)                               |
-| 110 |                    [Pixel to em Converter](https://30daysofjs.netlify.app/110%20-%20Pixel%20to%20em%20Converter/)                    |
-| 111 |                    [Luminosity Particle Js](https://30daysofjs.netlify.app/141%20-%20Luminosity%20Particle%20Js/)                    |
-| 112 |                                  [Maze Game](https://30daysofjs.netlify.app/112%20-%20Maze%20Game/)                                  |
-| 113 |                                 [Minesweeper](https://30daysofjs.netlify.app/113%20-%20Minesweeper/)                                 |
-| 114 |                     [Movie Guessing Game](https://30daysofjs.netlify.app/114%20-%20Movie%20Guessing%20Game/)                         |
-| 116 |                               [Shell Game](https://30daysofjs.netlify.app/116%20-%20Shell%20Game/)                                   |
-| 117 |                   [Guess the Shape](https://30daysofjs.netlify.app/projects/guess-the-shape/)                   |
-| 118 |                   [Match 3 Game](https://30daysofjs.netlify.app/projects/match-3-game/)                   |
-| 119 |                   [Guess the Country](https://30daysofjs.netlify.app/projects/guess-the-country/)                   |
-| 124 |                                  [2048 Game](https://30daysofjs.netlify.app/124%20-%202048%20Game/)                                  |
-| 125 |                        [Flappy Bird Game](https://30daysofjs.netlify.app/125%20-%20Flappy%20Bird%20Game/)                            |
-| 126 |                                [Arcade Game](https://30daysofjs.netlify.app/124%20-%20Arcade%20Game/)                                |
+| 91  |                        [Multiply Math Game](https://30daysofjs.netlify.app/projects/multiply-math-game/)                          |
+| 92  |                                       [Casio](https://30daysofjs.netlify.app/projects/casio/)                                     |
+| 93  |                                       [Typer](https://30daysofjs.netlify.app/projects/typer/)                                     |
+| 94  |                                 [Word Guess](https://30daysofjs.netlify.app/projects/word-guess/)                                 |
+| 95  |                        [Whack a Mole Game](https://30daysofjs.netlify.app/projects/whack-a-mole-game/)                            |
+| 96  |                             [Pomodoro Clock](https://30daysofjs.netlify.app/projects/pomodoro-clock/)                             |
+| 97  |                          [Captcha Generator](https://30daysofjs.netlify.app/projects/captcha-generator/)                          |
+| 98  |                                  [Math Game](https://30daysofjs.netlify.app/projects/math-game/)                                  |
+| 99  |                             [BlackJack Game](https://30daysofjs.netlify.app/projects/blackjack-game/)                             |
+| 100 |                           [Coin Game](https://30daysofjs.netlify.app/projects/coin-game/)                                         |
+| 101 |                           [Bomb Throw Game](https://30daysofjs.netlify.app/projects/bomb-throw-game/)                             |
+| 102 |                       [Minesweeper Game](https://30daysofjs.netlify.app/projects/minesweeper-game/)                               |
+| 103 |                       [Retro Mario Game](https://30daysofjs.netlify.app/projects/retro-mario-game/)                               |
+| 104 |                 [Catch Me If You Can](https://30daysofjs.netlify.app/projects/catch-me-if-you-can/) |
+| 105 |                   [Word For Alphabet Speak Aloud](https://30daysofjs.netlify.app/projects/word-for-alphabet-speak-aloud/) |
+| 106 |                         [Snowy Particle Js](https://30daysofjs.netlify.app/projects/snowy-particle-js/) |
+| 107 |                             [Stack Game](https://30daysofjs.netlify.app/projects/stack-game/) |
+| 108 |                         [Maths Addition](https://30daysofjs.netlify.app/projects/maths-addition/) |
+| 109 |                                 [Number Facts](https://30daysofjs.netlify.app/projects/number-facts/) |
+| 110 |                         [Pixel to em Converter](https://30daysofjs.netlify.app/projects/pixel-to-em-converter/) |
+| 111 |                       [Luminosity Particle Js](https://30daysofjs.netlify.app/projects/luminosity-particle-js/) |
+| 112 |                               [Maze Game](https://30daysofjs.netlify.app/projects/maze-game/) |
+| 113 |                                 [Minesweeper](https://30daysofjs.netlify.app/projects/minesweeper/) |
+| 114 |                           [Movie Guessing Game](https://30daysofjs.netlify.app/projects/movie-guessing-game/) |
+| 116 |                                 [Shell Game](https://30daysofjs.netlify.app/projects/shell-game/) |
+| 117 |                             [Guess the Shape](https://30daysofjs.netlify.app/projects/guess-the-shape/) |
+| 118 |                           [Match 3 Game](https://30daysofjs.netlify.app/projects/match-3-game/) |
+| 119 |                         [Guess the Country](https://30daysofjs.netlify.app/projects/guess-the-country/) |
+| 124 |                           [2048 Game](https://30daysofjs.netlify.app/projects/2048-game/) |
+| 125 |                       [Flappy Bird Game](https://30daysofjs.netlify.app/projects/flappy-bird-game/) |
+| 126 |                           [Arcade Game](https://30daysofjs.netlify.app/projects/arcade-game/) |
 
  </td><td>   
  </td></tr></table>
