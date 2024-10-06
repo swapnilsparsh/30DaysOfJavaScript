@@ -285,4 +285,122 @@ async function selection() {
       enableSizeSlider(),
       enableNewArrayBtn();
   });
+
+// Topological Sort using Depth-First Search (DFS)
+async function topologicalSort() {
+  const ele = document.querySelectorAll(".bar");
+  const visited = new Set();
+  const stack = [];
+
+  // Helper function for DFS
+  async function dfs(nodeIndex) {
+      visited.add(nodeIndex);
+      ele[nodeIndex].style.background = "blue"; // Mark node as visited
+
+      await waitforme(delay); // Wait for animation
+
+      // Loop through neighbors (in this case, we assume a linear graph)
+      for (let neighbor = nodeIndex + 1; neighbor < ele.length; neighbor++) {
+          if (!visited.has(neighbor)) {
+              await dfs(neighbor); // Recursively visit neighbors
+          }
+      }
+
+      stack.push(nodeIndex); // Push node to stack after visiting all neighbors
+      ele[nodeIndex].style.background = "green"; // Mark node as finished
+  }
+
+  // Start DFS from each unvisited node
+  for (let i = 0; i < ele.length; i++) {
+      if (!visited.has(i)) {
+          await dfs(i);
+      }
+  }
+
+  // Reverse the stack to get the topological order
+  while (stack.length) {
+      const index = stack.pop();
+      ele[index].style.height = `${(index + 1) * 10}px`; // Adjust height for visualization
+      await waitforme(delay);
+  }
+}
+
+// Topological Sort button
+const topologicalSortbtn = document.querySelector(".topologicalSort");
+topologicalSortbtn.addEventListener("click", async function () {
+  disableSortingBtn();
+  disableSizeSlider();
+  disableNewArrayBtn();
+  
+  await topologicalSort(); // Perform the sort
+  
+  enableSortingBtn();
+  enableSizeSlider();
+  enableNewArrayBtn();
+});
+
+// Heap Sort
+async function heapSort() {
+  const ele = document.querySelectorAll(".bar");
+  const n = ele.length;
+
+  // Build max heap
+  for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+      await heapify(ele, n, i);
+  }
+
+  // One by one extract elements from heap
+  for (let i = n - 1; i > 0; i--) {
+      // Move current root to end
+      swap(ele[0], ele[i]);
+      ele[i].style.background = "green"; // Mark sorted element
+      await waitforme(delay); // Wait for animation
+
+      // Call max heapify on the reduced heap
+      await heapify(ele, i, 0);
+  }
+}
+
+// Function to maintain the heap property
+async function heapify(ele, n, i) {
+  let largest = i; // Initialize largest as root
+  const left = 2 * i + 1; // left = 2*i + 1
+  const right = 2 * i + 2; // right = 2*i + 2
+
+  // If left child is larger than root
+  if (left < n && parseInt(ele[left].style.height) > parseInt(ele[largest].style.height)) {
+      largest = left;
+  }
+
+  // If right child is larger than largest so far
+  if (right < n && parseInt(ele[right].style.height) > parseInt(ele[largest].style.height)) {
+      largest = right;
+  }
+
+  // If largest is not root
+  if (largest !== i) {
+      swap(ele[i], ele[largest]); // Swap
+
+      ele[i].style.background = "orange"; // Mark as being swapped
+      ele[largest].style.background = "orange";
+
+      await waitforme(delay); // Wait for animation
+
+      await heapify(ele, n, largest); // Recursively heapify the affected sub-tree
+  }
+}
+
+// Event listener for Heap Sort button
+const heapSortbtn = document.querySelector(".heapSort");
+heapSortbtn.addEventListener("click", async function () {
+  disableSortingBtn();
+  disableSizeSlider();
+  disableNewArrayBtn();
+
+  await heapSort(); // Perform Heap Sort
+
+  enableSortingBtn();
+  enableSizeSlider();
+  enableNewArrayBtn();
+});
   
