@@ -1,0 +1,1 @@
+In this project youcan get random gradient colors by pressing space.
