@@ -167,7 +167,21 @@ section.hero {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
 }
-
+#search-bar{
+  height: 35px;
+  width: 100%;
+  max-width: 410px;
+  border-radius: 8px;
+  margin: 18px;
+  padding: 8px;
+  color: black;
+  font-weight: bold;
+}
+#search-bar::placeholder{
+  font-weight: bold;
+  color: black;
+  font-size: 13px;
+}
 .project-card {
   border: 1px solid black;
   border-radius: 6px;
