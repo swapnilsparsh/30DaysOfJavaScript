@@ -182,6 +182,14 @@ section.hero {
   color: black;
   font-size: 13px;
 }
+.no-results {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
 .project-card {
   border: 1px solid black;
   border-radius: 6px;

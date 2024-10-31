@@ -67,6 +67,15 @@ function getProjectContent(project) {
 
 function renderProjectList(projects) {
   projectsArea.innerHTML = ""
+
+  if (projects.length === 0) {
+    const noResultsMessage = document.createElement("p");
+    noResultsMessage.className = "no-results";
+    noResultsMessage.innerText = "No results found";
+    projectsArea.appendChild(noResultsMessage);
+    return;
+  }
+  
   projects.forEach((project) => {
     const projectCard = document.createElement("div");
     projectCard.className = "project-card";
@@ -93,6 +102,7 @@ function filterProjects(query) {
       project.name.toLowerCase().includes(query.toLowerCase()) ||
       project.description.toLowerCase().includes(query.toLowerCase())
   );
+  
   renderProjectList(filteredProjects);
 }
 
