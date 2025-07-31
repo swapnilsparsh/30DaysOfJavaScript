@@ -1,0 +1,20 @@
+<svg width="60" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fish body -->
+  <ellipse cx="25" cy="20" rx="20" ry="12" fill="#4a90e2" stroke="#2d5aa0" stroke-width="1"/>
+  
+  <!-- Fish tail -->
+  <polygon points="5,20 0,8 0,32" fill="#4a90e2" stroke="#2d5aa0" stroke-width="1"/>
+  
+  <!-- Fish fins -->
+  <ellipse cx="35" cy="25" rx="8" ry="4" fill="#6ba3f0" stroke="#2d5aa0" stroke-width="1"/>
+  <ellipse cx="30" cy="12" rx="6" ry="3" fill="#6ba3f0" stroke="#2d5aa0" stroke-width="1"/>
+  
+  <!-- Fish stripes -->
+  <ellipse cx="20" cy="20" rx="2" ry="8" fill="#2d5aa0"/>
+  <ellipse cx="30" cy="20" rx="1.5" ry="6" fill="#2d5aa0"/>
+  
+  <!-- Fish eye -->
+  <circle cx="35" cy="17" r="3" fill="white"/>
+  <circle cx="36" cy="16" r="2" fill="black"/>
+  <circle cx="37" cy="15" r="1" fill="white"/>
+</svg>

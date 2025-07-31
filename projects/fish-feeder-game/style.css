@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.tank {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/30DaysOfJavaScript/projects/fish-feeder-game/assets/img/tank-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+#timer {
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.fish {
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    z-index: 2;
+}
+
+.score {
+    position: absolute;
+    top: 32px;
+    padding: 8px;
+    margin-left: 16px;
+    text-align: center;
+    width: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+.foodPellet {
+  width: 14px;
+  height: 14px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.bigPellet {
+  width: 28px;
+  height: 28px;
+  background-color: orange;
+}
+
+#instructions {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000080;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    max-width: 200px;
+}
+
+#restartBtn {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #2e4a90;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 999;
+}

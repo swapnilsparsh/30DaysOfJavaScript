@@ -1,0 +1,54 @@
+<svg width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#191970;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bubbleGradient" cx="30%" cy="30%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#87CEEB;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:0.1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Water background -->
+  <rect width="1200" height="700" fill="url(#waterGradient)"/>
+  
+  <!-- Tank bottom sand -->
+  <rect x="0" y="650" width="1200" height="50" fill="#F4A460"/>
+  
+  <!-- Seaweed -->
+  <path d="M100 650 Q110 600 105 550 Q95 500 110 450 Q120 400 100 350" 
+        stroke="#228B22" stroke-width="8" fill="none"/>
+  <path d="M150 650 Q140 600 155 550 Q165 500 145 450" 
+        stroke="#32CD32" stroke-width="6" fill="none"/>
+  <path d="M950 650 Q960 600 955 550 Q945 500 960 450 Q970 400 950 350" 
+        stroke="#228B22" stroke-width="8" fill="none"/>
+  <path d="M1000 650 Q990 600 1005 550 Q1015 500 995 450" 
+        stroke="#32CD32" stroke-width="6" fill="none"/>
+  
+  <!-- Rocks -->
+  <ellipse cx="200" cy="675" rx="40" ry="25" fill="#696969"/>
+  <ellipse cx="240" cy="680" rx="30" ry="20" fill="#778899"/>
+  <ellipse cx="800" cy="675" rx="35" ry="25" fill="#696969"/>
+  <ellipse cx="850" cy="680" rx="25" ry="20" fill="#778899"/>
+  
+  <!-- Bubbles -->
+  <circle cx="120" cy="500" r="8" fill="url(#bubbleGradient)"/>
+  <circle cx="140" cy="450" r="6" fill="url(#bubbleGradient)"/>
+  <circle cx="160" cy="400" r="10" fill="url(#bubbleGradient)"/>
+  <circle cx="180" cy="350" r="4" fill="url(#bubbleGradient)"/>
+  
+  <circle cx="970" cy="480" r="7" fill="url(#bubbleGradient)"/>
+  <circle cx="990" cy="430" r="9" fill="url(#bubbleGradient)"/>
+  <circle cx="1010" cy="380" r="5" fill="url(#bubbleGradient)"/>
+  
+  <circle cx="500" cy="600" r="6" fill="url(#bubbleGradient)"/>
+  <circle cx="520" cy="550" r="8" fill="url(#bubbleGradient)"/>
+  <circle cx="540" cy="500" r="4" fill="url(#bubbleGradient)"/>
+  
+  <circle cx="700" cy="580" r="7" fill="url(#bubbleGradient)"/>
+  <circle cx="720" cy="530" r="5" fill="url(#bubbleGradient)"/>
+</svg> 
