@@ -1,0 +1,91 @@
+ body {
+     font-family: "Poppins", sans-serif;
+     background: linear-gradient(135deg, #2c3e50, #3498db);
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin: 0;
+     padding: 1rem;
+ }
+
+ .container {
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 16px;
+     padding: 2rem;
+     backdrop-filter: blur(10px);
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+     width: 350px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ h1 {
+     text-align: center;
+     margin-bottom: 1.5rem;
+     font-weight: 600;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 0.5rem;
+     font-size: 0.9rem;
+ }
+
+ input,
+ select {
+     width: 100%;
+     padding: 0.6rem;
+     border: none;
+     border-radius: 8px;
+     margin-bottom: 1rem;
+     outline: none;
+     font-size: 1rem;
+ }
+
+ button {
+     width: 100%;
+     padding: 0.8rem;
+     border: none;
+     border-radius: 10px;
+     background-color: #27ae60;
+     color: white;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.3s ease;
+ }
+
+ button:hover {
+     background-color: #2ecc71;
+ }
+
+ .results {
+     margin-top: 1.5rem;
+     text-align: center;
+     animation: fadeIn 0.5s ease-in-out;
+ }
+
+ .timezone {
+     background: rgba(255, 255, 255, 0.15);
+     margin: 0.5rem 0;
+     padding: 0.8rem;
+     border-radius: 8px;
+     transition: transform 0.3s ease;
+ }
+
+ .timezone:hover {
+     transform: scale(1.05);
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }

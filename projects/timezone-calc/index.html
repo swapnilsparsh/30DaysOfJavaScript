@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🌍 Timezone Converter</h1>
+
+        <label for="datetime">Select Date & Time:</label>
+        <input type="datetime-local" id="datetime">
+
+        <label for="source">Select Source Timezone:</label>
+        <select id="source">
+            <option value="Asia/Kolkata">Asia/Kolkata (IST)</option>
+            <option value="America/New_York">America/New_York (EST)</option>
+            <option value="Europe/London">Europe/London (GMT)</option>
+            <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+            <option value="Australia/Sydney">Australia/Sydney (AEST)</option>
+        </select>
+
+        <button onclick="convertTime()">Convert</button>
+
+        <div class="results" id="results"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

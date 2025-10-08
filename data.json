@@ -628,5 +628,10 @@
     "id": 126,
     "name": "Arcade Game",
     "description": "Play a variety of arcade-style games with simple controls and gameplay."
+  },
+  {
+    "id": 127,
+    "name": "Time Zone Converter",
+    "description": "Convert your timezone into other timezone easily, just by entering your date and time."
   }
 ]
