@@ -628,5 +628,11 @@
     "id": 126,
     "name": "Arcade Game",
     "description": "Play a variety of arcade-style games with simple controls and gameplay."
-  }
+  },
+{
+  "id": 127,
+    "name": "Flower Garden Game",
+    "description": "Plant flowers and avoid mushrooms in this fun timer-based game."
+}
+
 ]
