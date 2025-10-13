@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Garden Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🌸 Flower Garden Game 🌸</h1>
+        <p class="instructions">
+            Plant as many flowers as you can within 60 seconds!<br>
+            <strong>Avoid the mushrooms</strong> - clicking them costs a life! ❤️
+        </p>
+        
+        <div class="game-info">
+            <div class="info-item">
+                🌼 Score: <span id="score">0</span>
+            </div>
+            <div class="info-item hearts">
+                ❤️ Lives: <span id="lives">3</span>
+            </div>
+            <div class="info-item">
+                ⏱️ Time: <span id="time">60</span>s
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <div id="gameOverScreen" class="game-over">
+            <div id="finalMessage">Time's Up!</div>
+            <div style="font-size: 18px; margin-top: 10px;">
+                Final Score: <span id="finalScore">0</span>
+            </div>
+            <button class="restart-btn" onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
