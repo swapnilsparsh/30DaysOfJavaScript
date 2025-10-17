@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  margin: 20px auto;
+  border: 2px solid #333;
+  justify-content: center;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.dark {
+  background-color: #769656;
+}
+
+.light {
+  background-color: #eeeed2;
+}
+
+.piece {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px auto;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.black {
+  background-color: black;
+}
+
+.king::after {
+  content: "👑";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 1.2em;
+}
+
+.selected {
+  outline: 3px solid gold;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.close {
+  float: right;
+  font-size: 1.5em;
+  cursor: pointer;
+}

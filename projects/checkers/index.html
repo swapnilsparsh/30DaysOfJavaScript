@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkers Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>♟️ Checkers Game</h1>
+    <div class="board" id="board"></div>
+    <div class="info">
+      <p id="turn">Turn: Red</p>
+      <button onclick="showRules()">📖 Rulebook</button>
+    </div>
+  </div>
+
+  <div id="rules-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideRules()">&times;</span>
+      <h2>Checkers Rules</h2>
+      <ul>
+        <li>Red starts first. Players alternate turns.</li>
+        <li>Pieces move diagonally forward. Kings move both ways.</li>
+        <li>Capture by jumping over opponent’s piece.</li>
+        <li>Multiple captures allowed and required if available.</li>
+        <li>Reach the last row to become a King.</li>
+        <li>Captures are mandatory when available.</li>
+        <li>Win by capturing all opponent pieces or blocking all moves.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
