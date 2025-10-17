@@ -174,7 +174,6 @@ Repo containing all the projects made in 30 Days while completing the <b>30 Days
 | 124 |                           [2048 Game](https://30daysofjs.netlify.app/projects/2048-game/) |
 | 125 |                       [Flappy Bird Game](https://30daysofjs.netlify.app/projects/flappy-bird-game/) |
 | 126 |                           [Arcade Game](https://30daysofjs.netlify.app/projects/arcade-game/) |
-
  </td><td>   
  </td></tr></table>
 
