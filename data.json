@@ -633,6 +633,11 @@
   "id": 127,
     "name": "Flower Garden Game",
     "description": "Plant flowers and avoid mushrooms in this fun timer-based game."
+},
+{
+  "id":128,
+  "name":"Password Generator",
+  "description":"Generate random passwords with adjustable length, numbers, and symbols. Copy with one click."
 }
 
 ]
