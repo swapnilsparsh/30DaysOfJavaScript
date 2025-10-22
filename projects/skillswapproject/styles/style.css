@@ -1,0 +1,1112 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: #f8f3e9;
+  color: #4a4a4a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Envelope styles */
+.envelope-container {
+  margin-bottom: 3rem;
+}
+
+.envelope {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Envelope body */
+.body {
+  background: #f2eadf;
+  border-radius: 20px;
+  box-shadow:
+    inset 0 0 15px #d3c9b4,
+    0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 3rem 2rem 3rem;
+  position: relative;
+  min-height: 380px;
+}
+
+/* Card inside the envelope */
+.card {
+  background: linear-gradient(145deg, #fff9f2, #f4ece4);
+  border-radius: 15px;
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.1),
+    inset 0 0 15px #dbd1c7;
+  padding: 2rem 1.5rem 3rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover slides it up */
+.card:hover:not(.locked),
+.card:focus-visible:not(.locked) {
+  transform: translateY(-50px);
+  box-shadow:
+    0 12px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px #cbbfaf;
+}
+
+/* Locked state: stays up */
+.card.locked {
+  transform: translateY(-50px);
+  box-shadow:
+    0 12px 20px rgba(0, 0, 0, 0.25),
+    inset 0 0 20px #cbbfaf;
+  cursor: default;
+}
+
+/* Heading */
+.card h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #725b45;
+  text-align: center;
+  text-shadow: 1px 1px 0 #f2e8d6;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #6b5842;
+  font-size: 0.9rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid #cbbfaf;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  background: #f9f4e9;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #a3896a;
+  background: #fffdfa;
+  outline: none;
+}
+
+/* Send button - airmail seal style */
+.send-btn {
+  align-self: center;
+  padding: 0.65rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  background: #f28c8c;
+  color: #fff7f7;
+  border: 3px solid #b86a6a;
+  border-radius: 50px;
+  box-shadow:
+    0 4px 7px rgba(184, 106, 106, 0.7),
+    inset 0 -3px 5px #a45454;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background: #d56262;
+  box-shadow:
+    0 6px 10px rgba(181, 62, 62, 0.9),
+    inset 0 -4px 8px #843737;
+  outline: none;
+}
+
+/* Recommendations section */
+.recommendations-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.recommendations-section h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #725b45;
+  text-align: center;
+}
+
+#search-filter {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #cbbfaf;
+  border-radius: 12px;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  background: #f9f4e9;
+  transition: border-color 0.3s ease;
+}
+
+#search-filter:focus {
+  border-color: #a3896a;
+  outline: none;
+}
+
+/* Grid for recommendation cards */
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Individual user card */
+.user-card {
+  background: #fff9f2;
+  border-radius: 15px;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 0 8px #dbd1c7;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+.user-card:hover {
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.18),
+    inset 0 0 15px #cbbfaf;
+}
+
+.user-card h4 {
+  margin-bottom: 0.25rem;
+  color: #725b45;
+}
+
+.user-card p {
+  font-size: 0.9rem;
+  color: #6b5842;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.user-card button.select-btn {
+  align-self: center;
+  background: #f28c8c;
+  color: #fff7f7;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow:
+    0 3px 6px rgba(184, 106, 106, 0.7),
+    inset 0 -2px 4px #a45454;
+  transition: background 0.3s ease;
+}
+
+.user-card button.select-btn:hover {
+  background: #d56262;
+}
+.chat-preview {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f2eadf;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.chat-preview.hidden {
+  display: none;
+}
+
+.chat-messages {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff9f2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px #dbd1c7;
+}
+
+.chat-controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.chat-controls input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbbfaf;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.chat-controls button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background: #f28c8c;
+  color: white;
+  box-shadow: 0 3px 6px rgba(184, 106, 106, 0.5);
+}
+
+.chat-controls button:hover {
+  background: #d56262;
+}
+
+.message {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.incoming {
+  background: #e8f5e9;
+  align-self: flex-start;
+}
+
+.outgoing {
+  background: #fde2e2;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.system {
+  background: #fff3cd;
+  color: #856404;
+  font-style: italic;
+  text-align: center;
+}
+.success-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e6ffe6;
+  border: 1px solid #b3e6b3;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #356635;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.find-matches-btn {
+  display: inline-block;
+  margin-top: 0.7rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #6aa7e9;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.find-matches-btn:hover {
+  background-color: #4a8fd4;
+}
+/* Add space below the "One-sided Interests" heading */
+.matches-subsection:nth-of-type(2) {
+  margin-top: 40px; /* pushes the entire section down from above */
+}
+
+/* Or add space below the alert paragraph inside one-sided interests */
+#one-sided-list p {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Optional: add consistent spacing inside user cards */
+.user-card {
+  margin-bottom: 15px;
+}
+input[type="email"] {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid #cbbfaf;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  background: #f9f4e9;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #a3896a;
+  background: #fffdfa;
+  outline: none;
+}
+/* Add to your existing CSS */
+
+/* Save for Later Button */
+.save-btn {
+  background: #6aa7e9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow:
+    0 3px 6px rgba(106, 167, 233, 0.7),
+    inset 0 -2px 4px #4a8fd4;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.save-btn:hover {
+  background: #4a8fd4;
+}
+
+/* Saved Profiles Section */
+.saved-profiles-section {
+  margin-top: 3rem;
+}
+
+.saved-profiles-section h3 {
+  color: #4a4a4a;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Remove Save Button on saved profiles */
+.remove-save-btn {
+  background: #f28c8c;
+  color: #fff7f7;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow:
+    0 3px 6px rgba(184, 106, 106, 0.7),
+    inset 0 -2px 4px #a45454;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.remove-save-btn:hover {
+  background: #d56262;
+}
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      overflow-x: hidden;
+    }
+
+    /* Floating brain on right side fixed */
+    .floating-brain {
+      position: fixed;
+      top: 100px;
+      right: 40px;
+      width: 120px;
+      z-index: 5;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: drop-shadow(0 0 5px rgba(255, 153, 0, 0.3));
+      animation: gentleWiggle 5s ease-in-out infinite;
+    }
+    .floating-brain:hover {
+      transform: rotate(5deg) scale(1.1);
+      filter: drop-shadow(0 0 10px rgba(255, 102, 0, 0.6));
+    }
+    @keyframes gentleWiggle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* Full width hero section */
+    .hero-section {
+      width: 100vw;
+      background: linear-gradient(135deg, #f9d976 0%, #f28c8c 100%);
+      color: white;
+      padding: 3rem 1rem 4rem;
+      box-shadow: 0 8px 25px rgba(242, 140, 140, 0.5);
+      border-radius: 0 0 20px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    /* center content inside hero but limit width */
+    .hero-section .content-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .hero-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+    .hero-buttons button {
+      background: white;
+      color: #f28c8c;
+      font-weight: 700;
+      border: none;
+      border-radius: 30px;
+      padding: 0.75rem 2rem;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow:
+        0 3px 7px rgba(242, 140, 140, 0.7),
+        inset 0 -2px 5px #b84e4e;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .hero-buttons button:hover {
+      background: #f28c8c;
+      color: white;
+      box-shadow:
+        0 6px 15px rgba(242, 140, 140, 0.9),
+        inset 0 -3px 7px #7b2d2d;
+    }
+
+    /* page container with form and other content */
+    .page-container {
+      max-width: 600px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* user card style */
+    .user-card {
+      background: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    /* Side quotes fixed background */
+    .side-quotes {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .side-quote {
+      position: absolute;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.08);
+      font-family: 'Segoe UI', sans-serif;
+      white-space: nowrap;
+      transition: transform 0.3s ease-out;
+      user-select: none;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    .recommendations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.recommendations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #FAF9F6; /* Creamy white */
+    color: #2F5755; /* Deep teal */
+    overflow-x: hidden;
+  }
+
+  .floating-brain {
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    width: 120px;
+    z-index: 5;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(47, 87, 85, 0.3));
+    animation: gentleWiggle 5s ease-in-out infinite;
+  }
+
+  .floating-brain:hover {
+    transform: rotate(5deg) scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(47, 87, 85, 0.5));
+  }
+
+  @keyframes gentleWiggle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .hero-section {
+    width: 100vw;
+    background: linear-gradient(135deg, #FDFBF4 0%, #E8F1EE 100%);
+    color: #2F5755;
+    padding: 3rem 1rem 4rem;
+    box-shadow: 0 8px 25px rgba(47, 87, 85, 0.15);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .hero-buttons button {
+    background: #ffffff;
+    color: #2F5755;
+    font-weight: 700;
+    border: 2px solid #2F5755;
+    border-radius: 30px;
+    padding: 0.75rem 2rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 7px rgba(47, 87, 85, 0.2);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .hero-buttons button:hover {
+    background: #2F5755;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(47, 87, 85, 0.3);
+  }
+
+  #form-section,
+  #recommendations,
+  #saved-profiles {
+    max-width: 600px;
+    margin: 3rem auto 0;
+    background: #ffffff;
+    color: #2F5755;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+    position: relative;
+    z-index: 2;
+  }
+
+  #form-section h2 {
+    color: #2F5755;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  #recommendations h3,
+  #saved-profiles h3 {
+    color: #2F5755;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  #search-filter {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .recommendations-grid,
+  #saved-profiles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .user-card {
+    background: #ffffff;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    position: relative;
+  }
+
+  .side-quotes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .side-quote {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgba(47, 87, 85, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+    white-space: nowrap;
+    transition: transform 0.3s ease-out;
+    user-select: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  }
+
+  .side-quote:nth-child(1) { font-size: 3rem; color: rgba(47, 87, 85, 0.08); }
+  .side-quote:nth-child(2) { font-size: 2.3rem; color: rgba(0, 0, 0, 0.05); }
+  .side-quote:nth-child(3) { font-size: 2.6rem; color: rgba(47, 87, 85, 0.06); }
+
+
+.saved-profiles-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%; /* Ensure it takes full available width */
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping of cards to the next line */
+}
+
+#saved-profiles-list {
+  display: inline-flex;
+  gap: 15px;  /* Space between cards */
+}
+.saved-profiles-list {
+  max-height: 300px;
+  overflow-y: auto; /* or scroll */
+}
+
+.remove-save-btn {
+  background-color: #e74735;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-save-btn:hover {
+  background-color: #c0392b;
+}
+
+
+
+
+
+
+
+#recommendations {
+  background-color: #ea9292; /* Background color */
+  height: 500px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* 👇 Layout for full-width + horizontal scroll */
+  width: 100vw;              /* Almost full screen width */
+  max-width: 1500px;        /* Optional: keep it from going too wide */
+  margin: 0 auto;           /* Center the section */
+
+  display: flex;            /* Place items in a row */
+  gap: 1rem;                /* Space between items */
+
+  overflow-x: auto;         /* Enable horizontal scroll */
+  overflow-y: hidden;       /* Disable vertical scroll */
+  scroll-behavior: smooth;  /* Smooth scrolling */
+  white-space: nowrap;      /* Prevent wrapping to next line */
+}
+#recommendations .user-card {
+  background: #fff9f2;
+  border-radius: 15px;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 0 8px #dbd1c7;
+  padding: 1.4rem 1.8rem;
+  width: 400px;              /* Slightly wider for better text fit */
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #4a4a4a;
+  text-align: left;
+  font-family: 'Georgia', serif;
+}
+
+/* Hover effect */
+#recommendations .user-card:hover {
+  transform: translateY(-12px) scale(1.04); /* More lift */
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.35),        /* Deep outer shadow */
+    0 8px 20px rgba(0, 0, 0, 0.25),         /* Softer spread shadow */
+    inset 0 0 25px rgba(203, 191, 175, 0.85); /* Stronger inner glow */
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Name / Title inside card */
+#recommendations .user-card h4 {
+  margin-bottom: 0.6rem;
+  color: #725b45;
+  font-size: 1.5rem;     /* Increased from 1.1rem */
+  font-weight: 700;
+}
+
+/* Description text */
+#recommendations .user-card p {
+  font-size: 1.2rem;        /* Increased from 0.9rem */
+  color: #6b5842;
+  margin-bottom: 1rem;
+  line-height: 1.5;       /* Improved readability */
+}
+
+/* Select Button */
+#recommendations .user-card .select-btn {
+  align-self: center;
+  background: #f28c8c;
+  color: #fff7f7;
+  border: none;
+  border-radius: 40px;        /* Slightly rounder */
+  padding: 0.8rem 2rem;       /* Increased padding for size */
+  font-weight: 700;
+  font-size: 1.5rem;          /* Keeps your large readable font */
+  cursor: pointer;
+  box-shadow:
+    0 4px 8px rgba(184, 106, 106, 0.7),
+    inset 0 -3px 6px #a45454;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#recommendations .user-card .select-btn:hover {
+  background: #d56262;
+  transform: scale(1.08);     /* Slightly bigger hover effect */
+}
+#recommendations .user-card {
+  overflow-y: auto;
+  max-height: 100%; /* Keep it within container height */
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .page-container {
+    padding: 0 0.5rem;
+  }
+
+  .body {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .card {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  input[type="text"],
+  .send-btn,
+  #search-filter {
+    font-size: 0.95rem;
+  }
+
+  .send-btn {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .user-card {
+    padding: 1rem;
+  }
+
+  .chat-controls {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .chat-controls input,
+  .chat-controls button {
+    width: 100%;
+  }
+
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+
+  .chat-preview {
+    margin-top: 1rem;
+    padding: 0.75rem;
+  }
+
+  .chat-messages {
+    max-height: 150px;
+    padding: 0.75rem;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+}
+
+/* --- Responsive Fixes & Tweaks for Part 2 --- */
+@media (max-width: 600px) {
+  .floating-brain {
+    width: 80px;
+    top: 60px;
+    right: 20px;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 280px;
+    font-size: 0.95rem;
+  }
+
+  .recommendations-grid {
+    flex-direction: column;
+    max-height: none;
+    padding-right: 0;
+  }
+
+  .user-card {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .success-message {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+
+  .find-matches-btn,
+  .save-btn,
+  .remove-save-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .saved-profiles-section {
+    padding: 0 0.5rem;
+  }
+
+  .chat-controls {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .chat-controls input,
+  .chat-controls button {
+    width: 100%;
+  }
+
+  .chat-messages {
+    max-height: 150px;
+  }
+
+  .side-quote {
+    font-size: 1.8rem;
+  }
+}
+/* Fix typo: floating-brain hover */
+.floating-brain:hover {
+  transform: rotate(5deg) scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(47, 87, 85, 0.5));
+}
+
+/* Ensure consistency on user-card inside recommendations */
+#recommendations .user-card {
+  overflow-y: auto;
+  max-height: 100%;
+  flex: 0 0 auto;
+}
+
+/* Responsive Fixes for Mobile and Tablets */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  #recommendations {
+    flex-direction: column;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 1.5rem 1rem;
+  }
+
+  #recommendations .user-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  #recommendations .user-card .select-btn {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .saved-profiles-section {
+    padding: 1rem;
+  }
+
+  .saved-profiles-section h3 {
+    font-size: 1.25rem;
+  }
+
+  #form-section,
+  #recommendations,
+  #saved-profiles {
+    padding: 1.5rem;
+  }
+
+  .floating-brain {
+    width: 80px;
+    right: 20px;
+    top: 70px;
+  }
+
+  .side-quote {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #recommendations {
+    flex-direction: column;     /* Stack cards vertically */
+    height: auto;
+    overflow-x: hidden;
+    white-space: normal;
+    padding: 1rem;
+  }
+
+  #recommendations .user-card {
+    width: 100%;                /* Full width on small screens */
+    max-width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  #recommendations .user-card h4 {
+    font-size: 1.3rem;
+  }
+
+  #recommendations .user-card p {
+    font-size: 1rem;
+  }
+
+  #recommendations .user-card .select-btn {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+

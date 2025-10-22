@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillSwap - Skill Input & Profile Setup</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <style>
+  
+</style>
+
+</head>
+
+<body>
+
+  <!-- Floating Brain Icon -->
+  <img
+    src="https://tse4.mm.bing.net/th/id/OIP.p81Ig9UBzOwOV8Im3JmN4AHaHa?pid=Api&P=0&h=180"
+    alt="Brain Icon"
+    class="floating-brain"
+    title="Brain Power! Hover me!"
+  />
+
+  <!-- Background Side Quotes -->
+  <div class="side-quotes">
+    <span class="side-quote" style="top: 15%; left: 5%;">“Learning never exhausts the mind.”</span>
+    <span class="side-quote" style="top: 40%; right: 6%;">“Education is the most powerful weapon.”</span>
+    <span class="side-quote" style="top: 75%; left: 8%;">“An investment in knowledge pays the best interest.”</span>
+  </div>
+
+  <!-- Hero / Welcome Section at the Top - full width -->
+  <section class="hero-section">
+    <div class="content-wrapper">
+      <h1>Welcome to SkillSwap 🌱</h1>
+      <p>Connect. Learn. Teach. Grow.</p>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('form-section')">Get Started</button>
+        <button onclick="scrollToSection('saved-profiles')">Saved Profiles</button>
+        <button onclick="scrollToSection('recommendations')">Browse Swaps</button>
+      </div>
+    </div>
+
+    <!-- Moved inside hero -->
+    <section id="form-section" class="envelope-container">
+      <div class="envelope">
+        <div class="body">
+          <div class="card" tabindex="0">
+            <h2>Fill your Skill Journey 🚀</h2>
+            <form id="profile-form" autocomplete="off">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="skill-offer">Skill You Offer</label>
+              <input type="text" id="skill-offer" name="skillOffer" required />
+
+              <label for="skill-want">Skill You Want to Learn</label>
+              <input type="text" id="skill-want" name="skillWant" required />
+
+              <label for="location">Location (City)</label>
+              <input type="text" id="location" name="location" required />
+
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <button type="submit" class="send-btn">✉️ Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="recommendations" class="recommendations-section">
+      <h3>Find Available Skill Swaps</h3>
+      <input type="search" id="search-filter" placeholder="Search by skill or name..." />
+      <div class="recommendations-grid"></div>
+    </section> -->
+
+    <section id="recommendations" class="recommendations-section">
+  <h1>Find Available Skill Swaps</h2>
+
+  <div class="recommendations-container">
+    <input
+      type="search"
+      id="search-filter"
+      class="search-input"
+      placeholder="Search by skill or name..."
+    />
+
+    <div class="recommendations-grid" id="recommendations-grid">
+      <!-- Cards will be inserted here dynamically -->
+    </div>
+  </div>
+</section>
+
+
+    <section id="saved-profiles" class="saved-profiles-section">
+      <h3>Saved Profiles for Later</h3>
+      <div id="saved-profiles-list" class="recommendations-grid"></div>
+    </section>
+
+  </section>
+
+  <!-- JavaScript for scroll parallax effect on quotes -->
+  <script>
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      const quotes = document.querySelectorAll(".side-quote");
+      quotes.forEach((quote, i) => {
+        const speed = (i + 1) * 0.15;
+        quote.style.transform = `translateY(${scrollY * speed}px)`;
+      });
+    });
+
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  </script>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

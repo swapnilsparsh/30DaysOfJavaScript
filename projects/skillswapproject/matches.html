@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillSwap - Matches & Chat Preview</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <main class="page-container">
+
+    <section class="matches-subsection">
+      <h2>Your Matches 🔄</h2>
+      <div id="matches-list" class="recommendations-grid">
+        <!-- Mutual matches appear here -->
+      </div>
+    </section>
+
+    <section class="matches-subsection" style="margin-top: 3rem;">
+      <h2>One-sided Interests ⭐</h2>
+      <div id="one-sided-list" class="recommendations-grid">
+        <!-- One-sided interest matches appear here -->
+      </div>
+    </section>
+
+    <!-- Chat preview modal / section -->
+    <div id="chat-preview" class="chat-preview hidden">
+      <h3>Chat with <span id="chat-user-name"></span></h3>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-controls">
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="send-chat-btn">Send</button>
+        <button id="email-chat-btn" title="Send Email">📧 Email</button>
+        <button id="close-chat-btn">Close</button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="scripts/matches.js"></script>
+</body>
+</html>
